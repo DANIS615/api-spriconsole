@@ -422,36 +422,62 @@ def analyze_all_ssf_dlls():
 def main():
     """Función principal"""
 
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description='Analizador automático de DLLs',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog='''
+Ejemplos:
+  python analizar_dll_auto.py "C:\\ruta\\a\\archivo.dll"
+  python analizar_dll_auto.py "C:\\ruta\\a\\archivo.dll" --output "C:\\analisis"
+  python analizar_dll_auto.py --all
+        '''
+    )
+
+    parser.add_argument('dll_path', nargs='?', help='Ruta a la DLL a analizar')
+    parser.add_argument('--all', action='store_true', help='Analizar todas las DLLs de SSF')
+    parser.add_argument('--output', '-o', help='Directorio de salida para archivos JSON')
+    parser.add_argument('--auto-save', action='store_true', help='Guardar JSON automáticamente sin preguntar')
+
+    args = parser.parse_args()
+
     print()
     print("=" * 70)
     print("ANALIZADOR AUTOMÁTICO DE DLLs")
     print("=" * 70)
     print()
 
-    if len(sys.argv) < 2:
-        print("Uso:")
-        print()
-        print("  Analizar una DLL:")
-        print('    python analizar_dll_auto.py "C:\\ruta\\a\\archivo.dll"')
-        print()
-        print("  Analizar todas las DLLs de SSF:")
-        print('    python analizar_dll_auto.py --all')
-        print()
-        sys.exit(1)
-
-    if sys.argv[1] == '--all':
+    if args.all:
         analyze_all_ssf_dlls()
-    else:
-        dll_path = sys.argv[1]
+    elif args.dll_path:
+        dll_path = args.dll_path
 
         analyzer = DLLAnalyzer(dll_path)
         info = analyzer.analyze()
 
-        # Guardar JSON
-        print()
-        save = input("¿Guardar análisis en JSON? (s/n): ").strip().lower()
-        if save == 's':
-            analyzer.save_json()
+        # Determinar si guardar JSON
+        should_save = args.auto_save
+        if not should_save and not args.output:
+            print()
+            save = input("¿Guardar análisis en JSON? (s/n): ").strip().lower()
+            should_save = (save == 's')
+        elif args.output:
+            should_save = True
+
+        if should_save:
+            # Determinar ruta de salida
+            if args.output:
+                os.makedirs(args.output, exist_ok=True)
+                base_name = os.path.basename(dll_path)
+                output_path = os.path.join(args.output, f"{base_name}_analysis.json")
+            else:
+                output_path = None
+
+            analyzer.save_json(output_path)
+    else:
+        parser.print_help()
+        sys.exit(1)
 
 
 if __name__ == "__main__":
