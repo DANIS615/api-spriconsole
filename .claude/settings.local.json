@@ -1,7 +1,22 @@
 {
   "permissions": {
     "allow": [
-      "Bash(tasklist:*)"
+      "Bash(tasklist:*)",
+      "Bash(git fetch:*)",
+      "Bash(git cherry-pick:*)",
+      "Bash(python diagnostico_bomba.py:*)",
+      "Bash(chcp 65001)",
+      "Bash(set:*)",
+      "Bash(python diagnostico_bomba_auto.py:*)",
+      "Bash(pip install:*)",
+      "Bash(python explorar_dll_gpbox.py:*)",
+      "Bash(python explorar_dll_gpbox_ctypes.py:*)",
+      "Bash(python:*)",
+      "Bash(where python:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n🎯 PROTOCOLO GPBOX DESCUBIERTO - Sistema de slots confirmado\n\nHALLAZGOS CLAVE:\n✅ Sistema de SLOTS: Seleccionar bomba antes de comandos\n✅ Comando SLOT: [BOMBA_ID] 0x00 → Respuesta confirmación\n✅ Bomba 1: 01 00 → FE 00\n✅ Bomba 2: 02 00 → FC 00\n✅ Handshake: 0x10 → 0xF0\n\nArchivos agregados:\n- probar_gpbox_simple.py (script de testing funcional)\n- HALLAZGOS_PROTOCOLO_GPBOX.md (documentación completa)\n- PROBLEMA_REAL_Y_SOLUCION.md (contexto y 3 opciones)\n- README_OPCION_HIBRIDA.md (plan de acción)\n- capturar_protocolo_gpbox.py (monitor serial avanzado)\n- explorar_dll_gpbox.py (explorador DLL .NET)\n- explorar_dll_gpbox_ctypes.py (explorador DLL nativa)\n- diagnostico_bomba_auto.py (diagnóstico automático)\n\nGPBox es un multiplexor: NO passthrough directo\nRequiere: Seleccionar SLOT → Enviar comando Gilbarco → Leer respuesta\n\n🤖 Generated with Claude Code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

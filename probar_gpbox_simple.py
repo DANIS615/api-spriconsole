@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Prueba Simple de Protocolo GPBox
 Basado en hallazgos del análisis de DLLs
@@ -13,6 +14,12 @@ HALLAZGOS CLAVE:
 import serial
 import time
 import sys
+import io
+
+# Fix Windows console encoding
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 class GPBoxSimple:
     """Comunicación simple con GPBox"""
