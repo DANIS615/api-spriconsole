@@ -1,0 +1,2 @@
+[ERROR_CODES]
+BLD0001=Descripcion: Los porcentajes de la mezcla asignada a una de las pistolas del surtidor no coincide con los porcentajes del mismo. \nSolucion: Verfique los porcentajes de las mezclas asignadas a cada pistola de este surtidor.

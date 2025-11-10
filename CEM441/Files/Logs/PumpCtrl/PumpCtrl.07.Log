@@ -1,0 +1,94 @@
+----------------------------------------------
+              PUMPCTRL LOG FILE               
+PUMPCTRL INFO: DATE RELEASE Sep 23 2010 09:53:26
+----------------------------------------------
+06/11/2025 19:21:21.212 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[01]: 1
+06/11/2025 19:21:21.212 - Initialize_DLL                                     - Gilbarco Money Digit[01]: 5
+06/11/2025 19:21:21.212 - Initialize_DLL                                     - Gilbarco Maximum Volume[01]: 0990
+06/11/2025 19:21:21.212 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[02]: 1
+06/11/2025 19:21:21.214 - Initialize_DLL                                     - Gilbarco Money Digit[02]: 5
+06/11/2025 19:21:21.214 - Initialize_DLL                                     - Gilbarco Maximum Volume[02]: 0990
+06/11/2025 19:21:21.214 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[03]: 1
+06/11/2025 19:21:21.214 - Initialize_DLL                                     - Gilbarco Money Digit[03]: 5
+06/11/2025 19:21:21.214 - Initialize_DLL                                     - Gilbarco Maximum Volume[03]: 0990
+06/11/2025 19:21:21.214 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[04]: 1
+06/11/2025 19:21:21.214 - Initialize_DLL                                     - Gilbarco Money Digit[04]: 5
+06/11/2025 19:21:21.215 - Initialize_DLL                                     - Gilbarco Maximum Volume[04]: 0990
+06/11/2025 19:21:21.215 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[05]: 1
+06/11/2025 19:21:21.215 - Initialize_DLL                                     - Gilbarco Money Digit[05]: 5
+06/11/2025 19:21:21.215 - Initialize_DLL                                     - Gilbarco Maximum Volume[05]: 0990
+06/11/2025 19:21:21.215 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[06]: 1
+06/11/2025 19:21:21.215 - Initialize_DLL                                     - Gilbarco Money Digit[06]: 5
+06/11/2025 19:21:21.215 - Initialize_DLL                                     - Gilbarco Maximum Volume[06]: 0990
+06/11/2025 19:27:26.337 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[01]: 1
+06/11/2025 19:27:26.337 - Initialize_DLL                                     - Gilbarco Money Digit[01]: 5
+06/11/2025 19:27:26.337 - Initialize_DLL                                     - Gilbarco Maximum Volume[01]: 0990
+06/11/2025 19:27:26.337 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[02]: 1
+06/11/2025 19:27:26.338 - Initialize_DLL                                     - Gilbarco Money Digit[02]: 5
+06/11/2025 19:27:26.338 - Initialize_DLL                                     - Gilbarco Maximum Volume[02]: 0990
+06/11/2025 19:27:26.338 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[03]: 1
+06/11/2025 19:27:26.338 - Initialize_DLL                                     - Gilbarco Money Digit[03]: 5
+06/11/2025 19:27:26.339 - Initialize_DLL                                     - Gilbarco Maximum Volume[03]: 0990
+06/11/2025 19:27:26.339 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[04]: 1
+06/11/2025 19:27:26.339 - Initialize_DLL                                     - Gilbarco Money Digit[04]: 5
+06/11/2025 19:27:26.339 - Initialize_DLL                                     - Gilbarco Maximum Volume[04]: 0990
+06/11/2025 19:27:26.339 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[05]: 1
+06/11/2025 19:27:26.340 - Initialize_DLL                                     - Gilbarco Money Digit[05]: 5
+06/11/2025 19:27:26.340 - Initialize_DLL                                     - Gilbarco Maximum Volume[05]: 0990
+06/11/2025 19:27:26.341 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[06]: 1
+06/11/2025 19:27:26.341 - Initialize_DLL                                     - Gilbarco Money Digit[06]: 5
+06/11/2025 19:27:26.341 - Initialize_DLL                                     - Gilbarco Maximum Volume[06]: 0990
+06/11/2025 19:27:26.440 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[01]: 1
+06/11/2025 19:27:26.441 - Initialize_DLL                                     - Gilbarco Money Digit[01]: 5
+06/11/2025 19:27:26.442 - Initialize_DLL                                     - Gilbarco Maximum Volume[01]: 0990
+06/11/2025 19:27:26.442 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[02]: 1
+06/11/2025 19:27:26.442 - Initialize_DLL                                     - Gilbarco Money Digit[02]: 5
+06/11/2025 19:27:26.442 - Initialize_DLL                                     - Gilbarco Maximum Volume[02]: 0990
+06/11/2025 19:27:26.443 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[03]: 1
+06/11/2025 19:27:26.443 - Initialize_DLL                                     - Gilbarco Money Digit[03]: 5
+06/11/2025 19:27:26.443 - Initialize_DLL                                     - Gilbarco Maximum Volume[03]: 0990
+06/11/2025 19:27:26.445 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[04]: 1
+06/11/2025 19:27:26.445 - Initialize_DLL                                     - Gilbarco Money Digit[04]: 5
+06/11/2025 19:27:26.445 - Initialize_DLL                                     - Gilbarco Maximum Volume[04]: 0990
+06/11/2025 19:27:26.445 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[05]: 1
+06/11/2025 19:27:26.445 - Initialize_DLL                                     - Gilbarco Money Digit[05]: 5
+06/11/2025 19:27:26.446 - Initialize_DLL                                     - Gilbarco Maximum Volume[05]: 0990
+06/11/2025 19:27:26.446 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[06]: 1
+06/11/2025 19:27:26.446 - Initialize_DLL                                     - Gilbarco Money Digit[06]: 5
+06/11/2025 19:27:26.446 - Initialize_DLL                                     - Gilbarco Maximum Volume[06]: 0990
+06/11/2025 19:30:41.838 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[01]: 1
+06/11/2025 19:30:41.838 - Initialize_DLL                                     - Gilbarco Money Digit[01]: 5
+06/11/2025 19:30:41.838 - Initialize_DLL                                     - Gilbarco Maximum Volume[01]: 0990
+06/11/2025 19:30:41.839 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[02]: 1
+06/11/2025 19:30:41.839 - Initialize_DLL                                     - Gilbarco Money Digit[02]: 5
+06/11/2025 19:30:41.839 - Initialize_DLL                                     - Gilbarco Maximum Volume[02]: 0990
+06/11/2025 19:30:41.839 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[03]: 1
+06/11/2025 19:30:41.840 - Initialize_DLL                                     - Gilbarco Money Digit[03]: 5
+06/11/2025 19:30:41.840 - Initialize_DLL                                     - Gilbarco Maximum Volume[03]: 0990
+06/11/2025 19:30:41.840 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[04]: 1
+06/11/2025 19:30:41.840 - Initialize_DLL                                     - Gilbarco Money Digit[04]: 5
+06/11/2025 19:30:41.840 - Initialize_DLL                                     - Gilbarco Maximum Volume[04]: 0990
+06/11/2025 19:30:41.841 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[05]: 1
+06/11/2025 19:30:41.841 - Initialize_DLL                                     - Gilbarco Money Digit[05]: 5
+06/11/2025 19:30:41.841 - Initialize_DLL                                     - Gilbarco Maximum Volume[05]: 0990
+06/11/2025 19:30:41.841 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[06]: 1
+06/11/2025 19:30:41.842 - Initialize_DLL                                     - Gilbarco Money Digit[06]: 5
+06/11/2025 19:30:41.842 - Initialize_DLL                                     - Gilbarco Maximum Volume[06]: 0990
+06/11/2025 19:33:21.790 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[01]: 1
+06/11/2025 19:33:21.791 - Initialize_DLL                                     - Gilbarco Money Digit[01]: 5
+06/11/2025 19:33:21.792 - Initialize_DLL                                     - Gilbarco Maximum Volume[01]: 0990
+06/11/2025 19:33:21.792 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[02]: 1
+06/11/2025 19:33:21.792 - Initialize_DLL                                     - Gilbarco Money Digit[02]: 5
+06/11/2025 19:33:21.792 - Initialize_DLL                                     - Gilbarco Maximum Volume[02]: 0990
+06/11/2025 19:33:21.792 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[03]: 1
+06/11/2025 19:33:21.792 - Initialize_DLL                                     - Gilbarco Money Digit[03]: 5
+06/11/2025 19:33:21.792 - Initialize_DLL                                     - Gilbarco Maximum Volume[03]: 0990
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[04]: 1
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Money Digit[04]: 5
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Maximum Volume[04]: 0990
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[05]: 1
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Money Digit[05]: 5
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Maximum Volume[05]: 0990
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Preset x Monto habilitado[06]: 1
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Money Digit[06]: 5
+06/11/2025 19:33:21.793 - Initialize_DLL                                     - Gilbarco Maximum Volume[06]: 0990

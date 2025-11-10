@@ -1,0 +1,9 @@
+----------------------------------------------
+              PUMPCTRL LOG FILE               
+PUMPCTRL INFO: DATE RELEASE Sep 23 2010 09:53:26
+----------------------------------------------
+06/11/2025 19:14:15.555 - Initialize_DLL                                     - No se va a controlar el dirty buffer porque no hay configurado al menos un surtidor microcontrolado
+06/11/2025 19:14:15.556 - OutReset                                           - Reseting slot control information
+06/11/2025 19:18:06.284 - SleepWakeupHandler                                 - ERROR SETEANDO EVENTO DE CEM SLEEP [6]
+06/11/2025 19:18:21.442 - SleepWakeupHandler                                 - ERROR SETEANDO EVENTO DE CEM SLEEP [6]
+06/11/2025 19:39:37.548 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
