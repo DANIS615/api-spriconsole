@@ -1,0 +1,148 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFPalmTrxSales</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<link href="../Styles/Spirit/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p><a href="{Link1_Src}">{res:ssf_return}</a>&nbsp; <a href="{Link2_Src}">buscar</a></p>
+<p>
+<!-- BEGIN Record ssf_pump_salesSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:ssf_pump_sales}
+            {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          </tr>
+ 
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ssf_dates_range}</th>
+ 
+            <td><input maxlength="8" size="8" value="{s_date_from}" name="{s_date_from_Name}">(yyyymmdd)</td> 
+            <td>&nbsp;<input maxlength="8" size="8" value="{s_date_to}" name="{s_date_to_Name}">&nbsp;
+              (yyyymmdd)</td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="3"><input type="hidden" value="{cmdBuscar}" name="{cmdBuscar_Name}">
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record ssf_pump_salesSearch --><br>
+<!-- BEGIN Report ssf_pump_sales -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_ReportFormPrefix} {res:ssf_pump_sales}
+          {res:CCS_ReportFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+        </tr>
+ 
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <!-- BEGIN Section Report_Header -->
+        <tr class="Row">
+          <td colspan="4">{res:CCS_TotalRecords}&nbsp;{Report_TotalRecords}&nbsp; </td> 
+        </tr>
+ <!-- END Section Report_Header -->
+        <!-- BEGIN Section Page_Header -->
+        <tr class="Caption">
+          <th>{res:pump_id}&nbsp; </th>
+ 
+          <th>{res:grade_id}&nbsp; </th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_money --><a href="{Sort_URL}">{res:money}</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_money -->&nbsp; </th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_volume --><a href="{Sort_URL}">{res:volume}</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_volume -->&nbsp; </th>
+ 
+        </tr>
+ <!-- END Section Page_Header -->
+        <!-- BEGIN Section pump_id_Header --><!-- END Section pump_id_Header -->
+        <!-- BEGIN Section grade_id_Header --><!-- END Section grade_id_Header -->
+        <!-- BEGIN Section Detail -->
+        <tr class="Row">
+          <td style="TEXT-ALIGN: right">{pump_id}&nbsp; </td> 
+          <td style="TEXT-ALIGN: right">{grade_id}&nbsp; </td> 
+          <td style="TEXT-ALIGN: right">{money} </td> 
+          <td style="TEXT-ALIGN: right">{volume} </td> 
+        </tr>
+ <!-- END Section Detail -->
+        <!-- BEGIN Section grade_id_Footer --><!-- END Section grade_id_Footer -->
+        <!-- BEGIN Section pump_id_Footer -->
+        <tr class="SubTotal">
+          <td style="TEXT-ALIGN: right">{res:CCS_ReportSubTotal} &nbsp; </td> 
+          <td style="TEXT-ALIGN: right">&nbsp; </td> 
+          <td style="TEXT-ALIGN: right" valign="baseline">{Sum_money} </td> 
+          <td style="TEXT-ALIGN: right" valign="baseline">{Sum_volume} </td> 
+        </tr>
+ <!-- END Section pump_id_Footer -->
+        <!-- BEGIN Section Report_Footer -->
+        <!-- BEGIN Panel NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="4">{res:CCS_NoRecords} </td> 
+        </tr>
+ <!-- END Panel NoRecords -->
+        <tr class="Total">
+          <td valign="baseline">{res:CCS_ReportTotal} </td> 
+          <td style="TEXT-ALIGN: right">&nbsp; </td> 
+          <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_money} </td> 
+          <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_volume} </td> 
+        </tr>
+ <!-- END Section Report_Footer -->
+        <!-- BEGIN Section Page_Footer -->
+        <tr class="Footer">
+          <td>{Report_CurrentDateTime}&nbsp; </td> 
+          <td style="TEXT-ALIGN: right" colspan="3">&nbsp;&nbsp;&nbsp; 
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}"><img src="../Styles/Spiritnew/Images/First.gif" border="0"></a> <!-- END First_On -->
+            <!-- BEGIN First_Off --><img src="../Styles/Spiritnew/Images/FirstOff.gif" border="0"><!-- END First_Off -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}"><img src="../Styles/Spiritnew/Images/Prev.gif" border="0"></a> <!-- END Prev_On -->
+            <!-- BEGIN Prev_Off --><img src="../Styles/Spiritnew/Images/PrevOff.gif" border="0"><!-- END Prev_Off -->&nbsp;{Page_Number}
+            {res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}"><img src="../Styles/Spiritnew/Images/Next.gif" border="0"></a> <!-- END Next_On -->
+            <!-- BEGIN Next_Off --><img src="../Styles/Spiritnew/Images/NextOff.gif" border="0"><!-- END Next_Off -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}"><img src="../Styles/Spiritnew/Images/Last.gif" border="0"></a> <!-- END Last_On -->
+            <!-- BEGIN Last_Off --><img src="../Styles/Spiritnew/Images/LastOff.gif" border="0"><!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp; </td> 
+        </tr>
+ <!-- END Section Page_Footer -->
+      </table>
+ </td> 
+  </tr>
+</table>
+<!-- END Report ssf_pump_sales --><br>
+</p>
+</body>
+</html>

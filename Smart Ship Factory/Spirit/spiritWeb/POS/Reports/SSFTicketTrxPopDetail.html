@@ -1,0 +1,326 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketTrxPopDetail</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<link href="../../Styles/Spirit/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript">
+function PrintIt()
+{
+    window.print() ;
+}
+</script>
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//page_Button_reprint_OnClick @102-091F7013
+function page_Button_reprint_OnClick()
+{
+    var result;
+//End page_Button_reprint_OnClick
+
+//Confirmation Message @103-0F107EC6
+    return confirm('{res:ssf_are_u_sure}');
+//End Confirmation Message
+
+//Close page_Button_reprint_OnClick @102-BC33A33A
+    return result;
+}
+//End Close page_Button_reprint_OnClick
+
+//bind_events @1-47EA6B3D
+function bind_events() {
+    if (document.all["Button_reprint"]) check_and_bind('document.all["Button_reprint"]','onclick',page_Button_reprint_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader} </p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" colspan="6">
+      <!-- BEGIN Report ssf_tkt_trx_header -->
+      <table cellspacing="0" cellpadding="0" width="90%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>&nbsp;{res:ssf_trx_header} {res:CCS_ReportFormSuffix} </th>
+ 
+                <th><a href="{ImageLink1}"><img onclick="PrintIt();return false;" src="{imgprint}" border="0"></a></th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header --><!-- END Section Page_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <th style="FONT-WEIGHT: bold">{res:tkt_trans_id}</th>
+ 
+                <td>{tkt_trans_id}&nbsp;&nbsp;</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_pos_id}</td> 
+                <td>{tkt_pos_id}</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_cust_id}&nbsp;</td> 
+                <td>{tkt_customer_id}&nbsp;</td>
+              </tr>
+ 
+              <tr class="Row">
+                <th style="FONT-WEIGHT: bold">{res:tkt_receipt_type}</th>
+ 
+                <td>{tkt_type}&nbsp; {tkt_receipt_type}-{tkt_receipt_group}-{tkt_receipt_number}</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_shift_id}&nbsp;</td> 
+                <td>{tkt_shift_id}&nbsp;</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_cust_name}&nbsp;</td> 
+                <td>{tkt_customer_name}&nbsp;</td>
+              </tr>
+ 
+              <tr class="Row">
+                <th style="FONT-WEIGHT: bold">{res:tkt_net_amount}</th>
+ 
+                <td>{tkt_net_amount}</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_date}</td> 
+                <td>{tkt_date}&nbsp; </td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_cust_address}&nbsp;</td> 
+                <td>{tkt_customer_address}&nbsp;</td>
+              </tr>
+ 
+              <tr class="Row">
+                <th style="FONT-WEIGHT: bold">{res:tkt_tax_amount}</th>
+ 
+                <td>{tkt_tax_amount}</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_time}</td> 
+                <td>{tkt_time}&nbsp;</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_cust_tax_id}&nbsp;</td> 
+                <td>{tkt_customer_tax_id}&nbsp;</td>
+              </tr>
+ 
+              <tr class="Row">
+                <th style="FONT-WEIGHT: bold">{res:tkt_total_amount}</th>
+ 
+                <td>{tkt_total_amount}&nbsp;</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_change_tender}&nbsp;</td> 
+                <td>{tkt_change_tender}&nbsp; {tkt_change_amount}</td> 
+                <td style="FONT-WEIGHT: bold">{res:tkt_customer_tax_type}&nbsp;</td> 
+                <td>{tkt_customer_tax_type}&nbsp;</td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="6">{res:CCS_NoRecords} </td>
+              </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Report ssf_tkt_trx_header --></td>
+  </tr>
+ 
+  <tr>
+    <form method="post">
+      <td valign="top" align="right" width="40%">{lblerror}</td> 
+      <td valign="top" align="right" width="2%"></td> 
+      <td valign="top" align="center">
+        <!-- BEGIN Button Button_reprint --><input class="botonazul" {disabledparam} type="submit" value="{res:ssf_ticket_reprint}" name="{Button_Name}"><!-- END Button Button_reprint --></td> 
+      <td></td>
+    </form>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="40%">
+      <!-- BEGIN Report ssf_tkt_trx_detail_ssf_tk -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>&nbsp;{res:ssf_tkt_trx_details}&nbsp; </th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header -->
+              <tr class="Caption">
+                <th>{res:tkt_plu_id} </th>
+ 
+                <th>{res:tkt_plu_short_desc}</th>
+ 
+                <th>{res:tkt_ppu}</th>
+ 
+                <th>{res:tkt_qty}</th>
+ 
+                <th>{res:tkt_net_amount}</th>
+ 
+                <th>{res:tkt_total_amount}</th>
+ 
+                <th>&nbsp;{res:ssf_export_pump_sales}</th>
+              </tr>
+ <!-- END Section Page_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right">&nbsp;{tkt_plu_id}</td> 
+                <td>{tkt_plu_short_desc}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right">{tkt_ppu} </td> 
+                <td style="TEXT-ALIGN: right">{tkt_qty} </td> 
+                <td style="TEXT-ALIGN: right">{tkt_net_amount} </td> 
+                <td style="TEXT-ALIGN: right">{tkt_total_amount} </td> 
+                <td style="TEXT-ALIGN: right">
+                  <!-- BEGIN Link tkt_spirit_sale_id --><a href="{tkt_spirit_sale_id_Src}" target="_parent">{tkt_spirit_sale_id}</a><!-- END Link tkt_spirit_sale_id -->&nbsp;</td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="7">{res:CCS_NoRecords} </td>
+              </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Report ssf_tkt_trx_detail_ssf_tk --></td> 
+    <td valign="top" align="center" width="2%" rowspan="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+    <td valign="top" align="center" rowspan="5">
+      <p><textarea style="OVERFLOW: auto" name="{tkt_ticket_Name}" rows="{t_height}" readonly cols="50">{tkt_ticket}</textarea>&nbsp;&nbsp;&nbsp;</p>
+ 
+      <p>&nbsp;</p>
+    </td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="40%">
+      <!-- BEGIN Report ssf_tkt_trx_tax -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_ReportFormPrefix} {res:ssf_tkt_trx_tax} {res:CCS_ReportFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header -->
+              <tr class="Caption">
+                <th>{res:tkt_tax_id}</th>
+ 
+                <th>{res:tkt_tax_amount_incl}</th>
+ 
+                <th>{res:tkt_tax_amount_extra}</th>
+              </tr>
+ <!-- END Section Page_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <td>{tkt_tax_id} </td> 
+                <td style="TEXT-ALIGN: right">{tkt_tax_amount_incl} </td> 
+                <td style="TEXT-ALIGN: right">{tkt_tax_amount_extra} </td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords} </td>
+              </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Report ssf_tkt_trx_tax --></td> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="40%">
+      <!-- BEGIN Report ssf_tkt_trx_tender -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_ReportFormPrefix} {res:ssf_tkt_trx_tender} {res:CCS_ReportFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header -->
+              <tr class="Caption">
+                <th>{res:tkt_tender_id}</th>
+ 
+                <th>{res:tkt_tender_amount}</th>
+ 
+                <th>{res:tkt_tender_info}</th>
+              </tr>
+ <!-- END Section Page_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <td>{tkt_tender_id} </td> 
+                <td style="TEXT-ALIGN: right">{tkt_tender_amount} </td> 
+                <td>{tkt_tender_info} </td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords} </td>
+              </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Report ssf_tkt_trx_tender --></td> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="6">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="6">&nbsp;</td>
+  </tr>
+</table>
+</p>
+<p><br>
+<br>
+<br>
+<br>
+&nbsp;</p>
+</body>
+</html>

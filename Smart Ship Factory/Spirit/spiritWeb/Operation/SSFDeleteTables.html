@@ -1,0 +1,150 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFExportMasters</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+function ChangeValue(checkbox, valobject) {
+        for(var i=0;i<20;i++) {
+                var object_name = checkbox+"_"+i ;
+                var obj = document.getElementById(object_name) ;
+                if (obj != null) {
+                        obj.checked = valobject.checked ;
+                }
+        } 
+                 return valobject.checked;
+}
+
+function ChangeOptValue(checkbox, objectname) {
+                checkbox.checked = true ;
+        for(var i=0;i<20;i++) {
+                var object_name = objectname+i ;
+                var obj = document.getElementById(object_name) ;
+                if (obj != null) {
+                                                if (obj.id != checkbox.id) {
+                                obj.checked = false ;
+                                                }
+                }
+        } 
+         return true;
+}
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-DED87D66
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-E481A27F
+
+var masterexport_DatePicker_lbldate1 = new Object(); 
+masterexport_DatePicker_lbldate1.format           = "ShortDate";
+masterexport_DatePicker_lbldate1.style            = "Styles/Spiritnew/Style.css";
+masterexport_DatePicker_lbldate1.relativePathPart = "../";
+masterexport_DatePicker_lbldate1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="60%">&nbsp; 
+      <!-- BEGIN EditableGrid masterexport -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_delete_data} {res:CCS_GridFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="5">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Caption">
+                  <th>&nbsp;{res:del_id}</th>
+ 
+                  <th>{res:action_description}</th>
+ 
+                  <th style="TEXT-ALIGN: center">{res:del_days}&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center">{res:ssf_delete_from}&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center">{res:CCS_SelectInterface}</th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center">&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center">&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center"><input onclick="ChangeValue('CheckBox_Update',this);" type="checkbox" name="{chkmarkall_Name}" {chkmarkall}></th>
+                </tr>
+ 
+                <!-- BEGIN Row -->
+                <!-- BEGIN RowError -->
+                <tr class="Error">
+                  <td colspan="5">{Error}</td>
+                </tr>
+                <!-- END RowError -->{masterexport:newrow1} 
+                <tr class="Row">
+                  <td align="left">{lblmaster_id}<input type="hidden" value="{type}" name="{type_Name}"></td> 
+                  <td>{del_description}&nbsp;<input type="hidden" value="{del_id}" name="{del_id_Name}"></td> 
+                  <td align="center">{del_days}&nbsp;</td> 
+                  <td align="center">&nbsp;<input style="TEXT-ALIGN: center" maxlength="10" size="10" value="{lbldate}" name="{lbldate_Name}">&nbsp; 
+                    <!-- BEGIN DatePicker DatePicker_lbldate1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_lbldate1 --></td> 
+                  <td align="center">
+                    <!-- BEGIN CheckBox CheckBox_Update --><input id="{CheckBox_Update_Name}" type="checkbox" value="1" name="{CheckBox_Update_Name}" {CheckBox_Update}><!-- END CheckBox CheckBox_Update --></td>
+                </tr>
+ <!-- END Row -->
+                <!-- BEGIN NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="5">{res:CCS_NoRecords} </td>
+                </tr>
+                <!-- END NoRecords -->
+                <tr class="Footer">
+                  <td style="TEXT-ALIGN: right" colspan="5">&nbsp; 
+                    <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:ssf_execute}" name="{Button_Name}"><!-- END Button Button_Submit --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END EditableGrid masterexport --></td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">&nbsp; </td>
+  </tr>
+</table>
+</p>
+<p><br>
+&nbsp;</p>
+</body>
+</html>

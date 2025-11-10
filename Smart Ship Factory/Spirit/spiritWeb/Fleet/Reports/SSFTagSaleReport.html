@@ -1,0 +1,303 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTagSaleReport</title>
+<meta content="CodeCharge Studio 3.1.1.0" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-9A4F2EFE
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-8817D111
+
+var ssf_addin_tags_sale_data_DatePicker_s_end_date1 = new Object(); 
+ssf_addin_tags_sale_data_DatePicker_s_end_date1.format           = "yyyymmdd";
+ssf_addin_tags_sale_data_DatePicker_s_end_date1.style            = "Fleet/Reports/../Styles/Spiritnew/Style.css";
+ssf_addin_tags_sale_data_DatePicker_s_end_date1.relativePathPart = "../../";
+ssf_addin_tags_sale_data_DatePicker_s_end_date1.themeVersion     = "3.0";
+
+var ssf_addin_tags_sale_data_DatePicker_s_date_to1 = new Object(); 
+ssf_addin_tags_sale_data_DatePicker_s_date_to1.format           = "yyyymmdd";
+ssf_addin_tags_sale_data_DatePicker_s_date_to1.style            = "Fleet/Reports/../Styles/Spiritnew/Style.css";
+ssf_addin_tags_sale_data_DatePicker_s_date_to1.relativePathPart = "../../";
+ssf_addin_tags_sale_data_DatePicker_s_date_to1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+<script language="JavaScript">
+function OpenPop_UpList(t_object)
+{
+    var FieldValue;
+
+    FieldValue = document.getElementById(t_object.name).value; 
+    var linkhref = t_object.href;
+    var win=window.open(linkhref+"?s_return_field="+t_object.name+"&s_v_id="+FieldValue, "CustomerList", "left=100,top=10,width=480,height=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+
+function OpenPop_SubAccntList(t_object)
+{
+    var FieldValue;
+
+    FieldValue = document.getElementById(t_object.name).value; 
+	var cust_id = document.getElementById("s_tkt_cust_id").value; 
+    var linkhref = t_object.href;
+    var win=window.open(linkhref+"?s_return_field="+t_object.name+"&s_v_id="+FieldValue+"&cust_id="+cust_id, "SubAccountList", "left=100,top=10,width=480,height=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record ssf_addin_tags_sale_data -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:ssf_addin_tags_sale_data} {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ssf_dates_range}</th>
+ 
+            <td><input maxlength="8" size="8" value="{s_date_from}" name="{s_date_from_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_end_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_end_date1 --></td> 
+            <td>&nbsp;<input maxlength="8" size="8" value="{s_date_to}" name="{s_date_to_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_date_to1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_date_to1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_time_range}</th>
+ 
+            <td><input maxlength="6" size="6" value="{s_time_from}" name="{s_time_from_Name}">&nbsp;</td> 
+            <td>&nbsp;<input maxlength="6" size="6" value="{s_time_to}" name="{s_time_to_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_cust_id}</th>
+ 
+            <td colspan="2"><input id="s_tkt_cust_id" value="{s_tkt_cust_id}" name="{s_tkt_cust_id_Name}">&nbsp;<a href="{Link1_Src}" id="CustomerList" onclick="OpenPop_UpList(this);return false;" name="s_tkt_cust_id">{res:ssf_customer_list}</a></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_subaccnt_id}</th>
+ 
+            <td colspan="2"><input id="s_tag_sale_tag_id" maxlength="25" size="25" value="{s_tag_sale_tag_id}" name="{s_tag_sale_tag_id_Name}">&nbsp;<a href="{Link2_Src}" id="SubaccntList" onclick="OpenPop_SubAccntList(this);return false;" name="s_tag_sale_tag_id">{res:ssf_subaccnt_list}</a></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:pump_id}</th>
+ 
+            <td colspan="2">
+              <select name="{s_pump_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_pump_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:grade_id}</th>
+ 
+            <td colspan="2">
+              <select name="{s_grade_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_grade_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="3">
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_addin_tags_sale_data --><br>
+&nbsp; 
+<form method="post" target="_blank">
+  <!-- BEGIN Button btnPrint --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button btnPrint --><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}">
+  <p></p>
+  <p>
+  <!-- BEGIN Report ssf_addin_tags_sale_data1 -->
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_addin_tags_sale_data} {res:CCS_ReportFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+          <!-- BEGIN Section Page_Header -->
+          <thead>
+            <tr class="Caption">
+              <th>
+              <!-- BEGIN Sorter Sorter_tag_sale_id --><a href="{Sort_URL}">{res:sale_id}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tag_sale_id -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_tag_sale_tag_id --><a href="{Sort_URL}">{res:tkt_subaccnt_id}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tag_sale_tag_id -->&nbsp; </th>
+ 
+              <th style="TEXT-ALIGN: left">&nbsp; 
+              <!-- BEGIN Sorter Sorter_tkt_cust_id --><a href="{Sort_URL}">{res:tkt_cust_id}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_cust_id --></th>
+ 
+              <th style="TEXT-ALIGN: left">&nbsp; 
+              <!-- BEGIN Sorter Sorter_tkt_cust_name --><a href="{Sort_URL}">{res:tkt_cust_name}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_cust_name --></th>
+ 
+              <th style="TEXT-ALIGN: center">
+              <!-- BEGIN Sorter Sorter_end_date --><a href="{Sort_URL}">{res:ssf_date}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_end_date -->&nbsp; </th>
+ 
+              <th style="TEXT-ALIGN: center">
+              <!-- BEGIN Sorter Sorter_end_time --><a href="{Sort_URL}">{res:ssf_time}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_end_time -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_pump_id --><a href="{Sort_URL}">{res:pump_id}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_pump_id -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_hose_id --><a href="{Sort_URL}">{res:hose_id}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_hose_id -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_grade_id --><a href="{Sort_URL}">{res:grade_id}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_grade_id -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_volume --><a href="{Sort_URL}">{res:volume}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_volume -->&nbsp; </th>
+ 
+              <th colspan="2">
+              <!-- BEGIN Sorter Sorter_money --><a href="{Sort_URL}">{res:money}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_money -->&nbsp; </th>
+            </tr>
+ 
+          </thead>
+ <!-- END Section Page_Header -->
+          <!-- BEGIN Section Detail -->
+          <tr class="Row">
+            <td style="TEXT-ALIGN: right">{tag_sale_id} </td> 
+            <td>{tag_sale_tag_id} </td> 
+            <td align="left">{tkt_cust_id}</td> 
+            <td align="left">{tkt_cust_name}</td> 
+            <td align="center">{end_date} </td> 
+            <td align="center">{end_time} </td> 
+            <td style="TEXT-ALIGN: right">{pump_id} </td> 
+            <td style="TEXT-ALIGN: right">{hose_id} </td> 
+            <td style="TEXT-ALIGN: right">{grade_id} </td> 
+            <td style="TEXT-ALIGN: right">{volume} </td> 
+            <td style="TEXT-ALIGN: right" colspan="2">{money} </td>
+          </tr>
+ <!-- END Section Detail -->
+          <!-- BEGIN Section Report_Footer -->
+          <!-- BEGIN Panel NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="12">{res:CCS_NoRecords}</td>
+          </tr>
+ <!-- END Panel NoRecords -->
+          <tr class="Total">
+            <td valign="baseline">{res:CCS_ReportTotal} </td> 
+            <td>&nbsp; </td> 
+            <td>&nbsp;</td> 
+            <td>&nbsp;</td> 
+            <td>&nbsp; </td> 
+            <td>&nbsp; </td> 
+            <td style="TEXT-ALIGN: right">&nbsp; </td> 
+            <td style="TEXT-ALIGN: right">&nbsp; </td> 
+            <td style="TEXT-ALIGN: right">&nbsp; </td> 
+            <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_volume} </td> 
+            <td style="TEXT-ALIGN: right" valign="baseline" colspan="2">{TotalSum_money} </td>
+          </tr>
+ <!-- END Section Report_Footer -->
+          <!-- BEGIN Section Page_Footer -->
+          <tfoot>
+            <tr class="Footer">
+              <td>{Report_CurrentDateTime}</td> 
+              <td style="TEXT-ALIGN: center" colspan="4">&nbsp;{res:CCS_TotalRecords}&nbsp;&nbsp;{Report_TotalRecords}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td> 
+              <td colspan="7">&nbsp;{res:CCS_ReportPageNumber1}&nbsp;{Report_CurrentPage} {res:CCS_ReportPageNumber2}&nbsp;{Report_TotalPages}&nbsp; 
+                <!-- BEGIN Navigator Navigator -->&nbsp; 
+                <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                <!-- BEGIN Pages -->
+                <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;<!-- END Navigator Navigator --><font style="BACKGROUND-COLOR: #ffffff">&nbsp;</font>&nbsp;</td>
+            </tr>
+          </tfoot>
+ 
+          <!-- BEGIN Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p style="PAGE-BREAK-AFTER: always"></p>
+  <p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- END Panel PageBreak --><!-- END Section Page_Footer -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- END Report ssf_addin_tags_sale_data1 --><br>
+  </p>
+</form>
+</body>
+</html>

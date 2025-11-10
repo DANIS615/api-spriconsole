@@ -1,0 +1,155 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFLogBookViewer</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+{Label1}
+<script language="JavaScript"> 
+var refreshinterval=5
+// Shall the coundown be displayed inside your status bar? Say "yes" or "no" below: 
+var displaycountdown="yes" 
+// Do not edit the code below 
+var starttime 
+var nowtime 
+var reloadseconds=0 
+var secondssinceloaded=0 
+
+function countdown() { 
+        nowtime= new Date() 
+        nowtime=nowtime.getTime() 
+        secondssinceloaded=(nowtime-starttime)/1000 
+        reloadseconds=Math.round(refreshinterval-secondssinceloaded) 
+        if (refreshinterval>=secondssinceloaded) 
+        {       var timer=setTimeout("countdown()",1000) 
+                if (displaycountdown=="yes") 
+                { 
+                        window.status="Page refreshing in "+reloadseconds+ " seconds" 
+                } 
+        } else { 
+                clearTimeout(timer) 
+                callViewData() 
+                                startTheTimer(); 
+                //window.location.reload(true) 
+        } 
+} 
+
+function startTheTimer() { 
+        starttime=new Date() 
+        starttime=starttime.getTime() 
+        countdown() 
+} 
+
+function callTimerData() {
+        callViewData() ;
+        startTheTimer();
+}
+//window.onload=starttime();
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-DED87D66
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-416404DD
+
+var log_search_DatePicker_s_slb_event_date1 = new Object(); 
+log_search_DatePicker_s_slb_event_date1.format           = "yyyymmdd";
+log_search_DatePicker_s_slb_event_date1.style            = "Styles/Spiritnew/Style.css";
+log_search_DatePicker_s_slb_event_date1.relativePathPart = "../";
+log_search_DatePicker_s_slb_event_date1.themeVersion     = "3.0";
+
+var log_search_DatePicker_s_date_to1 = new Object(); 
+log_search_DatePicker_s_date_to1.format           = "yyyymmdd";
+log_search_DatePicker_s_date_to1.style            = "Styles/Spiritnew/Style.css";
+log_search_DatePicker_s_date_to1.relativePathPart = "../";
+log_search_DatePicker_s_date_to1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<!-- BEGIN Record log_search -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix}&nbsp; {res:ssf_events_done}{res:CCS_SearchFormSuffix}</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:slb_event_id}</th>
+ 
+            <td colspan="2"><select name="{s_slb_event_id_Name}"><option value="">{res:CCS_SelectValue}</option>{s_slb_event_id_Options}</select></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_dates_range}</th>
+ 
+            <td><input maxlength="8" size="8" value="{s_date_from}" name="{s_date_from_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_slb_event_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_slb_event_date1 -->&nbsp;</td> 
+            <td>&nbsp;<input maxlength="8" size="8" value="{s_date_to}" name="{s_date_to_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_date_to1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_date_to1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_time_range}</th>
+ 
+            <td><input maxlength="6" size="6" value="{s_time_from}" name="{s_time_from_Name}"></td> 
+            <td>&nbsp;<input maxlength="6" size="6" value="{s_time_to}" name="{s_time_to_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:user_id}</th>
+ 
+            <td colspan="2">
+              <select name="{s_slb_userid_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_slb_userid_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="3"><a href="{Link1_Src}">{res:CCS_Clear}</a>&nbsp;&nbsp; 
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" onclick="callTimerData()" type="button" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record log_search --><br>
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td id="filas" valign="top"></td>
+  </tr>
+</table>
+</p>
+</body>
+</html>

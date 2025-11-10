@@ -1,0 +1,176 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFAdminBatch</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+{Label1}
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record ssf_addin_head_office_bat -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>&nbsp;{res:ssf_addin_head_office_bat}&nbsp; </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ho_batch_id}</th>
+ 
+            <td><input maxlength="10" size="10" value="{s_ho_batch_id}" name="{s_ho_batch_id_Name}"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_addin_head_office_bat --></p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="30%">
+      <!-- BEGIN Grid ssf_addin_head_office_bat1 -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>&nbsp;&nbsp; {res:ssf_addin_head_office_bat}</th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_ho_batch_id --><a href="{Sort_URL}">{res:ho_batch_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_ho_batch_id --></th>
+ 
+                <th style="TEXT-ALIGN: center">
+                <!-- BEGIN Sorter Sorter_ho_destination --><a href="{Sort_URL}">{res:ho_destination}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_ho_destination --></th>
+ 
+                <th style="TEXT-ALIGN: center">
+                <!-- BEGIN Sorter Sorter_ho_timestamp --><a href="{Sort_URL}">{res:ho_timestamp}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_ho_timestamp --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{ho_batch_id_Src}">{ho_batch_id}</a>&nbsp;</td> 
+                <td align="center">{ho_destination}&nbsp;</td> 
+                <td align="center">{ho_timestamp}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="3"><a href="{ssf_addin_head_office_bat1_Insert_Src}"></a>&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;<!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Grid ssf_addin_head_office_bat1 --></td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top" align="left">
+      <!-- BEGIN Record ssf_addin_head_office_bat2 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>&nbsp;&nbsp;{res:ssf_mnu_admin_batch} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:ho_batch_id}</th>
+ 
+                  <td>{ho_batch_id}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:ho_destination}</th>
+ 
+                  <td>{ho_destination}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:ho_timestamp}</th>
+ 
+                  <td>{ho_timestamp}</td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Resend --><input class="botonazul" onclick="callexport()" type="button" value="{res:ssf_resend}" name="{Button_Name}"><!-- END Button Button_Resend -->
+                    <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td>
+                </tr>
+ 
+                <tr class="Error">
+                  <td id="experror" align="left" colspan="2"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!-- END Record ssf_addin_head_office_bat2 --><br>
+      <br>
+    </td>
+  </tr>
+</table>
+</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+12/04/2007 15:04:49 [INFO]	 Voy a importar CustomerType 
+12/04/2007 15:04:49 [INFO]	 file ../data/inbox/. exportcusttype . a=
+12/04/2007 15:04:49 [INFO]	 file ../data/inbox/.. exportcusttype .. a=
+12/04/2007 15:04:49 [INFO]	 file ../data/inbox/export.lck exportcusttype export.lck a=
+12/04/2007 15:04:49 [INFO]	 file ../data/inbox/exportcustomers20070412125318.xml exportcusttype exportcustomers20070412125318.xml a=
+12/04/2007 15:04:49 [INFO]	 file ../data/inbox/exportcusttype20070412125350.xml exportcusttype exportcusttype20070412125350.xml a=0
+12/04/2007 15:05:16 [INFO]	 Voy a importar CustomerType 
+12/04/2007 15:05:16 [INFO]	 file ../data/inbox/. pirulocusttype . a=
+12/04/2007 15:05:16 [INFO]	 file ../data/inbox/.. pirulocusttype .. a=
+12/04/2007 15:05:16 [INFO]	 file ../data/inbox/export.lck pirulocusttype export.lck a=
+12/04/2007 15:05:16 [INFO]	 file ../data/inbox/exportcustomers20070412125318.xml pirulocusttype exportcustomers20070412125318.xml a=
+12/04/2007 15:05:16 [INFO]	 file ../data/inbox/exportcusttype20070412125350.xml pirulocusttype exportcusttype20070412125350.xml a=
+12/04/2007 15:05:52 [INFO]	 Voy a importar CustomerType 
+12/04/2007 15:05:52 [INFO]	 file ../data/inbox/. pirulocusttype . a=
+12/04/2007 15:05:52 [INFO]	 file ../data/inbox/.. pirulocusttype .. a=
+12/04/2007 15:05:52 [INFO]	 file ../data/inbox/export.lck pirulocusttype export.lck a=
+12/04/2007 15:05:52 [INFO]	 file ../data/inbox/exportcustomers20070412125318.xml pirulocusttype exportcustomers20070412125318.xml a=
+12/04/2007 15:05:52 [INFO]	 file ../data/inbox/exportcusttype20070412125350.xml pirulocusttype exportcusttype20070412125350.xml a=
+12/04/2007 15:06:14 [INFO]	 Voy a importar CustomerType 
+12/04/2007 15:06:14 [INFO]	 file ../data/inbox/. exportcusttype . a=
+12/04/2007 15:06:14 [INFO]	 file ../data/inbox/.. exportcusttype .. a=
+12/04/2007 15:06:14 [INFO]	 file ../data/inbox/export.lck exportcusttype export.lck a=
+12/04/2007 15:06:14 [INFO]	 file ../data/inbox/exportcustomers20070412125318.xml exportcusttype exportcustomers20070412125318.xml a=
+12/04/2007 15:06:14 [INFO]	 file ../data/inbox/exportcusttype20070412125350.xml exportcusttype exportcusttype20070412125350.xml a=1
+12/04/2007 15:06:43 [INFO]	 Voy a importar CustomerType 
+12/04/2007 15:06:43 [INFO]	 encuentra el archivo 
+12/04/2007 15:06:43 [INFO]	 encontré nodo CusTypeExport
+12/04/2007 15:06:43 [INFO]	 Se importó archivo ../data/inbox/exportcusttype20070412125350.xml
+12/04/2007 15:08:36 [INFO]	 Voy a importar Customer 
+12/04/2007 15:08:36 [INFO]	 encontré nodo CustomerExport
+12/04/2007 15:08:36 [INFO]	 Se importó archivo ../data/inbox/exportcustomers20070412125318.xml
+10/06/2008 12:27:36 [INFO]	 voy a abrir el file ../data/master/exportmasterconfg.xml
+10/06/2008 12:27:36 [INFO]	 voy a exportar Master Confg 
+10/06/2008 12:27:36 [INFO]	 voy a abrir el file ../data/master/exportmasterconfd.xml
+10/06/2008 12:27:36 [INFO]	 voy a exportar Master Confd 
+10/06/2008 12:27:36 [INFO]	 voy a abrir el file ../data/master/exportmastertender.xml
+10/06/2008 12:27:36 [INFO]	 voy a exportar Master Tender 
+10/06/2008 12:27:36 [INFO]	 voy a abrir el file ../data/master/exportmasteruom.xml
+10/06/2008 12:27:36 [INFO]	 voy a exportar Master Uom 
+10/06/2008 12:27:36 [INFO]	 voy a abrir el file ../data/master/exportmasterpostender.xml
+10/06/2008 12:27:36 [INFO]	 voy a exportar Master Pos Tender 
+10/06/2008 12:27:36 [INFO]	 voy a abrir el file ../data/master/exportmasterspeed.xml
+10/06/2008 12:27:36 [INFO]	 voy a exportar Master SpeedKeys 
+10/06/2008 12:27:36 [INFO]	 voy a exportar master SpeedKeyDetails 
+10/06/2008 12:27:36 [INFO]	 voy a exportar master SpeedKeyDetails 
+10/06/2008 12:27:36 [INFO]	 voy a abrir el file ../data/master/exportmastercateg.xml
+10/06/2008 12:27:36 [INFO]	 voy a exportar Master Categ 
+10/06/2008 12:27:36 [INFO]	 voy a abrir el file ../data/master/exportmasterprod.xml
+10/06/2008 12:27:36 [INFO]	 voy a exportar Master Prod 
+10/06/2008 12:27:37 [INFO]	 voy a abrir el file ../data/master/exportmastertaxgrp.xml
+10/06/2008 12:27:37 [INFO]	 voy a exportar Master Tax Group 
+10/06/2008 12:27:37 [INFO]	 voy a abrir el file ../data/master/exportmastertaxes.xml
+10/06/2008 12:27:37 [INFO]	 voy a exportar Master Taxes 
+10/06/2008 12:27:37 [INFO]	 voy a abrir el file ../data/master/exportmastercustomer.xml
+10/06/2008 12:27:37 [INFO]	 voy a exportar Master Customer 
+10/06/2008 12:27:37 [INFO]	 voy a abrir el file ../data/master/exportmastercustyp.xml
+10/06/2008 12:27:37 [INFO]	 voy a exportar Master Customer Type 
+10/06/2008 12:27:37 [INFO]	 voy a abrir el file ../data/master/exportmasterrecf.xml
+10/06/2008 12:27:37 [INFO]	 voy a exportar Master Receipt Format 

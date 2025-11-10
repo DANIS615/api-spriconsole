@@ -1,0 +1,32 @@
+15/09/2006 17:12:17  Voy a exportar 
+15/09/2006 17:12:17  export batch 24
+15/09/2006 17:13:00  Voy a exportar 
+15/09/2006 17:13:00  export batch 24
+15/09/2006 17:15:36  Voy a exportar 
+15/09/2006 17:15:36  export batch 24
+15/09/2006 17:15:36  new_batch 24
+15/09/2006 17:15:36  voy a exportar pumpPayments 24
+15/09/2006 17:15:36  arme la consulta  select * from ssf_addin_payments_data a,SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA b  where a.pay_sale_id = b.ho_trans_id  and b.ho_trans_type = 'APD' and b.ho_batch_id = 0
+15/09/2006 17:15:36  voy a exportar BatchPrice 24
+15/09/2006 17:15:36  arme la consulta  select *  from ssf_addin_prices_change a, ssf_addin_prices_change_detail b, SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA c  where a.price_change_id =  b.price_change_id  and a.price_change_id = c.ho_trans_id  and c.ho_trans_type = 'PRH' and c.ho_batch_id = 0
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=1
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=1
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=1
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=1
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=1
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=11
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=11
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=11
+15/09/2006 17:15:36  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =24 where ho_trans_type = 'PRH' and ho_trans_id=11
+15/09/2006 17:18:14  Voy a exportar 
+15/09/2006 17:18:14  export batch 25
+15/09/2006 17:18:14  new_batch 25
+15/09/2006 17:18:14  voy a exportar pumpPayments 25
+15/09/2006 17:18:14  arme la consulta  select * from ssf_addin_payments_data a,SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA b  where a.pay_sale_id = b.ho_trans_id  and b.ho_trans_type = 'APD' and b.ho_batch_id = 0
+15/09/2006 17:18:14  voy a exportar BatchPrice 25
+15/09/2006 17:18:14  arme la consulta  select *  from ssf_addin_prices_change a, ssf_addin_prices_change_detail b, SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA c  where a.price_change_id =  b.price_change_id  and a.price_change_id = c.ho_trans_id  and c.ho_trans_type = 'PRH' and c.ho_batch_id = 0
+15/09/2006 17:18:14  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =25 where ho_trans_type = 'PRH' and ho_trans_id=9
+15/09/2006 17:18:14  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =25 where ho_trans_type = 'PRH' and ho_trans_id=9
+15/09/2006 17:18:14  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =25 where ho_trans_type = 'PRH' and ho_trans_id=9
+15/09/2006 17:18:14  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =25 where ho_trans_type = 'PRH' and ho_trans_id=9
+15/09/2006 17:18:14  ejecuto  update SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA set ho_batch_id =25 where ho_trans_type = 'PRH' and ho_trans_id=9

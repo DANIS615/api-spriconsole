@@ -1,0 +1,488 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketProducts</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//page_product_record_Button_Delete_OnClick @30-18A2F3BF
+function page_product_record_Button_Delete_OnClick()
+{
+    var result;
+//End page_product_record_Button_Delete_OnClick
+
+//Confirmation Message @31-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_product_record_Button_Delete_OnClick @30-BC33A33A
+    return result;
+}
+//End Close page_product_record_Button_Delete_OnClick
+
+//page_product_record_Button_Cancel_OnClick @32-90DF61E0
+function page_product_record_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_product_record_Button_Cancel_OnClick
+
+//page_ssf_tkt_bar_codes_Button_Submit_OnClick @150-39165F7B
+function page_ssf_tkt_bar_codes_Button_Submit_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_tkt_bar_codes_Button_Submit_OnClick
+
+//page_ssf_tkt_bar_codes_Cancel_OnClick @151-270C06D2
+function page_ssf_tkt_bar_codes_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_tkt_bar_codes_Cancel_OnClick
+
+//bind_events @1-3DFF5535
+function bind_events() {
+    if (document.forms["product_record"]) check_and_bind('document.forms["product_record"].Button_Delete','onclick',page_product_record_Button_Delete_OnClick);
+    if (document.forms["product_record"]) check_and_bind('document.forms["product_record"].Button_Cancel','onclick',page_product_record_Button_Cancel_OnClick);
+    if (document.forms["ssf_tkt_bar_codes"]) check_and_bind('document.forms["ssf_tkt_bar_codes"].Button_Submit','onclick',page_ssf_tkt_bar_codes_Button_Submit_OnClick);
+    if (document.forms["ssf_tkt_bar_codes"]) check_and_bind('document.forms["ssf_tkt_bar_codes"].Cancel','onclick',page_ssf_tkt_bar_codes_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+<script language="JavaScript">
+
+var DomYes=document.getElementById?1:0;
+
+function getURLParam(strParamName){
+  var strReturn = "";
+  var strHref = window.location.href;
+  strParamName = strParamName.toLowerCase() ;
+  if ( strHref.indexOf("?") > -1 ){
+    var strQueryString = strHref.substr(strHref.indexOf("?")).toLowerCase();
+        strQueryString = strQueryString.substring(1) ;
+    var aQueryString = strQueryString.split("&");
+    for ( var iParam = 0; iParam < aQueryString.length; iParam++ ){
+        if ( aQueryString[iParam].indexOf(strParamName + "=") > -1 ){
+            var aParam = aQueryString[iParam].split("=");
+                if (aParam[0] == strParamName)    {
+                    strReturn = aParam[1];
+                    break;
+                }
+        }
+    }
+  }
+  return strReturn;
+} 
+
+
+function set_child_listbox(parentObject,childObject,childArray) {
+
+        //Clear clild listbox
+        for(var i=childObject.length;i>0;i--) {
+                childObject.options[i] = null;
+        } 
+
+        childObject.options[0] = new Option("Select Value","");
+        var selIndex = parentObject.options[parentObject.selectedIndex].value;
+        if (selIndex == "") {
+                childObject.disabled = true;
+        } else {
+                childObject.disabled = false;
+                var childIndex = 1;
+                for (i = 0; i < childArray.length; i++) {
+                        if (childArray[i][2] == selIndex) {
+                                childObject.options[childIndex] = new Option(childArray[i][1], childArray[i][0]);
+                                childIndex++;
+                        }
+                }
+        }
+
+        //Select the first option
+        childObject.selectedIndex = 0;
+        childObject.onchange();
+
+}
+
+function disable_child_listbox() {
+
+  //Disable second listbox 
+        //confirm (getURLParam("tkt_plu_id")) ;
+        if (getURLParam("tkt_plu_id") != "" || getURLParam("ssf_tkt_plu_Insert") == "insert" ) {
+                if (document.product_record.lstLevel1.selectedIndex == "") {
+                        document.product_record.lstLevel2.disabled = true;
+                } else if (document.product_record.lstLevel2.length == 1) { 
+                        document.product_record.lstLevel1.onchange();
+                }
+
+                //Disable third listbox   
+                if (document.product_record.lstLevel2.selectedIndex == "") {
+                        document.product_record.lstLevel3.disabled = true;
+                }
+        }
+}
+
+
+
+<!-- BEGIN Grid ssf_tkt_categories -->
+var CatLevel2 = new Array(<!-- BEGIN Row -->
+new Array("{tkt_category_id}","{tkt_category_desc}","{tkt_category_parent}")<!-- END Row --><!-- BEGIN Separator -->,<!-- END Separator -->
+);
+<!-- END Grid ssf_tkt_categories -->
+
+
+<!-- BEGIN Grid ssf_tkt_categories1 -->
+var CatLevel3 = new Array(<!-- BEGIN Row -->
+new Array("{tkt_category_id}","{tkt_category_desc}","{tkt_category_parent}")<!-- END Row --><!-- BEGIN Separator -->,<!-- END Separator -->
+);
+<!-- END Grid ssf_tkt_categories1 -->
+
+
+
+</script>
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader} </p>
+<p>
+<!-- BEGIN Record ssf_tkt_pluSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix}&nbsp;{res:ssf_products} {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:tkt_plu_id}</th>
+ 
+            <td><input maxlength="30" size="30" value="{s_tkt_plu_id}" name="{s_tkt_plu_id_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_plu_long_desc}</th>
+ 
+            <td><input maxlength="100" size="50" value="{s_tkt_plu_long_desc}" name="{s_tkt_plu_long_desc_Name}"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2"><a href="{ClearParameters_Src}">{res:CCS_Clear}</a>&nbsp; 
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_tkt_pluSearch --></p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="40%">
+      <p>
+      <!-- BEGIN Grid ssf_tkt_plu -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}&nbsp; {res:ssf_products}{res:CCS_GridFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_plu_id --><a href="{Sort_URL}">{res:tkt_plu_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_plu_id --></th>
+ 
+                <th>&nbsp;</th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_plu_long_desc --><a href="{Sort_URL}">{res:tkt_plu_long_desc}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_plu_long_desc --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_plu_type --><a href="{Sort_URL}">{res:tkt_plu_type}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_plu_type --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_plu_unit --><a href="{Sort_URL}">{res:tkt_plu_unit}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_plu_unit --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td><a href="{tkt_plu_id_Src}">{tkt_plu_id}</a>&nbsp;</td> 
+                <td align="center">&nbsp; 
+                  <!-- BEGIN ImageLink ImageLink1 --><a href="{ImageLink1}" title="{res:ssf_tkt_prices}"><img src="{imgprice}" border="0"></a><!-- END ImageLink ImageLink1 --></td> 
+                <td>{tkt_plu_long_desc}&nbsp;<input type="hidden" value="{h_tkt_plu_type}" name="{h_tkt_plu_type_Name}"></td> 
+                <td>{tkt_plu_type}&nbsp;</td> 
+                <td><a href="{tkt_plu_unit_Src}">{tkt_plu_unit}</a>&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="5">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="5">
+                  <!-- BEGIN Link ssf_tkt_plu_Insert --><a href="{ssf_tkt_plu_Insert_Src}">{res:CCS_InsertLink}</a><!-- END Link ssf_tkt_plu_Insert -->&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;<!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Grid ssf_tkt_plu --></p>
+    </td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">
+      <p>
+      <!-- BEGIN Record product_record -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_RecordFormPrefix}&nbsp;{res:grade_id} {res:CCS_RecordFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:tkt_plu_type}</th>
+ 
+                  <td>
+                    <select name="{tkt_plu_type_Name}" {disabledparam}>
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {tkt_plu_type_Options}
+                    </select>
+ <input type="hidden" value="{h_tkt_plu_type}" name="{h_tkt_plu_type_Name}"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_plu_id}</th>
+ 
+                  <td><input maxlength="30" size="30" value="{tkt_plu_id}" name="{tkt_plu_id_Name}" {readonlyparam}></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{Label1}</th>
+ 
+                  <td>
+                    <select onchange="set_child_listbox(this,document.product_record.lstLevel2,CatLevel2);" name="{lstLevel1_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {lstLevel1_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{Label2}</th>
+ 
+                  <td>
+                    <select onchange="set_child_listbox(this,document.product_record.lstLevel3,CatLevel3);" name="{lstLevel2_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {lstLevel2_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{Label3}</th>
+ 
+                  <td>
+                    <select name="{lstLevel3_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {lstLevel3_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_plu_long_desc}</th>
+ 
+                  <td><input maxlength="100" size="50" value="{tkt_plu_long_desc}" name="{tkt_plu_long_desc_Name}"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_plu_short_desc}</th>
+ 
+                  <td><input maxlength="41" size="41" value="{tkt_plu_short_desc}" name="{tkt_plu_short_desc_Name}"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_plu_unit}</th>
+ 
+                  <td>
+                    <select name="{tkt_plu_unit_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {tkt_plu_unit_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_plu_tax}</th>
+ 
+                  <td>
+                    <select name="{tkt_plu_tax_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {tkt_plu_tax_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_plu_enabled}</th>
+ 
+                  <td>
+                    <select name="{tkt_plu_enabled_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {tkt_plu_enabled_Options}
+                    </select>
+ &nbsp;&nbsp;</td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+                    <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!-- END Record product_record --></p>
+    </td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td valign="top">
+      <!-- BEGIN EditableGrid ssf_tkt_bar_codes -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_GridFormPrefix} {res:ssf_tkt_bar_codes} {res:CCS_GridFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="3">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Caption">
+                  <th>{res:tkt_plu_bar_code}</th>
+ 
+                  <th>{res:tkt_plu_long_desc}</th>
+ 
+                  <th>{res:CCS_Delete}</th>
+                </tr>
+ 
+                <!-- BEGIN Row -->
+                <!-- BEGIN RowError -->
+                <tr class="Error">
+                  <td colspan="3">{Error}</td>
+                </tr>
+                <!-- END RowError -->
+                <tr class="Row">
+                  <td><input maxlength="30" size="30" value="{tkt_plu_bar_code}" name="{tkt_plu_bar_code_Name}"><input type="hidden" value="{tkt_plu_id}" name="{tkt_plu_id_Name}"></td> 
+                  <td><input maxlength="41" size="41" value="{tkt_plu_bar_code_desc}" name="{tkt_plu_bar_code_desc_Name}"></td> 
+                  <td>
+                    <!-- BEGIN CheckBox CheckBox_Delete --><input type="checkbox" value="1" name="{CheckBox_Delete_Name}" {CheckBox_Delete}><!-- END CheckBox CheckBox_Delete -->&nbsp;</td>
+                </tr>
+ <!-- END Row -->
+                <!-- BEGIN NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="3">{res:CCS_NoRecords} </td>
+                </tr>
+                <!-- END NoRecords -->
+                <tr class="Footer">
+                  <td style="TEXT-ALIGN: right" colspan="3">
+                    <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Submit -->
+                    <!-- BEGIN Button Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Cancel --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!-- END EditableGrid ssf_tkt_bar_codes --><br>
+    </td>
+  </tr>
+</table>
+</p>
+</body>
+</html>

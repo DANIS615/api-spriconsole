@@ -1,0 +1,262 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFIngresoResolucionSAT</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-9A4F2EFE
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-5746DB0D
+
+var ssf_tkt_resolucion_sat1_DatePicker_ssf_sat_date_resolucion1 = new Object(); 
+ssf_tkt_resolucion_sat1_DatePicker_ssf_sat_date_resolucion1.format           = "dd-mm-yyyy";
+ssf_tkt_resolucion_sat1_DatePicker_ssf_sat_date_resolucion1.style            = "Styles/Spiritnew/Style.css";
+ssf_tkt_resolucion_sat1_DatePicker_ssf_sat_date_resolucion1.relativePathPart = "../../";
+ssf_tkt_resolucion_sat1_DatePicker_ssf_sat_date_resolucion1.themeVersion = "3.0";
+
+//End Date Picker Object Definitions
+
+//page_ssf_tkt_resolucion_sat1_ssf_sat_group_OnChange @71-2E6AAD6C
+function page_ssf_tkt_resolucion_sat1_ssf_sat_group_OnChange()
+{
+    var result;
+//End page_ssf_tkt_resolucion_sat1_ssf_sat_group_OnChange
+
+//Custom Code @94-2A29BDB7
+    // -------------------------
+    // Write your own code here.
+    document.forms["ssf_tkt_resolucion_sat1"].ssf_sat_group.value = document.forms["ssf_tkt_resolucion_sat1"].ssf_sat_group.value.toUpperCase();
+    // -------------------------
+//End Custom Code
+
+//Close page_ssf_tkt_resolucion_sat1_ssf_sat_group_OnChange @71-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_resolucion_sat1_ssf_sat_group_OnChange
+
+//page_ssf_tkt_resolucion_sat1_Button_Delete_OnClick @65-1BC98D00
+function page_ssf_tkt_resolucion_sat1_Button_Delete_OnClick()
+{
+    var result;
+//End page_ssf_tkt_resolucion_sat1_Button_Delete_OnClick
+
+//Confirmation Message @66-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_ssf_tkt_resolucion_sat1_Button_Delete_OnClick @65-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_resolucion_sat1_Button_Delete_OnClick
+
+//page_ssf_tkt_resolucion_sat1_Button_Cancel_OnClick @67-6EDEA073
+function page_ssf_tkt_resolucion_sat1_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_tkt_resolucion_sat1_Button_Cancel_OnClick
+
+//bind_events @1-5F08C99F
+function bind_events() {
+    if (document.forms["ssf_tkt_resolucion_sat1"]) check_and_bind('document.forms["ssf_tkt_resolucion_sat1"].Button_Delete','onclick',page_ssf_tkt_resolucion_sat1_Button_Delete_OnClick);
+    if (document.forms["ssf_tkt_resolucion_sat1"]) check_and_bind('document.forms["ssf_tkt_resolucion_sat1"].ssf_sat_group','onchange',page_ssf_tkt_resolucion_sat1_ssf_sat_group_OnChange);
+    if (document.forms["ssf_tkt_resolucion_sat1"]) check_and_bind('document.forms["ssf_tkt_resolucion_sat1"].Button_Cancel','onclick',page_ssf_tkt_resolucion_sat1_Button_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Grid ssf_tkt_resolucion_sat -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_GridFormPrefix} {res:ssf_tkt_resolucion_sat} {res:CCS_GridFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th>
+          <!-- BEGIN Sorter Sorter_ssf_sat_nro_resolucion --><a href="{Sort_URL}">{res:ssf_sat_nro_resolucion}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ssf_sat_nro_resolucion --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_ssf_sat_date_resolucion --><a href="{Sort_URL}">{res:ssf_sat_date_resolucion}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ssf_sat_date_resolucion --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_ssf_sat_group --><a href="{Sort_URL}">{res:ssf_sat_group}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ssf_sat_group --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_ssf_sat_desde --><a href="{Sort_URL}">{res:ssf_sat_desde}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ssf_sat_desde --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_ssf_sat_hasta --><a href="{Sort_URL}">{res:ssf_sat_hasta}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ssf_sat_hasta --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_ssf_sat_date --><a href="{Sort_URL}">{res:ssf_sat_date}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ssf_sat_date --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_ssf_sat_used --><a href="{Sort_URL}">{res:ssf_sat_used}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ssf_sat_used --></th>
+ 
+          <th>&nbsp; 
+          <!-- BEGIN Sorter Sorter_ssf_sat_type --><a href="{Sort_URL}">{res:ssf_sat_type}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ssf_sat_type --></th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td><a href="{ssf_sat_nro_resolucion_Src}">{ssf_sat_nro_resolucion}</a>&nbsp;</td> 
+          <td>{ssf_sat_date_resolucion}&nbsp;</td> 
+          <td>{ssf_sat_group}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{ssf_sat_desde}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{ssf_sat_hasta}&nbsp;</td> 
+          <td>{ssf_sat_date}&nbsp;</td> 
+          <td>{ssf_sat_used}&nbsp;</td> 
+          <td>&nbsp;{ssf_sat_type}</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="8">{res:CCS_NoRecords} </td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="8"><a href="{ssf_tkt_resolucion_sat_Insert_Src}">{res:CCS_InsertLink}</a>&nbsp; 
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+            <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+            <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+            <!-- BEGIN Pages -->
+            <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+            <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+            <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+            <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid ssf_tkt_resolucion_sat --><br>
+<!-- BEGIN Record ssf_tkt_resolucion_sat1 -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_RecordFormPrefix} {res:ssf_tkt_resolucion_sat} {res:CCS_RecordFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ssf_sat_nro_resolucion}</th>
+ 
+            <td><input maxlength="30" size="30" value="{ssf_sat_nro_resolucion}" name="{ssf_sat_nro_resolucion_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_sat_date_resolucion}</th>
+ 
+            <td><input readonly maxlength="10" size="10" value="{ssf_sat_date_resolucion}" name="{ssf_sat_date_resolucion_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_ssf_sat_date_resolucion1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_ssf_sat_date_resolucion1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_sat_group}</th>
+ 
+            <td><input maxlength="10" size="10" value="{ssf_sat_group}" name="{ssf_sat_group_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_sat_desde}</th>
+ 
+            <td><input maxlength="12" size="12" value="{ssf_sat_desde}" name="{ssf_sat_desde_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_sat_hasta}</th>
+ 
+            <td><input maxlength="12" size="12" value="{ssf_sat_hasta}" name="{ssf_sat_hasta_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_sat_type}</th>
+ 
+            <td>
+              <!-- BEGIN ListBox lstSatType -->
+              <select name="{lstSatType_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {lstSatType_Options}
+              </select>
+              <!-- END ListBox lstSatType -->
+              <!-- BEGIN TextBox ssf_sat_type --><input readonly value="{ssf_sat_type}" name="{ssf_sat_type_Name}"><!-- END TextBox ssf_sat_type -->&nbsp;&nbsp;</td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+              <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td>
+          </tr>
+        </table>
+        <input type="hidden" value="{ssf_sat_date}" name="{ssf_sat_date_Name}"><input type="hidden" value="{ssf_sat_used}" name="{ssf_sat_used_Name}"></td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_tkt_resolucion_sat1 --><br>
+</p>
+<br>
+<br>
+</body>
+</html>

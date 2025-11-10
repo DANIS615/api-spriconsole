@@ -1,0 +1,191 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFAccountBalance</title>
+<meta content="CodeCharge Studio 3.1.1.0" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript">
+function OpenPop_UpList(t_object)
+{
+    var FieldValue;
+
+    FieldValue = document.getElementById(t_object.name).value; 
+    var linkhref = t_object.href;
+    var win=window.open(linkhref+"?s_return_field="+t_object.name+"&s_v_id="+FieldValue, "CustomerList", "left=100,top=10,width=480,height=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record ssf_flt_customers_account -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix}&nbsp;{res:ssf_mnu_flt_rep_accbal} {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:tkt_cust_id}</th>
+ 
+            <td><input id="s_fca_accnt_cust_id" maxlength="15" size="15" value="{s_fca_accnt_cust_id}" name="{s_fca_accnt_cust_id_Name}">&nbsp;<a href="{Link1_Src}" id="CustomerList" onclick="OpenPop_UpList(this);return false;" name="s_fca_accnt_cust_id">{res:ssf_customer_list}</a></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_cust_name}</th>
+ 
+            <td><input maxlength="100" size="50" value="{s_tkt_cust_name}" name="{s_tkt_cust_name_Name}"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">&nbsp;<a href="{Link2_Src}">{res:CCS_Clear}</a>
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_flt_customers_account --><br>
+&nbsp; 
+<form method="post" target="_blank">
+  <!-- BEGIN Button btnPrint --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button btnPrint --><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}">
+  <p></p>
+  <p>
+  <!-- BEGIN Report ssf_flt_customers_account1 -->
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_mnu_flt_rep_accbal} {res:CCS_ReportFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Section Report_Header -->
+          <caption style="BORDER-RIGHT: #81a9d2 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #81a9d2 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 80%; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; BORDER-LEFT: #81a9d2 1px solid; COLOR: #000000; PADDING-TOP: 3px; BORDER-BOTTOM: #81a9d2 1px solid; WHITE-SPACE: nowrap; TEXT-ALIGN: left">{res:CCS_TotalRecords}&nbsp;{Report_TotalRecords}&nbsp;</caption>
+ <!-- END Section Report_Header -->
+          <!-- BEGIN Section Page_Header -->
+          <thead>
+            <tr class="Caption">
+              <th>
+              <!-- BEGIN Sorter Sorter_fca_accnt_cust_id --><a href="{Sort_URL}">{res:tkt_cust_id}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_fca_accnt_cust_id -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_tkt_cust_name --><a href="{Sort_URL}">{res:tkt_cust_name}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_cust_name -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_fca_accnt_id --><a href="{Sort_URL}">{res:tkt_accnt_id}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_fca_accnt_id -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_day_qty_trx_bal --><a href="{Sort_URL}">{res:lp_day_qty_trx}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_day_qty_trx_bal -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_day_amount_bal --><a href="{Sort_URL}">{res:lp_day_limit_amount}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_day_amount_bal -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_month_amount_bal --><a href="{Sort_URL}">{res:lp_month_limit_amount}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_month_amount_bal -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_day_volume_bal --><a href="{Sort_URL}">{res:lp_day_limit_volume}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_day_volume_bal -->&nbsp; </th>
+ 
+              <th>
+              <!-- BEGIN Sorter Sorter_month_volume_bal --><a href="{Sort_URL}">{res:lp_month_limit_volume}</a> 
+              <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+              <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_month_volume_bal -->&nbsp; </th>
+            </tr>
+ 
+          </thead>
+ <!-- END Section Page_Header -->
+          <!-- BEGIN Section Detail -->
+          <tr class="Row">
+            <td>{fca_accnt_cust_id} </td> 
+            <td>{tkt_cust_name} </td> 
+            <td>{fca_accnt_id} </td> 
+            <td style="TEXT-ALIGN: right">{day_qty_trx_bal} </td> 
+            <td style="TEXT-ALIGN: right; {ssf_flt_customers_account1:day_amount_negbal}">{day_amount_bal} </td> 
+            <td style="TEXT-ALIGN: right; {ssf_flt_customers_account1:month_amount_nebal}">{month_amount_bal} </td> 
+            <td style="TEXT-ALIGN: right; {ssf_flt_customers_account1:day_volume_negbal}">{day_volume_bal} </td> 
+            <td style="TEXT-ALIGN: right; {ssf_flt_customers_account1:month_volume_negbal}">{month_volume_bal} </td>
+          </tr>
+ <!-- END Section Detail -->
+          <!-- BEGIN Section Report_Footer -->
+          <!-- BEGIN Panel NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="8">{res:CCS_NoRecords}</td>
+          </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+          <!-- BEGIN Section Page_Footer -->
+          <tfoot>
+            <tr class="Footer">
+              <td>{Report_CurrentDateTime}</td> 
+              <td style="TEXT-ALIGN: right" colspan="7">{res:CCS_ReportPageNumber1} {Report_CurrentPage} {res:CCS_ReportPageNumber2} {Report_TotalPages} 
+                <!-- BEGIN Navigator Navigator -->
+                <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                <!-- BEGIN Pages -->
+                <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+            </tr>
+          </tfoot>
+ 
+          <!-- BEGIN Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p style="PAGE-BREAK-AFTER: always"></p>
+  <p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- END Panel PageBreak --><!-- END Section Page_Footer -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- END Report ssf_flt_customers_account1 --><br>
+  </p>
+</form>
+</body>
+</html>

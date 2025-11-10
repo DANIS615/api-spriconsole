@@ -1,0 +1,6 @@
+1, "IP Address"
+2, "IP Address or Machine Name where you want to connect"
+3, "Port"
+4, "Port or Socket where you want to connect"
+5, "No IP Address specified"
+6, "No valid socket specified"

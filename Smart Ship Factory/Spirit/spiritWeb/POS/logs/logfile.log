@@ -1,0 +1,403 @@
+08/01/2007 10:54:52  Voy a importar Unit of Meassures 
+08/01/2007 10:54:52  dir es ../../data/master
+08/01/2007 10:54:52  Se importó archivo ../../data/masterexportmasteruom.xml
+08/01/2007 10:56:19  Voy a importar Unit of Meassures 
+08/01/2007 10:56:19  dir es ../../data/master/
+08/01/2007 10:56:19  encontré nodo uom
+08/01/2007 10:56:19  Se importó archivo ../../data/master/exportmasteruom.xml
+08/01/2007 10:56:56  voy a exportar Master Uom 
+08/01/2007 10:57:11  voy a exportar Master Uom 
+08/01/2007 10:57:32  Voy a importar Unit of Meassures 
+08/01/2007 10:57:32  dir es ../../data/master/
+08/01/2007 10:57:32  encontré nodo uom
+08/01/2007 10:57:32  Se importó archivo ../../data/master/exportmasteruom.xml
+08/01/2007 10:58:06  Voy a importar Unit of Meassures 
+08/01/2007 10:58:06  dir es ../../data/master/
+08/01/2007 10:58:06  encontré nodo uom
+08/01/2007 10:58:06  Se importó archivo ../../data/master/exportmasteruom.xml
+08/01/2007 11:00:55  voy a exportar Master Categ 
+08/01/2007 11:04:09  Voy a importar Categorias 
+08/01/2007 11:04:09  encontré nodo categoria
+08/01/2007 11:04:09  Se importó archivo ../../data/master/exportmastercateg.xml
+08/01/2007 11:09:28  Voy a importar Categorias 
+08/01/2007 11:09:28  encontré nodo categoria
+08/01/2007 11:09:28  Se importó archivo ../../data/master/exportmastercateg.xml
+08/01/2007 11:16:45  voy a exportar Master Prod 
+08/01/2007 11:18:25  Voy a importar Precios 
+08/01/2007 11:18:25  Voy a importar Grupos de Impuestos 
+08/01/2007 11:18:25  Voy a importar Impuestos 
+08/01/2007 11:18:25  Voy a importar Productos 
+08/01/2007 11:18:25  encontré nodo producto
+08/01/2007 11:18:25  Se importó archivo ../../data/master/exportmasterprod.xml
+08/01/2007 11:18:25  Voy a importar Categorias 
+08/01/2007 11:18:25  Voy a importar Unit of Meassures 
+08/01/2007 11:22:50  Voy a importar Precios 
+08/01/2007 11:22:50  Voy a importar Grupos de Impuestos 
+08/01/2007 11:22:50  Voy a importar Impuestos 
+08/01/2007 11:22:50  Voy a importar Productos 
+08/01/2007 11:22:50  encontré nodo producto
+08/01/2007 11:22:50  Se importó archivo ../../data/master/exportmasterprod.xml
+08/01/2007 11:22:50  Voy a importar Categorias 
+08/01/2007 11:22:50  Voy a importar Unit of Meassures 
+08/01/2007 11:27:46  Voy a importar Precios 
+08/01/2007 11:27:46  Voy a importar Grupos de Impuestos 
+08/01/2007 11:27:46  Voy a importar Impuestos 
+08/01/2007 11:27:46  Voy a importar Productos 
+08/01/2007 11:27:46  encontré nodo producto
+08/01/2007 11:27:46  Se importó archivo ../../data/master/exportmasterprod.xml
+08/01/2007 11:27:46  Voy a importar Categorias 
+08/01/2007 11:27:46  Voy a importar Unit of Meassures 
+08/01/2007 11:32:44  Voy a importar Precios 
+08/01/2007 11:32:44  Voy a importar Grupos de Impuestos 
+08/01/2007 11:32:44  Voy a importar Impuestos 
+08/01/2007 11:32:44  Voy a importar Productos 
+08/01/2007 11:32:44  encontré nodo producto
+08/01/2007 11:32:44  Se importó archivo ../../data/master/exportmasterprod.xml
+08/01/2007 11:32:44  Voy a importar Categorias 
+08/01/2007 11:32:44  Voy a importar Unit of Meassures 
+08/01/2007 11:33:20  Voy a importar Precios 
+08/01/2007 11:33:20  Voy a importar Grupos de Impuestos 
+08/01/2007 11:33:20  Voy a importar Impuestos 
+08/01/2007 11:33:20  Voy a importar Productos 
+08/01/2007 11:33:20  encontré nodo producto
+08/01/2007 11:33:20  Se importó archivo ../../data/master/exportmasterprod.xml
+08/01/2007 11:33:20  Voy a importar Categorias 
+08/01/2007 11:33:20  Voy a importar Unit of Meassures 
+08/01/2007 11:47:05  voy a exportar Master Tax Group 
+08/01/2007 11:55:55  Voy a importar Grupos de Impuestos 
+08/01/2007 11:55:55  encontré nodo grupo impuesto
+08/01/2007 11:55:55  el nodo es TODOS
+08/01/2007 11:55:55  y ejecute la consulta  update ssf_tkt_catalog  set tkt_catalog_value = 'Todos los impuestos'  where tkt_catalog_id = 'tax_group_id' and tkt_catalog_code = 'TODOS'
+08/01/2007 11:55:55  el nodo es IVAII
+08/01/2007 11:55:55  y ejecute la consulta  update ssf_tkt_catalog  set tkt_catalog_value = 'Iva + Impuesto interno'  where tkt_catalog_id = 'tax_group_id' and tkt_catalog_code = 'IVAII'
+08/01/2007 11:55:55  el nodo es GRAL
+08/01/2007 11:55:55  y ejecute la consulta  update ssf_tkt_catalog  set tkt_catalog_value = 'General'  where tkt_catalog_id = 'tax_group_id' and tkt_catalog_code = 'GRAL'
+08/01/2007 11:55:55  Se importó archivo ../../data/master/exportmastertaxgrp.xml
+08/01/2007 11:56:24  Voy a importar Grupos de Impuestos 
+08/01/2007 11:56:24  encontré nodo grupo impuesto
+08/01/2007 11:56:24  el nodo es TODOS
+08/01/2007 11:56:24  y ejecute la consulta  update ssf_tkt_catalog  set tkt_catalog_value = 'Todos los impuestos'  where tkt_catalog_id = 'tax_group_id' and tkt_catalog_code = 'TODOS'
+08/01/2007 11:56:24  el nodo es IVAII
+08/01/2007 11:56:24  y ejecute la consulta  update ssf_tkt_catalog  set tkt_catalog_value = 'Iva + Impuesto interno'  where tkt_catalog_id = 'tax_group_id' and tkt_catalog_code = 'IVAII'
+08/01/2007 11:56:24  el nodo es GRAL
+08/01/2007 11:56:24  y ejecute la consulta  update ssf_tkt_catalog  set tkt_catalog_value = 'General'  where tkt_catalog_id = 'tax_group_id' and tkt_catalog_code = 'GRAL'
+08/01/2007 11:56:24  Se importó archivo ../../data/master/exportmastertaxgrp.xml
+08/01/2007 11:58:44  voy a exportar Master Taxes 
+08/01/2007 12:00:49  Voy a importar Impuestos 
+08/01/2007 12:00:49  encontré nodo impuesto
+08/01/2007 12:00:49  Se importó archivo ../../data/master/exportmastertaxes.xml
+08/01/2007 14:07:03  voy a exportar Master Pos Tender 
+08/01/2007 14:12:59  Voy a importar PosTender 
+08/01/2007 14:12:59  encontré nodo PosTender
+08/01/2007 14:12:59  Se importó archivo ../../data/master/exportmasterpostender.xml
+08/01/2007 15:03:16  voy a exportar Master SpeedKeys 
+08/01/2007 15:03:16  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:03:16  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:03:16  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:06:18  voy a exportar Master SpeedKeys 
+08/01/2007 15:06:18  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:06:18  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:06:18  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:07:41  voy a exportar Master SpeedKeys 
+08/01/2007 15:07:41  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:07:41  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:07:41  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:20:06  voy a exportar Master SpeedKeys 
+08/01/2007 15:20:06  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:20:06  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:20:06  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:20:37  voy a exportar Master SpeedKeys 
+08/01/2007 15:20:37  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:20:37  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'speedkey_group_id'
+08/01/2007 15:20:37  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:20:37  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'speedkey_group_id'
+08/01/2007 15:20:37  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:20:37  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'speedkey_group_id'
+08/01/2007 15:22:13  voy a exportar Master SpeedKeys 
+08/01/2007 15:22:13  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:22:13  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'SHOP'
+08/01/2007 15:22:13  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:22:13  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'PAY_SHOP'
+08/01/2007 15:22:13  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:22:13  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'SKPRUEBA'
+08/01/2007 15:22:35  voy a exportar Master SpeedKeys 
+08/01/2007 15:22:35  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:22:35  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'SHOP'
+08/01/2007 15:22:35  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:22:35  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'PAY_SHOP'
+08/01/2007 15:22:35  voy a exportar master SpeedKeyDetails 
+08/01/2007 15:22:35  arme la consulta  select * from ssf_tkt_speed_keys  where tkt_speed_id = 'SKPRUEBA'
+08/01/2007 15:32:55  Voy a importar Speed Keys 
+08/01/2007 15:32:55  encontré nodo grupo SpeedKey
+08/01/2007 15:32:55  Se importó archivo ../../data/master/exportmasterspeed.xml
+08/01/2007 15:33:25  Voy a importar Speed Keys 
+08/01/2007 15:33:25  encontré nodo grupo SpeedKey
+08/01/2007 15:33:26  Se importó archivo ../../data/master/exportmasterspeed.xml
+08/01/2007 15:36:42  Voy a importar Speed Keys 
+08/01/2007 15:36:42  encontré nodo grupo SpeedKey
+08/01/2007 15:36:42  encontre Array
+(
+    [SpeedKeyDetailLine] => Array
+        (
+            [0] => Array
+                (
+                    [tkt_speed_id] => SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => 1
+                    [tkt_speed_param] => 
+                )
+
+            [1] => Array
+                (
+                    [tkt_speed_id] => SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 2
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => 2
+                    [tkt_speed_param] => 
+                )
+
+            [2] => Array
+                (
+                    [tkt_speed_id] => SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 3
+                    [tkt_speed_group_id] => Bebidas
+                    [tkt_speed_value] => Bebidas
+                    [tkt_speed_param] => 
+                )
+
+            [3] => Array
+                (
+                    [tkt_speed_id] => SHOP
+                    [tkt_speed_parent_group_id] => Bebidas
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => 2
+                    [tkt_speed_param] => 
+                )
+
+        )
+
+)
+
+08/01/2007 15:36:42  encontre Array
+(
+    [SpeedKeyDetailLine] => Array
+        (
+            [0] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 2
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => TICKET
+                    [tkt_speed_param] => 
+                )
+
+            [1] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 3
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => CUPON
+                    [tkt_speed_param] => 
+                )
+
+            [2] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => CASH
+                    [tkt_speed_param] => 
+                )
+
+            [3] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 4
+                    [tkt_speed_group_id] => Otro_Grupo
+                    [tkt_speed_value] => Otro Grupo
+                    [tkt_speed_param] => 
+                )
+
+            [4] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => Otro_Grupo
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => Nada
+                    [tkt_speed_value] => 
+                    [tkt_speed_param] => 
+                )
+
+            [5] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => Nada
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => chacha
+                    [tkt_speed_value] => 
+                    [tkt_speed_param] => 
+                )
+
+        )
+
+)
+
+08/01/2007 15:36:42  Se importó archivo ../../data/master/exportmasterspeed.xml
+08/01/2007 15:38:28  Voy a importar Speed Keys 
+08/01/2007 15:38:28  encontré nodo grupo SpeedKey
+08/01/2007 15:38:28  encontre Array
+(
+    [SpeedKeyDetailLine] => Array
+        (
+            [0] => Array
+                (
+                    [tkt_speed_id] => SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => 1
+                    [tkt_speed_param] => 
+                )
+
+            [1] => Array
+                (
+                    [tkt_speed_id] => SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 2
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => 2
+                    [tkt_speed_param] => 
+                )
+
+            [2] => Array
+                (
+                    [tkt_speed_id] => SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 3
+                    [tkt_speed_group_id] => Bebidas
+                    [tkt_speed_value] => Bebidas
+                    [tkt_speed_param] => 
+                )
+
+            [3] => Array
+                (
+                    [tkt_speed_id] => SHOP
+                    [tkt_speed_parent_group_id] => Bebidas
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => 2
+                    [tkt_speed_param] => 
+                )
+
+        )
+
+)
+
+08/01/2007 15:38:28  encontre Array
+(
+    [SpeedKeyDetailLine] => Array
+        (
+            [0] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 2
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => TICKET
+                    [tkt_speed_param] => 
+                )
+
+            [1] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 3
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => CUPON
+                    [tkt_speed_param] => 
+                )
+
+            [2] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => 
+                    [tkt_speed_value] => CASH
+                    [tkt_speed_param] => 
+                )
+
+            [3] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => MAIN
+                    [tkt_speed_order] => 4
+                    [tkt_speed_group_id] => Otro_Grupo
+                    [tkt_speed_value] => Otro Grupo
+                    [tkt_speed_param] => 
+                )
+
+            [4] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => Otro_Grupo
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => Nada
+                    [tkt_speed_value] => 
+                    [tkt_speed_param] => 
+                )
+
+            [5] => Array
+                (
+                    [tkt_speed_id] => PAY_SHOP
+                    [tkt_speed_parent_group_id] => Nada
+                    [tkt_speed_order] => 1
+                    [tkt_speed_group_id] => chacha
+                    [tkt_speed_value] => 
+                    [tkt_speed_param] => 
+                )
+
+        )
+
+)
+
+08/01/2007 15:38:28  Se importó archivo ../../data/master/exportmasterspeed.xml
+08/01/2007 15:41:09  voy a exportar Master Customer 
+08/01/2007 15:45:36  Voy a importar Customer 
+08/01/2007 15:45:36  encontré nodo CustomerExport
+08/01/2007 15:45:36  Se importó archivo ../../data/master/exportmastercustomer.xml
+08/01/2007 15:46:25  voy a exportar Master Customer 
+08/01/2007 15:46:44  Voy a importar Customer 
+08/01/2007 15:46:44  encontré nodo CustomerExport
+08/01/2007 15:46:44  Se importó archivo ../../data/master/exportmastercustomer.xml
+08/01/2007 15:47:09  Voy a importar Customer 
+08/01/2007 15:47:09  encontré nodo CustomerExport
+08/01/2007 15:47:09  Se importó archivo ../../data/master/exportmastercustomer.xml
+08/01/2007 15:49:06  voy a exportar Master Customer Type 
+08/01/2007 15:49:06  voy a exportar Master Receipt Format 
+08/01/2007 15:53:16  Voy a importar CustomerType 
+08/01/2007 15:53:16  encontré nodo CusTypeExport
+08/01/2007 15:53:16  Se importó archivo ../../data/master/exportmastercustyp.xml
+08/01/2007 15:53:16  Voy a importar ReceiptFormat 
+08/01/2007 15:53:16  encontré nodo RecFormatExport
+08/01/2007 15:53:16  Se importó archivo ../../data/master/exportmasterrecf.xml
+08/01/2007 16:02:11  Voy a importar Speed Keys 
+08/01/2007 16:02:11  encontré nodo grupo SpeedKey
+08/01/2007 16:02:11  Se importó archivo ../../data/master/exportmasterspeed.xml
+08/01/2007 18:07:47  voy a exportar Master Uom 
+08/01/2007 18:07:47  voy a exportar Master Pos Tender 
+08/01/2007 18:08:18  Voy a importar Unit of Meassures 
+08/01/2007 18:08:18  encontré nodo uom
+08/01/2007 18:08:18  Se importó archivo ../../data/master/exportmasteruom.xml
+08/01/2007 18:08:18  Voy a importar PosTender 
+08/01/2007 18:08:18  encontré nodo PosTender
+08/01/2007 18:08:18  Se importó archivo ../../data/master/exportmasterpostender.xml

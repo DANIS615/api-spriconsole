@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFPriceChangeReport</title>
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<link href="{formstyle}" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-DED87D66
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-CCCFFEF0
+
+var a_bSearch_DatePicker_s_application_date1 = new Object(); 
+a_bSearch_DatePicker_s_application_date1.format           = "yyyymmdd";
+a_bSearch_DatePicker_s_application_date1.style            = "Styles/Spiritnew/Style.css";
+a_bSearch_DatePicker_s_application_date1.relativePathPart = "../";
+a_bSearch_DatePicker_s_application_date1.themeVersion     = "3.0";
+
+var a_bSearch_DatePicker_e_application_date1 = new Object(); 
+a_bSearch_DatePicker_e_application_date1.format           = "yyyymmdd";
+a_bSearch_DatePicker_e_application_date1.style            = "Styles/Spiritnew/Style.css";
+a_bSearch_DatePicker_e_application_date1.relativePathPart = "../";
+a_bSearch_DatePicker_e_application_date1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+</head>
+<body>
+{SSFSpiritHeader} 
+<!-- BEGIN Record a_bSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:Price_Change_Filter}
+            {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:application_date}</th>
+ 
+            <td><input readonly maxlength="11" size="11" value="{s_application_date}" name="{s_application_date_Name}">
+              <!-- BEGIN DatePicker DatePicker_s_application_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_application_date1 --></td> 
+            <td>&nbsp;<input readonly size="13" value="{e_application_date}" name="{e_application_date_Name}" style="WIDTH: 101px; HEIGHT: 22px">
+              <!-- BEGIN DatePicker DatePicker_e_application_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_e_application_date1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:grade_id}</th>
+ 
+            <td colspan="2">
+              <select name="{s_grade_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_grade_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:price_level}</th>
+ 
+            <td colspan="2">
+              <select name="{s_price_level_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_price_level_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="3"><a href="{Link1_Src}">{res:CCS_Clear}</a> 
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record a_bSearch --><br>
+<!-- BEGIN Link Link1 --><a href="{Link1_Src}"><img height="24" src="../Styles/images/excel.gif" width="71" border="0"></a><!-- END Link Link1 --><br>
+<br>
+<form method="post" target="_blank">
+  <!-- BEGIN Button Button2 --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button Button2 --><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}">&nbsp;&nbsp;&nbsp;&nbsp; 
+  <!-- BEGIN Report ssf_addin_prices_change_a -->
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft">{imgSpacer}</td> 
+            <th>{res:CCS_ReportFormPrefix} {res:Change_Prices_Report}
+            {res:CCS_ReportFormSuffix} </th>
+ 
+            <td class="HeaderRight">{imgSpacer}</td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Section Report_Header -->
+          <tr class="Row">
+            <td colspan="6">{res:CCS_TotalRecords}&nbsp;{Report_TotalRecords}&nbsp; <input type="hidden" size="5" value="{s_application_date}" name="{s_application_date_Name}" style="WIDTH: 42px; HEIGHT: 22px"><input type="hidden" size="6" value="{e_application_date}" name="{e_application_date_Name}" style="WIDTH: 44px; HEIGHT: 22px"><input type="hidden" size="6" value="{s_price_level}" name="{s_price_level_Name}" style="WIDTH: 44px; HEIGHT: 22px"><input type="hidden" size="2" value="{s_grade_id}" name="{s_grade_id_Name}" style="WIDTH: 45px; HEIGHT: 22px"><input type="hidden" size="5" value="{convert}" name="{convert_Name}" style="WIDTH: 38px; HEIGHT: 22px"></td>
+          </tr>
+ <!-- END Section Report_Header -->
+          <!-- BEGIN Section Page_Header -->
+          <tr class="Caption">
+            <th {vcol1}>
+            <!-- BEGIN Sorter Sorter_price_change_id --><a href="{Sort_URL}">{res:price_change_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_price_change_id -->&nbsp; 
+            <!-- BEGIN CheckBox col1 --><input type="checkbox" value="1" name="{col1_Name}" {col1}><!-- END CheckBox col1 --></th>
+ 
+            <th {vcol2}>
+            <!-- BEGIN Sorter Sorter_grade_id --><a href="{Sort_URL}">{res:grade_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_grade_id -->&nbsp; 
+            <!-- BEGIN CheckBox col2 --><input type="checkbox" value="1" name="{col2_Name}" {col2}><!-- END CheckBox col2 --></th>
+ 
+            <th {vcol3}>
+            <!-- BEGIN Sorter Sorter_price_level --><a href="{Sort_URL}">{res:price_level}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_price_level -->&nbsp; 
+            <!-- BEGIN CheckBox col3 --><input type="checkbox" value="1" name="{col3_Name}" {col3}><!-- END CheckBox col3 --></th>
+ 
+            <th {vcol4}>
+            <!-- BEGIN Sorter Sorter_application_date --><a href="{Sort_URL}">{res:application_date}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_application_date -->&nbsp; 
+            <!-- BEGIN CheckBox col4 --><input type="checkbox" value="1" name="{col4_Name}" {col4}><!-- END CheckBox col4 --></th>
+ 
+            <th {vcol5}>
+            <!-- BEGIN Sorter Sorter_application_time --><a href="{Sort_URL}">{res:application_time}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_application_time -->&nbsp; 
+            <!-- BEGIN CheckBox col5 --><input type="checkbox" value="1" name="{col5_Name}" {col5}><!-- END CheckBox col5 --></th>
+ 
+            <th {vcol6}>
+            <!-- BEGIN Sorter Sorter_ppu --><a href="{Sort_URL}">{res:ppu}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ppu -->&nbsp; 
+            <!-- BEGIN CheckBox col6 --><input type="checkbox" value="1" name="{col6_Name}" {col6}><!-- END CheckBox col6 --></th>
+          </tr>
+ <!-- END Section Page_Header -->
+          <!-- BEGIN Section Detail -->
+          <tr class="Row">
+            <td {vcol1}>{price_change_id} </td> 
+            <td {vcol2}>{grade_id} </td> 
+            <td {vcol3}>{price_level1} </td> 
+            <td {vcol4}>{application_date} </td> 
+            <td {vcol5}>{application_time}&nbsp; </td> 
+            <td {vcol6}>{ppu}</td>
+          </tr>
+ <!-- END Section Detail -->
+          <!-- BEGIN Section Report_Footer -->
+          <!-- BEGIN Panel NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="6">{res:CCS_NoRecords} </td>
+          </tr>
+ <!-- END Panel NoRecords -->
+          <tr class="Total">
+            <td {vcol1}>&nbsp; </td> 
+            <td {vcol2}>&nbsp;</td> 
+            <td {vcol3}>&nbsp; </td> 
+            <td {vcol4}>&nbsp; </td> 
+            <td {vcol5}>&nbsp; </td> 
+            <td valign="baseline" {vcol6}>{res:Min}{TotalMin_ppu}<br>
+              {res:Max}{TotalMax_ppu}<br>
+              {res:Avg}{TotalAvg_ppu} </td>
+          </tr>
+ <!-- END Section Report_Footer -->
+          <!-- BEGIN Section Page_Footer -->
+          <tr class="Footer">
+            <td style="TEXT-ALIGN: right" colspan="6">{res:CCS_ReportPageNumber1}
+              {Report_CurrentPage} {res:CCS_ReportPageNumber2}
+              {Report_TotalPages} 
+              <!-- BEGIN Navigator Navigator -->
+              <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+              <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+              <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+              <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+              <!-- BEGIN Pages -->
+              <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+              <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+              <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+              <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+              <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+              <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+          </tr>
+ 
+          <!-- BEGIN Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p style="PAGE-BREAK-AFTER: always"></p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- END Panel PageBreak --><!-- END Section Page_Footer -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- END Report ssf_addin_prices_change_a --><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketClosePeriod</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+<script language="JavaScript">
+function reload_page() {
+  var sel_index = document.ssf_tkt_periodsSearch.s_tkt_period_type.options[document.ssf_tkt_periodsSearch.s_tkt_period_type.selectedIndex].value;
+  if (sel_index != "") {
+         document.location.href = document.location.pathname + "?" + "s_tkt_period_type=" + sel_index ;
+  }
+}
+</script>
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+{Label2}
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record ssf_tkt_periodsSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:ssf_tkt_periods} {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:tkt_period_type}</th>
+ 
+            <td>
+              <select id="s_tkt_period_type" onchange="reload_page();" name="{s_tkt_period_type_Name}">
+                {s_tkt_period_type_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_period_group}</th>
+ 
+            <td>
+              <select id="lstperiodGroup" name="{lstperiodGroup_Name}" {disabledparam}>
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {lstperiodGroup_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button btnClose --><input class="botonazul" onclick="callclose()" type="button" value="{res:close_period}" name="{Button_Name}"><!-- END Button btnClose --></td>
+          </tr>
+	      <tr class="Error">
+	        <td id="closerror" align="left" colspan="2"></td>
+	      </tr>
+		</table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_tkt_periodsSearch --></p>
+<p><br>
+</p>
+<p>
+<!-- BEGIN Grid ssf_tkt_periods -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_GridFormPrefix} {res:ssf_tkt_periods} {res:CCS_GridFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th>&nbsp; 
+          <!-- BEGIN Sorter Sorter_tkt_period_group --><a href="{Sort_URL}">{res:tkt_period_group_id}</a><!-- END Sorter Sorter_tkt_period_group --></th>
+ 
+          <th>{res:tkt_period_type} </th>
+ 
+          <th>{res:tkt_period_id} </th>
+ 
+          <th>{res:tkt_period_status} </th>
+ 
+          <th style="TEXT-ALIGN: center">{res:tkt_period_date_start} </th>
+ 
+          <th style="TEXT-ALIGN: center">{res:tkt_period_time_start} </th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td align="center">&nbsp;{tkt_period_group}</td> 
+          <td align="center">{tkt_period_type}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{tkt_period_id}&nbsp;</td> 
+          <td>{tkt_period_status}&nbsp;</td> 
+          <td align="center">{tkt_period_date_start}&nbsp;</td> 
+          <td align="center">{tkt_period_time_start}&nbsp;</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="6">{res:CCS_NoRecords} </td>
+        </tr>
+        <!-- END NoRecords -->
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid ssf_tkt_periods --></p>
+<hr align="left" width="60%" size="5">
+<p>
+<!-- BEGIN Grid ssf_tkt_periods1 -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_GridFormPrefix}&nbsp; {res:ssf_closed_period_data}{res:CCS_GridFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th>&nbsp; 
+          <!-- BEGIN Sorter Sorter_tkt_period_group --><a href="{Sort_URL}">{res:tkt_period_group_id}</a><!-- END Sorter Sorter_tkt_period_group --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_tkt_period_type --><a href="{Sort_URL}">{res:tkt_period_type}</a><!-- END Sorter Sorter_tkt_period_type --></th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_tkt_period_id --><a href="{Sort_URL}">{res:tkt_period_id}</a><!-- END Sorter Sorter_tkt_period_id --></th>
+ 
+          <th style="TEXT-ALIGN: center">
+          <!-- BEGIN Sorter Sorter_tkt_period_date_start --><a href="{Sort_URL}">{res:tkt_period_date_start}</a><!-- END Sorter Sorter_tkt_period_date_start --></th>
+ 
+          <th style="TEXT-ALIGN: center">
+          <!-- BEGIN Sorter Sorter_tkt_period_time_start --><a href="{Sort_URL}">{res:tkt_period_time_start}</a><!-- END Sorter Sorter_tkt_period_time_start --></th>
+ 
+          <th style="TEXT-ALIGN: center">
+          <!-- BEGIN Sorter Sorter_tkt_period_date_end --><a href="{Sort_URL}">{res:tkt_period_date_end}</a><!-- END Sorter Sorter_tkt_period_date_end --></th>
+ 
+          <th style="TEXT-ALIGN: center">
+          <!-- BEGIN Sorter Sorter_tkt_period_time_end --><a href="{Sort_URL}">{res:tkt_period_time_end}</a><!-- END Sorter Sorter_tkt_period_time_end --></th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td align="center">{tkt_period_group}&nbsp;</td> 
+          <td align="center">{tkt_period_type}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{tkt_period_id}&nbsp;</td> 
+          <td align="center">{tkt_period_date_start}&nbsp;</td> 
+          <td align="center">{tkt_period_time_start}&nbsp;</td> 
+          <td align="center">{tkt_period_date_end}&nbsp;</td> 
+          <td align="center">{tkt_period_time_end}&nbsp;</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="7">{res:CCS_NoRecords} </td>
+        </tr>
+        <!-- END NoRecords -->
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid ssf_tkt_periods1 --><br>
+</p>
+</body>
+</html>

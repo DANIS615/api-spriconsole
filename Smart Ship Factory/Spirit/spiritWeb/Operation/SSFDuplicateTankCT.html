@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFDeviceConfigImplementationPopUp</title>
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<link href="../Styles/Spirit/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript">
+function getObj(id) {
+        if (document.all) 
+        { 
+                return document.all[id]; 
+        }
+        else 
+        {  
+                return document.getElementById(id);     
+        }
+}
+
+function SetOpenerValue()
+{
+        var newID = getObj('txtNewID').value;
+                if( newID == "" )
+                {
+                        window.close();
+                        return;
+                }
+        var frmTarget = window.opener.document.ssfTankCT;
+        frmTarget.dup_tank_id.value = getObj('txtNewID').value;
+        frmTarget.submit();
+        window.opener.focus();
+        window.close();
+}
+</script>
+</head>
+<body>
+<p>
+<form>
+  <p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td> 
+            <th>{res:ssf_dup_tank_conv_table}</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Apricot/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <tr class="Caption">
+            <td class="Header">&nbsp;{Label2} </td> 
+            <td><select name="{txtNewID_Name}"><option value="">{res:CCS_SelectValue}</option>{txtNewID_Options}</select></td> 
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  </p>
+</form>
+<p>
+<!-- BEGIN Button btnSubmitImplementation --><input class="botonazul" onclick="SetOpenerValue();return false;" type="submit" value="OK" name="{Button_Name}"><!-- END Button btnSubmitImplementation -->&nbsp; 
+<!-- BEGIN Button btnCancel --><input class="botonazul" onclick="window.close();" type="submit" value="Cancel" name="{Button_Name}"><!-- END Button btnCancel --></p>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTankDeepReading</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top">
+      <!-- BEGIN EditableGrid EditableGrid1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_GridFormPrefix}{res:ssf_deep_reading}&nbsp; {res:CCS_GridFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="8">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Caption">
+                  <th>
+                  <!-- BEGIN Sorter Sorter_tank_id --><a href="{Sort_URL}">{res:tank_id}</a> 
+                  <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tank_id --></th>
+ 
+                  <th style="TEXT-ALIGN: center" colspan="2">&nbsp;{res:ssf_theorical_meassure}</th>
+ 
+                  <th style="TEXT-ALIGN: center">
+                  <!-- BEGIN Sorter Sorter_prod_height --><a href="{Sort_URL}">{res:ssf_prod_measure}</a> 
+                  <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_prod_height --></th>
+ 
+                  <th style="TEXT-ALIGN: center">
+                  <!-- BEGIN Sorter Sorter_water_height --><a href="{Sort_URL}">{res:ssf_water_measure}</a> 
+                  <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_water_height --></th>
+ 
+                  <th style="TEXT-ALIGN: center">&nbsp;{lbl_height}</th>
+ 
+                  <th style="TEXT-ALIGN: center" colspan="2">&nbsp;{lbl_volume}</th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;{res:ssf_height}</th>
+ 
+                  <th>&nbsp;{res:volume}</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th colspan="2">&nbsp;</th>
+                </tr>
+ 
+                <!-- BEGIN Row -->
+                <!-- BEGIN RowError -->
+                <tr class="Error">
+                  <td colspan="8">{Error}</td>
+                </tr>
+                <!-- END RowError -->
+                <tr class="Row">
+                  <td width="140">{lbl_tank_id}&nbsp;<input type="hidden" value="{tank_id}" name="{tank_id_Name}"></td> 
+                  <td align="right">&nbsp;{actual_prod_height}</td> 
+                  <td align="right">&nbsp;{prod_vol}</td> 
+                  <td><input value="{prod_height}" name="{prod_height_Name}">&nbsp;</td> 
+                  <td><input value="{water_height}" name="{water_height_Name}">&nbsp;</td> 
+                  <td align="center" colspan="3">&nbsp;&nbsp;&nbsp; 
+                    <!-- BEGIN RadioButton deep_option --><input type="radio" value="{Value}" name="{deep_option_Name}" {disabledparam} {Check}>{Description}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- END RadioButton deep_option --></td>
+                </tr>
+ <!-- END Row -->
+                <!-- BEGIN NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="8">{res:CCS_NoRecords} </td>
+                </tr>
+                <!-- END NoRecords -->
+                <tr class="Footer">
+                  <td style="TEXT-ALIGN: right" colspan="8">&nbsp; 
+                    <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:ssf_send_updates}" name="{Button_Name}"><!-- END Button Button_Submit -->&nbsp; 
+                    <!-- BEGIN Button Button_tank_charge --><input class="botonazul" type="submit" value="{res:ssf_begin_tank_charge}" name="{Button_Name}"><!-- END Button Button_tank_charge -->
+                    <!-- BEGIN Button Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Cancel --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END EditableGrid EditableGrid1 --></td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top" width="10%">
+      <table width="100%" border="1">
+        <tr>
+          <td>{lblNote}&nbsp;</td>
+        </tr>
+      </table>
+    </td> 
+    <td valign="top" width="30%">&nbsp;</td>
+  </tr>
+</table>
+</p>
+<p><br>
+&nbsp;</p>
+</body>
+</html>

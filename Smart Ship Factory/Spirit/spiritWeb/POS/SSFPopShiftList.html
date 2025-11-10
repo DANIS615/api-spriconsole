@@ -1,0 +1,177 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Delivery Notes</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<link href="../Styles/Spirit/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript">
+function SetOpenerValue(currentObj)
+{
+        var IE  = (document.all) ? 1 : 0;
+        if(IE) {
+                var v_id = currentObj.innerText; 
+        } else {
+                var v_id = currentObj.text;  
+        }
+        var t_object_name = getURLParam("s_return_field") ;
+        var t_object = window.opener.document.getElementById(t_object_name) ;
+        t_object.value = v_id ;
+        window.opener.focus();
+        window.close();
+}
+
+function getURLParam(strParamName){
+  var strReturn = "";
+  var strHref = window.location.href;
+  //strParamName = strParamName.toLowerCase() ;
+  if ( strHref.indexOf("?") > -1 ){
+    //var strQueryString = strHref.substr(strHref.indexOf("?")).toLowerCase();
+        var strQueryString = strHref.substr(strHref.indexOf("?"));
+        strQueryString = strQueryString.substring(1) ;
+    var aQueryString = strQueryString.split("&");
+    for ( var iParam = 0; iParam < aQueryString.length; iParam++ ){
+        if ( aQueryString[iParam].indexOf(strParamName + "=") > -1 ){
+            var aParam = aQueryString[iParam].split("=");
+                if (aParam[0] == strParamName)    {
+                    strReturn = aParam[1];
+                    break;
+                }
+        }
+    }
+  }
+  return strReturn;
+} 
+</script>
+<script language="JavaScript">
+function reload_page() {
+	var ctrl = document.period_search.s_period_type
+    for(i=0;i<ctrl.length;i++) {
+		var p_type = "S" ;
+		switch(i)
+		{
+		case 0:
+		  p_type = "S" ;
+		  break    
+		case 1:
+		  p_type = "D" ;
+		  break    
+		case 2:
+		  p_type = "M" ;
+		  break
+		case 3:
+		  p_type = "Y" ;
+		  break
+		} 
+		var t_object_name = getURLParam("s_return_field") ;
+        if(ctrl[i].checked) 
+			document.location.href = document.location.pathname + "?s_return_field=" + t_object_name + "&s_period_type=" + p_type ;
+	}
+}
+</script>
+</head>
+<body>
+<table width="100%" border="0">
+  <tr>
+    <td>&nbsp;<a onclick="window.close();" href="{Link1_Src}">{res:ssf_close_window}</a></td>
+  </tr>
+</table>
+<!-- BEGIN Record period_search -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:ssf_mnu_periods_rep}</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:period_type}&nbsp; </th>
+ 
+            <td>
+              <!-- BEGIN RadioButton s_period_type --><input onclick="reload_page();" type="radio" value="{Value}" name="{s_period_type_Name}" {Check}>{Description}&nbsp;<!-- END RadioButton s_period_type --></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">&nbsp;&nbsp; </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record period_search --><br>
+<!-- BEGIN Grid ssf_std_store -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_mnu_periods_rep}
+          {res:CCS_GridFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th>
+          <!-- BEGIN Sorter Sorter_v_id --><a href="{Sort_URL}">{res:id}</a> 
+          <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_v_id --></th>
+ 
+          <th>&nbsp; {res:period_start_date}</th>
+ 
+          <th>&nbsp; {res:period_end_date}</th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td style="WIDTH: 100px"><a onclick="SetOpenerValue(this);return false;" href="{v_id_Src}">{v_id}</a>&nbsp;</td> 
+          <td style="WIDTH: 250px">&nbsp;{period_start_date}&nbsp;
+            {period_start_time}</td> 
+          <td style="WIDTH: 250px" align="left">&nbsp;{period_end_date}&nbsp;
+            {period_end_time}</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="3">{res:CCS_NoRecords} </td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="3">
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}"><img src="../Styles/Spiritnew/Images/First.gif" border="0"></a> <!-- END First_On -->
+            <!-- BEGIN First_Off --><img src="../Styles/Spiritnew/Images/FirstOff.gif" border="0"><!-- END First_Off -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}"><img src="../Styles/Spiritnew/Images/Prev.gif" border="0"></a> <!-- END Prev_On -->
+            <!-- BEGIN Prev_Off --><img src="../Styles/Spiritnew/Images/PrevOff.gif" border="0"><!-- END Prev_Off -->&nbsp;{Page_Number}
+            {res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}"><img src="../Styles/Spiritnew/Images/Next.gif" border="0"></a> <!-- END Next_On -->
+            <!-- BEGIN Next_Off --><img src="../Styles/Spiritnew/Images/NextOff.gif" border="0"><!-- END Next_Off -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}"><img src="../Styles/Spiritnew/Images/Last.gif" border="0"></a> <!-- END Last_On -->
+            <!-- BEGIN Last_Off --><img src="../Styles/Spiritnew/Images/LastOff.gif" border="0"><!-- END Last_Off --><!-- END Navigator Navigator --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid ssf_std_store -->
+<p>&nbsp;</p>
+<p><br>
+&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketPOS</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//page_ssf_tkt_catalog1_tkt_catalog_code_OnChange @24-8B9A54F5
+function page_ssf_tkt_catalog1_tkt_catalog_code_OnChange()
+{
+    var result;
+//End page_ssf_tkt_catalog1_tkt_catalog_code_OnChange
+
+//Custom Code @91-2A29BDB7
+    // -------------------------
+    // Write your own code here.
+    document.forms["ssf_tkt_catalog1"].tkt_catalog_code.value = document.forms["ssf_tkt_catalog1"].tkt_catalog_code.value.toUpperCase();
+    // -------------------------
+//End Custom Code
+
+//Close page_ssf_tkt_catalog1_tkt_catalog_code_OnChange @24-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_catalog1_tkt_catalog_code_OnChange
+
+//page_ssf_tkt_catalog1_Button_Delete_OnClick @19-11F689DF
+function page_ssf_tkt_catalog1_Button_Delete_OnClick()
+{
+    var result;
+//End page_ssf_tkt_catalog1_Button_Delete_OnClick
+
+//Confirmation Message @20-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_ssf_tkt_catalog1_Button_Delete_OnClick @19-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_catalog1_Button_Delete_OnClick
+
+//page_ssf_tkt_configuration1_Button_Delete_OnClick @51-DFE61608
+function page_ssf_tkt_configuration1_Button_Delete_OnClick()
+{
+    var result;
+//End page_ssf_tkt_configuration1_Button_Delete_OnClick
+
+//Confirmation Message @52-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_ssf_tkt_configuration1_Button_Delete_OnClick @51-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_configuration1_Button_Delete_OnClick
+
+//page_ssf_tkt_catalog1_Button_Cancel_OnClick @21-D899AB9D
+function page_ssf_tkt_catalog1_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_tkt_catalog1_Button_Cancel_OnClick
+
+//bind_events @1-B853B7E5
+function bind_events() {
+    if (document.forms["ssf_tkt_configuration1"]) check_and_bind('document.forms["ssf_tkt_configuration1"].Button_Delete','onclick',page_ssf_tkt_configuration1_Button_Delete_OnClick);
+    if (document.forms["ssf_tkt_catalog1"]) check_and_bind('document.forms["ssf_tkt_catalog1"].Button_Delete','onclick',page_ssf_tkt_catalog1_Button_Delete_OnClick);
+    if (document.forms["ssf_tkt_catalog1"]) check_and_bind('document.forms["ssf_tkt_catalog1"].tkt_catalog_code','onchange',page_ssf_tkt_catalog1_tkt_catalog_code_OnChange);
+    if (document.forms["ssf_tkt_catalog1"]) check_and_bind('document.forms["ssf_tkt_catalog1"].Button_Cancel','onclick',page_ssf_tkt_catalog1_Button_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="35%">
+      <!-- BEGIN Grid ssf_tkt_catalog -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_pos_configuration} {res:CCS_GridFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_catalog_code --><a href="{Sort_URL}">{res:tkt_pos_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_catalog_code --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_catalog_value --><a href="{Sort_URL}">{res:tkt_tax_desc}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_catalog_value --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td><a href="{tkt_catalog_code_Src}">{tkt_catalog_code}</a>&nbsp;</td> 
+                <td>{tkt_catalog_value}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="2">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="2">
+                  <!-- BEGIN Link ssf_tkt_catalog_Insert --><a href="{ssf_tkt_catalog_Insert_Src}">{res:CCS_InsertLink}</a><!-- END Link ssf_tkt_catalog_Insert -->&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;<!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Grid ssf_tkt_catalog --></td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">
+      <!-- BEGIN Record ssf_tkt_catalog1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_RecordFormPrefix}&nbsp; {res:ssf_pos_configuration}&nbsp;{res:CCS_RecordFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:tkt_pos_id}</th>
+ 
+                  <td><input maxlength="25" size="25" value="{tkt_catalog_code}" name="{tkt_catalog_code_Name}" {readonlyparam}></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_tax_desc}</th>
+ 
+                  <td><input maxlength="100" size="50" value="{tkt_catalog_value}" name="{tkt_catalog_value_Name}"></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+                    <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td>
+                </tr>
+              </table>
+              <input type="hidden" value="{tkt_catalog_id}" name="{tkt_catalog_id_Name}"></td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record ssf_tkt_catalog1 -->&nbsp;&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top">
+      <!-- BEGIN Grid ssf_tkt_configuration -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}&nbsp; {res:ssf_param_pos_configuration} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_config_param_id --><a href="{Sort_URL}">{res:tkt_config_param_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_config_param_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_config_param_value --><a href="{Sort_URL}">{res:tkt_config_param_value}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_config_param_value --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td><a href="{tkt_config_param_id_Src}">{tkt_config_param_id}</a>&nbsp;</td> 
+                <td>{tkt_config_param_value}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="2">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="2">
+                  <!-- BEGIN Link ssf_tkt_configuration_Insert --><a href="{ssf_tkt_configuration_Insert_Src}">{res:CCS_InsertLink}</a><!-- END Link ssf_tkt_configuration_Insert -->&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Grid ssf_tkt_configuration --><br>
+      <br>
+    </td> 
+    <td>&nbsp;</td> 
+    <td valign="top">
+      <!-- BEGIN Record ssf_tkt_configuration1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_RecordFormPrefix}&nbsp;{res:ssf_param_pos_configuration} {res:CCS_RecordFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:tkt_config_param_id}</th>
+ 
+                  <td>
+                    <select name="{tkt_config_param_id_Name}" {disabledparam}>
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {tkt_config_param_id_Options}
+                    </select>
+ <input type="hidden" value="{h_tkt_config_param_id}" name="{h_tkt_config_param_id_Name}"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{Label1}</th>
+ 
+                  <td>
+                    <!-- BEGIN TextBox tkt_config_param_value --><input maxlength="200" size="50" value="{tkt_config_param_value}" name="{tkt_config_param_value_Name}"><!-- END TextBox tkt_config_param_value -->
+                    <!-- BEGIN ListBox ListBox1 -->
+                    <select name="{ListBox1_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {ListBox1_Options}
+                    </select>
+                    <!-- END ListBox ListBox1 --></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete --></td>
+                </tr>
+              </table>
+              <input type="hidden" value="{tkt_config_pos_id}" name="{tkt_config_pos_id_Name}"></td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record ssf_tkt_configuration1 --></td>
+  </tr>
+</table>
+</p>
+<p><br>
+<br>
+&nbsp;</p>
+</body>
+</html>

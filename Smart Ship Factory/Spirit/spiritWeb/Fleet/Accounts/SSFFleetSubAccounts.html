@@ -1,0 +1,520 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketCustomersAccounts</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//page_ssf_tkt_customers_account4_Button_Delete_OnClick @140-1596CC53
+function page_ssf_tkt_customers_account4_Button_Delete_OnClick()
+{
+    var result;
+//End page_ssf_tkt_customers_account4_Button_Delete_OnClick
+
+//Confirmation Message @141-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_ssf_tkt_customers_account4_Button_Delete_OnClick @140-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_customers_account4_Button_Delete_OnClick
+
+//page_ssf_tkt_customers_account4_Button_Cancel_OnClick @142-4936E860
+function page_ssf_tkt_customers_account4_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_tkt_customers_account4_Button_Cancel_OnClick
+
+//page_ssf_flt_tags_data_Cancel_OnClick @170-1B906AC4
+function page_ssf_flt_tags_data_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_flt_tags_data_Cancel_OnClick
+
+//bind_events @1-438AA4B3
+function bind_events() {
+    if (document.forms["ssf_tkt_customers_account4"]) check_and_bind('document.forms["ssf_tkt_customers_account4"].Button_Delete','onclick',page_ssf_tkt_customers_account4_Button_Delete_OnClick);
+    if (document.forms["ssf_tkt_customers_account4"]) check_and_bind('document.forms["ssf_tkt_customers_account4"].Button_Cancel','onclick',page_ssf_tkt_customers_account4_Button_Cancel_OnClick);
+    if (document.forms["ssf_flt_tags_data"]) check_and_bind('document.forms["ssf_flt_tags_data"].Cancel','onclick',page_ssf_flt_tags_data_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+<script language="JavaScript">
+
+function OpenPop_UpCustomerProds(t_object)
+{
+    var FieldValue;
+
+    FieldValue = document.getElementById("tkt_subaccnt_id").value; 
+    var linkhref = "SSFTicketCustomersProducts.php";
+    var win=window.open(linkhref+"?tkt_cp_reference_id="+FieldValue+"&tkt_cp_ref_type=S", "CustomerProducts", "left=200,top=240,width=840,height=400,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+
+function OpenPop_UpList(t_object)
+{
+    var FieldValue;
+
+    FieldValue = document.getElementById(t_object.name).value; 
+    var linkhref = t_object.href;
+    var win=window.open(linkhref+"?s_return_field="+t_object.name+"&s_v_id="+FieldValue, "CustomerList", "left=100,top=10,width=480,height=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+</script>
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p cellspacing="0">{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top">
+      <table width="100%" border="0">
+        <tr>
+          <td valign="top" width="60%">
+            <!-- BEGIN Record ssf_tkt_customers_account -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tr>
+                  <td valign="top">
+                    <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                        <th>{res:CCS_SearchFormPrefix}&nbsp;{res:ssf_tkt_customers_subaccounts} {res:CCS_SearchFormSuffix} </th>
+ 
+                        <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                      </tr>
+                    </table>
+ 
+                    <table class="Record" cellspacing="0" cellpadding="0">
+                      <!-- BEGIN Error -->
+                      <tr class="Error">
+                        <td colspan="2">{Error}</td>
+                      </tr>
+                      <!-- END Error -->
+                      <tr class="Controls">
+                        <th>{res:tkt_subaccnt_description}</th>
+ 
+                        <td><input value="{s_tkt_subaccnt_desc}" name="{s_tkt_subaccnt_desc_Name}"></td>
+                      </tr>
+ 
+                      <tr class="Controls">
+                        <th>{res:tkt_accnt_active}</th>
+ 
+                        <td>
+                          <select name="{s_tkt_subaccnt_active_Name}">
+                            <option value="" selected>{res:CCS_SelectValue}</option>
+                            {s_tkt_subaccnt_active_Options}
+                          </select>
+ </td>
+                      </tr>
+ 
+                      <tr class="Bottom">
+                        <td align="right" colspan="2"><a href="{ClearParameters_Src}">{res:CCS_Clear}</a>&nbsp; 
+                          <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </form>
+            &nbsp;&nbsp;<!-- END Record ssf_tkt_customers_account --></td> 
+          <td width="1%">&nbsp;</td> 
+          <td valign="top" align="left">
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <td>&nbsp;<a href="{Link1_Src}">{res:ssf_back_to_customers}</a></td>
+              </tr>
+ 
+              <tr class="Caption">
+                <td>&nbsp;<a href="{Link2_Src}">{res:ssf_back_to_accounts}</a></td>
+              </tr>
+            </table>
+            &nbsp;</td>
+        </tr>
+      </table>
+    </td> 
+    <td>&nbsp;</td> 
+    <td valign="top">
+      <!-- BEGIN Grid ssf_tkt_customers_account3 -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_account_information} {res:CCS_GridFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Row -->
+              <tr class="Caption">
+                <th>{res:tkt_accnt_id} </th>
+ 
+                <td colspan="5">{tkt_accnt_id}&nbsp;<img style="MARGIN-TOP: -5px" height="32" src="{imgaccntactive}" width="32" align="top"><input type="hidden" value="{tkt_accnt_active}" name="{tkt_accnt_active_Name}"></td>
+              </tr>
+ 
+              <tr class="Row">
+                <th>&nbsp;</th>
+ 
+                <td colspan="5">&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="6">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Grid ssf_tkt_customers_account3 --><br>
+    </td> 
+    <td valign="top" width="20%">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="45%">
+      <p>
+      <!-- BEGIN Grid ssf_tkt_customers_account1 -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_tkt_customers_subaccounts} {res:CCS_GridFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_accnt_cust_id --><a href="{Sort_URL}">{res:tkt_cust_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_accnt_cust_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_accnt_id --><a href="{Sort_URL}">{res:tkt_subaccnt_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_accnt_id --></th>
+ 
+                <th>&nbsp; 
+                <!-- BEGIN Sorter Sorter_tkt_subaccnt_description --><a href="{Sort_URL}">{res:tkt_subaccnt_description}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_subaccnt_description --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_accnt_active --><a href="{Sort_URL}">{res:tkt_accnt_active}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tkt_accnt_active --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td>{tkt_subaccnt_cust_id}&nbsp;</td> 
+                <td style="{ssf_tkt_customers_account1:stylenotactive}"><a href="{tkt_subaccnt_id_Src}">{tkt_subaccnt_id}</a>&nbsp;</td> 
+                <td align="left">{tkt_subaccnt_description}&nbsp;</td> 
+                <td align="center" style="{ssf_tkt_customers_account1:stylenotactive}">{tkt_subaccnt_active}</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="4">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="4">
+                  <!-- BEGIN Link subaccnt_insert --><a href="{subaccnt_insert_Src}">{res:CCS_InsertLink}</a><!-- END Link subaccnt_insert -->&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;<!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Grid ssf_tkt_customers_account1 --></p>
+    </td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">
+      <p>
+      <!-- BEGIN Record ssf_tkt_customers_account4 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_RecordFormPrefix}&nbsp;{res:ssf_tkt_customers_subaccounts} {res:CCS_RecordFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="11">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Caption">
+                  <th>{res:tkt_accnt_id}</th>
+ 
+                  <th colspan="10"><input id="tkt_accnt_id" readonly maxlength="20" value="{tkt_accnt_id}" name="{tkt_accnt_id_Name}" size="20">&nbsp;<img style="MARGIN-TOP: -5px" height="32" src="{imgfileexists}" width="32" align="top">&nbsp;&nbsp;&nbsp;</th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>{res:ssf_fleet_model_id}</th>
+ 
+                  <th colspan="10"><input id="fca_fleet_model_id" value="{fca_fleet_model_id}" name="{fca_fleet_model_id_Name}">&nbsp;<a href="{Link2_Src}" id="FleetModel" onclick="OpenPop_UpList(this);return false;" name="fca_fleet_model_id">{res:ssf_model_list}</a></th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>{res:tkt_subaccnt_description}</th>
+ 
+                  <th colspan="10"><input value="{fcs_subaccnt_description}" name="{fcs_subaccnt_description_Name}"></th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>{res:tkt_subaccnt_car_id}</th>
+ 
+                  <th colspan="10"><input value="{fcs_subaccnt_car_id}" name="{fcs_subaccnt_car_id_Name}"></th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>{res:tkt_accnt_active}&nbsp;</th>
+ 
+                  <th colspan="10">
+                  <select name="{tkt_accnt_active_Name}">
+                    {tkt_accnt_active_Options}
+                  </select>
+ </th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;{res:tkt_accnt_credit_limit}</th>
+ 
+                  <th colspan="2">{res:tkt_accnt_credit_balance}</th>
+ 
+                  <th colspan="7">&nbsp;{res:ssf_balance}</th>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:lp_trx_limit_amount}&nbsp;</th>
+ 
+                  <td align="left">&nbsp;{lp_trx_limit_amount}</td> 
+                  <td colspan="2">&nbsp;</td> 
+                  <td colspan="7">&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:lp_trx_limit_volume}&nbsp;</th>
+ 
+                  <td align="left">&nbsp;{lp_trx_limit_volume}</td> 
+                  <td colspan="2">&nbsp;</td> 
+                  <td colspan="7">&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:lp_day_qty_trx}</th>
+ 
+                  <td align="left">&nbsp;{lp_day_qty_trx}</td> 
+                  <td colspan="2">&nbsp;{fca_day_qty_trx_bal}</td> 
+                  <td colspan="7">&nbsp;{lbl_day_qty_trx_bal}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:lp_day_limit_amount}</th>
+ 
+                  <td align="left">&nbsp;{lp_day_limit_amount}</td> 
+                  <td colspan="2">&nbsp;{fca_day_amount_bal}</td> 
+                  <td colspan="7" style="{ssf_tkt_customers_account4:lbl_day_amount_negbal}">&nbsp;{lbl_day_amount_bal}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:lp_month_limit_amount}</th>
+ 
+                  <td align="left">&nbsp;{lp_month_limit_amount}</td> 
+                  <td colspan="2">&nbsp;{fca_month_amount_bal}</td> 
+                  <td colspan="7" style="{ssf_tkt_customers_account4:lbl_month_amount_negbal}">&nbsp;{lbl_month_amount_bal}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:lp_day_limit_volume}</th>
+ 
+                  <td align="left">&nbsp;{lp_day_limit_volume}</td> 
+                  <td colspan="2">&nbsp;{fca_day_volume_bal}</td> 
+                  <td colspan="7" style="{ssf_tkt_customers_account4:lbl_day_volume_negbal}">&nbsp;{lbl_day_volume_bal}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:lp_month_limit_volume}&nbsp;</th>
+ 
+                  <td align="left">&nbsp;{lp_month_limit_volume}</td> 
+                  <td colspan="2">&nbsp;{fca_month_volume_bal}</td> 
+                  <td colspan="7" style="{ssf_tkt_customers_account4:lbl_month_volume_negbal}">&nbsp;{lbl_month_volume_bal}</td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="11">
+                    <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->&nbsp; 
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+                    <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td>
+                </tr>
+              </table>
+              <input type="hidden" value="{tkt_accnt_cust_id}" name="{tkt_accnt_cust_id_Name}"></td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;&nbsp;&nbsp;&nbsp;<!-- END Record ssf_tkt_customers_account4 --></p>
+    </td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp; </td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp; 
+      <!-- BEGIN EditableGrid ssf_flt_tags_data -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_tags_data} {res:CCS_GridFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="3">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Caption">
+                  <th>
+                  <!-- BEGIN Sorter Sorter_ftd_tag_id --><a href="{Sort_URL}">{res:tkt_tag_id}</a> 
+                  <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ftd_tag_id --></th>
+ 
+                  <th>
+                  <!-- BEGIN Sorter Sorter_ftd_tag_active --><a href="{Sort_URL}">{res:tkt_accnt_active}</a> 
+                  <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ftd_tag_active --></th>
+ 
+                  <th>{res:CCS_Delete} </th>
+                </tr>
+ 
+                <!-- BEGIN Row -->
+                <!-- BEGIN RowError -->
+                <tr class="Error">
+                  <td colspan="3">{Error}</td>
+                </tr>
+                <!-- END RowError -->
+                <tr class="Row">
+                  <td><input maxlength="50" size="30" value="{ftd_tag_id}" name="{ftd_tag_id_Name}"><input type="hidden" value="{ftd_subaccnt_id}" name="{ftd_subaccnt_id_Name}"><input type="hidden" value="{ftd_accnt_id}" name="{ftd_accnt_id_Name}"></td> 
+                  <td>
+                    <select name="{ftd_tag_active_Name}">
+                      {ftd_tag_active_Options}
+                    </select>
+ </td> 
+                  <td>
+                    <!-- BEGIN CheckBox CheckBox_Delete --><input type="checkbox" value="1" name="{CheckBox_Delete_Name}" {CheckBox_Delete}><!-- END CheckBox CheckBox_Delete -->&nbsp;</td>
+                </tr>
+ <!-- END Row -->
+                <!-- BEGIN NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="3">{res:CCS_NoRecords} </td>
+                </tr>
+                <!-- END NoRecords -->
+                <tr class="Footer">
+                  <td style="TEXT-ALIGN: right" colspan="3">
+                    <!-- BEGIN Navigator Navigator -->
+                    <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                    <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                    <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                    <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                    <!-- BEGIN Pages -->
+                    <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                    <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                    <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                    <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                    <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                    <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator -->
+                    <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Submit -->
+                    <!-- BEGIN Button Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Cancel --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!-- END EditableGrid ssf_flt_tags_data --><br>
+    </td> 
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</p>
+<p><br>
+</p>
+<p>&nbsp;</p>
+<p><br>
+</p>
+<p>&nbsp;</p>
+<p><br>
+</p>
+</body>
+</html>

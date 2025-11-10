@@ -1,0 +1,187 @@
+10/11/2025-13:34:28.826-0x000028F0-SSF.TICKET-SSF_TICKET_ServiceStart-[DEBUG]-SSF Ticket Module Started...
+10/11/2025-13:34:28.842-0x000028F0-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-Getting ODBC Data Sources...
+10/11/2025-13:34:28.849-0x000028F0-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-FOUND DSN [SmartShipODBC] WITH DESCRIPTION [PostgreSQL ANSI]
+10/11/2025-13:34:28.856-0x000028F0-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-Done with ODBC Data Sources
+10/11/2025-13:34:28.860-0x000028F0-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-Opening database ...
+10/11/2025-13:34:28.931-0x000028F0-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-DB opened ok
+10/11/2025-13:34:28.941-0x000028F0-SSF.TICKET-SSFTicketModule::readAndLoadLanguage-[DEBUG]-Language read from db is [es-SPANISH], will use [es]
+10/11/2025-13:34:28.954-0x000028F0-SSF.TICKET-SSFTicketPLU::initBarCodes-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:28.971-0x000028F0-SSF.TICKET-SSFTicketPLU::initPLU-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:28.984-0x000028F0-SSF.TICKET-SSFTicketPLU::initMeasureUnits-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:28.993-0x000028F0-SSF.TICKET-SSFTicketPLU::initPrices-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.008-0x000028F0-SSF.TICKET-SSFTicketPLU::initCategories-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.017-0x000028F0-SSF.TICKET-SSFTicketPLU::initPLUGrades-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.030-0x000028F0-SSF.TICKET-SSFTicketTax::initTax-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.035-0x000028F0-SSF.TICKET-SSFTicketTax::initTaxFiscalGroup-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.045-0x000028F0-SSF.TICKET-SSFTicketTax::initTaxGroupDetail-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.066-0x000028F0-SSF.TICKET-SSFTicketTransaction::initTransactionHeader-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.077-0x000028F0-SSF.TICKET-SSFTicketTransaction::initTransactionDetail-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.088-0x000028F0-SSF.TICKET-SSFTicketTransaction::initTransactionTaxDetail-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.098-0x000028F0-SSF.TICKET-SSFTicketTransaction::initTransactionTender-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.116-0x000028F0-SSF.TICKET-SSFTicketCustomer::initCustomers-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.127-0x000028F0-SSF.TICKET-SSFTicketCustomer::initCustomerTaxTypes-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.141-0x000028F0-SSF.TICKET-SSFTicketSpeedKeys::initSpeedKeys-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.147-0x000028F0-SSF.TICKET-SSFTicketReceiptFormat::initReceiptFormat-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.159-0x000028F0-SSF.TICKET-SSFTicketTender::initTender-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.178-0x000028F0-SSF.TICKET-SSFTicketTender::initTender-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.190-0x000028F0-SSF.TICKET-SSFTicketTender::initTender-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.203-0x000028F0-SSF.TICKET-SSFTicketTender::initTender-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.214-0x000028F0-SSF.TICKET-SSFTicketPrinter::init-[DEBUG]-Initializing for printer []
+10/11/2025-13:34:29.219-0x000028F0-SSF.TICKET-SSFTicketPrinter::initPrinter-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.237-0x000028F0-SSF.TICKET-SSFTicketPrinter::init-[DEBUG]-Initializing for printer [EPSON]
+10/11/2025-13:34:29.250-0x000028F0-SSF.TICKET-SSFTicketPrinter::initPrinter-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.261-0x000028F0-SSF.TICKET-SSFTicketPosConfiguration::initConfiguration-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.272-0x000028F0-SSF.TICKET-SSFTicketPosConfiguration::initCatalog-[DEBUG]-Table binded ok
+10/11/2025-13:34:29.283-0x000028F0-SSF.TICKET-SSFTicketPosConfiguration::initConfiguration-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.301-0x000028F0-SSF.TICKET-SSFTicketPeriodGroups::initPeriodGroups-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.314-0x000028F0-SSF.TICKET-SSFTicketPeriods::initPeriods-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.330-0x000028F0-SSF.TICKET-SSFTicketPeriods::setClosePumps-[DEBUG]-Setting close pumps value = [TRUE] for group [UNICO]
+10/11/2025-13:34:29.332-0x000028F0-SSF.TICKET-SSFTicketPeriods::initPeriods-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.353-0x000028F0-SSF.TICKET-SSFTicketPeriods::initPeriods-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.365-0x000028F0-SSF.TICKET-SSFTicketPeriods::initPeriods-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.374-0x000028F0-SSF.TICKET-SSFTicketPrepay::init-[DEBUG]-Initializing for prepay [0-0]
+10/11/2025-13:34:29.384-0x000028F0-SSF.TICKET-SSFTicketPrepay::initPrepay-[DEBUG]-Table opened and binded ok
+10/11/2025-13:34:29.394-0x000028F0-SSF.TICKET-SSFMessageRouterClient::initial-[DEBUG]-Setting the IP connection address to localhost
+10/11/2025-13:34:29.394-0x000028F0-SSF.TICKET-SSFMessageRouterClient::setRemoteAddress-[DEBUG]-Remote Address setted 
+10/11/2025-13:34:29.412-0x00003D28-SSF.TICKET-SSFMessageRouterClient::connectToServer-[DEBUG]-Trying to connect to Message Router Server
+10/11/2025-13:34:29.419-0x00003D28-SSF.TICKET-SSFMessageRouterClient::connectToServer-[DEBUG]-<54029> Connected to server
+10/11/2025-13:34:29.430-0x00003D28-SSF.TICKET-SSFMessageRouterClient::doLoginToRouter-[DEBUG]-LOGIN FOR USER [SSF]
+10/11/2025-13:34:29.440-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [REQ_SECU_LOGIN] Msg Len [95] 
+10/11/2025-13:34:29.450-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:29.520-0x0000112C-SSF.TICKET-SSFTicketModule::requestLicenseInformation-[DEBUG]-Sending request for license information
+10/11/2025-13:34:29.526-0x0000112C-SSF.TICKET-SSFTicketModule::requestForecourtGeneralConfiguration-[DEBUG]-Sending request for forecourt general configuration
+10/11/2025-13:34:29.535-0x0000112C-SSF.TICKET-SSFTicketModule::requestPaymentTypes-[DEBUG]-Sending request for Payment Types
+10/11/2025-13:34:29.543-0x0000112C-SSF.TICKET-SSFTicketModule::requestGradesConfig-[DEBUG]-Sending request for Grades Config
+10/11/2025-13:34:29.584-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [REQ_LICENSE_SECTION] Msg Len [50] 
+10/11/2025-13:34:29.589-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:29.600-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [REQ_FCRT_GET_GRAL_CONFIG] Msg Len [44] 
+10/11/2025-13:34:29.605-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:29.610-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [REQ_PAYMENT_GET_PAY_TYPES] Msg Len [45] 
+10/11/2025-13:34:29.620-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:29.628-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [REQ_FCRT_GRADES_CONFIG] Msg Len [42] 
+10/11/2025-13:34:29.633-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:29.710-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00072|3|2|GUEST|POST|RES_SECU_LOGIN|127.0.0.1:54029|SECURITY_MANAGER|ST=DENIED|^]
+10/11/2025-13:34:29.715-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_SECU_LOGIN]
+10/11/2025-13:34:30.169-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00108|3|2||POST|RES_LICENSE_SECTION|127.0.0.1:54029||ST=OK|SEC=TICKET|LICENSE=YES|CUSTOMIZATION GROUP=GUATEMALA001|^]
+10/11/2025-13:34:30.176-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_LICENSE_SECTION]
+10/11/2025-13:34:30.186-0x00003D28-SSF.TICKET-SSFTicketModule::processEventLicenseInformation-[DEBUG]-License OK
+10/11/2025-13:34:30.188-0x00003D28-SSF.TICKET-SSFTicketModule::processEventLicenseInformation-[DEBUG]-Customization group is [GUATEMALA001]
+10/11/2025-13:34:30.205-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [REQ_TKT_TRX_REGISTER_NEW] Msg Len [114] 
+10/11/2025-13:34:30.212-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.218-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00080|3|2||POST|RES_EVENT_NOT_SUBSCRIBED|127.0.0.1:54029||REQ=REQ_FCRT_GET_GRAL_CONFIG|^]
+10/11/2025-13:34:30.229-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_EVENT_NOT_SUBSCRIBED]
+10/11/2025-13:34:30.241-0x00003D28-SSF.TICKET-SSFTicketModule::processEventNotSubscribed-[WARNING]-Request [REQ_FCRT_GET_GRAL_CONFIG] is not subscribed
+10/11/2025-13:34:30.254-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [REQ_TKT_TRX_REGISTER_FAST_NEW] Msg Len [134] 
+10/11/2025-13:34:30.263-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.279-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00081|3|2||POST|RES_EVENT_NOT_SUBSCRIBED|127.0.0.1:54029||REQ=REQ_PAYMENT_GET_PAY_TYPES|^]
+10/11/2025-13:34:30.287-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_EVENT_NOT_SUBSCRIBED]
+10/11/2025-13:34:30.297-0x00003D28-SSF.TICKET-SSFTicketModule::processEventNotSubscribed-[WARNING]-Request [REQ_PAYMENT_GET_PAY_TYPES] is not subscribed
+10/11/2025-13:34:30.307-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [REQ_TKT_TRX_PRINT_RECEIPT] Msg Len [77] 
+10/11/2025-13:34:30.324-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.336-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00078|3|2||POST|RES_EVENT_NOT_SUBSCRIBED|127.0.0.1:54029||REQ=REQ_FCRT_GRADES_CONFIG|^]
+10/11/2025-13:34:30.351-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_EVENT_NOT_SUBSCRIBED]
+10/11/2025-13:34:30.360-0x00003D28-SSF.TICKET-SSFTicketModule::processEventNotSubscribed-[WARNING]-Request [REQ_FCRT_GRADES_CONFIG] is not subscribed
+10/11/2025-13:34:30.370-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [REQ_TKT_TRX_REFUND] Msg Len [84] 
+10/11/2025-13:34:30.378-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.386-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [REQ_TKT_PERIOD_CLOSE] Msg Len [96] 
+10/11/2025-13:34:30.389-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.398-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [REQ_TKT_*] Msg Len [34] 
+10/11/2025-13:34:30.408-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.418-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [EVT_NEW_CONFIG_APPLIED] Msg Len [47] 
+10/11/2025-13:34:30.426-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.433-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [EVT_ENTRY_PUMP_CONTROLLER] Msg Len [50] 
+10/11/2025-13:34:30.441-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.449-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [EVT_SHIFT_PERIOD_CLOSED] Msg Len [48] 
+10/11/2025-13:34:30.455-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.460-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [EVT_PUMP_NEW_TRANSACTION] Msg Len [49] 
+10/11/2025-13:34:30.475-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.480-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [EVT_PUMP_STATUS_CHANGE_ID_*] Msg Len [52] 
+10/11/2025-13:34:30.488-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.496-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [EVT_GRADE_PRICE_CHANGE] Msg Len [47] 
+10/11/2025-13:34:30.503-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:34:30.513-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [SUBSCRIBE] to be pushed [EVT_PUMP_PRICE_LEVEL_ID_*] Msg Len [50] 
+10/11/2025-13:34:30.521-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:07.629-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00072|3|2|GUEST|POST|REQ_TKT_CDPY_GET_PARAMETERS||127.0.0.1:53072|CID=POS00001|^]
+10/11/2025-13:35:07.637-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CDPY_GET_PARAMETERS]
+10/11/2025-13:35:07.707-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00072|3|2|GUEST|POST|REQ_TKT_PRNT_GET_PARAMETERS||127.0.0.1:53071|CID=POS00001|^]
+10/11/2025-13:35:07.714-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PRNT_GET_PARAMETERS]
+10/11/2025-13:35:07.721-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_PRNT_GET_PARAMETERS] Msg Len [215] 
+10/11/2025-13:35:07.731-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:08.174-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00068|3|2|GUEST|POST|REQ_TKT_CONF_GET_VALUES||127.0.0.1:53070|POS=POS00001|^]
+10/11/2025-13:35:08.183-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CONF_GET_VALUES]
+10/11/2025-13:35:08.193-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_CONF_GET_VALUES] Msg Len [321] 
+10/11/2025-13:35:08.204-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:08.513-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00068|3|2|GUEST|POST|REQ_TKT_CONF_GET_VALUES||127.0.0.1:53069|POS=POS00001|^]
+10/11/2025-13:35:08.521-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CONF_GET_VALUES]
+10/11/2025-13:35:08.529-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_CONF_GET_VALUES] Msg Len [321] 
+10/11/2025-13:35:08.536-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:09.168-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00060|3|2|GUEST|POST|REQ_TKT_PLU_GET_MEASURE_UNIT||127.0.0.1:53069|^]
+10/11/2025-13:35:09.175-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PLU_GET_MEASURE_UNIT]
+10/11/2025-13:35:09.187-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_PLU_GET_MEASURE_UNIT] Msg Len [181] 
+10/11/2025-13:35:09.194-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:09.633-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00068|3|2|GUEST|POST|REQ_TKT_CUST_GET_CUSTOMERS_TAX_TYPES||127.0.0.1:53069|^]
+10/11/2025-13:35:09.642-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CUST_GET_CUSTOMERS_TAX_TYPES]
+10/11/2025-13:35:09.654-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS_TAX_TYPES] Msg Len [146] 
+10/11/2025-13:35:09.663-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:09.671-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00058|3|2|GUEST|POST|REQ_TKT_TENDER_GET_TENDERS||127.0.0.1:53069|^]
+10/11/2025-13:35:09.679-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_TENDER_GET_TENDERS]
+10/11/2025-13:35:09.687-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Staring to browse tenders
+10/11/2025-13:35:09.695-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender available [20013E0]
+10/11/2025-13:35:09.703-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender Enabled
+10/11/2025-13:35:09.712-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender information added
+10/11/2025-13:35:09.720-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender available [20020A0]
+10/11/2025-13:35:09.729-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender Enabled
+10/11/2025-13:35:09.736-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender information added
+10/11/2025-13:35:09.746-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender available [2001AA0]
+10/11/2025-13:35:09.755-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender Enabled
+10/11/2025-13:35:09.763-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender information added
+10/11/2025-13:35:09.770-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Finished browsing tenders
+10/11/2025-13:35:09.777-0x00003D28-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Event sent
+10/11/2025-13:35:09.786-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_TENDER_GET_TENDERS] Msg Len [225] 
+10/11/2025-13:35:09.795-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:09.804-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00067|3|2|GUEST|POST|REQ_TKT_SPEED_GET_KEYS||127.0.0.1:53069|ID=PRODUCTOS|^]
+10/11/2025-13:35:09.812-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_SPEED_GET_KEYS]
+10/11/2025-13:35:09.826-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_SPEED_GET_KEYS] Msg Len [81] 
+10/11/2025-13:35:09.834-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:09.842-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00063|3|2|GUEST|POST|REQ_TKT_SPEED_GET_KEYS||127.0.0.1:53069|ID=PAGOS|^]
+10/11/2025-13:35:09.850-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_SPEED_GET_KEYS]
+10/11/2025-13:35:09.859-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_SPEED_GET_KEYS] Msg Len [200] 
+10/11/2025-13:35:09.867-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:09.875-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00063|3|2|GUEST|POST|REQ_TKT_PERIOD_STATUS||127.0.0.1:53070|PGR=UNICO|^]
+10/11/2025-13:35:09.883-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PERIOD_STATUS]
+10/11/2025-13:35:09.892-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_PERIOD_STATUS] Msg Len [184] 
+10/11/2025-13:35:09.901-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:10.957-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00058|3|2|GUEST|POST|REQ_TKT_PLU_GET_CATEGORIES||127.0.0.1:53069|^]
+10/11/2025-13:35:10.966-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PLU_GET_CATEGORIES]
+10/11/2025-13:35:10.978-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_PLU_GET_CATEGORIES] Msg Len [239] 
+10/11/2025-13:35:10.986-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:10.994-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00058|3|2|GUEST|POST|REQ_TKT_CUST_GET_CUSTOMERS||127.0.0.1:53069|^]
+10/11/2025-13:35:11.003-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CUST_GET_CUSTOMERS]
+10/11/2025-13:35:11.015-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [1413] 
+10/11/2025-13:35:11.022-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:12.701-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00058|3|2|GUEST|POST|REQ_TKT_CUST_GET_CUSTOMERS||127.0.0.1:53069|^]
+10/11/2025-13:35:12.710-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CUST_GET_CUSTOMERS]
+10/11/2025-13:35:12.722-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [1413] 
+10/11/2025-13:35:12.729-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:12.740-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00058|3|2|GUEST|POST|REQ_TKT_CUST_GET_CUSTOMERS||127.0.0.1:53069|^]
+10/11/2025-13:35:12.747-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CUST_GET_CUSTOMERS]
+10/11/2025-13:35:12.757-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [1413] 
+10/11/2025-13:35:12.766-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:13.630-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00052|3|2|GUEST|POST|REQ_TKT_PLU_GET_DATA||127.0.0.1:53069|^]
+10/11/2025-13:35:13.640-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PLU_GET_DATA]
+10/11/2025-13:35:13.651-0x00003D28-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+10/11/2025-13:35:13.670-0x00003D28-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+10/11/2025-13:35:13.679-0x00003D28-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+10/11/2025-13:35:13.689-0x00003D28-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+10/11/2025-13:35:13.700-0x00003D28-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+10/11/2025-13:35:13.711-0x00003D28-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+10/11/2025-13:35:13.721-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_PLU_GET_DATA] Msg Len [759] 
+10/11/2025-13:35:13.730-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:15.734-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00054|3|2|GUEST|POST|REQ_TKT_PLU_GET_PRICES||127.0.0.1:53069|^]
+10/11/2025-13:35:15.744-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PLU_GET_PRICES]
+10/11/2025-13:35:15.754-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> [POST] to be pushed [RES_TKT_PLU_GET_PRICES] Msg Len [77] 
+10/11/2025-13:35:15.763-0x00003D28-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<54029> Event sent to socket
+10/11/2025-13:35:16.077-0x00003D28-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<54029> Message [00074|3|2|GUEST|POST|REQ_TKT_TRX_GET_LAST_X_TRANSACTIONS||127.0.0.1:53069|QTY=12|^]
+10/11/2025-13:35:16.084-0x00003D28-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_TRX_GET_LAST_X_TRANSACTIONS]
+10/11/2025-13:35:16.095-0x00003D28-SSF.TICKET-SSFTicketTransaction::getLastTransactionID-[ERROR]-NULL data received
+10/11/2025-13:35:16.103-0x00003D28-SSF.TICKET-SSFTicketTransaction::getTransactionFields-[ERROR]-Error querying header table for transaction id 0

@@ -1,0 +1,181 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTankStatusView</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript"> 
+// CREDITS: // Automatic Page Refresher by Peter Gehrig and Urs Dudli www.24fun.com 
+// Permission given to use the script provided that this notice remains as is. 
+// Additional scripts can be found at http://www.hypergfurl.com. 
+// Configure refresh interval (in seconds) 
+var refreshinterval=300
+// Shall the coundown be displayed inside your status bar? Say "yes" or "no" below: 
+var displaycountdown="yes" 
+// Do not edit the code below 
+var starttime 
+var nowtime 
+var reloadseconds=0 
+var secondssinceloaded=0 
+function starttime() { 
+        starttime=new Date() 
+        starttime=starttime.getTime() 
+        countdown() 
+} 
+function countdown() { 
+        nowtime= new Date() 
+        nowtime=nowtime.getTime() 
+        secondssinceloaded=(nowtime-starttime)/1000 
+        reloadseconds=Math.round(refreshinterval-secondssinceloaded) 
+        if (refreshinterval>=secondssinceloaded) 
+        {       var timer=setTimeout("countdown()",1000) 
+                if (displaycountdown=="yes") 
+                { 
+                        window.status="Page refreshing in "+reloadseconds+ " seconds" 
+                } 
+        } else { 
+                clearTimeout(timer) 
+                window.location.reload(true) 
+        } 
+} 
+
+window.onload=starttime 
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record a_b_c -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix}&nbsp;{res:ssf_tanks} {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:tank_id}</th>
+ 
+            <td>
+              <select name="{s_tank_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_tank_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record a_b_c --></p>
+<table border="1">
+  <tr>
+    <td>
+      <!-- BEGIN Link Link1 --><a href="{Link1_Src}">{res:ssf_deep_reading_menu_text}</a><!-- END Link Link1 -->
+      <!-- BEGIN Link Link2 --><a href="{Link2_Src}">{res:ssf_endof_fuelcharge_menu}</a><!-- END Link Link2 --></td>
+  </tr>
+</table>
+<p>
+<!-- BEGIN Panel Panel1 -->
+<table width="50%" border="1">
+  <tr class="Caption">
+    <th style="TEXT-ALIGN: center">{lblfuelcharge}</th>
+  </tr>
+</table>
+<!-- END Panel Panel1 --></p>
+<p>
+<!-- BEGIN Grid Tanks -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_tanks} {res:CCS_GridFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th></th>
+        </tr>
+ 
+        <tr class="Row">
+          <!-- BEGIN Row -->
+          <td class="Caption" style="TEXT-ALIGN: right">{lblTank}<br>
+            {lblproduct}<br>
+            {lblcapacity}<br>
+            {lblprod_vol}<br>
+            {lblwater_vol}<br>
+            {lblempty}<br>
+            {lblprod_h}<br>
+            {lblwater_h}<br>
+          </td> 
+          <td style="TEXT-ALIGN: right">{tank_id}<br>
+            {product}<br>
+            {capacity}<br>
+            {prod_v}<br>
+            {water_vol}<br>
+            {lblvoid}<br>
+            {prod_h}<br>
+            {water_h}<br>
+            &nbsp;</td> 
+          <td align="center">
+            <p><input style="WIDTH: 52px; HEIGHT: 22px" type="hidden" size="7" value="{color}" name="{color_Name}">&nbsp;&nbsp;&nbsp;<img src="{img_tank}"><br>
+            {lbl_date_last_read}&nbsp;:&nbsp;{date_last_read}&nbsp;{time_last_read}&nbsp;&nbsp;&nbsp; &nbsp;<a href="{ImageLink1}" title="{imgtankstatustip}"><img src="{imgtankstatus}" border="0"></a>&nbsp;<input type="hidden" value="{probe_status}" name="{probe_status_Name}">&nbsp; </p>
+          </td> 
+          <!-- BEGIN Panel RowSeparator -->
+        </tr>
+ 
+        <tr class="Row">
+          <!-- END Panel RowSeparator --><!-- END Row -->{EmptyRow} 
+        </tr>
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td>{res:CCS_NoRecords} </td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td style="TEXT-ALIGN: right" colspan="6">
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+            <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+            <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+            <!-- BEGIN Pages -->
+            <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+            <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+            <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+            <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid Tanks --></p>
+<p><br>
+</p>
+</body>
+</html>

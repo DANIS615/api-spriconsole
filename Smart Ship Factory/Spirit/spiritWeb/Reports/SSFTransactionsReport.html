@@ -1,0 +1,343 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTransactionsReport</title>
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<link href="{page_style}" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-DED87D66
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-FA65554A
+
+var ssf_pump_salesSearch_DatePicker_s_date_from1 = new Object(); 
+ssf_pump_salesSearch_DatePicker_s_date_from1.format           = "yyyymmdd";
+ssf_pump_salesSearch_DatePicker_s_date_from1.style            = "Styles/Spiritnew/Style.css";
+ssf_pump_salesSearch_DatePicker_s_date_from1.relativePathPart = "../";
+ssf_pump_salesSearch_DatePicker_s_date_from1.themeVersion     = "3.0";
+
+var ssf_pump_salesSearch_DatePicker_s_date_to1 = new Object(); 
+ssf_pump_salesSearch_DatePicker_s_date_to1.format           = "yyyymmdd";
+ssf_pump_salesSearch_DatePicker_s_date_to1.style            = "Styles/Spiritnew/Style.css";
+ssf_pump_salesSearch_DatePicker_s_date_to1.relativePathPart = "../";
+ssf_pump_salesSearch_DatePicker_s_date_to1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+<script language="JavaScript" type="text/javascript">
+ function changetime() {
+    var time_from = document.getElementById('s_time_from_tmp').value;
+    var time_to = document.getElementById('s_time_to_tmp').value;
+        time_from = time_from.replace(/:/g,'') ;
+    document.getElementById('s_time_from').value = time_from ;
+        time_to = time_to.replace(/:/g,'') ;
+    document.getElementById('s_time_to').value = time_to ;
+}
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<!-- BEGIN Record ssf_pump_salesSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:ssf_pump_sales}
+            {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="6">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ssf_dates_range}</th>
+ 
+            <td colspan="3"><input maxlength="10" size="10" value="{s_date_from}" name="{s_date_from_Name}" style="WIDTH: 106px; HEIGHT: 22px">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_date_from1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_date_from1 --></td> 
+            <td colspan="2"><input maxlength="10" size="10" value="{s_date_to}" name="{s_date_to_Name}" style="WIDTH: 109px; HEIGHT: 22px">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_date_to1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_date_to1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:period_start_time}</th>
+ 
+            <td colspan="3"><input id="s_time_from_tmp" maxlength="8" size="8" value="{s_time_from_tmp}" name="{s_time_from_tmp_Name}">&nbsp;<input type="hidden" value="{s_time_from}" name="{s_time_from_Name}"></td> 
+            <td>{res:period_end_time}</td> 
+            <td><input id="s_time_to_tmp" maxlength="8" size="8" value="{s_time_to_tmp}" name="{s_time_to_tmp_Name}">&nbsp;<input type="hidden" value="{s_time_to}" name="{s_time_to_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:pump_id}</th>
+ 
+            <td colspan="5">
+              <select name="{s_pump_id_Name}" style="WIDTH: 165px">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_pump_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:grade_id}</th>
+ 
+            <td colspan="5">
+              <select name="{s_grade_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_grade_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:sale_type}</th>
+ 
+            <td colspan="5">
+              <select name="{s_sale_type_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_sale_type_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_unit_of_meassure}</th>
+ 
+            <td colspan="5">
+              <select name="{s_unit_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_unit_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="6"><a href="{Link1_Src}">{res:CCS_Clear}</a> 
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" onclick="changetime() ;" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_pump_salesSearch -->
+<p>
+<form method="post" target="_blank">
+  <!-- BEGIN Link lnkExcel --><a href="{lnkExcel_Src}"><img class="botonazul" height="24" src="../Styles/images/excel.gif" width="71" border="0"></a><!-- END Link lnkExcel --></p>
+  <p>
+  <!-- BEGIN Button btnPrint --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button btnPrint --><br>
+  <!-- BEGIN Grid config_values_ssf_addin_p -->
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_GridFormPrefix}
+            {res:config_valuesssf_addin_payments_datassf_pump_sales}
+            {res:CCS_GridFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <tr class="Row">
+            <td colspan="33">{res:CCS_TotalRecords}&nbsp;
+              {config_values_ssf_addin_p_TotalRecords} <input type="hidden" size="2" value="{s_date_from}" name="{s_date_from_Name}" style="WIDTH: 20px; HEIGHT: 22px"><input type="hidden" size="2" value="{s_date_to}" name="{s_date_to_Name}" style="WIDTH: 15px; HEIGHT: 22px"><input type="hidden" size="3" value="{s_pump_id}" name="{s_pump_id_Name}" style="WIDTH: 25px; HEIGHT: 22px"><input type="hidden" size="4" value="{s_grade_id}" name="{s_grade_id_Name}" style="WIDTH: 33px; HEIGHT: 22px"><input type="hidden" size="4" value="{s_sale_type}" name="{s_sale_type_Name}" style="WIDTH: 32px; HEIGHT: 22px"><input type="hidden" size="5" value="{Hidden1}" name="{Hidden1_Name}" style="WIDTH: 42px; HEIGHT: 22px"><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}"><input type="hidden" size="9" value="{p_sale_start}" name="{p_sale_start_Name}" style="WIDTH: 70px; HEIGHT: 22px"><input type="hidden" size="7" value="{p_sale_end}" name="{p_sale_end_Name}" style="WIDTH: 57px; HEIGHT: 22px"></td>
+          </tr>
+ 
+          <tr class="Caption">
+            <!-- BEGIN Panel Header_sale_id -->
+            <th>
+            <!-- BEGIN Sorter Sorter_sale_id --><a href="{Sort_URL}">{res:sale_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_sale_id -->&nbsp; 
+            <!-- BEGIN CheckBox col1 --><input type="checkbox" value="1" name="{col1_Name}" {col1}><!-- END CheckBox col1 --></th>
+ <!-- END Panel Header_sale_id -->
+            <!-- BEGIN Panel Header_end_date -->
+            <th>
+            <!-- BEGIN Sorter Sorter_end_date --><a href="{Sort_URL}">{res:end_date}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_end_date -->&nbsp; 
+            <!-- BEGIN CheckBox col2 --><input type="checkbox" value="1" name="{col2_Name}" {col2}><!-- END CheckBox col2 --></th>
+ <!-- END Panel Header_end_date -->
+            <!-- BEGIN Panel Header_end_time -->
+            <th>
+            <!-- BEGIN Sorter Sorter_end_time --><a href="{Sort_URL}">{res:end_time}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_end_time -->&nbsp; 
+            <!-- BEGIN CheckBox col3 --><input type="checkbox" value="1" name="{col3_Name}" {col3}><!-- END CheckBox col3 --></th>
+ <!-- END Panel Header_end_time -->
+            <!-- BEGIN Panel Header_pump_id -->
+            <th>
+            <!-- BEGIN Sorter Sorter_pump_id --><a href="{Sort_URL}">{res:pump_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_pump_id -->&nbsp; 
+            <!-- BEGIN CheckBox col4 --><input type="checkbox" value="1" name="{col4_Name}" {col4}><!-- END CheckBox col4 --></th>
+ <!-- END Panel Header_pump_id -->
+            <!-- BEGIN Panel Header_hose_id -->
+            <th>
+            <!-- BEGIN Sorter Sorter_hose_id --><a href="{Sort_URL}">{res:hose_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_hose_id -->&nbsp; 
+            <!-- BEGIN CheckBox col5 --><input type="checkbox" value="1" name="{col5_Name}" {col5}><!-- END CheckBox col5 --></th>
+ <!-- END Panel Header_hose_id -->
+            <!-- BEGIN Panel Header_id -->
+            <th>
+            <!-- BEGIN Sorter Sorter_id --><a href="{Sort_URL}">{res:grade_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_id -->&nbsp; 
+            <!-- BEGIN CheckBox col6 --><input type="checkbox" value="1" name="{col6_Name}" {col6}><!-- END CheckBox col6 --></th>
+ <!-- END Panel Header_id -->
+            <!-- BEGIN Panel Header_volume -->
+            <th>
+            <!-- BEGIN Sorter Sorter_volume --><a href="{Sort_URL}">{res:volume}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_volume -->&nbsp; 
+            <!-- BEGIN CheckBox col7 --><input type="checkbox" value="1" name="{col7_Name}" {col7}><!-- END CheckBox col7 --></th>
+ <!-- END Panel Header_volume -->
+            <!-- BEGIN Panel Header_ppu -->
+            <th>
+            <!-- BEGIN Sorter Sorter_ppu --><a href="{Sort_URL}">{res:ppu}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ppu -->&nbsp; 
+            <!-- BEGIN CheckBox col8 --><input type="checkbox" value="1" name="{col8_Name}" {col8}><!-- END CheckBox col8 --></th>
+ <!-- END Panel Header_ppu -->
+            <!-- BEGIN Panel Header_money -->
+            <th>
+            <!-- BEGIN Sorter Sorter_money --><a href="{Sort_URL}">{res:money}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_money -->&nbsp; 
+            <!-- BEGIN CheckBox col9 --><input type="checkbox" value="1" name="{col9_Name}" {col9}><!-- END CheckBox col9 --></th>
+ <!-- END Panel Header_money -->
+            <!-- BEGIN Panel Header_initial_volume -->
+            <th>
+            <!-- BEGIN Sorter Sorter_initial_volume --><a href="{Sort_URL}">{res:initial_volume}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_initial_volume -->&nbsp; 
+            <!-- BEGIN CheckBox col12 --><input type="checkbox" value="1" name="{col12_Name}" {col12}><!-- END CheckBox col12 --></th>
+ <!-- END Panel Header_initial_volume -->
+            <!-- BEGIN Panel Header_final_volume -->
+            <th>
+            <!-- BEGIN Sorter Sorter_final_volume --><a href="{Sort_URL}">{res:final_volume}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_final_volume -->&nbsp; 
+            <!-- BEGIN CheckBox col13 --><input type="checkbox" value="1" name="{col13_Name}" {col13}><!-- END CheckBox col13 --></th>
+ <!-- END Panel Header_final_volume -->
+            <!-- BEGIN Panel Header_sale_type -->
+            <th>
+            <!-- BEGIN Sorter Sorter_sale_type --><a href="{Sort_URL}">{res:sale_type}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_sale_type -->&nbsp; 
+            <!-- BEGIN CheckBox col10 --><input type="checkbox" value="1" name="{col10_Name}" {col10}><!-- END CheckBox col10 --></th>
+ <!-- END Panel Header_sale_type -->
+            <!-- BEGIN Panel Header_pay_payment_type -->
+            <th>
+            <!-- BEGIN Sorter Sorter_pay_payment_type --><a href="{Sort_URL}">{res:pay_payment_type}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_pay_payment_type -->&nbsp; 
+            <!-- BEGIN CheckBox col11 --><input type="checkbox" value="1" name="{col11_Name}" {col11}><!-- END CheckBox col11 --></th>
+ <!-- END Panel Header_pay_payment_type -->
+          </tr>
+ 
+          <!-- BEGIN Row -->
+          <tr class="Row">
+            <!-- BEGIN Panel Data_sale_id -->
+            <td style="TEXT-ALIGN: right">{sale_id}&nbsp;</td> <!-- END Panel Data_sale_id -->
+            <!-- BEGIN Panel Data_end_date -->
+            <td align="center">{end_date}&nbsp;</td> <!-- END Panel Data_end_date -->
+            <!-- BEGIN Panel Data_end_time -->
+            <td align="center">{end_time}&nbsp;</td> <!-- END Panel Data_end_time -->
+            <!-- BEGIN Panel Data_pump_id -->
+            <td style="TEXT-ALIGN: right">{pump_id}&nbsp;</td> <!-- END Panel Data_pump_id -->
+            <!-- BEGIN Panel Data_hose_id -->
+            <td style="TEXT-ALIGN: right">{hose_id}&nbsp;</td> <!-- END Panel Data_hose_id -->
+            <!-- BEGIN Panel Data_id -->
+            <td>{id}&nbsp;</td> <!-- END Panel Data_id -->
+            <!-- BEGIN Panel Data_volume -->
+            <td style="TEXT-ALIGN: right">{volume}</td> <!-- END Panel Data_volume -->
+            <!-- BEGIN Panel Data_ppu -->
+            <td style="TEXT-ALIGN: right">{ppu}</td> <!-- END Panel Data_ppu -->
+            <!-- BEGIN Panel Data_money -->
+            <td style="TEXT-ALIGN: right">{money}</td> <!-- END Panel Data_money -->
+            <!-- BEGIN Panel Data_initial_volume -->
+            <td align="right">{initial_volume}&nbsp;</td> <!-- END Panel Data_initial_volume -->
+            <!-- BEGIN Panel Data_final_volume -->
+            <td align="right">{final_volume}&nbsp;</td> <!-- END Panel Data_final_volume -->
+            <!-- BEGIN Panel Data_sale_type -->
+            <td align="center">{sale_type}&nbsp;</td> <!-- END Panel Data_sale_type -->
+            <!-- BEGIN Panel Data_pay_payment_type -->
+            <td align="center">{pay_payment_type}&nbsp;</td> <!-- END Panel Data_pay_payment_type -->
+          </tr>
+ <!-- END Row -->
+          <!-- BEGIN NoRecords -->
+          <tr class="NoRecords">
+            <td align="left" colspan="33">{res:CCS_NoRecords} </td>
+          </tr>
+          <!-- END NoRecords -->
+          <tr class="Footer">
+            <td colspan="3">&nbsp;</td> 
+            <td align="left">&nbsp;</td> 
+            <td style="FONT-WEIGHT: bold" align="right" colspan="29">{lblTotalFooter}&nbsp;</td>
+          </tr>
+ 
+          <tr class="Footer">
+            <td colspan="3">{Report_CurrentDateTime}</td> 
+            <td align="left">&nbsp;Página {Report_CurrentPage} de
+              &nbsp;{Report_TotalPages}&nbsp;</td> 
+            <td align="right" colspan="29">
+              <!-- BEGIN Navigator Navigator -->
+              <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+              <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+              <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+              <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+              <!-- BEGIN Pages -->
+              <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+              <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+              <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+              <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+              <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+              <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+          </tr>
+ 
+          <!-- BEGIN Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p style="PAGE-BREAK-AFTER: always"></p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- END Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  &nbsp;<!-- END Grid config_values_ssf_addin_p --><br>
+</form>
+<p>{lblPrintTable}</p>
+</body>
+</html>

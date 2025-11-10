@@ -1,0 +1,34 @@
+19/09/2006 18:13:09  Voy a exportar 
+19/09/2006 18:13:09  export batch 27
+19/09/2006 18:13:09  new_batch 27
+19/09/2006 18:13:09  voy a exportar pumpPayments 27
+19/09/2006 18:13:09  arme la consulta  select * from ssf_addin_payments_data a,SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA b  where a.pay_sale_id = b.ho_trans_id  and b.ho_trans_type = 'APD' and b.ho_batch_id = 0
+19/09/2006 18:13:09  voy a exportar BatchPrice 27
+19/09/2006 18:13:09  arme la consulta  select *  from ssf_addin_prices_change a, ssf_addin_prices_change_detail b, SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA c  where a.price_change_id =  b.price_change_id  and a.price_change_id = c.ho_trans_id  and c.ho_trans_type = 'PRH' and c.ho_batch_id = 0
+19/09/2006 18:15:03  Voy a exportar 
+19/09/2006 18:15:03  export batch 28
+19/09/2006 18:15:03  process BATCHPRICE
+19/09/2006 18:15:03  voy a exportar BatchPrice 28
+19/09/2006 18:15:03  arme la consulta  select *  from ssf_addin_prices_change a, ssf_addin_prices_change_detail b, SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA c  where a.price_change_id =  b.price_change_id  and a.price_change_id = c.ho_trans_id  and c.ho_trans_type = 'PRH' and c.ho_batch_id = 0
+19/09/2006 18:15:48  Voy a exportar 
+19/09/2006 18:15:48  export batch 29
+19/09/2006 18:15:48  voy a exportar BatchPrice 29
+19/09/2006 18:15:48  arme la consulta  select *  from ssf_addin_prices_change a, ssf_addin_prices_change_detail b, SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA c  where a.price_change_id =  b.price_change_id  and a.price_change_id = c.ho_trans_id  and c.ho_trans_type = 'PRH' and c.ho_batch_id = 0
+19/09/2006 18:16:00  Voy a exportar 
+19/09/2006 18:16:00  export batch 30
+19/09/2006 18:16:00  voy a exportar PumpSales 30
+19/09/2006 18:16:08  Voy a exportar 
+19/09/2006 18:16:08  export batch 31
+19/09/2006 18:16:08  voy a exportar pumpPayments 31
+19/09/2006 18:16:08  arme la consulta  select * from ssf_addin_payments_data a,SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA b  where a.pay_sale_id = b.ho_trans_id  and b.ho_trans_type = 'APD' and b.ho_batch_id = 0
+19/09/2006 18:16:18  Voy a exportar 
+19/09/2006 18:16:18  export batch 32
+19/09/2006 18:16:18  voy a exportar PumpSales 32
+19/09/2006 18:16:18  voy a exportar pumpPayments 32
+19/09/2006 18:16:18  arme la consulta  select * from ssf_addin_payments_data a,SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA b  where a.pay_sale_id = b.ho_trans_id  and b.ho_trans_type = 'APD' and b.ho_batch_id = 0
+19/09/2006 18:16:18  voy a exportar BatchPrice 32
+19/09/2006 18:16:18  arme la consulta  select *  from ssf_addin_prices_change a, ssf_addin_prices_change_detail b, SSF_ADDIN_HEAD_OFFICE_EXPORT_DATA c  where a.price_change_id =  b.price_change_id  and a.price_change_id = c.ho_trans_id  and c.ho_trans_type = 'PRH' and c.ho_batch_id = 0
+19/09/2006 18:32:01  Voy a importar Precios 
+19/09/2006 18:32:37  Voy a importar Precios 
+19/09/2006 18:40:46 envia exportanswerprice20060915171536.xml a data/00001/inbox/exportanswerprice20060915171536.xml
+19/09/2006 18:40:47 envia exportanswerprice20060915171814.xml a data/00001/inbox/exportanswerprice20060915171814.xml

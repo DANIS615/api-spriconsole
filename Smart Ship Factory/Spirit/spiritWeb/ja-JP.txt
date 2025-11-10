@@ -1,0 +1,2 @@
+CCS_LanguageID=ja
+CCS_LocaleID=ja-JP

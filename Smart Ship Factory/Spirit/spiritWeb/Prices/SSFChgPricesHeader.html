@@ -1,0 +1,412 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFChgPricesHeader</title>
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-DED87D66
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-5DF8DF8F
+
+var ssf_addin_prices_changeSearch_DatePicker_s_application_date1 = new Object(); 
+ssf_addin_prices_changeSearch_DatePicker_s_application_date1.format           = "yyyymmdd";
+ssf_addin_prices_changeSearch_DatePicker_s_application_date1.style            = "Styles/Spiritnew/Style.css";
+ssf_addin_prices_changeSearch_DatePicker_s_application_date1.relativePathPart = "../";
+ssf_addin_prices_changeSearch_DatePicker_s_application_date1.themeVersion     = "3.0";
+
+var ssf_addin_prices_change1_DatePicker_application_date1 = new Object(); 
+ssf_addin_prices_change1_DatePicker_application_date1.format           = "yyyymmdd";
+ssf_addin_prices_change1_DatePicker_application_date1.style            = "Styles/Spiritnew/Style.css";
+ssf_addin_prices_change1_DatePicker_application_date1.relativePathPart = "../";
+ssf_addin_prices_change1_DatePicker_application_date1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+{SSFSpiritHeader} 
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top" width="15%">
+      <!-- BEGIN Record ssf_addin_prices_changeSearch -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_SearchFormPrefix} {res:ssf_addin_prices_change}
+                  {res:CCS_SearchFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:price_change_id}</th>
+ 
+                  <td><input maxlength="10" size="10" value="{s_price_change_id}" name="{s_price_change_id_Name}"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:application_date}</th>
+ 
+                  <td><input maxlength="11" size="11" value="{s_application_date}" name="{s_application_date_Name}">
+                    <!-- BEGIN DatePicker DatePicker_s_application_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_application_date1 --></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:price_change_result}</th>
+ 
+                  <td>
+                    <select name="{s_price_change_result_Name}" style="WIDTH: 127px">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {s_price_change_result_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td><a href="{ClearParameters_Src}">{res:CCS_Clear}</a> </td> 
+                  <td align="right">
+                    <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <a onclick="return popup('../Configuration/popupwindow.php?action=reload_prices','notes')" href="{Link1_Src}">{res:SSF_RELOADPRICETEXT}</a><!-- END Record ssf_addin_prices_changeSearch --></td><br>
+    <td valign="top" width="5%"></td> 
+    <td valign="top" width="80%">
+      <!-- BEGIN Grid ssf_addin_prices_change -->
+      <!-- Comienza td de grilla de cabeceras -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix} {res:ssf_addin_prices_change}
+                {res:CCS_GridFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_price_change_id --><a href="{Sort_URL}">{res:price_change_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_price_change_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_application_date --><a href="{Sort_URL}">{res:application_date}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_application_date --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_application_time --><a href="{Sort_URL}">{res:application_time}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_application_time --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_processed_date --><a href="{Sort_URL}">{res:processed_date}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_processed_date --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_processed_time --><a href="{Sort_URL}">{res:processed_time}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_processed_time --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_price_change_result --><a href="{Sort_URL}">{res:price_change_result}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_price_change_result --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{price_change_id_Src}">{price_change_id}</a>&nbsp;</td> 
+                <td>{application_date}&nbsp;</td> 
+                <td>{application_time}&nbsp;</td> 
+                <td>{processed_date}&nbsp;</td> 
+                <td>{processed_time}&nbsp;</td> 
+                <td>{price_change_result}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="6">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="6">
+                  <!-- BEGIN Link ssf_addin_prices_change_Insert --><a href="{ssf_addin_prices_change_Insert_Src}">{res:CCS_InsertLink}</a><!-- END Link ssf_addin_prices_change_Insert -->&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}&navigatorclick=1">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}&navigatorclick=1">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}&navigatorclick=1">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}&navigatorclick=1">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}&navigatorclick=1">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- END Grid ssf_addin_prices_change --><br>
+      <!-- BEGIN Record ssf_addin_prices_change1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_RecordFormPrefix} {res:ssf_addin_prices_change}
+                  {res:CCS_RecordFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:application_date}&nbsp;(yyyymmdd) </th>
+ 
+                  <td><input readonly maxlength="11" size="11" value="{application_date}" name="{application_date_Name}">
+                    <!-- BEGIN DatePicker DatePicker_application_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_application_date1 -->&nbsp;</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:application_time}&nbsp;(hhmmss) </th>
+ 
+                  <td><input maxlength="9" size="10" value="{application_time}" name="{application_time_Name}" style="WIDTH: 94px; HEIGHT: 22px">
+                    <!-- BEGIN TextBox price_change_id --><input size="8" value="{price_change_id}" name="{price_change_id_Name}" style="WIDTH: 68px; HEIGHT: 22px"><!-- END TextBox price_change_id -->&nbsp;</td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+                    <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!-- END Record ssf_addin_prices_change1 --><br>
+      <!-- BEGIN EditableGrid ssf_addin_prices_change_d -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_GridFormPrefix}
+                  {res:ssf_addin_prices_change_detail} {res:CCS_GridFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="5">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Caption">
+                  <th>
+                  <!-- BEGIN Sorter Sorter_price_change_id --><a href="{Sort_URL}">{res:price_change_id}</a> 
+                  <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_price_change_id --></th>
+ 
+                  <th>
+                  <!-- BEGIN Sorter Sorter_grade_id --><a href="{Sort_URL}">{res:grade_id}</a> 
+                  <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_grade_id --></th>
+ 
+                  <th>
+                  <!-- BEGIN Sorter Sorter_price_level --><a href="{Sort_URL}">{res:price_level}</a> 
+                  <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_price_level --></th>
+ 
+                  <th>
+                  <!-- BEGIN Sorter Sorter_ppu --><a href="{Sort_URL}">{res:ppu}</a> 
+                  <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ppu --></th>
+ 
+                  <th>{res:CCS_Delete} </th>
+                </tr>
+ 
+                <!-- BEGIN Row -->
+                <!-- BEGIN RowError -->
+                <tr class="Error">
+                  <td colspan="5">{Error}</td>
+                </tr>
+                <!-- END RowError -->
+                <tr class="Row">
+                  <td><input readonly maxlength="10" size="10" value="{price_change_id}" name="{price_change_id_Name}"></td> 
+                  <td>
+                    <select name="{grade_id_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {grade_id_Options}
+                    </select>
+ </td> 
+                  <td>
+                    <select name="{price_level_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {price_level_Options}
+                    </select>
+ </td> 
+                  <td><input maxlength="20" value="{ppu}" name="{ppu_Name}"></td> 
+                  <td>
+                    <!-- BEGIN CheckBox CheckBox_Delete --><input type="checkbox" value="1" name="{CheckBox_Delete_Name}" {CheckBox_Delete}><!-- END CheckBox CheckBox_Delete -->&nbsp;</td>
+                </tr>
+ <!-- END Row -->
+                <!-- BEGIN NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="5">{res:CCS_NoRecords} </td>
+                </tr>
+                <!-- END NoRecords -->
+                <tr class="Footer">
+                  <td style="TEXT-ALIGN: right" colspan="5">
+                    <!-- BEGIN Navigator Navigator -->
+                    <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                    <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                    <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                    <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                    <!-- BEGIN Pages -->
+                    <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                    <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                    <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                    <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                    <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                    <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator -->
+                    <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Submit -->
+                    <!-- BEGIN Button Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Cancel --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!-- END EditableGrid ssf_addin_prices_change_d --><br>
+      <!-- BEGIN Grid ssf_addin_prices_change_d1 -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}
+                {res:ssf_addin_prices_change_detail} {res:CCS_GridFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_price_change_id --><a href="{Sort_URL}">{res:price_change_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_price_change_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_grade_id --><a href="{Sort_URL}">{res:grade_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_grade_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_price_level --><a href="{Sort_URL}">{res:price_level}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_price_level --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_ppu --><a href="{Sort_URL}">{res:ppu}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ppu --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right" width="150">{price_change_id}&nbsp;</td> 
+                <td width="150">{grade_id}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right" width="150">{price_level}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right" width="150">{ppu}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="4">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="4">
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Grid ssf_addin_prices_change_d1 --></td>
+  </tr>
+</table>
+<br>
+<br>
+</span>
+</body>
+</html>

@@ -1,0 +1,6 @@
+1, "Direccion IP"
+2, "Direccion IP o Nombre de Maquina a donde quiere conectarse"
+3, "Puerto"
+4, "Puerto o Socket a donde quiere conectarse"
+5, "No se especifico una Direccion IP"
+6, "No se especifico un puerto o socket valido"

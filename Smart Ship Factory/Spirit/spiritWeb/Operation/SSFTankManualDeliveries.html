@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTankDeliveries</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN EditableGrid EditableGrid1 -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>&nbsp;{res:ssf_delivery_add}</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Caption">
+            <th>
+            <!-- BEGIN Sorter Sorter_tank_id --><a href="{Sort_URL}">{res:tank_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tank_id --></th>
+ 
+            <th style="TEXT-ALIGN: center">&nbsp;&nbsp;{res:ssf_actual_volume}</th>
+ 
+            <th style="TEXT-ALIGN: center">
+            <!-- BEGIN Sorter Sorter_prod_height --><a href="{Sort_URL}">{res:ssf_prod_measure}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_prod_height --></th>
+          </tr>
+ 
+          <!-- BEGIN Row -->
+          <!-- BEGIN RowError -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END RowError -->
+          <tr class="Row">
+            <td>{lbl_tank_id}&nbsp;<input type="hidden" value="{tank_id}" name="{tank_id_Name}"></td> 
+            <td align="right">&nbsp;{prod_vol}</td> 
+            <td align="right">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <input style="TEXT-ALIGN: right" size="15" value="{prod_height}" name="{prod_height_Name}">&nbsp;</td>
+          </tr>
+ <!-- END Row -->
+          <!-- BEGIN NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="3">{res:CCS_NoRecords} </td>
+          </tr>
+          <!-- END NoRecords -->
+          <tr class="Footer">
+            <td style="TEXT-ALIGN: right" colspan="3">&nbsp;&nbsp;&nbsp; 
+              <!-- BEGIN Button Button_end_tank_charge --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_end_tank_charge -->&nbsp;&nbsp; 
+              <!-- BEGIN Button Cancel --><input class="botonazul" type="submit" value="{res:CCS_Clear}" name="{Button_Name}"><!-- END Button Cancel --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+&nbsp;<!-- END EditableGrid EditableGrid1 --></p>
+</body>
+</html>

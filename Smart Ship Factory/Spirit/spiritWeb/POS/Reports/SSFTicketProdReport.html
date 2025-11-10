@@ -1,0 +1,259 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketProdReport</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript">
+
+function set_child_listbox(parentObject,childObject,childArray) {
+
+    //Clear clild listbox
+    for(var i=childObject.length;i>0;i--) {
+            childObject.options[i] = null;
+    } 
+
+    childObject.options[0] = new Option("Select Value","");
+    var selIndex = parentObject.options[parentObject.selectedIndex].value;
+    if (selIndex == "") {
+            childObject.disabled = true;
+    } else {
+            childObject.disabled = false;
+            var childIndex = 1;
+            for (i = 0; i < childArray.length; i++) {
+                    if (childArray[i][2] == selIndex) {
+                            childObject.options[childIndex] = new Option(childArray[i][1], childArray[i][0]);
+                            childIndex++;
+                    }
+            }
+    }
+
+    //Select the first option
+    childObject.selectedIndex = 0;
+    childObject.onchange();
+
+}
+
+function disable_child_listbox() {
+
+  //Disable second listbox 
+    if (document.product_record.lstLevel1.selectedIndex == "") {
+            document.product_record.lstLevel2.disabled = true;
+    } else if (document.product_record.lstLevel2.length == 1) { 
+            document.product_record.lstLevel1.onchange();
+    }
+
+    //Disable third listbox   
+    if (document.product_record.lstLevel2.selectedIndex == "") {
+            document.product_record.lstLevel3.disabled = true;
+    }
+}
+
+
+<!-- BEGIN Grid ssf_tkt_categories -->
+var CatLevel2 = new Array(<!-- BEGIN Row -->
+new Array("{tkt_category_id}","{tkt_category_desc}","{tkt_category_parent}")<!-- END Row --><!-- BEGIN Separator -->,<!-- END Separator -->
+);
+<!-- END Grid ssf_tkt_categories -->
+
+
+<!-- BEGIN Grid ssf_tkt_categories1 -->
+var CatLevel3 = new Array(<!-- BEGIN Row -->
+new Array("{tkt_category_id}","{tkt_category_desc}","{tkt_category_parent}")<!-- END Row --><!-- BEGIN Separator -->,<!-- END Separator -->
+);
+<!-- END Grid ssf_tkt_categories1 -->
+
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record prod_search -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix}&nbsp;{res:ssf_tkt_plu}
+            {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{Label1}</th>
+ 
+            <td>
+              <select onchange="set_child_listbox(this,document.prod_search.lstLevel2,CatLevel2);" name="{lstLevel1_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {lstLevel1_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{Label2}</th>
+ 
+            <td>
+              <select onchange="set_child_listbox(this,document.prod_search.lstLevel3,CatLevel3);" name="{lstLevel2_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {lstLevel2_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{Label3}</th>
+ 
+            <td>
+              <select name="{lstLevel3_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {lstLevel3_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2"><a href="{Link1_Src}">{res:CCS_Clear}</a>&nbsp; 
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record prod_search --><br>
+</p>
+<form method="post" target="_blank">
+  <!-- BEGIN Button Button1 --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button Button1 --><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}">
+  <p>
+  <!-- BEGIN Report Report1 -->
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_ReportFormPrefix}&nbsp;
+            {res:ssf_tkt_plu}&nbsp;{res:CCS_ReportFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Section Report_Header -->
+          <tr class="Row">
+            <td colspan="8">{res:CCS_TotalRecords}&nbsp;{Report_TotalRecords}&nbsp; </td>
+          </tr>
+ <!-- END Section Report_Header -->
+          <!-- BEGIN Section Page_Header -->
+          <tr class="Caption">
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_plu_id --><a href="{Sort_URL}">{res:tkt_plu_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_plu_id -->&nbsp; </th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_plu_long_desc --><a href="{Sort_URL}">{res:tkt_plu_long_desc}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_plu_long_desc -->&nbsp; </th>
+ 
+            <th>&nbsp; 
+            <!-- BEGIN Sorter Sorter1 --><a href="{Sort_URL}">{cat1_tkt_category_desc_text}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter1 --></th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_cat2_tkt_category_desc --><a href="{Sort_URL}">{cat2_tkt_category_desc_text}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_cat2_tkt_category_desc -->&nbsp; </th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_cat3_tkt_category_desc --><a href="{Sort_URL}">{cat3_tkt_category_desc_text}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_cat3_tkt_category_desc -->&nbsp; </th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_prod_type --><a href="{Sort_URL}">{res:tkt_plu_type}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_prod_type -->&nbsp; </th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_plu_tax --><a href="{Sort_URL}">{res:tkt_plu_tax}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_plu_tax -->&nbsp; </th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_plu_unit --><a href="{Sort_URL}">{res:tkt_plu_unit}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_plu_unit -->&nbsp; </th>
+          </tr>
+ <!-- END Section Page_Header -->
+          <!-- BEGIN Section Detail -->
+          <tr class="Row">
+            <td>{tkt_plu_id} </td> 
+            <td>{tkt_plu_long_desc} </td> 
+            <td>{cat1_tkt_category_desc} </td> 
+            <td>{cat2_tkt_category_desc} </td> 
+            <td>{cat3_tkt_category_desc} </td> 
+            <td>{prod_type} </td> 
+            <td>{tkt_plu_tax} </td> 
+            <td>{tkt_plu_unit} </td>
+          </tr>
+ <!-- END Section Detail -->
+          <!-- BEGIN Section Report_Footer -->
+          <!-- BEGIN Panel NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="8">{res:CCS_NoRecords} </td>
+          </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+          <!-- BEGIN Section Page_Footer -->
+          <tr class="Footer">
+            <td>{Report_CurrentDateTime}&nbsp; </td> 
+            <td style="TEXT-ALIGN: right" colspan="7">{res:CCS_ReportPageNumber1}&nbsp;{Report_CurrentPage}&nbsp;{res:CCS_ReportPageNumber2}&nbsp;{Report_TotalPages} 
+              <!-- BEGIN Navigator Navigator -->
+              <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+              <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+              <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+              <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+              <!-- BEGIN Pages -->
+              <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+              <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+              <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+              <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+              <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+              <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp; </td>
+          </tr>
+ 
+          <!-- BEGIN Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p style="PAGE-BREAK-AFTER: always"></p>
+  <p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- END Panel PageBreak --><!-- END Section Page_Footer -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- END Report Report1 --><br>
+</form>
+</p>
+</body>
+</html>

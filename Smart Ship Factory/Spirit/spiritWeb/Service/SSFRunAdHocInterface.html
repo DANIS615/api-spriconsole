@@ -1,0 +1,141 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFExportData</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record export -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:ssf_export}</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th width="80">{res:ssf_interface}</th>
+ 
+            <td>
+              <select style="WIDTH: 268px" name="{exportfile_Name}">
+                <option value="" selected>{res:ssf_all_interfaces}</option>
+                {exportfile_Options}
+              </select>
+ </td> 
+            <td width="100">&nbsp; 
+              <!-- BEGIN Button Button_Export --><input class="botonazul"  onclick="callexport()" type="button" value="{res:ssf_export}" name="{Button_Name}"><!-- END Button Button_Export --></td>
+          </tr>
+ 
+          <tr class="Error">
+            <td id="experror" align="left"  colspan="3">&nbsp; </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record export --></p>
+<p>
+<!-- BEGIN Record import -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:ssf_import}</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error} </td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th width="80">{res:ssf_interface}</th>
+ 
+            <td>
+              <select style="WIDTH: 268px" name="{importfile_Name}">
+                <option value="" selected>{res:ssf_all_interfaces}</option>
+                {importfile_Options}
+              </select>
+ </td> 
+            <td width="100">&nbsp; 
+              <!-- BEGIN Button Button_Import --><input class="botonazul" onclick="callimport()" type="button" value="{res:ssf_import}" name="{Button_Name}"><!-- END Button Button_Import --></td>
+          </tr>
+ 
+          <tr class="Error">
+            <td id="imperror" align="left" colspan="3">&nbsp; </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record import -->
+<p></p>
+<!-- BEGIN Record ftp -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>FTP</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th width="80">{res:ssf_action}</th>
+ 
+            <td>
+              <select style="WIDTH: 268px" name="{ftpaction_Name}">
+                <option value="" selected>{res:ssf_all_interfaces}</option>
+                {ftpaction_Options}
+              </select>
+ </td> 
+            <td width="100">&nbsp; 
+              <!-- BEGIN Button Button_FTP --><input class="botonazul" onclick="callftp()" type="button" value="{res:ssf_execute}" name="{Button_Name}"><!-- END Button Button_FTP --></td>
+          </tr>
+ 
+          <tr class="Error">
+            <td id="ftperror" align="left" colspan="3">&nbsp; </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ftp -->
+<p></p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFExportMasters</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+function ChangeValue(checkbox, valobject) {
+        for(var i=0;i<20;i++) {
+                var object_name = checkbox+"_"+i ;
+                var obj = document.getElementById(object_name) ;
+                if (obj != null) {
+                        obj.checked = valobject.checked ;
+                }
+        } 
+                 return valobject.checked;
+}
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN EditableGrid masterexport -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_mnu_export_masters} {res:CCS_GridFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Caption">
+            <th>&nbsp;{res:ssf_interface_code}</th>
+ 
+            <th>{res:action_description}</th>
+ 
+            <th style="TEXT-ALIGN: center">{res:CCS_SelectInterface}</th>
+          </tr>
+ 
+          <tr class="Caption">
+            <th>&nbsp;</th>
+ 
+            <th>&nbsp;</th>
+ 
+            <th style="TEXT-ALIGN: center"><input onclick="ChangeValue('CheckBox_Update',this);" type="checkbox" name="{chkmarkall_Name}" {chkmarkall}></th>
+          </tr>
+ 
+          <!-- BEGIN Row -->
+          <!-- BEGIN RowError -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END RowError -->
+		  {masterexport:newrow}
+          <tr class="Row">
+            <td align="left">{lblmaster_id}<input type="hidden" value="{file_des}" name="{file_des_Name}"><input type="hidden" value="{type}" name="{type_Name}"></td> 
+            <td>{master_description}&nbsp;<input type="hidden" value="{master_id}" name="{master_id_Name}"></td> 
+            <td align="center">
+              <!-- BEGIN CheckBox CheckBox_Update --><input id="{CheckBox_Update_Name}" type="checkbox" value="1" name="{CheckBox_Update_Name}" {CheckBox_Update}><!-- END CheckBox CheckBox_Update --></td>
+          </tr>
+ <!-- END Row -->
+          <!-- BEGIN NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="3">{res:CCS_NoRecords} </td>
+          </tr>
+          <!-- END NoRecords -->
+          <tr class="Footer">
+            <td style="TEXT-ALIGN: right" colspan="3">&nbsp; 
+              <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:ssf_export}" name="{Button_Name}"><!-- END Button Button_Submit --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END EditableGrid masterexport --><br>
+</p>
+</body>
+</html>

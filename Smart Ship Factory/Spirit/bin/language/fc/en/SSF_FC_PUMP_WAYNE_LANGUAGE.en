@@ -1,0 +1,4 @@
+1, "Maximum transaction"
+2, "Maximum volume in transaction (zero means no limit)"
+3, "Slow down"
+4, "Set the slow down value to prevent a transaction stop correctly with a preset. Set zero if you don't know the correct value"

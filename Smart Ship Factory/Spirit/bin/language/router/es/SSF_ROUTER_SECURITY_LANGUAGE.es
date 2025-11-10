@@ -1,0 +1,6 @@
+1, "No se puede cambiar la clave del usuario especificado"
+2, "La clave ingresada es invalida"
+3, "El usuario ingresado es invalido"
+4, "Se ha cambiado satisfactoriamente la clave"
+5, "Se ha blanqueado satisfactoriamente la clave"
+6, "Administradores"

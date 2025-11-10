@@ -1,0 +1,507 @@
+09/02/2007 17:54:04 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:04 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:04 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:04 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:54:04 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:54:04 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:54:05 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:54:05 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:54:05 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:54:05 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:54:05 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:54:05 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:54:05 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:54:05 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:54:05 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:54:05 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:54:45 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:54:45 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:54:45 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:54:45 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:54:45 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:54:45 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:54:45 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:54:45 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:54:45 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:54:45 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:54:45 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:54:45 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:54:48 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:54:48 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:54:48 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:54:48 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:54:48 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:54:48 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:54:48 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:54:48 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:54:48 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:54:48 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:54:48 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:54:48 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings
+09/02/2007 17:54:04 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:04 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:04 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:04 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:54:04 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:54:04 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:54:05 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:54:05 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:54:05 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:54:05 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:54:05 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:54:05 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:54:05 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:54:05 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:54:05 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:54:05 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:05 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:05 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:54:05 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:54:05 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:54:45 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:54:45 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:54:45 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:54:45 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:54:45 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:54:45 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:54:45 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:54:45 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:54:45 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:54:45 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:54:45 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:54:45 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:45 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:45 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:54:45 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:54:45 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:54:48 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:54:48 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:54:48 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:54:48 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:54:48 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:54:48 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:54:48 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:54:48 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:54:48 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:54:48 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:54:48 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:54:48 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:54:48 [INFO]	/////////////////////////////////////
+09/02/2007 17:54:48 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:54:48 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:54:48 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:55:10 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:55:10 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:55:10 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:55:10 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:55:10 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:55:10 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:55:10 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:55:10 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:55:10 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:55:10 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:55:10 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:55:10 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:55:10 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:10 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:10 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:55:10 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:55:10 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:55:10 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:55:10 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:55:10 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:55:19 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:55:19 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:55:19 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:55:19 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:55:19 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:55:19 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:55:19 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:55:19 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:55:19 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:55:19 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:55:19 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:55:19 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:55:19 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:19 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:19 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:55:19 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:55:19 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:55:19 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:55:19 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:55:19 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+09/02/2007 17:55:22 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:22 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:22 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:22 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:55:22 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:55:22 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:55:22 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:55:23 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:55:23 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:23 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:23 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:23 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:55:23 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:55:23 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:55:23 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:55:23 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:55:23 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:23 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:23 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:23 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:55:23 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:55:23 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:55:23 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:55:23 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:55:23 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:23 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:23 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:23 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:55:23 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:55:23 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:23 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:23 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:23 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:55:23 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:55:23 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:55:23 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:55:23 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:55:23 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+09/02/2007 17:55:28 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:28 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:28 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:55:29 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:55:29 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:55:29 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:55:29 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:55:29 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:29 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:55:29 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:55:29 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:55:29 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:55:29 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:55:29 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:29 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:55:29 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:55:29 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:55:29 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:55:29 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:55:29 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:29 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:55:29 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:55:29 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:29 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:29 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:55:29 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:55:29 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:55:29 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:55:29 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:55:29 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	 voy a eliminar datos de PumpSales anteriores a la fecha 20060209
+09/02/2007 17:55:35 [INFO]	 Elimino ssf_addin_payments_data 
+09/02/2007 17:55:35 [INFO]	 Se eliminaron 0 registros de ssf_addin_payments_data 
+09/02/2007 17:55:35 [INFO]	 Elimino ssf_pump_sales 
+09/02/2007 17:55:35 [INFO]	 Se eliminaron 0 registros de ssf_pump_sales 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	 voy a eliminar datos de PriceChange anteriores a la fecha 20060209
+09/02/2007 17:55:35 [INFO]	 Elimino ssf_addin_prices_change_detail 
+09/02/2007 17:55:35 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change_detail 
+09/02/2007 17:55:35 [INFO]	 Elimino ssf_addin_prices_change 
+09/02/2007 17:55:35 [INFO]	 Se eliminaron 0 registros de ssf_addin_prices_change 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	Voy a eliminar datos de PosSales anteriores a la fecha 20060209
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tkt_trx_tender 
+09/02/2007 17:55:35 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tender 
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tkt_trx_tax 
+09/02/2007 17:55:35 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_tax 
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tkt_trx_detail 
+09/02/2007 17:55:35 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_detail 
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tkt_trx_header 
+09/02/2007 17:55:35 [INFO]			Se eliminaron 0 registros de ssf_tkt_trx_header 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	Voy a eliminar datos de PosPriceChange anteriores a la fecha 20060415
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tkt_prices 
+09/02/2007 17:55:35 [INFO]		Se eliminaron 0 registros de ssf_tkt_prices 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	Proceso Manual - Eliminación Tablas 
+09/02/2007 17:55:35 [INFO]	/////////////////////////////////////
+09/02/2007 17:55:35 [INFO]	Voy a eliminar datos de TankStock anteriores a la fecha 20061009
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tank_day_diff 
+09/02/2007 17:55:35 [INFO]		Se eliminaron 0 registros de ssf_tank_day_diff 
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tank_day_sales 
+09/02/2007 17:55:35 [INFO]		Se eliminaron 0 registros de ssf_tank_day_sales 
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tank_deliveries 
+09/02/2007 17:55:35 [INFO]		Se eliminaron 0 registros de ssf_tank_deliveries 
+09/02/2007 17:55:35 [INFO]		Elimino ssf_tank_manual_readings 
+09/02/2007 17:55:35 [INFO]		Se eliminaron 0 registros de ssf_tank_manual_readings 

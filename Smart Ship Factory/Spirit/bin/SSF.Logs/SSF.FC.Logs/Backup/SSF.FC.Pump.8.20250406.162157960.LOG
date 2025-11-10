@@ -1,0 +1,252 @@
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [ID] with value [8]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [ID] Old Value [] New Value [8]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [max_mon_sale] with value [0.000]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [loop_manager] with value [LOOP1]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [loop_manager] Old Value [] New Value [LOOP1]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [min_mon_sale] with value [0.000]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [max_vol_sale] with value [40000.00]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [hoses_qty] with value [3]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [hoses_qty] Old Value [] New Value [3]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [real_id] - Value [0]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [grade] - Value [PREMIUM]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFHose::setHighTankSuction-[DEBUG]-Setting High tank suction [T1]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [suction_high] - Value [T1]
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [suction_low] - Value []
+17/07/2009-20:32:38.171-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [logical_id] - Value [1]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [logical_id] - Value [2]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [real_id] - Value [1]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [grade] - Value [PLUS]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setHighTankSuction-[DEBUG]-Setting High tank suction [T2]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [suction_high] - Value [T2]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [suction_low] - Value []
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [logical_id] - Value [3]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [real_id] - Value [2]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [grade] - Value [DIESEL]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setHighTankSuction-[DEBUG]-Setting High tank suction [T3]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [suction_high] - Value [T3]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFHose::setGeneralParameters-[DEBUG]-Name [suction_low] - Value []
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [max_pump_error_counter] with value [6]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [fill_up_fuel_tank_preset_type] with value [VOLUME]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [fill_up_fuel_tank_preset_value] with value [999.000]
+17/07/2009-20:32:38.187-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [totalizer_update_time] with value [0]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [slot_id] with value [2]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [slot_id] Old Value [0] New Value [2]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [min_vol_sale] with value [0.100]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [money_decimal_point] with value [2 - X.1]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Money decimal option [1]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [money_decimal_point] Old Value [3 - X.2] New Value [2 - X.1]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [implementation] with value [Wayne]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [implementation] Old Value [] New Value [Wayne]
+17/07/2009-20:32:38.203-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [ID] with value [8]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [volume_decimal_point] with value [1 - 3.3]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Volume decimal option [3]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [ppu_decimal_point] with value [3 - 2.2]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-PPU decimal option [2]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [ppu_decimal_point] Old Value [4 - 1.3] New Value [3 - 2.2]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [physical_id] with value [8]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [physical_id] Old Value [] New Value [8]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBasePump::setGeneralParameters-[DEBUG]-Setting paramater [pump_side_type] with value [DOBLE]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBaseConfigParam::setGeneralParameters-[DEBUG]-Replacing value for Parameter [pump_side_type] Old Value [] New Value [DOBLE]
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBasePump::checkForConfiguration-[DEBUG]-Checking Data
+17/07/2009-20:32:38.218-0x00000DF0-Pump.8-SSFBasePump::checkForConfiguration-[DEBUG]-Data OK
+17/07/2009-20:34:02.640-0x00000DF0-Pump.8-SSFBasePump::initial-[DEBUG]-PUMPID[08] - Binding attributes
+17/07/2009-20:34:02.718-0x00000DF0-Pump.8-SSFPumpSale::initDB-[DEBUG]-Table Opened OK
+17/07/2009-20:34:02.718-0x00000DF0-Pump.8-SSFPumpSale::loadLastSale-[DEBUG]-Last Sale loaded for pump 8
+17/07/2009-20:34:02.734-0x00000DF0-Pump.8-SSFPumpSale::loadLastSale-[DEBUG]-Last Sale Sale Id [501880]
+17/07/2009-20:34:02.734-0x00000DF0-Pump.8-SSFDBBaseDataMngr::addDataBinding(bool)-[DEBUG]-Data isStopped binded
+17/07/2009-20:34:02.734-0x00000DF0-Pump.8-SSFDBBaseDataMngr::addDataBinding(bool)-[DEBUG]-Data isOpened binded
+17/07/2009-20:34:02.750-0x00000DF0-Pump.8-SSFDBDeviceData::initData-[DEBUG]-Table Opened OK
+17/07/2009-20:34:02.750-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '' AND attr_name = 'PumpKey']
+17/07/2009-20:34:02.750-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=Wayne0803
+17/07/2009-20:34:02.750-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '' AND attr_name = 'PumpPriceLevel']
+17/07/2009-20:34:02.750-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=1
+17/07/2009-20:34:02.750-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '' AND attr_name = 'isOpened']
+17/07/2009-20:34:02.765-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=1
+17/07/2009-20:34:02.765-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '' AND attr_name = 'isStopped']
+17/07/2009-20:34:02.765-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=0
+17/07/2009-20:34:02.765-0x00000DF0-Pump.8-SSFBasePump::initial-[DEBUG]-Pump 08 - Launching Message Router Client
+17/07/2009-20:34:02.765-0x00000DF0-Pump.8-SSFMessageRouterClient::initial-[DEBUG]-Setting the IP connection address to localhost
+17/07/2009-20:34:02.781-0x00000DF0-Pump.8-SSFMessageRouterClient::setRemoteAddress-[DEBUG]-Remote Address setted 
+17/07/2009-20:34:02.781-0x00000DF0-Pump.8-SSFPumpStatus::setPumpStatus-[DEBUG]-Request to change pump status from [00][CLOSED] to [01][ERROR]
+17/07/2009-20:34:02.796-0x00000DF0-Pump.8-SSFDBDeviceData::initData-[DEBUG]-Table Opened OK
+17/07/2009-20:34:02.796-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '1' AND attr_name = 'MoneyTotalizer']
+17/07/2009-20:34:02.796-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=1113844.800000
+17/07/2009-20:34:02.796-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '1' AND attr_name = 'VolumeTotalizer']
+17/07/2009-20:34:02.796-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=39099.310000
+17/07/2009-20:34:02.796-0x00000DF0-Pump.8-SSFHose::ifBlendedHose-[DEBUG]-This hose is not blended
+17/07/2009-20:34:02.812-0x00000DF0-Pump.8-SSFDBDeviceData::initData-[DEBUG]-Table Opened OK
+17/07/2009-20:34:02.812-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '2' AND attr_name = 'MoneyTotalizer']
+17/07/2009-20:34:02.812-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=619134.600000
+17/07/2009-20:34:02.812-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '2' AND attr_name = 'VolumeTotalizer']
+17/07/2009-20:34:02.828-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=22202.550000
+17/07/2009-20:34:02.828-0x00000DF0-Pump.8-SSFHose::ifBlendedHose-[DEBUG]-This hose is not blended
+17/07/2009-20:34:02.843-0x00000DF0-Pump.8-SSFDBDeviceData::initData-[DEBUG]-Table Opened OK
+17/07/2009-20:34:02.843-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '3' AND attr_name = 'MoneyTotalizer']
+17/07/2009-20:34:02.843-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=1155881.100000
+17/07/2009-20:34:02.843-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-reading from DB with clause [device_id = '8' AND subdevice_Id = '3' AND attr_name = 'VolumeTotalizer']
+17/07/2009-20:34:02.843-0x00000DF0-Pump.8-SSFDBDeviceData::readFromDB-[DEBUG]-read OK - Value=43505.640000
+17/07/2009-20:34:02.843-0x00000DF0-Pump.8-SSFHose::ifBlendedHose-[DEBUG]-This hose is not blended
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::connectToServer-[DEBUG]-Trying to connect to Message Router Server
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::connectToServer-[DEBUG]-<1148> Connected to server
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [EVT_EXIT_CLIENT_CONNECTION] Msg Len [51] 
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_AUTHORIZE_CALLING] Msg Len [93] 
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_AUTH_ID_000] Msg Len [72] 
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_AUTH_ID_008] Msg Len [45] 
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_BOGUS_AUTOMATIC_ID_008] Msg Len [56] 
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_BOGUS_CONNECT_ID_008] Msg Len [54] 
+17/07/2009-20:34:02.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_BOGUS_DISCONNECT_ID_008] Msg Len [57] 
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_BOGUS_HANDLE_ID_008] Msg Len [53] 
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_BOGUS_VALVE_ID_008] Msg Len [52] 
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CAPABILITIES_ID_000] Msg Len [53] 
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CAPABILITIES_ID_008] Msg Len [53] 
+17/07/2009-20:34:02.921-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CLEAR_ERROR_MSG_ID_000] Msg Len [56] 
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CLEAR_ERROR_MSG_ID_008] Msg Len [56] 
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CLEAR_PRESET_ID_008] Msg Len [83] 
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CLEAR_STOP_ID_000] Msg Len [78] 
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CLEAR_STOP_ID_008] Msg Len [51] 
+17/07/2009-20:34:02.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.953-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CLOSE_ID_000] Msg Len [108] 
+17/07/2009-20:34:02.953-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.953-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_CLOSE_ID_008] Msg Len [46] 
+17/07/2009-20:34:02.953-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.953-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_DEAUTH_ID_000] Msg Len [76] 
+17/07/2009-20:34:02.953-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.953-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_DEAUTH_ID_008] Msg Len [47] 
+17/07/2009-20:34:02.953-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.968-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_DELIVERY_PROGRESS_ID_008] Msg Len [58] 
+17/07/2009-20:34:02.968-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.968-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_ERROR_MSG_ID_000] Msg Len [54] 
+17/07/2009-20:34:02.968-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_ERROR_MSG_ID_008] Msg Len [54] 
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_FIRM_ID_008] Msg Len [49] 
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_INFO_ID_000] Msg Len [49] 
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_INFO_ID_008] Msg Len [49] 
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_LAST_SALE_ID_000] Msg Len [54] 
+17/07/2009-20:34:02.984-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_LAST_SALE_ID_008] Msg Len [54] 
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_000] Msg Len [56] 
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_008] Msg Len [56] 
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_TOTALS_ID_000] Msg Len [51] 
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.000-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_GET_TOTALS_ID_008] Msg Len [51] 
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_HOSE_LEARN_MODE_ID_000] Msg Len [56] 
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_HOSE_LEARN_MODE_ID_008] Msg Len [56] 
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_LOCK_ID_008] Msg Len [45] 
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_OPEN_ID_000] Msg Len [74] 
+17/07/2009-20:34:03.015-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_OPEN_ID_008] Msg Len [45] 
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_PAUSE_ID_000] Msg Len [89] 
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_PAUSE_ID_008] Msg Len [46] 
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_PRESET_ID_008] Msg Len [71] 
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_REAUTH_ID_000] Msg Len [101] 
+17/07/2009-20:34:03.031-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_REAUTH_ID_008] Msg Len [47] 
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_SET_PRICE_LEVEL_ID_000] Msg Len [56] 
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_SET_PRICE_LEVEL_ID_008] Msg Len [99] 
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_STATUS_ID_000] Msg Len [47] 
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_STATUS_ID_008] Msg Len [47] 
+17/07/2009-20:34:03.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.062-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_STOP_ID_000] Msg Len [111] 
+17/07/2009-20:34:03.062-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.062-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_STOP_ID_008] Msg Len [45] 
+17/07/2009-20:34:03.062-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.062-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [SUBSCRIBE] to be pushed [REQ_PUMP_UNLOCK_ID_008] Msg Len [47] 
+17/07/2009-20:34:03.062-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:03.703-0x000010D4-Pump.8-SSFMessageRouterClient::Entry-[DEBUG]-<1148> Message [00051|3|2|SSF|POST|REQ_PUMP_STATUS_ID_000||127.0.0.1:1058|^]
+17/07/2009-20:34:04.578-0x000010D4-Pump.8-SSFPumpMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_PUMP_STATUS_ID_000]
+17/07/2009-20:34:04.578-0x000010D4-Pump.8-SSFBasePump::getEventProcMethodPtr-[DEBUG]-Processing Event [REQ_PUMP_STATUS_ID_000]
+17/07/2009-20:34:06.875-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [POST] to be pushed [EVT_PUMP_STATUS_CHANGE_ID_008] Msg Len [76] 
+17/07/2009-20:34:06.875-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:07.062-0x000010D4-Pump.8-SSFMessageRouterClient::Entry-[DEBUG]-<1148> Message [00060|3|2|SSF|POST|REQ_PUMP_GET_PRICE_LEVEL_ID_008||127.0.0.1:1058|^]
+17/07/2009-20:34:07.250-0x000010D4-Pump.8-SSFPumpMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_PUMP_GET_PRICE_LEVEL_ID_008]
+17/07/2009-20:34:07.250-0x000010D4-Pump.8-SSFBasePump::getEventProcMethodPtr-[DEBUG]-Processing Event [REQ_PUMP_GET_PRICE_LEVEL_ID_008]
+17/07/2009-20:34:07.250-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [POST] to be pushed [EVT_PUMP_PRICE_LEVEL_ID_008] Msg Len [66] 
+17/07/2009-20:34:07.250-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:20.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:34:20.000-0x000010E0-Pump.8-SSFBasePump::executeDefaultAction-[DEBUG]-Sending Pump Status Change event
+17/07/2009-20:34:20.062-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [POST] to be pushed [EVT_PUMP_STATUS_CHANGE_ID_008] Msg Len [62] 
+17/07/2009-20:34:20.062-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:34:48.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:35:16.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:35:44.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:36:12.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:36:40.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:37:08.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:37:36.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:38:04.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:38:32.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:39:00.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:39:28.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:39:56.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:40:24.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:40:52.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:41:20.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:41:48.062-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:41:51.125-0x000010D4-Pump.8-SSFMessageRouterClient::Entry-[DEBUG]-<1148> Message [00053|3|2|GUEST|POST|REQ_PUMP_STATUS_ID_008||127.0.0.1:1163|^]
+17/07/2009-20:41:51.625-0x000010D4-Pump.8-SSFPumpMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_PUMP_STATUS_ID_008]
+17/07/2009-20:41:51.656-0x000010D4-Pump.8-SSFBasePump::getEventProcMethodPtr-[DEBUG]-Processing Event [REQ_PUMP_STATUS_ID_008]
+17/07/2009-20:41:53.937-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [POST] to be pushed [EVT_PUMP_STATUS_CHANGE_ID_008] Msg Len [76] 
+17/07/2009-20:41:54.046-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:41:54.078-0x000010D4-Pump.8-SSFMessageRouterClient::Entry-[DEBUG]-<1148> Message [00059|3|2|GUEST|POST|REQ_PUMP_CAPABILITIES_ID_008||127.0.0.1:1165|^]
+17/07/2009-20:41:54.437-0x000010D4-Pump.8-SSFPumpMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_PUMP_CAPABILITIES_ID_008]
+17/07/2009-20:41:54.531-0x000010D4-Pump.8-SSFBasePump::getEventProcMethodPtr-[DEBUG]-Processing Event [REQ_PUMP_CAPABILITIES_ID_008]
+17/07/2009-20:41:54.656-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [POST] to be pushed [RES_PUMP_CAPABILITIES_ID_008] Msg Len [371] 
+17/07/2009-20:41:54.656-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:41:54.765-0x000010D4-Pump.8-SSFMessageRouterClient::Entry-[DEBUG]-<1148> Message [00055|3|2|GUEST|POST|REQ_PUMP_GET_INFO_ID_008||127.0.0.1:1165|^]
+17/07/2009-20:41:54.875-0x000010D4-Pump.8-SSFPumpMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_PUMP_GET_INFO_ID_008]
+17/07/2009-20:41:55.062-0x000010D4-Pump.8-SSFBasePump::getEventProcMethodPtr-[DEBUG]-Processing Event [REQ_PUMP_GET_INFO_ID_008]
+17/07/2009-20:41:55.218-0x000010D4-Pump.8-SSFHose::getVolumeTotalizer-[DEBUG]-Asking totalizer value [39099.310000] from Hose [1]
+17/07/2009-20:41:55.218-0x000010D4-Pump.8-SSFHose::getVolumeTotalizer-[DEBUG]-Asking totalizer value [22202.550000] from Hose [2]
+17/07/2009-20:41:55.234-0x000010D4-Pump.8-SSFHose::getVolumeTotalizer-[DEBUG]-Asking totalizer value [43505.640000] from Hose [3]
+17/07/2009-20:41:55.546-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [POST] to be pushed [RES_PUMP_GET_INFO_ID_008] Msg Len [313] 
+17/07/2009-20:41:55.578-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:41:55.578-0x000010D4-Pump.8-SSFMessageRouterClient::Entry-[DEBUG]-<1148> Message [00060|3|2|GUEST|POST|REQ_PUMP_GET_ERROR_MSG_ID_008||127.0.0.1:1165|^]
+17/07/2009-20:41:55.765-0x000010D4-Pump.8-SSFPumpMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_PUMP_GET_ERROR_MSG_ID_008]
+17/07/2009-20:41:55.765-0x000010D4-Pump.8-SSFBasePump::getEventProcMethodPtr-[DEBUG]-Processing Event [REQ_PUMP_GET_ERROR_MSG_ID_008]
+17/07/2009-20:41:55.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [POST] to be pushed [EVT_PUMP_ERROR_MSG_ID_008] Msg Len [64] 
+17/07/2009-20:41:55.906-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:41:56.109-0x000010D4-Pump.8-SSFMessageRouterClient::Entry-[DEBUG]-<1148> Message [00053|3|2|GUEST|POST|REQ_PUMP_STATUS_ID_008||127.0.0.1:1165|^]
+17/07/2009-20:41:56.875-0x000010D4-Pump.8-SSFPumpMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_PUMP_STATUS_ID_008]
+17/07/2009-20:41:56.875-0x000010D4-Pump.8-SSFBasePump::getEventProcMethodPtr-[DEBUG]-Processing Event [REQ_PUMP_STATUS_ID_008]
+17/07/2009-20:41:57.375-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> [POST] to be pushed [EVT_PUMP_STATUS_CHANGE_ID_008] Msg Len [76] 
+17/07/2009-20:41:57.375-0x000010D4-Pump.8-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1148> Event sent to socket
+17/07/2009-20:42:19.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:42:47.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:43:15.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:43:43.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:44:11.000-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT
+17/07/2009-20:44:39.140-0x000010E0-Pump.8-SSFPumpWayne::sendCommand-[DEBUG]-PUMP 8 RESPONSE TIMEOUT

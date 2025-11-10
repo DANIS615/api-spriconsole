@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="CodeCharge Studio 3.0.2.2">
+<title>SSFShiftReport_Selector</title>
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<link rel="stylesheet" type="text/css" href="../Styles/Spiritnew/Style.css">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<!-- BEGIN Record ssf_addin_shifts_dataSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:ssf_shift_report_selector_type}
+            {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          </tr>
+ 
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:period_type}</th>
+ 
+            <td>
+              <select name="{s_period_type_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_period_type_Options}
+              </select>
+ </td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input type="submit" value="{res:CCS_Search}" name="{Button_Name}" class="botonazul"><!-- END Button Button_DoSearch --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record ssf_addin_shifts_dataSearch --><br>
+<!-- BEGIN Grid ssf_addin_shifts_data -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_GridFormPrefix} {res:ssf_shift_report_selector_list}
+          {res:CCS_GridFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+        </tr>
+ 
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th>{res:period_id}</th>
+ 
+          <th>{res:period_start_date}</th>
+ 
+          <th>{res:period_start_time}</th>
+ 
+          <th>{res:period_end_date}</th>
+ 
+          <th>{res:period_end_time}</th>
+ 
+          <th>{res:period_parent_cons_id}</th>
+ 
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td style="TEXT-ALIGN: right"><a href="{period_id_Src}">{period_id}</a>&nbsp;</td> 
+          <td>{period_start_date}&nbsp;</td> 
+          <td>{period_start_time}&nbsp;</td> 
+          <td>{period_end_date}&nbsp;</td> 
+          <td>{period_end_time}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{period_parent_cons_id}&nbsp;</td> 
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="6">{res:CCS_NoRecords} </td> 
+        </tr>
+ <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="6">
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+            <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+            <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+            <!-- BEGIN Pages -->
+            <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+            <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+            <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+            <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+</table>
+<!-- END Grid ssf_addin_shifts_data --><br>
+</body>
+</html>

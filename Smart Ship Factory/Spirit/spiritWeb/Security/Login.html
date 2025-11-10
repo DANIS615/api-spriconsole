@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Login</title>
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<link href="../Styles/Spirit/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//page_Login_login_OnChange @5-D34718CE
+function page_Login_login_OnChange()
+{
+    var result;
+//End page_Login_login_OnChange
+
+//Custom Code @9-2A29BDB7
+    // -------------------------
+    // Write your own code here.
+        document.forms["Login"].login.value = document.forms["Login"].login.value.toUpperCase();
+    // -------------------------
+//End Custom Code
+
+//Close page_Login_login_OnChange @5-BC33A33A
+    return result;
+}
+//End Close page_Login_login_OnChange
+
+//page_OnLoad @1-D0F4E1D3
+function page_OnLoad()
+{
+    var result;
+//End page_OnLoad
+
+//Set Focus @7-D20FE9BF
+    if (document.forms["Login"] && document.forms["Login"].login) document.forms["Login"].login.focus();
+//End Set Focus
+
+//Close page_OnLoad @1-BC33A33A
+    return result;
+}
+//End Close page_OnLoad
+
+//bind_events @1-225C9D7B
+function bind_events() {
+    if (document.forms["Login"]) check_and_bind('document.forms["Login"].login','onchange',page_Login_login_OnChange);
+    page_OnLoad();
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+<center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td valign="middle" align="center" height="100%"><img height="109" src="../Styles/Spirit/Images/base/logo_login.gif" width="158"><br>
+      <br>
+    </td>
+  </tr>
+</table>
+<!-- BEGIN Record Login -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table class="tabla_ilustracion" cellspacing="0" cellpadding="5" border="0">
+    <tr>
+      <td class="td_ilustracion">
+        <table class="tabla_gral" style="WIDTH: 276px; HEIGHT: 28px" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="td_gral_cabeza" colspan="2">{res:CCS_Login}</td>
+          </tr>
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr>
+            <td class="td_gral_login_titulo" width="40%">{res:CCS_Login}</td> 
+            <td class="td_gral_login"><input maxlength="100" value="{login}" name="{login_Name}"></td>
+          </tr>
+ 
+          <tr>
+            <td class="td_gral_login_titulo">{res:CCS_Password}</td> 
+            <td class="td_gral_login"><input type="password" maxlength="100" value="{password}" name="{password_Name}"></td>
+          </tr>
+ 
+          <tr>
+            <td class="td_gral_login" align="right" border="0">&nbsp;</td> 
+            <td class="td_gral_login" align="right">
+              <!-- BEGIN Button Button_DoLogin --><input class="botonazul" type="submit" value="{res:CCS_LoginBtn}" name="{Button_Name}"><!-- END Button Button_DoLogin --></td>
+          </tr>
+ 
+          <tr>
+            <td class="td_gral_fin" colspan="2">&nbsp; </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record Login -->
+</center>
+</body>
+</html>

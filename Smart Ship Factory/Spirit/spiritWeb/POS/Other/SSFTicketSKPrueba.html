@@ -1,0 +1,132 @@
+
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//page_ssf_tkt_speed_keys_Button_Delete_OnClick @17-721B71D7
+function page_ssf_tkt_speed_keys_Button_Delete_OnClick()
+{
+    var result;
+//End page_ssf_tkt_speed_keys_Button_Delete_OnClick
+
+//Confirmation Message @18-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_ssf_tkt_speed_keys_Button_Delete_OnClick @17-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_speed_keys_Button_Delete_OnClick
+
+//page_ssf_tkt_speed_keys_Button_Cancel_OnClick @19-B451CD6A
+function page_ssf_tkt_speed_keys_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_tkt_speed_keys_Button_Cancel_OnClick
+
+//bind_events @1-0AB739C1
+function SSFTicketSKPrueba_bind_events() {
+    if (document.forms["ssf_tkt_speed_keys"]) check_and_bind('document.forms["ssf_tkt_speed_keys"].Button_Delete','onclick',page_ssf_tkt_speed_keys_Button_Delete_OnClick);
+    if (document.forms["ssf_tkt_speed_keys"]) check_and_bind('document.forms["ssf_tkt_speed_keys"].Button_Cancel','onclick',page_ssf_tkt_speed_keys_Button_Cancel_OnClick);
+}
+//End bind_events
+
+//End CCS script
+</script>
+<script language="JavaScript">
+
+function assign_value(parentObject,childObject) {
+
+        var selIndex = parentObject.options[parentObject.selectedIndex].value;
+        if (selIndex == "") {
+                confirm ("asignar valor") ;
+        } else {
+                childObject.value  = selIndex ;
+        }
+}
+</script>
+<link rel="stylesheet" type="text/css" href="../../Styles/Spiritnew/Style.css">
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<!-- BEGIN Record ssf_tkt_speed_keys -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_RecordFormPrefix} {res:ssf_tkt_speed_keys}
+            {res:CCS_RecordFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          </tr>
+ 
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:tkt_speed_id}</th>
+ 
+            <td><input type="hidden" value="{h_tkt_speed_id}" name="{h_tkt_speed_id_Name}">
+              <select onchange="assign_value(this,document.ssf_tkt_speed_keys.h_tkt_speed_id);" name="{r_tkt_speed_id_Name}" {disabledparam}>
+                <option value="" selected>{res:CCS_SelectValue}</option>
+ {r_tkt_speed_id_Options} 
+              </select>
+ </td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_speed_parent_group_id}</th>
+ 
+            <td><input maxlength="10" size="10" value="{tkt_speed_parent_group_id}" name="{tkt_speed_parent_group_id_Name}"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_speed_order}</th>
+ 
+            <td><input maxlength="10" size="10" value="{tkt_speed_order}" name="{tkt_speed_order_Name}"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_speed_group_id}</th>
+ 
+            <td><input maxlength="10" size="10" value="{tkt_speed_group_id}" name="{tkt_speed_group_id_Name}"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_speed_value}</th>
+ 
+            <td><input maxlength="30" size="30" value="{tkt_speed_value}" name="{tkt_speed_value_Name}"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_speed_param}</th>
+ 
+            <td><input maxlength="101" size="50" value="{tkt_speed_param}" name="{tkt_speed_param_Name}"></td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+              <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record ssf_tkt_speed_keys -->

@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+
+<TITLE>Detect Java Runtime</TITLE>
+</HEAD>
+
+
+<SCRIPT LANGUAGE="JavaScript"> 
+	var javawsInstalled = 0;
+	var javaws142Installed = 0;
+	var javaws150Installed = 0;
+	isIE = "false";
+	if (navigator.mimeTypes && navigator.mimeTypes.length) {
+		if (navigator.mimeTypes['application/x-java-jnlp-file']) {
+			javawsInstalled = 1;
+			javaws142Installed = 1;
+			javaws150Installed = 1;
+		} 
+	} else {
+		isIE = "true";
+	}
+</script>
+
+<SCRIPT LANGUAGE="VBScript">
+on error resume next
+If isIE = "true" Then
+  If Not(IsObject(CreateObject("JavaWebStart.isInstalled"))) Then
+     javawsInstalled = 0
+  Else
+     javawsInstalled = 1
+  End If
+  If Not(IsObject(CreateObject("JavaWebStart.isInstalled.1.4.2.0"))) Then
+     javaws142Installed = 0
+  Else
+     javaws142Installed = 1
+  End If 
+  If Not(IsObject(CreateObject("JavaWebStart.isInstalled.1.5.0.0"))) Then
+     javaws150Installed = 0
+  Else
+     javaws150Installed = 1
+  End If  
+  
+
+End If
+</SCRIPT>
+
+<script language="JavaScript">
+if (javaws150Installed ) {
+   window.location= 'spirit.php';
+} else {
+   if (navigator.platform.indexOf("win") !=-1 || navigator.platform.indexOf("Win") !=-1)
+	window.location= 'Prerequisites/win32/jre-1_5_0_06-windows-i586-p.exe';
+   else
+        window.location= 'Prerequisites/linux/jre-1_5_0_09-linux-i586.bin';
+}
+</SCRIPT>
+
+<BODY>
+
+</BODY>
+</HTML>

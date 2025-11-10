@@ -1,0 +1,147 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTrxChartbyPumpHour</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-9A4F2EFE
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-12B7F5EF
+
+var ssf_pump_salesSearch_DatePicker_s_end_date1 = new Object(); 
+ssf_pump_salesSearch_DatePicker_s_end_date1.format           = "yyyymmdd";
+ssf_pump_salesSearch_DatePicker_s_end_date1.style            = "Styles/Spiritnew/Style.css";
+ssf_pump_salesSearch_DatePicker_s_end_date1.relativePathPart = "../../";
+ssf_pump_salesSearch_DatePicker_s_end_date1.themeVersion     = "3.0";
+
+var ssf_pump_salesSearch_DatePicker_s_date_to1 = new Object(); 
+ssf_pump_salesSearch_DatePicker_s_date_to1.format           = "yyyymmdd";
+ssf_pump_salesSearch_DatePicker_s_date_to1.style            = "Styles/Spiritnew/Style.css";
+ssf_pump_salesSearch_DatePicker_s_date_to1.relativePathPart = "../../";
+ssf_pump_salesSearch_DatePicker_s_date_to1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<table width="100%" border="0">
+  <tr>
+    <td width="40%">
+      <p>
+      <!-- BEGIN Record ssf_pump_salesSearch -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_SearchFormPrefix}&nbsp; <span class="textboldlight">{lblTitle}</span>{res:CCS_SearchFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="3">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:ssf_dates_range}</th>
+ 
+                  <td><input maxlength="9" size="9" value="{s_date_from}" name="{s_date_from_Name}">
+                    <!-- BEGIN DatePicker DatePicker_s_end_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a>&nbsp;&nbsp;<!-- END DatePicker DatePicker_s_end_date1 --></td> 
+                  <td>&nbsp;<input maxlength="9" size="9" value="{s_date_to}" name="{s_date_to_Name}">
+                    <!-- BEGIN DatePicker DatePicker_s_date_to1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a>&nbsp;&nbsp;<!-- END DatePicker DatePicker_s_date_to1 --></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:grade_id}</th>
+ 
+                  <td colspan="2">
+                    <select name="{s_tank_id_Name}" style="WIDTH: 165px">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {s_tank_id_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:ssf_periods_ahead}</th>
+ 
+                  <td colspan="2">
+                    <select name="{s_periods_ahead_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {s_periods_ahead_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:ssf_scale_option}</th>
+ 
+                  <td colspan="2">
+                    <!-- BEGIN RadioButton s_scale_option --><input type="radio" value="{Value}" name="{s_scale_option_Name}" {Check}>{Description}<br>
+                    <!-- END RadioButton s_scale_option --></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="3"><a href="{Link1_Src}">{res:CCS_Clear}</a> 
+                    <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;&nbsp;<!-- END Record ssf_pump_salesSearch --></p>
+    </td> 
+    <td valign="top" align="left" width="20%">
+      <table width="100%" border="1">
+        <tr>
+          <td>&nbsp;{Label1}</td>
+        </tr>
+      </table>
+    </td> 
+    <td width="30%">&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td class="Row" valign="top">&nbsp;</td> 
+    <td width="40%">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="3"></td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="3">&nbsp;{lblChart}<img src="{phpdata}"></td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</p>
+<p>&nbsp;</p>
+</body>
+</html>

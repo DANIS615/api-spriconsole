@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>pupupwindow</title>
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<link href="../Styles/Apricot/Style.css" type="text/css" rel="stylesheet">
+<link href="../Styles/Spirit/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//page_OnLoad @1-D0F4E1D3
+function page_OnLoad()
+{
+    var result;
+//End page_OnLoad
+
+//Custom Code @6-2A29BDB7
+    // -------------------------
+    // Write your own code here.
+        if( document.all['hdnActionToPerform'].value != "" )
+                window.location.href = window.location.href.substring(0,window.location.href.indexOf("?action="))+"?p_do_action="+document.all['hdnActionToPerform'].value;
+    // -------------------------
+//End Custom Code
+
+//Close page_OnLoad @1-BC33A33A
+    return result;
+}
+//End Close page_OnLoad
+
+//bind_events @1-B716D3FC
+function bind_events() {
+    page_OnLoad();
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+<form class="nada" action="popupwindow.php" method="post" target="_parent">
+  <p>{lblActivity}</p>
+  <p>&nbsp; 
+  <!-- BEGIN Button btnClose --><input class="botonazul" onclick="javascript:window.close();" type="submit" value="{res:ssf_close_window}" name="{Button_Name}"><!-- END Button btnClose --></p>
+  <p><input type="hidden" value="{hdnActionToPerform}" name="{hdnActionToPerform_Name}"></p>
+</form>
+</body>
+</html>

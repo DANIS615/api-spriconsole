@@ -1,0 +1,705 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketPeriodDetail</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<script language="JavaScript">
+function reload_page(obj) {
+        var p_type = obj.value
+        var tkt_period_group = getURLParam("tkt_period_group") ;
+        var tkt_period_type = getURLParam("tkt_period_type") ;
+        var tkt_period_id = getURLParam("tkt_period_id") ;
+        document.location.href = document.location.pathname + "?tkt_period_group=" + tkt_period_group + "&tkt_period_type=" + tkt_period_type + "&tkt_period_id=" + tkt_period_id + "&s_rep_option=" + p_type ;
+}
+
+
+function getURLParam(strParamName){
+  var strReturn = "";
+  var strHref = window.location.href;
+  //strParamName = strParamName.toLowerCase() ;
+  if ( strHref.indexOf("?") > -1 ){
+    //var strQueryString = strHref.substr(strHref.indexOf("?")).toLowerCase();
+        var strQueryString = strHref.substr(strHref.indexOf("?"));
+        strQueryString = strQueryString.substring(1) ;
+    var aQueryString = strQueryString.split("&");
+    for ( var iParam = 0; iParam < aQueryString.length; iParam++ ){
+        if ( aQueryString[iParam].indexOf(strParamName + "=") > -1 ){
+            var aParam = aQueryString[iParam].split("=");
+                if (aParam[0] == strParamName)    {
+                    strReturn = aParam[1];
+                    break;
+                }
+        }
+    }
+  }
+  return strReturn;
+} 
+</script>
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>
+<p>{SSFSpiritHeader} </p>
+<p>&nbsp; 
+<form method="post" target="_blank">
+  <!-- BEGIN Button Button1 --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button Button1 --><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}"></p>
+  <br>
+  <table width="100%" border="0">
+    <tr>
+      <td valign="top" width="55%" colspan="3">
+        <!-- BEGIN Report ssf_addin_shifts_data -->
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_shift_report_header} {res:CCS_ReportFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+                <!-- BEGIN Section Page_Header --><!-- END Section Page_Header -->
+                <!-- BEGIN Section Detail -->
+                <tr class="Caption">
+                  <th>{res:tkt_period_group}</th>
+ 
+                  <td>{tkt_period_group}</td> 
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th>{res:period_start_date}&nbsp;</th>
+ 
+                  <td>{period_start_date}</td>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>{res:period_type}</th>
+ 
+                  <td>{period_type}</td> 
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th>{res:period_start_time}&nbsp;</th>
+ 
+                  <td>{period_start_time}</td>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>{res:period_status}</th>
+ 
+                  <td>{period_status}</td> 
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th>{res:period_end_date}&nbsp;</th>
+ 
+                  <td>{period_end_date}</td>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>{res:period_id}</th>
+ 
+                  <td>{period_id}</td> 
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th>{res:period_end_time}&nbsp;</th>
+ 
+                  <td>{period_end_time}</td>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>{res:ssf_qty_of_transaction}</th>
+ 
+                  <td>{lblqtytransactions}&nbsp;</td> 
+                  <td>&nbsp;</td> 
+                  <td>&nbsp;</td> 
+                  <td>&nbsp;</td> 
+                  <td>&nbsp;</td>
+                </tr>
+ <!-- END Section Detail -->
+                <!-- BEGIN Section Report_Footer -->
+                <!-- BEGIN Panel NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="6">{res:CCS_NoRecords} </td>
+                </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+                <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+              </table>
+            </td>
+          </tr>
+        </table>
+        &nbsp;&nbsp;<!-- END Report ssf_addin_shifts_data --></td> 
+      <td width="2%">&nbsp;</td> 
+      <td valign="top" width="35%" rowspan="2">
+        <!-- BEGIN Panel Panel1 -->
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>&nbsp;{res:ssf_report_option}</th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <tr class="Bottom">
+                  <td style="TEXT-ALIGN: left">
+                    <!-- BEGIN RadioButton s_rep_option --><input id="s_report_option" onclick="reload_page(this);" type="radio" value="{Value}" name="{s_rep_option_Name}" {Check}>{Description}<br>
+                    <!-- END RadioButton s_rep_option -->&nbsp; </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        &nbsp; &nbsp;<!-- END Panel Panel1 -->&nbsp;</td>
+    </tr>
+ 
+    <tr>
+      <td valign="top">
+        <!-- BEGIN Report Report1 -->
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_trx_by_receipt_type} {res:CCS_ReportFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+                <!-- BEGIN Section Page_Header -->
+                <thead>
+                  <tr class="Caption">
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_receipt_type --><a href="{Sort_URL}">{res:tkt_receipt_type}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_receipt_type -->&nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_qty --><a href="{Sort_URL}">{res:tkt_qty}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_qty -->&nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_net_amount --><a href="{Sort_URL}">{res:tkt_net_amount}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_net_amount -->&nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_tax_amount --><a href="{Sort_URL}">{res:tkt_tax_amount}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_tax_amount -->&nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_total_amount --><a href="{Sort_URL}">{res:tkt_total_amount}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_total_amount -->&nbsp; </th>
+                  </tr>
+ 
+                </thead>
+ <!-- END Section Page_Header -->
+                <!-- BEGIN Section Detail -->
+                <tr class="Row">
+                  <td>{tkt_receipt_type} </td> 
+                  <td style="TEXT-ALIGN: right">{tkt_qty} </td> 
+                  <td style="TEXT-ALIGN: right">{tkt_net_amount} </td> 
+                  <td style="TEXT-ALIGN: right">{tkt_tax_amount} </td> 
+                  <td style="TEXT-ALIGN: right">{tkt_total_amount} </td>
+                </tr>
+ <!-- END Section Detail -->
+                <!-- BEGIN Section Report_Footer -->
+                <!-- BEGIN Panel NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="5">{res:CCS_NoRecords}&nbsp;</td>
+                </tr>
+ <!-- END Panel NoRecords -->
+                <tr class="NoRecords">
+                  <td class="" valign="baseline" colspan="5">&nbsp;</td>
+                </tr>
+ 
+                <tr class="Total">
+                  <td valign="baseline">
+                    <p>{res:CCS_ReportTotal}</p>
+                  </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">
+                    <p>{TotalSum_tkt_qty}</p>
+                  </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">
+                    <p>{TotalSum_tkt_net_amount}</p>
+                  </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">
+                    <p>{TotalSum_tkt_tax_amount}</p>
+                  </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">
+                    <p>{TotalSum_tkt_total_amount} </p>
+                  </td>
+                </tr>
+ <!-- END Section Report_Footer -->
+                <!-- BEGIN Section Page_Footer -->
+                <tfoot>
+                </tfoot>
+ <!-- END Section Page_Footer -->
+              </table>
+            </td>
+          </tr>
+        </table>
+        &nbsp;&nbsp;<!-- END Report Report1 --></td> 
+      <td>&nbsp;</td> 
+      <td>
+        <!-- BEGIN Report Report2 -->
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_trx_by_tender} {res:CCS_ReportFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+                <!-- BEGIN Section Page_Header -->
+                <thead>
+                  <tr class="Caption">
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_tender_id --><a href="{Sort_URL}">{res:tkt_tender_id}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_tender_id -->&nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_tender_amount --><a href="{Sort_URL}">{res:tkt_tender_amount}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_tender_amount -->&nbsp; </th>
+                  </tr>
+ 
+                </thead>
+ <!-- END Section Page_Header -->
+                <!-- BEGIN Section Detail -->
+                <tr class="Row">
+                  <td>{tkt_tender_id} </td> 
+                  <td style="TEXT-ALIGN: right">{tkt_tender_amount} </td>
+                </tr>
+ <!-- END Section Detail -->
+                <!-- BEGIN Section Report_Footer -->
+                <!-- BEGIN Panel NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="2">{res:CCS_NoRecords}</td>
+                </tr>
+ <!-- END Panel NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="2">&nbsp;</td>
+                </tr>
+ 
+                <tr class="Total">
+                  <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_tkt_tender_amount} </td>
+                </tr>
+ <!-- END Section Report_Footer -->
+                <!-- BEGIN Section Page_Footer -->
+                <tfoot>
+                  <tr class="Footer">
+                    <td colspan="2">
+                      <!-- BEGIN Navigator Navigator -->
+                      <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                      <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                      <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                      <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                      <!-- BEGIN Pages -->
+                      <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                      <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                      <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                      <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                      <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                      <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp;</td>
+                  </tr>
+                </tfoot>
+ <!-- END Section Page_Footer -->
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- END Report Report2 --></td> 
+      <td valign="top">&nbsp;</td> 
+      <td valign="top" rowspan="2">&nbsp;</td>
+    </tr>
+ 
+    <tr>
+      <td valign="top" width="35%" colspan="3">
+        <table width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <!-- BEGIN Report Report6 -->
+              <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                <tr>
+                  <td valign="top">
+                    <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                        <th style="TEXT-ALIGN: center">{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_fuel_reconciliation} {res:CCS_ReportFormSuffix} </th>
+ 
+                        <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                      </tr>
+                    </table>
+ 
+                    <table class="Grid" cellspacing="0" cellpadding="0">
+                      <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+                      <!-- BEGIN Section Page_Header -->
+                      <thead>
+                        <tr class="Caption">
+                          <th style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; TEXT-ALIGN: center" colspan="2">{res:ssf_products}&nbsp;</th>
+ 
+                          <th style="BACKGROUND-COLOR: #efeff9; TEXT-ALIGN: center" colspan="2">{res:ssf_period_sales}&nbsp;</th>
+ 
+                          <th style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; TEXT-ALIGN: center" colspan="2">{res:ssf_period_pump_sales}&nbsp;</th>
+ 
+                          <th style="BACKGROUND-COLOR: #efeff9; TEXT-ALIGN: center" colspan="2">{res:ssf_sales_minus_pump}&nbsp;</th>
+                        </tr>
+ 
+                        <tr class="Caption">
+                          <th style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid">{res:tkt_plu_id}</th>
+ 
+                          <th style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid">{res:tkt_plu_long_desc}</th>
+ 
+                          <th style="BACKGROUND-COLOR: #efeff9; TEXT-ALIGN: right">{res:volume}</th>
+ 
+                          <th style="BACKGROUND-COLOR: #efeff9; TEXT-ALIGN: right">{res:money}</th>
+ 
+                          <th style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; TEXT-ALIGN: right">{res:volume}</th>
+ 
+                          <th style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; TEXT-ALIGN: right">{res:money}</th>
+ 
+                          <th style="BACKGROUND-COLOR: #efeff9; TEXT-ALIGN: right">{res:volume}</th>
+ 
+                          <th style="BACKGROUND-COLOR: #efeff9; TEXT-ALIGN: right">{res:money}</th>
+                        </tr>
+ 
+                      </thead>
+ <!-- END Section Page_Header -->
+                      <!-- BEGIN Section Detail -->
+                      <tr class="Row">
+                        <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6">{tkt_plu_id} </td> 
+                        <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6">{tkt_plu_long_desc} </td> 
+                        <td style="BACKGROUND-COLOR: #efeff9; TEXT-ALIGN: right">{trx_qty} </td> 
+                        <td style="BACKGROUND-COLOR: #efeff9; TEXT-ALIGN: right">{trx_sales} </td> 
+                        <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: right">{pump_qty} </td> 
+                        <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: right">{pump_sales} </td> 
+                        <td {difcolor}>{qty_diff} </td> 
+                        <td {difcolor}>{total_amount_diff} </td>
+                      </tr>
+ <!-- END Section Detail -->
+                      <!-- BEGIN Section Report_Footer -->
+                      <!-- BEGIN Panel NoRecords -->
+                      <tr class="NoRecords">
+                        <td colspan="8">{res:CCS_NoRecords}</td>
+                      </tr>
+ <!-- END Panel NoRecords -->
+                      <tr class="Total">
+                        <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: right" valign="baseline">{res:CCS_ReportTotal} </td> 
+                        <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: right">&nbsp; </td> 
+                        <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                        <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_trx_sales} </td> 
+                        <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: right">&nbsp; </td> 
+                        <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: right" valign="baseline">{TotalSum_pump_sales} </td> 
+                        <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                        <td valign="baseline" {diftotalcolor}>{TotalSum_total_amount_diff} </td>
+                      </tr>
+ <!-- END Section Report_Footer -->
+                      <!-- BEGIN Section Page_Footer -->
+                      <tfoot>
+                        <tr class="Total">
+                          <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: right" valign="baseline" colspan="2">&nbsp; </td> 
+                          <td style="TEXT-ALIGN: center" colspan="2">
+                            <!-- BEGIN Link lnkperiod_sales1 --><a href="{lnkperiod_sales1_Src}">{res:ssf_period_sales}</a><!-- END Link lnkperiod_sales1 -->&nbsp; </td> 
+                          <td style="BORDER-RIGHT: #efeff9 1px solid; BORDER-TOP: #efeff9 1px solid; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: center" colspan="2">
+                            <!-- BEGIN Link lnkperiod_pump1 --><a href="{lnkperiod_pump1_Src}">{res:ssf_period_pump_sales}</a><!-- END Link lnkperiod_pump1 -->&nbsp; </td> 
+                          <td colspan="2">&nbsp; </td>
+                        </tr>
+                      </tfoot>
+ <!-- END Section Page_Footer -->
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- END Report Report6 --></td>
+          </tr>
+        </table>
+        <!-- BEGIN Report Report3 -->
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_ReportFormPrefix}&nbsp;{res:period_rep_user_block} {res:CCS_ReportFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+                <!-- BEGIN Section Page_Header -->
+                <thead>
+                  <tr class="Caption">
+                    <th>{res:tkt_attendant_id} &nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_tender_id --><a href="{Sort_URL}">{res:tkt_tender_id}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_tender_id -->&nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_tender_amount --><a href="{Sort_URL}">{res:tkt_tender_amount}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_tender_amount -->&nbsp; </th>
+                  </tr>
+ 
+                </thead>
+ <!-- END Section Page_Header -->
+                <!-- BEGIN Section tkt_attendant_id_Header --><!-- END Section tkt_attendant_id_Header -->
+                <!-- BEGIN Section Detail -->
+                <tr class="Row">
+                  <td style="FONT-WEIGHT: bold">{tkt_attendant_id}&nbsp; </td> 
+                  <td>{tkt_tender_id} </td> 
+                  <td style="TEXT-ALIGN: right">{tkt_tender_amount} </td>
+                </tr>
+ <!-- END Section Detail -->
+                <!-- BEGIN Section tkt_attendant_id_Footer -->
+                <tr class="SubTotal">
+                  <td style="TEXT-ALIGN: right">{res:CCS_ReportSubTotal} &nbsp; </td> 
+                  <td>&nbsp; </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{Sum_tkt_tender_amount} </td>
+                </tr>
+ <!-- END Section tkt_attendant_id_Footer -->
+                <!-- BEGIN Section Report_Footer -->
+                <!-- BEGIN Panel NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="3">{res:CCS_NoRecords}</td>
+                </tr>
+ <!-- END Panel NoRecords -->
+                <tr class="Total">
+                  <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                  <td>&nbsp; </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_tkt_tender_amount} </td>
+                </tr>
+ <!-- END Section Report_Footer -->
+                <!-- BEGIN Section Page_Footer -->
+                <tfoot>
+                  <tr class="Footer">
+                    <td colspan="3">
+                      <!-- BEGIN Navigator Navigator -->
+                      <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                      <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                      <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                      <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                      <!-- BEGIN Pages -->
+                      <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                      <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                      <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                      <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                      <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                      <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;&nbsp;<!-- END Navigator Navigator -->&nbsp;</td>
+                  </tr>
+                </tfoot>
+ <!-- END Section Page_Footer -->
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- END Report Report3 -->
+        <!-- BEGIN Report Report4 -->
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_ReportFormPrefix}&nbsp;{res:period_rep_pos_block} {res:CCS_ReportFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+                <!-- BEGIN Section Page_Header -->
+                <thead>
+                  <tr class="Caption">
+                    <th>{res:tkt_pos_id} &nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_tender_id --><a href="{Sort_URL}">{res:tkt_tender_id}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_tender_id -->&nbsp; </th>
+ 
+                    <th>
+                    <!-- BEGIN Sorter Sorter_tkt_tender_amount --><a href="{Sort_URL}">{res:tkt_tender_amount}</a> 
+                    <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                    <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_tender_amount -->&nbsp; </th>
+                  </tr>
+ 
+                </thead>
+ <!-- END Section Page_Header -->
+                <!-- BEGIN Section tkt_pos_id_Header --><!-- END Section tkt_pos_id_Header -->
+                <!-- BEGIN Section Detail -->
+                <tr class="Row">
+                  <td style="FONT-WEIGHT: bold; TEXT-ALIGN: right">{tkt_pos_id}&nbsp; </td> 
+                  <td>{tkt_tender_id} </td> 
+                  <td style="TEXT-ALIGN: right">{tkt_tender_amount} </td>
+                </tr>
+ <!-- END Section Detail -->
+                <!-- BEGIN Section tkt_pos_id_Footer -->
+                <tr class="SubTotal">
+                  <td style="TEXT-ALIGN: right">{res:CCS_ReportSubTotal} &nbsp; </td> 
+                  <td>&nbsp; </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{Sum_tkt_tender_amount} </td>
+                </tr>
+ <!-- END Section tkt_pos_id_Footer -->
+                <!-- BEGIN Section Report_Footer -->
+                <!-- BEGIN Panel NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="3">{res:CCS_NoRecords}</td>
+                </tr>
+ <!-- END Panel NoRecords -->
+                <tr class="Total">
+                  <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                  <td>&nbsp; </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_tkt_tender_amount} </td>
+                </tr>
+ <!-- END Section Report_Footer -->
+                <!-- BEGIN Section Page_Footer -->
+                <tfoot>
+                  <tr class="Footer">
+                    <td colspan="3">
+                      <!-- BEGIN Navigator Navigator -->
+                      <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                      <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                      <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                      <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                      <!-- BEGIN Pages -->
+                      <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                      <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                      <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                      <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                      <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                      <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp;</td>
+                  </tr>
+                </tfoot>
+ <!-- END Section Page_Footer -->
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- END Report Report4 --><br>
+        <!-- BEGIN Report Pump_Group -->
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_ReportFormPrefix}&nbsp; {res:ssf_sales_by_pump_group}{res:CCS_ReportFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+                <!-- BEGIN Section Page_Header -->
+                <thead>
+                  <tr class="Caption">
+                    <th>&nbsp;</th>
+ 
+                    <th style="TEXT-ALIGN: center" colspan="2">&nbsp;{res:ssf_period_sales}</th>
+ 
+                    <th style="TEXT-ALIGN: center" colspan="2">&nbsp;{res:ssf_period_pump_sales}</th>
+                  </tr>
+ 
+                  <tr class="Caption">
+                    <th>{res:ssf_pump_group}</th>
+ 
+                    <th style="TEXT-ALIGN: right">{res:volume}</th>
+ 
+                    <th style="TEXT-ALIGN: right">{res:money}</th>
+ 
+                    <th style="TEXT-ALIGN: right">{res:volume}&nbsp;</th>
+ 
+                    <th style="TEXT-ALIGN: right">{res:money}&nbsp;</th>
+                  </tr>
+ 
+                </thead>
+ <!-- END Section Page_Header -->
+                <!-- BEGIN Section Group_pump_group_name_Header --><!-- END Section Group_pump_group_name_Header -->
+                <!-- BEGIN Section Detail -->
+                <tr class="Row">
+                  <td style="FONT-WEIGHT: bold">{pump_group_name}</td> 
+                  <td style="TEXT-ALIGN: right">{total_volume} </td> 
+                  <td style="TEXT-ALIGN: right">{total_money} </td> 
+                  <td style="TEXT-ALIGN: right">{pump_qty}&nbsp;</td> 
+                  <td style="TEXT-ALIGN: right">{pump_sales}&nbsp;</td>
+                </tr>
+ <!-- END Section Detail -->
+                <!-- BEGIN Section Group_pump_group_name_Footer -->
+                <tr class="Row">
+                  <td valign="baseline">{sub_pump_group_name}</td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_volume1} </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_money1} </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_pump_qty1}&nbsp;</td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_pump_sales1}&nbsp;</td>
+                </tr>
+ <!-- END Section Group_pump_group_name_Footer -->
+                <!-- BEGIN Section Report_Footer -->
+                <!-- BEGIN Panel NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="5">{res:CCS_NoRecords}</td>
+                </tr>
+ <!-- END Panel NoRecords -->
+                <tr class="Total">
+                  <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_volume} </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_money} </td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_pump_qty}&nbsp;</td> 
+                  <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_pump_sales}&nbsp;</td>
+                </tr>
+ <!-- END Section Report_Footer -->
+                <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- END Report Pump_Group --><br>
+        <p></p>
+      </td> 
+      <td valign="top">&nbsp;</td> 
+      <td valign="top">&nbsp;</td>
+    </tr>
+  </table>
+  <p></p>
+  <br>
+  <br>
+  <br>
+</form>
+<p></p>
+<p>&nbsp;</p>
+</body>
+</html>

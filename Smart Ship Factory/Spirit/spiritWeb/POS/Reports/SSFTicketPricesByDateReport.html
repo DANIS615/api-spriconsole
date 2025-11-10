@@ -1,0 +1,218 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketPricesByDateReport</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-9A4F2EFE
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-C1CE2243
+
+var ssf_tkt_pricesSearch_DatePicker_s_date_from1 = new Object(); 
+ssf_tkt_pricesSearch_DatePicker_s_date_from1.format           = "yyyymmdd";
+ssf_tkt_pricesSearch_DatePicker_s_date_from1.style            = "Styles/Spiritnew/Style.css";
+ssf_tkt_pricesSearch_DatePicker_s_date_from1.relativePathPart = "../../";
+ssf_tkt_pricesSearch_DatePicker_s_date_from1.themeVersion     = "3.0";
+
+var ssf_tkt_pricesSearch_DatePicker_s_date_to1 = new Object(); 
+ssf_tkt_pricesSearch_DatePicker_s_date_to1.format           = "yyyymmdd";
+ssf_tkt_pricesSearch_DatePicker_s_date_to1.style            = "Styles/Spiritnew/Style.css";
+ssf_tkt_pricesSearch_DatePicker_s_date_to1.relativePathPart = "../../";
+ssf_tkt_pricesSearch_DatePicker_s_date_to1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+</head>
+<script language="JavaScript">
+function OpenPop_UpList(t_object)
+{
+    var FieldValue;
+
+    FieldValue = document.getElementById(t_object.name).value; 
+    var linkhref = document.getElementById("ProductsList").href;
+    var win=window.open(linkhref+"?s_return_field="+t_object.name+"&s_v_id="+FieldValue+"&s_prod_type=P", "Products", "left=100,top=10,width=480,height=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+
+</script>
+
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record ssf_tkt_pricesSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:ssf_tkt_prices}
+            {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ssf_dates_range}</th>
+ 
+            <td><input maxlength="8" size="8" value="{s_date_from}" name="{s_date_from_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_date_from1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_date_from1 --></td> 
+            <td>&nbsp;<input maxlength="8" size="8" value="{s_date_to}" name="{s_date_to_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_date_to1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_date_to1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_price_plu_id}</th>
+ 
+            <td colspan="2"><input id="s_tkt_price_plu_id" maxlength="15" size="15" value="{s_tkt_price_plu_id}" name="{s_tkt_price_plu_id_Name}">&nbsp;<a id="ProductsList" onclick="OpenPop_UpList(this);return false;" href="{Link2_Src}" name="s_tkt_price_plu_id">{res:ssf_product_list}</a></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_plu_type}</th>
+ 
+            <td colspan="2">
+              <select name="{s_plu_type_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_plu_type_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="3"><a href="{Link1_Src}">{res:CCS_Clear}</a>&nbsp; 
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_tkt_pricesSearch --></p>
+<p>
+<form method="post" target="_blank">
+  <!-- BEGIN Button Button1 --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button Button1 --><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}"></p>
+  <p>
+  <!-- BEGIN Report ssf_tkt_prices_ssf_tkt_pl -->
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_ReportFormPrefix}&nbsp;
+            {res:SSF_pcrbyDate}{res:CCS_ReportFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Section Report_Header -->
+          <tr class="Row">
+            <td colspan="5">{res:CCS_TotalRecords}&nbsp;{Report_TotalRecords}&nbsp; </td>
+          </tr>
+ <!-- END Section Report_Header -->
+          <!-- BEGIN Section Page_Header -->
+          <tr class="Caption">
+            <th>&nbsp; {res:application_date}</th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_price_time --><a href="{Sort_URL}">{res:application_time}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_price_time -->&nbsp; </th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_plu_id --><a href="{Sort_URL}">{res:tkt_plu_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_plu_id -->&nbsp; </th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_plu_long_desc --><a href="{Sort_URL}">{res:tkt_plu_long_desc}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_plu_long_desc -->&nbsp; </th>
+ 
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_price_price --><a href="{Sort_URL}">{res:ssf_price}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_price_price -->&nbsp; </th>
+          </tr>
+ <!-- END Section Page_Header -->
+          <!-- BEGIN Section tkt_price_date_Header --><!-- END Section tkt_price_date_Header -->
+          <!-- BEGIN Section Detail -->
+          <tr class="Row">
+            <td style="FONT-WEIGHT: bold" align="center">{tkt_price_date}&nbsp; </td> 
+            <td align="center">{tkt_price_time} </td> 
+            <td>{tkt_plu_id} </td> 
+            <td>{tkt_plu_long_desc} </td> 
+            <td style="TEXT-ALIGN: right">{tkt_price_price} </td>
+          </tr>
+ <!-- END Section Detail -->
+          <!-- BEGIN Section tkt_price_date_Footer --><!-- END Section tkt_price_date_Footer -->
+          <!-- BEGIN Section Report_Footer -->
+          <!-- BEGIN Panel NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="5">{res:CCS_NoRecords} </td>
+          </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+          <!-- BEGIN Section Page_Footer -->
+          <tr class="Footer">
+            <td>{Report_CurrentDateTime}&nbsp; </td> 
+            <td style="TEXT-ALIGN: right" colspan="4">{res:CCS_ReportPageNumber1}&nbsp;{Report_CurrentPage}&nbsp;{res:CCS_ReportPageNumber2}&nbsp;{Report_TotalPages} 
+              <!-- BEGIN Navigator Navigator -->
+              <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+              <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+              <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+              <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+              <!-- BEGIN Pages -->
+              <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+              <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+              <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+              <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+              <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+              <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp; </td>
+          </tr>
+ 
+          <!-- BEGIN Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p style="PAGE-BREAK-AFTER: always"></p>
+  <p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- END Panel PageBreak --><!-- END Section Page_Footer -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- END Report ssf_tkt_prices_ssf_tkt_pl --><br>
+</form>
+</p>
+</body>
+</html>

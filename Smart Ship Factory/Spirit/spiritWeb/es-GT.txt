@@ -1,0 +1,11 @@
+CCS_LanguageID=es
+CCS_LocaleID=es-GT
+CRED=Notas de Crédito
+FACT=Facturas
+RECEIPT_GROUP=Serie
+RECEIPT_GROUP_CREDIT=Serie Notas de Credito
+SSF_PARAM_ABOUT_001=Texto Preautorizacion SAT
+Text1=
+Text2=
+Text3=
+Text4=

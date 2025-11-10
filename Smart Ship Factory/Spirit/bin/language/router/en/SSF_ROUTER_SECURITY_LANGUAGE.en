@@ -1,0 +1,6 @@
+1, "Specified user cannot change password"
+2, "The password is invalid"
+3, "The user is invalid"
+4, "Your password has been changed"
+5, "The password has been blanked"
+6, "Administrators"

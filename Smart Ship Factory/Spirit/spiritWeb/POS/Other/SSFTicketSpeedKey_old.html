@@ -1,0 +1,471 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketSpeedKey</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+  <script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//page_ssf_tkt_speed_keys_Button_Delete_OnClick @33-721B71D7
+function page_ssf_tkt_speed_keys_Button_Delete_OnClick()
+{
+    var result;
+//End page_ssf_tkt_speed_keys_Button_Delete_OnClick
+
+//Confirmation Message @34-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_ssf_tkt_speed_keys_Button_Delete_OnClick @33-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_speed_keys_Button_Delete_OnClick
+
+//page_ssf_tkt_speed_keys3_Button_Delete_OnClick @71-8C72CB58
+function page_ssf_tkt_speed_keys3_Button_Delete_OnClick()
+{
+    var result;
+//End page_ssf_tkt_speed_keys3_Button_Delete_OnClick
+
+//Confirmation Message @72-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_ssf_tkt_speed_keys3_Button_Delete_OnClick @71-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_speed_keys3_Button_Delete_OnClick
+
+//page_ssf_tkt_speed_keys3_OnLoad @68-EB9349B7
+function page_ssf_tkt_speed_keys3_OnLoad(form)
+{
+    var result;
+//End page_ssf_tkt_speed_keys3_OnLoad
+
+//Custom Code @181-2A29BDB7
+ 		var insertparameter = getURLParam("speed_keys2_Insert") ;
+		//confirm(insertparameter) ;
+		if (insertparameter == "insert" ){
+        	var linkobject1 = document.getElementById("TenderList") ;
+			var linkobject2 = document.getElementById("ProductsList") ;
+			linkobject1.style.display = "none" ;
+			linkobject2.style.display = "none" ;
+		}
+//End Custom Code
+
+//Close page_ssf_tkt_speed_keys3_OnLoad @68-BC33A33A
+    return result;
+}
+//End Close page_ssf_tkt_speed_keys3_OnLoad
+
+//page_ssf_tkt_speed_keys_Button_Cancel_OnClick @35-B451CD6A
+function page_ssf_tkt_speed_keys_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_tkt_speed_keys_Button_Cancel_OnClick
+
+//page_ssf_tkt_speed_keys3_Button_Cancel_OnClick @73-92B42293
+function page_ssf_tkt_speed_keys3_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_tkt_speed_keys3_Button_Cancel_OnClick
+
+//bind_events @1-40988693
+function bind_events() {
+    if (document.forms["ssf_tkt_speed_keys3"]) check_and_bind('document.forms["ssf_tkt_speed_keys3"]','onLoad',page_ssf_tkt_speed_keys3_OnLoad);
+    if (document.forms["ssf_tkt_speed_keys3"]) check_and_bind('document.forms["ssf_tkt_speed_keys3"].Button_Delete','onclick',page_ssf_tkt_speed_keys3_Button_Delete_OnClick);
+    if (document.forms["ssf_tkt_speed_keys"]) check_and_bind('document.forms["ssf_tkt_speed_keys"].Button_Delete','onclick',page_ssf_tkt_speed_keys_Button_Delete_OnClick);
+    if (document.forms["ssf_tkt_speed_keys"]) check_and_bind('document.forms["ssf_tkt_speed_keys"].Button_Cancel','onclick',page_ssf_tkt_speed_keys_Button_Cancel_OnClick);
+    if (document.forms["ssf_tkt_speed_keys3"]) check_and_bind('document.forms["ssf_tkt_speed_keys3"].Button_Cancel','onclick',page_ssf_tkt_speed_keys3_Button_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+<script language="JavaScript">
+
+function assign_value(parentObject,childObject) {
+
+        var selIndex = parentObject.options[parentObject.selectedIndex].value;
+        if (selIndex == "") {
+                confirm ("asignar valor") ;
+        } else {
+                childObject.value  = selIndex ;
+        }
+}
+
+function getURLParam(strParamName){
+  var strReturn = "";
+  var strHref = window.location.href;
+  strParamName = strParamName.toLowerCase() ;
+  if ( strHref.indexOf("?") > -1 ){
+    var strQueryString = strHref.substr(strHref.indexOf("?")).toLowerCase();
+        strQueryString = strQueryString.substring(1) ;
+    var aQueryString = strQueryString.split("&");
+    for ( var iParam = 0; iParam < aQueryString.length; iParam++ ){
+        if ( aQueryString[iParam].indexOf(strParamName + "=") > -1 ){
+            var aParam = aQueryString[iParam].split("=");
+                if (aParam[0] == strParamName)    {
+                    strReturn = aParam[1];
+                    break;
+                }
+        }
+    }
+  }
+  return strReturn;
+} 
+
+function LinksVisible(parentObject,childObject,SpeedArray) {
+
+        var selIndex = parentObject.options[parentObject.selectedIndex].value;
+        if (selIndex == "") {
+                confirm ("asignar valor") ;
+        } else {
+                childObject.value  = selIndex ;
+        }
+		var i = 0 ;
+		var speedgrouptype = "" ;
+		for (i = 0; i < SpeedArray.length; i++) {
+			   if (SpeedArray[i][0] == selIndex) {
+					speedgrouptype = SpeedArray[i][2] ;
+				}
+		}              
+
+        var linkobject1 = document.getElementById("TenderList") ;
+		var linkobject2 = document.getElementById("ProductsList") ;
+		linkobject1.style.display = "none" ;
+		linkobject2.style.display = "none" ;
+
+		var linkDesc = "" ;
+		switch(speedgrouptype)
+		{
+		case "PAY_SPEEDKEYS":
+		  linkDesc = "TenderList" ;
+		  break    
+		case "PLU_SPEEDKEYS":
+		  linkDesc = "ProductsList" ;
+		  break
+		}
+
+        var linkobject = document.getElementById(linkDesc) ;
+	    //confirm(linkDesc) ;
+		linkobject.style.display = "" ;
+}
+
+function OpenPop_UpList(t_object)
+{
+    var FieldValue;
+
+    FieldValue = document.getElementById(t_object.name).value; 
+    var linkhref = t_object.href; //document.getElementById("ProductsList").href;
+    var win=window.open(linkhref+"?s_return_field="+t_object.name+"&s_v_id="+FieldValue, "Products", "left=100,top=10,width=480,height=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+
+
+<!-- BEGIN Grid ssf_tkt_catalog -->
+var SpeedKeyArray = new Array(<!-- BEGIN Row -->
+new Array("{tkt_catalog_code}","{tkt_catalog_value}","{tkt_catalog_misc1}")<!-- END Row --><!-- BEGIN Separator -->,<!-- END Separator -->
+);
+<!-- END Grid ssf_tkt_catalog -->
+
+
+</script>
+<link rel="stylesheet" type="text/css" href="../../Styles/Spiritnew/Style.css">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp;&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="30%">
+      <!-- BEGIN Path Path_ssf_tkt_speed_keys1 -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>&nbsp;{res:ssf_tkt_speed_keys}&nbsp; </th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+              </tr>
+ 
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th><a href="{PathBeginLink_Src}">{res:CCS_Main}</a> 
+                <!-- BEGIN PathComponent -->&nbsp;&gt;&nbsp;<a href="{PathCategory_Src}">{PathCategory}</a> <!-- END PathComponent -->
+                <!-- BEGIN CurrentCategory -->&nbsp;&gt;&nbsp;{CurrentCategory} <!-- END CurrentCategory --></th>
+ 
+              </tr>
+ 
+            </table>
+ </td> 
+        </tr>
+ 
+      </table>
+ <!-- END Path Path_ssf_tkt_speed_keys1 -->
+      <!-- BEGIN Directory ssf_tkt_speed_keys1 -->
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Row">
+          <td valign="top">
+            <!-- BEGIN Category --><b><!-- BEGIN Link Link1 --><a href="{Link1_Src}">{res:CCS_Update}</a><!-- END Link Link1 -->&nbsp;<a href="{CategoryLink_Src}">{CategoryLink}</a>&nbsp;{cat_tkt_speed_value}</b><br>
+            <!-- BEGIN Subcategory -->&nbsp;<!-- BEGIN Link Link2 --><a href="{Link2_Src}">{res:CCS_Update}</a><!-- END Link Link2 -->&nbsp;&nbsp; <a href="{SubcategoryLink_Src}">{SubcategoryLink}</a> {sub_tkt_speed_value}<!-- END Subcategory -->
+            <!-- BEGIN SubcategorySeparator --><br>
+            <!-- END SubcategorySeparator -->
+            <!-- BEGIN SubcategoriesTail -->&nbsp;<a href="{SubcategoriesTailLink_Src}">{res:CCS_More}</a> <!-- END SubcategoriesTail --><!-- END Category -->
+            <!-- BEGIN CategorySeparator -->
+            <hr><!-- END CategorySeparator -->
+            <!-- BEGIN ColumnSeparator --></td> 
+          <td valign="top"><!-- END ColumnSeparator -->
+            <!-- BEGIN NoCategories -->{res:CCS_NoCategories} <!-- END NoCategories --></td> 
+        </tr>
+ 
+      </table>
+ &nbsp;<!-- END Directory ssf_tkt_speed_keys1 --></td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">
+      <!-- BEGIN Record ssf_tkt_speed_keys -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>&nbsp;{res:ssf_tkt_speed_keys}&nbsp;&nbsp;{Label1} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                </tr>
+ 
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:tkt_speed_id}</th>
+ 
+                  <td>
+                    <select onchange="assign_value(this,document.ssf_tkt_speed_keys.h_tkt_speed_id);" name="{r_tkt_speed_id_Name}" {disabledparam}>
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+ {r_tkt_speed_id_Options} 
+                    </select>
+ &nbsp;<input type="hidden" value="{h_tkt_speed_id}" name="{h_tkt_speed_id_Name}">&nbsp;</td> 
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_speed_order}</th>
+ 
+                  <td><input maxlength="10" size="10" value="{r_tkt_speed_order}" name="{r_tkt_speed_order_Name}"><input type="hidden" value="{r_tkt_speed_parent_group_id}" name="{r_tkt_speed_parent_group_id_Name}"></td> 
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_speed_group_id}</th>
+ 
+                  <td><input maxlength="10" size="10" value="{r_tkt_speed_group_id}" name="{r_tkt_speed_group_id_Name}" {readonlyparam}></td> 
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_speed_value}</th>
+ 
+                  <td><input maxlength="30" size="30" value="{r_tkt_speed_value}" name="{r_tkt_speed_value_Name}"></td> 
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_speed_param}</th>
+ 
+                  <td><input maxlength="101" size="50" value="{r_tkt_speed_param}" name="{r_tkt_speed_param_Name}"></td> 
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+                    <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td> 
+                </tr>
+ 
+              </table>
+ </td> 
+          </tr>
+ 
+        </table>
+ 
+      </form>
+ <!-- END Record ssf_tkt_speed_keys --><br>
+      &nbsp;</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="30%">&nbsp;</td> 
+    <td width="2%">&nbsp;</td> 
+    <td>&nbsp;</td> 
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="30%">
+      <!-- BEGIN Grid ssf_tkt_speed_keys2 -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_command_keys_speed_key}&nbsp;
+                - {Label1}&nbsp;</th>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+              </tr>
+ 
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_speed_order --><a href="{Sort_URL}">{res:tkt_speed_order}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_speed_order --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_speed_value --><a href="{Sort_URL}">{res:tkt_speed_value}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_speed_value --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_tkt_speed_param --><a href="{Sort_URL}">{res:tkt_speed_param}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;<!-- END Sorter Sorter_tkt_speed_param --></th>
+ 
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{tkt_speed_order_Src}">{tkt_speed_order}</a>&nbsp;</td> 
+                <td>{tkt_speed_value}&nbsp;</td> 
+                <td>{tkt_speed_param}&nbsp;</td> 
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords} </td> 
+              </tr>
+ <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="3">
+                  <!-- BEGIN Link speed_keys2_Insert --><a href="{speed_keys2_Insert_Src}">{res:CCS_InsertLink}</a><!-- END Link speed_keys2_Insert -->&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;&nbsp;<!-- END Navigator Navigator --></td> 
+              </tr>
+ 
+            </table>
+ </td> 
+        </tr>
+ 
+      </table>
+ &nbsp;&nbsp;<!-- END Grid ssf_tkt_speed_keys2 --><br>
+      <br>
+    </td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">
+      <!-- BEGIN Record ssf_tkt_speed_keys3 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_RecordFormPrefix}&nbsp;
+                  {res:ssf_command_keys_speed_key}&nbsp;{res:CCS_RecordFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                </tr>
+ 
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td> 
+                </tr>
+ <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:tkt_speed_id}</th>
+ 
+                  <td>
+                    <select id="node_speed_id" onchange="LinksVisible(this,document.ssf_tkt_speed_keys3.node_tkt_speed_id, SpeedKeyArray);" name="{s_tkt_speed_id_Name}" {disablednodeparam}>
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+ {s_tkt_speed_id_Options} 
+                    </select>
+ </td> 
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_speed_order}</th>
+ 
+                  <td><input maxlength="10" size="10" value="{tkt_speed_order}" name="{tkt_speed_order_Name}"></td> 
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_speed_value}</th>
+ 
+                  <td><input id="sec_tkt_speed_value" maxlength="30" size="30" value="{tkt_speed_value}" name="{tkt_speed_value_Name}">&nbsp; 
+                    <!-- BEGIN Link link_product_list --><a id="ProductsList" onclick="OpenPop_UpList(this);return false;" href="{link_product_list_Src}" name="sec_tkt_speed_value">{res:ssf_product_list}</a><!-- END Link link_product_list -->&nbsp; 
+                    <!-- BEGIN Link link_tender_list --><a id="TenderList" onclick="OpenPop_UpList(this);return false;" href="{link_tender_list_Src}" name="sec_tkt_speed_value">{res:ssf_tender_list}</a><!-- END Link link_tender_list --></td> 
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:tkt_speed_param}</th>
+ 
+                  <td><input maxlength="101" size="50" value="{tkt_speed_param}" name="{tkt_speed_param_Name}"></td> 
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+                    <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td> 
+                </tr>
+ 
+              </table>
+ <input id="node_tkt_speed_id" type="hidden" value="{tkt_speed_id}" name="{tkt_speed_id_Name}"><input type="hidden" value="{tkt_speed_parent_group_id}" name="{tkt_speed_parent_group_id_Name}"><input type="hidden" value="{tkt_speed_group_id}" name="{tkt_speed_group_id_Name}"></td> 
+          </tr>
+ 
+        </table>
+ 
+      </form>
+ &nbsp;<!-- END Record ssf_tkt_speed_keys3 --></td> 
+  </tr>
+</table>
+<br>
+&nbsp; <br>
+</p>
+</body>
+</html>

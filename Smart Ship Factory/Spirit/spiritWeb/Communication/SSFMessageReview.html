@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFMessageReview</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record NewRecord1 -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>Envio de Mensajes&nbsp;</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          </tr>
+ 
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <th>Mensaje</th>
+ 
+            <td>&nbsp; <input size="29" value="{message}" name="{message_Name}" style="WIDTH: 217px; HEIGHT: 22px"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Parámetros</th>
+ 
+            <td>&nbsp; <input size="74" value="{parameter}" name="{parameter_Name}" style="WIDTH: 547px; HEIGHT: 22px"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <th>Requiere Login</th>
+ 
+            <td>&nbsp; <input type="checkbox" value="1" name="{chkLogin_Name}" {chkLogin}></td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_SendREQ --><input class="botonazul" type="submit" value="Enviar Mensaje" name="{Button_Name}"><!-- END Button Button_SendREQ -->&nbsp; </td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record NewRecord1 --></p>
+<p>{lblMessageReturn}</p>
+<p>&nbsp;</p>
+</body>
+</html>

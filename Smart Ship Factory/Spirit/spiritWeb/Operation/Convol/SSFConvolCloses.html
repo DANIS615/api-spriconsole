@@ -1,0 +1,279 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFConvolCloses</title>
+<meta content="CodeCharge Studio 3.1.1.0" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/javascript">
+function ChangeValue(checkbox, valobject) {
+        for(var i=0;i<20;i++) {
+                var object_name = checkbox+"_"+i ;
+                var obj = document.getElementById(object_name) ;
+                if (obj != null) {
+                        obj.checked = valobject.checked ;
+                }
+        } 
+                 return valobject.checked;
+}
+</script>
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Button_NewClose_OnClick @42-0821EE7A
+function Button_NewClose_OnClick()
+{
+    var result;
+//End Button_NewClose_OnClick
+
+//Confirmation Message @43-0F107EC6
+    return confirm('{res:ssf_are_u_sure}');
+//End Confirmation Message
+
+//Close Button_NewClose_OnClick @42-BC33A33A
+    return result;
+}
+//End Close Button_NewClose_OnClick
+
+//page_ssf_addin_ctrl_vol_close1_Button_Resend_OnClick @39-24E4BD22
+function page_ssf_addin_ctrl_vol_close1_Button_Resend_OnClick()
+{
+    var result;
+//End page_ssf_addin_ctrl_vol_close1_Button_Resend_OnClick
+
+//Confirmation Message @44-0F107EC6
+    return confirm('{res:ssf_are_u_sure}');
+//End Confirmation Message
+
+//Close page_ssf_addin_ctrl_vol_close1_Button_Resend_OnClick @39-BC33A33A
+    return result;
+}
+//End Close page_ssf_addin_ctrl_vol_close1_Button_Resend_OnClick
+
+//page_ssf_addin_ctrl_vol_close1_Button_Regenerate_OnClick @31-B89D42B6
+function page_ssf_addin_ctrl_vol_close1_Button_Regenerate_OnClick()
+{
+    var result;
+//End page_ssf_addin_ctrl_vol_close1_Button_Regenerate_OnClick
+
+//Confirmation Message @45-0F107EC6
+    return confirm('{res:ssf_are_u_sure}');
+//End Confirmation Message
+
+//Close page_ssf_addin_ctrl_vol_close1_Button_Regenerate_OnClick @31-BC33A33A
+    return result;
+}
+//End Close page_ssf_addin_ctrl_vol_close1_Button_Regenerate_OnClick
+
+//page_ssf_addin_ctrl_vol_close1_Cancel_OnClick @32-02BF9F1C
+function page_ssf_addin_ctrl_vol_close1_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_ssf_addin_ctrl_vol_close1_Cancel_OnClick
+
+//bind_events @1-F07D168B
+function bind_events() {
+    if (document.forms["ssf_addin_ctrl_vol_close1"]) check_and_bind('document.forms["ssf_addin_ctrl_vol_close1"].Button_Regenerate','onclick',page_ssf_addin_ctrl_vol_close1_Button_Regenerate_OnClick);
+    if (document.forms["ssf_addin_ctrl_vol_close1"]) check_and_bind('document.forms["ssf_addin_ctrl_vol_close1"].Button_Resend','onclick',page_ssf_addin_ctrl_vol_close1_Button_Resend_OnClick);
+    if (document.all["Button_NewClose"]) check_and_bind('document.all["Button_NewClose"]','onclick',Button_NewClose_OnClick);
+    if (document.forms["ssf_addin_ctrl_vol_close1"]) check_and_bind('document.forms["ssf_addin_ctrl_vol_close1"].Cancel','onclick',page_ssf_addin_ctrl_vol_close1_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="35%">
+      <!-- BEGIN Grid ssf_addin_ctrl_vol_close -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix} {res:ssf_addin_ctrl_vol_close_info}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+ 
+                <th>
+                <form method="post">
+                  <!-- BEGIN Button Button_NewClose --><input class="botonazul" type="submit" value="{res:ssf_convol_new_close}" name="{Button_Name}"><!-- END Button Button_NewClose -->&nbsp;&nbsp; </th>
+                </form>
+ 
+                <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_ctrlvol_close_id --><a href="{Sort_URL}">{res:ctrlvol_close_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_ctrlvol_close_id --></th>
+ 
+                <th style="TEXT-ALIGN: center">
+                <!-- BEGIN Sorter Sorter_ctrlvol_date --><a href="{Sort_URL}">{res:ssf_date}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_ctrlvol_date --></th>
+ 
+                <th style="TEXT-ALIGN: center">
+                <!-- BEGIN Sorter Sorter_ctrlvol_time --><a href="{Sort_URL}">{res:ssf_time}</a> 
+                <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_ctrlvol_time --></th>
+ 
+                <th style="TEXT-ALIGN: center">{res:ctrlvol_reason_desc} </th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{ctrlvol_close_id_Src}">{ctrlvol_close_id}</a>&nbsp;</td> 
+                <td align="center">{ctrlvol_date}&nbsp;</td> 
+                <td align="center">{ctrlvol_time}&nbsp;</td> 
+                <td>{ctrlvol_reason_desc}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="4">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="4">
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;<!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Grid ssf_addin_ctrl_vol_close --></td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">
+      <!-- BEGIN EditableGrid ssf_addin_ctrl_vol_close1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_GridFormPrefix} {res:ssf_addin_ctrl_vol_close_file_info}&nbsp;&nbsp;{Label2}&nbsp;{res:CCS_GridFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="5">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Caption">
+                  <th>&nbsp; 
+                  <!-- BEGIN Sorter Sorter_ctrlvol_file_type --><a href="{Sort_URL}">{res:ctrlvol_file_type}</a> 
+                  <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ctrlvol_file_type --></th>
+ 
+                  <th style="TEXT-ALIGN: center">
+                  <!-- BEGIN Sorter Sorter_ctrlvol_file_generation_status --><a href="{Sort_URL}">{res:ctrlvol_file_generation_status}</a> 
+                  <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_ctrlvol_file_generation_status -->&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center" colspan="2">{res:ssf_convol_files_send}&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center">&nbsp;{res:ssf_select}</th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th>
+                  <!-- BEGIN Sorter Sorter_ctrlvol_file_send_status --><a href="{Sort_URL}">{res:ctrlvol_file_send_status}</a> 
+                  <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_ctrlvol_file_send_status --></th>
+ 
+                  <th>
+                  <!-- BEGIN Sorter Sorter_ctrlvol_file_send_status_desc --><a href="{Sort_URL}">{res:ctrlvol_file_send_status_desc}</a> 
+                  <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                  <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_ctrlvol_file_send_status_desc --></th>
+ 
+                  <th style="TEXT-ALIGN: center"><input onclick="ChangeValue('CheckBox_Update',this);" type="checkbox" value="1" name="{chkmarkall_Name}" {chkmarkall}></th>
+                </tr>
+ 
+                <!-- BEGIN Row -->
+                <!-- BEGIN RowError -->
+                <tr class="Error">
+                  <td colspan="5">{Error}</td>
+                </tr>
+                <!-- END RowError -->
+                <tr class="Row">
+                  <td><input type="hidden" value="{ctrlvol_close_id}" name="{ctrlvol_close_id_Name}">&nbsp;<input type="hidden" value="{ctrlvol_file_type}" name="{ctrlvol_file_type_Name}">&nbsp;{Label1}&nbsp;&nbsp;</td> 
+                  <td align="center">{ctrlvol_file_generation_status}</td> 
+                  <td align="center">{ctrlvol_file_send_status}</td> 
+                  <td>{ctrlvol_file_send_status_desc}</td> 
+                  <td align="center">
+                    <!-- BEGIN CheckBox CheckBox_Update --><input id="{CheckBox_Update_Name}" type="checkbox" value="1" name="{CheckBox_Update_Name}" {CheckBox_Update}><!-- END CheckBox CheckBox_Update --></td>
+                </tr>
+ <!-- END Row -->
+                <!-- BEGIN NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="5">{res:CCS_NoRecords} </td>
+                </tr>
+                <!-- END NoRecords -->
+                <tr class="Footer">
+                  <td style="TEXT-ALIGN: right" colspan="5">&nbsp; 
+                    <!-- BEGIN Button Button_Resend --><input class="botonazul" type="submit" value="{res:ssf_resend}" name="{Button_Name}"><!-- END Button Button_Resend -->&nbsp; 
+                    <!-- BEGIN Button Button_Regenerate --><input class="botonazul" type="submit" value="{res:ssf_regenerate}" name="{Button_Name}"><!-- END Button Button_Regenerate -->
+                    <!-- BEGIN Button Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Cancel --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END EditableGrid ssf_addin_ctrl_vol_close1 --></td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</p>
+<p><br>
+<br>
+&nbsp;</p>
+</body>
+</html>

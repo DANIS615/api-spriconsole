@@ -1,0 +1,173 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFExportMasters</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+function ChangeValue(checkbox, valobject) {
+        for(var i=0;i<20;i++) {
+                var object_name = checkbox+"_"+i ;
+                var obj = document.getElementById(object_name) ;
+                if (obj != null) {
+                                                if (!obj.disabled)
+                                obj.checked = valobject.checked ;
+                }
+        } 
+                 return valobject.checked;
+}
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td width="60%">
+      <!-- BEGIN Record NewRecord1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post" enctype="{HTMLFormEnctype}">
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:ssf_import_file_search}</th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:ssf_file_to_import}</th>
+ 
+                  <td>
+                    <!-- BEGIN FileUpload FileUpload1 --><input class="botonazul" type="hidden" value="{State}" name="{ControlName}">
+                    <!-- BEGIN Info -->&nbsp;{FileName}&nbsp;{FileSize}&nbsp;{res:CCS_Bytes}. <!-- END Info -->
+                    <!-- BEGIN Upload --><input class="botonazul" type="file" name="{FileControl}"><!-- END Upload -->
+                    <!-- BEGIN DeleteControl -->{res:CCS_Delete} <input type="checkbox" name="{DeleteControl}" {DeleteChecked}><!-- END DeleteControl -->&nbsp;<!-- END FileUpload FileUpload1 -->{Label2}</td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                    <!-- BEGIN Button Button_Update --><input type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Delete --><input type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record NewRecord1 --></td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>
+      <!-- BEGIN EditableGrid masterimport -->
+      <form name="{HTMLFormName}" action="{Action}" method="post" enctype="multipart/form-data">
+        <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:ssf_mnu_import_masters}&nbsp; {res:CCS_GridFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Grid" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="5">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Caption">
+                  <th>{res:ssf_interface_code}&nbsp;</th>
+ 
+                  <th>{res:action_description}</th>
+ 
+                  <th style="TEXT-ALIGN: right">{res:ssf_file_available}&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: right">
+                  <p>{res:CCS_SelectInterface}&nbsp;&nbsp;</p>
+                  </th>
+ 
+                  <th style="TEXT-ALIGN: center">{res:ssf_delete_all_data}</th>
+                </tr>
+ 
+                <tr class="Caption">
+                  <th>&nbsp;</th>
+ 
+                  <th>&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center">&nbsp;</th>
+ 
+                  <th style="TEXT-ALIGN: center"><input onclick="ChangeValue('CheckBox_Update',this);" type="checkbox" name="{chkupdateall_Name}" {chkupdateall}></th>
+ 
+                  <th style="TEXT-ALIGN: center"><input onclick="ChangeValue('CheckBox_DeleteData',this);" type="checkbox" value="1" name="{chkdeleteall_Name}" {chkdeleteall}></th>
+                </tr>
+ 
+                <!-- BEGIN Row -->
+                <!-- BEGIN RowError -->
+				
+                <tr class="Error">
+                  <td colspan="5">{Error}</td>
+                </tr>
+                <!-- END RowError -->
+				{masterimport:newrow}
+                <tr class="Row">
+                  <td align="left">&nbsp;{lblmaster_id}&nbsp;<input type="hidden" value="{file_des}" name="{file_des_Name}"></td> 
+                  <td>{master_description}<input type="hidden" value="{type}" name="{type_Name}">&nbsp;<input type="hidden" value="{master_id}" name="{master_id_Name}"></td> 
+                  <td align="center">&nbsp;<img height="32" src="{imgfileexists}" width="32" align="absMiddle"></td> 
+                  <td align="center">
+                    <!-- BEGIN CheckBox CheckBox_Update --><input id="{CheckBox_Update_Name}" type="checkbox" value="1" name="{CheckBox_Update_Name}" {CheckBox_Update}><!-- END CheckBox CheckBox_Update --></td> 
+                  <td align="center"><input id="{CheckBox_DeleteData_Name}" type="checkbox" value="1" name="{CheckBox_DeleteData_Name}" {CheckBox_DeleteData} {disabledparam}></td>
+                </tr>
+ <!-- END Row -->
+                <tr class="NoRecords">
+                  <td colspan="5">&nbsp;</td>
+                </tr>
+                <!-- BEGIN NoRecords -->
+                <tr class="NoRecords">
+                  <td colspan="5">{res:CCS_NoRecords} </td>
+                </tr>
+                <!-- END NoRecords -->
+                <tr class="Footer">
+                  <td style="TEXT-ALIGN: right" colspan="5">&nbsp;&nbsp; 
+                    <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:ssf_import}" name="{Button_Name}" {disabledbuton}><!-- END Button Button_Submit --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END EditableGrid masterimport --></td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;</td> 
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</p>
+<p><br>
+&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTrxGroupByDate</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-DED87D66
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-5217DB75
+
+var ssf_pump_sales_DatePicker_s_date_from1 = new Object(); 
+ssf_pump_sales_DatePicker_s_date_from1.format           = "yyyymmdd";
+ssf_pump_sales_DatePicker_s_date_from1.style            = "Styles/Spiritnew/Style.css";
+ssf_pump_sales_DatePicker_s_date_from1.relativePathPart = "../";
+ssf_pump_sales_DatePicker_s_date_from1.themeVersion     = "3.0";
+
+var ssf_pump_sales_DatePicker_s_date_to1 = new Object(); 
+ssf_pump_sales_DatePicker_s_date_to1.format           = "yyyymmdd";
+ssf_pump_sales_DatePicker_s_date_to1.style            = "Styles/Spiritnew/Style.css";
+ssf_pump_sales_DatePicker_s_date_to1.relativePathPart = "../";
+ssf_pump_sales_DatePicker_s_date_to1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<!-- BEGIN Record ssf_pump_sales -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:ssf_pump_sales}
+            {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="3">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ssf_dates_range}&nbsp;&nbsp;</th>
+ 
+            <td><input maxlength="9" size="9" value="{s_date_from}" name="{s_date_from_Name}">
+              <!-- BEGIN DatePicker DatePicker_s_date_from1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a>&nbsp;<!-- END DatePicker DatePicker_s_date_from1 --></td> 
+            <td>&nbsp; <input maxlength="9" size="9" value="{s_date_to}" name="{s_date_to_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_date_to1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_date_to1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_unit_of_meassure}</th>
+ 
+            <td colspan="2">
+              <select name="{s_unit_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_unit_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="3"><a href="{Link1_Src}">{res:CCS_Clear}</a> 
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_pump_sales --><br>
+<form method="post" target="_blank">
+  <!-- BEGIN Button btnPrint --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button btnPrint --><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}">
+  <p>
+  <!-- BEGIN Report Report1 -->
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_salesbydate}
+            {res:CCS_ReportFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Section Report_Header -->
+          <tr class="Row">
+            <td colspan="5">{res:CCS_TotalRecords}&nbsp;{Report_TotalRecords}&nbsp; </td>
+          </tr>
+ <!-- END Section Report_Header -->
+          <!-- BEGIN Section Page_Header -->
+          <tr class="Caption">
+            <th>&nbsp; {res:ssf_date}</th>
+ 
+            <th>&nbsp; {res:ssf_time}</th>
+ 
+            <th style="TEXT-ALIGN: right">&nbsp; {res:money}</th>
+ 
+            <th style="TEXT-ALIGN: right">&nbsp;{res:volume} </th>
+ 
+            <th style="TEXT-ALIGN: right">{res:ssf_qty_of_transaction}&nbsp;</th>
+          </tr>
+ <!-- END Section Page_Header -->
+          <!-- BEGIN Section end_date_Header --><!-- END Section end_date_Header -->
+          <!-- BEGIN Section end_time_Header --><!-- END Section end_time_Header -->
+          <!-- BEGIN Section Detail -->
+          <tr class="Row">
+            <td style="FONT-WEIGHT: bold; FONT-SIZE: 14px" align="center">{end_date}&nbsp; </td> 
+            <td valign="middle" align="center"><a href="{end_time_Src}" style="font-size: 10px; font-weight: bold;">{end_time}</a> </td> 
+            <td style="TEXT-ALIGN: right">{money} </td> 
+            <td align="right">{volume}</td> 
+            <td align="right">{total_trans}&nbsp;</td>
+          </tr>
+ <!-- END Section Detail -->
+          <!-- BEGIN Section end_date_Footer --><!-- END Section end_date_Footer -->
+          <!-- BEGIN Section Report_Footer -->
+          <!-- BEGIN Panel NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="6">{res:CCS_NoRecords} </td>
+          </tr>
+ <!-- END Panel NoRecords -->
+          <tr class="Total">
+            <td valign="baseline">&nbsp;</td> 
+            <td align="right">&nbsp; {res:ssf_totalByDate}</td> 
+            <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_money} </td> 
+            <td valign="baseline" align="right">{TotalSum_volume}</td> 
+            <td valign="baseline" align="right">{TotalSum_trans}&nbsp;</td>
+          </tr>
+ <!-- END Section Report_Footer -->
+          <!-- BEGIN Section Page_Footer -->
+          <tr class="Footer">
+            <td>{Report_CurrentDateTime}&nbsp; </td> 
+            <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+          </tr>
+ 
+          <!-- BEGIN Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p style="PAGE-BREAK-AFTER: always"></p>
+  <p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- END Panel PageBreak --><!-- END Section Page_Footer -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- END Report Report1 --><br>
+  </p>
+  &nbsp;&nbsp; 
+  <!-- BEGIN Report ssf_pump_sales1 -->
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_salesbydate}
+            {res:CCS_ReportFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Section Report_Header -->
+          <tr class="Row">
+            <td colspan="5">{res:CCS_TotalRecords}&nbsp;{Report_TotalRecords}&nbsp; </td>
+          </tr>
+ <!-- END Section Report_Header -->
+          <!-- BEGIN Section Page_Header -->
+          <tr class="Caption">
+            <th>
+            <!-- BEGIN Sorter Sorter_end_date --><a href="{Sort_URL}">{res:ssf_date}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_end_date -->&nbsp; </th>
+ 
+            <th>&nbsp;</th>
+ 
+            <th style="TEXT-ALIGN: right" align="middle">&nbsp; 
+            <!-- BEGIN Sorter Sorter_money --><a href="{Sort_URL}">{res:money}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_money -->&nbsp;</th>
+ 
+            <th style="TEXT-ALIGN: right">&nbsp; 
+            <!-- BEGIN Sorter Sorter1 --><a href="{Sort_URL}">{res:volume}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter1 --></th>
+ 
+            <th style="TEXT-ALIGN: right">{res:ssf_qty_of_transaction}&nbsp;</th>
+          </tr>
+ <!-- END Section Page_Header -->
+          <!-- BEGIN Section Detail -->
+          <tr class="Row">
+            <td align="center"><a href="{end_date_Src}" style="font-size: 14px; font-weight: bold;">{end_date}</a> </td> 
+            <td align="center"><a href="{Link1_Src}">rango de horas</a>&nbsp;</td> 
+            <td style="TEXT-ALIGN: right">{money} </td> 
+            <td align="right">&nbsp;{volume}</td> 
+            <td align="right">{total_trans}&nbsp;</td>
+          </tr>
+ <!-- END Section Detail -->
+          <!-- BEGIN Section Report_Footer -->
+          <!-- BEGIN Panel NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="6">{res:CCS_NoRecords} </td>
+          </tr>
+ <!-- END Panel NoRecords -->
+          <tr class="Total">
+            <td valign="baseline">{res:CCS_ReportTotal} </td> 
+            <td>&nbsp; </td> 
+            <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_money} </td> 
+            <td valign="baseline" align="right">{TotalSumVolume}</td> 
+            <td valign="baseline" align="right">{totalsum_trans}&nbsp; </td>
+          </tr>
+ <!-- END Section Report_Footer -->
+          <!-- BEGIN Section Page_Footer -->
+          <tr class="Footer">
+            <td>{Report_CurrentDateTime}&nbsp; </td> 
+            <td>&nbsp; </td> 
+            <td colspan="3">{res:CCS_ReportPageNumber1}&nbsp;{Report_CurrentPage}&nbsp;{res:CCS_ReportPageNumber2}&nbsp;{Report_TotalPages} 
+              <!-- BEGIN Navigator Navigator -->
+              <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+              <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+              <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+              <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+              <!-- BEGIN Pages -->
+              <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+              <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+              <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+              <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+              <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+              <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp; </td>
+          </tr>
+ 
+          <!-- BEGIN Panel PageBreak -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <p style="PAGE-BREAK-AFTER: always"></p>
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- END Panel PageBreak --><!-- END Section Page_Footer -->
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- END Report ssf_pump_sales1 --><br>
+  &nbsp; 
+</form>
+</body>
+</html>

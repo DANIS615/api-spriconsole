@@ -1,0 +1,446 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFDeliveryNotes</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript">
+function OpenPop_UpList(t_object,operation)
+{
+var FieldValue;
+  
+        //FieldValue = document.getElementById(t_object.name).value; //escape(document.formdetail.delivery_id.value);
+        //FieldValue = escape(document.formdelivery.delivery_id.value);
+        var linkhref = "SSFPopDeliveryList.php" ;//document.getElementById("DeliveryList").href;
+        var t_date_f = getURLParam("s_delivery_date") ;
+        var t_date_t = getURLParam("s_end_date") ;
+        var t_del_ref = getURLParam("s_delivery_reference") ;
+        var t_del_note = getURLParam("delivery_note_id") ;
+        var win=window.open(linkhref+"?s_return_field="+t_object.name+"&s_delivery_date="+t_date_f+"&s_end_date="+t_date_t+"&s_delivery_reference="+t_del_ref+"&delivery_note_id="+t_del_note+"&operation="+operation, "DeliveryList", "left=100,top=10,width=480,height=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+        win.focus();
+}
+
+function getURLParam(strParamName){
+  var strReturn = "";
+  var strHref = window.location.href;
+  //strParamName = strParamName.toLowerCase() ;
+  if ( strHref.indexOf("?") > -1 ){
+    //var strQueryString = strHref.substr(strHref.indexOf("?")).toLowerCase();
+        var strQueryString = strHref.substr(strHref.indexOf("?"));
+        strQueryString = strQueryString.substring(1) ;
+    var aQueryString = strQueryString.split("&");
+    for ( var iParam = 0; iParam < aQueryString.length; iParam++ ){
+        if ( aQueryString[iParam].indexOf(strParamName + "=") > -1 ){
+            var aParam = aQueryString[iParam].split("=");
+                if (aParam[0] == strParamName)    {
+                    strReturn = aParam[1];
+                    break;
+                }
+        }
+    }
+  }
+  return strReturn;
+} 
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-DED87D66
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-FBE94D72
+
+var delivery_note_search_DatePicker_s_delivery_date1 = new Object(); 
+delivery_note_search_DatePicker_s_delivery_date1.format           = "yyyymmdd";
+delivery_note_search_DatePicker_s_delivery_date1.style            = "Styles/Spiritnew/Style.css";
+delivery_note_search_DatePicker_s_delivery_date1.relativePathPart = "../";
+delivery_note_search_DatePicker_s_delivery_date1.themeVersion = "3.0";
+
+var delivery_note_search_DatePicker_s_end_date1 = new Object(); 
+delivery_note_search_DatePicker_s_end_date1.format           = "yyyymmdd";
+delivery_note_search_DatePicker_s_end_date1.style            = "Styles/Spiritnew/Style.css";
+delivery_note_search_DatePicker_s_end_date1.relativePathPart = "../";
+delivery_note_search_DatePicker_s_end_date1.themeVersion = "3.0";
+
+var delivery_note_he2_DatePicker_delivery_date1 = new Object(); 
+delivery_note_he2_DatePicker_delivery_date1.format           = "dd/mm/yyyy";
+delivery_note_he2_DatePicker_delivery_date1.style            = "Styles/Spiritnew/Style.css";
+delivery_note_he2_DatePicker_delivery_date1.relativePathPart = "../";
+delivery_note_he2_DatePicker_delivery_date1.themeVersion = "3.0";
+
+//End Date Picker Object Definitions
+
+//DEL  
+
+//DEL  //
+
+//page_delivery_note_he2_Button_Delete_OnClick @26-06CD262D
+function page_delivery_note_he2_Button_Delete_OnClick()
+{
+    var result;
+//End page_delivery_note_he2_Button_Delete_OnClick
+
+//Confirmation Message @27-1840CE41
+    return confirm('{res:CCS_DeleteConfirmation}');
+//End Confirmation Message
+
+//Close page_delivery_note_he2_Button_Delete_OnClick @26-BC33A33A
+    return result;
+}
+//End Close page_delivery_note_he2_Button_Delete_OnClick
+
+//page_delivery_note_he2_Button_Cancel_OnClick @28-86F9CB02
+function page_delivery_note_he2_Button_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_delivery_note_he2_Button_Cancel_OnClick
+
+//page_formdetail_Button_Submit_OnClick @50-6C1D1EA8
+function page_formdetail_Button_Submit_OnClick()
+{
+    disableValidation = true;
+}
+//End page_formdetail_Button_Submit_OnClick
+
+//page_formdetail_Cancel_OnClick @51-A4B78FD6
+function page_formdetail_Cancel_OnClick()
+{
+    disableValidation = true;
+}
+//End page_formdetail_Cancel_OnClick
+
+//bind_events @1-9E0D7114
+function bind_events() {
+    if (document.forms["delivery_note_he2"]) check_and_bind('document.forms["delivery_note_he2"].Button_Delete','onclick',page_delivery_note_he2_Button_Delete_OnClick);
+    if (document.forms["delivery_note_he2"]) check_and_bind('document.forms["delivery_note_he2"].Button_Cancel','onclick',page_delivery_note_he2_Button_Cancel_OnClick);
+    if (document.forms["formdetail"]) check_and_bind('document.forms["formdetail"].Button_Submit','onclick',page_formdetail_Button_Submit_OnClick);
+    if (document.forms["formdetail"]) check_and_bind('document.forms["formdetail"].Cancel','onclick',page_formdetail_Cancel_OnClick);
+    forms_onload();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top">
+      <table width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <p>
+            <!-- BEGIN Record delivery_note_search -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <table cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td valign="top">
+                    <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                        <th>{res:CCS_SearchFormPrefix}&nbsp;{res:ssf_delivery_note}</th>
+ 
+                        <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                      </tr>
+                    </table>
+ 
+                    <table class="Record" cellspacing="0" cellpadding="0">
+                      <!-- BEGIN Error -->
+                      <tr class="Error">
+                        <td colspan="4">{Error}</td>
+                      </tr>
+                      <!-- END Error -->
+                      <tr class="Controls">
+                        <th>{res:ssf_dates_range}</th>
+ 
+                        <td colspan="2"><input maxlength="8" size="8" value="{s_delivery_date}" name="{s_delivery_date_Name}">&nbsp; 
+                          <!-- BEGIN DatePicker DatePicker_s_delivery_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a>&nbsp;&nbsp;<!-- END DatePicker DatePicker_s_delivery_date1 --></td> 
+                        <td>&nbsp;<input maxlength="8" size="8" value="{s_end_date}" name="{s_end_date_Name}">&nbsp; 
+                          <!-- BEGIN DatePicker DatePicker_s_end_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a>&nbsp;&nbsp;<!-- END DatePicker DatePicker_s_end_date1 --></td>
+                      </tr>
+ 
+                      <tr class="Controls">
+                        <th>{res:delivery_reference}</th>
+ 
+                        <td colspan="3"><input maxlength="25" size="25" value="{s_delivery_reference}" name="{s_delivery_reference_Name}"></td>
+                      </tr>
+ 
+                      <tr class="Bottom">
+                        <td align="right" colspan="4">&nbsp; <a href="{Link1_Src}">{res:CCS_Clear}</a>&nbsp; 
+                          <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </form>
+            &nbsp;&nbsp;<!-- END Record delivery_note_search --></p>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+ 
+        <tr>
+          <td>
+            <p>
+            <!-- BEGIN Grid delivery_note_he1 -->
+            <table cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td valign="top">
+                  <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                      <th>&nbsp;{res:ssf_delivery_note} {res:CCS_GridFormSuffix} </th>
+ 
+                      <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                    </tr>
+                  </table>
+ 
+                  <table class="Grid" cellspacing="0" cellpadding="0">
+                    <tr class="Caption">
+                      <th>
+                      <!-- BEGIN Sorter Sorter_delivery_note_id --><a href="{Sort_URL}">{res:delivery_note_id}</a> 
+                      <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                      <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;&nbsp;<!-- END Sorter Sorter_delivery_note_id --></th>
+ 
+                      <th>
+                      <!-- BEGIN Sorter Sorter_delivery_reference --><a href="{Sort_URL}">{res:delivery_reference}</a> 
+                      <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                      <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;&nbsp;<!-- END Sorter Sorter_delivery_reference --></th>
+ 
+                      <th>
+                      <!-- BEGIN Sorter Sorter_delivery_date --><a href="{Sort_URL}">{res:delivery_date}</a> 
+                      <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                      <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;&nbsp;<!-- END Sorter Sorter_delivery_date --></th>
+                    </tr>
+ 
+                    <!-- BEGIN Row -->
+                    <tr class="Row">
+                      <td style="TEXT-ALIGN: right"><a href="{delivery_note_id_Src}">{delivery_note_id}</a>&nbsp;</td> 
+                      <td>{delivery_reference}&nbsp;</td> 
+                      <td align="center">{delivery_date}&nbsp;</td>
+                    </tr>
+ <!-- END Row -->
+                    <!-- BEGIN NoRecords -->
+                    <tr class="NoRecords">
+                      <td colspan="3">{res:CCS_NoRecords} </td>
+                    </tr>
+                    <!-- END NoRecords -->
+                    <tr class="Footer">
+                      <td colspan="3"><a href="{delivery_note_Insert_Src}">{res:CCS_InsertLink}</a>&nbsp; 
+                        <!-- BEGIN Navigator Navigator -->
+                        <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                        <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                        <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                        <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                        <!-- BEGIN Pages -->
+                        <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                        <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                        <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                        <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                        <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                        <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;&nbsp;&nbsp;<!-- END Navigator Navigator --></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            &nbsp;&nbsp;&nbsp;<!-- END Grid delivery_note_he1 --></p>
+          </td>
+        </tr>
+      </table>
+    </td> 
+    <td>&nbsp;</td> 
+    <td valign="top">
+      <table width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <p>
+            <!-- BEGIN Record delivery_note_he2 -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <table cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td valign="top">
+                    <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                        <th>{res:CCS_RecordFormPrefix}&nbsp;{res:ssf_delivery_note}&nbsp; </th>
+ 
+                        <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                      </tr>
+                    </table>
+ 
+                    <table class="Record" cellspacing="0" cellpadding="0">
+                      <!-- BEGIN Error -->
+                      <tr class="Error">
+                        <td colspan="4">{Error}</td>
+                      </tr>
+                      <!-- END Error -->
+                      <tr class="Controls">
+                        <th>{res:delivery_doc_type}</th>
+ 
+                        <td colspan="3"><input maxlength="4" size="4" value="{delivery_doc_type}" name="{delivery_doc_type_Name}">&nbsp;&nbsp;<input type="hidden" value="{delivery_note_id}" name="{delivery_note_id_Name}"></td>
+                      </tr>
+ 
+                      <tr class="Controls">
+                        <th>{res:delivery_doc_id}</th>
+ 
+                        <td colspan="3"><input value="{delivery_doc_id}" name="{delivery_doc_id_Name}"></td>
+                      </tr>
+ 
+                      <tr class="Controls">
+                        <th>{res:delivery_date}</th>
+ 
+                        <td><input maxlength="10" size="10" value="{delivery_date}" name="{delivery_date_Name}">&nbsp; 
+                          <!-- BEGIN DatePicker DatePicker_delivery_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a>&nbsp;&nbsp;&nbsp;<!-- END DatePicker DatePicker_delivery_date1 --></td> 
+                        <td>&nbsp;{res:ssf_time}</td> 
+                        <td>&nbsp;<input size="8" value="{delivery_time}" name="{delivery_time_Name}"></td>
+                      </tr>
+ 
+                      <tr class="Controls">
+                        <th>{res:delivery_comments}</th>
+ 
+                        <td colspan="3"><textarea name="{delivery_comments_Name}" rows="3" cols="50">{delivery_comments}</textarea></td>
+                      </tr>
+ 
+                      <tr class="Bottom">
+                        <td align="right" colspan="4">&nbsp; 
+                          <!-- BEGIN Button Button_deleteDelivery --><input class="botonazul" onclick="OpenPop_UpList(this,'dettach');return false;" type="submit" value="{res:ssf_delivery_dettach}" name="{Button_Name}"><!-- END Button Button_deleteDelivery -->
+                          <!-- BEGIN Button Button_addDelivery --><input class="botonazul" onclick="OpenPop_UpList(this,'attach');return false;" type="submit" value="{res:ssf_delivery_attach}" name="{Button_Name}"><!-- END Button Button_addDelivery -->
+                          <!-- BEGIN Button Button_Insert --><input class="botonazul" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button Button_Insert -->
+                          <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                          <!-- BEGIN Button Button_Delete --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button Button_Delete -->
+                          <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </form>
+            &nbsp;&nbsp;&nbsp;<!-- END Record delivery_note_he2 --></p>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td valign="top">
+            <p>&nbsp;</p>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td valign="top">&nbsp; 
+            <!-- BEGIN EditableGrid formdetail -->
+            <form name="{HTMLFormName}" action="{Action}" method="post">
+              <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+              <table cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td valign="top">
+                    <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                        <th>{res:CCS_GridFormPrefix} {res:delivery_note_detail} {res:CCS_GridFormSuffix} </th>
+ 
+                        <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                      </tr>
+                    </table>
+ 
+                    <table class="Grid" cellspacing="0" cellpadding="0">
+                      <!-- BEGIN Error -->
+                      <tr class="Error">
+                        <td colspan="4">{Error}</td>
+                      </tr>
+                      <!-- END Error -->
+                      <tr class="Caption">
+                        <th>{res:grade_id}</th>
+ 
+                        <th>&nbsp;{res:vol_total_tank_delivery}</th>
+ 
+                        <th>
+                        <!-- BEGIN Sorter Sorter_delivery_supplier_vol --><a href="{Sort_URL}">{res:delivery_supplier_vol}</a> 
+                        <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                        <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- END Sorter Sorter_delivery_supplier_vol --></th>
+ 
+                        <th>&nbsp;{res:ssf_delivery_terminal}</th>
+                      </tr>
+ 
+                      <!-- BEGIN Row -->
+                      <!-- BEGIN RowError -->
+                      <tr class="Error">
+                        <td colspan="4">{Error}</td>
+                      </tr>
+                      <!-- END RowError -->
+                      <tr class="Row">
+                        <td>&nbsp; <input type="hidden" value="{delivery_note_id}" name="{delivery_note_id_Name}">&nbsp;{delivery_product_id}</td> 
+                        <td align="right">&nbsp;{delivery_product_vol}</td> 
+                        <td><input style="TEXT-ALIGN: right" maxlength="20" value="{delivery_supplier_vol}" name="{delivery_supplier_vol_Name}" size="20"></td> 
+                        <td>&nbsp;<input value="{delivery_terminal}" name="{delivery_terminal_Name}"></td>
+                      </tr>
+ <!-- END Row -->
+                      <!-- BEGIN NoRecords -->
+                      <tr class="NoRecords">
+                        <td colspan="4">{res:CCS_NoRecords} </td>
+                      </tr>
+                      <!-- END NoRecords -->
+                      <tr class="Footer">
+                        <td style="TEXT-ALIGN: right" colspan="4">
+                          <!-- BEGIN Navigator Navigator -->
+                          <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                          <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                          <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                          <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                          <!-- BEGIN Pages -->
+                          <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                          <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                          <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                          <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                          <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                          <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- END Navigator Navigator -->
+                          <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Submit -->
+                          <!-- BEGIN Button Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Cancel --></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- END EditableGrid formdetail --></td>
+        </tr>
+ 
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</p>
+<p>&nbsp;</p>
+<p></p>
+<p><br>
+</p>
+<p>&nbsp;</p>
+<p><br>
+</p>
+<p>&nbsp;</p>
+<p><br>
+<br>
+<br>
+<br>
+&nbsp;</p>
+</body>
+</html>

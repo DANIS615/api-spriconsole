@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFDeviceConfig</title>
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+<script language="JavaScript">
+function getObj(id) {
+        if (document.all) { return document.all[id]; } 
+        else {  return document.getElementById(id);     }
+}
+
+function OpenPop_UpList(ptype)
+{
+        var FieldValue;
+        var linkhref = 'SSFDeviceConfigImplementationPopUp.php';
+        var win=window.open(linkhref+"?p_type="+ptype, "Implementation", "left=200,top=420,width=400,height=150,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+        win.focus();
+}
+function OpenDuplicate_UpList(ptype)
+{
+        var FieldValue;
+        var linkhref = 'SSFDuplicateDeviceConfigPopUp.php';
+        var win=window.open(linkhref+"?p_type="+ptype, "Duplicate", "left=200,top=420,width=400,height=150,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+        win.focus();
+}
+
+</script>
+<!-- flooble Color Picker header start -->
+<script language="Javascript">
+// Color Picker Script from Flooble.com
+// For more information, visit 
+//      http://www.flooble.com/scripts/colorpicker.php
+// Copyright 2003 Animus Pactum Consulting inc.
+// You may use and distribute this code freely, as long as
+// you keep this copyright notice and the link to flooble.com
+// if you chose to remove them, you must link to the page
+// listed above from every web page where you use the color
+// picker code.
+//---------------------------------------------------------
+     var perline = 9;
+     var divSet = false;
+     var curId;
+     var colorLevels = Array('0', '3', '6', '9', 'C', 'F');
+     var colorArray = Array();
+     var ie = false;
+     var nocolor = 'none';
+         if (document.all) { ie = true; nocolor = ''; }
+         function getObj(id) {
+                if (ie) { return document.all[id]; } 
+                else {  return document.getElementById(id);     }
+         }
+
+     function addColor(r, g, b) {
+        var red = colorLevels[r];
+        var green = colorLevels[g];
+        var blue = colorLevels[b];
+        addColorValue(red, green, blue);
+     }
+
+     function addColorValue(r, g, b) {
+        colorArray[colorArray.length] = '#' + r + r + g + g + b + b;
+     }
+     
+     function setColor(color) {
+        var link = getObj(curId);
+        var field = getObj(curId + 'field');
+        var picker = getObj('colorpicker');
+        field.value = color;
+        if (color == '') {
+                link.style.background = nocolor;
+                link.style.color = nocolor;
+                color = nocolor;
+        } else {
+                link.style.background = color;
+                link.style.color = color;
+            }
+        picker.style.display = 'none';
+            eval(getObj(curId + 'field').title);
+     }
+        
+     function setDiv() {     
+        if (!document.createElement) { return; }
+        var elemDiv = document.createElement('div');
+        if (typeof(elemDiv.innerHTML) != 'string') { return; }
+        genColors();
+        elemDiv.id = 'colorpicker';
+            elemDiv.style.position = 'absolute';
+        elemDiv.style.display = 'none';
+        elemDiv.style.border = '#000000 1px solid';
+        elemDiv.style.background = '#FFFFFF';
+        elemDiv.innerHTML = '<span style="font-family:Verdana; font-size:11px;">Pick a color: ' 
+                + '(<a href="javascript:setColor(/'/');">No color</a>)<br>' 
+                + getColorTable() 
+                + '<center> <a>Powered by SSF SA</a></center></span>';
+
+        document.body.appendChild(elemDiv);
+        divSet = true;
+     }
+     
+     function pickColor(id) {
+        if (!divSet) { setDiv(); }
+        var picker = getObj('colorpicker');             
+                if (id == curId && picker.style.display == 'block') {
+                        picker.style.display = 'none';
+                        return;
+                }
+        curId = id;
+        var thelink = getObj(id);
+        picker.style.top = getAbsoluteOffsetTop(thelink) + 20;
+        picker.style.left = getAbsoluteOffsetLeft(thelink);     
+        picker.style.display = 'block';
+     }
+     
+     function genColors() {
+        addColorValue('0','0','0');
+        addColorValue('3','3','3');
+        addColorValue('6','6','6');
+        addColorValue('8','8','8');
+        addColorValue('9','9','9');                
+        addColorValue('A','A','A');
+        addColorValue('C','C','C');
+        addColorValue('E','E','E');
+        addColorValue('F','F','F');                                
+                        
+        for (a = 1; a < colorLevels.length; a++)
+                        addColor(0,0,a);
+        for (a = 1; a < colorLevels.length - 1; a++)
+                        addColor(a,a,5);
+
+        for (a = 1; a < colorLevels.length; a++)
+                        addColor(0,a,0);
+        for (a = 1; a < colorLevels.length - 1; a++)
+                        addColor(a,5,a);
+                        
+        for (a = 1; a < colorLevels.length; a++)
+                        addColor(a,0,0);
+        for (a = 1; a < colorLevels.length - 1; a++)
+                        addColor(5,a,a);
+                        
+                        
+        for (a = 1; a < colorLevels.length; a++)
+                        addColor(a,a,0);
+        for (a = 1; a < colorLevels.length - 1; a++)
+                        addColor(5,5,a);
+                        
+        for (a = 1; a < colorLevels.length; a++)
+                        addColor(0,a,a);
+        for (a = 1; a < colorLevels.length - 1; a++)
+                        addColor(a,5,5);
+
+        for (a = 1; a < colorLevels.length; a++)
+                        addColor(a,0,a);                        
+        for (a = 1; a < colorLevels.length - 1; a++)
+                        addColor(5,a,5);
+                        
+        return colorArray;
+     }
+     function getColorTable() {
+         var colors = colorArray;
+         var tableCode = '';
+         tableCode += '<table border="0" cellspacing="1" cellpadding="1">';
+         for (i = 0; i < colors.length; i++) {
+              if (i % perline == 0) { tableCode += '<tr>'; }
+              tableCode += '<td bgcolor="#000000"><a style="outline: 1px solid #000000; color: ' 
+                  + colors[i] + '; background: ' + colors[i] + ';font-size: 10px;" title="' 
+                  + colors[i] + '" href="javascript:setColor(\'' + colors[i] + '\');">&nbsp;&nbsp;&nbsp;</a></td>';
+              if (i % perline == perline - 1) { tableCode += '</tr>'; }
+         }
+         if (i % perline != 0) { tableCode += '</tr>'; }
+         tableCode += '</table>';
+         return tableCode;
+     }
+     function relateColor(id, color) {
+        var link = getObj(id);
+        if (color == '') {
+                link.style.background = nocolor;
+                link.style.color = nocolor;
+                color = nocolor;
+        } else {
+                link.style.background = color;
+                link.style.color = color;
+            }
+                eval(getObj(id + 'field').title);
+     }
+     function getAbsoluteOffsetTop(obj) {
+        var top = obj.offsetTop;
+        var parent = obj.offsetParent;
+        while (parent != document.body) {
+                top += parent.offsetTop;
+                parent = parent.offsetParent;
+        }
+        return top;
+     }
+     
+     function getAbsoluteOffsetLeft(obj) {
+        var left = obj.offsetLeft;
+        var parent = obj.offsetParent;
+        while (parent != document.body) {
+                left += parent.offsetLeft;
+                parent = parent.offsetParent;
+        }
+        return left;
+     }
+
+
+</script>
+<!-- flooble Color Picker header end -->
+<script language="JavaScript">
+/*        function onBtnModifyClick()
+        {
+                window.location.href += "&p_action=update";
+        }
+        function onBtnCancelChangesClick()
+        {
+                window.location.href = window.location.href.substring(0,window.location.href.indexOf("&p_action="));
+        }
+        function onBtnApplyChangesClick()
+        {
+                window.location.href = window.location.href.substring(0,window.location.href.indexOf("&p_action="));
+        }
+*/
+</script>
+<script type="text/javascript">
+function digitvalidation(entered, min, max, alertbox, datatype) 
+{
+        var enteredNumber;
+        var minNumber;
+        var maxNumber;
+
+        if(datatype == 'i') // INTEGER
+        {
+                enteredNumber = parseInt(entered);
+                minNumber = parseInt(min);
+                maxNumber = parseInt(max);              
+        }
+        else
+        {
+                enteredNumber = parseFloat(entered);
+                minNumber = parseFloat(min);
+                maxNumber = parseFloat(max);            
+        }
+        if( isNaN(enteredNumber) || isNaN(minNumber) || isNaN(maxNumber) )
+        {
+                if ( alertbox != "" ) 
+                {
+                alert( alertbox );
+                }
+                return false;
+        }
+        if( enteredNumber < minNumber || enteredNumber > maxNumber )
+        {
+                if ( alertbox != "" ) 
+                {
+                alert( alertbox );
+                }
+                return false;
+        }
+        return true;
+}
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp;</p>
+<p>{lblDummyForTypeGrid}</p>
+<form name="ssfTypeSelection" method="post">
+  <input type="hidden" value="{p_type}" name="{p_type_Name}"><input type="hidden" value="{p_module}" name="{p_module_Name}"><input type="hidden" value="{p_newid}" name="{p_newid_Name}">&nbsp;<input type="hidden" value="{btnModifyRecord}" name="{btnModifyRecord_Name}"><input type="hidden" value="{p_id}" name="{p_id_Name}">
+  <!-- BEGIN Button btnAddRecord --><input class="botonazul" onclick="OpenPop_UpList('{p_type_param}');" type="submit" value="{res:CCS_Insert}" name="{Button_Name}"><!-- END Button btnAddRecord -->&nbsp;&nbsp; 
+  <p></p>
+</form>
+<a name="device_record"></a>
+<form name="formRecord" method="post">
+  <p>{lblDummyRecord} 
+  <!-- BEGIN Button btnApplyChanges --><input class="botonazul" type="submit" value="{res:CCS_ApplyChanges}" name="{Button_Name}"><!-- END Button btnApplyChanges -->
+  <!-- BEGIN Button btnDuplicateRecord --><input class="botonazul" onclick="OpenDuplicate_UpList('{p_type_param}');" type="submit" value="{res:CCS_Duplicate}" name="{Button_Name}"><!-- END Button btnDuplicateRecord -->
+  <!-- BEGIN Button btnDeleteRecord --><input class="botonazul" type="submit" value="{res:CCS_Delete}" name="{Button_Name}"><!-- END Button btnDeleteRecord -->
+  <!-- BEGIN Button btnCancelChanges --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button btnCancelChanges --></p>
+</form>
+<a name="subinfo_child_record"></a>
+<form name="formchildRecord" method="post">
+  <table width="100%" border="0">
+    <tr>
+      <td valign="top" align="left" width="40%">
+        <p>{lblDummyChildsGrid}&nbsp;</p>
+      </td> 
+      <td valign="top" align="left" width="2%">&nbsp;</td> 
+      <td valign="top" align="left">
+        <p>{lblDummyChildsRecord}</p>
+ 
+        <p>
+        <!-- BEGIN Button btnModifyChildRecord --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button btnModifyChildRecord -->
+        <!-- BEGIN Button btnApplyChangesChild --><input class="botonazul" type="submit" value="{res:CCS_ApplyChanges}" name="{Button_Name}"><!-- END Button btnApplyChangesChild -->
+        <!-- BEGIN Button btnCancelChild --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button btnCancelChild --></p>
+      </td>
+    </tr>
+  </table>
+</form>
+<p>
+<form name="formchildRecord" method="post">
+  <table width="100%" border="0">
+    <tr>
+      <td valign="top" align="left" width="40%">
+        <p>{lblDummyChildsGrid1}&nbsp;</p>
+      </td> 
+      <td valign="top" align="left" width="2%"></td> 
+      <td valign="top" align="left">
+        <p>{lblDummyChildsRecord1}</p>
+ 
+        <p>
+        <!-- BEGIN Button btnModifyChildRecord1 --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button btnModifyChildRecord1 -->
+        <!-- BEGIN Button btnApplyChangesChild1 --><input class="botonazul" type="submit" value="{res:CCS_ApplyChanges}" name="{Button_Name}"><!-- END Button btnApplyChangesChild1 -->
+        <!-- BEGIN Button btnCancelChild1 --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button btnCancelChild1 --></p>
+      </td>
+    </tr>
+  </table>
+</form>
+<form>
+  </p>
+</form>
+</body>
+</html>

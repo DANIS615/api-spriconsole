@@ -1,0 +1,1296 @@
+17/07/2009-20:32:20.296-0x00000D54-SSF.TICKET-SSF_TICKET_ServiceStart-[DEBUG]-SSF Ticket Module Started...
+17/07/2009-20:32:20.296-0x00000D54-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-Getting ODBC Data Sources...
+17/07/2009-20:32:20.296-0x00000D54-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-FOUND DSN [SmartShipODBC] WITH DESCRIPTION [PostgreSQL ANSI]
+17/07/2009-20:32:20.296-0x00000D54-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-Done with ODBC Data Sources
+17/07/2009-20:32:20.312-0x00000D54-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-Opening database ...
+17/07/2009-20:32:20.390-0x00000D54-SSF.TICKET-SSFTicketModule::connectToDB-[DEBUG]-DB opened ok
+17/07/2009-20:32:20.390-0x00000D54-SSF.TICKET-SSFTicketModule::readAndLoadLanguage-[DEBUG]-Language read from db is [en-ENGLISH], will use [en]
+17/07/2009-20:32:20.421-0x00000D54-SSF.TICKET-SSFTicketPLU::initBarCodes-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.437-0x00000D54-SSF.TICKET-SSFTicketPLU::initPLU-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.453-0x00000D54-SSF.TICKET-SSFTicketPLU::initMeasureUnits-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.468-0x00000D54-SSF.TICKET-SSFTicketPLU::initPrices-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.484-0x00000D54-SSF.TICKET-SSFTicketPLU::initCategories-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.500-0x00000D54-SSF.TICKET-SSFTicketPLU::initPLUGrades-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.515-0x00000D54-SSF.TICKET-SSFTicketTax::initTax-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.531-0x00000D54-SSF.TICKET-SSFTicketTax::initTaxFiscalGroup-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.546-0x00000D54-SSF.TICKET-SSFTicketTax::initTaxGroupDetail-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.562-0x00000D54-SSF.TICKET-SSFTicketTransaction::initTransactionHeader-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.578-0x00000D54-SSF.TICKET-SSFTicketTransaction::initTransactionDetail-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.609-0x00000D54-SSF.TICKET-SSFTicketTransaction::initTransactionTaxDetail-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.625-0x00000D54-SSF.TICKET-SSFTicketTransaction::initTransactionTender-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.687-0x00000D54-SSF.TICKET-SSFTicketCustomer::initCustomers-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.703-0x00000D54-SSF.TICKET-SSFTicketCustomer::initCustomerTaxTypes-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.718-0x00000D54-SSF.TICKET-SSFTicketSpeedKeys::initSpeedKeys-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.734-0x00000D54-SSF.TICKET-SSFTicketReceiptFormat::initReceiptFormat-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.750-0x00000D54-SSF.TICKET-SSFTicketTender::initTender-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.765-0x00000D54-SSF.TICKET-SSFTicketTender::initTender-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.781-0x00000D54-SSF.TICKET-SSFTicketTender::initTender-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.796-0x00000D54-SSF.TICKET-SSFTicketTender::initTender-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.796-0x00000D54-SSF.TICKET-SSFTicketPrinter::init-[DEBUG]-Initializing for printer []
+17/07/2009-20:32:20.812-0x00000D54-SSF.TICKET-SSFTicketPrinter::initPrinter-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.812-0x00000D54-SSF.TICKET-SSFTicketPrinter::init-[DEBUG]-Initializing for printer [EPS2]
+17/07/2009-20:32:20.828-0x00000D54-SSF.TICKET-SSFTicketPrinter::initPrinter-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.828-0x00000D54-SSF.TICKET-SSFTicketPrinter::init-[DEBUG]-Initializing for printer [EPSON]
+17/07/2009-20:32:20.843-0x00000D54-SSF.TICKET-SSFTicketPrinter::initPrinter-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.859-0x00000D54-SSF.TICKET-SSFTicketPrinter::init-[DEBUG]-Initializing for printer [EPSON3]
+17/07/2009-20:32:20.875-0x00000D54-SSF.TICKET-SSFTicketPrinter::initPrinter-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.890-0x00000D54-SSF.TICKET-SSFTicketPosConfiguration::initConfiguration-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.890-0x00000D54-SSF.TICKET-SSFTicketPosConfiguration::initCatalog-[DEBUG]-Table binded ok
+17/07/2009-20:32:20.921-0x00000D54-SSF.TICKET-SSFTicketPosConfiguration::initConfiguration-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.937-0x00000D54-SSF.TICKET-SSFTicketPosConfiguration::initConfiguration-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.953-0x00000D54-SSF.TICKET-SSFTicketPosConfiguration::initConfiguration-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.968-0x00000D54-SSF.TICKET-SSFTicketPeriodGroups::initPeriodGroups-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:20.984-0x00000D54-SSF.TICKET-SSFTicketPeriods::initPeriods-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:21.000-0x00000D54-SSF.TICKET-SSFTicketPeriods::setClosePumps-[DEBUG]-Setting close pumps value = [TRUE] for group [UNICO]
+17/07/2009-20:32:21.015-0x00000D54-SSF.TICKET-SSFTicketPeriods::initPeriods-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:21.031-0x00000D54-SSF.TICKET-SSFTicketPeriods::initPeriods-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:21.062-0x00000D54-SSF.TICKET-SSFTicketPeriods::initPeriods-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:21.062-0x00000D54-SSF.TICKET-SSFTicketPrepay::init-[DEBUG]-Initializing for prepay [0-0]
+17/07/2009-20:32:21.078-0x00000D54-SSF.TICKET-SSFTicketPrepay::initPrepay-[DEBUG]-Table opened and binded ok
+17/07/2009-20:32:21.078-0x00000D54-SSF.TICKET-SSFMessageRouterClient::initial-[DEBUG]-Setting the IP connection address to localhost
+17/07/2009-20:32:21.078-0x00000D54-SSF.TICKET-SSFMessageRouterClient::setRemoteAddress-[DEBUG]-Remote Address setted 
+17/07/2009-20:32:21.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::connectToServer-[DEBUG]-Trying to connect to Message Router Server
+17/07/2009-20:32:22.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::connectToServer-[DEBUG]-Error connecting to server
+17/07/2009-20:32:32.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::connectToServer-[DEBUG]-<1058> Connected to server
+17/07/2009-20:32:32.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::doLoginToRouter-[DEBUG]-LOGIN FOR USER [SSF]
+17/07/2009-20:32:32.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_SECU_LOGIN] Msg Len [95] 
+17/07/2009-20:32:32.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00075|3|2|GUEST|POST|RES_SECU_LOGIN|127.0.0.1:1058|SECURITY_MANAGER|USI=SSF|ST=OK|^]
+17/07/2009-20:32:32.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_SECU_LOGIN]
+17/07/2009-20:32:32.109-0x00000D98-SSF.TICKET-SSFTicketModule::requestLicenseInformation-[DEBUG]-Sending request for license information
+17/07/2009-20:32:32.109-0x00000D98-SSF.TICKET-SSFTicketModule::requestForecourtGeneralConfiguration-[DEBUG]-Sending request for forecourt general configuration
+17/07/2009-20:32:32.109-0x00000D98-SSF.TICKET-SSFTicketModule::requestPaymentTypes-[DEBUG]-Sending request for Payment Types
+17/07/2009-20:32:32.109-0x00000D98-SSF.TICKET-SSFTicketModule::requestGradesConfig-[DEBUG]-Sending request for Grades Config
+17/07/2009-20:32:32.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_LICENSE_SECTION] Msg Len [50] 
+17/07/2009-20:32:32.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_FCRT_GET_GRAL_CONFIG] Msg Len [44] 
+17/07/2009-20:32:32.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PAYMENT_GET_PAY_TYPES] Msg Len [45] 
+17/07/2009-20:32:32.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_FCRT_GRADES_CONFIG] Msg Len [42] 
+17/07/2009-20:32:32.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00107|3|2||POST|RES_LICENSE_SECTION|127.0.0.1:1058||ST=OK|SEC=TICKET|LICENSE=YES|CUSTOMIZATION GROUP=GUATEMALA001|^]
+17/07/2009-20:32:32.406-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_LICENSE_SECTION]
+17/07/2009-20:32:32.406-0x00000D94-SSF.TICKET-SSFTicketModule::processEventLicenseInformation-[DEBUG]-License OK
+17/07/2009-20:32:32.437-0x00000D94-SSF.TICKET-SSFTicketModule::processEventLicenseInformation-[DEBUG]-Customization group is [GUATEMALA001]
+17/07/2009-20:32:32.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [REQ_TKT_TRX_REGISTER_NEW] Msg Len [114] 
+17/07/2009-20:32:32.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00079|3|2||POST|RES_EVENT_NOT_SUBSCRIBED|127.0.0.1:1058||REQ=REQ_FCRT_GET_GRAL_CONFIG|^]
+17/07/2009-20:32:32.531-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_EVENT_NOT_SUBSCRIBED]
+17/07/2009-20:32:32.562-0x00000D94-SSF.TICKET-SSFTicketModule::processEventNotSubscribed-[WARNING]-Request [REQ_FCRT_GET_GRAL_CONFIG] is not subscribed
+17/07/2009-20:32:32.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [REQ_TKT_TRX_REGISTER_FAST_NEW] Msg Len [134] 
+17/07/2009-20:32:32.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00080|3|2||POST|RES_EVENT_NOT_SUBSCRIBED|127.0.0.1:1058||REQ=REQ_PAYMENT_GET_PAY_TYPES|^]
+17/07/2009-20:32:32.593-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_EVENT_NOT_SUBSCRIBED]
+17/07/2009-20:32:32.593-0x00000D94-SSF.TICKET-SSFTicketModule::processEventNotSubscribed-[WARNING]-Request [REQ_PAYMENT_GET_PAY_TYPES] is not subscribed
+17/07/2009-20:32:32.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [REQ_TKT_TRX_PRINT_RECEIPT] Msg Len [77] 
+17/07/2009-20:32:32.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2||POST|RES_EVENT_NOT_SUBSCRIBED|127.0.0.1:1058||REQ=REQ_FCRT_GRADES_CONFIG|^]
+17/07/2009-20:32:32.656-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_EVENT_NOT_SUBSCRIBED]
+17/07/2009-20:32:32.656-0x00000D94-SSF.TICKET-SSFTicketModule::processEventNotSubscribed-[WARNING]-Request [REQ_FCRT_GRADES_CONFIG] is not subscribed
+17/07/2009-20:32:32.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [REQ_TKT_TRX_REFUND] Msg Len [84] 
+17/07/2009-20:32:32.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [REQ_TKT_PERIOD_CLOSE] Msg Len [96] 
+17/07/2009-20:32:32.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [REQ_TKT_*] Msg Len [34] 
+17/07/2009-20:32:32.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [EVT_NEW_CONFIG_APPLIED] Msg Len [47] 
+17/07/2009-20:32:32.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [EVT_ENTRY_PUMP_CONTROLLER] Msg Len [50] 
+17/07/2009-20:32:32.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [EVT_SHIFT_PERIOD_CLOSED] Msg Len [48] 
+17/07/2009-20:32:32.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [EVT_PUMP_NEW_TRANSACTION] Msg Len [49] 
+17/07/2009-20:32:32.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [EVT_PUMP_STATUS_CHANGE_ID_*] Msg Len [52] 
+17/07/2009-20:32:32.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [EVT_GRADE_PRICE_CHANGE] Msg Len [47] 
+17/07/2009-20:32:32.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:32:32.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [SUBSCRIBE] to be pushed [EVT_PUMP_PRICE_LEVEL_ID_*] Msg Len [50] 
+17/07/2009-20:32:32.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:03.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00056|3|2|GUEST|POST|EVT_ENTRY_PUMP_CONTROLLER||127.0.0.1:1106|^]
+17/07/2009-20:34:03.515-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_ENTRY_PUMP_CONTROLLER]
+17/07/2009-20:34:03.515-0x00000D94-SSF.TICKET-SSFTicketModule::processEventEntryPumpController-[DEBUG]-Pump Controller Entry Registered
+17/07/2009-20:34:03.515-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpStatusChange-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:03.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_STATUS_ID_000] Msg Len [42] 
+17/07/2009-20:34:03.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:03.562-0x00000D98-SSF.TICKET-SSFTicketModule::requestForecourtGeneralConfiguration-[DEBUG]-Sending request for forecourt general configuration
+17/07/2009-20:34:03.562-0x00000D98-SSF.TICKET-SSFTicketModule::requestPaymentTypes-[DEBUG]-Sending request for Payment Types
+17/07/2009-20:34:03.562-0x00000D98-SSF.TICKET-SSFTicketModule::requestGradesConfig-[DEBUG]-Sending request for Grades Config
+17/07/2009-20:34:03.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_FCRT_GET_GRAL_CONFIG] Msg Len [44] 
+17/07/2009-20:34:03.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:03.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PAYMENT_GET_PAY_TYPES] Msg Len [45] 
+17/07/2009-20:34:03.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:03.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_FCRT_GRADES_CONFIG] Msg Len [42] 
+17/07/2009-20:34:03.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:04.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00659|3|2||POST|RES_PAYMENT_GET_PAY_TYPES|127.0.0.1:1058|127.0.0.1:1060|RC=OK|QT=7|PTID7=Pump Test|PTID6=Prueba de Surtidor|PTID5=POS|PTID4=MOD_TICKET|PTID3=Efectivo|PTID2=Automatico|PTID1=Automatic|PTGRP7=PUMP_TEST|PTGRP6=PUMP_TEST|PTGRP5=POS|PTGRP4=POS|PTGRP3=CASH|PTGRP2=CASH|PTGRP1=CASH|PTDE7=The delivery was a Pump Test|PTDE6=El Despacho fue realizado para hacer pruebas en el surtidor|PTDE5=El despacho fue pagado por un POS externo|PTDE4=El despacho fue pagado por el modulo de SPIRIT TICKET|PTDE3=efectivo|PTDE2=El Despacho fue pagado en forma automatica|PTDE1=The Delivery was payed in automatic way|PTCE7=0|PTCE6=0|PTCE5=0|PTCE4=0|PTCE3=1|PTCE2=0|PTCE1=0|^]
+17/07/2009-20:34:04.015-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_PAYMENT_GET_PAY_TYPES]
+17/07/2009-20:34:04.015-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPaymentTypes-[DEBUG]-Payment Types OK
+17/07/2009-20:34:04.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00290|3|2||POST|RES_FCRT_GET_GRAL_CONFIG|127.0.0.1:1058|127.0.0.1:1106|SNR=1|SNA=Comercializadora de Servicios|SLNA=Occidentales, Sociedad Anonima|SA3=Quetzaltenango, Quetzaltenango|SA2=Av. Las Americas 9-40 Zona 9|SA=Estacion Texaco Minerva|MUD=QUETZAL|MUA=Q|FID=|DF=dd/mm/yyyy|DCV=3|DCP=2|DCM=2|^]
+17/07/2009-20:34:04.515-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_FCRT_GET_GRAL_CONFIG]
+17/07/2009-20:34:04.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00483|3|2||POST|RES_FCRT_GRADES_CONFIG|127.0.0.1:1058|127.0.0.1:1106|GRADES=3|G003LVS=2|G003L02=27.19|G003L01=28.49|G003GNR=1|G003DES=PREMIUM|G003COL=999900|G003BPLN=|G003BPL=0|G003BPHNR=1|G003BPHN=PREMIUM|G003BPH=100|G002LVS=2|G002L02=26.19|G002L01=27.49|G002GNR=2|G002DES=PLUS|G002COL=AAAAAA|G002BPLN=|G002BPL=0|G002BPHNR=2|G002BPHN=PLUS|G002BPH=100|G001LVS=2|G001L02=20.79|G001L01=22.09|G001GNR=3|G001DES=DIESEL|G001COL=009900|G001BPLN=|G001BPL=0|G001BPHNR=3|G001BPHN=DIESEL|G001BPH=100|^]
+17/07/2009-20:34:04.578-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [RES_FCRT_GRADES_CONFIG]
+17/07/2009-20:34:04.593-0x00000D94-SSF.TICKET-SSFTicketModule::processEventGradesConfig-[DEBUG]-Grade 3 on level 1 with price 22.090
+17/07/2009-20:34:04.593-0x00000D94-SSF.TICKET-SSFTicketModule::processEventGradesConfig-[DEBUG]-Grade 3 on level 2 with price 20.790
+17/07/2009-20:34:04.593-0x00000D94-SSF.TICKET-SSFTicketModule::processEventGradesConfig-[DEBUG]-Grade 2 on level 1 with price 27.490
+17/07/2009-20:34:04.593-0x00000D94-SSF.TICKET-SSFTicketModule::processEventGradesConfig-[DEBUG]-Grade 2 on level 2 with price 26.190
+17/07/2009-20:34:04.593-0x00000D94-SSF.TICKET-SSFTicketModule::processEventGradesConfig-[DEBUG]-Grade 1 on level 1 with price 28.490
+17/07/2009-20:34:04.593-0x00000D94-SSF.TICKET-SSFTicketModule::processEventGradesConfig-[DEBUG]-Grade 1 on level 2 with price 27.190
+17/07/2009-20:34:04.593-0x00000D94-SSF.TICKET-SSFTicketModule::processEventGradesConfig-[DEBUG]-Grades Config Received OK
+17/07/2009-20:34:04.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_013|127.0.0.1:1058|127.0.0.1:1124|SU=|ST=ERROR|^]
+17/07/2009-20:34:04.968-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_013]
+17/07/2009-20:34:04.968-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:04.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_013] Msg Len [51] 
+17/07/2009-20:34:04.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:05.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_007|127.0.0.1:1058|127.0.0.1:1147|SU=|ST=ERROR|^]
+17/07/2009-20:34:05.156-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_007]
+17/07/2009-20:34:05.156-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:05.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_007] Msg Len [51] 
+17/07/2009-20:34:05.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:05.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_006|127.0.0.1:1058|127.0.0.1:1146|SU=|ST=ERROR|^]
+17/07/2009-20:34:05.296-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_006]
+17/07/2009-20:34:05.296-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:05.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_006] Msg Len [51] 
+17/07/2009-20:34:05.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:05.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_001|127.0.0.1:1058|127.0.0.1:1120|SU=|ST=ERROR|^]
+17/07/2009-20:34:05.500-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_001]
+17/07/2009-20:34:05.500-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:05.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_001] Msg Len [51] 
+17/07/2009-20:34:05.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:05.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_006|127.0.0.1:1058|127.0.0.1:1146|LV=2|^]
+17/07/2009-20:34:05.500-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_006]
+17/07/2009-20:34:05.500-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 6 with price level 2
+17/07/2009-20:34:05.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_005|127.0.0.1:1058|127.0.0.1:1145|SU=|ST=ERROR|^]
+17/07/2009-20:34:05.687-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_005]
+17/07/2009-20:34:05.718-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:05.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_005] Msg Len [51] 
+17/07/2009-20:34:05.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:05.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_002|127.0.0.1:1058|127.0.0.1:1142|SU=|ST=ERROR|^]
+17/07/2009-20:34:05.750-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_002]
+17/07/2009-20:34:05.781-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:05.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_002] Msg Len [51] 
+17/07/2009-20:34:05.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:05.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_009|127.0.0.1:1058|127.0.0.1:1149|SU=|ST=ERROR|^]
+17/07/2009-20:34:05.812-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_009]
+17/07/2009-20:34:05.843-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:05.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_009] Msg Len [51] 
+17/07/2009-20:34:05.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:05.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_003|127.0.0.1:1058|127.0.0.1:1143|SU=|ST=ERROR|^]
+17/07/2009-20:34:05.875-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_003]
+17/07/2009-20:34:05.890-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:05.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_003] Msg Len [51] 
+17/07/2009-20:34:05.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:05.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_013|127.0.0.1:1058|127.0.0.1:1124|LV=1|^]
+17/07/2009-20:34:05.890-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_013]
+17/07/2009-20:34:05.890-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 13 with price level 1
+17/07/2009-20:34:05.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_004|127.0.0.1:1058|127.0.0.1:1144|SU=|ST=ERROR|^]
+17/07/2009-20:34:05.953-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_004]
+17/07/2009-20:34:05.984-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:05.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_004] Msg Len [51] 
+17/07/2009-20:34:06.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:06.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_012|127.0.0.1:1058|127.0.0.1:1123|SU=|ST=ERROR|^]
+17/07/2009-20:34:06.015-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_012]
+17/07/2009-20:34:06.046-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:06.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_012] Msg Len [51] 
+17/07/2009-20:34:06.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:06.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_001|127.0.0.1:1058|127.0.0.1:1120|LV=2|^]
+17/07/2009-20:34:06.078-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_001]
+17/07/2009-20:34:06.109-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 1 with price level 2
+17/07/2009-20:34:06.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_011|127.0.0.1:1058|127.0.0.1:1122|SU=|ST=ERROR|^]
+17/07/2009-20:34:06.203-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_011]
+17/07/2009-20:34:06.203-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:06.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_011] Msg Len [51] 
+17/07/2009-20:34:06.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:06.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_007|127.0.0.1:1058|127.0.0.1:1147|LV=1|^]
+17/07/2009-20:34:06.265-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_007]
+17/07/2009-20:34:06.265-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 7 with price level 1
+17/07/2009-20:34:06.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_009|127.0.0.1:1058|127.0.0.1:1149|LV=1|^]
+17/07/2009-20:34:06.359-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_009]
+17/07/2009-20:34:06.359-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 9 with price level 1
+17/07/2009-20:34:06.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_002|127.0.0.1:1058|127.0.0.1:1142|LV=2|^]
+17/07/2009-20:34:06.453-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_002]
+17/07/2009-20:34:06.453-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 2 with price level 2
+17/07/2009-20:34:06.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_003|127.0.0.1:1058|127.0.0.1:1143|LV=2|^]
+17/07/2009-20:34:06.515-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_003]
+17/07/2009-20:34:06.515-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 3 with price level 2
+17/07/2009-20:34:06.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_005|127.0.0.1:1058|127.0.0.1:1145|LV=2|^]
+17/07/2009-20:34:06.593-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_005]
+17/07/2009-20:34:06.625-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 5 with price level 2
+17/07/2009-20:34:06.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_012|127.0.0.1:1058|127.0.0.1:1123|LV=1|^]
+17/07/2009-20:34:06.687-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_012]
+17/07/2009-20:34:06.718-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 12 with price level 1
+17/07/2009-20:34:06.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_011|127.0.0.1:1058|127.0.0.1:1122|LV=1|^]
+17/07/2009-20:34:06.781-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_011]
+17/07/2009-20:34:06.781-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 11 with price level 1
+17/07/2009-20:34:06.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_004|127.0.0.1:1058|127.0.0.1:1144|LV=2|^]
+17/07/2009-20:34:06.843-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_004]
+17/07/2009-20:34:06.843-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 4 with price level 2
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_010|127.0.0.1:1058|127.0.0.1:1121|SU=|ST=ERROR|^]
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_010]
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_010] Msg Len [51] 
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_008|127.0.0.1:1058|127.0.0.1:1148|SU=|ST=ERROR|^]
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_008]
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_008] Msg Len [51] 
+17/07/2009-20:34:06.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:07.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00087|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_014|127.0.0.1:1058|127.0.0.1:1141|SU=|ST=ERROR|^]
+17/07/2009-20:34:07.031-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_014]
+17/07/2009-20:34:07.031-0x00000D94-SSF.TICKET-SSFTicketModule::requestPumpPriceLevel-[DEBUG]-Sending request for Pump Price Levels
+17/07/2009-20:34:07.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [REQ_PUMP_GET_PRICE_LEVEL_ID_014] Msg Len [51] 
+17/07/2009-20:34:07.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:34:07.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_014|127.0.0.1:1058|127.0.0.1:1141|LV=1|^]
+17/07/2009-20:34:07.281-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_014]
+17/07/2009-20:34:07.281-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 14 with price level 1
+17/07/2009-20:34:07.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_008|127.0.0.1:1058|127.0.0.1:1148|LV=1|^]
+17/07/2009-20:34:07.343-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_008]
+17/07/2009-20:34:07.343-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 8 with price level 1
+17/07/2009-20:34:07.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00077|3|2|GUEST|POST|EVT_PUMP_PRICE_LEVEL_ID_010|127.0.0.1:1058|127.0.0.1:1121|LV=1|^]
+17/07/2009-20:34:07.406-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_PRICE_LEVEL_ID_010]
+17/07/2009-20:34:07.406-0x00000D94-SSF.TICKET-SSFTicketModule::processEventPumpPriceLevel-[DEBUG]-Pump 10 with price level 1
+17/07/2009-20:34:08.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_010||127.0.0.1:1121|SU=|ST=ERROR|^]
+17/07/2009-20:34:08.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_010]
+17/07/2009-20:34:10.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_012||127.0.0.1:1123|SU=|ST=ERROR|^]
+17/07/2009-20:34:10.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_012]
+17/07/2009-20:34:12.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_014||127.0.0.1:1141|SU=|ST=ERROR|^]
+17/07/2009-20:34:12.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_014]
+17/07/2009-20:34:14.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_002||127.0.0.1:1142|SU=|ST=ERROR|^]
+17/07/2009-20:34:14.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_002]
+17/07/2009-20:34:16.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_004||127.0.0.1:1144|SU=|ST=ERROR|^]
+17/07/2009-20:34:16.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_004]
+17/07/2009-20:34:18.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_006||127.0.0.1:1146|SU=|ST=ERROR|^]
+17/07/2009-20:34:18.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_006]
+17/07/2009-20:34:20.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_008||127.0.0.1:1148|SU=|ST=ERROR|^]
+17/07/2009-20:34:20.156-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_008]
+17/07/2009-20:34:22.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_001||127.0.0.1:1120|SU=|ST=ERROR|^]
+17/07/2009-20:34:22.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_001]
+17/07/2009-20:34:24.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_011||127.0.0.1:1122|SU=|ST=ERROR|^]
+17/07/2009-20:34:24.156-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_011]
+17/07/2009-20:34:26.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_013||127.0.0.1:1124|SU=|ST=ERROR|^]
+17/07/2009-20:34:26.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_013]
+17/07/2009-20:34:28.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_003||127.0.0.1:1143|SU=|ST=ERROR|^]
+17/07/2009-20:34:28.093-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_003]
+17/07/2009-20:34:30.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_005||127.0.0.1:1145|SU=|ST=ERROR|^]
+17/07/2009-20:34:30.156-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_005]
+17/07/2009-20:34:32.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_007||127.0.0.1:1147|SU=|ST=ERROR|^]
+17/07/2009-20:34:32.109-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_007]
+17/07/2009-20:34:34.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00073|3|2|GUEST|POST|EVT_PUMP_STATUS_CHANGE_ID_009||127.0.0.1:1149|SU=|ST=ERROR|^]
+17/07/2009-20:34:34.109-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [EVT_PUMP_STATUS_CHANGE_ID_009]
+17/07/2009-20:41:48.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00067|3|2|GUEST|POST|REQ_TKT_CONF_GET_VALUES||127.0.0.1:1167|POS=POS00001|^]
+17/07/2009-20:41:48.546-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CONF_GET_VALUES]
+17/07/2009-20:41:48.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CONF_GET_VALUES] Msg Len [323] 
+17/07/2009-20:41:48.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:48.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00059|3|2|GUEST|POST|REQ_TKT_PLU_GET_MEASURE_UNIT||127.0.0.1:1167|^]
+17/07/2009-20:41:48.625-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PLU_GET_MEASURE_UNIT]
+17/07/2009-20:41:48.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_PLU_GET_MEASURE_UNIT] Msg Len [180] 
+17/07/2009-20:41:48.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:49.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00067|3|2|GUEST|POST|REQ_TKT_CONF_GET_VALUES||127.0.0.1:1168|POS=POS00001|^]
+17/07/2009-20:41:49.015-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CONF_GET_VALUES]
+17/07/2009-20:41:49.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CONF_GET_VALUES] Msg Len [323] 
+17/07/2009-20:41:49.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:49.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00071|3|2|GUEST|POST|REQ_TKT_PRNT_GET_PARAMETERS||127.0.0.1:1169|CID=POS00001|^]
+17/07/2009-20:41:49.984-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PRNT_GET_PARAMETERS]
+17/07/2009-20:41:49.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_PRNT_GET_PARAMETERS] Msg Len [214] 
+17/07/2009-20:41:50.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:50.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00062|3|2|GUEST|POST|REQ_TKT_PERIOD_STATUS||127.0.0.1:1168|PGR=UNICO|^]
+17/07/2009-20:41:50.000-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PERIOD_STATUS]
+17/07/2009-20:41:50.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_PERIOD_STATUS] Msg Len [187] 
+17/07/2009-20:41:50.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:50.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00067|3|2|GUEST|POST|REQ_TKT_CUST_GET_CUSTOMERS_TAX_TYPES||127.0.0.1:1167|^]
+17/07/2009-20:41:50.062-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CUST_GET_CUSTOMERS_TAX_TYPES]
+17/07/2009-20:41:50.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS_TAX_TYPES] Msg Len [143] 
+17/07/2009-20:41:50.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:50.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00057|3|2|GUEST|POST|REQ_TKT_TENDER_GET_TENDERS||127.0.0.1:1167|^]
+17/07/2009-20:41:50.171-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_TENDER_GET_TENDERS]
+17/07/2009-20:41:50.171-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Staring to browse tenders
+17/07/2009-20:41:50.171-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender available [F37EB0]
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender Enabled
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender information added
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender available [F38A00]
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender Enabled
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender information added
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender available [F390B8]
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender Enabled
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Tender information added
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Finished browsing tenders
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFTicketModule::processEventForTendersConfiguration-[DEBUG]-Event sent
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_TENDER_GET_TENDERS] Msg Len [224] 
+17/07/2009-20:41:50.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:50.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00066|3|2|GUEST|POST|REQ_TKT_SPEED_GET_KEYS||127.0.0.1:1167|ID=PRODUCTOS|^]
+17/07/2009-20:41:50.656-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_SPEED_GET_KEYS]
+17/07/2009-20:41:50.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_SPEED_GET_KEYS] Msg Len [80] 
+17/07/2009-20:41:50.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:50.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00062|3|2|GUEST|POST|REQ_TKT_SPEED_GET_KEYS||127.0.0.1:1167|ID=PAGOS|^]
+17/07/2009-20:41:50.687-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_SPEED_GET_KEYS]
+17/07/2009-20:41:50.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_SPEED_GET_KEYS] Msg Len [207] 
+17/07/2009-20:41:50.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:50.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00071|3|2|GUEST|POST|REQ_TKT_CDPY_GET_PARAMETERS||127.0.0.1:1170|CID=POS00001|^]
+17/07/2009-20:41:50.718-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CDPY_GET_PARAMETERS]
+17/07/2009-20:41:50.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00057|3|2|GUEST|POST|REQ_TKT_PLU_GET_CATEGORIES||127.0.0.1:1167|^]
+17/07/2009-20:41:50.781-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PLU_GET_CATEGORIES]
+17/07/2009-20:41:50.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_PLU_GET_CATEGORIES] Msg Len [276] 
+17/07/2009-20:41:50.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:50.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00057|3|2|GUEST|POST|REQ_TKT_CUST_GET_CUSTOMERS||127.0.0.1:1167|^]
+17/07/2009-20:41:50.812-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CUST_GET_CUSTOMERS]
+17/07/2009-20:41:53.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3084] 
+17/07/2009-20:41:53.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:53.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00057|3|2|GUEST|POST|REQ_TKT_CUST_GET_CUSTOMERS||127.0.0.1:1167|^]
+17/07/2009-20:41:53.281-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CUST_GET_CUSTOMERS]
+17/07/2009-20:41:55.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3438] 
+17/07/2009-20:41:55.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:55.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00057|3|2|GUEST|POST|REQ_TKT_CUST_GET_CUSTOMERS||127.0.0.1:1167|^]
+17/07/2009-20:41:55.453-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_CUST_GET_CUSTOMERS]
+17/07/2009-20:41:57.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3464] 
+17/07/2009-20:41:57.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::Entry-[DEBUG]-<1058> Message [00051|3|2|GUEST|POST|REQ_TKT_PLU_GET_DATA||127.0.0.1:1167|^]
+17/07/2009-20:41:57.671-0x00000D94-SSF.TICKET-SSFTicketMsgRouterClient::processEvent-[DEBUG]-Processing Event [REQ_TKT_PLU_GET_DATA]
+17/07/2009-20:41:57.671-0x00000D94-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+17/07/2009-20:41:57.671-0x00000D94-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+17/07/2009-20:41:57.671-0x00000D94-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [P]
+17/07/2009-20:41:57.687-0x00000D94-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [F]
+17/07/2009-20:41:57.687-0x00000D94-SSF.TICKET-SSFTicketPLU::processEventGetData-[DEBUG]-Adding Type [D]
+17/07/2009-20:41:57.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3561] 
+17/07/2009-20:41:57.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:41:57.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3542] 
+17/07/2009-20:41:57.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3539] 
+17/07/2009-20:41:57.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3523] 
+17/07/2009-20:41:57.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3542] 
+17/07/2009-20:41:57.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.828-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3537] 
+17/07/2009-20:41:57.828-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3537] 
+17/07/2009-20:41:57.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:57.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3581] 
+17/07/2009-20:41:57.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:58.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3492] 
+17/07/2009-20:41:58.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:58.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3496] 
+17/07/2009-20:41:58.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:58.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3505] 
+17/07/2009-20:41:58.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:58.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3553] 
+17/07/2009-20:41:58.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:41:58.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3603] 
+17/07/2009-20:42:03.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:03.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3503] 
+17/07/2009-20:42:04.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:04.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3556] 
+17/07/2009-20:42:04.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:04.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3556] 
+17/07/2009-20:42:04.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:04.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3581] 
+17/07/2009-20:42:04.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:04.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:42:05.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:05.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:42:05.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:05.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3494] 
+17/07/2009-20:42:05.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:05.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3506] 
+17/07/2009-20:42:05.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:05.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:06.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:06.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:06.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:06.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3712] 
+17/07/2009-20:42:06.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:06.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3773] 
+17/07/2009-20:42:06.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:06.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3735] 
+17/07/2009-20:42:06.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:06.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3705] 
+17/07/2009-20:42:07.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:07.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3703] 
+17/07/2009-20:42:07.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:07.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3786] 
+17/07/2009-20:42:07.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:07.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3771] 
+17/07/2009-20:42:07.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:07.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3737] 
+17/07/2009-20:42:07.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:07.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3776] 
+17/07/2009-20:42:08.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:08.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3704] 
+17/07/2009-20:42:08.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:08.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3703] 
+17/07/2009-20:42:08.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:08.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3730] 
+17/07/2009-20:42:08.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:08.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3779] 
+17/07/2009-20:42:09.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:09.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:42:09.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:09.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3782] 
+17/07/2009-20:42:09.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:09.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3726] 
+17/07/2009-20:42:09.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:09.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3719] 
+17/07/2009-20:42:09.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:09.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3691] 
+17/07/2009-20:42:10.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:10.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3707] 
+17/07/2009-20:42:10.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:10.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3741] 
+17/07/2009-20:42:10.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:10.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3683] 
+17/07/2009-20:42:10.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:10.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3666] 
+17/07/2009-20:42:11.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:11.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3802] 
+17/07/2009-20:42:11.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:11.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3766] 
+17/07/2009-20:42:11.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:11.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3752] 
+17/07/2009-20:42:11.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:11.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3737] 
+17/07/2009-20:42:11.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:11.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3806] 
+17/07/2009-20:42:12.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:12.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3746] 
+17/07/2009-20:42:12.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:12.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3806] 
+17/07/2009-20:42:12.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:12.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3836] 
+17/07/2009-20:42:12.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:12.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3766] 
+17/07/2009-20:42:13.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:13.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3777] 
+17/07/2009-20:42:13.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:13.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3775] 
+17/07/2009-20:42:13.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:13.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3768] 
+17/07/2009-20:42:13.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:13.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3755] 
+17/07/2009-20:42:13.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:13.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3717] 
+17/07/2009-20:42:14.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3725] 
+17/07/2009-20:42:14.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3699] 
+17/07/2009-20:42:14.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3738] 
+17/07/2009-20:42:14.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3765] 
+17/07/2009-20:42:14.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3847] 
+17/07/2009-20:42:14.828-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3836] 
+17/07/2009-20:42:14.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3747] 
+17/07/2009-20:42:14.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3823] 
+17/07/2009-20:42:14.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:14.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3761] 
+17/07/2009-20:42:15.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:15.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3708] 
+17/07/2009-20:42:15.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:15.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3808] 
+17/07/2009-20:42:15.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:15.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:42:15.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:15.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3857] 
+17/07/2009-20:42:16.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:16.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3813] 
+17/07/2009-20:42:16.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:16.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3762] 
+17/07/2009-20:42:16.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:16.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3784] 
+17/07/2009-20:42:16.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:16.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3828] 
+17/07/2009-20:42:16.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:16.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:42:17.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:17.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3780] 
+17/07/2009-20:42:17.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:17.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3808] 
+17/07/2009-20:42:17.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:17.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3721] 
+17/07/2009-20:42:17.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:17.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3748] 
+17/07/2009-20:42:17.828-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:17.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3760] 
+17/07/2009-20:42:18.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:18.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3796] 
+17/07/2009-20:42:18.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:18.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3791] 
+17/07/2009-20:42:18.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:18.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3869] 
+17/07/2009-20:42:18.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:18.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3719] 
+17/07/2009-20:42:18.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:18.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:42:18.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:18.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3755] 
+17/07/2009-20:42:18.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:18.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3699] 
+17/07/2009-20:42:18.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:18.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:42:19.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:19.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3859] 
+17/07/2009-20:42:19.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:19.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3896] 
+17/07/2009-20:42:19.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:19.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3843] 
+17/07/2009-20:42:19.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:19.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3726] 
+17/07/2009-20:42:19.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:19.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3671] 
+17/07/2009-20:42:20.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:20.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3690] 
+17/07/2009-20:42:20.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:20.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3760] 
+17/07/2009-20:42:20.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:20.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3783] 
+17/07/2009-20:42:20.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:20.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3812] 
+17/07/2009-20:42:20.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:20.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3775] 
+17/07/2009-20:42:21.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:21.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3718] 
+17/07/2009-20:42:21.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:21.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3815] 
+17/07/2009-20:42:21.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:21.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3822] 
+17/07/2009-20:42:21.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:21.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3749] 
+17/07/2009-20:42:21.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:21.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3708] 
+17/07/2009-20:42:21.828-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:21.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3790] 
+17/07/2009-20:42:21.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:21.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:21.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:21.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3793] 
+17/07/2009-20:42:22.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:22.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3761] 
+17/07/2009-20:42:22.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:22.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3677] 
+17/07/2009-20:42:22.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:22.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3797] 
+17/07/2009-20:42:22.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:22.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3876] 
+17/07/2009-20:42:22.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:22.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3801] 
+17/07/2009-20:42:23.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:23.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3686] 
+17/07/2009-20:42:23.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:23.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3669] 
+17/07/2009-20:42:23.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:23.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3677] 
+17/07/2009-20:42:23.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:23.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3911] 
+17/07/2009-20:42:23.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:23.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3762] 
+17/07/2009-20:42:24.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:24.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3700] 
+17/07/2009-20:42:24.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:24.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3791] 
+17/07/2009-20:42:24.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:24.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3821] 
+17/07/2009-20:42:24.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:24.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3700] 
+17/07/2009-20:42:24.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:24.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3710] 
+17/07/2009-20:42:24.828-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:24.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3736] 
+17/07/2009-20:42:24.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:24.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3832] 
+17/07/2009-20:42:24.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:24.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3793] 
+17/07/2009-20:42:25.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:25.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3792] 
+17/07/2009-20:42:25.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:25.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:25.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:25.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3674] 
+17/07/2009-20:42:25.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:25.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3670] 
+17/07/2009-20:42:25.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:25.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3684] 
+17/07/2009-20:42:26.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:26.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3754] 
+17/07/2009-20:42:26.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:26.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3724] 
+17/07/2009-20:42:26.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:26.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3667] 
+17/07/2009-20:42:26.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:26.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3614] 
+17/07/2009-20:42:26.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:26.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3749] 
+17/07/2009-20:42:27.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:27.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3684] 
+17/07/2009-20:42:27.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:27.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3669] 
+17/07/2009-20:42:27.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:27.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3712] 
+17/07/2009-20:42:27.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:27.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3661] 
+17/07/2009-20:42:27.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:27.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3664] 
+17/07/2009-20:42:27.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:27.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3706] 
+17/07/2009-20:42:27.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:27.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3706] 
+17/07/2009-20:42:27.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:27.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3701] 
+17/07/2009-20:42:28.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:28.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3630] 
+17/07/2009-20:42:28.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:28.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:42:28.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:28.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3656] 
+17/07/2009-20:42:28.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:28.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3735] 
+17/07/2009-20:42:28.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:28.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3667] 
+17/07/2009-20:42:29.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:29.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3664] 
+17/07/2009-20:42:29.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:29.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3641] 
+17/07/2009-20:42:29.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:29.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3695] 
+17/07/2009-20:42:29.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:29.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3679] 
+17/07/2009-20:42:29.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:29.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [1366] 
+17/07/2009-20:42:30.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3084] 
+17/07/2009-20:42:30.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3438] 
+17/07/2009-20:42:30.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3464] 
+17/07/2009-20:42:30.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3561] 
+17/07/2009-20:42:30.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:42:30.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3542] 
+17/07/2009-20:42:30.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3539] 
+17/07/2009-20:42:30.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3523] 
+17/07/2009-20:42:30.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:30.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3542] 
+17/07/2009-20:42:31.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:31.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3537] 
+17/07/2009-20:42:31.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:31.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3537] 
+17/07/2009-20:42:31.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:31.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3581] 
+17/07/2009-20:42:31.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:31.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3492] 
+17/07/2009-20:42:31.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:31.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3496] 
+17/07/2009-20:42:32.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:32.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3505] 
+17/07/2009-20:42:32.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:32.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3553] 
+17/07/2009-20:42:32.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:32.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3603] 
+17/07/2009-20:42:32.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:32.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3503] 
+17/07/2009-20:42:32.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:32.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3556] 
+17/07/2009-20:42:33.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3556] 
+17/07/2009-20:42:33.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3581] 
+17/07/2009-20:42:33.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:42:33.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:42:33.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3494] 
+17/07/2009-20:42:33.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3506] 
+17/07/2009-20:42:33.828-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:33.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:33.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:33.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3712] 
+17/07/2009-20:42:34.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:34.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3773] 
+17/07/2009-20:42:34.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:34.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3735] 
+17/07/2009-20:42:34.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:34.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3705] 
+17/07/2009-20:42:34.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:34.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3703] 
+17/07/2009-20:42:34.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:34.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3786] 
+17/07/2009-20:42:35.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:35.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3771] 
+17/07/2009-20:42:35.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:35.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3737] 
+17/07/2009-20:42:35.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:35.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3776] 
+17/07/2009-20:42:35.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:35.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3704] 
+17/07/2009-20:42:36.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:36.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3703] 
+17/07/2009-20:42:36.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:36.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3730] 
+17/07/2009-20:42:36.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:36.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3779] 
+17/07/2009-20:42:36.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:36.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:42:36.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:36.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3782] 
+17/07/2009-20:42:36.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:36.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3726] 
+17/07/2009-20:42:37.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:37.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3719] 
+17/07/2009-20:42:37.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:37.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3691] 
+17/07/2009-20:42:37.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:37.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3707] 
+17/07/2009-20:42:37.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:37.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3741] 
+17/07/2009-20:42:37.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:37.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3683] 
+17/07/2009-20:42:37.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:37.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3666] 
+17/07/2009-20:42:37.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:37.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3802] 
+17/07/2009-20:42:37.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:37.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3766] 
+17/07/2009-20:42:38.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:38.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3752] 
+17/07/2009-20:42:38.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:38.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3737] 
+17/07/2009-20:42:38.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:38.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3806] 
+17/07/2009-20:42:38.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:38.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3746] 
+17/07/2009-20:42:39.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:39.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3806] 
+17/07/2009-20:42:39.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:39.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3836] 
+17/07/2009-20:42:39.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:39.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3766] 
+17/07/2009-20:42:39.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:39.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3777] 
+17/07/2009-20:42:39.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:39.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3775] 
+17/07/2009-20:42:39.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:39.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3768] 
+17/07/2009-20:42:40.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:40.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3755] 
+17/07/2009-20:42:40.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:40.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3717] 
+17/07/2009-20:42:40.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:40.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3725] 
+17/07/2009-20:42:40.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:40.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3699] 
+17/07/2009-20:42:40.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:40.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3738] 
+17/07/2009-20:42:40.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:40.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3765] 
+17/07/2009-20:42:40.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:40.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3847] 
+17/07/2009-20:42:40.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:40.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3836] 
+17/07/2009-20:42:41.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:41.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3747] 
+17/07/2009-20:42:41.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:41.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3823] 
+17/07/2009-20:42:41.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:41.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3761] 
+17/07/2009-20:42:41.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:41.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3708] 
+17/07/2009-20:42:42.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:42.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3808] 
+17/07/2009-20:42:42.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:42.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:42:42.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:42.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3857] 
+17/07/2009-20:42:42.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:42.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3813] 
+17/07/2009-20:42:42.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:42.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3762] 
+17/07/2009-20:42:42.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:42.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3784] 
+17/07/2009-20:42:43.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:43.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3828] 
+17/07/2009-20:42:43.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:43.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:42:43.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:43.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3780] 
+17/07/2009-20:42:43.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:43.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3808] 
+17/07/2009-20:42:43.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:43.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3721] 
+17/07/2009-20:42:43.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:43.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3748] 
+17/07/2009-20:42:43.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:43.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3760] 
+17/07/2009-20:42:43.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:43.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3796] 
+17/07/2009-20:42:44.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:44.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3791] 
+17/07/2009-20:42:44.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:44.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3869] 
+17/07/2009-20:42:44.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:44.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3719] 
+17/07/2009-20:42:44.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:44.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:42:44.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:44.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3755] 
+17/07/2009-20:42:45.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:45.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3699] 
+17/07/2009-20:42:45.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:45.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:42:45.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:45.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3859] 
+17/07/2009-20:42:45.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:45.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3896] 
+17/07/2009-20:42:45.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:45.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3843] 
+17/07/2009-20:42:46.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:46.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3726] 
+17/07/2009-20:42:46.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:46.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3671] 
+17/07/2009-20:42:46.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:46.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3690] 
+17/07/2009-20:42:46.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:46.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3760] 
+17/07/2009-20:42:46.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:46.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3783] 
+17/07/2009-20:42:46.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:46.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3812] 
+17/07/2009-20:42:46.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:46.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3775] 
+17/07/2009-20:42:46.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:46.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3718] 
+17/07/2009-20:42:47.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:47.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3815] 
+17/07/2009-20:42:47.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:47.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3822] 
+17/07/2009-20:42:47.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:47.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3749] 
+17/07/2009-20:42:47.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:47.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3708] 
+17/07/2009-20:42:47.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:47.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3790] 
+17/07/2009-20:42:48.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:48.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:48.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:48.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3793] 
+17/07/2009-20:42:48.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:48.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3761] 
+17/07/2009-20:42:48.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:48.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3677] 
+17/07/2009-20:42:48.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:48.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3797] 
+17/07/2009-20:42:48.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:48.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3876] 
+17/07/2009-20:42:48.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:48.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3801] 
+17/07/2009-20:42:48.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:48.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3686] 
+17/07/2009-20:42:49.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:49.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3669] 
+17/07/2009-20:42:49.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:49.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3677] 
+17/07/2009-20:42:49.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:49.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3911] 
+17/07/2009-20:42:49.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:49.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3762] 
+17/07/2009-20:42:49.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:49.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3700] 
+17/07/2009-20:42:50.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:50.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3791] 
+17/07/2009-20:42:50.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:50.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3821] 
+17/07/2009-20:42:50.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:50.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3700] 
+17/07/2009-20:42:50.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:50.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3710] 
+17/07/2009-20:42:50.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:50.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3736] 
+17/07/2009-20:42:50.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:50.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3832] 
+17/07/2009-20:42:50.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:50.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3793] 
+17/07/2009-20:42:50.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:51.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3792] 
+17/07/2009-20:42:51.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:51.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:51.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:51.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3674] 
+17/07/2009-20:42:51.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:51.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3670] 
+17/07/2009-20:42:51.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:51.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3684] 
+17/07/2009-20:42:51.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:51.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3754] 
+17/07/2009-20:42:52.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:52.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3724] 
+17/07/2009-20:42:52.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:52.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3667] 
+17/07/2009-20:42:52.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:52.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3614] 
+17/07/2009-20:42:52.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:52.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3749] 
+17/07/2009-20:42:52.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:52.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3684] 
+17/07/2009-20:42:53.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3669] 
+17/07/2009-20:42:53.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3712] 
+17/07/2009-20:42:53.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3661] 
+17/07/2009-20:42:53.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3664] 
+17/07/2009-20:42:53.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3706] 
+17/07/2009-20:42:53.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3706] 
+17/07/2009-20:42:53.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3701] 
+17/07/2009-20:42:53.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3630] 
+17/07/2009-20:42:53.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:53.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:42:54.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:54.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3656] 
+17/07/2009-20:42:54.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:54.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3735] 
+17/07/2009-20:42:54.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:54.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3667] 
+17/07/2009-20:42:54.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:54.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3664] 
+17/07/2009-20:42:55.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:55.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3641] 
+17/07/2009-20:42:55.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:55.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3695] 
+17/07/2009-20:42:55.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:55.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3679] 
+17/07/2009-20:42:55.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:55.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [1366] 
+17/07/2009-20:42:55.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:55.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3084] 
+17/07/2009-20:42:55.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:55.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3438] 
+17/07/2009-20:42:55.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:55.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3464] 
+17/07/2009-20:42:56.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:56.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3561] 
+17/07/2009-20:42:56.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:56.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:42:56.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:56.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3542] 
+17/07/2009-20:42:56.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:56.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3539] 
+17/07/2009-20:42:56.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:56.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3523] 
+17/07/2009-20:42:56.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:56.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3542] 
+17/07/2009-20:42:56.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:56.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3537] 
+17/07/2009-20:42:56.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:56.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3537] 
+17/07/2009-20:42:57.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:57.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3581] 
+17/07/2009-20:42:57.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:57.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3492] 
+17/07/2009-20:42:57.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:57.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3496] 
+17/07/2009-20:42:57.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:57.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3505] 
+17/07/2009-20:42:57.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:57.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3553] 
+17/07/2009-20:42:57.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:57.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3603] 
+17/07/2009-20:42:58.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:58.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3503] 
+17/07/2009-20:42:58.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:58.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3556] 
+17/07/2009-20:42:58.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:58.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3556] 
+17/07/2009-20:42:58.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:58.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3581] 
+17/07/2009-20:42:58.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:58.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:42:58.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:58.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3530] 
+17/07/2009-20:42:58.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:58.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3494] 
+17/07/2009-20:42:58.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:58.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3506] 
+17/07/2009-20:42:59.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:59.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:59.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:59.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:42:59.687-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:59.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3712] 
+17/07/2009-20:42:59.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:42:59.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3773] 
+17/07/2009-20:43:00.140-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:00.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3735] 
+17/07/2009-20:43:00.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:00.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3705] 
+17/07/2009-20:43:00.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:00.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3703] 
+17/07/2009-20:43:00.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:00.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3786] 
+17/07/2009-20:43:00.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:00.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3771] 
+17/07/2009-20:43:00.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:00.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3737] 
+17/07/2009-20:43:01.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:01.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3776] 
+17/07/2009-20:43:01.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:01.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3704] 
+17/07/2009-20:43:01.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:01.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3703] 
+17/07/2009-20:43:01.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:01.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3730] 
+17/07/2009-20:43:01.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:01.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3779] 
+17/07/2009-20:43:01.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:01.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:43:01.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:01.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3782] 
+17/07/2009-20:43:01.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:01.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3726] 
+17/07/2009-20:43:02.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:02.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3719] 
+17/07/2009-20:43:02.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:02.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3691] 
+17/07/2009-20:43:02.562-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:02.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3707] 
+17/07/2009-20:43:02.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:02.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3741] 
+17/07/2009-20:43:02.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:02.625-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3683] 
+17/07/2009-20:43:03.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:03.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3666] 
+17/07/2009-20:43:03.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:03.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3802] 
+17/07/2009-20:43:03.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:03.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3766] 
+17/07/2009-20:43:03.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:03.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3752] 
+17/07/2009-20:43:03.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:03.828-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3737] 
+17/07/2009-20:43:03.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:03.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3806] 
+17/07/2009-20:43:03.984-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:04.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3746] 
+17/07/2009-20:43:04.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:04.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3806] 
+17/07/2009-20:43:04.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:04.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3836] 
+17/07/2009-20:43:04.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:04.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3766] 
+17/07/2009-20:43:04.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:04.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3777] 
+17/07/2009-20:43:04.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:04.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3775] 
+17/07/2009-20:43:04.781-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:04.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3768] 
+17/07/2009-20:43:05.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:05.250-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3755] 
+17/07/2009-20:43:05.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:05.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3717] 
+17/07/2009-20:43:05.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:05.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3725] 
+17/07/2009-20:43:05.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:05.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3699] 
+17/07/2009-20:43:05.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:05.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3738] 
+17/07/2009-20:43:06.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:06.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3765] 
+17/07/2009-20:43:06.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:06.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3847] 
+17/07/2009-20:43:06.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:06.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3836] 
+17/07/2009-20:43:06.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:06.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3747] 
+17/07/2009-20:43:06.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:06.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3823] 
+17/07/2009-20:43:06.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:06.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3761] 
+17/07/2009-20:43:06.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:07.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3708] 
+17/07/2009-20:43:07.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:07.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3808] 
+17/07/2009-20:43:07.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:07.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:43:07.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:07.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3857] 
+17/07/2009-20:43:07.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:07.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3813] 
+17/07/2009-20:43:07.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:07.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3762] 
+17/07/2009-20:43:07.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:07.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3784] 
+17/07/2009-20:43:08.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:08.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3828] 
+17/07/2009-20:43:08.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:08.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:43:08.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:08.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3780] 
+17/07/2009-20:43:08.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:08.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3808] 
+17/07/2009-20:43:09.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3721] 
+17/07/2009-20:43:09.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3748] 
+17/07/2009-20:43:09.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3760] 
+17/07/2009-20:43:09.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3796] 
+17/07/2009-20:43:09.203-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3791] 
+17/07/2009-20:43:09.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3869] 
+17/07/2009-20:43:09.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3719] 
+17/07/2009-20:43:09.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:43:09.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3755] 
+17/07/2009-20:43:09.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:09.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3699] 
+17/07/2009-20:43:10.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:10.437-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3788] 
+17/07/2009-20:43:10.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:10.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3859] 
+17/07/2009-20:43:10.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:10.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3896] 
+17/07/2009-20:43:10.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:10.640-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3843] 
+17/07/2009-20:43:11.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:11.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3726] 
+17/07/2009-20:43:11.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:11.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3671] 
+17/07/2009-20:43:11.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:11.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3690] 
+17/07/2009-20:43:11.406-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:11.421-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3760] 
+17/07/2009-20:43:11.843-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:11.859-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3783] 
+17/07/2009-20:43:12.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3812] 
+17/07/2009-20:43:12.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3775] 
+17/07/2009-20:43:12.046-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.062-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3718] 
+17/07/2009-20:43:12.078-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.093-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3815] 
+17/07/2009-20:43:12.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3822] 
+17/07/2009-20:43:12.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3749] 
+17/07/2009-20:43:12.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3708] 
+17/07/2009-20:43:12.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3790] 
+17/07/2009-20:43:12.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:12.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:43:13.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:13.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3793] 
+17/07/2009-20:43:13.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:13.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3761] 
+17/07/2009-20:43:13.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:13.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3677] 
+17/07/2009-20:43:13.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:13.500-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3797] 
+17/07/2009-20:43:13.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:13.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3876] 
+17/07/2009-20:43:14.218-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:14.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3801] 
+17/07/2009-20:43:14.234-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:14.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3686] 
+17/07/2009-20:43:14.265-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:14.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3669] 
+17/07/2009-20:43:14.281-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:14.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3677] 
+17/07/2009-20:43:14.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:14.734-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3911] 
+17/07/2009-20:43:14.875-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:14.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3762] 
+17/07/2009-20:43:14.890-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:14.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3700] 
+17/07/2009-20:43:14.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:14.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3791] 
+17/07/2009-20:43:15.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:15.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3821] 
+17/07/2009-20:43:15.656-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:15.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3700] 
+17/07/2009-20:43:15.671-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:15.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3710] 
+17/07/2009-20:43:15.703-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:15.718-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3736] 
+17/07/2009-20:43:16.296-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:16.312-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3832] 
+17/07/2009-20:43:16.453-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:16.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3793] 
+17/07/2009-20:43:16.468-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:16.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3792] 
+17/07/2009-20:43:16.484-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:16.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3694] 
+17/07/2009-20:43:16.515-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:16.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3674] 
+17/07/2009-20:43:16.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:16.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3670] 
+17/07/2009-20:43:17.109-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:17.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3684] 
+17/07/2009-20:43:17.125-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:17.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3754] 
+17/07/2009-20:43:17.156-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:17.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3724] 
+17/07/2009-20:43:17.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:17.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3667] 
+17/07/2009-20:43:17.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:17.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3614] 
+17/07/2009-20:43:17.906-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:17.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3749] 
+17/07/2009-20:43:17.921-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:17.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3684] 
+17/07/2009-20:43:17.937-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:17.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3669] 
+17/07/2009-20:43:18.375-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:18.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3712] 
+17/07/2009-20:43:18.531-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:18.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3661] 
+17/07/2009-20:43:18.546-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:18.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3664] 
+17/07/2009-20:43:18.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:18.578-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3706] 
+17/07/2009-20:43:18.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:18.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3706] 
+17/07/2009-20:43:19.171-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:19.187-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3701] 
+17/07/2009-20:43:19.328-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:19.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3630] 
+17/07/2009-20:43:19.343-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:19.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3745] 
+17/07/2009-20:43:19.359-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:19.390-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3656] 
+17/07/2009-20:43:19.796-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:19.812-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3735] 
+17/07/2009-20:43:19.953-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:19.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3667] 
+17/07/2009-20:43:19.968-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:20.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3664] 
+17/07/2009-20:43:20.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:20.000-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3641] 
+17/07/2009-20:43:20.015-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:20.031-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3695] 
+17/07/2009-20:43:20.593-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:20.609-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [3679] 
+17/07/2009-20:43:20.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:20.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_CUST_GET_CUSTOMERS] Msg Len [1366] 
+17/07/2009-20:43:20.750-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket
+17/07/2009-20:43:20.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> [POST] to be pushed [RES_TKT_PLU_GET_DATA] Msg Len [533] 
+17/07/2009-20:43:20.765-0x00000D94-SSF.TICKET-SSFMessageRouterClient::processRouterMessageOut-[DEBUG]-<1058> Event sent to socket

@@ -1,0 +1,356 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketTrxHReport</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="{page_style}" type="text/css" rel="stylesheet">
+<!-- <link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet"> -->
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-9A4F2EFE
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-A4D9EFB8
+
+var ssf_tkt_trx_headerSearch_DatePicker_s_from_date1 = new Object(); 
+ssf_tkt_trx_headerSearch_DatePicker_s_from_date1.format           = "yyyymmdd";
+ssf_tkt_trx_headerSearch_DatePicker_s_from_date1.style            = "Styles/Spiritnew/Style.css";
+ssf_tkt_trx_headerSearch_DatePicker_s_from_date1.relativePathPart = "../../";
+ssf_tkt_trx_headerSearch_DatePicker_s_from_date1.themeVersion     = "3.0";
+
+var ssf_tkt_trx_headerSearch_DatePicker_s_date_to1 = new Object(); 
+ssf_tkt_trx_headerSearch_DatePicker_s_date_to1.format           = "yyyymmdd";
+ssf_tkt_trx_headerSearch_DatePicker_s_date_to1.style            = "Styles/Spiritnew/Style.css";
+ssf_tkt_trx_headerSearch_DatePicker_s_date_to1.relativePathPart = "../../";
+ssf_tkt_trx_headerSearch_DatePicker_s_date_to1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+<script language="JavaScript">
+function OpenPop_UpList(t_object)
+{
+    var FieldValue;
+
+    FieldValue = document.getElementById(t_object.name).value; 
+    var linkhref = t_object.href;
+    var win=window.open(linkhref+"?s_return_field="+t_object.name+"&s_v_id="+FieldValue, "CustomerList", "left=100,top=10,width=480,height=480,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+
+function OpenPop_UpListDetail(t_object)
+{
+    var win=window.open(t_object.href, "DetailList", "left=100,top=10,width=1080,height=680,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes");
+    win.focus();
+}
+</script>
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record ssf_tkt_trx_headerSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:ssf_tkt_trx_header} {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="5">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ssf_dates_range}</th>
+ 
+            <td><input maxlength="9" size="9" value="{s_date_from}" name="{s_date_from_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_from_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_from_date1 --></td> 
+            <td colspan="3">&nbsp;<input maxlength="8" size="8" value="{s_date_to}" name="{s_date_to_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_date_to1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_date_to1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_time_range}</th>
+ 
+            <td colspan="2"><input maxlength="6" size="6" value="{s_time_from}" name="{s_time_from_Name}"></td> 
+            <td colspan="2">&nbsp;<input maxlength="6" size="6" value="{s_time_to}" name="{s_time_to_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:ssf_transaction_range}</th>
+ 
+            <td colspan="3"><input maxlength="10" size="10" value="{s_tkt_trans_id}" name="{s_tkt_trans_id_Name}">&nbsp;</td> 
+            <td>&nbsp;<input maxlength="10" size="10" value="{s_tkt_trans_id_to}" name="{s_tkt_trans_id_to_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_pos_id}</th>
+ 
+            <td colspan="4">
+              <select name="{s_tkt_pos_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_tkt_pos_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_cust_id}</th>
+ 
+            <td colspan="4"><input id="s_tkt_customer_id" maxlength="15" size="15" value="{s_tkt_customer_id}" name="{s_tkt_customer_id_Name}">&nbsp;<a href="{Link1_Src}" id="CustomerList" onclick="OpenPop_UpList(this);return false;" name="s_tkt_customer_id">{res:ssf_customer_list}</a></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:tkt_receipt_type}</th>
+ 
+            <td colspan="4">
+              <select name="{s_tkt_receipt_type_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_tkt_receipt_type_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="5">
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_tkt_trx_headerSearch --></p>
+<p>
+<form method="post" target="_blank">
+  <!-- BEGIN ImageLink lnkExcel --><a href="{lnkExcel}"><img class="botonazul" height="24" src="../../Styles/images/excel.gif" width="71" border="0"></a><!-- END ImageLink lnkExcel -->
+  <p>
+  <!-- BEGIN Button Button1 --><input class="botonazul" type="submit" value="{res:CCS_ReportPrintLink}" name="{Button_Name}"><!-- END Button Button1 --><input type="hidden" value="{ViewMode}" name="{ViewMode_Name}">&nbsp; 
+  <p></p>
+  <p>
+  <!-- BEGIN Grid ssf_tkt_trx_header -->
+  <table cellspacing="0" cellpadding="0" width="120%" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_GridFormPrefix} {res:ssf_tkt_trx_header} {res:CCS_GridFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <tr class="Row">
+            <td colspan="40">{res:CCS_TotalRecords}&nbsp; {ssf_tkt_trx_header_TotalRecords} </td>
+          </tr>
+ 
+          <tr class="Caption">
+            <!-- BEGIN Panel Header_tkt_trans_detail -->
+            <th>&nbsp;</th>
+ <!-- END Panel Header_tkt_trans_detail -->
+            <!-- BEGIN Panel Header_tkt_trans_id -->
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_trans_id --><a href="{Sort_URL}">{res:tkt_trans_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_trans_id -->
+            <!-- BEGIN CheckBox col1 --><input type="checkbox" value="1" name="{col1_Name}" {col1}><!-- END CheckBox col1 --></th>
+ <!-- END Panel Header_tkt_trans_id -->
+            <!-- BEGIN Panel Header_tkt_pos_id -->
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_pos_id --><a href="{Sort_URL}">{res:tkt_pos_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_pos_id -->
+            <!-- BEGIN CheckBox col2 --><input type="checkbox" value="1" name="{col2_Name}" {col2}><!-- END CheckBox col2 --></th>
+ <!-- END Panel Header_tkt_pos_id -->
+            <!-- BEGIN Panel Header_tkt_shift_id -->
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_shift_id --><a href="{Sort_URL}">{res:tkt_shift_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_shift_id -->
+            <!-- BEGIN CheckBox col3 --><input type="checkbox" value="1" name="{col3_Name}" {col3}><!-- END CheckBox col3 --></th>
+ <!-- END Panel Header_tkt_shift_id -->
+            <!-- BEGIN Panel Header_tkt_date -->
+            <th style="TEXT-ALIGN: center">
+            <!-- BEGIN Sorter Sorter_tkt_date --><a href="{Sort_URL}">{res:tkt_date}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_date -->
+            <!-- BEGIN CheckBox col4 --><input type="checkbox" value="1" name="{col4_Name}" {col4}><!-- END CheckBox col4 --></th>
+ <!-- END Panel Header_tkt_date -->
+            <!-- BEGIN Panel Header_tkt_time -->
+            <th style="TEXT-ALIGN: center">
+            <!-- BEGIN Sorter Sorter_tkt_time --><a href="{Sort_URL}">{res:tkt_time}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_time -->
+            <!-- BEGIN CheckBox col5 --><input type="checkbox" value="1" name="{col5_Name}" {col5}><!-- END CheckBox col5 --></th>
+ <!-- END Panel Header_tkt_time -->
+            <!-- BEGIN Panel Header_tkt_type -->
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_type --><a href="{Sort_URL}">{res:tkt_type}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_type -->
+            <!-- BEGIN CheckBox col6 --><input type="checkbox" value="1" name="{col6_Name}" {col6}><!-- END CheckBox col6 --></th>
+ <!-- END Panel Header_tkt_type -->
+            <!-- BEGIN Panel Header_tkt_receipt_type -->
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_receipt_type --><a href="{Sort_URL}">{res:tkt_receipt_type}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_receipt_type -->
+            <!-- BEGIN CheckBox col7 --><input type="checkbox" value="1" name="{col7_Name}" {col7}><!-- END CheckBox col7 --></th>
+ <!-- END Panel Header_tkt_receipt_type -->
+            <!-- BEGIN Panel Header_tkt_net_amount -->
+            <th style="TEXT-ALIGN: right">
+            <!-- BEGIN Sorter Sorter_tkt_net_amount --><a href="{Sort_URL}">{res:tkt_net_amount}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_net_amount -->
+            <!-- BEGIN CheckBox col8 --><input type="checkbox" value="1" name="{col8_Name}" {col8}><!-- END CheckBox col8 --></th>
+ <!-- END Panel Header_tkt_net_amount -->
+            <!-- BEGIN Panel Header_tkt_tax_amount -->
+            <th style="TEXT-ALIGN: right">
+            <!-- BEGIN Sorter Sorter_tkt_tax_amount --><a href="{Sort_URL}">{res:tkt_tax_amount}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_tax_amount -->
+            <!-- BEGIN CheckBox col9 --><input type="checkbox" value="1" name="{col9_Name}" {col9}><!-- END CheckBox col9 --></th>
+ <!-- END Panel Header_tkt_tax_amount -->
+            <!-- BEGIN Panel Header_tkt_total_amount -->
+            <th style="TEXT-ALIGN: right">
+            <!-- BEGIN Sorter Sorter_tkt_total_amount --><a href="{Sort_URL}">{res:tkt_total_amount}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_total_amount -->
+            <!-- BEGIN CheckBox col10 --><input type="checkbox" value="1" name="{col10_Name}" {col10}><!-- END CheckBox col10 --></th>
+ <!-- END Panel Header_tkt_total_amount -->
+            <!-- BEGIN Panel Header_tkt_customer_id -->
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_customer_id --><a href="{Sort_URL}">{res:tkt_cust_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_customer_id -->
+            <!-- BEGIN CheckBox col11 --><input type="checkbox" value="1" name="{col11_Name}" {col11}><!-- END CheckBox col11 --></th>
+ <!-- END Panel Header_tkt_customer_id -->
+            <!-- BEGIN Panel Header_tkt_customer_name -->
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_customer_name --><a href="{Sort_URL}">{res:tkt_cust_name}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_customer_name -->
+            <!-- BEGIN CheckBox col12 --><input type="checkbox" value="1" name="{col12_Name}" {col12}><!-- END CheckBox col12 --></th>
+ <!-- END Panel Header_tkt_customer_name -->
+            <!-- BEGIN Panel Header_tkt_customer_address -->
+            <th>
+            <!-- BEGIN Sorter Sorter_tkt_customer_address --><a href="{Sort_URL}">{res:tkt_cust_address}</a> 
+            <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_customer_address -->
+            <!-- BEGIN CheckBox col13 --><input type="checkbox" value="1" name="{col13_Name}" {col13}><!-- END CheckBox col13 --></th>
+ <!-- END Panel Header_tkt_customer_address -->
+          </tr>
+ 
+          <!-- BEGIN Row -->
+          <tr class="Row">
+            <!-- BEGIN Panel Data_tkt_trans_detail -->
+            <td style="TEXT-ALIGN: right">&nbsp;<a href="{Link1_Src}" id="lnkdetail" onclick="OpenPop_UpListDetail(this);return false;">{res:CCS_CustomLinkField}</a>&nbsp;&nbsp;&nbsp; &nbsp;</td> <!-- END Panel Data_tkt_trans_detail -->
+            <!-- BEGIN Panel Data_tkt_trans_id -->
+            <td style="TEXT-ALIGN: right">{tkt_trans_id}&nbsp;</td> <!-- END Panel Data_tkt_trans_id -->
+            <!-- BEGIN Panel Data_tkt_pos_id -->
+            <td style="TEXT-ALIGN: right">{tkt_pos_id}&nbsp;</td> <!-- END Panel Data_tkt_pos_id -->
+            <!-- BEGIN Panel Data_tkt_shift_id -->
+            <td style="TEXT-ALIGN: right">{tkt_shift_id}&nbsp;</td> <!-- END Panel Data_tkt_shift_id -->
+            <!-- BEGIN Panel Data_tkt_date -->
+            <td align="center">{tkt_date}&nbsp;</td> <!-- END Panel Data_tkt_date -->
+            <!-- BEGIN Panel Data_tkt_time -->
+            <td align="center">{tkt_time}&nbsp;</td> <!-- END Panel Data_tkt_time -->
+            <!-- BEGIN Panel Data_tkt_type -->
+            <td>{tkt_type}&nbsp;</td> <!-- END Panel Data_tkt_type -->
+            <!-- BEGIN Panel Data_tkt_receipt_type -->
+            <td>{tkt_receipt_type}-{tkt_receipt_group}-{tkt_receipt_number}</td> <!-- END Panel Data_tkt_receipt_type -->
+            <!-- BEGIN Panel Data_tkt_net_amount -->
+            <td style="TEXT-ALIGN: right" width="100">{tkt_net_amount}</td> <!-- END Panel Data_tkt_net_amount -->
+            <!-- BEGIN Panel Data_tkt_tax_amount -->
+            <td style="TEXT-ALIGN: right">{tkt_tax_amount}</td> <!-- END Panel Data_tkt_tax_amount -->
+            <!-- BEGIN Panel Data_tkt_total_amount -->
+            <td style="TEXT-ALIGN: right" width="100">{tkt_total_amount}</td> <!-- END Panel Data_tkt_total_amount -->
+            <!-- BEGIN Panel Data_tkt_customer_id -->
+            <td>{tkt_customer_id}&nbsp;</td> <!-- END Panel Data_tkt_customer_id -->
+            <!-- BEGIN Panel Data_tkt_customer_name -->
+            <td>{tkt_customer_name}&nbsp;</td> <!-- END Panel Data_tkt_customer_name -->
+            <!-- BEGIN Panel Data_tkt_customer_address -->
+            <td>{tkt_customer_address}&nbsp;</td> <!-- END Panel Data_tkt_customer_address -->
+          </tr>
+ <!-- END Row -->
+          <!-- BEGIN NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="40">{res:CCS_NoRecords} </td>
+          </tr>
+          <!-- END NoRecords -->
+          <tr class="SubTotal">
+            <td colspan="8">
+              <p>{res:CCS_ReportSubTotal}&nbsp;</p>
+ 
+              <p>{lblTotalLabel}</p>
+            </td> 
+            <td style="TEXT-ALIGN: right">
+              <p>{lblSubTotalNetAmount}</p>
+ 
+              <p>{lblTotalNetAmount}</p>
+            </td> 
+            <td style="TEXT-ALIGN: right">
+              <p>{lblSubTotalTaxAmount}</p>
+ 
+              <p>{lblTotalTaxAmount}</p>
+            </td> 
+            <td style="TEXT-ALIGN: right">
+              <p>{lblSubTotalAmount}</p>
+ 
+              <p>{lblTotalAmount}</p>
+            </td> 
+            <td>&nbsp;</td> 
+            <td colspan="30">&nbsp;</td>
+          </tr>
+ 
+          <tr class="Footer">
+            <td colspan="7">{Report_CurrentDateTime}&nbsp;</td> 
+            <td colspan="34">
+              <!-- BEGIN Navigator Navigator -->
+              <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+              <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+              <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+              <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+              <!-- BEGIN Pages -->
+              <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+              <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+              <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+              <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+              <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+              <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!-- END Grid ssf_tkt_trx_header --></p>
+</form>
+<p></p>
+<p></p>
+<p>{lblPrintTable}<br>
+</p>
+<p></p>
+<p><br>
+&nbsp;</p>
+</body>
+</html>

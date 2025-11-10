@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTankDeliveries</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+{Label1}
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN EditableGrid EditableGrid1 -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>&nbsp;&nbsp; {res:ssf_end_tank_charge}</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="8">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Caption">
+            <th>
+            <!-- BEGIN Sorter Sorter_tank_id --><a href="{Sort_URL}">{res:tank_id}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_tank_id --></th>
+ 
+            <th style="TEXT-ALIGN: center" colspan="2">&nbsp;{res:ssf_theorical_meassure}</th>
+ 
+            <th style="TEXT-ALIGN: center">
+            <!-- BEGIN Sorter Sorter_prod_height --><a href="{Sort_URL}">{res:ssf_prod_measure}</a> 
+            <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+            <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_prod_height --></th>
+ 
+            <th style="TEXT-ALIGN: center">&nbsp;{res:ssf_water_measure}</th>
+ 
+            <th style="TEXT-ALIGN: center">&nbsp;{lbl_height}</th>
+ 
+            <th style="TEXT-ALIGN: center" colspan="2">&nbsp;{lbl_volume}</th>
+          </tr>
+ 
+          <tr class="Caption">
+            <th>&nbsp;</th>
+ 
+            <th>&nbsp;{res:ssf_height}</th>
+ 
+            <th>&nbsp;{res:volume}</th>
+ 
+            <th>&nbsp;</th>
+ 
+            <th>&nbsp;</th>
+ 
+            <th>&nbsp;</th>
+ 
+            <th colspan="2">&nbsp;</th>
+          </tr>
+ 
+          <!-- BEGIN Row -->
+          <!-- BEGIN RowError -->
+          <tr class="Error">
+            <td colspan="8">{Error}</td>
+          </tr>
+          <!-- END RowError -->
+          <tr class="Row">
+            <td>{lbl_tank_id}&nbsp;<input type="hidden" value="{tank_id}" name="{tank_id_Name}"></td> 
+            <td align="right">&nbsp;{actual_prod_height}</td> 
+            <td align="right">&nbsp;{prod_vol}</td> 
+            <td><input value="{prod_height}" name="{prod_height_Name}">&nbsp;</td> 
+            <td><input value="{water_height}" name="{water_height_Name}">&nbsp;</td> 
+            <td align="center" colspan="3">&nbsp;&nbsp;&nbsp; 
+              <!-- BEGIN RadioButton deep_option --><input type="radio" value="{Value}" name="{deep_option_Name}" {disabledparam} {Check}>{Description}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- END RadioButton deep_option --></td>
+          </tr>
+ <!-- END Row -->
+          <!-- BEGIN NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="8">{res:CCS_NoRecords} </td>
+          </tr>
+          <!-- END NoRecords -->
+          <tr class="Footer">
+            <td style="TEXT-ALIGN: right" colspan="8">&nbsp;&nbsp;&nbsp; 
+              <!-- BEGIN Button Button_end_tank_charge --><input class="botonazul" type="submit" value="{res:ssf_end_tank_charge}" name="{Button_Name}"><!-- END Button Button_end_tank_charge -->&nbsp; 
+              <!-- BEGIN Button Button_stop_fuel_charge --><input class="botonazul" type="submit" value="{res:ssf_stop_tank_charge}" name="{Button_Name}"><!-- END Button Button_stop_fuel_charge -->
+              <!-- BEGIN Button Cancel --><input class="botonazul" type="submit" value="{res:CCS_Clear}" name="{Button_Name}"><!-- END Button Cancel --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+&nbsp;<!-- END EditableGrid EditableGrid1 --></p>
+</body>
+</html>

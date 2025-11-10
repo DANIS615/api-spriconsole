@@ -1,0 +1,231 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFFlowControlChart</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-1BD7CA11
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-9A4F2EFE
+</script>
+<script language="JavaScript" src="../../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-560C11A8
+
+var ssf_addin_flow_control_da_DatePicker_s_fl_date1 = new Object(); 
+ssf_addin_flow_control_da_DatePicker_s_fl_date1.format           = "yyyymmdd";
+ssf_addin_flow_control_da_DatePicker_s_fl_date1.style            = "Styles/Spiritnew/Style.css";
+ssf_addin_flow_control_da_DatePicker_s_fl_date1.relativePathPart = "../../";
+ssf_addin_flow_control_da_DatePicker_s_fl_date1.themeVersion     = "3.0";
+
+var ssf_addin_flow_control_da_DatePicker_s_date_to1 = new Object(); 
+ssf_addin_flow_control_da_DatePicker_s_date_to1.format           = "yyyymmdd";
+ssf_addin_flow_control_da_DatePicker_s_date_to1.style            = "Styles/Spiritnew/Style.css";
+ssf_addin_flow_control_da_DatePicker_s_date_to1.relativePathPart = "../../";
+ssf_addin_flow_control_da_DatePicker_s_date_to1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; {Label1} 
+<table width="100%" border="0">
+  <tr>
+    <td>
+      <!-- BEGIN Record ssf_addin_flow_control_da -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_SearchFormPrefix}
+                  {res:ssf_addin_flow_control_data} {res:CCS_SearchFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="4">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:ssf_dates_range}</th>
+ 
+                  <td><input maxlength="8" size="8" value="{s_date_from}" name="{s_date_from_Name}">&nbsp; 
+                    <!-- BEGIN DatePicker DatePicker_s_fl_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a>&nbsp;<!-- END DatePicker DatePicker_s_fl_date1 --></td> 
+                  <td colspan="2">&nbsp;<input maxlength="8" size="8" value="{s_date_to}" name="{s_date_to_Name}">&nbsp; 
+                    <!-- BEGIN DatePicker DatePicker_s_date_to1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a>&nbsp;<!-- END DatePicker DatePicker_s_date_to1 --></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:pump_id}</th>
+ 
+                  <td colspan="3">
+                    <select name="{s_pump_id_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {s_pump_id_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:grade_id}</th>
+ 
+                  <td colspan="3">
+                    <select name="{s_grade_id_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {s_grade_id_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:ssf_rep_graphic_option}</th>
+ 
+                  <td colspan="3">
+                    <!-- BEGIN RadioButton btnrepoption --><input type="radio" value="{Value}" name="{btnrepoption_Name}" {Check}>{Description}<br>
+                    <!-- END RadioButton btnrepoption --></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="4">
+                    <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record ssf_addin_flow_control_da --></td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;<a href="{Link1_Src}">{res:ssf_see_details}</a></td> 
+    <td>&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>&nbsp;<img src="{phpdata}"></td> 
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</p>
+<p><br>
+&nbsp; 
+<!-- BEGIN Grid chartdetail -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>&nbsp;&nbsp; {res:ssf_chart_details}</th>
+ 
+          <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Row">
+          <!-- BEGIN Row -->
+          <td style="FONT-WEIGHT: bold; TEXT-ALIGN: right"><a href="{imgChartDetail}" target="_blank"><img src="{imgChartDetail_Src}" border="0"></a><br>
+            &nbsp;&nbsp;{res:ssf_pump_id} {id}&nbsp;</td> 
+          <!-- BEGIN Panel RowSeparator -->
+        </tr>
+ 
+        <tr class="Row">
+          <!-- END Panel RowSeparator --><!-- END Row -->{EmptyRow} 
+        </tr>
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="3">{res:CCS_NoRecords} </td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="3">
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+            <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+            <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+            <!-- BEGIN Pages -->
+            <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+            <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+            <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+            <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid chartdetail --><br>
+<!-- BEGIN Grid chartdetail_product -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>&nbsp;&nbsp; {res:ssf_chart_details}</th>
+ 
+          <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Row">
+          <!-- BEGIN Row -->
+          <td style="FONT-WEIGHT: bold; TEXT-ALIGN: right"><a href="{imgChartDetail_product}" target="_blank"><img src="{imgChartDetail_product_Src}" border="0"></a><br>
+            &nbsp;&nbsp;{res:grade_id} {id}&nbsp;</td> 
+          <!-- BEGIN Panel RowSeparator -->
+        </tr>
+ 
+        <tr class="Row">
+          <!-- END Panel RowSeparator --><!-- END Row -->{EmptyRow} 
+        </tr>
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="3">{res:CCS_NoRecords} </td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="3">
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+            <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+            <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+            <!-- BEGIN Pages -->
+            <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+            <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+            <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+            <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid chartdetail_product --></p>
+</body>
+</html>

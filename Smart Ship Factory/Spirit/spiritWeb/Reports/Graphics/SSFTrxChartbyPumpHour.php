@@ -1,0 +1,375 @@
+<?php
+//Include Common Files @1-B6E3789B
+define("RelativePath", "../..");
+define("PathToCurrentPage", "/Reports/Graphics/");
+define("FileName", "SSFTrxChartbyPumpHour.php");
+include(RelativePath . "/Common.php");
+include(RelativePath . "/Template.php");
+include(RelativePath . "/Sorter.php");
+include(RelativePath . "/Navigator.php");
+//End Include Common Files
+
+//Include Page implementation @2-698CFA3F
+include_once(RelativePath . "/SSFSpiritHeader.php");
+//End Include Page implementation
+
+class clsRecordssf_pump_salesSearch { //ssf_pump_salesSearch Class @3-77E3522F
+
+//Variables @3-9E315808
+
+    // Public variables
+    public $ComponentType = "Record";
+    public $ComponentName;
+    public $Parent;
+    public $HTMLFormAction;
+    public $PressedButton;
+    public $Errors;
+    public $ErrorBlock;
+    public $FormSubmitted;
+    public $FormEnctype;
+    public $Visible;
+    public $IsEmpty;
+
+    public $CCSEvents = "";
+    public $CCSEventResult;
+
+    public $RelativePath = "";
+
+    public $InsertAllowed = false;
+    public $UpdateAllowed = false;
+    public $DeleteAllowed = false;
+    public $ReadAllowed   = false;
+    public $EditMode      = false;
+    public $ds;
+    public $DataSource;
+    public $ValidatingControls;
+    public $Controls;
+    public $Attributes;
+
+    // Class variables
+//End Variables
+
+//Class_Initialize Event @3-09A314F1
+    function clsRecordssf_pump_salesSearch($RelativePath, & $Parent)
+    {
+
+        global $FileName;
+        global $CCSLocales;
+        global $DefaultDateFormat;
+        $this->Visible = true;
+        $this->Parent = & $Parent;
+        $this->RelativePath = $RelativePath;
+        $this->Errors = new clsErrors();
+        $this->ErrorBlock = "Record ssf_pump_salesSearch/Error";
+        $this->ReadAllowed = true;
+        if($this->Visible)
+        {
+            $this->ComponentName = "ssf_pump_salesSearch";
+            $this->Attributes = new clsAttributes($this->ComponentName . ":");
+            $CCSForm = split(":", CCGetFromGet("ccsForm", ""), 2);
+            if(sizeof($CCSForm) == 1)
+                $CCSForm[1] = "";
+            list($FormName, $FormMethod) = $CCSForm;
+            $this->FormEnctype = "application/x-www-form-urlencoded";
+            $this->FormSubmitted = ($FormName == $this->ComponentName);
+            $Method = $this->FormSubmitted ? ccsPost : ccsGet;
+            $this->lblTitle = new clsControl(ccsLabel, "lblTitle", "lblTitle", ccsText, "", CCGetRequestParam("lblTitle", $Method, NULL), $this);
+            $this->s_date_from = new clsControl(ccsTextBox, "s_date_from", "s_date_from", ccsText, "", CCGetRequestParam("s_date_from", $Method, NULL), $this);
+            $this->DatePicker_s_end_date1 = new clsDatePicker("DatePicker_s_end_date1", "ssf_pump_salesSearch", "s_date_from", $this);
+            $this->s_date_to = new clsControl(ccsTextBox, "s_date_to", "s_date_to", ccsText, "", CCGetRequestParam("s_date_to", $Method, NULL), $this);
+            $this->DatePicker_s_date_to1 = new clsDatePicker("DatePicker_s_date_to1", "ssf_pump_salesSearch", "s_date_to", $this);
+            $this->s_pump_id = new clsControl(ccsListBox, "s_pump_id", "s_pump_id", ccsInteger, "", CCGetRequestParam("s_pump_id", $Method, NULL), $this);
+            $this->s_pump_id->DSType = dsSQL;
+            list($this->s_pump_id->BoundColumn, $this->s_pump_id->TextColumn, $this->s_pump_id->DBFormat) = array("id", "id", "");
+            $this->s_pump_id->DataSource = new clsDBConnection1();
+            $this->s_pump_id->ds = & $this->s_pump_id->DataSource;
+            $this->s_pump_id->DataSource->SQL = "Select ID from config_values \n" .
+            "where library = 'pump' and groupname = 'general'\n" .
+            "and parameter = 'ID'  {SQL_OrderBy}";
+            $this->s_pump_id->DataSource->Order = "id";
+            $this->btnUintOption = new clsControl(ccsRadioButton, "btnUintOption", "btnUintOption", ccsText, "", CCGetRequestParam("btnUintOption", $Method, NULL), $this);
+            $this->btnUintOption->DSType = dsListOfValues;
+            $this->btnUintOption->Values = array(array("1", $CCSLocales->GetText("ssf_by_volume")), array("2", $CCSLocales->GetText("ssf_by_amount")), array("3", $CCSLocales->GetText("ssf_by_transaction_qty")));
+            $this->btnUintOption->HTML = true;
+            $this->s_rep_option = new clsControl(ccsRadioButton, "s_rep_option", "s_rep_option", ccsText, "", CCGetRequestParam("s_rep_option", $Method, NULL), $this);
+            $this->s_rep_option->DSType = dsListOfValues;
+            $this->s_rep_option->Values = array(array("1", $CCSLocales->GetText("ssf_average")), array("2", $CCSLocales->GetText("ssf_all_date_sum")));
+            $this->s_rep_option->HTML = true;
+            $this->s_scale_option = new clsControl(ccsRadioButton, "s_scale_option", "s_scale_option", ccsText, "", CCGetRequestParam("s_scale_option", $Method, NULL), $this);
+            $this->s_scale_option->DSType = dsListOfValues;
+            $this->s_scale_option->Values = array(array("1", $CCSLocales->GetText("ssf_every_2_hour")), array("2", $CCSLocales->GetText("ssf_every_hour")));
+            $this->s_scale_option->HTML = true;
+            $this->Link1 = new clsControl(ccsLink, "Link1", "Link1", ccsText, "", CCGetRequestParam("Link1", $Method, NULL), $this);
+            $this->Link1->Page = "SSFTrxChartbyPumpHour.php";
+            $this->Button_DoSearch = new clsButton("Button_DoSearch", $Method, $this);
+            if(!$this->FormSubmitted) {
+                if(!is_array($this->btnUintOption->Value) && !strlen($this->btnUintOption->Value) && $this->btnUintOption->Value !== false)
+                    $this->btnUintOption->SetText(1);
+                if(!is_array($this->s_rep_option->Value) && !strlen($this->s_rep_option->Value) && $this->s_rep_option->Value !== false)
+                    $this->s_rep_option->SetText(1);
+                if(!is_array($this->s_scale_option->Value) && !strlen($this->s_scale_option->Value) && $this->s_scale_option->Value !== false)
+                    $this->s_scale_option->SetText(2);
+            }
+        }
+    }
+//End Class_Initialize Event
+
+//Validate Method @3-FF65DE59
+    function Validate()
+    {
+        global $CCSLocales;
+        $Validation = true;
+        $Where = "";
+        $Validation = ($this->s_date_from->Validate() && $Validation);
+        $Validation = ($this->s_date_to->Validate() && $Validation);
+        $Validation = ($this->s_pump_id->Validate() && $Validation);
+        $Validation = ($this->btnUintOption->Validate() && $Validation);
+        $Validation = ($this->s_rep_option->Validate() && $Validation);
+        $Validation = ($this->s_scale_option->Validate() && $Validation);
+        $this->CCSEventResult = CCGetEvent($this->CCSEvents, "OnValidate", $this);
+        $Validation =  $Validation && ($this->s_date_from->Errors->Count() == 0);
+        $Validation =  $Validation && ($this->s_date_to->Errors->Count() == 0);
+        $Validation =  $Validation && ($this->s_pump_id->Errors->Count() == 0);
+        $Validation =  $Validation && ($this->btnUintOption->Errors->Count() == 0);
+        $Validation =  $Validation && ($this->s_rep_option->Errors->Count() == 0);
+        $Validation =  $Validation && ($this->s_scale_option->Errors->Count() == 0);
+        return (($this->Errors->Count() == 0) && $Validation);
+    }
+//End Validate Method
+
+//CheckErrors Method @3-8354CA86
+    function CheckErrors()
+    {
+        $errors = false;
+        $errors = ($errors || $this->lblTitle->Errors->Count());
+        $errors = ($errors || $this->s_date_from->Errors->Count());
+        $errors = ($errors || $this->DatePicker_s_end_date1->Errors->Count());
+        $errors = ($errors || $this->s_date_to->Errors->Count());
+        $errors = ($errors || $this->DatePicker_s_date_to1->Errors->Count());
+        $errors = ($errors || $this->s_pump_id->Errors->Count());
+        $errors = ($errors || $this->btnUintOption->Errors->Count());
+        $errors = ($errors || $this->s_rep_option->Errors->Count());
+        $errors = ($errors || $this->s_scale_option->Errors->Count());
+        $errors = ($errors || $this->Link1->Errors->Count());
+        $errors = ($errors || $this->Errors->Count());
+        return $errors;
+    }
+//End CheckErrors Method
+
+//Operation Method @3-44E07622
+    function Operation()
+    {
+        if(!$this->Visible)
+            return;
+
+        global $Redirect;
+        global $FileName;
+
+        if(!$this->FormSubmitted) {
+            return;
+        }
+
+        if($this->FormSubmitted) {
+            $this->PressedButton = "Button_DoSearch";
+            if($this->Button_DoSearch->Pressed) {
+                $this->PressedButton = "Button_DoSearch";
+            }
+        }
+        $Redirect = "SSFTrxChartbyPumpHour.php";
+        if($this->Validate()) {
+            if($this->PressedButton == "Button_DoSearch") {
+                $Redirect = "SSFTrxChartbyPumpHour.php" . "?" . CCMergeQueryStrings(CCGetQueryString("Form", array("Button_DoSearch", "Button_DoSearch_x", "Button_DoSearch_y")));
+                if(!CCGetEvent($this->Button_DoSearch->CCSEvents, "OnClick", $this->Button_DoSearch)) {
+                    $Redirect = "";
+                }
+            }
+        } else {
+            $Redirect = "";
+        }
+    }
+//End Operation Method
+
+//Show Method @3-F9DCF9F2
+    function Show()
+    {
+        global $Tpl;
+        global $FileName;
+        global $CCSLocales;
+        $Error = "";
+
+        if(!$this->Visible)
+            return;
+
+        $this->CCSEventResult = CCGetEvent($this->CCSEvents, "BeforeSelect", $this);
+
+        $this->s_pump_id->Prepare();
+        $this->btnUintOption->Prepare();
+        $this->s_rep_option->Prepare();
+        $this->s_scale_option->Prepare();
+
+        $RecordBlock = "Record " . $this->ComponentName;
+        $ParentPath = $Tpl->block_path;
+        $Tpl->block_path = $ParentPath . "/" . $RecordBlock;
+        $this->EditMode = $this->EditMode && $this->ReadAllowed;
+        if (!$this->FormSubmitted) {
+        }
+
+        if($this->FormSubmitted || $this->CheckErrors()) {
+            $Error = "";
+            $Error = ComposeStrings($Error, $this->lblTitle->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->s_date_from->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->DatePicker_s_end_date1->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->s_date_to->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->DatePicker_s_date_to1->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->s_pump_id->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->btnUintOption->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->s_rep_option->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->s_scale_option->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->Link1->Errors->ToString());
+            $Error = ComposeStrings($Error, $this->Errors->ToString());
+            $Tpl->SetVar("Error", $Error);
+            $Tpl->Parse("Error", false);
+        }
+        $CCSForm = $this->EditMode ? $this->ComponentName . ":" . "Edit" : $this->ComponentName;
+        $this->HTMLFormAction = $FileName . "?" . CCAddParam(CCGetQueryString("QueryString", ""), "ccsForm", $CCSForm);
+        $Tpl->SetVar("Action", $this->HTMLFormAction);
+        $Tpl->SetVar("HTMLFormName", $this->ComponentName);
+        $Tpl->SetVar("HTMLFormEnctype", $this->FormEnctype);
+
+        $this->CCSEventResult = CCGetEvent($this->CCSEvents, "BeforeShow", $this);
+        $this->Attributes->Show();
+        if(!$this->Visible) {
+            $Tpl->block_path = $ParentPath;
+            return;
+        }
+
+        $this->lblTitle->Show();
+        $this->s_date_from->Show();
+        $this->DatePicker_s_end_date1->Show();
+        $this->s_date_to->Show();
+        $this->DatePicker_s_date_to1->Show();
+        $this->s_pump_id->Show();
+        $this->btnUintOption->Show();
+        $this->s_rep_option->Show();
+        $this->s_scale_option->Show();
+        $this->Link1->Show();
+        $this->Button_DoSearch->Show();
+        $Tpl->parse();
+        $Tpl->block_path = $ParentPath;
+    }
+//End Show Method
+
+} //End ssf_pump_salesSearch Class @3-FCB6E20C
+
+//Initialize Page @1-1EDAA008
+// Variables
+$FileName = "";
+$Redirect = "";
+$Tpl = "";
+$TemplateFileName = "";
+$BlockToParse = "";
+$ComponentName = "";
+$Attributes = "";
+
+// Events;
+$CCSEvents = "";
+$CCSEventResult = "";
+
+$FileName = FileName;
+$Redirect = "";
+$TemplateFileName = "SSFTrxChartbyPumpHour.html";
+$BlockToParse = "main";
+$TemplateEncoding = "CP1252";
+$PathToRoot = "../../";
+//End Initialize Page
+
+//Authenticate User @1-4A6E95C3
+CCSecurityRedirect("", "../../Security/Login.php");
+//End Authenticate User
+
+//Include events file @1-7D9C8D63
+include("./SSFTrxChartbyPumpHour_events.php");
+//End Include events file
+
+//Before Initialize @1-E870CEBC
+$CCSEventResult = CCGetEvent($CCSEvents, "BeforeInitialize", $MainPage);
+//End Before Initialize
+
+//Initialize Objects @1-6B437B93
+$DBConnection1 = new clsDBConnection1();
+$MainPage->Connections["Connection1"] = & $DBConnection1;
+$Attributes = new clsAttributes("page:");
+$MainPage->Attributes = & $Attributes;
+
+// Controls
+$SSFSpiritHeader = new clsSSFSpiritHeader("../../", "SSFSpiritHeader", $MainPage);
+$SSFSpiritHeader->Initialize();
+$ssf_pump_salesSearch = new clsRecordssf_pump_salesSearch("", $MainPage);
+$Label1 = new clsControl(ccsLabel, "Label1", "Label1", ccsText, "", CCGetRequestParam("Label1", ccsGet, NULL), $MainPage);
+$lblChart = new clsControl(ccsLabel, "lblChart", "lblChart", ccsText, "", CCGetRequestParam("lblChart", ccsGet, NULL), $MainPage);
+$MainPage->SSFSpiritHeader = & $SSFSpiritHeader;
+$MainPage->ssf_pump_salesSearch = & $ssf_pump_salesSearch;
+$MainPage->Label1 = & $Label1;
+$MainPage->lblChart = & $lblChart;
+
+BindEvents();
+
+$CCSEventResult = CCGetEvent($CCSEvents, "AfterInitialize", $MainPage);
+
+$Charset = $Charset ? $Charset : "windows-1252";
+if ($Charset)
+    header("Content-Type: text/html; charset=" . $Charset);
+//End Initialize Objects
+
+//Initialize HTML Template @1-67CF7266
+$CCSEventResult = CCGetEvent($CCSEvents, "OnInitializeView", $MainPage);
+$Tpl = new clsTemplate($FileEncoding, $TemplateEncoding);
+$Tpl->LoadTemplate(PathToCurrentPage . $TemplateFileName, $BlockToParse, "CP1252", "replace");
+$Tpl->block_path = "/$BlockToParse";
+$CCSEventResult = CCGetEvent($CCSEvents, "BeforeShow", $MainPage);
+$Attributes->Show();
+//End Initialize HTML Template
+
+//Execute Components @1-635A0474
+$SSFSpiritHeader->Operations();
+$ssf_pump_salesSearch->Operation();
+//End Execute Components
+
+//Go to destination page @1-4653CF1C
+if($Redirect)
+{
+    $CCSEventResult = CCGetEvent($CCSEvents, "BeforeUnload", $MainPage);
+    $DBConnection1->close();
+    header("Location: " . $Redirect);
+    $SSFSpiritHeader->Class_Terminate();
+    unset($SSFSpiritHeader);
+    unset($ssf_pump_salesSearch);
+    unset($Tpl);
+    exit;
+}
+//End Go to destination page
+
+//Show Page @1-41A2C250
+$SSFSpiritHeader->Show();
+$ssf_pump_salesSearch->Show();
+$Label1->Show();
+$lblChart->Show();
+$Tpl->block_path = "";
+$Tpl->Parse($BlockToParse, false);
+$main_block = $Tpl->GetVar($BlockToParse);
+$main_block = CCConvertEncoding($main_block, $FileEncoding, $CCSLocales->GetFormatInfo("Encoding"));
+$CCSEventResult = CCGetEvent($CCSEvents, "BeforeOutput", $MainPage);
+if ($CCSEventResult) echo $main_block;
+//End Show Page
+
+//Unload Page @1-3CD98077
+$CCSEventResult = CCGetEvent($CCSEvents, "BeforeUnload", $MainPage);
+$DBConnection1->close();
+$SSFSpiritHeader->Class_Terminate();
+unset($SSFSpiritHeader);
+unset($ssf_pump_salesSearch);
+unset($Tpl);
+//End Unload Page
+
+
+?>

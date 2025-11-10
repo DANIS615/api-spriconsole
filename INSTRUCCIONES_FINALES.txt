@@ -1,0 +1,214 @@
+================================================================================
+INSTRUCCIONES FINALES - CAPTURA DE PROTOCOLO GILBARCO
+================================================================================
+
+ESTADO ACTUAL:
+- [OK] Intel AMT COM3 deshabilitado
+- [OK] Solo COM1 disponible
+- [OK] GPBox configurado para COM1 (segun gpbox.ini)
+- [DETENIDO] PumpService (necesita iniciarse con permisos admin)
+
+================================================================================
+PASOS PARA CAPTURAR TRAFICO REAL
+================================================================================
+
+PASO 1: INICIAR SERVICIOS
+--------------------------
+Click derecho en:
+   C:\Windows\CEM44\iniciar_servicios.bat
+
+Seleccionar: "Ejecutar como administrador"
+
+Esto iniciara:
+   - PumpService (controlador de bombas)
+   - TankService (monitor de tanques)
+
+
+PASO 2: ESPERAR 5 SEGUNDOS
+---------------------------
+Los servicios necesitan tiempo para inicializar y empezar a comunicarse
+con las bombas.
+
+
+PASO 3: EJECUTAR MONITOR
+-------------------------
+Abrir una nueva ventana de comandos y ejecutar:
+
+   cd C:\Windows\CEM44
+   python monitor_simple.py
+
+El monitor:
+   - Escuchara COM1 durante 30 segundos
+   - Capturara TODOS los mensajes
+   - Los guardara en: captura_serial.txt
+   - Los mostrara en pantalla en tiempo real
+
+
+PASO 4: ANALIZAR CAPTURA
+-------------------------
+Si captura mensajes, veras algo como:
+
+   ----------------------------------------------------------------
+   [HH:MM:SS.mmm] Mensaje #1 (X bytes)
+   ----------------------------------------------------------------
+   00000000  10 02 01 03 00 02 10 03  |........|
+
+   [!] INICIO DE MENSAJE GILBARCO DETECTADO (DLE STX)
+       Direccion: 01
+       Comando: 03
+       Longitud: 00
+
+Esto significa que FUNCIONO!
+
+================================================================================
+SI NO CAPTURA TRAFICO
+================================================================================
+
+OPCION A: Generar Actividad
+----------------------------
+Mientras el monitor esta corriendo:
+
+1. Abrir: C:\Windows\CEM44\CONSOLE\CEM-44.exe
+2. Hacer algo en la consola:
+   - Ver estado de bombas
+   - Cambiar un precio
+   - Autorizar una bomba
+
+Esto generara comandos que el monitor capturara.
+
+
+OPCION B: Verificar Configuracion
+---------------------------------
+1. Ver el archivo: C:\Windows\CEM44\Files\LOG.TXT
+2. Buscar lineas con "PUMP CONTROL THREAD"
+3. Si dice "ERROR READING SERIAL PORTS", revisar gpbox.ini
+
+4. Probar diferentes direcciones en gpbox.ini:
+
+   Editar: C:\Windows\CEM44\gpbox.ini
+   Cambiar linea 16:
+
+   De:  GPBox 01 = 0001, 0000, 0000, 0000
+   A:   GPBox 01 = 0300, 0000, 0000, 0000
+
+   (0x0300 = direccion de hardware JP1-A)
+
+   Guardar y reiniciar servicios.
+
+
+OPCION C: Verificar Hardware
+----------------------------
+- El cable serial esta conectado?
+- Las bombas estan encendidas?
+- El GPBox esta instalado fisicamente en el PC?
+
+================================================================================
+ARCHIVOS CREADOS PARA TI
+================================================================================
+
+Scripts Python:
+   gilbarco_pump_controller.py  - Controlador completo
+   serial_monitor.py             - Monitor avanzado
+   monitor_simple.py             - Monitor simple (USAR ESTE)
+   test_serial_access.py         - Test de puertos
+
+Documentacion:
+   PROTOCOLO_GILBARCO.md              - Protocolo tecnico (500+ lineas)
+   DOCUMENTACION_GPBOX_SISTEMA.md     - Configuracion completa (1000+ lineas)
+   GUIA_CONFIGURACION_PUERTOS.md      - Guia de configuracion
+   INFORME_CAPTURA_PROTOCOLO.md       - Estado actual
+   INSTRUCCIONES_FINALES.txt          - Este archivo
+
+Scripts Batch:
+   iniciar_servicios.bat         - Iniciar PumpService y TankService
+   fix_com_ports.bat             - Guia interactiva
+
+Archivos de captura:
+   captura_serial.txt            - Aqui se guardaran los mensajes
+
+================================================================================
+COMANDO RAPIDO
+================================================================================
+
+En una terminal como Administrador:
+
+   cd C:\Windows\CEM44
+   iniciar_servicios.bat
+
+En otra terminal normal:
+
+   cd C:\Windows\CEM44
+   python monitor_simple.py
+
+ESPERA 30 SEGUNDOS
+
+Si ves mensajes = EXITO!
+Si no ves mensajes = Ver "SI NO CAPTURA TRAFICO" arriba
+
+================================================================================
+INFORMACION DEL SISTEMA
+================================================================================
+
+Bombas configuradas: 6 (Pump 01-06)
+Marca: Gilbarco
+Protocolo: Gilbarco Two-Wire
+Puerto: COM1 (segun gpbox.ini)
+Baudrate: 9600
+Mangueras: 4 por bomba (0-3)
+
+Productos identificados:
+   Manguera 0: Producto 00001, Grado 00 (Diesel?)
+   Manguera 1: Producto 00001, Grado 01 (Gasolina Regular?)
+   Manguera 2: Producto 00002, Grado 01 (Gasolina Premium?)
+   Manguera 3: Producto 00003, Grado 01 (Gasolina Super?)
+
+================================================================================
+OBJETIVO: CAPTURAR COMANDOS DE PRECIOS
+================================================================================
+
+Busca en la captura mensajes como:
+
+   10 02 01 09 XX ...  <- Comando 0x09 = READ_PRICE
+
+Donde:
+   10 02 = DLE STX (inicio)
+   01 = Direccion de bomba (1-6)
+   09 = Comando READ_PRICE
+   XX = Numero de manguera (0-3)
+
+Una vez capturado, podras implementar lectura de precios en tu propio sistema!
+
+================================================================================
+SOPORTE
+================================================================================
+
+Todos los archivos estan listos en: C:\Windows\CEM44\
+
+Si tienes dudas:
+   - Revisa PROTOCOLO_GILBARCO.md (especificacion completa)
+   - Revisa DOCUMENTACION_GPBOX_SISTEMA.md (configuracion detallada)
+   - Revisa GUIA_CONFIGURACION_PUERTOS.md (troubleshooting)
+
+================================================================================
+EXITO!
+================================================================================
+
+Has completado:
+   [OK] Analisis completo del sistema CEM-44
+   [OK] Identificacion de 6 bombas Gilbarco
+   [OK] Configuracion de 4 mangueras/productos
+   [OK] Herramientas de captura creadas
+   [OK] Documentacion tecnica completa
+   [OK] Deshabilitacion de Intel AMT COM3
+
+Solo falta:
+   [ ] Capturar trafico real
+   [ ] Identificar comando de lectura de precios
+   [ ] Implementar en tu sistema
+
+ESTAS A UN PASO DE LOGRARLO!
+
+================================================================================
+Fecha: 10 de Noviembre 2025
+Sistema: CEM-44 v6.02.00.06
+================================================================================

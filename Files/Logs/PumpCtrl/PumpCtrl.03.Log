@@ -1,0 +1,243 @@
+----------------------------------------------
+              PUMPCTRL LOG FILE               
+PUMPCTRL INFO: DATE RELEASE Sep 23 2010 09:53:26
+----------------------------------------------
+13/08/2024 19:23:03.551 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+13/08/2024 19:23:03.564 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+13/08/2024 19:23:03.565 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+13/08/2024 19:23:03.566 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+13/08/2024 19:23:03.876 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+13/08/2024 19:23:04.642 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+13/08/2024 19:23:11.709 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+13/08/2024 19:23:18.306 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+13/08/2024 19:23:18.306 - OutReset                                           - Reseting slot control information
+13/08/2024 19:23:24.966 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+13/08/2024 19:23:24.966 - OutReset                                           - Reseting slot control information
+13/08/2024 19:23:32.067 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+13/08/2024 19:23:32.083 - Pump_Offline                                       - Set Pump values to OFFLINE
+13/08/2024 19:37:55.746 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+24/10/2024 19:01:21.130 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+13/12/2024 14:59:05.201 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+13/12/2024 14:59:05.215 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+13/12/2024 14:59:05.216 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+13/12/2024 14:59:05.216 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+13/12/2024 14:59:05.766 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 14:59:05.766 - OutReset                                           - Reseting slot control information
+13/12/2024 14:59:06.834 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 14:59:06.834 - OutReset                                           - Reseting slot control information
+13/12/2024 14:59:07.902 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 14:59:07.902 - OutReset                                           - Reseting slot control information
+13/12/2024 14:59:09.005 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 14:59:09.005 - OutReset                                           - Reseting slot control information
+13/12/2024 14:59:09.021 - OutReset                                           - Reseting slot control information
+13/12/2024 14:59:10.175 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 14:59:10.175 - OutReset                                           - Reseting slot control information
+13/12/2024 14:59:10.191 - OutReset                                           - Reseting slot control information
+13/12/2024 14:59:11.339 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 14:59:11.355 - Pump_Offline                                       - Set Pump values to OFFLINE
+13/12/2024 16:19:46.786 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+13/12/2024 16:20:44.888 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+13/12/2024 16:20:44.903 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+13/12/2024 16:20:44.904 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+13/12/2024 16:20:44.904 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+13/12/2024 16:20:45.453 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 16:20:45.453 - OutReset                                           - Reseting slot control information
+13/12/2024 16:20:46.521 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 16:20:46.521 - OutReset                                           - Reseting slot control information
+13/12/2024 16:20:47.603 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 16:20:47.603 - OutReset                                           - Reseting slot control information
+13/12/2024 16:20:48.703 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 16:20:48.703 - OutReset                                           - Reseting slot control information
+13/12/2024 16:20:48.719 - OutReset                                           - Reseting slot control information
+13/12/2024 16:20:49.867 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 16:20:49.867 - OutReset                                           - Reseting slot control information
+13/12/2024 16:20:49.883 - OutReset                                           - Reseting slot control information
+13/12/2024 16:20:51.042 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+13/12/2024 16:20:51.058 - Pump_Offline                                       - Set Pump values to OFFLINE
+13/12/2024 16:22:16.942 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+06/11/2025 18:26:53.038 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 18:26:53.060 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+06/11/2025 18:26:53.061 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+06/11/2025 18:26:53.062 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 18:26:53.619 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 18:26:53.619 - OutReset                                           - Reseting slot control information
+06/11/2025 18:26:54.690 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 18:26:54.690 - OutReset                                           - Reseting slot control information
+06/11/2025 18:26:55.764 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 18:26:55.764 - OutReset                                           - Reseting slot control information
+06/11/2025 18:26:56.870 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 18:26:56.870 - OutReset                                           - Reseting slot control information
+06/11/2025 18:26:56.887 - OutReset                                           - Reseting slot control information
+06/11/2025 18:26:58.042 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 18:26:58.042 - OutReset                                           - Reseting slot control information
+06/11/2025 18:26:58.058 - OutReset                                           - Reseting slot control information
+06/11/2025 18:26:59.209 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 18:26:59.225 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:05:08.283 - SleepWakeupHandler                                 - ERROR SETEANDO EVENTO DE CEM SLEEP [6]
+06/11/2025 19:25:13.373 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+06/11/2025 19:41:29.248 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 19:41:29.260 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+06/11/2025 19:41:29.260 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+06/11/2025 19:41:29.261 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:41:29.619 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:41:30.389 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:41:34.456 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:41:35.587 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:41:35.587 - OutReset                                           - Reseting slot control information
+06/11/2025 19:41:36.874 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:41:36.874 - OutReset                                           - Reseting slot control information
+06/11/2025 19:41:38.186 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:41:38.218 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:46:18.214 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 19:46:18.226 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+06/11/2025 19:46:18.227 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+06/11/2025 19:46:18.227 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:46:18.589 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:46:19.360 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:46:25.771 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:46:26.912 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:46:26.912 - OutReset                                           - Reseting slot control information
+06/11/2025 19:46:28.453 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:46:28.459 - OutReset                                           - Reseting slot control information
+06/11/2025 19:46:29.719 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:46:29.751 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:59:45.934 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 19:59:45.945 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+06/11/2025 19:59:45.946 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+06/11/2025 19:59:45.946 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:59:46.301 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:59:47.073 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:59:53.501 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:59:55.027 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:59:55.027 - OutReset                                           - Reseting slot control information
+06/11/2025 19:59:56.303 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:59:56.303 - OutReset                                           - Reseting slot control information
+06/11/2025 19:59:57.563 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:59:57.595 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 20:06:59.621 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+06/11/2025 20:18:43.447 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 20:18:43.462 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+06/11/2025 20:18:43.462 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+06/11/2025 20:18:43.463 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 20:18:43.854 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:18:43.854 - OutReset                                           - Reseting slot control information
+06/11/2025 20:18:44.752 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:18:51.308 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:18:52.078 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:18:52.078 - OutReset                                           - Reseting slot control information
+06/11/2025 20:18:53.336 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:18:53.336 - OutReset                                           - Reseting slot control information
+06/11/2025 20:18:54.594 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:18:54.626 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 20:23:25.189 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 20:23:25.215 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+06/11/2025 20:23:25.215 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+06/11/2025 20:23:25.216 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 20:23:25.575 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:23:26.343 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:23:28.303 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:23:29.073 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:23:29.073 - OutReset                                           - Reseting slot control information
+06/11/2025 20:23:29.967 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:23:29.967 - OutReset                                           - Reseting slot control information
+06/11/2025 20:23:36.718 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 20:23:36.805 - Pump_Offline                                       - Set Pump values to OFFLINE
+09/11/2025 21:51:54.282 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+09/11/2025 21:51:54.299 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+09/11/2025 21:51:54.300 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+09/11/2025 21:51:54.301 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+09/11/2025 21:51:54.897 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:51:54.898 - OutReset                                           - Reseting slot control information
+09/11/2025 21:51:56.073 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:51:56.075 - OutReset                                           - Reseting slot control information
+09/11/2025 21:51:57.234 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:51:57.236 - OutReset                                           - Reseting slot control information
+09/11/2025 21:51:58.461 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:51:58.462 - OutReset                                           - Reseting slot control information
+09/11/2025 21:51:58.494 - OutReset                                           - Reseting slot control information
+09/11/2025 21:51:59.781 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:51:59.782 - OutReset                                           - Reseting slot control information
+09/11/2025 21:51:59.814 - OutReset                                           - Reseting slot control information
+09/11/2025 21:52:01.109 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:52:01.140 - Pump_Offline                                       - Set Pump values to OFFLINE
+09/11/2025 21:52:50.758 - SleepWakeupHandler                                 - ERROR SETEANDO EVENTO DE CEM SLEEP [6]
+09/11/2025 21:53:52.384 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+09/11/2025 21:53:58.712 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+09/11/2025 21:53:58.730 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+09/11/2025 21:53:58.730 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+09/11/2025 21:53:58.731 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+09/11/2025 21:53:59.337 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:53:59.337 - OutReset                                           - Reseting slot control information
+09/11/2025 21:54:00.490 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:54:00.492 - OutReset                                           - Reseting slot control information
+09/11/2025 21:54:01.655 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:54:01.656 - OutReset                                           - Reseting slot control information
+09/11/2025 21:54:02.872 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:54:02.872 - OutReset                                           - Reseting slot control information
+09/11/2025 21:54:02.903 - OutReset                                           - Reseting slot control information
+09/11/2025 21:54:04.223 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:54:04.223 - OutReset                                           - Reseting slot control information
+09/11/2025 21:54:04.254 - OutReset                                           - Reseting slot control information
+09/11/2025 21:54:05.573 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+09/11/2025 21:54:05.606 - Pump_Offline                                       - Set Pump values to OFFLINE
+09/11/2025 21:57:00.034 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+10/11/2025 12:21:55.093 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+10/11/2025 12:21:55.106 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+10/11/2025 12:21:55.107 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+10/11/2025 12:21:55.107 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+10/11/2025 12:21:55.438 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:21:56.220 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:22:01.483 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:22:07.403 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:22:07.403 - OutReset                                           - Reseting slot control information
+10/11/2025 12:22:13.392 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:22:13.393 - OutReset                                           - Reseting slot control information
+10/11/2025 12:22:13.424 - OutReset                                           - Reseting slot control information
+10/11/2025 12:22:14.424 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:22:14.457 - Pump_Offline                                       - Set Pump values to OFFLINE
+10/11/2025 12:26:49.809 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+10/11/2025 12:26:49.823 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+10/11/2025 12:26:49.823 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+10/11/2025 12:26:49.824 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+10/11/2025 12:26:50.182 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:26:50.949 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:26:55.292 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:27:00.526 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:27:00.526 - OutReset                                           - Reseting slot control information
+10/11/2025 12:27:00.557 - OutReset                                           - Reseting slot control information
+10/11/2025 12:27:02.275 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:27:02.275 - OutReset                                           - Reseting slot control information
+10/11/2025 12:27:03.176 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:27:03.207 - Pump_Offline                                       - Set Pump values to OFFLINE
+10/11/2025 12:32:51.620 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+10/11/2025 12:33:59.752 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+10/11/2025 12:33:59.766 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+10/11/2025 12:33:59.766 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+10/11/2025 12:33:59.767 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+10/11/2025 12:34:00.089 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:34:00.860 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:34:04.954 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:34:10.564 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:34:10.565 - OutReset                                           - Reseting slot control information
+10/11/2025 12:34:10.594 - OutReset                                           - Reseting slot control information
+10/11/2025 12:34:11.634 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:34:11.634 - OutReset                                           - Reseting slot control information
+10/11/2025 12:34:11.664 - OutReset                                           - Reseting slot control information
+10/11/2025 12:34:12.710 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 12:34:12.740 - Pump_Offline                                       - Set Pump values to OFFLINE
+10/11/2025 12:55:28.249 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
+10/11/2025 13:15:08.952 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+10/11/2025 13:15:08.968 - Initialize_DLL                                     - Preset x Producto habilitado[03]: 1
+10/11/2025 13:15:08.968 - Initialize_DLL                                     - Preset x Monto habilitado[03]: 1
+10/11/2025 13:15:08.969 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+10/11/2025 13:15:09.335 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 13:15:10.107 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 13:15:15.261 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 13:15:21.374 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 13:15:21.375 - OutReset                                           - Reseting slot control information
+10/11/2025 13:15:25.813 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 13:15:25.814 - OutReset                                           - Reseting slot control information
+10/11/2025 13:15:25.845 - OutReset                                           - Reseting slot control information
+10/11/2025 13:15:26.877 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+10/11/2025 13:15:26.906 - Pump_Offline                                       - Set Pump values to OFFLINE
+10/11/2025 13:21:37.305 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 

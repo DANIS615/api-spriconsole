@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTicketPeriods</title>
+<meta content="CodeCharge Studio 3.0.4.12" name="GENERATOR">
+<link href="../../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record ssf_addin_shifts_dataSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix}&nbsp;{res:ssf_tkt_periods} {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:PERIOD_CLOSE_GROUP}</th>
+ 
+            <td>
+              <select name="{s_period_group_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_period_group_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:period_type}</th>
+ 
+            <td>
+              <select name="{s_period_type_Name}">
+                {s_period_type_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record ssf_addin_shifts_dataSearch --><br>
+<!-- BEGIN Report ssf_tkt_periods -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_ReportFormPrefix} {res:ssf_tkt_periods} {res:CCS_ReportFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+        <!-- BEGIN Section Page_Header --><!-- END Section Page_Header -->
+        <!-- BEGIN Section tkt_period_group_Header -->
+        <tr class="GroupCaption">
+          <th colspan="5">{res:tkt_period_group}:&nbsp;{tkt_period_group} </th>
+        </tr>
+ 
+        <tr class="Caption">
+          <th>
+          <!-- BEGIN Sorter Sorter_tkt_period_id --><a href="{Sort_URL}">{res:period_id}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_period_id -->&nbsp; </th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_tkt_period_date_start --><a href="{Sort_URL}">{res:period_start_date}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_period_date_start -->&nbsp; </th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_tkt_period_time_start --><a href="{Sort_URL}">{res:period_start_time}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_period_time_start -->&nbsp; </th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_tkt_period_date_end --><a href="{Sort_URL}">{res:period_end_date}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_period_date_end -->&nbsp; </th>
+ 
+          <th>
+          <!-- BEGIN Sorter Sorter_tkt_period_time_end --><a href="{Sort_URL}">{res:period_end_time}</a> 
+          <!-- BEGIN Asc_On --><img src="../../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img src="../../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_tkt_period_time_end -->&nbsp; </th>
+        </tr>
+ <!-- END Section tkt_period_group_Header -->
+        <!-- BEGIN Section Detail -->
+        <tr class="Row">
+          <td style="TEXT-ALIGN: right"><a href="{tkt_period_id_Src}">{tkt_period_id}</a> </td> 
+          <td align="center">{tkt_period_date_start} </td> 
+          <td align="center">{tkt_period_time_start} </td> 
+          <td align="center">{tkt_period_date_end} </td> 
+          <td align="center">{tkt_period_time_end} </td>
+        </tr>
+ <!-- END Section Detail -->
+        <!-- BEGIN Section tkt_period_group_Footer --><!-- END Section tkt_period_group_Footer -->
+        <!-- BEGIN Section Report_Footer -->
+        <!-- BEGIN Panel NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="5">{res:CCS_NoRecords}</td>
+        </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+        <!-- BEGIN Section Page_Footer -->
+        <tfoot>
+          <tr class="Footer">
+            <td colspan="5">
+              <!-- BEGIN Navigator Navigator -->
+              <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+              <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+              <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+              <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+              <!-- BEGIN Pages -->
+              <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+              <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+              <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+              <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+              <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+              <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator -->&nbsp;</td>
+          </tr>
+        </tfoot>
+ <!-- END Section Page_Footer -->
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Report ssf_tkt_periods --><br>
+<br>
+<br>
+</p>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFLogBook</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="35%">
+      <p>
+      <!-- BEGIN Record ssf_addin_slb_events_conf -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_SearchFormPrefix} {res:ssf_addin_slb_events_config} {res:CCS_SearchFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:slb_event_id}</th>
+ 
+                  <td><select name="{s_slb_event_id_Name}"><option value="">{res:CCS_SelectValue}</option>{s_slb_event_id_Options}</select></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:slb_label}</th>
+ 
+                  <td><input maxlength="25" size="25" value="{s_slb_label}" name="{s_slb_label_Name}"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:slb_if_log}</th>
+ 
+                  <td>
+                    <select name="{s_slb_if_log_Name}">
+                      <option value="" selected>{res:CCS_SelectValue}</option>
+                      {s_slb_if_log_Options}
+                    </select>
+ </td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">&nbsp;<a href="{Link1_Src}">{res:CCS_Clear}</a>&nbsp; 
+                    <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record ssf_addin_slb_events_conf --></p>
+    </td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="35%">&nbsp;</td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="35%">
+      <p>
+      <!-- BEGIN Grid ssf_addin_slb_events_conf1 -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}&nbsp;{res:ssf_addin_slb_events_config} {res:CCS_GridFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_slb_event_id --><a href="{Sort_URL}">{res:slb_event_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_slb_event_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_slb_label --><a href="{Sort_URL}">{res:slb_label}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_slb_label --></th>
+ 
+                <th style="TEXT-ALIGN: center">
+                <!-- BEGIN Sorter Sorter_slb_if_log --><a href="{Sort_URL}">{res:slb_if_log}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_slb_if_log --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{slb_event_id_Src}">{slb_event_id}</a>&nbsp;</td> 
+                <td>{slb_label}&nbsp;</td> 
+                <td align="center"><input disabled type="checkbox" value="1" name="{slb_if_log_Name}" {slb_if_log}>&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="3"><a href="{ssf_addin_slb_events_conf1_Insert_Src}"></a>&nbsp; 
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a><!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off -->&nbsp;<!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Grid ssf_addin_slb_events_conf1 --></p>
+    </td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">
+      <p>
+      <!-- BEGIN Record ssf_addin_slb_events_conf2 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_RecordFormPrefix} {res:ssf_addin_slb_events_config} {res:CCS_RecordFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:slb_label}</th>
+ 
+                  <td style="font-weight:bold">{slb_label}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:slb_desc}</th>
+ 
+                  <td style="font-weight:bold">{slb_desc}</td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:slb_if_log}</th>
+ 
+                  <td><input {disabledparam} type="checkbox" value="1" name="{slb_if_log_Name}" {slb_if_log}></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}"><!-- END Button Button_Update -->
+                    <!-- BEGIN Button Button_Cancel --><input class="botonazul" type="submit" value="{res:CCS_Cancel}" name="{Button_Name}"><!-- END Button Button_Cancel --></td>
+                </tr>
+              </table>
+              <input type="hidden" value="{slb_event_id}" name="{slb_event_id_Name}"><input type="hidden" name="{slb_if_force_Name}" value="{slb_if_force}"><input type="hidden" value="{slb_plugin_force}" name="{slb_plugin_force_Name}"></td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record ssf_addin_slb_events_conf2 --></p>
+      &nbsp;</td>
+  </tr>
+</table>
+</p>
+<p><br>
+</p>
+<p>&nbsp;</p>
+<p><br>
+</p>
+<p>&nbsp;</p>
+<p><br>
+</p>
+</body>
+</html>

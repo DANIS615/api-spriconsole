@@ -1,0 +1,142 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFChangeTankStatus</title>
+<meta content="CodeCharge Studio 3.1.0.2" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record config_valuesSearch -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>&nbsp;{res:ssf_tanks}</th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:tank_id}</th>
+ 
+            <td>
+              <select name="{s_param_value_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_param_value_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record config_valuesSearch --></p>
+<p>
+<table width="100%" border="0">
+  <tr>
+    <td valign="top" width="25%">
+      <!-- BEGIN Grid config_values -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>&nbsp;{res:ssf_tank_status}</th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_param_value --><a href="{Sort_URL}">{res:tank}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On -->&nbsp;<!-- END Sorter Sorter_param_value --></th>
+ 
+                <th>&nbsp;{res:status}</th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td><a href="{param_value_Src}">{param_value}</a></td> 
+                <td>{status}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td>{res:CCS_NoRecords} </td> 
+                <td>&nbsp;</td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="2">&nbsp; </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Grid config_values --></td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top" align="left">
+      <!-- BEGIN Record config_values1 -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>&nbsp;{res:ssf_send_reqpumptest}&nbsp;{Label1}</th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="4">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle">{res:tank_id}&nbsp;&nbsp; &nbsp;{param_value}&nbsp;&nbsp;<input type="hidden" value="{h_tank_id}" name="{h_tank_id_Name}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+ 
+                  <td style="VERTICAL-ALIGN: middle" valign="middle"><img src="{Image1}">&nbsp;</td> 
+                  <td style="VERTICAL-ALIGN: middle" valign="middle">{status}&nbsp;<input type="hidden" value="{h_status}" name="{h_status_Name}"></td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="4">
+                    <!-- BEGIN Button Button_Update --><input class="botonazul" type="submit" value="{res:ssf_send_reqpumptest}" name="{Button_Name}"><!-- END Button Button_Update --></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      &nbsp;<!-- END Record config_values1 --></td>
+  </tr>
+</table>
+</p>
+</body>
+</html>

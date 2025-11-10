@@ -1,0 +1,497 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFShiftReport</title>
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}<a href="{imgLogo}"></a></p>
+<p>
+<!-- BEGIN Grid ShiftReport_Header -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+          <th>{res:CCS_GridFormPrefix} {res:ssf_shift_report_header} {res:CCS_GridFormSuffix} </th>
+ 
+          <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <th>{res:period_type}</th>
+ 
+          <td>{period_type}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:period_id}</th>
+ 
+          <td>{period_id}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:period_start_date}</th>
+ 
+          <td>{period_start_date}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:period_start_time}</th>
+ 
+          <td>{period_start_time}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:period_end_date}</th>
+ 
+          <td>{period_end_date}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:period_end_time}</th>
+ 
+          <td>{period_end_time}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:period_start_trans_id}</th>
+ 
+          <td>{period_start_trans_id}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:period_end_trans_id}</th>
+ 
+          <td>{period_end_trans_id}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:period_parent_cons_id}</th>
+ 
+          <td>{period_parent_cons_id}&nbsp;</td>
+        </tr>
+ 
+        <tr class="Row">
+          <th>{res:ssf_qty_of_transaction}</th>
+ 
+          <td>{lblTotalofTransactions}</td>
+        </tr>
+ 
+        <tr class="Row">
+          <td colspan="2">&nbsp;</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="2">{res:CCS_NoRecords} </td>
+        </tr>
+        <!-- END NoRecords -->
+      </table>
+<a href="{Link1_Src}">{res:ssf_link_transactions}</a></td>
+  </tr>
+</table>
+<!-- END Grid ShiftReport_Header --><br>
+<br>
+&nbsp;&nbsp; 
+<table width="100%" border="0">
+  <tr>
+    <td valign="top">
+      <!-- BEGIN Report ShiftReport_ByType -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_ReportFormPrefix} {res:ssf_pump_sales_by_type} {res:CCS_ReportFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header -->
+              <tr class="Caption">
+                <th>{res:ssf_sale_type}</th>
+ 
+                <th>{res:ssf_total_volume} </th>
+ 
+                <th>{res:ssf_total_money}</th>
+              </tr>
+ <!-- END Section Page_Header -->
+              <!-- BEGIN Section sale_type_Header --><!-- END Section sale_type_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right">{sale_type} </td> 
+                <td style="TEXT-ALIGN: right">{total_volume}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right">{total_money} </td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section sale_type_Footer -->
+              <tr class="SubTotal">
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_volume}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_money} </td>
+              </tr>
+ <!-- END Section sale_type_Footer -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords} </td>
+              </tr>
+ <!-- END Panel NoRecords -->
+              <tr class="Total">
+                <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_volume}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_money} </td>
+              </tr>
+ <!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Report ShiftReport_ByType --></td> 
+    <td width="2%">&nbsp;</td> 
+    <td valign="top">
+      <!-- BEGIN Report ShiftReport_ByPayment -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_ReportFormPrefix} {res:ssf_pump_sales_by_payment} {res:CCS_ReportFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header -->
+              <tr class="Caption">
+                <th>{res:ssf_pay_payment_type} </th>
+ 
+                <th>{res:ssf_total_volume}</th>
+ 
+                <th>{res:ssf_total_money} </th>
+              </tr>
+ <!-- END Section Page_Header -->
+              <!-- BEGIN Section pay_payment_type_Header --><!-- END Section pay_payment_type_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <td>{pay_payment_type} </td> 
+                <td style="TEXT-ALIGN: right">{total_volume}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right">{total_money} </td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section pay_payment_type_Footer -->
+              <tr class="SubTotal">
+                <td>&nbsp; </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_volume} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_money} </td>
+              </tr>
+ <!-- END Section pay_payment_type_Footer -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords} </td>
+              </tr>
+ <!-- END Panel NoRecords -->
+              <tr class="Total">
+                <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_volume} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_money} </td>
+              </tr>
+ <!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Report ShiftReport_ByPayment -->&nbsp;&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="35%">&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td valign="top" width="35%">&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top">
+      <!-- BEGIN Report ShiftReport_ByGrade -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_ReportFormPrefix} {res:ssf_pump_sales_by_grade} {res:CCS_ReportFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header -->
+              <tr class="Caption">
+                <th>{res:ssf_grade_id}</th>
+ 
+                <th>&nbsp;{res:ssf_total_volume}</th>
+ 
+                <th>&nbsp;{res:ssf_total_money}</th>
+              </tr>
+ <!-- END Section Page_Header -->
+              <!-- BEGIN Section grade_id_Header --><!-- END Section grade_id_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right">{grade_id} </td> 
+                <td style="TEXT-ALIGN: right">{total_volume} </td> 
+                <td style="TEXT-ALIGN: right">{total_money}&nbsp;</td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section grade_id_Footer -->
+              <tr class="SubTotal">
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">&nbsp;</td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">&nbsp;</td>
+              </tr>
+ <!-- END Section grade_id_Footer -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords} </td>
+              </tr>
+ <!-- END Panel NoRecords -->
+              <tr class="Total">
+                <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_volume} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_money}&nbsp;</td>
+              </tr>
+ <!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Report ShiftReport_ByGrade --></td> 
+    <td>&nbsp;</td> 
+    <td valign="top" width="35%">&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="35%">&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td valign="top">&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="35%">&nbsp; 
+      <!-- BEGIN Report ShiftReport_ByPump -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_ReportFormPrefix} {res:ssf_pump_sales_by_pump} {res:CCS_ReportFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header -->
+              <tr class="Caption">
+                <th>{res:ssf_pump_id} </th>
+ 
+                <th>{res:ssf_hose_id} </th>
+ 
+                <th>{res:ssf_sale_type}</th>
+ 
+                <th>{res:ssf_total_volume}</th>
+ 
+                <th>{res:ssf_total_money} </th>
+              </tr>
+ <!-- END Section Page_Header -->
+              <!-- BEGIN Section pump_id_Header --><!-- END Section pump_id_Header -->
+              <!-- BEGIN Section hose_id_Header --><!-- END Section hose_id_Header -->
+              <!-- BEGIN Section sale_type_Header --><!-- END Section sale_type_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right">{pump_id} </td> 
+                <td style="TEXT-ALIGN: right">{hose_id} </td> 
+                <td style="TEXT-ALIGN: right">{sale_type} </td> 
+                <td style="TEXT-ALIGN: right">{total_volume} </td> 
+                <td style="TEXT-ALIGN: right">{total_money} </td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section sale_type_Footer -->
+              <tr class="SubTotal">
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_volume2} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_money2} </td>
+              </tr>
+ <!-- END Section sale_type_Footer -->
+              <!-- BEGIN Section hose_id_Footer -->
+              <tr class="SubTotal">
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_volume1} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_money1} </td>
+              </tr>
+ <!-- END Section hose_id_Footer -->
+              <!-- BEGIN Section pump_id_Footer -->
+              <tr class="SubTotal">
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_volume} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_money} </td>
+              </tr>
+ <!-- END Section pump_id_Footer -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="5">{res:CCS_NoRecords} </td>
+              </tr>
+ <!-- END Panel NoRecords -->
+              <tr class="Total">
+                <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right">&nbsp; </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_volume} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_money} </td>
+              </tr>
+ <!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer --><!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      &nbsp;<!-- END Report ShiftReport_ByPump --></td> 
+    <td>&nbsp;</td> 
+    <td valign="top">&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="35%">&nbsp;</td> 
+    <td>&nbsp;</td> 
+    <td valign="top">&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td valign="top" width="40%">&nbsp; 
+      <!-- BEGIN Report ssf_pump_sales_ssf_pump_g -->
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_ReportFormPrefix}&nbsp;{res:ssf_pump_group} {res:CCS_ReportFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+              <!-- BEGIN Section Page_Header -->
+              <thead>
+                <tr class="Caption">
+                  <th>&nbsp;{res:ssf_pump_group}</th>
+ 
+                  <th style="TEXT-ALIGN: right">&nbsp; {res:ssf_total_volume}</th>
+ 
+                  <th style="TEXT-ALIGN: right">{res:ssf_total_money}&nbsp; </th>
+                </tr>
+ 
+              </thead>
+ <!-- END Section Page_Header -->
+              <!-- BEGIN Section ssf_pump_group_details_pump_group_id_Header --><!-- END Section ssf_pump_group_details_pump_group_id_Header -->
+              <!-- BEGIN Section ssf_pump_group_details_pump_id_Header --><!-- END Section ssf_pump_group_details_pump_id_Header -->
+              <!-- BEGIN Section hose_id_Header --><!-- END Section hose_id_Header -->
+              <!-- BEGIN Section Detail -->
+              <tr class="Row">
+                <td style="FONT-WEIGHT: bold">&nbsp;&nbsp;{pump_group_name}</td> 
+                <td style="TEXT-ALIGN: right">{total_volume} </td> 
+                <td style="TEXT-ALIGN: right">{total_money} </td>
+              </tr>
+ <!-- END Section Detail -->
+              <!-- BEGIN Section hose_id_Footer --><!-- END Section hose_id_Footer -->
+              <!-- BEGIN Section ssf_pump_group_details_pump_id_Footer --><!-- END Section ssf_pump_group_details_pump_id_Footer -->
+              <!-- BEGIN Section ssf_pump_group_details_pump_group_id_Footer -->
+              <tr class="Row">
+                <td>&nbsp;{ReportLabel1}&nbsp; </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_volume} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{Sum_total_money} </td>
+              </tr>
+ <!-- END Section ssf_pump_group_details_pump_group_id_Footer -->
+              <!-- BEGIN Section Report_Footer -->
+              <!-- BEGIN Panel NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="3">{res:CCS_NoRecords}</td>
+              </tr>
+ <!-- END Panel NoRecords -->
+              <tr class="Total">
+                <td valign="baseline">&nbsp;</td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">&nbsp;</td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">&nbsp;</td>
+              </tr>
+ 
+              <tr class="Total">
+                <td valign="baseline">{res:CCS_ReportTotal} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_volume} </td> 
+                <td style="TEXT-ALIGN: right" valign="baseline">{TotalSum_total_money} </td>
+              </tr>
+ <!-- END Section Report_Footer -->
+              <!-- BEGIN Section Page_Footer -->
+              <tfoot>
+                <tr class="Footer">
+                  <td colspan="3">&nbsp;</td>
+                </tr>
+              </tfoot>
+ <!-- END Section Page_Footer -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Report ssf_pump_sales_ssf_pump_g --><br>
+    </td> 
+    <td>&nbsp;</td> 
+    <td valign="top">&nbsp;</td> 
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table>
+</p>
+<p>&nbsp;</p>
+<br>
+<br>
+<p><br>
+&nbsp;</p>
+<br>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFPriceLevels</title>
+<meta content="CodeCharge Studio 3.1.0.1" name="GENERATOR">
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p><br>
+<!-- BEGIN EditableGrid ssf_device_data -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <input type="hidden" value="{FormState}" name="FormState">{FormScript} 
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_GridFormPrefix}&nbsp;{res:SSFDeviceGrid} {res:CCS_GridFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Grid" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Caption">
+            <th>{res:device_id}</th>
+ 
+            <th>{res:price_level}</th>
+          </tr>
+ 
+          <!-- BEGIN Row -->
+          <!-- BEGIN RowError -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END RowError -->
+          <tr class="Row">
+            <td>{device_id}&nbsp;<input type="hidden" value="{h_device_id}" name="{h_device_id_Name}"></td> 
+            <td>
+              <select name="{attr_value_Name}" {ssf_disabled}>
+                {attr_value_Options}
+              </select>
+ </td>
+          </tr>
+ <!-- END Row -->
+          <!-- BEGIN NoRecords -->
+          <tr class="NoRecords">
+            <td colspan="2">{res:CCS_NoRecords} </td>
+          </tr>
+          <!-- END NoRecords -->
+          <tr class="Footer">
+            <td style="TEXT-ALIGN: right" colspan="2">
+              <!-- BEGIN Navigator Navigator -->
+              <!-- BEGIN Prev_On --><a href="{Prev_URL}"><img src="../Styles/Spiritnew/Images/{res:CCS_LanguageID}/ButtonPrev.gif" border="0"></a> <!-- END Prev_On -->
+              <!-- BEGIN Prev_Off --><img src="../Styles/Spiritnew/Images/{res:CCS_LanguageID}/ButtonPrevOff.gif" border="0"><!-- END Prev_Off -->
+              <!-- BEGIN Next_On --><a href="{Next_URL}"><img src="../Styles/Spiritnew/Images/{res:CCS_LanguageID}/ButtonNext.gif" border="0"></a> <!-- END Next_On -->
+              <!-- BEGIN Next_Off --><img src="../Styles/Spiritnew/Images/{res:CCS_LanguageID}/ButtonNextOff.gif" border="0"><!-- END Next_Off --><!-- END Navigator Navigator -->
+              <!-- BEGIN Button Button_Submit --><input class="botonazul" type="submit" value="{res:CCS_Update}" name="{Button_Name}" {ssf_disabled}><!-- END Button Button_Submit --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END EditableGrid ssf_device_data --><br>
+</p>
+</body>
+</html>

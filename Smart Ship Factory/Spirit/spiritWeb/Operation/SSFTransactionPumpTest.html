@@ -1,0 +1,277 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>SSFTransactionPumpTest</title>
+<meta content="CodeCharge Studio 3.0.4.5" name="GENERATOR">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include JSFunctions @1-88A9217D
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=Functions.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include JSFunctions
+
+//Include Common JSFunctions @1-DED87D66
+</script>
+<script language="JavaScript" src="../ClientI18N.php?file=DatePicker.js&locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-FB11CC48
+
+var config_values_ssf_addin_p_DatePicker_s_start_date1 = new Object(); 
+config_values_ssf_addin_p_DatePicker_s_start_date1.format           = "yyyymmdd";
+config_values_ssf_addin_p_DatePicker_s_start_date1.style            = "Styles/Spiritnew/Style.css";
+config_values_ssf_addin_p_DatePicker_s_start_date1.relativePathPart = "../";
+config_values_ssf_addin_p_DatePicker_s_start_date1.themeVersion     = "3.0";
+
+var config_values_ssf_addin_p_DatePicker_s_end_date1 = new Object(); 
+config_values_ssf_addin_p_DatePicker_s_end_date1.format           = "yyyymmdd";
+config_values_ssf_addin_p_DatePicker_s_end_date1.style            = "Styles/Spiritnew/Style.css";
+config_values_ssf_addin_p_DatePicker_s_end_date1.relativePathPart = "../";
+config_values_ssf_addin_p_DatePicker_s_end_date1.themeVersion     = "3.0";
+
+//End Date Picker Object Definitions
+
+//End CCS script
+</script>
+<link href="../Styles/Spiritnew/Style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>{SSFSpiritHeader}</p>
+<p>
+<!-- BEGIN Record config_values_ssf_addin_p -->
+<form name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+            <th>{res:CCS_SearchFormPrefix} {res:config_values_ssf_addin_p}
+            {res:CCS_SearchFormSuffix} </th>
+ 
+            <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="4">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <th>{res:ssf_dates_range}</th>
+ 
+            <td><input style="WIDTH: 105px; HEIGHT: 22px" maxlength="9" size="11" value="{s_date_from}" name="{s_date_from_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_start_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_start_date1 --></td> 
+            <td colspan="2">&nbsp;<input style="WIDTH: 109px; HEIGHT: 22px" size="13" value="{s_date_to}" name="{s_date_to_Name}">&nbsp; 
+              <!-- BEGIN DatePicker DatePicker_s_end_date1 --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');"><img src="../Styles/Spiritnew/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_s_end_date1 --></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:pump_id}</th>
+ 
+            <td colspan="3">
+              <select style="WIDTH: 170px" name="{s_pump_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_pump_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:grade_id}</th>
+ 
+            <td colspan="3">
+              <select style="WIDTH: 170px" name="{s_id_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_id_Options}
+              </select>
+ </td>
+          </tr>
+ 
+          <tr class="Controls">
+            <th>{res:pay_payment_type}</th>
+ 
+            <td colspan="3">
+              <select style="WIDTH: 170px" name="{s_payment_type_Name}">
+                <option value="" selected>{res:CCS_SelectValue}</option>
+                {s_payment_type_Options}
+              </select>
+ &nbsp;</td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="4"><a href="{Link1_Src}">{res:CCS_Clear}</a> 
+              <!-- BEGIN Button Button_DoSearch --><input class="botonazul" type="submit" value="{res:CCS_Search}" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record config_values_ssf_addin_p --><br>
+<table width="100%" border="0">
+  <tr>
+    <td width="55%">
+      <!-- BEGIN Grid config_values_ssf_addin_p1 -->
+      <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td valign="top">
+            <table class="Header" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                <th>{res:CCS_GridFormPrefix}
+                {res:config_valuesssf_addin_payments_datassf_pump_sales}
+                {res:CCS_GridFormSuffix} </th>
+ 
+                <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+              </tr>
+            </table>
+ 
+            <table class="Grid" cellspacing="0" cellpadding="0">
+              <tr class="Row">
+                <td colspan="8">{res:CCS_TotalRecords}&nbsp;
+                  {config_values_ssf_addin_p1_TotalRecords} </td>
+              </tr>
+ 
+              <tr class="Caption">
+                <th>
+                <!-- BEGIN Sorter Sorter_sale_id --><a href="{Sort_URL}">{res:sale_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_sale_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_end_date --><a href="{Sort_URL}">{res:end_date}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_end_date --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_end_time --><a href="{Sort_URL}">{res:end_time}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_end_time --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_pump_id --><a href="{Sort_URL}">{res:pump_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_pump_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_id --><a href="{Sort_URL}">{res:grade_id}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_id --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_volume --><a href="{Sort_URL}">{res:volume}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_volume --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_money --><a href="{Sort_URL}">{res:money}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_money --></th>
+ 
+                <th>
+                <!-- BEGIN Sorter Sorter_pay_payment_type --><a href="{Sort_URL}">{res:pay_payment_type}</a> 
+                <!-- BEGIN Asc_On --><img src="../Styles/Spiritnew/Images/Asc.gif" border="0"><!-- END Asc_On -->
+                <!-- BEGIN Desc_On --><img src="../Styles/Spiritnew/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_pay_payment_type --></th>
+              </tr>
+ 
+              <!-- BEGIN Row -->
+              <tr class="Row">
+                <td style="TEXT-ALIGN: right"><a href="{sale_id_Src}">{sale_id}</a>&nbsp;</td> 
+                <td align="middle">{end_date}&nbsp;</td> 
+                <td align="middle">{end_time}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right">{pump_id}&nbsp;</td> 
+                <td>{id}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right">{volume}&nbsp;</td> 
+                <td style="TEXT-ALIGN: right">{money}&nbsp;</td> 
+                <td align="middle">{pay_payment_type}&nbsp;</td>
+              </tr>
+ <!-- END Row -->
+              <!-- BEGIN NoRecords -->
+              <tr class="NoRecords">
+                <td colspan="8">{res:CCS_NoRecords} </td>
+              </tr>
+              <!-- END NoRecords -->
+              <tr class="Footer">
+                <td colspan="8">
+                  <!-- BEGIN Navigator Navigator -->
+                  <!-- BEGIN First_On --><a href="{First_URL}">{res:CCS_First}</a> <!-- END First_On -->
+                  <!-- BEGIN First_Off -->{res:CCS_First} <!-- END First_Off -->
+                  <!-- BEGIN Prev_On --><a href="{Prev_URL}">{res:CCS_Previous}</a> <!-- END Prev_On -->
+                  <!-- BEGIN Prev_Off -->{res:CCS_Previous} <!-- END Prev_Off -->&nbsp; 
+                  <!-- BEGIN Pages -->
+                  <!-- BEGIN Page_On --><a href="{Page_URL}">{Page_Number}</a>&nbsp;<!-- END Page_On -->
+                  <!-- BEGIN Page_Off -->{Page_Number}&nbsp;<!-- END Page_Off --><!-- END Pages -->{res:CCS_Of}&nbsp;{Total_Pages}&nbsp; 
+                  <!-- BEGIN Next_On --><a href="{Next_URL}">{res:CCS_Next}</a> <!-- END Next_On -->
+                  <!-- BEGIN Next_Off -->{res:CCS_Next} <!-- END Next_Off -->
+                  <!-- BEGIN Last_On --><a href="{Last_URL}">{res:CCS_Last}</a> <!-- END Last_On -->
+                  <!-- BEGIN Last_Off -->{res:CCS_Last} <!-- END Last_Off --><!-- END Navigator Navigator --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!-- END Grid config_values_ssf_addin_p1 --><br>
+      <br>
+    </td> 
+    <td width="5%"></td> 
+    <td valign="top" width="40%">
+      <!-- BEGIN Record ssf_pump_sales -->
+      <form name="{HTMLFormName}" action="{Action}" method="post">
+        <table cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td valign="top">
+              <table class="Header" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td class="HeaderLeft"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td> 
+                  <th>{res:CCS_RecordFormPrefix} {res:ssf_pump_sales}
+                  {res:CCS_RecordFormSuffix} </th>
+ 
+                  <td class="HeaderRight"><img src="../Styles/Spiritnew/Images/Spacer.gif" border="0"></td>
+                </tr>
+              </table>
+ 
+              <table class="Record" cellspacing="0" cellpadding="0">
+                <!-- BEGIN Error -->
+                <tr class="Error">
+                  <td colspan="2">{Error}</td>
+                </tr>
+                <!-- END Error -->
+                <tr class="Controls">
+                  <th>{res:sale_id}</th>
+ 
+                  <td><input readonly value="{pump_sale_id}" name="{pump_sale_id_Name}"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>{res:pump_id}</th>
+ 
+                  <td><input readonly value="{pump_pump_id}" name="{pump_pump_id_Name}"></td>
+                </tr>
+ 
+                <tr class="Controls">
+                  <th>&nbsp;</th>
+ 
+                  <td>&nbsp;</td>
+                </tr>
+ 
+                <tr class="Bottom">
+                  <td align="right" colspan="2">
+                    <!-- BEGIN Button btnSendREQ --><input class="botonazul" type="submit" value="{res:ssf_send_reqpumptest}" name="{Button_Name}"><!-- END Button btnSendREQ -->&nbsp;</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <!-- END Record ssf_pump_sales --><br>
+      &nbsp;</td>
+  </tr>
+</table>
+</p>
+</body>
+</html>

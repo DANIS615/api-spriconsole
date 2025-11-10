@@ -1,0 +1,207 @@
+<meta content="CodeCharge Studio 3.0.2.2" name="GENERATOR">
+<link href="{spiritstyle}" type="text/css" rel="stylesheet">
+<style type="text/css"> 
+
+/* --- menu styles --- note:
+        not all browsers render styles the same way so try out your style sheet
+        on different browsers before publishing;
+*/
+/* level 0 inner */
+.m0l0iout {
+        font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+        font-size: 12px;
+        text-decoration: none;
+        margin: 4px 0 0 8px;
+        color: #FFFFFF;
+}
+.m0l0iover {
+        font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+        font-size: 12px;
+        text-decoration: underline;
+        margin: 5px 0 0 8px;
+        color: #FFFFFF;
+}
+
+/* level 0 outer */
+.m0l0oout {
+        text-decoration : none;
+        background-image: url({menu_img1});
+        border: 1px solid #336699;
+        background-color: #2C5F93;
+}
+.m0l0oover {
+        text-decoration : none;
+        background-image: url({menu_img2});
+        background-color: #2C5F93;
+        border: 1px solid #336699;
+}
+
+/* level 1 inner */
+.m0l1iout {
+        font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+        font-size: 12px;
+        margin: 4px 0 0 17px;
+        color: #FFFFFF;
+}
+.m0l1iover {
+        font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+        font-size: 12px;
+        margin: 4px 0 0 17px;
+        color: #FFFFFF;
+}
+
+/* level 1 outer */
+.m0l1oout {
+        text-decoration : none;
+        background-color: #5286BB;
+        border: 1px solid #336699;
+        padding: 0;
+}
+.m0l1oover {
+        text-decoration : none;
+        background-color: #1A4D81;
+        background-image: url({menu_img3});
+        background-repeat: no-repeat;
+        border: 1px solid #336699;
+        padding: 0;
+}
+</style>
+<script type="text/javascript">
+function popup(mylink, windowname)
+{
+        if (! window.focus)return true;
+        var href;
+        if (typeof(mylink) == 'string')
+        href=mylink;
+        else
+        href=mylink.href;
+        win = window.open(href, '', 'left=300,top=250,width=450,height=250,menubar=no,dependent=yes,scrollbars=yes,resizable=no,status=no');
+        if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+}
+</script>
+<script language="JavaScript">
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+function clock() {
+//if (!document.layers && !document.all) return;
+//new Date();
+var digital = SpiritTime  ;
+var day = digital.getDate();
+var month = digital.getMonth() + 1;
+var year = digital.getYear();
+var hours = digital.getHours();
+var minutes = digital.getMinutes();
+var seconds = digital.getSeconds();
+//var amOrPm = "AM";
+var amOrPm = "";
+//if (hours > 11) amOrPm = "PM";
+//if (hours > 12) hours = hours - 12;
+//if (hours == 0) hours = 12;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+dispTime = day + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds + " " + amOrPm;
+if (document.layers) {
+//document.layers.pendule.document.write(dispTime);
+//document.layers.pendule.document.close();
+//document.layers.pindo.document.write(dispTime);
+//document.layers.pindo.document.close();
+}
+else
+//if (document.all)
+reloj.innerHTML = dispTime;
+setTimeout("clock1()", 1000);
+}
+
+function clock1() {
+//if (!document.layers && !document.all) return;
+var digital = SpiritTime ;
+digital.setSeconds(digital.getSeconds() + 1) ;
+var day = digital.getDate();
+var month = digital.getMonth() + 1;
+var year = digital.getYear();
+var hours = digital.getHours();
+var minutes = digital.getMinutes();
+var seconds = digital.getSeconds();
+//var amOrPm = "AM";
+var amOrPm = "";
+//if (hours > 11) amOrPm = "PM";
+//if (hours > 12) hours = hours - 12;
+//if (hours == 0) hours = 12;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+dispTime = day + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds + " " + amOrPm;
+if (document.layers) {
+//document.layers.pendule.document.write(dispTime);
+//document.layers.pendule.document.close();
+//document.layers.pindo.document.write(dispTime);
+//document.layers.pindo.document.close();
+}
+else
+//if (document.all)
+reloj.innerHTML = dispTime;
+setTimeout("clock1()", 1000);
+}
+</script>
+<table cellspacing="0" cellpadding="0" width="100%" border="0">
+  <tr>
+    <td style="TEXT-ALIGN: left" valign="top" align="left" height="56">
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td width="168" rowspan="2"><img height="56" alt="" src="{logo_cabeza01}" width="168" usemap="#Map" border="0"></td> 
+          <td width="0" background="{logo_cabeza_back01}" height="27">
+            <table cellspacing="0" cellpadding="0" width="100%" border="0">
+              <tr>
+                <td class="usuario" width="60%">
+                  <div class="usuario_0" style="MARGIN-LEFT: 5px">
+                    &nbsp; {res:ssf_user} &nbsp;<img height="16" src="{logo_user01}" width="12" align="absMiddle">&nbsp;<strong>{lbluser}</strong><span class="usuario_0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{res:ssf_station_name} {lblSiteName}&nbsp;&nbsp;&nbsp;{res:ssf_station_number}</span>&nbsp; {lblSiteNumber} &nbsp;&nbsp;&nbsp;&nbsp; 
+                  </div>
+ </td> 
+                <td class="usuario" width="30%">
+                  <div class="usuario_0" style="MARGIN-LEFT: 5px">
+                    {res:ssf_spirittime} <label id="reloj"></label> 
+                  </div>
+ </td> 
+                <td align="right" width="10%">
+                  <div style="MARGIN-RIGHT: 5px">
+<a href="{Link2_Src}"><img height="19" src="{logo_logout}" width="71" border="0"></a> 
+                  </div>
+ </td> 
+              </tr>
+ 
+            </table>
+ </td> 
+        </tr>
+ 
+        <tr>
+          <td width="0%" background="{logo_cabeza_back02}" height="29">
+            <table cellspacing="4" cellpadding="0" width="100%" align="center" border="0">
+              <tr>
+                <td>
+                  <p>{lblScriptforDateTime}{lblDummyForMainMenu}</p>
+ </td> 
+              </tr>
+ 
+            </table>
+ </td> 
+        </tr>
+ 
+      </table>
+ 
+      <table width="100%" border="0">
+        <tr class="Caption">
+          <th style="BORDER-RIGHT: #e1e1f6 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #e1e1f6 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 80%; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: top; COLOR: #000000; PADDING-TOP: 3px; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #e1e1f6; TEXT-ALIGN: left" align="right">{Label1}</th>
+ 
+        </tr>
+ 
+        <tr>
+          <td align="right"><a href="{Link1_Src}"></a></td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+</table>
+<map name="Map">
+<area shape="RECT" coords="8,4,153,45" href="{page:maplink}">
+</map>

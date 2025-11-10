@@ -1,0 +1,18 @@
+----------------------------------------------
+              PUMPCTRL LOG FILE               
+PUMPCTRL INFO: DATE RELEASE Sep 23 2010 09:53:26
+----------------------------------------------
+13/08/2024 19:16:14.181 - Initialize_DLL                                     - No se va a controlar el dirty buffer porque no hay configurado al menos un surtidor microcontrolado
+13/08/2024 19:16:14.182 - OutReset                                           - Reseting slot control information
+13/08/2024 19:22:15.318 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+13/08/2024 19:37:55.745 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+24/10/2024 19:01:21.129 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+13/12/2024 16:19:46.785 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+13/12/2024 16:22:16.941 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+06/11/2025 19:25:13.371 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+06/11/2025 20:06:59.619 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+09/11/2025 21:53:52.381 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+09/11/2025 21:57:00.033 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+10/11/2025 12:32:51.616 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+10/11/2025 12:55:28.248 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
+10/11/2025 13:21:37.304 - Terminar_DLL                                       - Kill PumpCtrl.DLL Timer Resolution 
