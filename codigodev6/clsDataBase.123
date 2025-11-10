@@ -1,0 +1,80 @@
+
+Private Function Proc_146_0_5DE4A4(arg_C) '5DE4A4
+  'Data Table: 402DB8
+  loc_5DE458: OnErrorGoto loc_5DE496
+  loc_5DE45B: ILdI4 arg_C
+  loc_5DE45E: FStStrCopy var_8C
+  loc_5DE461: FLdRfVar var_C0
+  loc_5DE464: LitVar_Missing var_BC
+  loc_5DE467: PopAdLdVar
+  loc_5DE468: LitVar_Missing var_AC
+  loc_5DE46B: PopAdLdVar
+  loc_5DE46C: LitVar_TRUE var_9C
+  loc_5DE46F: PopAdLdVar
+  loc_5DE470: ILdRf var_8C
+  loc_5DE473: ImpAdLdRf MemVar_752164
+  loc_5DE476: NewIfNullPr Me
+  loc_5DE479: Me.DBEngine.OpenDatabase from_stack_1, from_stack_2, from_stack_3, from_stack_4
+  loc_5DE47E: ILdRf var_C0
+  loc_5DE481: FLdPr Me
+  loc_5DE484: MemStAd
+  loc_5DE488: FFree1Ad var_C0
+  loc_5DE48B: LitI2_Byte &HFF
+  loc_5DE48D: FStI2 var_86
+  loc_5DE490: ExitProcCbHresult
+  loc_5DE496: LitI2_Byte 0
+  loc_5DE498: FStI2 var_86
+  loc_5DE49B: ExitProcCbHresult
+End Function
+
+Private Function Proc_146_1_5D4984() '5D4984
+  'Data Table: 402DB8
+  loc_5D4960: OnErrorGoto loc_5D4979
+  loc_5D4963: FLdPr Me
+  loc_5D4966: MemLdPr global_52
+  loc_5D4969: Me.Close
+  loc_5D496E: LitI2_Byte &HFF
+  loc_5D4970: FStI2 var_86
+  loc_5D4973: ExitProcCbHresult
+  loc_5D4979: LitI2_Byte 0
+  loc_5D497B: FStI2 var_86
+  loc_5D497E: ExitProcCbHresult
+End Function
+
+Private Function Proc_146_2_5DA7A8(arg_C) '5DA7A8
+  'Data Table: 402DB8
+  loc_5DA770: OnErrorGoto loc_5DA79A
+  loc_5DA773: LitStr "DELETE * FROM "
+  loc_5DA776: ILdI4 arg_C
+  loc_5DA779: ConcatStr
+  loc_5DA77A: FStStr var_8C
+  loc_5DA77D: LitVar_Missing var_9C
+  loc_5DA780: PopAdLdVar
+  loc_5DA781: ILdRf var_8C
+  loc_5DA784: FLdPr Me
+  loc_5DA787: MemLdPr global_52
+  loc_5DA78A: Me.Execute from_stack_1, from_stack_2
+  loc_5DA78F: LitI2_Byte &HFF
+  loc_5DA791: FStI2 var_86
+  loc_5DA794: ExitProcCbHresult
+  loc_5DA79A: LitI2_Byte 0
+  loc_5DA79C: FStI2 var_86
+  loc_5DA79F: ExitProcCbHresult
+End Function
+
+Private Function Proc_146_3_5D6E84(arg_C) '5D6E84
+  'Data Table: 402DB8
+  loc_5D6E58: OnErrorGoto loc_5D6E78
+  loc_5D6E5B: LitVar_Missing var_98
+  loc_5D6E5E: PopAdLdVar
+  loc_5D6E5F: ILdI4 arg_C
+  loc_5D6E62: FLdPr Me
+  loc_5D6E65: MemLdPr global_52
+  loc_5D6E68: Me.Execute from_stack_1, from_stack_2
+  loc_5D6E6D: LitI2_Byte &HFF
+  loc_5D6E6F: FStI2 var_86
+  loc_5D6E72: ExitProcCbHresult
+  loc_5D6E78: LitI2_Byte 0
+  loc_5D6E7A: FStI2 var_86
+  loc_5D6E7D: ExitProcCbHresult
+End Function

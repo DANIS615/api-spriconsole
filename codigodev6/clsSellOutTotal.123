@@ -1,0 +1,271 @@
+
+Private Function Proc_147_0_5C9A04(arg_C) '5C9A04
+  'Data Table: 405530
+  loc_5C99F8: ILdUI1 arg_C
+  loc_5C99FC: FLdPr Me
+  loc_5C99FF: MemStUI1
+  loc_5C9A03: ExitProcHresult
+End Function
+
+Private Function Proc_147_1_5CEDBC() '5CEDBC
+  'Data Table: 405530
+  loc_5CEDA8: FLdPr Me
+  loc_5CEDAB: MemLdUI1 global_52
+  loc_5CEDAF: FStUI1 var_86
+  loc_5CEDB3: ExitProcCbHresult
+  loc_5CEDB9: ThisVCall unk_407B9B
+End Function
+
+Private Function Proc_147_2_5C998C(arg_C) '5C998C
+  'Data Table: 405530
+  loc_5C9980: ILdI4 arg_C
+  loc_5C9983: FLdPr Me
+  loc_5C9986: MemStStrCopy
+  loc_5C998A: ExitProcHresult
+End Function
+
+Private Function Proc_147_3_5CFDF8() '5CFDF8
+  'Data Table: 405530
+  loc_5CFDE4: ZeroRetVal
+  loc_5CFDE6: FLdPr Me
+  loc_5CFDE9: MemLdStr global_108
+  loc_5CFDEC: FStStrCopy var_88
+  loc_5CFDEF: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_4_5CE9B4() '5CE9B4
+  'Data Table: 405530
+  loc_5CE9A4: FLdPr Me
+  loc_5CE9A7: MemLdI2 global_104
+  loc_5CE9AA: FStI2 var_86
+  loc_5CE9AD: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_5_5C9D4C(arg_C) '5C9D4C
+  'Data Table: 405530
+  loc_5C9D40: ILdI2 arg_C
+  loc_5C9D43: FLdPr Me
+  loc_5C9D46: MemStI2 global_104
+  loc_5C9D49: ExitProcHresult
+End Function
+
+Private Function Proc_147_6_5CE234() '5CE234
+  'Data Table: 405530
+  loc_5CE224: FLdPr Me
+  loc_5CE227: MemLdFPR8 global_76
+  loc_5CE22A: FStFPR8 var_8C
+  loc_5CE22D: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_7_5CF1B8(arg_C) '5CF1B8
+  'Data Table: 405530
+  loc_5CF1A4: FLdPr Me
+  loc_5CF1A7: MemLdFPR8 global_76
+  loc_5CF1AA: ILdFPR8 arg_C
+  loc_5CF1AD: AddR8
+  loc_5CF1AE: FLdPr Me
+  loc_5CF1B1: MemStFPR8 global_76
+  loc_5CF1B4: ExitProcHresult
+End Function
+
+Private Function Proc_147_8_5CE434() '5CE434
+  'Data Table: 405530
+  loc_5CE424: FLdPr Me
+  loc_5CE427: MemLdFPR8 global_84
+  loc_5CE42A: FStFPR8 var_8C
+  loc_5CE42D: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_9_5CF130(arg_C) '5CF130
+  'Data Table: 405530
+  loc_5CF11C: FLdPr Me
+  loc_5CF11F: MemLdFPR8 global_84
+  loc_5CF122: ILdFPR8 arg_C
+  loc_5CF125: AddR8
+  loc_5CF126: FLdPr Me
+  loc_5CF129: MemStFPR8 global_84
+  loc_5CF12C: ExitProcHresult
+End Function
+
+Private Function Proc_147_10_5CFCD8() '5CFCD8
+  'Data Table: 405530
+  loc_5CFCC4: ZeroRetVal
+  loc_5CFCC6: FLdPr Me
+  loc_5CFCC9: MemLdStr global_56
+  loc_5CFCCC: FStStrCopy var_88
+  loc_5CFCCF: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_11_5C9CD4(arg_C) '5C9CD4
+  'Data Table: 405530
+  loc_5C9CC8: ILdI4 arg_C
+  loc_5C9CCB: FLdPr Me
+  loc_5C9CCE: MemStStrCopy
+  loc_5C9CD2: ExitProcHresult
+End Function
+
+Private Function Proc_147_12_5CEB74() '5CEB74
+  'Data Table: 405530
+  loc_5CEB64: FLdPr Me
+  loc_5CEB67: MemLdFPR8 global_60
+  loc_5CEB6A: FStFPR8 var_8C
+  loc_5CEB6D: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_13_5CEECC(arg_C) '5CEECC
+  'Data Table: 405530
+  loc_5CEEB8: FLdPr Me
+  loc_5CEEBB: MemLdFPR8 global_60
+  loc_5CEEBE: ILdFPR8 arg_C
+  loc_5CEEC1: AddR8
+  loc_5CEEC2: FLdPr Me
+  loc_5CEEC5: MemStFPR8 global_60
+  loc_5CEEC8: ExitProcHresult
+End Function
+
+Private Function Proc_147_14_5CE874() '5CE874
+  'Data Table: 405530
+  loc_5CE864: FLdPr Me
+  loc_5CE867: MemLdFPR8 global_68
+  loc_5CE86A: FStFPR8 var_8C
+  loc_5CE86D: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_15_5CED78(arg_C) '5CED78
+  'Data Table: 405530
+  loc_5CED64: FLdPr Me
+  loc_5CED67: MemLdFPR8 global_68
+  loc_5CED6A: ILdFPR8 arg_C
+  loc_5CED6D: AddR8
+  loc_5CED6E: FLdPr Me
+  loc_5CED71: MemStFPR8 global_68
+  loc_5CED74: ExitProcHresult
+End Function
+
+Private Function Proc_147_16_5E035C() '5E035C
+  'Data Table: 405530
+  loc_5E0300: FLdPr Me
+  loc_5E0303: MemLdI2 global_100
+  loc_5E0306: LitI2_Byte 0
+  loc_5E0308: EqI2
+  loc_5E0309: BranchF loc_5E0318
+  loc_5E030C: LitI2_Byte 0
+  loc_5E030E: CR8I2
+  loc_5E030F: FStFPR8 var_8C
+  loc_5E0312: ExitProcCbHresult
+  loc_5E0318: LitI2_Byte 0
+  loc_5E031A: FLdRfVar var_96
+  loc_5E031D: FLdPr Me
+  loc_5E0320: MemLdStr global_92
+  loc_5E0323: LitI2_Byte 1
+  loc_5E0325: FnUBound
+  loc_5E0327: CI2I4
+  loc_5E0328: ForI2 var_9A
+  loc_5E032E: FLdFPR8 var_94
+  loc_5E0331: FLdI2 var_96
+  loc_5E0334: CI4UI1
+  loc_5E0335: FLdPr Me
+  loc_5E0338: MemLdStr global_92
+  loc_5E033B: Ary1LdFPR8
+  loc_5E033C: AddR8
+  loc_5E033D: FStFPR8 var_94
+  loc_5E0340: FLdRfVar var_96
+  loc_5E0343: NextI2 var_9A, loc_5E032E
+  loc_5E0348: FLdFPR8 var_94
+  loc_5E034B: FLdPr Me
+  loc_5E034E: MemLdI2 global_100
+  loc_5E0351: CR8I2
+  loc_5E0352: DivR8
+  loc_5E0353: FStFPR8 var_8C
+  loc_5E0356: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_17_5DAB94(arg_C) '5DAB94
+  'Data Table: 405530
+  loc_5DAB54: LitI4 0
+  loc_5DAB59: FLdPr Me
+  loc_5DAB5C: MemLdI2 global_100
+  loc_5DAB5F: CI4UI1
+  loc_5DAB60: FLdPr Me
+  loc_5DAB63: MemLdRfVar from_stack_1.global_92
+  loc_5DAB66: RedimPreserve
+  loc_5DAB70: ILdFPR8 arg_C
+  loc_5DAB73: FLdPr Me
+  loc_5DAB76: MemLdI2 global_100
+  loc_5DAB79: CI4UI1
+  loc_5DAB7A: FLdPr Me
+  loc_5DAB7D: MemLdStr global_92
+  loc_5DAB80: Ary1StFPR8
+  loc_5DAB81: FLdPr Me
+  loc_5DAB84: MemLdI2 global_100
+  loc_5DAB87: LitI2_Byte 1
+  loc_5DAB89: AddI2
+  loc_5DAB8A: FLdPr Me
+  loc_5DAB8D: MemStI2 global_100
+  loc_5DAB90: ExitProcHresult
+  loc_5DAB93: Ary1LdRf
+End Function
+
+Private Function Proc_147_18_5E0A94() '5E0A94
+  'Data Table: 405530
+  loc_5E0A34: FLdPr Me
+  loc_5E0A37: MemLdI2 global_102
+  loc_5E0A3A: LitI2_Byte 0
+  loc_5E0A3C: EqI2
+  loc_5E0A3D: BranchF loc_5E0A4C
+  loc_5E0A40: LitI2_Byte 0
+  loc_5E0A42: CR8I2
+  loc_5E0A43: FStFPR8 var_8C
+  loc_5E0A46: ExitProcCbHresult
+  loc_5E0A4C: LitI2_Byte 0
+  loc_5E0A4E: FLdRfVar var_96
+  loc_5E0A51: FLdPr Me
+  loc_5E0A54: MemLdStr global_96
+  loc_5E0A57: LitI2_Byte 1
+  loc_5E0A59: FnUBound
+  loc_5E0A5B: CI2I4
+  loc_5E0A5C: ForI2 var_9A
+  loc_5E0A62: FLdFPR8 var_94
+  loc_5E0A65: FLdI2 var_96
+  loc_5E0A68: CI4UI1
+  loc_5E0A69: FLdPr Me
+  loc_5E0A6C: MemLdStr global_96
+  loc_5E0A6F: Ary1LdFPR8
+  loc_5E0A70: AddR8
+  loc_5E0A71: FStFPR8 var_94
+  loc_5E0A74: FLdRfVar var_96
+  loc_5E0A77: NextI2 var_9A, loc_5E0A62
+  loc_5E0A7C: FLdFPR8 var_94
+  loc_5E0A7F: FLdPr Me
+  loc_5E0A82: MemLdI2 global_102
+  loc_5E0A85: CR8I2
+  loc_5E0A86: DivR8
+  loc_5E0A87: FnIntR8
+  loc_5E0A89: FStFPR8 var_8C
+  loc_5E0A8C: ExitProcCbHresult
+End Function
+
+Private Function Proc_147_19_5DAF14(arg_C) '5DAF14
+  'Data Table: 405530
+  loc_5DAED4: LitI4 0
+  loc_5DAED9: FLdPr Me
+  loc_5DAEDC: MemLdI2 global_102
+  loc_5DAEDF: CI4UI1
+  loc_5DAEE0: FLdPr Me
+  loc_5DAEE3: MemLdRfVar from_stack_1.global_96
+  loc_5DAEE6: RedimPreserve
+  loc_5DAEF0: ILdFPR8 arg_C
+  loc_5DAEF3: FLdPr Me
+  loc_5DAEF6: MemLdI2 global_102
+  loc_5DAEF9: CI4UI1
+  loc_5DAEFA: FLdPr Me
+  loc_5DAEFD: MemLdStr global_96
+  loc_5DAF00: Ary1StFPR8
+  loc_5DAF01: FLdPr Me
+  loc_5DAF04: MemLdI2 global_102
+  loc_5DAF07: LitI2_Byte 1
+  loc_5DAF09: AddI2
+  loc_5DAF0A: FLdPr Me
+  loc_5DAF0D: MemStI2 global_102
+  loc_5DAF10: ExitProcHresult
+End Function

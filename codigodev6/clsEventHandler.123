@@ -1,0 +1,191 @@
+
+Private Function Proc_145_0_5D4148() '5D4148
+  'Data Table: 407A54
+  loc_5D412C: ZeroRetVal
+  loc_5D412E: FLdRfVar var_8C
+  loc_5D4131: FLdPr Me
+  loc_5D4134:  = Me.Caption
+  loc_5D4139: FLdZeroAd var_8C
+  loc_5D413C: FStAdFunc var_88
+  loc_5D413F: ExitProcCbHresult
+End Function
+
+Private Function Proc_145_1_5D0938(arg_C) '5D0938
+  'Data Table: 407A54
+  loc_5D0924: ILdI4 arg_C
+  loc_5D0927: FStAdNoPop
+  loc_5D092B: FLdPr Me
+  loc_5D092E:  = Me.hWnd
+  loc_5D0933: FFree1Ad var_88
+  loc_5D0936: ExitProcHresult
+End Function
+
+Private Function Proc_145_2_5D4244(arg_C) '5D4244
+  'Data Table: 407A54
+  loc_5D4228: ILdRf arg_C
+  loc_5D422B: FStAd var_88 
+  loc_5D422F: ILdRf var_88
+  loc_5D4232: FStAdNoPop
+  loc_5D4236: FLdPr Me
+  loc_5D4239: Me.BackColor = from_stack_1
+  loc_5D423E: FFree1Ad var_8C
+  loc_5D4241: ExitProcHresult
+End Function
+
+Private Function Proc_145_3_5CA1C0(arg_C) '5CA1C0
+  'Data Table: 407A54
+  loc_5CA1B4: ILdI4 arg_C
+  loc_5CA1B7: FLdPr Me
+  loc_5CA1BA: MemStAd
+  loc_5CA1BE: ExitProcHresult
+End Function
+
+Private Function Proc_145_4_5CF460() '5CF460
+  'Data Table: 407A54
+  loc_5CF44C: FLdRfVar var_96
+  loc_5CF44F: LitVarI2 var_94, 1
+  loc_5CF454: PopAdLdVar
+  loc_5CF455: LitStr "ClickButtonAnteriores"
+  loc_5CF458: Call Me.VTable_48()
+  loc_5CF45D: ExitProcHresult
+End Function
+
+Private Function Proc_145_5_5CF570() '5CF570
+  'Data Table: 407A54
+  loc_5CF55C: FLdRfVar var_96
+  loc_5CF55F: LitVarI2 var_94, 1
+  loc_5CF564: PopAdLdVar
+  loc_5CF565: LitStr "ClickButtonEnCurso"
+  loc_5CF568: Call Me.VTable_48()
+  loc_5CF56D: ExitProcHresult
+End Function
+
+Private Function Proc_145_6_5CF5F8(arg_C) '5CF5F8
+  'Data Table: 407A54
+  loc_5CF5E4: FLdRfVar var_96
+  loc_5CF5E7: FLdI2 arg_C
+  loc_5CF5EA: CVarI2 var_94
+  loc_5CF5ED: PopAdLdVar
+  loc_5CF5EE: LitStr "FormLoad"
+  loc_5CF5F1: Call Me.VTable_48()
+  loc_5CF5F6: ExitProcHresult
+End Function
+
+Private Function Proc_145_7_5CE374(arg_C) '5CE374
+  'Data Table: 407A54
+  loc_5CE364: FLdRfVar var_86
+  loc_5CE367: ILdRf arg_C
+  loc_5CE36A: LitStr "FormLoadDom"
+  loc_5CE36D: Call Me.VTable_4C()
+  loc_5CE372: ExitProcHresult
+End Function
+
+Private Function Proc_145_8_5CF020(arg_C) '5CF020
+  'Data Table: 407A54
+  loc_5CF00C: FLdRfVar var_96
+  loc_5CF00F: FLdI2 arg_C
+  loc_5CF012: CVarI2 var_94
+  loc_5CF015: PopAdLdVar
+  loc_5CF016: LitStr "Activate"
+  loc_5CF019: Call Me.VTable_48()
+  loc_5CF01E: ExitProcHresult
+End Function
+
+Private Function Proc_145_9_5D7120(arg_C, arg_10) '5D7120
+  'Data Table: 407A54
+  loc_5D70F4: FLdRfVar var_8A
+  loc_5D70F7: FLdRfVar arg_10
+  loc_5D70FA: ILdRf arg_C
+  loc_5D70FD: FLdRfVar var_88
+  loc_5D7100: FLdPr Me
+  loc_5D7103:  = Me.Caption
+  loc_5D7108: FLdPr var_88
+  loc_5D710B: from_stack_3v = Consola.KeyHandler(from_stack_1v, from_stack_2v)
+  loc_5D7110: FLdI2 var_8A
+  loc_5D7113: FFree1Ad var_88
+  loc_5D7116: BranchF loc_5D711E
+  loc_5D7119: LitI2_Byte 0
+  loc_5D711B: IStI2 arg_C
+  loc_5D711E: ExitProcHresult
+End Function
+
+Private Function Proc_145_10_5D3240(arg_C) '5D3240
+  'Data Table: 407A54
+  loc_5D3224: ILdRf arg_C
+  loc_5D3227: FStStrCopy var_88
+  loc_5D322A: FLdRfVar var_9A
+  loc_5D322D: ILdRf var_88
+  loc_5D3230: CVarStr var_98
+  loc_5D3233: PopAdLdVar
+  loc_5D3234: LitStr "ClickButton"
+  loc_5D3237: Call Me.VTable_48()
+  loc_5D323C: ExitProcHresult
+End Function
+
+Private Function Proc_145_11_5E2D84(arg_C) '5E2D84
+  'Data Table: 407A54
+  loc_5E2D34: ILdRf arg_C
+  loc_5E2D37: FStStrCopy var_8C
+  loc_5E2D3A: FDupVar
+  loc_5E2D40: FLdRfVar var_A4
+  loc_5E2D43: FLdPr Me
+  loc_5E2D46: MemLdPr global_52
+  loc_5E2D4E: FLdZeroAd var_A4
+  loc_5E2D51: FStAdFuncNoPop
+  loc_5E2D54: FLdRfVar var_A0
+  loc_5E2D57: ForEachCollAd var_AC
+  loc_5E2D5D: FLdRfVar var_8C
+  loc_5E2D60: CDargRef
+  loc_5E2D64: FLdRfVar var_9C
+  loc_5E2D67: CDargRef
+  loc_5E2D6B: FLdPr var_A0
+  loc_5E2D6E: LateMemCall
+  loc_5E2D74: FLdRfVar var_A0
+  loc_5E2D77: NextEachCollAd var_AC
+  loc_5E2D7D: ExitProcCbHresult
+End Function
+
+Private Function Proc_145_12_5E0460(arg_C, arg_10) '5E0460
+  'Data Table: 407A54
+  loc_5E0418: ILdRf arg_C
+  loc_5E041B: FStStrCopy var_8C
+  loc_5E041E: FLdRfVar var_94
+  loc_5E0421: FLdPr Me
+  loc_5E0424: MemLdPr global_52
+  loc_5E042C: FLdZeroAd var_94
+  loc_5E042F: FStAdFuncNoPop
+  loc_5E0432: FLdRfVar var_90
+  loc_5E0435: ForEachCollAd var_9C
+  loc_5E043B: FLdRfVar var_8C
+  loc_5E043E: CDargRef
+  loc_5E0442: ILdDarg arg_10
+  loc_5E0446: FLdPr var_90
+  loc_5E0449: LateMemCall
+  loc_5E044F: FLdRfVar var_90
+  loc_5E0452: NextEachCollAd var_9C
+  loc_5E0458: ExitProcCbHresult
+End Function
+
+Public Function global_4225500Get() '407C10
+  global_4225500Get = global_4225500
+End Function
+
+Public Sub global_4225500Put(Value) '407C2A
+  global_4225500 = Value
+End Sub
+
+Public Sub global_4225500Set(Value) '407C44
+  global_4225500 = Value
+End Sub
+
+Public Function global_4225500Get() '407C5E
+  global_4225500Get = global_4225500
+End Function
+
+Public Sub global_4225500Put(Value) '407C78
+  global_4225500 = Value
+End Sub
+
+Public Sub global_4225500Set(Value) '407C92
+  global_4225500 = Value
+End Sub

@@ -1,0 +1,1227 @@
+
+Private Function Proc_79_0_63E650() '63E650
+  'Data Table: 4046B0
+  loc_63E42C: OnErrorGoto loc_63E5C0
+  loc_63E42F: LitStr vbNullString
+  loc_63E432: FStStrCopy var_8C
+  loc_63E435: FLdRfVar var_8C
+  loc_63E438: LitStr "DICTPATH"
+  loc_63E43B: FStStrCopy var_88
+  loc_63E43E: FLdRfVar var_88
+  loc_63E441: ImpAdCallI2 Proc_53_9_613F58(, )
+  loc_63E446: FStStrNoPop var_90
+  loc_63E449: FLdPr Me
+  loc_63E44C: MemStStrCopy
+  loc_63E450: FFreeStr var_88 = "": var_8C = ""
+  loc_63E459: FLdPr Me
+  loc_63E45C: MemLdStr global_56
+  loc_63E45F: LitStr vbNullString
+  loc_63E462: EqStr
+  loc_63E464: BranchF loc_63E473
+  loc_63E467: LitI2_Byte 0
+  loc_63E469: FLdPr Me
+  loc_63E46C: MemStI2 global_78
+  loc_63E46F: ExitProcHresult
+  loc_63E470: Branch loc_63E47B
+  loc_63E473: LitI2_Byte &HFF
+  loc_63E475: FLdPr Me
+  loc_63E478: MemStI2 global_78
+  loc_63E47B: FLdRfVar var_A4
+  loc_63E47E: LitVarI4
+  loc_63E486: PopAdLdVar
+  loc_63E487: LitStr vbNullString
+  loc_63E48A: LitStr "admin"
+  loc_63E48D: LitStr vbNullString
+  loc_63E490: ImpAdLdRf MemVar_752164
+  loc_63E493: NewIfNullPr Me
+  loc_63E496: Me.DBEngine.CreateWorkspace from_stack_1, from_stack_2, from_stack_3, from_stack_4
+  loc_63E49B: ILdRf var_A4
+  loc_63E49E: FLdPr Me
+  loc_63E4A1: MemStAd
+  loc_63E4A5: FFree1Ad var_A4
+  loc_63E4A8: FLdRfVar var_A4
+  loc_63E4AB: LitVar_Missing var_C4
+  loc_63E4AE: PopAdLdVar
+  loc_63E4AF: LitVar_FALSE
+  loc_63E4B3: PopAdLdVar
+  loc_63E4B4: LitVar_FALSE
+  loc_63E4B8: PopAdLdVar
+  loc_63E4B9: FLdPr Me
+  loc_63E4BC: MemLdStr global_56
+  loc_63E4BF: FLdPr Me
+  loc_63E4C2: MemLdPr global_60
+  loc_63E4C5: Me.OpenDatabase from_stack_1, from_stack_2, from_stack_3, from_stack_4
+  loc_63E4CA: ILdRf var_A4
+  loc_63E4CD: FLdPr Me
+  loc_63E4D0: MemStAd
+  loc_63E4D4: FFree1Ad var_A4
+  loc_63E4D7: FLdRfVar var_A4
+  loc_63E4DA: LitVarI4
+  loc_63E4E2: PopAdLdVar
+  loc_63E4E3: LitVarI2 var_B4, 0
+  loc_63E4E8: PopAdLdVar
+  loc_63E4E9: LitVarI4
+  loc_63E4F1: PopAdLdVar
+  loc_63E4F2: LitStr "Messages"
+  loc_63E4F5: FLdPr Me
+  loc_63E4F8: MemLdPr global_52
+  loc_63E4FB: Me.OpenRecordset from_stack_1, from_stack_2, from_stack_3, from_stack_4
+  loc_63E500: ILdRf var_A4
+  loc_63E503: FLdPr Me
+  loc_63E506: MemStAd
+  loc_63E50A: FFree1Ad var_A4
+  loc_63E50D: LitStr "PrimaryKey"
+  loc_63E510: FLdPr Me
+  loc_63E513: MemLdPr global_64
+  loc_63E516: Me.Index = from_stack_1
+  loc_63E51B: FLdRfVar var_A4
+  loc_63E51E: LitVarI4
+  loc_63E526: PopAdLdVar
+  loc_63E527: LitVarI2 var_B4, 0
+  loc_63E52C: PopAdLdVar
+  loc_63E52D: LitVarI4
+  loc_63E535: PopAdLdVar
+  loc_63E536: LitStr "Parameters"
+  loc_63E539: FLdPr Me
+  loc_63E53C: MemLdPr global_52
+  loc_63E53F: Me.OpenRecordset from_stack_1, from_stack_2, from_stack_3, from_stack_4
+  loc_63E544: ILdRf var_A4
+  loc_63E547: FLdPr Me
+  loc_63E54A: MemStAd
+  loc_63E54E: FFree1Ad var_A4
+  loc_63E551: LitStr "PrimaryKey"
+  loc_63E554: FLdPr Me
+  loc_63E557: MemLdPr global_68
+  loc_63E55A: Me.Index = from_stack_1
+  loc_63E55F: FLdRfVar var_A4
+  loc_63E562: LitVarI4
+  loc_63E56A: PopAdLdVar
+  loc_63E56B: LitVarI2 var_B4, 0
+  loc_63E570: PopAdLdVar
+  loc_63E571: LitVarI4
+  loc_63E579: PopAdLdVar
+  loc_63E57A: LitStr "Modules"
+  loc_63E57D: FLdPr Me
+  loc_63E580: MemLdPr global_52
+  loc_63E583: Me.OpenRecordset from_stack_1, from_stack_2, from_stack_3, from_stack_4
+  loc_63E588: ILdRf var_A4
+  loc_63E58B: FLdPr Me
+  loc_63E58E: MemStAd
+  loc_63E592: FFree1Ad var_A4
+  loc_63E595: LitStr "c_ModID"
+  loc_63E598: FLdPr Me
+  loc_63E59B: MemLdPr global_72
+  loc_63E59E: Me.Index = from_stack_1
+  loc_63E5A3: LitI2_Byte &HFF
+  loc_63E5A5: PopTmpLdAd2 var_C6
+  loc_63E5A8: LitStr "DICT_LEARN"
+  loc_63E5AB: FStStrCopy var_88
+  loc_63E5AE: FLdRfVar var_88
+  loc_63E5B1: ImpAdCallI2 Proc_87_18_5DFD4C(, )
+  loc_63E5B6: FLdPr Me
+  loc_63E5B9: MemStI2 global_76
+  loc_63E5BC: FFree1Str var_88
+  loc_63E5BF: ExitProcHresult
+  loc_63E5C0: FLdRfVar var_CC
+  loc_63E5C3: ImpAdCallI2 Err 'rtcErrObj
+  loc_63E5C8: FStAdFunc var_A4
+  loc_63E5CB: FLdPr var_A4
+  loc_63E5CE:  = Err.Number
+  loc_63E5D3: FLdRfVar var_D4
+  loc_63E5D6: ImpAdCallI2 Err 'rtcErrObj
+  loc_63E5DB: FStAdFunc var_D0
+  loc_63E5DE: FLdPr var_D0
+  loc_63E5E1:  = Err.Description
+  loc_63E5E6: LitVar_Missing var_118
+  loc_63E5E9: LitVar_Missing var_108
+  loc_63E5EC: LitVarStr var_A0, "Error opening the language database"
+  loc_63E5F1: FStVarCopyObj var_F8
+  loc_63E5F4: FLdRfVar var_F8
+  loc_63E5F7: LitI4 &H40
+  loc_63E5FC: LitStr "Error "
+  loc_63E5FF: LitStr " "
+  loc_63E602: ConcatStr
+  loc_63E603: FStStrNoPop var_88
+  loc_63E606: ILdRf var_CC
+  loc_63E609: CStrI4
+  loc_63E60B: FStStrNoPop var_8C
+  loc_63E60E: ConcatStr
+  loc_63E60F: FStStrNoPop var_90
+  loc_63E612: LitStr " - "
+  loc_63E615: ConcatStr
+  loc_63E616: FStStrNoPop var_D8
+  loc_63E619: ILdRf var_D4
+  loc_63E61C: ConcatStr
+  loc_63E61D: CVarStr var_E8
+  loc_63E620: ImpAdCallFPR4 MsgBox(, , , , )
+  loc_63E625: FFreeStr var_88 = "": var_8C = "": var_90 = "": var_D8 = ""
+  loc_63E632: FFreeAd var_A4 = ""
+  loc_63E639: FFreeVar var_E8 = "": var_F8 = "": var_108 = ""
+  loc_63E644: LitI2_Byte 0
+  loc_63E646: FLdPr Me
+  loc_63E649: MemStI2 global_78
+  loc_63E64C: ExitProcHresult
+End Function
+
+Private Function Proc_79_1_6A4738(arg_C, arg_10, arg_14, arg_18) '6A4738
+  'Data Table: 4046B0
+  loc_6A4024: ZeroRetVal
+  loc_6A4026: OnErrorGoto loc_6A472C
+  loc_6A4029: LitVar_Missing var_15C
+  loc_6A402C: PopAdLdVar
+  loc_6A402D: LitVar_Missing var_14C
+  loc_6A4030: PopAdLdVar
+  loc_6A4031: LitVar_Missing var_13C
+  loc_6A4034: PopAdLdVar
+  loc_6A4035: LitVar_Missing var_12C
+  loc_6A4038: PopAdLdVar
+  loc_6A4039: LitVar_Missing var_11C
+  loc_6A403C: PopAdLdVar
+  loc_6A403D: LitVar_Missing var_10C
+  loc_6A4040: PopAdLdVar
+  loc_6A4041: LitVar_Missing var_FC
+  loc_6A4044: PopAdLdVar
+  loc_6A4045: LitVar_Missing var_EC
+  loc_6A4048: PopAdLdVar
+  loc_6A4049: LitVar_Missing var_DC
+  loc_6A404C: PopAdLdVar
+  loc_6A404D: LitVar_Missing var_CC
+  loc_6A4050: PopAdLdVar
+  loc_6A4051: LitVar_Missing var_BC
+  loc_6A4054: PopAdLdVar
+  loc_6A4055: ILdI4 arg_10
+  loc_6A4058: CVarI4
+  loc_6A405C: PopAdLdVar
+  loc_6A405D: ILdI2 arg_C
+  loc_6A4060: CVarI2 var_9C
+  loc_6A4063: PopAdLdVar
+  loc_6A4064: LitStr "="
+  loc_6A4067: FLdPr Me
+  loc_6A406A: MemLdPr global_64
+  loc_6A406D: Me.Seek from_stack_1, from_stack_2, from_stack_3, from_stack_4, from_stack_5, from_stack_6, from_stack_7, from_stack_8, from_stack_9, from_stack_10v, from_stack_11v, from_stack_12v, from_stack_13v, from_stack_14v
+  loc_6A4072: FLdRfVar var_15E
+  loc_6A4075: FLdPr Me
+  loc_6A4078: MemLdPr global_64
+  loc_6A407B:  = Me.NoMatch
+  loc_6A4080: FLdI2 var_15E
+  loc_6A4083: BranchF loc_6A408F
+  loc_6A4086: LitStr vbNullString
+  loc_6A4089: FStStrCopy var_88
+  loc_6A408C: Branch loc_6A4726
+  loc_6A408F: FLdRfVar var_178
+  loc_6A4092: FLdRfVar var_168
+  loc_6A4095: LitVarStr var_9C, "d_MsgDesc"
+  loc_6A409A: PopAdLdVar
+  loc_6A409B: FLdRfVar var_164
+  loc_6A409E: FLdPr Me
+  loc_6A40A1: MemLdPr global_64
+  loc_6A40A4:  = Me.Fields
+  loc_6A40A9: FLdPr var_164
+  loc_6A40AC: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A40B1: FLdPr var_168
+  loc_6A40B4:  = Me.Value
+  loc_6A40B9: FLdRfVar var_178
+  loc_6A40BC: CStrVarTmp
+  loc_6A40BD: FStStr var_88
+  loc_6A40C0: FFreeAd var_164 = ""
+  loc_6A40C7: FFree1Var var_178 = ""
+  loc_6A40CA: LitVar_Missing var_15C
+  loc_6A40CD: PopAdLdVar
+  loc_6A40CE: LitVar_Missing var_14C
+  loc_6A40D1: PopAdLdVar
+  loc_6A40D2: LitVar_Missing var_13C
+  loc_6A40D5: PopAdLdVar
+  loc_6A40D6: LitVar_Missing var_12C
+  loc_6A40D9: PopAdLdVar
+  loc_6A40DA: LitVar_Missing var_11C
+  loc_6A40DD: PopAdLdVar
+  loc_6A40DE: LitVar_Missing var_10C
+  loc_6A40E1: PopAdLdVar
+  loc_6A40E2: LitVar_Missing var_FC
+  loc_6A40E5: PopAdLdVar
+  loc_6A40E6: LitVar_Missing var_EC
+  loc_6A40E9: PopAdLdVar
+  loc_6A40EA: LitVar_Missing var_DC
+  loc_6A40ED: PopAdLdVar
+  loc_6A40EE: LitVar_Missing var_CC
+  loc_6A40F1: PopAdLdVar
+  loc_6A40F2: LitVar_Missing var_BC
+  loc_6A40F5: PopAdLdVar
+  loc_6A40F6: ILdI4 arg_10
+  loc_6A40F9: CVarI4
+  loc_6A40FD: PopAdLdVar
+  loc_6A40FE: ILdI2 arg_C
+  loc_6A4101: CVarI2 var_9C
+  loc_6A4104: PopAdLdVar
+  loc_6A4105: LitStr "="
+  loc_6A4108: FLdPr Me
+  loc_6A410B: MemLdPr global_68
+  loc_6A410E: Me.Seek from_stack_1, from_stack_2, from_stack_3, from_stack_4, from_stack_5, from_stack_6, from_stack_7, from_stack_8, from_stack_9, from_stack_10v, from_stack_11v, from_stack_12v, from_stack_13v, from_stack_14v
+  loc_6A4113: FLdRfVar var_15E
+  loc_6A4116: FLdPr Me
+  loc_6A4119: MemLdPr global_68
+  loc_6A411C:  = Me.NoMatch
+  loc_6A4121: FLdI2 var_15E
+  loc_6A4124: BranchF loc_6A414F
+  loc_6A4127: LitI2_Byte 1
+  loc_6A4129: FLdRfVar var_8A
+  loc_6A412C: LitI2_Byte &HA
+  loc_6A412E: ForI2 var_17C
+  loc_6A4134: LitStr vbNullString
+  loc_6A4137: FLdI2 var_8A
+  loc_6A413A: CI4UI1
+  loc_6A413B: ILdI4 arg_14
+  loc_6A413E: Ary1StStrCopy
+  loc_6A413F: FLdRfVar var_8A
+  loc_6A4142: NextI2 var_17C, loc_6A4134
+  loc_6A4147: LitI2_Byte 0
+  loc_6A4149: IStI2 arg_18
+  loc_6A414C: Branch loc_6A4726
+  loc_6A414F: LitI2_Byte 0
+  loc_6A4151: IStI2 arg_18
+  loc_6A4154: FLdRfVar var_168
+  loc_6A4157: LitVarStr var_9C, "d_Param1"
+  loc_6A415C: PopAdLdVar
+  loc_6A415D: FLdRfVar var_164
+  loc_6A4160: FLdPr Me
+  loc_6A4163: MemLdPr global_68
+  loc_6A4166:  = Me.Fields
+  loc_6A416B: FLdPr var_164
+  loc_6A416E: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A4173: FLdZeroAd var_168
+  loc_6A4176: CVarAd
+  loc_6A417A: ImpAdCallI2 IsNull()
+  loc_6A417F: FStI2 var_15E
+  loc_6A4182: FLdRfVar var_184
+  loc_6A4185: LitVarStr var_AC, "d_Param1"
+  loc_6A418A: PopAdLdVar
+  loc_6A418B: FLdRfVar var_180
+  loc_6A418E: FLdPr Me
+  loc_6A4191: MemLdPr global_68
+  loc_6A4194:  = Me.Fields
+  loc_6A4199: FLdPr var_180
+  loc_6A419C: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A41A1: FLdZeroAd var_184
+  loc_6A41A4: CVarAd
+  loc_6A41A8: LitVarStr var_CC, vbNullString
+  loc_6A41AD: FStVarCopyObj var_194
+  loc_6A41B0: FLdRfVar var_194
+  loc_6A41B3: FLdI2 var_15E
+  loc_6A41B6: CVarBoolI2 var_BC
+  loc_6A41BA: FLdRfVar var_1B4
+  loc_6A41BD: ImpAdCallFPR4  = IIf(, , )
+  loc_6A41C2: FLdRfVar var_1B4
+  loc_6A41C5: CStrVarTmp
+  loc_6A41C6: FStStrNoPop var_1B8
+  loc_6A41C9: LitI4 1
+  loc_6A41CE: ILdI4 arg_14
+  loc_6A41D1: Ary1StStrCopy
+  loc_6A41D2: FFree1Str var_1B8
+  loc_6A41D5: FFreeAd var_164 = ""
+  loc_6A41DC: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A41E9: FLdRfVar var_168
+  loc_6A41EC: LitVarStr var_9C, "d_Param2"
+  loc_6A41F1: PopAdLdVar
+  loc_6A41F2: FLdRfVar var_164
+  loc_6A41F5: FLdPr Me
+  loc_6A41F8: MemLdPr global_68
+  loc_6A41FB:  = Me.Fields
+  loc_6A4200: FLdPr var_164
+  loc_6A4203: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A4208: FLdZeroAd var_168
+  loc_6A420B: CVarAd
+  loc_6A420F: ImpAdCallI2 IsNull()
+  loc_6A4214: FStI2 var_15E
+  loc_6A4217: FLdRfVar var_184
+  loc_6A421A: LitVarStr var_AC, "d_Param2"
+  loc_6A421F: PopAdLdVar
+  loc_6A4220: FLdRfVar var_180
+  loc_6A4223: FLdPr Me
+  loc_6A4226: MemLdPr global_68
+  loc_6A4229:  = Me.Fields
+  loc_6A422E: FLdPr var_180
+  loc_6A4231: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A4236: FLdZeroAd var_184
+  loc_6A4239: CVarAd
+  loc_6A423D: LitVarStr var_CC, vbNullString
+  loc_6A4242: FStVarCopyObj var_194
+  loc_6A4245: FLdRfVar var_194
+  loc_6A4248: FLdI2 var_15E
+  loc_6A424B: CVarBoolI2 var_BC
+  loc_6A424F: FLdRfVar var_1B4
+  loc_6A4252: ImpAdCallFPR4  = IIf(, , )
+  loc_6A4257: FLdRfVar var_1B4
+  loc_6A425A: CStrVarTmp
+  loc_6A425B: FStStrNoPop var_1B8
+  loc_6A425E: LitI4 2
+  loc_6A4263: ILdI4 arg_14
+  loc_6A4266: Ary1StStrCopy
+  loc_6A4267: FFree1Str var_1B8
+  loc_6A426A: FFreeAd var_164 = ""
+  loc_6A4271: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A427E: FLdRfVar var_168
+  loc_6A4281: LitVarStr var_9C, "d_Param3"
+  loc_6A4286: PopAdLdVar
+  loc_6A4287: FLdRfVar var_164
+  loc_6A428A: FLdPr Me
+  loc_6A428D: MemLdPr global_68
+  loc_6A4290:  = Me.Fields
+  loc_6A4295: FLdPr var_164
+  loc_6A4298: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A429D: FLdZeroAd var_168
+  loc_6A42A0: CVarAd
+  loc_6A42A4: ImpAdCallI2 IsNull()
+  loc_6A42A9: FStI2 var_15E
+  loc_6A42AC: FLdRfVar var_184
+  loc_6A42AF: LitVarStr var_AC, "d_Param3"
+  loc_6A42B4: PopAdLdVar
+  loc_6A42B5: FLdRfVar var_180
+  loc_6A42B8: FLdPr Me
+  loc_6A42BB: MemLdPr global_68
+  loc_6A42BE:  = Me.Fields
+  loc_6A42C3: FLdPr var_180
+  loc_6A42C6: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A42CB: FLdZeroAd var_184
+  loc_6A42CE: CVarAd
+  loc_6A42D2: LitVarStr var_CC, vbNullString
+  loc_6A42D7: FStVarCopyObj var_194
+  loc_6A42DA: FLdRfVar var_194
+  loc_6A42DD: FLdI2 var_15E
+  loc_6A42E0: CVarBoolI2 var_BC
+  loc_6A42E4: FLdRfVar var_1B4
+  loc_6A42E7: ImpAdCallFPR4  = IIf(, , )
+  loc_6A42EC: FLdRfVar var_1B4
+  loc_6A42EF: CStrVarTmp
+  loc_6A42F0: FStStrNoPop var_1B8
+  loc_6A42F3: LitI4 3
+  loc_6A42F8: ILdI4 arg_14
+  loc_6A42FB: Ary1StStrCopy
+  loc_6A42FC: FFree1Str var_1B8
+  loc_6A42FF: FFreeAd var_164 = ""
+  loc_6A4306: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A4313: FLdRfVar var_168
+  loc_6A4316: LitVarStr var_9C, "d_Param4"
+  loc_6A431B: PopAdLdVar
+  loc_6A431C: FLdRfVar var_164
+  loc_6A431F: FLdPr Me
+  loc_6A4322: MemLdPr global_68
+  loc_6A4325:  = Me.Fields
+  loc_6A432A: FLdPr var_164
+  loc_6A432D: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A4332: FLdZeroAd var_168
+  loc_6A4335: CVarAd
+  loc_6A4339: ImpAdCallI2 IsNull()
+  loc_6A433E: FStI2 var_15E
+  loc_6A4341: FLdRfVar var_184
+  loc_6A4344: LitVarStr var_AC, "d_Param4"
+  loc_6A4349: PopAdLdVar
+  loc_6A434A: FLdRfVar var_180
+  loc_6A434D: FLdPr Me
+  loc_6A4350: MemLdPr global_68
+  loc_6A4353:  = Me.Fields
+  loc_6A4358: FLdPr var_180
+  loc_6A435B: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A4360: FLdZeroAd var_184
+  loc_6A4363: CVarAd
+  loc_6A4367: LitVarStr var_CC, vbNullString
+  loc_6A436C: FStVarCopyObj var_194
+  loc_6A436F: FLdRfVar var_194
+  loc_6A4372: FLdI2 var_15E
+  loc_6A4375: CVarBoolI2 var_BC
+  loc_6A4379: FLdRfVar var_1B4
+  loc_6A437C: ImpAdCallFPR4  = IIf(, , )
+  loc_6A4381: FLdRfVar var_1B4
+  loc_6A4384: CStrVarTmp
+  loc_6A4385: FStStrNoPop var_1B8
+  loc_6A4388: LitI4 4
+  loc_6A438D: ILdI4 arg_14
+  loc_6A4390: Ary1StStrCopy
+  loc_6A4391: FFree1Str var_1B8
+  loc_6A4394: FFreeAd var_164 = ""
+  loc_6A439B: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A43A8: FLdRfVar var_168
+  loc_6A43AB: LitVarStr var_9C, "d_Param5"
+  loc_6A43B0: PopAdLdVar
+  loc_6A43B1: FLdRfVar var_164
+  loc_6A43B4: FLdPr Me
+  loc_6A43B7: MemLdPr global_68
+  loc_6A43BA:  = Me.Fields
+  loc_6A43BF: FLdPr var_164
+  loc_6A43C2: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A43C7: FLdZeroAd var_168
+  loc_6A43CA: CVarAd
+  loc_6A43CE: ImpAdCallI2 IsNull()
+  loc_6A43D3: FStI2 var_15E
+  loc_6A43D6: FLdRfVar var_184
+  loc_6A43D9: LitVarStr var_AC, "d_Param5"
+  loc_6A43DE: PopAdLdVar
+  loc_6A43DF: FLdRfVar var_180
+  loc_6A43E2: FLdPr Me
+  loc_6A43E5: MemLdPr global_68
+  loc_6A43E8:  = Me.Fields
+  loc_6A43ED: FLdPr var_180
+  loc_6A43F0: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A43F5: FLdZeroAd var_184
+  loc_6A43F8: CVarAd
+  loc_6A43FC: LitVarStr var_CC, vbNullString
+  loc_6A4401: FStVarCopyObj var_194
+  loc_6A4404: FLdRfVar var_194
+  loc_6A4407: FLdI2 var_15E
+  loc_6A440A: CVarBoolI2 var_BC
+  loc_6A440E: FLdRfVar var_1B4
+  loc_6A4411: ImpAdCallFPR4  = IIf(, , )
+  loc_6A4416: FLdRfVar var_1B4
+  loc_6A4419: CStrVarTmp
+  loc_6A441A: FStStrNoPop var_1B8
+  loc_6A441D: LitI4 5
+  loc_6A4422: ILdI4 arg_14
+  loc_6A4425: Ary1StStrCopy
+  loc_6A4426: FFree1Str var_1B8
+  loc_6A4429: FFreeAd var_164 = ""
+  loc_6A4430: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A443D: FLdRfVar var_168
+  loc_6A4440: LitVarStr var_9C, "d_Param6"
+  loc_6A4445: PopAdLdVar
+  loc_6A4446: FLdRfVar var_164
+  loc_6A4449: FLdPr Me
+  loc_6A444C: MemLdPr global_68
+  loc_6A444F:  = Me.Fields
+  loc_6A4454: FLdPr var_164
+  loc_6A4457: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A445C: FLdZeroAd var_168
+  loc_6A445F: CVarAd
+  loc_6A4463: ImpAdCallI2 IsNull()
+  loc_6A4468: FStI2 var_15E
+  loc_6A446B: FLdRfVar var_184
+  loc_6A446E: LitVarStr var_AC, "d_Param6"
+  loc_6A4473: PopAdLdVar
+  loc_6A4474: FLdRfVar var_180
+  loc_6A4477: FLdPr Me
+  loc_6A447A: MemLdPr global_68
+  loc_6A447D:  = Me.Fields
+  loc_6A4482: FLdPr var_180
+  loc_6A4485: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A448A: FLdZeroAd var_184
+  loc_6A448D: CVarAd
+  loc_6A4491: LitVarStr var_CC, vbNullString
+  loc_6A4496: FStVarCopyObj var_194
+  loc_6A4499: FLdRfVar var_194
+  loc_6A449C: FLdI2 var_15E
+  loc_6A449F: CVarBoolI2 var_BC
+  loc_6A44A3: FLdRfVar var_1B4
+  loc_6A44A6: ImpAdCallFPR4  = IIf(, , )
+  loc_6A44AB: FLdRfVar var_1B4
+  loc_6A44AE: CStrVarTmp
+  loc_6A44AF: FStStrNoPop var_1B8
+  loc_6A44B2: LitI4 6
+  loc_6A44B7: ILdI4 arg_14
+  loc_6A44BA: Ary1StStrCopy
+  loc_6A44BB: FFree1Str var_1B8
+  loc_6A44BE: FFreeAd var_164 = ""
+  loc_6A44C5: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A44D2: FLdRfVar var_168
+  loc_6A44D5: LitVarStr var_9C, "d_Param7"
+  loc_6A44DA: PopAdLdVar
+  loc_6A44DB: FLdRfVar var_164
+  loc_6A44DE: FLdPr Me
+  loc_6A44E1: MemLdPr global_68
+  loc_6A44E4:  = Me.Fields
+  loc_6A44E9: FLdPr var_164
+  loc_6A44EC: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A44F1: FLdZeroAd var_168
+  loc_6A44F4: CVarAd
+  loc_6A44F8: ImpAdCallI2 IsNull()
+  loc_6A44FD: FStI2 var_15E
+  loc_6A4500: FLdRfVar var_184
+  loc_6A4503: LitVarStr var_AC, "d_Param7"
+  loc_6A4508: PopAdLdVar
+  loc_6A4509: FLdRfVar var_180
+  loc_6A450C: FLdPr Me
+  loc_6A450F: MemLdPr global_68
+  loc_6A4512:  = Me.Fields
+  loc_6A4517: FLdPr var_180
+  loc_6A451A: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A451F: FLdZeroAd var_184
+  loc_6A4522: CVarAd
+  loc_6A4526: LitVarStr var_CC, vbNullString
+  loc_6A452B: FStVarCopyObj var_194
+  loc_6A452E: FLdRfVar var_194
+  loc_6A4531: FLdI2 var_15E
+  loc_6A4534: CVarBoolI2 var_BC
+  loc_6A4538: FLdRfVar var_1B4
+  loc_6A453B: ImpAdCallFPR4  = IIf(, , )
+  loc_6A4540: FLdRfVar var_1B4
+  loc_6A4543: CStrVarTmp
+  loc_6A4544: FStStrNoPop var_1B8
+  loc_6A4547: LitI4 7
+  loc_6A454C: ILdI4 arg_14
+  loc_6A454F: Ary1StStrCopy
+  loc_6A4550: FFree1Str var_1B8
+  loc_6A4553: FFreeAd var_164 = ""
+  loc_6A455A: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A4567: FLdRfVar var_168
+  loc_6A456A: LitVarStr var_9C, "d_Param8"
+  loc_6A456F: PopAdLdVar
+  loc_6A4570: FLdRfVar var_164
+  loc_6A4573: FLdPr Me
+  loc_6A4576: MemLdPr global_68
+  loc_6A4579:  = Me.Fields
+  loc_6A457E: FLdPr var_164
+  loc_6A4581: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A4586: FLdZeroAd var_168
+  loc_6A4589: CVarAd
+  loc_6A458D: ImpAdCallI2 IsNull()
+  loc_6A4592: FStI2 var_15E
+  loc_6A4595: FLdRfVar var_184
+  loc_6A4598: LitVarStr var_AC, "d_Param8"
+  loc_6A459D: PopAdLdVar
+  loc_6A459E: FLdRfVar var_180
+  loc_6A45A1: FLdPr Me
+  loc_6A45A4: MemLdPr global_68
+  loc_6A45A7:  = Me.Fields
+  loc_6A45AC: FLdPr var_180
+  loc_6A45AF: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A45B4: FLdZeroAd var_184
+  loc_6A45B7: CVarAd
+  loc_6A45BB: LitVarStr var_CC, vbNullString
+  loc_6A45C0: FStVarCopyObj var_194
+  loc_6A45C3: FLdRfVar var_194
+  loc_6A45C6: FLdI2 var_15E
+  loc_6A45C9: CVarBoolI2 var_BC
+  loc_6A45CD: FLdRfVar var_1B4
+  loc_6A45D0: ImpAdCallFPR4  = IIf(, , )
+  loc_6A45D5: FLdRfVar var_1B4
+  loc_6A45D8: CStrVarTmp
+  loc_6A45D9: FStStrNoPop var_1B8
+  loc_6A45DC: LitI4 8
+  loc_6A45E1: ILdI4 arg_14
+  loc_6A45E4: Ary1StStrCopy
+  loc_6A45E5: FFree1Str var_1B8
+  loc_6A45E8: FFreeAd var_164 = ""
+  loc_6A45EF: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A45FC: FLdRfVar var_168
+  loc_6A45FF: LitVarStr var_9C, "d_Param9"
+  loc_6A4604: PopAdLdVar
+  loc_6A4605: FLdRfVar var_164
+  loc_6A4608: FLdPr Me
+  loc_6A460B: MemLdPr global_68
+  loc_6A460E:  = Me.Fields
+  loc_6A4613: FLdPr var_164
+  loc_6A4616: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A461B: FLdZeroAd var_168
+  loc_6A461E: CVarAd
+  loc_6A4622: ImpAdCallI2 IsNull()
+  loc_6A4627: FStI2 var_15E
+  loc_6A462A: FLdRfVar var_184
+  loc_6A462D: LitVarStr var_AC, "d_Param9"
+  loc_6A4632: PopAdLdVar
+  loc_6A4633: FLdRfVar var_180
+  loc_6A4636: FLdPr Me
+  loc_6A4639: MemLdPr global_68
+  loc_6A463C:  = Me.Fields
+  loc_6A4641: FLdPr var_180
+  loc_6A4644: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A4649: FLdZeroAd var_184
+  loc_6A464C: CVarAd
+  loc_6A4650: LitVarStr var_CC, vbNullString
+  loc_6A4655: FStVarCopyObj var_194
+  loc_6A4658: FLdRfVar var_194
+  loc_6A465B: FLdI2 var_15E
+  loc_6A465E: CVarBoolI2 var_BC
+  loc_6A4662: FLdRfVar var_1B4
+  loc_6A4665: ImpAdCallFPR4  = IIf(, , )
+  loc_6A466A: FLdRfVar var_1B4
+  loc_6A466D: CStrVarTmp
+  loc_6A466E: FStStrNoPop var_1B8
+  loc_6A4671: LitI4 9
+  loc_6A4676: ILdI4 arg_14
+  loc_6A4679: Ary1StStrCopy
+  loc_6A467A: FFree1Str var_1B8
+  loc_6A467D: FFreeAd var_164 = ""
+  loc_6A4684: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A4691: FLdRfVar var_168
+  loc_6A4694: LitVarStr var_9C, "d_Param10"
+  loc_6A4699: PopAdLdVar
+  loc_6A469A: FLdRfVar var_164
+  loc_6A469D: FLdPr Me
+  loc_6A46A0: MemLdPr global_68
+  loc_6A46A3:  = Me.Fields
+  loc_6A46A8: FLdPr var_164
+  loc_6A46AB: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A46B0: FLdZeroAd var_168
+  loc_6A46B3: CVarAd
+  loc_6A46B7: ImpAdCallI2 IsNull()
+  loc_6A46BC: FStI2 var_15E
+  loc_6A46BF: FLdRfVar var_184
+  loc_6A46C2: LitVarStr var_AC, "d_Param10"
+  loc_6A46C7: PopAdLdVar
+  loc_6A46C8: FLdRfVar var_180
+  loc_6A46CB: FLdPr Me
+  loc_6A46CE: MemLdPr global_68
+  loc_6A46D1:  = Me.Fields
+  loc_6A46D6: FLdPr var_180
+  loc_6A46D9: from_stack_2 = Me.Item(from_stack_1)
+  loc_6A46DE: FLdZeroAd var_184
+  loc_6A46E1: CVarAd
+  loc_6A46E5: LitVarStr var_CC, vbNullString
+  loc_6A46EA: FStVarCopyObj var_194
+  loc_6A46ED: FLdRfVar var_194
+  loc_6A46F0: FLdI2 var_15E
+  loc_6A46F3: CVarBoolI2 var_BC
+  loc_6A46F7: FLdRfVar var_1B4
+  loc_6A46FA: ImpAdCallFPR4  = IIf(, , )
+  loc_6A46FF: FLdRfVar var_1B4
+  loc_6A4702: CStrVarTmp
+  loc_6A4703: FStStrNoPop var_1B8
+  loc_6A4706: LitI4 &HA
+  loc_6A470B: ILdI4 arg_14
+  loc_6A470E: Ary1StStrCopy
+  loc_6A470F: FFree1Str var_1B8
+  loc_6A4712: FFreeAd var_164 = ""
+  loc_6A4719: FFreeVar var_178 = "": var_BC = "": var_194 = "": var_1A4 = ""
+  loc_6A4726: ExitProcCbHresult
+  loc_6A472C: LitStr vbNullString
+  loc_6A472F: FStStrCopy var_88
+  loc_6A4732: ExitProcCbHresult
+End Function
+
+Private Function Proc_79_2_5CD1F4() '5CD1F4
+  'Data Table: 4046B0
+  loc_5CD1E4: FLdPr Me
+  loc_5CD1E7: MemLdI2 global_78
+  loc_5CD1EA: FStI2 var_86
+  loc_5CD1ED: ExitProcCbHresult
+End Function
+
+Private Function Proc_79_3_5CD274() '5CD274
+  'Data Table: 4046B0
+  loc_5CD264: FLdPr Me
+  loc_5CD267: MemLdI2 global_76
+  loc_5CD26A: FStI2 var_86
+  loc_5CD26D: ExitProcCbHresult
+End Function
+
+Private Function Proc_79_4_689128(arg_C, arg_10, arg_14, arg_18, arg_1C) '689128
+  'Data Table: 4046B0
+  loc_688BC0: OnErrorGoto loc_6890A0
+  loc_688BC3: FLdPr Me
+  loc_688BC6: MemLdPr global_60
+  loc_688BC9: Me.BeginTrans
+  loc_688BCE: LitVar_Missing var_154
+  loc_688BD1: PopAdLdVar
+  loc_688BD2: LitVar_Missing var_144
+  loc_688BD5: PopAdLdVar
+  loc_688BD6: LitVar_Missing var_134
+  loc_688BD9: PopAdLdVar
+  loc_688BDA: LitVar_Missing var_124
+  loc_688BDD: PopAdLdVar
+  loc_688BDE: LitVar_Missing var_114
+  loc_688BE1: PopAdLdVar
+  loc_688BE2: LitVar_Missing var_104
+  loc_688BE5: PopAdLdVar
+  loc_688BE6: LitVar_Missing var_F4
+  loc_688BE9: PopAdLdVar
+  loc_688BEA: LitVar_Missing var_E4
+  loc_688BED: PopAdLdVar
+  loc_688BEE: LitVar_Missing var_D4
+  loc_688BF1: PopAdLdVar
+  loc_688BF2: LitVar_Missing var_C4
+  loc_688BF5: PopAdLdVar
+  loc_688BF6: LitVar_Missing var_B4
+  loc_688BF9: PopAdLdVar
+  loc_688BFA: ILdI4 arg_10
+  loc_688BFD: CVarI4
+  loc_688C01: PopAdLdVar
+  loc_688C02: ILdI2 arg_C
+  loc_688C05: CVarI2 var_94
+  loc_688C08: PopAdLdVar
+  loc_688C09: LitStr "="
+  loc_688C0C: FLdPr Me
+  loc_688C0F: MemLdPr global_64
+  loc_688C12: Me.Seek from_stack_1, from_stack_2, from_stack_3, from_stack_4, from_stack_5, from_stack_6, from_stack_7, from_stack_8, from_stack_9, from_stack_10v, from_stack_11v, from_stack_12v, from_stack_13v, from_stack_14v
+  loc_688C17: FLdRfVar var_156
+  loc_688C1A: FLdPr Me
+  loc_688C1D: MemLdPr global_64
+  loc_688C20:  = Me.NoMatch
+  loc_688C25: FLdI2 var_156
+  loc_688C28: LitI2_Byte &HFF
+  loc_688C2A: EqI2
+  loc_688C2B: BranchF loc_688C3C
+  loc_688C2E: FLdPr Me
+  loc_688C31: MemLdPr global_64
+  loc_688C34: Me.AddNew
+  loc_688C39: Branch loc_688C47
+  loc_688C3C: FLdPr Me
+  loc_688C3F: MemLdPr global_64
+  loc_688C42: Me.Edit
+  loc_688C47: ILdI2 arg_C
+  loc_688C4A: CVarI2 var_A4
+  loc_688C4D: PopAdLdVar
+  loc_688C4E: LitVarStr var_94, "c_ModuleID"
+  loc_688C53: PopAdLdVar
+  loc_688C54: FLdPr Me
+  loc_688C57: MemLdPr global_64
+  loc_688C5A: Me.Collect = from_stack_1
+  loc_688C5F: ILdI4 arg_10
+  loc_688C62: CVarI4
+  loc_688C66: PopAdLdVar
+  loc_688C67: LitVarStr var_94, "c_MsgID"
+  loc_688C6C: PopAdLdVar
+  loc_688C6D: FLdPr Me
+  loc_688C70: MemLdPr global_64
+  loc_688C73: Me.Collect = from_stack_1
+  loc_688C78: ILdI4 arg_14
+  loc_688C7B: CVarStr var_A4
+  loc_688C7E: PopAdLdVar
+  loc_688C7F: LitVarStr var_94, "d_MsgDesc"
+  loc_688C84: PopAdLdVar
+  loc_688C85: FLdPr Me
+  loc_688C88: MemLdPr global_64
+  loc_688C8B: Me.Collect = from_stack_1
+  loc_688C90: LitI2_Byte 0
+  loc_688C92: LitI4 1
+  loc_688C97: FLdPr Me
+  loc_688C9A: MemLdPr global_64
+  loc_688C9D: Me.Update from_stack_1, from_stack_2b
+  loc_688CA2: LitI4 0
+  loc_688CA7: FLdPr Me
+  loc_688CAA: MemLdPr global_60
+  loc_688CAD: Me.CommitTrans from_stack_1
+  loc_688CB2: FLdPr Me
+  loc_688CB5: MemLdPr global_60
+  loc_688CB8: Me.BeginTrans
+  loc_688CBD: LitVar_Missing var_154
+  loc_688CC0: PopAdLdVar
+  loc_688CC1: LitVar_Missing var_144
+  loc_688CC4: PopAdLdVar
+  loc_688CC5: LitVar_Missing var_134
+  loc_688CC8: PopAdLdVar
+  loc_688CC9: LitVar_Missing var_124
+  loc_688CCC: PopAdLdVar
+  loc_688CCD: LitVar_Missing var_114
+  loc_688CD0: PopAdLdVar
+  loc_688CD1: LitVar_Missing var_104
+  loc_688CD4: PopAdLdVar
+  loc_688CD5: LitVar_Missing var_F4
+  loc_688CD8: PopAdLdVar
+  loc_688CD9: LitVar_Missing var_E4
+  loc_688CDC: PopAdLdVar
+  loc_688CDD: LitVar_Missing var_D4
+  loc_688CE0: PopAdLdVar
+  loc_688CE1: LitVar_Missing var_C4
+  loc_688CE4: PopAdLdVar
+  loc_688CE5: LitVar_Missing var_B4
+  loc_688CE8: PopAdLdVar
+  loc_688CE9: ILdI4 arg_10
+  loc_688CEC: CVarI4
+  loc_688CF0: PopAdLdVar
+  loc_688CF1: ILdI2 arg_C
+  loc_688CF4: CVarI2 var_94
+  loc_688CF7: PopAdLdVar
+  loc_688CF8: LitStr "="
+  loc_688CFB: FLdPr Me
+  loc_688CFE: MemLdPr global_68
+  loc_688D01: Me.Seek from_stack_1, from_stack_2, from_stack_3, from_stack_4, from_stack_5, from_stack_6, from_stack_7, from_stack_8, from_stack_9, from_stack_10v, from_stack_11v, from_stack_12v, from_stack_13v, from_stack_14v
+  loc_688D06: FLdRfVar var_156
+  loc_688D09: FLdPr Me
+  loc_688D0C: MemLdPr global_68
+  loc_688D0F:  = Me.NoMatch
+  loc_688D14: FLdI2 var_156
+  loc_688D17: LitI2_Byte &HFF
+  loc_688D19: EqI2
+  loc_688D1A: BranchF loc_688D2B
+  loc_688D1D: FLdPr Me
+  loc_688D20: MemLdPr global_68
+  loc_688D23: Me.AddNew
+  loc_688D28: Branch loc_688D36
+  loc_688D2B: FLdPr Me
+  loc_688D2E: MemLdPr global_68
+  loc_688D31: Me.Edit
+  loc_688D36: ILdI2 arg_C
+  loc_688D39: CVarI2 var_A4
+  loc_688D3C: PopAdLdVar
+  loc_688D3D: LitVarStr var_94, "c_ModuleID"
+  loc_688D42: PopAdLdVar
+  loc_688D43: FLdPr Me
+  loc_688D46: MemLdPr global_68
+  loc_688D49: Me.Collect = from_stack_1
+  loc_688D4E: ILdI4 arg_10
+  loc_688D51: CVarI4
+  loc_688D55: PopAdLdVar
+  loc_688D56: LitVarStr var_94, "c_MsgID"
+  loc_688D5B: PopAdLdVar
+  loc_688D5C: FLdPr Me
+  loc_688D5F: MemLdPr global_68
+  loc_688D62: Me.Collect = from_stack_1
+  loc_688D67: LitVarStr var_B4, vbNullString
+  loc_688D6C: FStVarCopyObj var_16C
+  loc_688D6F: FLdRfVar var_16C
+  loc_688D72: LitI4 1
+  loc_688D77: ILdI4 arg_18
+  loc_688D7A: AryLock
+  loc_688D7D: Ary1LdRf
+  loc_688D7E: CVarRef
+  loc_688D83: ILdI2 arg_1C
+  loc_688D86: LitI2_Byte 1
+  loc_688D88: GeI2
+  loc_688D89: CVarBoolI2 var_94
+  loc_688D8D: FLdRfVar var_17C
+  loc_688D90: ImpAdCallFPR4  = IIf(, , )
+  loc_688D95: AryUnlock
+  loc_688D98: FLdVar var_17C
+  loc_688D9C: LitVarStr var_C4, "d_Param1"
+  loc_688DA1: PopAdLdVar
+  loc_688DA2: FLdPr Me
+  loc_688DA5: MemLdPr global_68
+  loc_688DA8: Me.Collect = from_stack_1
+  loc_688DAD: FFreeVar var_94 = "": var_16C = ""
+  loc_688DB6: LitVarStr var_B4, vbNullString
+  loc_688DBB: FStVarCopyObj var_16C
+  loc_688DBE: FLdRfVar var_16C
+  loc_688DC1: LitI4 2
+  loc_688DC6: ILdI4 arg_18
+  loc_688DC9: AryLock
+  loc_688DCC: Ary1LdRf
+  loc_688DCD: CVarRef
+  loc_688DD2: ILdI2 arg_1C
+  loc_688DD5: LitI2_Byte 2
+  loc_688DD7: GeI2
+  loc_688DD8: CVarBoolI2 var_94
+  loc_688DDC: FLdRfVar var_17C
+  loc_688DDF: ImpAdCallFPR4  = IIf(, , )
+  loc_688DE4: AryUnlock
+  loc_688DE7: FLdVar var_17C
+  loc_688DEB: LitVarStr var_C4, "d_Param2"
+  loc_688DF0: PopAdLdVar
+  loc_688DF1: FLdPr Me
+  loc_688DF4: MemLdPr global_68
+  loc_688DF7: Me.Collect = from_stack_1
+  loc_688DFC: FFreeVar var_94 = "": var_16C = ""
+  loc_688E05: LitVarStr var_B4, vbNullString
+  loc_688E0A: FStVarCopyObj var_16C
+  loc_688E0D: FLdRfVar var_16C
+  loc_688E10: LitI4 3
+  loc_688E15: ILdI4 arg_18
+  loc_688E18: AryLock
+  loc_688E1B: Ary1LdRf
+  loc_688E1C: CVarRef
+  loc_688E21: ILdI2 arg_1C
+  loc_688E24: LitI2_Byte 3
+  loc_688E26: GeI2
+  loc_688E27: CVarBoolI2 var_94
+  loc_688E2B: FLdRfVar var_17C
+  loc_688E2E: ImpAdCallFPR4  = IIf(, , )
+  loc_688E33: AryUnlock
+  loc_688E36: FLdVar var_17C
+  loc_688E3A: LitVarStr var_C4, "d_Param3"
+  loc_688E3F: PopAdLdVar
+  loc_688E40: FLdPr Me
+  loc_688E43: MemLdPr global_68
+  loc_688E46: Me.Collect = from_stack_1
+  loc_688E4B: FFreeVar var_94 = "": var_16C = ""
+  loc_688E54: LitVarStr var_B4, vbNullString
+  loc_688E59: FStVarCopyObj var_16C
+  loc_688E5C: FLdRfVar var_16C
+  loc_688E5F: LitI4 4
+  loc_688E64: ILdI4 arg_18
+  loc_688E67: AryLock
+  loc_688E6A: Ary1LdRf
+  loc_688E6B: CVarRef
+  loc_688E70: ILdI2 arg_1C
+  loc_688E73: LitI2_Byte 4
+  loc_688E75: GeI2
+  loc_688E76: CVarBoolI2 var_94
+  loc_688E7A: FLdRfVar var_17C
+  loc_688E7D: ImpAdCallFPR4  = IIf(, , )
+  loc_688E82: AryUnlock
+  loc_688E85: FLdVar var_17C
+  loc_688E89: LitVarStr var_C4, "d_Param4"
+  loc_688E8E: PopAdLdVar
+  loc_688E8F: FLdPr Me
+  loc_688E92: MemLdPr global_68
+  loc_688E95: Me.Collect = from_stack_1
+  loc_688E9A: FFreeVar var_94 = "": var_16C = ""
+  loc_688EA3: LitVarStr var_B4, vbNullString
+  loc_688EA8: FStVarCopyObj var_16C
+  loc_688EAB: FLdRfVar var_16C
+  loc_688EAE: LitI4 5
+  loc_688EB3: ILdI4 arg_18
+  loc_688EB6: AryLock
+  loc_688EB9: Ary1LdRf
+  loc_688EBA: CVarRef
+  loc_688EBF: ILdI2 arg_1C
+  loc_688EC2: LitI2_Byte 5
+  loc_688EC4: GeI2
+  loc_688EC5: CVarBoolI2 var_94
+  loc_688EC9: FLdRfVar var_17C
+  loc_688ECC: ImpAdCallFPR4  = IIf(, , )
+  loc_688ED1: AryUnlock
+  loc_688ED4: FLdVar var_17C
+  loc_688ED8: LitVarStr var_C4, "d_Param5"
+  loc_688EDD: PopAdLdVar
+  loc_688EDE: FLdPr Me
+  loc_688EE1: MemLdPr global_68
+  loc_688EE4: Me.Collect = from_stack_1
+  loc_688EE9: FFreeVar var_94 = "": var_16C = ""
+  loc_688EF2: LitVarStr var_B4, vbNullString
+  loc_688EF7: FStVarCopyObj var_16C
+  loc_688EFA: FLdRfVar var_16C
+  loc_688EFD: LitI4 6
+  loc_688F02: ILdI4 arg_18
+  loc_688F05: AryLock
+  loc_688F08: Ary1LdRf
+  loc_688F09: CVarRef
+  loc_688F0E: ILdI2 arg_1C
+  loc_688F11: LitI2_Byte 6
+  loc_688F13: GeI2
+  loc_688F14: CVarBoolI2 var_94
+  loc_688F18: FLdRfVar var_17C
+  loc_688F1B: ImpAdCallFPR4  = IIf(, , )
+  loc_688F20: AryUnlock
+  loc_688F23: FLdVar var_17C
+  loc_688F27: LitVarStr var_C4, "d_Param6"
+  loc_688F2C: PopAdLdVar
+  loc_688F2D: FLdPr Me
+  loc_688F30: MemLdPr global_68
+  loc_688F33: Me.Collect = from_stack_1
+  loc_688F38: FFreeVar var_94 = "": var_16C = ""
+  loc_688F41: LitVarStr var_B4, vbNullString
+  loc_688F46: FStVarCopyObj var_16C
+  loc_688F49: FLdRfVar var_16C
+  loc_688F4C: LitI4 7
+  loc_688F51: ILdI4 arg_18
+  loc_688F54: AryLock
+  loc_688F57: Ary1LdRf
+  loc_688F58: CVarRef
+  loc_688F5D: ILdI2 arg_1C
+  loc_688F60: LitI2_Byte 7
+  loc_688F62: GeI2
+  loc_688F63: CVarBoolI2 var_94
+  loc_688F67: FLdRfVar var_17C
+  loc_688F6A: ImpAdCallFPR4  = IIf(, , )
+  loc_688F6F: AryUnlock
+  loc_688F72: FLdVar var_17C
+  loc_688F76: LitVarStr var_C4, "d_Param7"
+  loc_688F7B: PopAdLdVar
+  loc_688F7C: FLdPr Me
+  loc_688F7F: MemLdPr global_68
+  loc_688F82: Me.Collect = from_stack_1
+  loc_688F87: FFreeVar var_94 = "": var_16C = ""
+  loc_688F90: LitVarStr var_B4, vbNullString
+  loc_688F95: FStVarCopyObj var_16C
+  loc_688F98: FLdRfVar var_16C
+  loc_688F9B: LitI4 8
+  loc_688FA0: ILdI4 arg_18
+  loc_688FA3: AryLock
+  loc_688FA6: Ary1LdRf
+  loc_688FA7: CVarRef
+  loc_688FAC: ILdI2 arg_1C
+  loc_688FAF: LitI2_Byte 8
+  loc_688FB1: GeI2
+  loc_688FB2: CVarBoolI2 var_94
+  loc_688FB6: FLdRfVar var_17C
+  loc_688FB9: ImpAdCallFPR4  = IIf(, , )
+  loc_688FBE: AryUnlock
+  loc_688FC1: FLdVar var_17C
+  loc_688FC5: LitVarStr var_C4, "d_Param8"
+  loc_688FCA: PopAdLdVar
+  loc_688FCB: FLdPr Me
+  loc_688FCE: MemLdPr global_68
+  loc_688FD1: Me.Collect = from_stack_1
+  loc_688FD6: FFreeVar var_94 = "": var_16C = ""
+  loc_688FDF: LitVarStr var_B4, vbNullString
+  loc_688FE4: FStVarCopyObj var_16C
+  loc_688FE7: FLdRfVar var_16C
+  loc_688FEA: LitI4 9
+  loc_688FEF: ILdI4 arg_18
+  loc_688FF2: AryLock
+  loc_688FF5: Ary1LdRf
+  loc_688FF6: CVarRef
+  loc_688FFB: ILdI2 arg_1C
+  loc_688FFE: LitI2_Byte 9
+  loc_689000: GeI2
+  loc_689001: CVarBoolI2 var_94
+  loc_689005: FLdRfVar var_17C
+  loc_689008: ImpAdCallFPR4  = IIf(, , )
+  loc_68900D: AryUnlock
+  loc_689010: FLdVar var_17C
+  loc_689014: LitVarStr var_C4, "d_Param9"
+  loc_689019: PopAdLdVar
+  loc_68901A: FLdPr Me
+  loc_68901D: MemLdPr global_68
+  loc_689020: Me.Collect = from_stack_1
+  loc_689025: FFreeVar var_94 = "": var_16C = ""
+  loc_68902E: LitVarStr var_B4, vbNullString
+  loc_689033: FStVarCopyObj var_16C
+  loc_689036: FLdRfVar var_16C
+  loc_689039: LitI4 &HA
+  loc_68903E: ILdI4 arg_18
+  loc_689041: AryLock
+  loc_689044: Ary1LdRf
+  loc_689045: CVarRef
+  loc_68904A: ILdI2 arg_1C
+  loc_68904D: LitI2_Byte &HA
+  loc_68904F: GeI2
+  loc_689050: CVarBoolI2 var_94
+  loc_689054: FLdRfVar var_17C
+  loc_689057: ImpAdCallFPR4  = IIf(, , )
+  loc_68905C: AryUnlock
+  loc_68905F: FLdVar var_17C
+  loc_689063: LitVarStr var_C4, "d_Param10"
+  loc_689068: PopAdLdVar
+  loc_689069: FLdPr Me
+  loc_68906C: MemLdPr global_68
+  loc_68906F: Me.Collect = from_stack_1
+  loc_689074: FFreeVar var_94 = "": var_16C = ""
+  loc_68907D: LitI2_Byte 0
+  loc_68907F: LitI4 1
+  loc_689084: FLdPr Me
+  loc_689087: MemLdPr global_68
+  loc_68908A: Me.Update from_stack_1, from_stack_2b
+  loc_68908F: LitI4 0
+  loc_689094: FLdPr Me
+  loc_689097: MemLdPr global_60
+  loc_68909A: Me.CommitTrans from_stack_1
+  loc_68909F: ExitProcHresult
+  loc_6890A0: FLdPr Me
+  loc_6890A3: MemLdPr global_60
+  loc_6890A6: Me.Rollback
+  loc_6890AB: FLdRfVar var_184
+  loc_6890AE: ImpAdCallI2 Err 'rtcErrObj
+  loc_6890B3: FStAdFunc var_180
+  loc_6890B6: FLdPr var_180
+  loc_6890B9:  = Err.Number
+  loc_6890BE: FLdRfVar var_194
+  loc_6890C1: ImpAdCallI2 Err 'rtcErrObj
+  loc_6890C6: FStAdFunc var_190
+  loc_6890C9: FLdPr var_190
+  loc_6890CC:  = Err.Description
+  loc_6890D1: LitVar_Missing var_1B8
+  loc_6890D4: LitVar_Missing var_1A8
+  loc_6890D7: LitVarStr var_94, "Error appending message to language database"
+  loc_6890DC: FStVarCopyObj var_17C
+  loc_6890DF: FLdRfVar var_17C
+  loc_6890E2: LitI4 &H10
+  loc_6890E7: LitStr "Error "
+  loc_6890EA: ILdRf var_184
+  loc_6890ED: CStrI4
+  loc_6890EF: FStStrNoPop var_188
+  loc_6890F2: ConcatStr
+  loc_6890F3: FStStrNoPop var_18C
+  loc_6890F6: LitStr " - "
+  loc_6890F9: ConcatStr
+  loc_6890FA: FStStrNoPop var_198
+  loc_6890FD: ILdRf var_194
+  loc_689100: ConcatStr
+  loc_689101: CVarStr var_16C
+  loc_689104: ImpAdCallFPR4 MsgBox(, , , , )
+  loc_689109: FFreeStr var_188 = "": var_18C = "": var_198 = ""
+  loc_689114: FFreeAd var_180 = ""
+  loc_68911B: FFreeVar var_16C = "": var_17C = "": var_1A8 = ""
+  loc_689126: ExitProcHresult
+End Function
+
+Private Function Proc_79_5_5CA050() '5CA050
+  'Data Table: 4046B0
+  loc_5CA04C: ExitProcHresult
+End Function
+
+Private Function Proc_79_6_6205DC(arg_C) '6205DC
+  'Data Table: 4046B0
+  loc_6204A8: ZeroRetVal
+  loc_6204AA: OnErrorGoto loc_620550
+  loc_6204AD: LitVar_Missing var_158
+  loc_6204B0: PopAdLdVar
+  loc_6204B1: LitVar_Missing var_148
+  loc_6204B4: PopAdLdVar
+  loc_6204B5: LitVar_Missing var_138
+  loc_6204B8: PopAdLdVar
+  loc_6204B9: LitVar_Missing var_128
+  loc_6204BC: PopAdLdVar
+  loc_6204BD: LitVar_Missing var_118
+  loc_6204C0: PopAdLdVar
+  loc_6204C1: LitVar_Missing var_108
+  loc_6204C4: PopAdLdVar
+  loc_6204C5: LitVar_Missing var_F8
+  loc_6204C8: PopAdLdVar
+  loc_6204C9: LitVar_Missing var_E8
+  loc_6204CC: PopAdLdVar
+  loc_6204CD: LitVar_Missing var_D8
+  loc_6204D0: PopAdLdVar
+  loc_6204D1: LitVar_Missing var_C8
+  loc_6204D4: PopAdLdVar
+  loc_6204D5: LitVar_Missing var_B8
+  loc_6204D8: PopAdLdVar
+  loc_6204D9: LitVar_Missing var_A8
+  loc_6204DC: PopAdLdVar
+  loc_6204DD: ILdI2 arg_C
+  loc_6204E0: CVarI2 var_98
+  loc_6204E3: PopAdLdVar
+  loc_6204E4: LitStr "="
+  loc_6204E7: FLdPr Me
+  loc_6204EA: MemLdPr global_72
+  loc_6204ED: Me.Seek from_stack_1, from_stack_2, from_stack_3, from_stack_4, from_stack_5, from_stack_6, from_stack_7, from_stack_8, from_stack_9, from_stack_10v, from_stack_11v, from_stack_12v, from_stack_13v, from_stack_14v
+  loc_6204F2: FLdRfVar var_15A
+  loc_6204F5: FLdPr Me
+  loc_6204F8: MemLdPr global_72
+  loc_6204FB:  = Me.NoMatch
+  loc_620500: FLdI2 var_15A
+  loc_620503: BranchF loc_62050F
+  loc_620506: LitStr "Module Description Not Found"
+  loc_620509: FStStrCopy var_88
+  loc_62050C: Branch loc_62054A
+  loc_62050F: FLdRfVar var_174
+  loc_620512: FLdRfVar var_164
+  loc_620515: LitVarStr var_98, "d_ModDesc"
+  loc_62051A: PopAdLdVar
+  loc_62051B: FLdRfVar var_160
+  loc_62051E: FLdPr Me
+  loc_620521: MemLdPr global_72
+  loc_620524:  = Me.Fields
+  loc_620529: FLdPr var_160
+  loc_62052C: from_stack_2 = Me.Item(from_stack_1)
+  loc_620531: FLdPr var_164
+  loc_620534:  = Me.Value
+  loc_620539: FLdRfVar var_174
+  loc_62053C: CStrVarTmp
+  loc_62053D: FStStr var_88
+  loc_620540: FFreeAd var_160 = ""
+  loc_620547: FFree1Var var_174 = ""
+  loc_62054A: ExitProcCbHresult
+  loc_620550: FLdRfVar var_178
+  loc_620553: ImpAdCallI2 Err 'rtcErrObj
+  loc_620558: FStAdFunc var_160
+  loc_62055B: FLdPr var_160
+  loc_62055E:  = Err.Number
+  loc_620563: FLdRfVar var_188
+  loc_620566: ImpAdCallI2 Err 'rtcErrObj
+  loc_62056B: FStAdFunc var_164
+  loc_62056E: FLdPr var_164
+  loc_620571:  = Err.Description
+  loc_620576: LitVar_Missing var_1BC
+  loc_620579: LitVar_Missing var_1AC
+  loc_62057C: LitVarStr var_98, "Error opening the language database"
+  loc_620581: FStVarCopyObj var_19C
+  loc_620584: FLdRfVar var_19C
+  loc_620587: LitI4 &H40
+  loc_62058C: LitStr "Error "
+  loc_62058F: LitStr " "
+  loc_620592: ConcatStr
+  loc_620593: FStStrNoPop var_17C
+  loc_620596: ILdRf var_178
+  loc_620599: CStrI4
+  loc_62059B: FStStrNoPop var_180
+  loc_62059E: ConcatStr
+  loc_62059F: FStStrNoPop var_184
+  loc_6205A2: LitStr " - "
+  loc_6205A5: ConcatStr
+  loc_6205A6: FStStrNoPop var_18C
+  loc_6205A9: ILdRf var_188
+  loc_6205AC: ConcatStr
+  loc_6205AD: CVarStr var_174
+  loc_6205B0: ImpAdCallFPR4 MsgBox(, , , , )
+  loc_6205B5: FFreeStr var_17C = "": var_180 = "": var_184 = "": var_18C = ""
+  loc_6205C2: FFreeAd var_160 = ""
+  loc_6205C9: FFreeVar var_174 = "": var_19C = "": var_1AC = ""
+  loc_6205D4: ExitProcCbHresult
+End Function

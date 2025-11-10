@@ -1,0 +1,1855 @@
+
+Private Function Proc_159_0_7028C8() '7028C8
+  'Data Table: 403450
+  loc_7016E0: LitI2_Byte 3
+  loc_7016E2: CUI1I2
+  loc_7016E4: FStUI1 var_8E
+  loc_7016E8: LitI2_Byte 0
+  loc_7016EA: FStI2 var_8A
+  loc_7016ED: LitI2_Byte 0
+  loc_7016EF: FStI2 var_8C
+  loc_7016F2: FLdRfVar var_96
+  loc_7016F5: FLdRfVar var_8A
+  loc_7016F8: FLdRfVar var_94
+  loc_7016FB: ImpAdLdRf MemVar_74C760
+  loc_7016FE: NewIfNullPr Formx
+  loc_701701: from_stack_1v = Formx.global_4589716Get()
+  loc_701706: FLdPr var_94
+  loc_701709: Call 0.Method_arg_388 ()
+  loc_70170E: FLdI2 var_96
+  loc_701711: NotI4
+  loc_701712: FFree1Ad var_94
+  loc_701715: BranchF loc_70174B
+  loc_701718: FLdRfVar var_A8
+  loc_70171B: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701720: FLdRfVar var_A8
+  loc_701723: CBoolVarNull
+  loc_701725: FFree1Var var_A8 = ""
+  loc_701728: BranchF loc_701748
+  loc_70172B: LitVar_FALSE
+  loc_70172F: PopAdLdVar
+  loc_701730: ImpAdLdRf MemVar_74C760
+  loc_701733: NewIfNullPr Formx
+  loc_701736: VCallAd Control_ID_PanelCierres
+  loc_701739: FStAdFunc var_94
+  loc_70173C: FLdPr var_94
+  loc_70173F: LateIdSt
+  loc_701744: FFree1Ad var_94
+  loc_701747: ExitProcHresult
+  loc_701748: Branch loc_7016F2
+  loc_70174B: FLdI2 var_8A
+  loc_70174E: PopTmpLdAd2 var_96
+  loc_701751: ImpAdLdRf MemVar_74C6D8
+  loc_701754: NewIfNullPr CCEMLicence
+  loc_70175C: FLdI2 var_8A
+  loc_70175F: LitI2_Byte &HFF
+  loc_701761: EqI2
+  loc_701762: BranchF loc_7028C4
+  loc_701765: FLdI2 var_8C
+  loc_701768: LitI2_Byte &HFF
+  loc_70176A: NeI2
+  loc_70176B: BranchF loc_70182A
+  loc_70176E: FLdRfVar var_96
+  loc_701771: FLdRfVar var_8C
+  loc_701774: FLdRfVar var_94
+  loc_701777: ImpAdLdRf MemVar_74C760
+  loc_70177A: NewIfNullPr Formx
+  loc_70177D: from_stack_1v = Formx.global_4589716Get()
+  loc_701782: FLdPr var_94
+  loc_701785: Call 0.Method_arg_390 ()
+  loc_70178A: FLdI2 var_96
+  loc_70178D: NotI4
+  loc_70178E: FFree1Ad var_94
+  loc_701791: BranchF loc_7017C7
+  loc_701794: FLdRfVar var_A8
+  loc_701797: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_70179C: FLdRfVar var_A8
+  loc_70179F: CBoolVarNull
+  loc_7017A1: FFree1Var var_A8 = ""
+  loc_7017A4: BranchF loc_7017C4
+  loc_7017A7: LitVar_FALSE
+  loc_7017AB: PopAdLdVar
+  loc_7017AC: ImpAdLdRf MemVar_74C760
+  loc_7017AF: NewIfNullPr Formx
+  loc_7017B2: VCallAd Control_ID_PanelCierres
+  loc_7017B5: FStAdFunc var_94
+  loc_7017B8: FLdPr var_94
+  loc_7017BB: LateIdSt
+  loc_7017C0: FFree1Ad var_94
+  loc_7017C3: ExitProcHresult
+  loc_7017C4: Branch loc_70176E
+  loc_7017C7: FLdI2 var_8C
+  loc_7017CA: LitI2_Byte 0
+  loc_7017CC: EqI2
+  loc_7017CD: BranchF loc_701827
+  loc_7017D0: FLdUI1
+  loc_7017D4: CI2UI1
+  loc_7017D6: LitI2_Byte 3
+  loc_7017D8: GeI2
+  loc_7017D9: BranchF loc_70180D
+  loc_7017DC: LitVar_Missing var_118
+  loc_7017DF: LitVar_Missing var_F8
+  loc_7017E2: LitVar_Missing var_D8
+  loc_7017E5: LitI4 &H10
+  loc_7017EA: LitVarStr var_B8, "Error, no se detectó la presencia de un hardlock."
+  loc_7017EF: FStVarCopyObj var_A8
+  loc_7017F2: FLdRfVar var_A8
+  loc_7017F5: ImpAdCallFPR4 MsgBox(, , , , )
+  loc_7017FA: FFreeVar var_A8 = "": var_D8 = "": var_F8 = ""
+  loc_701805: LitI2_Byte 0
+  loc_701807: CUI1I2
+  loc_701809: FStUI1 var_8E
+  loc_70180D: FLdUI1
+  loc_701811: CI2UI1
+  loc_701813: LitI2_Byte 1
+  loc_701815: AddI2
+  loc_701816: CUI1I2
+  loc_701818: FStUI1 var_8E
+  loc_70181C: LitI4 &H7D0
+  loc_701821: ImpAdCallFPR4 Sleep()
+  loc_701826: SetLastSystemError
+  loc_701827: Branch loc_701765
+  loc_70182A: LitI2_Byte 3
+  loc_70182C: CUI1I2
+  loc_70182E: FStUI1 var_8E
+  loc_701832: FLdI2 var_8C
+  loc_701835: PopTmpLdAd2 var_96
+  loc_701838: ImpAdLdRf MemVar_74C6D8
+  loc_70183B: NewIfNullPr CCEMLicence
+  loc_70183E: Reset
+  loc_701843: FLdRfVar var_96
+  loc_701846: ImpAdLdRf MemVar_74C6D8
+  loc_701849: NewIfNullPr CCEMLicence
+  loc_70184C: Set from_stack_2 = CCEMLicence(from_stack_1)
+  loc_701851: FLdI2 var_96
+  loc_701854: LitI2_Byte &HFF
+  loc_701856: EqI2
+  loc_701857: BranchF loc_7028C4
+  loc_70185A: FLdRfVar var_96
+  loc_70185D: FLdRfVar var_88
+  loc_701860: LitStr "PUMPS"
+  loc_701863: FStStrCopy var_120
+  loc_701866: FLdRfVar var_120
+  loc_701869: LitStr "CONFIGURACION"
+  loc_70186C: FStStrCopy var_11C
+  loc_70186F: FLdRfVar var_11C
+  loc_701872: FLdRfVar var_94
+  loc_701875: ImpAdLdRf MemVar_74C760
+  loc_701878: NewIfNullPr Formx
+  loc_70187B: from_stack_1v = Formx.global_4589716Get()
+  loc_701880: FLdPr var_94
+  loc_701883: Call 0.Method_arg_38C ()
+  loc_701888: FLdI2 var_96
+  loc_70188B: NotI4
+  loc_70188C: FFreeStr var_11C = ""
+  loc_701893: FFree1Ad var_94
+  loc_701896: BranchF loc_7018CC
+  loc_701899: FLdRfVar var_A8
+  loc_70189C: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_7018A1: FLdRfVar var_A8
+  loc_7018A4: CBoolVarNull
+  loc_7018A6: FFree1Var var_A8 = ""
+  loc_7018A9: BranchF loc_7018C9
+  loc_7018AC: LitVar_FALSE
+  loc_7018B0: PopAdLdVar
+  loc_7018B1: ImpAdLdRf MemVar_74C760
+  loc_7018B4: NewIfNullPr Formx
+  loc_7018B7: VCallAd Control_ID_PanelCierres
+  loc_7018BA: FStAdFunc var_94
+  loc_7018BD: FLdPr var_94
+  loc_7018C0: LateIdSt
+  loc_7018C5: FFree1Ad var_94
+  loc_7018C8: ExitProcHresult
+  loc_7018C9: Branch loc_70185A
+  loc_7018CC: ILdRf var_88
+  loc_7018CF: LitStr vbNullString
+  loc_7018D2: NeStr
+  loc_7018D4: BranchF loc_7018ED
+  loc_7018D7: ILdRf var_88
+  loc_7018DA: CI2Str
+  loc_7018DC: CUI1I2
+  loc_7018DE: PopTmpLdAd1
+  loc_7018E2: ImpAdLdRf MemVar_74C6D8
+  loc_7018E5: NewIfNullPr CCEMLicence
+  loc_7018E8: from_stack_3 = PropBag.ReadProperty(from_stack_1, from_stack_2)
+  loc_7018ED: FLdRfVar var_96
+  loc_7018F0: FLdRfVar var_88
+  loc_7018F3: LitStr "MONITOR_TANQUES"
+  loc_7018F6: FStStrCopy var_120
+  loc_7018F9: FLdRfVar var_120
+  loc_7018FC: LitStr "CONFIGURACION"
+  loc_7018FF: FStStrCopy var_11C
+  loc_701902: FLdRfVar var_11C
+  loc_701905: FLdRfVar var_94
+  loc_701908: ImpAdLdRf MemVar_74C760
+  loc_70190B: NewIfNullPr Formx
+  loc_70190E: from_stack_1v = Formx.global_4589716Get()
+  loc_701913: FLdPr var_94
+  loc_701916: Call 0.Method_arg_38C ()
+  loc_70191B: FLdI2 var_96
+  loc_70191E: NotI4
+  loc_70191F: FFreeStr var_11C = ""
+  loc_701926: FFree1Ad var_94
+  loc_701929: BranchF loc_70195F
+  loc_70192C: FLdRfVar var_A8
+  loc_70192F: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701934: FLdRfVar var_A8
+  loc_701937: CBoolVarNull
+  loc_701939: FFree1Var var_A8 = ""
+  loc_70193C: BranchF loc_70195C
+  loc_70193F: LitVar_FALSE
+  loc_701943: PopAdLdVar
+  loc_701944: ImpAdLdRf MemVar_74C760
+  loc_701947: NewIfNullPr Formx
+  loc_70194A: VCallAd Control_ID_PanelCierres
+  loc_70194D: FStAdFunc var_94
+  loc_701950: FLdPr var_94
+  loc_701953: LateIdSt
+  loc_701958: FFree1Ad var_94
+  loc_70195B: ExitProcHresult
+  loc_70195C: Branch loc_7018ED
+  loc_70195F: ILdRf var_88
+  loc_701962: LitStr vbNullString
+  loc_701965: NeStr
+  loc_701967: BranchF loc_70197D
+  loc_70196A: ILdRf var_88
+  loc_70196D: CBoolStr
+  loc_70196F: PopTmpLdAd2 var_96
+  loc_701972: ImpAdLdRf MemVar_74C6D8
+  loc_701975: NewIfNullPr CCEMLicence
+  loc_70197D: FLdRfVar var_96
+  loc_701980: FLdRfVar var_88
+  loc_701983: LitStr "SELFSERVICE"
+  loc_701986: FStStrCopy var_120
+  loc_701989: FLdRfVar var_120
+  loc_70198C: LitStr "CONFIGURACION"
+  loc_70198F: FStStrCopy var_11C
+  loc_701992: FLdRfVar var_11C
+  loc_701995: FLdRfVar var_94
+  loc_701998: ImpAdLdRf MemVar_74C760
+  loc_70199B: NewIfNullPr Formx
+  loc_70199E: from_stack_1v = Formx.global_4589716Get()
+  loc_7019A3: FLdPr var_94
+  loc_7019A6: Call 0.Method_arg_38C ()
+  loc_7019AB: FLdI2 var_96
+  loc_7019AE: NotI4
+  loc_7019AF: FFreeStr var_11C = ""
+  loc_7019B6: FFree1Ad var_94
+  loc_7019B9: BranchF loc_7019EF
+  loc_7019BC: FLdRfVar var_A8
+  loc_7019BF: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_7019C4: FLdRfVar var_A8
+  loc_7019C7: CBoolVarNull
+  loc_7019C9: FFree1Var var_A8 = ""
+  loc_7019CC: BranchF loc_7019EC
+  loc_7019CF: LitVar_FALSE
+  loc_7019D3: PopAdLdVar
+  loc_7019D4: ImpAdLdRf MemVar_74C760
+  loc_7019D7: NewIfNullPr Formx
+  loc_7019DA: VCallAd Control_ID_PanelCierres
+  loc_7019DD: FStAdFunc var_94
+  loc_7019E0: FLdPr var_94
+  loc_7019E3: LateIdSt
+  loc_7019E8: FFree1Ad var_94
+  loc_7019EB: ExitProcHresult
+  loc_7019EC: Branch loc_70197D
+  loc_7019EF: ILdRf var_88
+  loc_7019F2: LitStr vbNullString
+  loc_7019F5: NeStr
+  loc_7019F7: BranchF loc_701A0D
+  loc_7019FA: ILdRf var_88
+  loc_7019FD: CBoolStr
+  loc_7019FF: PopTmpLdAd2 var_96
+  loc_701A02: ImpAdLdRf MemVar_74C6D8
+  loc_701A05: NewIfNullPr CCEMLicence
+  loc_701A0D: FLdRfVar var_96
+  loc_701A10: FLdRfVar var_88
+  loc_701A13: LitStr "PLAYA_VIEW"
+  loc_701A16: FStStrCopy var_120
+  loc_701A19: FLdRfVar var_120
+  loc_701A1C: LitStr "MODULOS"
+  loc_701A1F: FStStrCopy var_11C
+  loc_701A22: FLdRfVar var_11C
+  loc_701A25: FLdRfVar var_94
+  loc_701A28: ImpAdLdRf MemVar_74C760
+  loc_701A2B: NewIfNullPr Formx
+  loc_701A2E: from_stack_1v = Formx.global_4589716Get()
+  loc_701A33: FLdPr var_94
+  loc_701A36: Call 0.Method_arg_38C ()
+  loc_701A3B: FLdI2 var_96
+  loc_701A3E: NotI4
+  loc_701A3F: FFreeStr var_11C = ""
+  loc_701A46: FFree1Ad var_94
+  loc_701A49: BranchF loc_701A7F
+  loc_701A4C: FLdRfVar var_A8
+  loc_701A4F: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701A54: FLdRfVar var_A8
+  loc_701A57: CBoolVarNull
+  loc_701A59: FFree1Var var_A8 = ""
+  loc_701A5C: BranchF loc_701A7C
+  loc_701A5F: LitVar_FALSE
+  loc_701A63: PopAdLdVar
+  loc_701A64: ImpAdLdRf MemVar_74C760
+  loc_701A67: NewIfNullPr Formx
+  loc_701A6A: VCallAd Control_ID_PanelCierres
+  loc_701A6D: FStAdFunc var_94
+  loc_701A70: FLdPr var_94
+  loc_701A73: LateIdSt
+  loc_701A78: FFree1Ad var_94
+  loc_701A7B: ExitProcHresult
+  loc_701A7C: Branch loc_701A0D
+  loc_701A7F: ILdRf var_88
+  loc_701A82: LitStr vbNullString
+  loc_701A85: NeStr
+  loc_701A87: BranchF loc_701AD5
+  loc_701A8A: ILdRf var_88
+  loc_701A8D: CBoolStr
+  loc_701A8F: PopTmpLdAd2 var_96
+  loc_701A92: ImpAdLdRf MemVar_74C6D8
+  loc_701A95: NewIfNullPr CCEMLicence
+  loc_701A98: Call 0.Method_Proc_159_0_7028C8C ()
+  loc_701A9D: ILdRf var_88
+  loc_701AA0: CBoolStr
+  loc_701AA2: LitI4 &H15
+  loc_701AA7: ImpAdLdRf MemVar_74C6C0
+  loc_701AAA: Ary1StI2
+  loc_701AAB: ILdRf var_88
+  loc_701AAE: CBoolStr
+  loc_701AB0: LitI4 &H1A
+  loc_701AB5: ImpAdLdRf MemVar_74C6C0
+  loc_701AB8: Ary1StI2
+  loc_701AB9: ILdRf var_88
+  loc_701ABC: CBoolStr
+  loc_701ABE: LitI4 &H54
+  loc_701AC3: ImpAdLdRf MemVar_74C6C0
+  loc_701AC6: Ary1StI2
+  loc_701AC7: ILdRf var_88
+  loc_701ACA: CBoolStr
+  loc_701ACC: LitI4 &H55
+  loc_701AD1: ImpAdLdRf MemVar_74C6C0
+  loc_701AD4: Ary1StI2
+  loc_701AD5: FLdRfVar var_96
+  loc_701AD8: FLdRfVar var_88
+  loc_701ADB: LitStr "GRAFICOS"
+  loc_701ADE: FStStrCopy var_120
+  loc_701AE1: FLdRfVar var_120
+  loc_701AE4: LitStr "MODULOS"
+  loc_701AE7: FStStrCopy var_11C
+  loc_701AEA: FLdRfVar var_11C
+  loc_701AED: FLdRfVar var_94
+  loc_701AF0: ImpAdLdRf MemVar_74C760
+  loc_701AF3: NewIfNullPr Formx
+  loc_701AF6: from_stack_1v = Formx.global_4589716Get()
+  loc_701AFB: FLdPr var_94
+  loc_701AFE: Call 0.Method_arg_38C ()
+  loc_701B03: FLdI2 var_96
+  loc_701B06: NotI4
+  loc_701B07: FFreeStr var_11C = ""
+  loc_701B0E: FFree1Ad var_94
+  loc_701B11: BranchF loc_701B47
+  loc_701B14: FLdRfVar var_A8
+  loc_701B17: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701B1C: FLdRfVar var_A8
+  loc_701B1F: CBoolVarNull
+  loc_701B21: FFree1Var var_A8 = ""
+  loc_701B24: BranchF loc_701B44
+  loc_701B27: LitVar_FALSE
+  loc_701B2B: PopAdLdVar
+  loc_701B2C: ImpAdLdRf MemVar_74C760
+  loc_701B2F: NewIfNullPr Formx
+  loc_701B32: VCallAd Control_ID_PanelCierres
+  loc_701B35: FStAdFunc var_94
+  loc_701B38: FLdPr var_94
+  loc_701B3B: LateIdSt
+  loc_701B40: FFree1Ad var_94
+  loc_701B43: ExitProcHresult
+  loc_701B44: Branch loc_701AD5
+  loc_701B47: ILdRf var_88
+  loc_701B4A: LitStr vbNullString
+  loc_701B4D: NeStr
+  loc_701B4F: BranchF loc_701B60
+  loc_701B52: ILdRf var_88
+  loc_701B55: CBoolStr
+  loc_701B57: LitI4 &HB
+  loc_701B5C: ImpAdLdRf MemVar_74C6C0
+  loc_701B5F: Ary1StI2
+  loc_701B60: FLdRfVar var_96
+  loc_701B63: FLdRfVar var_88
+  loc_701B66: LitStr "TANQUES"
+  loc_701B69: FStStrCopy var_120
+  loc_701B6C: FLdRfVar var_120
+  loc_701B6F: LitStr "MODULOS"
+  loc_701B72: FStStrCopy var_11C
+  loc_701B75: FLdRfVar var_11C
+  loc_701B78: FLdRfVar var_94
+  loc_701B7B: ImpAdLdRf MemVar_74C760
+  loc_701B7E: NewIfNullPr Formx
+  loc_701B81: from_stack_1v = Formx.global_4589716Get()
+  loc_701B86: FLdPr var_94
+  loc_701B89: Call 0.Method_arg_38C ()
+  loc_701B8E: FLdI2 var_96
+  loc_701B91: NotI4
+  loc_701B92: FFreeStr var_11C = ""
+  loc_701B99: FFree1Ad var_94
+  loc_701B9C: BranchF loc_701BD2
+  loc_701B9F: FLdRfVar var_A8
+  loc_701BA2: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701BA7: FLdRfVar var_A8
+  loc_701BAA: CBoolVarNull
+  loc_701BAC: FFree1Var var_A8 = ""
+  loc_701BAF: BranchF loc_701BCF
+  loc_701BB2: LitVar_FALSE
+  loc_701BB6: PopAdLdVar
+  loc_701BB7: ImpAdLdRf MemVar_74C760
+  loc_701BBA: NewIfNullPr Formx
+  loc_701BBD: VCallAd Control_ID_PanelCierres
+  loc_701BC0: FStAdFunc var_94
+  loc_701BC3: FLdPr var_94
+  loc_701BC6: LateIdSt
+  loc_701BCB: FFree1Ad var_94
+  loc_701BCE: ExitProcHresult
+  loc_701BCF: Branch loc_701B60
+  loc_701BD2: ILdRf var_88
+  loc_701BD5: LitStr vbNullString
+  loc_701BD8: NeStr
+  loc_701BDA: BranchF loc_701C15
+  loc_701BDD: ILdRf var_88
+  loc_701BE0: CBoolStr
+  loc_701BE2: LitI4 &HD
+  loc_701BE7: ImpAdLdRf MemVar_74C6C0
+  loc_701BEA: Ary1StI2
+  loc_701BEB: ILdRf var_88
+  loc_701BEE: CBoolStr
+  loc_701BF0: LitI4 &HE
+  loc_701BF5: ImpAdLdRf MemVar_74C6C0
+  loc_701BF8: Ary1StI2
+  loc_701BF9: ILdRf var_88
+  loc_701BFC: CBoolStr
+  loc_701BFE: LitI4 &HF
+  loc_701C03: ImpAdLdRf MemVar_74C6C0
+  loc_701C06: Ary1StI2
+  loc_701C07: ILdRf var_88
+  loc_701C0A: CBoolStr
+  loc_701C0C: LitI4 &H10
+  loc_701C11: ImpAdLdRf MemVar_74C6C0
+  loc_701C14: Ary1StI2
+  loc_701C15: FLdRfVar var_96
+  loc_701C18: FLdRfVar var_88
+  loc_701C1B: LitStr "MODO_OPERADOR"
+  loc_701C1E: FStStrCopy var_120
+  loc_701C21: FLdRfVar var_120
+  loc_701C24: LitStr "MODULOS"
+  loc_701C27: FStStrCopy var_11C
+  loc_701C2A: FLdRfVar var_11C
+  loc_701C2D: FLdRfVar var_94
+  loc_701C30: ImpAdLdRf MemVar_74C760
+  loc_701C33: NewIfNullPr Formx
+  loc_701C36: from_stack_1v = Formx.global_4589716Get()
+  loc_701C3B: FLdPr var_94
+  loc_701C3E: Call 0.Method_arg_38C ()
+  loc_701C43: FLdI2 var_96
+  loc_701C46: NotI4
+  loc_701C47: FFreeStr var_11C = ""
+  loc_701C4E: FFree1Ad var_94
+  loc_701C51: BranchF loc_701C87
+  loc_701C54: FLdRfVar var_A8
+  loc_701C57: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701C5C: FLdRfVar var_A8
+  loc_701C5F: CBoolVarNull
+  loc_701C61: FFree1Var var_A8 = ""
+  loc_701C64: BranchF loc_701C84
+  loc_701C67: LitVar_FALSE
+  loc_701C6B: PopAdLdVar
+  loc_701C6C: ImpAdLdRf MemVar_74C760
+  loc_701C6F: NewIfNullPr Formx
+  loc_701C72: VCallAd Control_ID_PanelCierres
+  loc_701C75: FStAdFunc var_94
+  loc_701C78: FLdPr var_94
+  loc_701C7B: LateIdSt
+  loc_701C80: FFree1Ad var_94
+  loc_701C83: ExitProcHresult
+  loc_701C84: Branch loc_701C15
+  loc_701C87: ILdRf var_88
+  loc_701C8A: LitStr vbNullString
+  loc_701C8D: NeStr
+  loc_701C8F: BranchF loc_701CA5
+  loc_701C92: ILdRf var_88
+  loc_701C95: CBoolStr
+  loc_701C97: PopTmpLdAd2 var_96
+  loc_701C9A: ImpAdLdRf MemVar_74C6D8
+  loc_701C9D: NewIfNullPr CCEMLicence
+  loc_701CA0: CCEMLicence = from_stack_1
+  loc_701CA5: FLdRfVar var_96
+  loc_701CA8: FLdRfVar var_88
+  loc_701CAB: LitStr "REPORTES"
+  loc_701CAE: FStStrCopy var_120
+  loc_701CB1: FLdRfVar var_120
+  loc_701CB4: LitStr "MODULOS"
+  loc_701CB7: FStStrCopy var_11C
+  loc_701CBA: FLdRfVar var_11C
+  loc_701CBD: FLdRfVar var_94
+  loc_701CC0: ImpAdLdRf MemVar_74C760
+  loc_701CC3: NewIfNullPr Formx
+  loc_701CC6: from_stack_1v = Formx.global_4589716Get()
+  loc_701CCB: FLdPr var_94
+  loc_701CCE: Call 0.Method_arg_38C ()
+  loc_701CD3: FLdI2 var_96
+  loc_701CD6: NotI4
+  loc_701CD7: FFreeStr var_11C = ""
+  loc_701CDE: FFree1Ad var_94
+  loc_701CE1: BranchF loc_701D17
+  loc_701CE4: FLdRfVar var_A8
+  loc_701CE7: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701CEC: FLdRfVar var_A8
+  loc_701CEF: CBoolVarNull
+  loc_701CF1: FFree1Var var_A8 = ""
+  loc_701CF4: BranchF loc_701D14
+  loc_701CF7: LitVar_FALSE
+  loc_701CFB: PopAdLdVar
+  loc_701CFC: ImpAdLdRf MemVar_74C760
+  loc_701CFF: NewIfNullPr Formx
+  loc_701D02: VCallAd Control_ID_PanelCierres
+  loc_701D05: FStAdFunc var_94
+  loc_701D08: FLdPr var_94
+  loc_701D0B: LateIdSt
+  loc_701D10: FFree1Ad var_94
+  loc_701D13: ExitProcHresult
+  loc_701D14: Branch loc_701CA5
+  loc_701D17: ILdRf var_88
+  loc_701D1A: LitStr vbNullString
+  loc_701D1D: NeStr
+  loc_701D1F: BranchF loc_701DB3
+  loc_701D22: ILdRf var_88
+  loc_701D25: CBoolStr
+  loc_701D27: PopTmpLdAd2 var_96
+  loc_701D2A: ImpAdLdRf MemVar_74C6D8
+  loc_701D2D: NewIfNullPr CCEMLicence
+  loc_701D30: CCEMLicence.Caption = from_stack_1
+  loc_701D35: ILdRf var_88
+  loc_701D38: CBoolStr
+  loc_701D3A: LitI4 5
+  loc_701D3F: ImpAdLdRf MemVar_74C6C0
+  loc_701D42: Ary1StI2
+  loc_701D43: ILdRf var_88
+  loc_701D46: CBoolStr
+  loc_701D48: LitI4 6
+  loc_701D4D: ImpAdLdRf MemVar_74C6C0
+  loc_701D50: Ary1StI2
+  loc_701D51: ILdRf var_88
+  loc_701D54: CBoolStr
+  loc_701D56: LitI4 7
+  loc_701D5B: ImpAdLdRf MemVar_74C6C0
+  loc_701D5E: Ary1StI2
+  loc_701D5F: ILdRf var_88
+  loc_701D62: CBoolStr
+  loc_701D64: LitI4 8
+  loc_701D69: ImpAdLdRf MemVar_74C6C0
+  loc_701D6C: Ary1StI2
+  loc_701D6D: ILdRf var_88
+  loc_701D70: CBoolStr
+  loc_701D72: LitI4 9
+  loc_701D77: ImpAdLdRf MemVar_74C6C0
+  loc_701D7A: Ary1StI2
+  loc_701D7B: ILdRf var_88
+  loc_701D7E: CBoolStr
+  loc_701D80: LitI4 &HA
+  loc_701D85: ImpAdLdRf MemVar_74C6C0
+  loc_701D88: Ary1StI2
+  loc_701D89: ILdRf var_88
+  loc_701D8C: CBoolStr
+  loc_701D8E: LitI4 &H4A
+  loc_701D93: ImpAdLdRf MemVar_74C6C0
+  loc_701D96: Ary1StI2
+  loc_701D97: ILdRf var_88
+  loc_701D9A: CBoolStr
+  loc_701D9C: LitI4 &H36
+  loc_701DA1: ImpAdLdRf MemVar_74C6C0
+  loc_701DA4: Ary1StI2
+  loc_701DA5: ILdRf var_88
+  loc_701DA8: CBoolStr
+  loc_701DAA: LitI4 &H31
+  loc_701DAF: ImpAdLdRf MemVar_74C6C0
+  loc_701DB2: Ary1StI2
+  loc_701DB3: FLdRfVar var_96
+  loc_701DB6: FLdRfVar var_88
+  loc_701DB9: LitStr "SEGURIDAD"
+  loc_701DBC: FStStrCopy var_120
+  loc_701DBF: FLdRfVar var_120
+  loc_701DC2: LitStr "MODULOS"
+  loc_701DC5: FStStrCopy var_11C
+  loc_701DC8: FLdRfVar var_11C
+  loc_701DCB: FLdRfVar var_94
+  loc_701DCE: ImpAdLdRf MemVar_74C760
+  loc_701DD1: NewIfNullPr Formx
+  loc_701DD4: from_stack_1v = Formx.global_4589716Get()
+  loc_701DD9: FLdPr var_94
+  loc_701DDC: Call 0.Method_arg_38C ()
+  loc_701DE1: FLdI2 var_96
+  loc_701DE4: NotI4
+  loc_701DE5: FFreeStr var_11C = ""
+  loc_701DEC: FFree1Ad var_94
+  loc_701DEF: BranchF loc_701E25
+  loc_701DF2: FLdRfVar var_A8
+  loc_701DF5: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701DFA: FLdRfVar var_A8
+  loc_701DFD: CBoolVarNull
+  loc_701DFF: FFree1Var var_A8 = ""
+  loc_701E02: BranchF loc_701E22
+  loc_701E05: LitVar_FALSE
+  loc_701E09: PopAdLdVar
+  loc_701E0A: ImpAdLdRf MemVar_74C760
+  loc_701E0D: NewIfNullPr Formx
+  loc_701E10: VCallAd Control_ID_PanelCierres
+  loc_701E13: FStAdFunc var_94
+  loc_701E16: FLdPr var_94
+  loc_701E19: LateIdSt
+  loc_701E1E: FFree1Ad var_94
+  loc_701E21: ExitProcHresult
+  loc_701E22: Branch loc_701DB3
+  loc_701E25: ILdRf var_88
+  loc_701E28: LitStr vbNullString
+  loc_701E2B: NeStr
+  loc_701E2D: BranchF loc_701E51
+  loc_701E30: ILdRf var_88
+  loc_701E33: CBoolStr
+  loc_701E35: LitI4 &H20
+  loc_701E3A: ImpAdLdRf MemVar_74C6C0
+  loc_701E3D: Ary1StI2
+  loc_701E3E: ILdRf var_88
+  loc_701E41: CBoolStr
+  loc_701E43: PopTmpLdAd2 var_96
+  loc_701E46: ImpAdLdRf MemVar_74C6D8
+  loc_701E49: NewIfNullPr CCEMLicence
+  loc_701E4C: Call 0.Method_arg_5C ()
+  loc_701E51: FLdRfVar var_96
+  loc_701E54: FLdRfVar var_88
+  loc_701E57: LitStr "CAMBIO_CLAVE"
+  loc_701E5A: FStStrCopy var_120
+  loc_701E5D: FLdRfVar var_120
+  loc_701E60: LitStr "MODULOS"
+  loc_701E63: FStStrCopy var_11C
+  loc_701E66: FLdRfVar var_11C
+  loc_701E69: FLdRfVar var_94
+  loc_701E6C: ImpAdLdRf MemVar_74C760
+  loc_701E6F: NewIfNullPr Formx
+  loc_701E72: from_stack_1v = Formx.global_4589716Get()
+  loc_701E77: FLdPr var_94
+  loc_701E7A: Call 0.Method_arg_38C ()
+  loc_701E7F: FLdI2 var_96
+  loc_701E82: NotI4
+  loc_701E83: FFreeStr var_11C = ""
+  loc_701E8A: FFree1Ad var_94
+  loc_701E8D: BranchF loc_701EC3
+  loc_701E90: FLdRfVar var_A8
+  loc_701E93: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701E98: FLdRfVar var_A8
+  loc_701E9B: CBoolVarNull
+  loc_701E9D: FFree1Var var_A8 = ""
+  loc_701EA0: BranchF loc_701EC0
+  loc_701EA3: LitVar_FALSE
+  loc_701EA7: PopAdLdVar
+  loc_701EA8: ImpAdLdRf MemVar_74C760
+  loc_701EAB: NewIfNullPr Formx
+  loc_701EAE: VCallAd Control_ID_PanelCierres
+  loc_701EB1: FStAdFunc var_94
+  loc_701EB4: FLdPr var_94
+  loc_701EB7: LateIdSt
+  loc_701EBC: FFree1Ad var_94
+  loc_701EBF: ExitProcHresult
+  loc_701EC0: Branch loc_701E51
+  loc_701EC3: ILdRf var_88
+  loc_701EC6: LitStr vbNullString
+  loc_701EC9: NeStr
+  loc_701ECB: BranchF loc_701EEF
+  loc_701ECE: ILdRf var_88
+  loc_701ED1: CBoolStr
+  loc_701ED3: LitI4 &H2B
+  loc_701ED8: ImpAdLdRf MemVar_74C6C0
+  loc_701EDB: Ary1StI2
+  loc_701EDC: ILdRf var_88
+  loc_701EDF: CBoolStr
+  loc_701EE1: PopTmpLdAd2 var_96
+  loc_701EE4: ImpAdLdRf MemVar_74C6D8
+  loc_701EE7: NewIfNullPr CCEMLicence
+  loc_701EEA: CCEMLicence.BackColor = from_stack_1
+  loc_701EEF: FLdRfVar var_96
+  loc_701EF2: FLdRfVar var_88
+  loc_701EF5: LitStr "EVENTOSLOG"
+  loc_701EF8: FStStrCopy var_120
+  loc_701EFB: FLdRfVar var_120
+  loc_701EFE: LitStr "MODULOS"
+  loc_701F01: FStStrCopy var_11C
+  loc_701F04: FLdRfVar var_11C
+  loc_701F07: FLdRfVar var_94
+  loc_701F0A: ImpAdLdRf MemVar_74C760
+  loc_701F0D: NewIfNullPr Formx
+  loc_701F10: from_stack_1v = Formx.global_4589716Get()
+  loc_701F15: FLdPr var_94
+  loc_701F18: Call 0.Method_arg_38C ()
+  loc_701F1D: FLdI2 var_96
+  loc_701F20: NotI4
+  loc_701F21: FFreeStr var_11C = ""
+  loc_701F28: FFree1Ad var_94
+  loc_701F2B: BranchF loc_701F61
+  loc_701F2E: FLdRfVar var_A8
+  loc_701F31: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701F36: FLdRfVar var_A8
+  loc_701F39: CBoolVarNull
+  loc_701F3B: FFree1Var var_A8 = ""
+  loc_701F3E: BranchF loc_701F5E
+  loc_701F41: LitVar_FALSE
+  loc_701F45: PopAdLdVar
+  loc_701F46: ImpAdLdRf MemVar_74C760
+  loc_701F49: NewIfNullPr Formx
+  loc_701F4C: VCallAd Control_ID_PanelCierres
+  loc_701F4F: FStAdFunc var_94
+  loc_701F52: FLdPr var_94
+  loc_701F55: LateIdSt
+  loc_701F5A: FFree1Ad var_94
+  loc_701F5D: ExitProcHresult
+  loc_701F5E: Branch loc_701EEF
+  loc_701F61: ILdRf var_88
+  loc_701F64: LitStr vbNullString
+  loc_701F67: NeStr
+  loc_701F69: BranchF loc_701F8D
+  loc_701F6C: ILdRf var_88
+  loc_701F6F: CBoolStr
+  loc_701F71: LitI4 &H2A
+  loc_701F76: ImpAdLdRf MemVar_74C6C0
+  loc_701F79: Ary1StI2
+  loc_701F7A: ILdRf var_88
+  loc_701F7D: CBoolStr
+  loc_701F7F: PopTmpLdAd2 var_96
+  loc_701F82: ImpAdLdRf MemVar_74C6D8
+  loc_701F85: NewIfNullPr CCEMLicence
+  loc_701F88: CCEMLicence.ForeColor = from_stack_1
+  loc_701F8D: FLdRfVar var_96
+  loc_701F90: FLdRfVar var_88
+  loc_701F93: LitStr "TARJETA_CREDITO"
+  loc_701F96: FStStrCopy var_120
+  loc_701F99: FLdRfVar var_120
+  loc_701F9C: LitStr "MODULOS"
+  loc_701F9F: FStStrCopy var_11C
+  loc_701FA2: FLdRfVar var_11C
+  loc_701FA5: FLdRfVar var_94
+  loc_701FA8: ImpAdLdRf MemVar_74C760
+  loc_701FAB: NewIfNullPr Formx
+  loc_701FAE: from_stack_1v = Formx.global_4589716Get()
+  loc_701FB3: FLdPr var_94
+  loc_701FB6: Call 0.Method_arg_38C ()
+  loc_701FBB: FLdI2 var_96
+  loc_701FBE: NotI4
+  loc_701FBF: FFreeStr var_11C = ""
+  loc_701FC6: FFree1Ad var_94
+  loc_701FC9: BranchF loc_701FFF
+  loc_701FCC: FLdRfVar var_A8
+  loc_701FCF: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_701FD4: FLdRfVar var_A8
+  loc_701FD7: CBoolVarNull
+  loc_701FD9: FFree1Var var_A8 = ""
+  loc_701FDC: BranchF loc_701FFC
+  loc_701FDF: LitVar_FALSE
+  loc_701FE3: PopAdLdVar
+  loc_701FE4: ImpAdLdRf MemVar_74C760
+  loc_701FE7: NewIfNullPr Formx
+  loc_701FEA: VCallAd Control_ID_PanelCierres
+  loc_701FED: FStAdFunc var_94
+  loc_701FF0: FLdPr var_94
+  loc_701FF3: LateIdSt
+  loc_701FF8: FFree1Ad var_94
+  loc_701FFB: ExitProcHresult
+  loc_701FFC: Branch loc_701F8D
+  loc_701FFF: ILdRf var_88
+  loc_702002: LitStr vbNullString
+  loc_702005: NeStr
+  loc_702007: BranchF loc_70202B
+  loc_70200A: ILdRf var_88
+  loc_70200D: CBoolStr
+  loc_70200F: LitI4 &H2E
+  loc_702014: ImpAdLdRf MemVar_74C6C0
+  loc_702017: Ary1StI2
+  loc_702018: ILdRf var_88
+  loc_70201B: CBoolStr
+  loc_70201D: PopTmpLdAd2 var_96
+  loc_702020: ImpAdLdRf MemVar_74C6D8
+  loc_702023: NewIfNullPr CCEMLicence
+  loc_702026: CCEMLicence.Left = from_stack_1s
+  loc_70202B: FLdRfVar var_96
+  loc_70202E: FLdRfVar var_88
+  loc_702031: LitStr "IMPRESION_REPORTES"
+  loc_702034: FStStrCopy var_120
+  loc_702037: FLdRfVar var_120
+  loc_70203A: LitStr "MODULOS"
+  loc_70203D: FStStrCopy var_11C
+  loc_702040: FLdRfVar var_11C
+  loc_702043: FLdRfVar var_94
+  loc_702046: ImpAdLdRf MemVar_74C760
+  loc_702049: NewIfNullPr Formx
+  loc_70204C: from_stack_1v = Formx.global_4589716Get()
+  loc_702051: FLdPr var_94
+  loc_702054: Call 0.Method_arg_38C ()
+  loc_702059: FLdI2 var_96
+  loc_70205C: NotI4
+  loc_70205D: FFreeStr var_11C = ""
+  loc_702064: FFree1Ad var_94
+  loc_702067: BranchF loc_70209D
+  loc_70206A: FLdRfVar var_A8
+  loc_70206D: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_702072: FLdRfVar var_A8
+  loc_702075: CBoolVarNull
+  loc_702077: FFree1Var var_A8 = ""
+  loc_70207A: BranchF loc_70209A
+  loc_70207D: LitVar_FALSE
+  loc_702081: PopAdLdVar
+  loc_702082: ImpAdLdRf MemVar_74C760
+  loc_702085: NewIfNullPr Formx
+  loc_702088: VCallAd Control_ID_PanelCierres
+  loc_70208B: FStAdFunc var_94
+  loc_70208E: FLdPr var_94
+  loc_702091: LateIdSt
+  loc_702096: FFree1Ad var_94
+  loc_702099: ExitProcHresult
+  loc_70209A: Branch loc_70202B
+  loc_70209D: ILdRf var_88
+  loc_7020A0: LitStr vbNullString
+  loc_7020A3: NeStr
+  loc_7020A5: BranchF loc_7020BB
+  loc_7020A8: ILdRf var_88
+  loc_7020AB: CBoolStr
+  loc_7020AD: PopTmpLdAd2 var_96
+  loc_7020B0: ImpAdLdRf MemVar_74C6D8
+  loc_7020B3: NewIfNullPr CCEMLicence
+  loc_7020B6: CCEMLicence.Top = from_stack_1s
+  loc_7020BB: FLdRfVar var_96
+  loc_7020BE: FLdRfVar var_88
+  loc_7020C1: LitStr "SECCION_REPORTES"
+  loc_7020C4: FStStrCopy var_120
+  loc_7020C7: FLdRfVar var_120
+  loc_7020CA: LitStr "MODULOS"
+  loc_7020CD: FStStrCopy var_11C
+  loc_7020D0: FLdRfVar var_11C
+  loc_7020D3: FLdRfVar var_94
+  loc_7020D6: ImpAdLdRf MemVar_74C760
+  loc_7020D9: NewIfNullPr Formx
+  loc_7020DC: from_stack_1v = Formx.global_4589716Get()
+  loc_7020E1: FLdPr var_94
+  loc_7020E4: Call 0.Method_arg_38C ()
+  loc_7020E9: FLdI2 var_96
+  loc_7020EC: NotI4
+  loc_7020ED: FFreeStr var_11C = ""
+  loc_7020F4: FFree1Ad var_94
+  loc_7020F7: BranchF loc_70212D
+  loc_7020FA: FLdRfVar var_A8
+  loc_7020FD: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_702102: FLdRfVar var_A8
+  loc_702105: CBoolVarNull
+  loc_702107: FFree1Var var_A8 = ""
+  loc_70210A: BranchF loc_70212A
+  loc_70210D: LitVar_FALSE
+  loc_702111: PopAdLdVar
+  loc_702112: ImpAdLdRf MemVar_74C760
+  loc_702115: NewIfNullPr Formx
+  loc_702118: VCallAd Control_ID_PanelCierres
+  loc_70211B: FStAdFunc var_94
+  loc_70211E: FLdPr var_94
+  loc_702121: LateIdSt
+  loc_702126: FFree1Ad var_94
+  loc_702129: ExitProcHresult
+  loc_70212A: Branch loc_7020BB
+  loc_70212D: ILdRf var_88
+  loc_702130: LitStr vbNullString
+  loc_702133: NeStr
+  loc_702135: BranchF loc_702159
+  loc_702138: ILdRf var_88
+  loc_70213B: CBoolStr
+  loc_70213D: LitI4 &H46
+  loc_702142: ImpAdLdRf MemVar_74C6C0
+  loc_702145: Ary1StI2
+  loc_702146: ILdRf var_88
+  loc_702149: CBoolStr
+  loc_70214B: PopTmpLdAd2 var_96
+  loc_70214E: ImpAdLdRf MemVar_74C6D8
+  loc_702151: NewIfNullPr CCEMLicence
+  loc_702154: CCEMLicence.Width = from_stack_1s
+  loc_702159: FLdRfVar var_96
+  loc_70215C: FLdRfVar var_88
+  loc_70215F: LitStr "IMPORT"
+  loc_702162: FStStrCopy var_120
+  loc_702165: FLdRfVar var_120
+  loc_702168: LitStr "MODULOS"
+  loc_70216B: FStStrCopy var_11C
+  loc_70216E: FLdRfVar var_11C
+  loc_702171: FLdRfVar var_94
+  loc_702174: ImpAdLdRf MemVar_74C760
+  loc_702177: NewIfNullPr Formx
+  loc_70217A: from_stack_1v = Formx.global_4589716Get()
+  loc_70217F: FLdPr var_94
+  loc_702182: Call 0.Method_arg_38C ()
+  loc_702187: FLdI2 var_96
+  loc_70218A: NotI4
+  loc_70218B: FFreeStr var_11C = ""
+  loc_702192: FFree1Ad var_94
+  loc_702195: BranchF loc_7021CB
+  loc_702198: FLdRfVar var_A8
+  loc_70219B: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_7021A0: FLdRfVar var_A8
+  loc_7021A3: CBoolVarNull
+  loc_7021A5: FFree1Var var_A8 = ""
+  loc_7021A8: BranchF loc_7021C8
+  loc_7021AB: LitVar_FALSE
+  loc_7021AF: PopAdLdVar
+  loc_7021B0: ImpAdLdRf MemVar_74C760
+  loc_7021B3: NewIfNullPr Formx
+  loc_7021B6: VCallAd Control_ID_PanelCierres
+  loc_7021B9: FStAdFunc var_94
+  loc_7021BC: FLdPr var_94
+  loc_7021BF: LateIdSt
+  loc_7021C4: FFree1Ad var_94
+  loc_7021C7: ExitProcHresult
+  loc_7021C8: Branch loc_702159
+  loc_7021CB: ILdRf var_88
+  loc_7021CE: LitStr vbNullString
+  loc_7021D1: NeStr
+  loc_7021D3: BranchF loc_7021F7
+  loc_7021D6: ILdRf var_88
+  loc_7021D9: CBoolStr
+  loc_7021DB: LitI4 &H1C
+  loc_7021E0: ImpAdLdRf MemVar_74C6C0
+  loc_7021E3: Ary1StI2
+  loc_7021E4: ILdRf var_88
+  loc_7021E7: CBoolStr
+  loc_7021E9: PopTmpLdAd2 var_96
+  loc_7021EC: ImpAdLdRf MemVar_74C6D8
+  loc_7021EF: NewIfNullPr CCEMLicence
+  loc_7021F2: CCEMLicence.Height = from_stack_1s
+  loc_7021F7: FLdRfVar var_96
+  loc_7021FA: FLdRfVar var_88
+  loc_7021FD: LitStr "INIPUMP"
+  loc_702200: FStStrCopy var_120
+  loc_702203: FLdRfVar var_120
+  loc_702206: LitStr "MODULOS"
+  loc_702209: FStStrCopy var_11C
+  loc_70220C: FLdRfVar var_11C
+  loc_70220F: FLdRfVar var_94
+  loc_702212: ImpAdLdRf MemVar_74C760
+  loc_702215: NewIfNullPr Formx
+  loc_702218: from_stack_1v = Formx.global_4589716Get()
+  loc_70221D: FLdPr var_94
+  loc_702220: Call 0.Method_arg_38C ()
+  loc_702225: FLdI2 var_96
+  loc_702228: NotI4
+  loc_702229: FFreeStr var_11C = ""
+  loc_702230: FFree1Ad var_94
+  loc_702233: BranchF loc_702269
+  loc_702236: FLdRfVar var_A8
+  loc_702239: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_70223E: FLdRfVar var_A8
+  loc_702241: CBoolVarNull
+  loc_702243: FFree1Var var_A8 = ""
+  loc_702246: BranchF loc_702266
+  loc_702249: LitVar_FALSE
+  loc_70224D: PopAdLdVar
+  loc_70224E: ImpAdLdRf MemVar_74C760
+  loc_702251: NewIfNullPr Formx
+  loc_702254: VCallAd Control_ID_PanelCierres
+  loc_702257: FStAdFunc var_94
+  loc_70225A: FLdPr var_94
+  loc_70225D: LateIdSt
+  loc_702262: FFree1Ad var_94
+  loc_702265: ExitProcHresult
+  loc_702266: Branch loc_7021F7
+  loc_702269: ILdRf var_88
+  loc_70226C: LitStr vbNullString
+  loc_70226F: NeStr
+  loc_702271: BranchF loc_702295
+  loc_702274: ILdRf var_88
+  loc_702277: CBoolStr
+  loc_702279: LitI4 &H5A
+  loc_70227E: ImpAdLdRf MemVar_74C6C0
+  loc_702281: Ary1StI2
+  loc_702282: ILdRf var_88
+  loc_702285: CBoolStr
+  loc_702287: PopTmpLdAd2 var_96
+  loc_70228A: ImpAdLdRf MemVar_74C6D8
+  loc_70228D: NewIfNullPr CCEMLicence
+  loc_702290: CCEMLicence.Enabled = from_stack_1b
+  loc_702295: FLdRfVar var_96
+  loc_702298: FLdRfVar var_88
+  loc_70229B: LitStr "CONSOLA"
+  loc_70229E: FStStrCopy var_120
+  loc_7022A1: FLdRfVar var_120
+  loc_7022A4: LitStr "MODULOS"
+  loc_7022A7: FStStrCopy var_11C
+  loc_7022AA: FLdRfVar var_11C
+  loc_7022AD: FLdRfVar var_94
+  loc_7022B0: ImpAdLdRf MemVar_74C760
+  loc_7022B3: NewIfNullPr Formx
+  loc_7022B6: from_stack_1v = Formx.global_4589716Get()
+  loc_7022BB: FLdPr var_94
+  loc_7022BE: Call 0.Method_arg_38C ()
+  loc_7022C3: FLdI2 var_96
+  loc_7022C6: NotI4
+  loc_7022C7: FFreeStr var_11C = ""
+  loc_7022CE: FFree1Ad var_94
+  loc_7022D1: BranchF loc_702307
+  loc_7022D4: FLdRfVar var_A8
+  loc_7022D7: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_7022DC: FLdRfVar var_A8
+  loc_7022DF: CBoolVarNull
+  loc_7022E1: FFree1Var var_A8 = ""
+  loc_7022E4: BranchF loc_702304
+  loc_7022E7: LitVar_FALSE
+  loc_7022EB: PopAdLdVar
+  loc_7022EC: ImpAdLdRf MemVar_74C760
+  loc_7022EF: NewIfNullPr Formx
+  loc_7022F2: VCallAd Control_ID_PanelCierres
+  loc_7022F5: FStAdFunc var_94
+  loc_7022F8: FLdPr var_94
+  loc_7022FB: LateIdSt
+  loc_702300: FFree1Ad var_94
+  loc_702303: ExitProcHresult
+  loc_702304: Branch loc_702295
+  loc_702307: ILdRf var_88
+  loc_70230A: LitStr vbNullString
+  loc_70230D: NeStr
+  loc_70230F: BranchF loc_702333
+  loc_702312: ILdRf var_88
+  loc_702315: CBoolStr
+  loc_702317: LitI4 &H15
+  loc_70231C: ImpAdLdRf MemVar_74C6C0
+  loc_70231F: Ary1StI2
+  loc_702320: ILdRf var_88
+  loc_702323: CBoolStr
+  loc_702325: PopTmpLdAd2 var_96
+  loc_702328: ImpAdLdRf MemVar_74C6D8
+  loc_70232B: NewIfNullPr CCEMLicence
+  loc_70232E: CCEMLicence.WindowState = from_stack_1
+  loc_702333: FLdRfVar var_96
+  loc_702336: FLdRfVar var_88
+  loc_702339: LitStr "DATOS_REGIONALES"
+  loc_70233C: FStStrCopy var_120
+  loc_70233F: FLdRfVar var_120
+  loc_702342: LitStr "MODULOS"
+  loc_702345: FStStrCopy var_11C
+  loc_702348: FLdRfVar var_11C
+  loc_70234B: FLdRfVar var_94
+  loc_70234E: ImpAdLdRf MemVar_74C760
+  loc_702351: NewIfNullPr Formx
+  loc_702354: from_stack_1v = Formx.global_4589716Get()
+  loc_702359: FLdPr var_94
+  loc_70235C: Call 0.Method_arg_38C ()
+  loc_702361: FLdI2 var_96
+  loc_702364: NotI4
+  loc_702365: FFreeStr var_11C = ""
+  loc_70236C: FFree1Ad var_94
+  loc_70236F: BranchF loc_7023A5
+  loc_702372: FLdRfVar var_A8
+  loc_702375: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_70237A: FLdRfVar var_A8
+  loc_70237D: CBoolVarNull
+  loc_70237F: FFree1Var var_A8 = ""
+  loc_702382: BranchF loc_7023A2
+  loc_702385: LitVar_FALSE
+  loc_702389: PopAdLdVar
+  loc_70238A: ImpAdLdRf MemVar_74C760
+  loc_70238D: NewIfNullPr Formx
+  loc_702390: VCallAd Control_ID_PanelCierres
+  loc_702393: FStAdFunc var_94
+  loc_702396: FLdPr var_94
+  loc_702399: LateIdSt
+  loc_70239E: FFree1Ad var_94
+  loc_7023A1: ExitProcHresult
+  loc_7023A2: Branch loc_702333
+  loc_7023A5: ILdRf var_88
+  loc_7023A8: LitStr vbNullString
+  loc_7023AB: NeStr
+  loc_7023AD: BranchF loc_7023D1
+  loc_7023B0: ILdRf var_88
+  loc_7023B3: CBoolStr
+  loc_7023B5: LitI4 &H21
+  loc_7023BA: ImpAdLdRf MemVar_74C6C0
+  loc_7023BD: Ary1StI2
+  loc_7023BE: ILdRf var_88
+  loc_7023C1: CBoolStr
+  loc_7023C3: PopTmpLdAd2 var_96
+  loc_7023C6: ImpAdLdRf MemVar_74C6D8
+  loc_7023C9: NewIfNullPr CCEMLicence
+  loc_7023CC: CCEMLicence.MousePointer = from_stack_1
+  loc_7023D1: FLdRfVar var_96
+  loc_7023D4: FLdRfVar var_88
+  loc_7023D7: LitStr "ESTACION"
+  loc_7023DA: FStStrCopy var_120
+  loc_7023DD: FLdRfVar var_120
+  loc_7023E0: LitStr "MODULOS"
+  loc_7023E3: FStStrCopy var_11C
+  loc_7023E6: FLdRfVar var_11C
+  loc_7023E9: FLdRfVar var_94
+  loc_7023EC: ImpAdLdRf MemVar_74C760
+  loc_7023EF: NewIfNullPr Formx
+  loc_7023F2: from_stack_1v = Formx.global_4589716Get()
+  loc_7023F7: FLdPr var_94
+  loc_7023FA: Call 0.Method_arg_38C ()
+  loc_7023FF: FLdI2 var_96
+  loc_702402: NotI4
+  loc_702403: FFreeStr var_11C = ""
+  loc_70240A: FFree1Ad var_94
+  loc_70240D: BranchF loc_702443
+  loc_702410: FLdRfVar var_A8
+  loc_702413: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_702418: FLdRfVar var_A8
+  loc_70241B: CBoolVarNull
+  loc_70241D: FFree1Var var_A8 = ""
+  loc_702420: BranchF loc_702440
+  loc_702423: LitVar_FALSE
+  loc_702427: PopAdLdVar
+  loc_702428: ImpAdLdRf MemVar_74C760
+  loc_70242B: NewIfNullPr Formx
+  loc_70242E: VCallAd Control_ID_PanelCierres
+  loc_702431: FStAdFunc var_94
+  loc_702434: FLdPr var_94
+  loc_702437: LateIdSt
+  loc_70243C: FFree1Ad var_94
+  loc_70243F: ExitProcHresult
+  loc_702440: Branch loc_7023D1
+  loc_702443: ILdRf var_88
+  loc_702446: LitStr vbNullString
+  loc_702449: NeStr
+  loc_70244B: BranchF loc_70246F
+  loc_70244E: ILdRf var_88
+  loc_702451: CBoolStr
+  loc_702453: LitI4 &H22
+  loc_702458: ImpAdLdRf MemVar_74C6C0
+  loc_70245B: Ary1StI2
+  loc_70245C: ILdRf var_88
+  loc_70245F: CBoolStr
+  loc_702461: PopTmpLdAd2 var_96
+  loc_702464: ImpAdLdRf MemVar_74C6D8
+  loc_702467: NewIfNullPr CCEMLicence
+  loc_70246A: CCEMLicence.FontName = from_stack_1
+  loc_70246F: FLdRfVar var_96
+  loc_702472: FLdRfVar var_88
+  loc_702475: LitStr "ALMACENARCOPIA"
+  loc_702478: FStStrCopy var_120
+  loc_70247B: FLdRfVar var_120
+  loc_70247E: LitStr "MODULOS"
+  loc_702481: FStStrCopy var_11C
+  loc_702484: FLdRfVar var_11C
+  loc_702487: FLdRfVar var_94
+  loc_70248A: ImpAdLdRf MemVar_74C760
+  loc_70248D: NewIfNullPr Formx
+  loc_702490: from_stack_1v = Formx.global_4589716Get()
+  loc_702495: FLdPr var_94
+  loc_702498: Call 0.Method_arg_38C ()
+  loc_70249D: FLdI2 var_96
+  loc_7024A0: NotI4
+  loc_7024A1: FFreeStr var_11C = ""
+  loc_7024A8: FFree1Ad var_94
+  loc_7024AB: BranchF loc_7024E1
+  loc_7024AE: FLdRfVar var_A8
+  loc_7024B1: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_7024B6: FLdRfVar var_A8
+  loc_7024B9: CBoolVarNull
+  loc_7024BB: FFree1Var var_A8 = ""
+  loc_7024BE: BranchF loc_7024DE
+  loc_7024C1: LitVar_FALSE
+  loc_7024C5: PopAdLdVar
+  loc_7024C6: ImpAdLdRf MemVar_74C760
+  loc_7024C9: NewIfNullPr Formx
+  loc_7024CC: VCallAd Control_ID_PanelCierres
+  loc_7024CF: FStAdFunc var_94
+  loc_7024D2: FLdPr var_94
+  loc_7024D5: LateIdSt
+  loc_7024DA: FFree1Ad var_94
+  loc_7024DD: ExitProcHresult
+  loc_7024DE: Branch loc_70246F
+  loc_7024E1: ILdRf var_88
+  loc_7024E4: LitStr vbNullString
+  loc_7024E7: NeStr
+  loc_7024E9: BranchF loc_70250D
+  loc_7024EC: ILdRf var_88
+  loc_7024EF: CBoolStr
+  loc_7024F1: LitI4 &H1D
+  loc_7024F6: ImpAdLdRf MemVar_74C6C0
+  loc_7024F9: Ary1StI2
+  loc_7024FA: ILdRf var_88
+  loc_7024FD: CBoolStr
+  loc_7024FF: PopTmpLdAd2 var_96
+  loc_702502: ImpAdLdRf MemVar_74C6D8
+  loc_702505: NewIfNullPr CCEMLicence
+  loc_702508: CCEMLicence.FontSize = from_stack_1s
+  loc_70250D: FLdRfVar var_96
+  loc_702510: FLdRfVar var_88
+  loc_702513: LitStr "RECUPERARCOPIA"
+  loc_702516: FStStrCopy var_120
+  loc_702519: FLdRfVar var_120
+  loc_70251C: LitStr "MODULOS"
+  loc_70251F: FStStrCopy var_11C
+  loc_702522: FLdRfVar var_11C
+  loc_702525: FLdRfVar var_94
+  loc_702528: ImpAdLdRf MemVar_74C760
+  loc_70252B: NewIfNullPr Formx
+  loc_70252E: from_stack_1v = Formx.global_4589716Get()
+  loc_702533: FLdPr var_94
+  loc_702536: Call 0.Method_arg_38C ()
+  loc_70253B: FLdI2 var_96
+  loc_70253E: NotI4
+  loc_70253F: FFreeStr var_11C = ""
+  loc_702546: FFree1Ad var_94
+  loc_702549: BranchF loc_70257F
+  loc_70254C: FLdRfVar var_A8
+  loc_70254F: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_702554: FLdRfVar var_A8
+  loc_702557: CBoolVarNull
+  loc_702559: FFree1Var var_A8 = ""
+  loc_70255C: BranchF loc_70257C
+  loc_70255F: LitVar_FALSE
+  loc_702563: PopAdLdVar
+  loc_702564: ImpAdLdRf MemVar_74C760
+  loc_702567: NewIfNullPr Formx
+  loc_70256A: VCallAd Control_ID_PanelCierres
+  loc_70256D: FStAdFunc var_94
+  loc_702570: FLdPr var_94
+  loc_702573: LateIdSt
+  loc_702578: FFree1Ad var_94
+  loc_70257B: ExitProcHresult
+  loc_70257C: Branch loc_70250D
+  loc_70257F: ILdRf var_88
+  loc_702582: LitStr vbNullString
+  loc_702585: NeStr
+  loc_702587: BranchF loc_7025AB
+  loc_70258A: ILdRf var_88
+  loc_70258D: CBoolStr
+  loc_70258F: LitI4 &H1E
+  loc_702594: ImpAdLdRf MemVar_74C6C0
+  loc_702597: Ary1StI2
+  loc_702598: ILdRf var_88
+  loc_70259B: CBoolStr
+  loc_70259D: PopTmpLdAd2 var_96
+  loc_7025A0: ImpAdLdRf MemVar_74C6D8
+  loc_7025A3: NewIfNullPr CCEMLicence
+  loc_7025A6: CCEMLicence.FontBold = from_stack_1b
+  loc_7025AB: FLdRfVar var_96
+  loc_7025AE: FLdRfVar var_88
+  loc_7025B1: LitStr "CONTROL_TANQUES"
+  loc_7025B4: FStStrCopy var_120
+  loc_7025B7: FLdRfVar var_120
+  loc_7025BA: LitStr "MODULOS"
+  loc_7025BD: FStStrCopy var_11C
+  loc_7025C0: FLdRfVar var_11C
+  loc_7025C3: FLdRfVar var_94
+  loc_7025C6: ImpAdLdRf MemVar_74C760
+  loc_7025C9: NewIfNullPr Formx
+  loc_7025CC: from_stack_1v = Formx.global_4589716Get()
+  loc_7025D1: FLdPr var_94
+  loc_7025D4: Call 0.Method_arg_38C ()
+  loc_7025D9: FLdI2 var_96
+  loc_7025DC: NotI4
+  loc_7025DD: FFreeStr var_11C = ""
+  loc_7025E4: FFree1Ad var_94
+  loc_7025E7: BranchF loc_70261D
+  loc_7025EA: FLdRfVar var_A8
+  loc_7025ED: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_7025F2: FLdRfVar var_A8
+  loc_7025F5: CBoolVarNull
+  loc_7025F7: FFree1Var var_A8 = ""
+  loc_7025FA: BranchF loc_70261A
+  loc_7025FD: LitVar_FALSE
+  loc_702601: PopAdLdVar
+  loc_702602: ImpAdLdRf MemVar_74C760
+  loc_702605: NewIfNullPr Formx
+  loc_702608: VCallAd Control_ID_PanelCierres
+  loc_70260B: FStAdFunc var_94
+  loc_70260E: FLdPr var_94
+  loc_702611: LateIdSt
+  loc_702616: FFree1Ad var_94
+  loc_702619: ExitProcHresult
+  loc_70261A: Branch loc_7025AB
+  loc_70261D: ILdRf var_88
+  loc_702620: LitStr vbNullString
+  loc_702623: NeStr
+  loc_702625: BranchF loc_702649
+  loc_702628: ILdRf var_88
+  loc_70262B: CBoolStr
+  loc_70262D: LitI4 &H2C
+  loc_702632: ImpAdLdRf MemVar_74C6C0
+  loc_702635: Ary1StI2
+  loc_702636: ILdRf var_88
+  loc_702639: CBoolStr
+  loc_70263B: PopTmpLdAd2 var_96
+  loc_70263E: ImpAdLdRf MemVar_74C6D8
+  loc_702641: NewIfNullPr CCEMLicence
+  loc_702644: CCEMLicence.FontItalic = from_stack_1b
+  loc_702649: FLdRfVar var_96
+  loc_70264C: FLdRfVar var_88
+  loc_70264F: LitStr "CONVERTIR"
+  loc_702652: FStStrCopy var_120
+  loc_702655: FLdRfVar var_120
+  loc_702658: LitStr "MODULOS"
+  loc_70265B: FStStrCopy var_11C
+  loc_70265E: FLdRfVar var_11C
+  loc_702661: FLdRfVar var_94
+  loc_702664: ImpAdLdRf MemVar_74C760
+  loc_702667: NewIfNullPr Formx
+  loc_70266A: from_stack_1v = Formx.global_4589716Get()
+  loc_70266F: FLdPr var_94
+  loc_702672: Call 0.Method_arg_38C ()
+  loc_702677: FLdI2 var_96
+  loc_70267A: NotI4
+  loc_70267B: FFreeStr var_11C = ""
+  loc_702682: FFree1Ad var_94
+  loc_702685: BranchF loc_7026BB
+  loc_702688: FLdRfVar var_A8
+  loc_70268B: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_702690: FLdRfVar var_A8
+  loc_702693: CBoolVarNull
+  loc_702695: FFree1Var var_A8 = ""
+  loc_702698: BranchF loc_7026B8
+  loc_70269B: LitVar_FALSE
+  loc_70269F: PopAdLdVar
+  loc_7026A0: ImpAdLdRf MemVar_74C760
+  loc_7026A3: NewIfNullPr Formx
+  loc_7026A6: VCallAd Control_ID_PanelCierres
+  loc_7026A9: FStAdFunc var_94
+  loc_7026AC: FLdPr var_94
+  loc_7026AF: LateIdSt
+  loc_7026B4: FFree1Ad var_94
+  loc_7026B7: ExitProcHresult
+  loc_7026B8: Branch loc_702649
+  loc_7026BB: ILdRf var_88
+  loc_7026BE: LitStr vbNullString
+  loc_7026C1: NeStr
+  loc_7026C3: BranchF loc_7026D9
+  loc_7026C6: ILdRf var_88
+  loc_7026C9: CBoolStr
+  loc_7026CB: PopTmpLdAd2 var_96
+  loc_7026CE: ImpAdLdRf MemVar_74C6D8
+  loc_7026D1: NewIfNullPr CCEMLicence
+  loc_7026D4: CCEMLicence.FontStrikethru = from_stack_1b
+  loc_7026D9: FLdRfVar var_96
+  loc_7026DC: FLdRfVar var_88
+  loc_7026DF: LitStr "PROGRAMACION_EVENTOS"
+  loc_7026E2: FStStrCopy var_120
+  loc_7026E5: FLdRfVar var_120
+  loc_7026E8: LitStr "MODULOS"
+  loc_7026EB: FStStrCopy var_11C
+  loc_7026EE: FLdRfVar var_11C
+  loc_7026F1: FLdRfVar var_94
+  loc_7026F4: ImpAdLdRf MemVar_74C760
+  loc_7026F7: NewIfNullPr Formx
+  loc_7026FA: from_stack_1v = Formx.global_4589716Get()
+  loc_7026FF: FLdPr var_94
+  loc_702702: Call 0.Method_arg_38C ()
+  loc_702707: FLdI2 var_96
+  loc_70270A: NotI4
+  loc_70270B: FFreeStr var_11C = ""
+  loc_702712: FFree1Ad var_94
+  loc_702715: BranchF loc_70274B
+  loc_702718: FLdRfVar var_A8
+  loc_70271B: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_702720: FLdRfVar var_A8
+  loc_702723: CBoolVarNull
+  loc_702725: FFree1Var var_A8 = ""
+  loc_702728: BranchF loc_702748
+  loc_70272B: LitVar_FALSE
+  loc_70272F: PopAdLdVar
+  loc_702730: ImpAdLdRf MemVar_74C760
+  loc_702733: NewIfNullPr Formx
+  loc_702736: VCallAd Control_ID_PanelCierres
+  loc_702739: FStAdFunc var_94
+  loc_70273C: FLdPr var_94
+  loc_70273F: LateIdSt
+  loc_702744: FFree1Ad var_94
+  loc_702747: ExitProcHresult
+  loc_702748: Branch loc_7026D9
+  loc_70274B: ILdRf var_88
+  loc_70274E: LitStr vbNullString
+  loc_702751: NeStr
+  loc_702753: BranchF loc_702785
+  loc_702756: ILdRf var_88
+  loc_702759: CBoolStr
+  loc_70275B: LitI4 &H39
+  loc_702760: ImpAdLdRf MemVar_74C6C0
+  loc_702763: Ary1StI2
+  loc_702764: ILdRf var_88
+  loc_702767: CBoolStr
+  loc_702769: LitI4 &H3A
+  loc_70276E: ImpAdLdRf MemVar_74C6C0
+  loc_702771: Ary1StI2
+  loc_702772: ILdRf var_88
+  loc_702775: CBoolStr
+  loc_702777: PopTmpLdAd2 var_96
+  loc_70277A: ImpAdLdRf MemVar_74C6D8
+  loc_70277D: NewIfNullPr CCEMLicence
+  loc_702780: CCEMLicence.FontUnderline = from_stack_1b
+  loc_702785: FLdRfVar var_96
+  loc_702788: FLdRfVar var_88
+  loc_70278B: LitStr "GRUPO_SURTIDORES"
+  loc_70278E: FStStrCopy var_120
+  loc_702791: FLdRfVar var_120
+  loc_702794: LitStr "MODULOS"
+  loc_702797: FStStrCopy var_11C
+  loc_70279A: FLdRfVar var_11C
+  loc_70279D: FLdRfVar var_94
+  loc_7027A0: ImpAdLdRf MemVar_74C760
+  loc_7027A3: NewIfNullPr Formx
+  loc_7027A6: from_stack_1v = Formx.global_4589716Get()
+  loc_7027AB: FLdPr var_94
+  loc_7027AE: Call 0.Method_arg_38C ()
+  loc_7027B3: FLdI2 var_96
+  loc_7027B6: NotI4
+  loc_7027B7: FFreeStr var_11C = ""
+  loc_7027BE: FFree1Ad var_94
+  loc_7027C1: BranchF loc_7027F7
+  loc_7027C4: FLdRfVar var_A8
+  loc_7027C7: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_7027CC: FLdRfVar var_A8
+  loc_7027CF: CBoolVarNull
+  loc_7027D1: FFree1Var var_A8 = ""
+  loc_7027D4: BranchF loc_7027F4
+  loc_7027D7: LitVar_FALSE
+  loc_7027DB: PopAdLdVar
+  loc_7027DC: ImpAdLdRf MemVar_74C760
+  loc_7027DF: NewIfNullPr Formx
+  loc_7027E2: VCallAd Control_ID_PanelCierres
+  loc_7027E5: FStAdFunc var_94
+  loc_7027E8: FLdPr var_94
+  loc_7027EB: LateIdSt
+  loc_7027F0: FFree1Ad var_94
+  loc_7027F3: ExitProcHresult
+  loc_7027F4: Branch loc_702785
+  loc_7027F7: ILdRf var_88
+  loc_7027FA: LitStr vbNullString
+  loc_7027FD: NeStr
+  loc_7027FF: BranchF loc_702823
+  loc_702802: ILdRf var_88
+  loc_702805: CBoolStr
+  loc_702807: LitI4 &H49
+  loc_70280C: ImpAdLdRf MemVar_74C6C0
+  loc_70280F: Ary1StI2
+  loc_702810: ILdRf var_88
+  loc_702813: CBoolStr
+  loc_702815: PopTmpLdAd2 var_96
+  loc_702818: ImpAdLdRf MemVar_74C6D8
+  loc_70281B: NewIfNullPr CCEMLicence
+  loc_70281E: Call 0.Method_arg_DC ()
+  loc_702823: FLdRfVar var_96
+  loc_702826: FLdRfVar var_88
+  loc_702829: LitStr "IMPRIMIR_CONFIGURACION"
+  loc_70282C: FStStrCopy var_120
+  loc_70282F: FLdRfVar var_120
+  loc_702832: LitStr "MODULOS"
+  loc_702835: FStStrCopy var_11C
+  loc_702838: FLdRfVar var_11C
+  loc_70283B: FLdRfVar var_94
+  loc_70283E: ImpAdLdRf MemVar_74C760
+  loc_702841: NewIfNullPr Formx
+  loc_702844: from_stack_1v = Formx.global_4589716Get()
+  loc_702849: FLdPr var_94
+  loc_70284C: Call 0.Method_arg_38C ()
+  loc_702851: FLdI2 var_96
+  loc_702854: NotI4
+  loc_702855: FFreeStr var_11C = ""
+  loc_70285C: FFree1Ad var_94
+  loc_70285F: BranchF loc_702895
+  loc_702862: FLdRfVar var_A8
+  loc_702865: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_70286A: FLdRfVar var_A8
+  loc_70286D: CBoolVarNull
+  loc_70286F: FFree1Var var_A8 = ""
+  loc_702872: BranchF loc_702892
+  loc_702875: LitVar_FALSE
+  loc_702879: PopAdLdVar
+  loc_70287A: ImpAdLdRf MemVar_74C760
+  loc_70287D: NewIfNullPr Formx
+  loc_702880: VCallAd Control_ID_PanelCierres
+  loc_702883: FStAdFunc var_94
+  loc_702886: FLdPr var_94
+  loc_702889: LateIdSt
+  loc_70288E: FFree1Ad var_94
+  loc_702891: ExitProcHresult
+  loc_702892: Branch loc_702823
+  loc_702895: ILdRf var_88
+  loc_702898: LitStr vbNullString
+  loc_70289B: NeStr
+  loc_70289D: BranchF loc_7028C1
+  loc_7028A0: ILdRf var_88
+  loc_7028A3: CBoolStr
+  loc_7028A5: LitI4 &H34
+  loc_7028AA: ImpAdLdRf MemVar_74C6C0
+  loc_7028AD: Ary1StI2
+  loc_7028AE: ILdRf var_88
+  loc_7028B1: CBoolStr
+  loc_7028B3: PopTmpLdAd2 var_96
+  loc_7028B6: ImpAdLdRf MemVar_74C6D8
+  loc_7028B9: NewIfNullPr CCEMLicence
+  loc_7028BC: CCEMLicence.CurrentX = from_stack_1s
+  loc_7028C1: Branch loc_7028C4
+  loc_7028C4: ExitProcHresult
+End Function
+
+Private Function Proc_159_1_676720() '676720
+  'Data Table: 403450
+  loc_6762B0: FLdRfVar var_86
+  loc_6762B3: ImpAdLdRf MemVar_74C6D8
+  loc_6762B6: NewIfNullPr CCEMLicence
+  loc_6762BE: FLdI2 var_86
+  loc_6762C1: FLdRfVar var_88
+  loc_6762C4: ImpAdLdRf MemVar_74C6D8
+  loc_6762C7: NewIfNullPr CCEMLicence
+  loc_6762CA: Set from_stack_2 = CCEMLicence(from_stack_1)
+  loc_6762CF: FLdI2 var_88
+  loc_6762D2: AndI4
+  loc_6762D3: BranchF loc_67671E
+  loc_6762D6: LitI4 &HB
+  loc_6762DB: ImpAdLdRf MemVar_74C6C0
+  loc_6762DE: Ary1LdI2
+  loc_6762DF: NotI4
+  loc_6762E0: ImpAdLdRf MemVar_74C760
+  loc_6762E3: NewIfNullPr Formx
+  loc_6762E6: VCallAd Control_ID_Estadisticas_menu
+  loc_6762E9: FStAdFunc var_8C
+  loc_6762EC: FLdPr var_8C
+  loc_6762EF: Formx.Menu.Visible = from_stack_1b
+  loc_6762F4: FFree1Ad var_8C
+  loc_6762F7: LitI4 &HD
+  loc_6762FC: ImpAdLdRf MemVar_74C6C0
+  loc_6762FF: Ary1LdI2
+  loc_676300: NotI4
+  loc_676301: ImpAdLdRf MemVar_74C760
+  loc_676304: NewIfNullPr Formx
+  loc_676307: VCallAd Control_ID_TANKS
+  loc_67630A: FStAdFunc var_8C
+  loc_67630D: FLdPr var_8C
+  loc_676310: Formx.Menu.Visible = from_stack_1b
+  loc_676315: FFree1Ad var_8C
+  loc_676318: FLdRfVar var_86
+  loc_67631B: ImpAdLdRf MemVar_74C6D8
+  loc_67631E: NewIfNullPr CCEMLicence
+  loc_676321:  = Forms
+  loc_676326: FLdI2 var_86
+  loc_676329: NotI4
+  loc_67632A: ImpAdLdRf MemVar_74C760
+  loc_67632D: NewIfNullPr Formx
+  loc_676330: VCallAd Control_ID_mnuCamionCisterna
+  loc_676333: FStAdFunc var_8C
+  loc_676336: FLdPr var_8C
+  loc_676339: Formx.Menu.Visible = from_stack_1b
+  loc_67633E: FFree1Ad var_8C
+  loc_676341: FLdRfVar var_86
+  loc_676344: ImpAdLdRf MemVar_74C6D8
+  loc_676347: NewIfNullPr CCEMLicence
+  loc_67634A:  = CCEMLicence.hWnd
+  loc_67634F: FLdI2 var_86
+  loc_676352: NotI4
+  loc_676353: ImpAdLdRf MemVar_74C760
+  loc_676356: NewIfNullPr Formx
+  loc_676359: VCallAd Control_ID_REPORTS
+  loc_67635C: FStAdFunc var_8C
+  loc_67635F: FLdPr var_8C
+  loc_676362: Formx.Menu.Visible = from_stack_1b
+  loc_676367: FFree1Ad var_8C
+  loc_67636A: FLdRfVar var_86
+  loc_67636D: ImpAdLdRf MemVar_74C6D8
+  loc_676370: NewIfNullPr CCEMLicence
+  loc_676373:  = CCEMLicence.BackColor
+  loc_676378: FLdI2 var_86
+  loc_67637B: NotI4
+  loc_67637C: ImpAdLdRf MemVar_74C760
+  loc_67637F: NewIfNullPr Formx
+  loc_676382: VCallAd Control_ID_Menu_Seguridad
+  loc_676385: FStAdFunc var_8C
+  loc_676388: FLdPr var_8C
+  loc_67638B: Formx.Menu.Visible = from_stack_1b
+  loc_676390: FFree1Ad var_8C
+  loc_676393: FLdRfVar var_86
+  loc_676396: ImpAdLdRf MemVar_74C6D8
+  loc_676399: NewIfNullPr CCEMLicence
+  loc_67639C:  = CCEMLicence.ForeColor
+  loc_6763A1: FLdI2 var_86
+  loc_6763A4: NotI4
+  loc_6763A5: ImpAdLdRf MemVar_74C760
+  loc_6763A8: NewIfNullPr Formx
+  loc_6763AB: VCallAd Control_ID_CambiodeClave
+  loc_6763AE: FStAdFunc var_8C
+  loc_6763B1: FLdPr var_8C
+  loc_6763B4: Formx.Menu.Visible = from_stack_1b
+  loc_6763B9: FFree1Ad var_8C
+  loc_6763BC: FLdRfVar var_86
+  loc_6763BF: ImpAdLdRf MemVar_74C6D8
+  loc_6763C2: NewIfNullPr CCEMLicence
+  loc_6763C5:  = CCEMLicence.Left
+  loc_6763CA: FLdI2 var_86
+  loc_6763CD: NotI4
+  loc_6763CE: ImpAdLdRf MemVar_74C760
+  loc_6763D1: NewIfNullPr Formx
+  loc_6763D4: VCallAd Control_ID_LOG_Event
+  loc_6763D7: FStAdFunc var_8C
+  loc_6763DA: FLdPr var_8C
+  loc_6763DD: Formx.Menu.Visible = from_stack_1b
+  loc_6763E2: FFree1Ad var_8C
+  loc_6763E5: FLdRfVar var_86
+  loc_6763E8: ImpAdLdRf MemVar_74C6D8
+  loc_6763EB: NewIfNullPr CCEMLicence
+  loc_6763EE:  = CCEMLicence.Top
+  loc_6763F3: FLdI2 var_86
+  loc_6763F6: NotI4
+  loc_6763F7: ImpAdLdRf MemVar_74C760
+  loc_6763FA: NewIfNullPr Formx
+  loc_6763FD: VCallAd Control_ID_TarjetadeCredito
+  loc_676400: FStAdFunc var_8C
+  loc_676403: FLdPr var_8C
+  loc_676406: Formx.Menu.Visible = from_stack_1b
+  loc_67640B: FFree1Ad var_8C
+  loc_67640E: FLdRfVar var_86
+  loc_676411: ImpAdLdRf MemVar_74C6D8
+  loc_676414: NewIfNullPr CCEMLicence
+  loc_676417:  = CCEMLicence.Width
+  loc_67641C: FLdI2 var_86
+  loc_67641F: NotI4
+  loc_676420: ImpAdLdRf MemVar_74C760
+  loc_676423: NewIfNullPr Formx
+  loc_676426: VCallAd Control_ID_mnuImpresionReportes
+  loc_676429: FStAdFunc var_8C
+  loc_67642C: FLdPr var_8C
+  loc_67642F: Formx.Menu.Visible = from_stack_1b
+  loc_676434: FFree1Ad var_8C
+  loc_676437: FLdRfVar var_86
+  loc_67643A: ImpAdLdRf MemVar_74C6D8
+  loc_67643D: NewIfNullPr CCEMLicence
+  loc_676440:  = CCEMLicence.Height
+  loc_676445: FLdI2 var_86
+  loc_676448: NotI4
+  loc_676449: ImpAdLdRf MemVar_74C760
+  loc_67644C: NewIfNullPr Formx
+  loc_67644F: VCallAd Control_ID_mnuSeccionesReporte
+  loc_676452: FStAdFunc var_8C
+  loc_676455: FLdPr var_8C
+  loc_676458: Formx.Menu.Visible = from_stack_1b
+  loc_67645D: FFree1Ad var_8C
+  loc_676460: FLdRfVar var_86
+  loc_676463: ImpAdLdRf MemVar_74C6D8
+  loc_676466: NewIfNullPr CCEMLicence
+  loc_676469:  = CCEMLicence.Enabled
+  loc_67646E: FLdI2 var_86
+  loc_676471: NotI4
+  loc_676472: ImpAdLdRf MemVar_74C760
+  loc_676475: NewIfNullPr Formx
+  loc_676478: VCallAd Control_ID_IMPORTA_37
+  loc_67647B: FStAdFunc var_8C
+  loc_67647E: FLdPr var_8C
+  loc_676481: Formx.Menu.Visible = from_stack_1b
+  loc_676486: FFree1Ad var_8C
+  loc_676489: FLdRfVar var_86
+  loc_67648C: ImpAdLdRf MemVar_74C6D8
+  loc_67648F: NewIfNullPr CCEMLicence
+  loc_676492:  = CCEMLicence.WindowState
+  loc_676497: FLdI2 var_86
+  loc_67649A: NotI4
+  loc_67649B: ImpAdLdRf MemVar_74C760
+  loc_67649E: NewIfNullPr Formx
+  loc_6764A1: VCallAd Control_ID_mnuPumpIni
+  loc_6764A4: FStAdFunc var_8C
+  loc_6764A7: FLdPr var_8C
+  loc_6764AA: Formx.Menu.Visible = from_stack_1b
+  loc_6764AF: FFree1Ad var_8C
+  loc_6764B2: FLdRfVar var_86
+  loc_6764B5: ImpAdLdRf MemVar_74C6D8
+  loc_6764B8: NewIfNullPr CCEMLicence
+  loc_6764BB:  = CCEMLicence.MousePointer
+  loc_6764C0: FLdI2 var_86
+  loc_6764C3: NotI4
+  loc_6764C4: ImpAdLdRf MemVar_74C760
+  loc_6764C7: NewIfNullPr Formx
+  loc_6764CA: VCallAd Control_ID_SETUP_CONSOLA
+  loc_6764CD: FStAdFunc var_8C
+  loc_6764D0: FLdPr var_8C
+  loc_6764D3: Formx.Menu.Visible = from_stack_1b
+  loc_6764D8: FFree1Ad var_8C
+  loc_6764DB: FLdRfVar var_86
+  loc_6764DE: ImpAdLdRf MemVar_74C6D8
+  loc_6764E1: NewIfNullPr CCEMLicence
+  loc_6764E4:  = CCEMLicence.FontName
+  loc_6764E9: FLdI2 var_86
+  loc_6764EC: NotI4
+  loc_6764ED: ImpAdLdRf MemVar_74C760
+  loc_6764F0: NewIfNullPr Formx
+  loc_6764F3: VCallAd Control_ID_DATOS_REGIONALES
+  loc_6764F6: FStAdFunc var_8C
+  loc_6764F9: FLdPr var_8C
+  loc_6764FC: Formx.Menu.Visible = from_stack_1b
+  loc_676501: FFree1Ad var_8C
+  loc_676504: FLdRfVar var_86
+  loc_676507: ImpAdLdRf MemVar_74C6D8
+  loc_67650A: NewIfNullPr CCEMLicence
+  loc_67650D:  = CCEMLicence.FontSize
+  loc_676512: FLdI2 var_86
+  loc_676515: NotI4
+  loc_676516: ImpAdLdRf MemVar_74C760
+  loc_676519: NewIfNullPr Formx
+  loc_67651C: VCallAd Control_ID_SETUP_STATION
+  loc_67651F: FStAdFunc var_8C
+  loc_676522: FLdPr var_8C
+  loc_676525: Formx.Menu.Visible = from_stack_1b
+  loc_67652A: FFree1Ad var_8C
+  loc_67652D: FLdRfVar var_86
+  loc_676530: ImpAdLdRf MemVar_74C6D8
+  loc_676533: NewIfNullPr CCEMLicence
+  loc_676536:  = CCEMLicence.FontBold
+  loc_67653B: FLdI2 var_86
+  loc_67653E: NotI4
+  loc_67653F: ImpAdLdRf MemVar_74C760
+  loc_676542: NewIfNullPr Formx
+  loc_676545: VCallAd Control_ID_SETUP_STORE
+  loc_676548: FStAdFunc var_8C
+  loc_67654B: FLdPr var_8C
+  loc_67654E: Formx.Menu.Visible = from_stack_1b
+  loc_676553: FFree1Ad var_8C
+  loc_676556: FLdRfVar var_86
+  loc_676559: ImpAdLdRf MemVar_74C6D8
+  loc_67655C: NewIfNullPr CCEMLicence
+  loc_67655F:  = CCEMLicence.FontItalic
+  loc_676564: FLdI2 var_86
+  loc_676567: NotI4
+  loc_676568: ImpAdLdRf MemVar_74C760
+  loc_67656B: NewIfNullPr Formx
+  loc_67656E: VCallAd Control_ID_SETUP_RESTORE
+  loc_676571: FStAdFunc var_8C
+  loc_676574: FLdPr var_8C
+  loc_676577: Formx.Menu.Visible = from_stack_1b
+  loc_67657C: FFree1Ad var_8C
+  loc_67657F: FLdRfVar var_86
+  loc_676582: ImpAdLdRf MemVar_74C6D8
+  loc_676585: NewIfNullPr CCEMLicence
+  loc_676588:  = CCEMLicence.FontStrikethru
+  loc_67658D: FLdI2 var_86
+  loc_676590: NotI4
+  loc_676591: ImpAdLdRf MemVar_74C760
+  loc_676594: NewIfNullPr Formx
+  loc_676597: VCallAd Control_ID_mnuControlTanques
+  loc_67659A: FStAdFunc var_8C
+  loc_67659D: FLdPr var_8C
+  loc_6765A0: Formx.Menu.Visible = from_stack_1b
+  loc_6765A5: FFree1Ad var_8C
+  loc_6765A8: FLdRfVar var_86
+  loc_6765AB: ImpAdLdRf MemVar_74C6D8
+  loc_6765AE: NewIfNullPr CCEMLicence
+  loc_6765B1:  = CCEMLicence.FontUnderline
+  loc_6765B6: FLdI2 var_86
+  loc_6765B9: NotI4
+  loc_6765BA: ImpAdLdRf MemVar_74C760
+  loc_6765BD: NewIfNullPr Formx
+  loc_6765C0: VCallAd Control_ID_MnuConvert
+  loc_6765C3: FStAdFunc var_8C
+  loc_6765C6: FLdPr var_8C
+  loc_6765C9: Formx.Menu.Visible = from_stack_1b
+  loc_6765CE: FFree1Ad var_8C
+  loc_6765D1: FLdRfVar var_86
+  loc_6765D4: ImpAdLdRf MemVar_74C6D8
+  loc_6765D7: NewIfNullPr CCEMLicence
+  loc_6765DA:  = CCEMLicence.hDC
+  loc_6765DF: FLdI2 var_86
+  loc_6765E2: NotI4
+  loc_6765E3: ImpAdLdRf MemVar_74C760
+  loc_6765E6: NewIfNullPr Formx
+  loc_6765E9: VCallAd Control_ID_mnuProgramacionEventos
+  loc_6765EC: FStAdFunc var_8C
+  loc_6765EF: FLdPr var_8C
+  loc_6765F2: Formx.Menu.Visible = from_stack_1b
+  loc_6765F7: FFree1Ad var_8C
+  loc_6765FA: FLdRfVar var_86
+  loc_6765FD: ImpAdLdRf MemVar_74C6D8
+  loc_676600: NewIfNullPr CCEMLicence
+  loc_676603:  = CCEMLicence.CurrentX
+  loc_676608: FLdI2 var_86
+  loc_67660B: NotI4
+  loc_67660C: ImpAdLdRf MemVar_74C760
+  loc_67660F: NewIfNullPr Formx
+  loc_676612: VCallAd Control_ID_mnuGruposSurtidores
+  loc_676615: FStAdFunc var_8C
+  loc_676618: FLdPr var_8C
+  loc_67661B: Formx.Menu.Visible = from_stack_1b
+  loc_676620: FFree1Ad var_8C
+  loc_676623: FLdRfVar var_86
+  loc_676626: ImpAdLdRf MemVar_74C6D8
+  loc_676629: NewIfNullPr CCEMLicence
+  loc_67662C:  = CCEMLicence.CurrentY
+  loc_676631: FLdI2 var_86
+  loc_676634: NotI4
+  loc_676635: ImpAdLdRf MemVar_74C760
+  loc_676638: NewIfNullPr Formx
+  loc_67663B: VCallAd Control_ID_mnuPrintConfig
+  loc_67663E: FStAdFunc var_8C
+  loc_676641: FLdPr var_8C
+  loc_676644: Formx.Menu.Visible = from_stack_1b
+  loc_676649: FFree1Ad var_8C
+  loc_67664C: FLdRfVar var_86
+  loc_67664F: ImpAdLdRf MemVar_74C760
+  loc_676652: NewIfNullPr Formx
+  loc_676655: VCallAd Control_ID_mnuControlTanques
+  loc_676658: FStAdFunc var_8C
+  loc_67665B: FLdPr var_8C
+  loc_67665E:  = Formx.Menu.Visible
+  loc_676663: FLdI2 var_86
+  loc_676666: NotI4
+  loc_676667: FLdRfVar var_88
+  loc_67666A: ImpAdLdRf MemVar_74C760
+  loc_67666D: NewIfNullPr Formx
+  loc_676670: VCallAd Control_ID_MnuConvert
+  loc_676673: FStAdFunc var_90
+  loc_676676: FLdPr var_90
+  loc_676679:  = Formx.Menu.Visible
+  loc_67667E: FLdI2 var_88
+  loc_676681: NotI4
+  loc_676682: AndI4
+  loc_676683: FLdRfVar var_96
+  loc_676686: ImpAdLdRf MemVar_74C760
+  loc_676689: NewIfNullPr Formx
+  loc_67668C: VCallAd Control_ID_mnuProgramacionEventos
+  loc_67668F: FStAdFunc var_94
+  loc_676692: FLdPr var_94
+  loc_676695:  = Formx.Menu.Visible
+  loc_67669A: FLdI2 var_96
+  loc_67669D: NotI4
+  loc_67669E: AndI4
+  loc_67669F: FLdRfVar var_9E
+  loc_6766A2: ImpAdLdRf MemVar_74C760
+  loc_6766A5: NewIfNullPr Formx
+  loc_6766A8: VCallAd Control_ID_mnuGruposSurtidores
+  loc_6766AB: FStAdFunc var_9C
+  loc_6766AE: FLdPr var_9C
+  loc_6766B1:  = Formx.Menu.Visible
+  loc_6766B6: FLdI2 var_9E
+  loc_6766B9: NotI4
+  loc_6766BA: AndI4
+  loc_6766BB: FFreeAd var_8C = "": var_90 = "": var_94 = ""
+  loc_6766C6: BranchF loc_6766E2
+  loc_6766C9: LitI2_Byte 0
+  loc_6766CB: ImpAdLdRf MemVar_74C760
+  loc_6766CE: NewIfNullPr Formx
+  loc_6766D1: VCallAd Control_ID_menuSepradorConfig1
+  loc_6766D4: FStAdFunc var_8C
+  loc_6766D7: FLdPr var_8C
+  loc_6766DA: Formx.Menu.Visible = from_stack_1b
+  loc_6766DF: FFree1Ad var_8C
+  loc_6766E2: FLdRfVar var_86
+  loc_6766E5: ImpAdLdRf MemVar_74C760
+  loc_6766E8: NewIfNullPr Formx
+  loc_6766EB: VCallAd Control_ID_mnuPrintConfig
+  loc_6766EE: FStAdFunc var_8C
+  loc_6766F1: FLdPr var_8C
+  loc_6766F4:  = Formx.Menu.Visible
+  loc_6766F9: FLdI2 var_86
+  loc_6766FC: LitI2_Byte 0
+  loc_6766FE: EqI2
+  loc_6766FF: FFree1Ad var_8C
+  loc_676702: BranchF loc_67671E
+  loc_676705: LitI2_Byte 0
+  loc_676707: ImpAdLdRf MemVar_74C760
+  loc_67670A: NewIfNullPr Formx
+  loc_67670D: VCallAd Control_ID_menuSepradorConfig2
+  loc_676710: FStAdFunc var_8C
+  loc_676713: FLdPr var_8C
+  loc_676716: Formx.Menu.Visible = from_stack_1b
+  loc_67671B: FFree1Ad var_8C
+  loc_67671E: ExitProcHresult
+End Function

@@ -1,0 +1,732 @@
+
+Private Function Proc_148_0_5D955C(arg_C, arg_10) '5D955C
+  'Data Table: 4044A0
+  loc_5D9524: FLdRfVar var_86
+  loc_5D9527: ILdRf arg_C
+  loc_5D952A: Call Me.VTable_38()
+  loc_5D952F: FLdI2 var_86
+  loc_5D9532: NotI4
+  loc_5D9533: BranchF loc_5D9537
+  loc_5D9536: ExitProcHresult
+  loc_5D9537: FLdPr Me
+  loc_5D953A: MemLdI2 global_52
+  loc_5D953D: ILdI2 arg_C
+  loc_5D9540: LtI2
+  loc_5D9541: BranchF loc_5D954D
+  loc_5D9544: ILdI2 arg_C
+  loc_5D9547: FLdPr Me
+  loc_5D954A: MemStI2 global_52
+  loc_5D954D: ILdI4 arg_10
+  loc_5D9550: ILdI2 arg_C
+  loc_5D9553: CI4UI1
+  loc_5D9554: FLdPr Me
+  loc_5D9557: MemLdRfVar from_stack_1.global_56
+  loc_5D955A: Ary1StStrCopy
+  loc_5D955B: ExitProcHresult
+End Function
+
+Private Function Proc_148_1_5D92E8(arg_C) '5D92E8
+  'Data Table: 4044A0
+  loc_5D92B4: ZeroRetVal
+  loc_5D92B6: FLdRfVar var_8A
+  loc_5D92B9: ILdRf arg_C
+  loc_5D92BC: Call Me.VTable_38()
+  loc_5D92C1: FLdI2 var_8A
+  loc_5D92C4: NotI4
+  loc_5D92C5: BranchF loc_5D92D4
+  loc_5D92C8: LitStr vbNullString
+  loc_5D92CB: FStStrCopy var_88
+  loc_5D92CE: ExitProcCbHresult
+  loc_5D92D4: ILdI2 arg_C
+  loc_5D92D7: CI4UI1
+  loc_5D92D8: FLdPr Me
+  loc_5D92DB: MemLdRfVar from_stack_1.global_56
+  loc_5D92DE: Ary1LdI4
+  loc_5D92DF: FStStrCopy var_88
+  loc_5D92E2: ExitProcCbHresult
+End Function
+
+Private Function Proc_148_2_5D914C(arg_C) '5D914C
+  'Data Table: 4044A0
+  loc_5D9114: FLdRfVar var_88
+  loc_5D9117: ILdRf arg_C
+  loc_5D911A: Call Me.VTable_38()
+  loc_5D911F: FLdI2 var_88
+  loc_5D9122: NotI4
+  loc_5D9123: BranchF loc_5D9134
+  loc_5D9126: LitI2_Byte 0
+  loc_5D9128: CUI1I2
+  loc_5D912A: FStUI1 var_86
+  loc_5D912E: ExitProcCbHresult
+  loc_5D9134: ILdI2 arg_C
+  loc_5D9137: CI4UI1
+  loc_5D9138: FLdPr Me
+  loc_5D913B: MemLdRfVar from_stack_1.global_80
+  loc_5D913E: Ary1LdUI1
+  loc_5D9140: FStUI1 var_86
+  loc_5D9144: ExitProcCbHresult
+End Function
+
+Private Function Proc_148_3_5CC9B4() '5CC9B4
+  'Data Table: 4044A0
+  loc_5CC9A4: FLdPr Me
+  loc_5CC9A7: MemLdI2 global_52
+  loc_5CC9AA: FStI2 var_86
+  loc_5CC9AD: ExitProcCbHresult
+End Function
+
+Private Function Proc_148_4_61DA60() '61DA60
+  'Data Table: 4044A0
+  loc_61D92C: LitI2_Byte 0
+  loc_61D92E: FStI2 var_86
+  loc_61D931: FLdRfVar var_96
+  loc_61D934: FLdRfVar var_8C
+  loc_61D937: FLdRfVar var_94
+  loc_61D93A: ImpAdLdRf MemVar_74C760
+  loc_61D93D: NewIfNullPr Formx
+  loc_61D940: from_stack_1v = Formx.global_4589716Get()
+  loc_61D945: FLdPr var_94
+  loc_61D948: Formx.DrawStyle = from_stack_1
+  loc_61D94D: FLdI2 var_96
+  loc_61D950: NotI4
+  loc_61D951: FFree1Ad var_94
+  loc_61D954: BranchF loc_61D973
+  loc_61D957: FLdRfVar var_A8
+  loc_61D95A: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_61D95F: FLdRfVar var_A8
+  loc_61D962: CBoolVarNull
+  loc_61D964: FFree1Var var_A8 = ""
+  loc_61D967: BranchF loc_61D970
+  loc_61D96A: ExitProcCbHresult
+  loc_61D970: Branch loc_61D931
+  loc_61D973: FLdRfVar var_8C
+  loc_61D976: CVarRef
+  loc_61D97B: FLdRfVar var_A8
+  loc_61D97E: ImpAdCallFPR4  = Trim()
+  loc_61D983: FLdRfVar var_A8
+  loc_61D986: CStrVarTmp
+  loc_61D987: FStStr var_8C
+  loc_61D98A: FFree1Var var_A8 = ""
+  loc_61D98D: ILdRf var_8C
+  loc_61D990: FnLenStr
+  loc_61D991: LitI4 &H3E8
+  loc_61D996: LtI4
+  loc_61D997: BranchF loc_61D9D1
+  loc_61D99A: ILdRf var_8C
+  loc_61D99D: CVarStr var_D8
+  loc_61D9A0: LitVarStr var_B8, "0"
+  loc_61D9A5: FStVarCopyObj var_A8
+  loc_61D9A8: FLdRfVar var_A8
+  loc_61D9AB: LitI4 &H3E8
+  loc_61D9B0: ILdRf var_8C
+  loc_61D9B3: FnLenStr
+  loc_61D9B4: SubI4
+  loc_61D9B5: FLdRfVar var_C8
+  loc_61D9B8: ImpAdCallFPR4  = String(, )
+  loc_61D9BD: FLdRfVar var_C8
+  loc_61D9C0: ConcatVar var_E8
+  loc_61D9C4: CStrVarTmp
+  loc_61D9C5: FStStr var_8C
+  loc_61D9C8: FFreeVar var_A8 = "": var_C8 = ""
+  loc_61D9D1: LitI2_Byte 1
+  loc_61D9D3: FLdRfVar var_8E
+  loc_61D9D6: LitI2 1000
+  loc_61D9D9: ForI2 var_EC
+  loc_61D9DF: LitVarI2 var_A8, 1
+  loc_61D9E4: FLdI2 var_8E
+  loc_61D9E7: CI4UI1
+  loc_61D9E8: ILdRf var_8C
+  loc_61D9EB: ImpAdCallI2 Mid$(, , )
+  loc_61D9F0: FStStr var_134
+  loc_61D9F3: LitVarI2 var_C8, 1
+  loc_61D9F8: FLdI2 var_8E
+  loc_61D9FB: CI4UI1
+  loc_61D9FC: ILdRf var_8C
+  loc_61D9FF: ImpAdCallI2 Mid$(, , )
+  loc_61DA04: CVarStr var_120
+  loc_61DA07: LitVarI2 var_E8, 10
+  loc_61DA0C: FLdZeroAd var_134
+  loc_61DA0F: FStStrNoPop var_F0
+  loc_61DA12: LitStr "A"
+  loc_61DA15: EqStr
+  loc_61DA17: CVarBoolI2 var_100
+  loc_61DA1B: FLdRfVar var_130
+  loc_61DA1E: ImpAdCallFPR4  = IIf(, , )
+  loc_61DA23: FLdRfVar var_130
+  loc_61DA26: CUI1Var
+  loc_61DA28: FLdI2 var_8E
+  loc_61DA2B: CI4UI1
+  loc_61DA2C: FLdPr Me
+  loc_61DA2F: MemLdRfVar from_stack_1.global_80
+  loc_61DA32: Ary1StUI1
+  loc_61DA34: FFreeStr var_F0 = ""
+  loc_61DA3B: FFreeVar var_A8 = "": var_C8 = "": var_100 = "": var_E8 = "": var_120 = ""
+  loc_61DA4A: FLdRfVar var_8E
+  loc_61DA4D: NextI2 var_EC, loc_61D9DF
+  loc_61DA52: LitI2_Byte &HFF
+  loc_61DA54: FStI2 var_86
+  loc_61DA57: ExitProcCbHresult
+  loc_61DA5D: FLdRfVar arg_0
+End Function
+
+Private Function Proc_148_5_61E214(arg_C) '61E214
+  'Data Table: 4044A0
+  loc_61E0D4: LitI2_Byte 1
+  loc_61E0D6: FStI2 var_8E
+  loc_61E0D9: LitI2_Byte 0
+  loc_61E0DB: FStI2 var_86
+  loc_61E0DE: FLdI2 var_8E
+  loc_61E0E1: LitI2 1000
+  loc_61E0E4: LeI2
+  loc_61E0E5: FLdI2 var_8E
+  loc_61E0E8: CI4UI1
+  loc_61E0E9: ILdI4 arg_C
+  loc_61E0EC: LitI2_Byte 1
+  loc_61E0EE: FnLBound
+  loc_61E0EF: AddI4
+  loc_61E0F0: LitI4 1
+  loc_61E0F5: SubI4
+  loc_61E0F6: ILdI4 arg_C
+  loc_61E0F9: LitI2_Byte 1
+  loc_61E0FB: FnUBound
+  loc_61E0FD: LeI4
+  loc_61E0FE: AndI4
+  loc_61E0FF: BranchF loc_61E130
+  loc_61E102: FLdI2 var_8E
+  loc_61E105: CI4UI1
+  loc_61E106: ILdI4 arg_C
+  loc_61E109: LitI2_Byte 1
+  loc_61E10B: FnLBound
+  loc_61E10C: AddI4
+  loc_61E10D: LitI4 1
+  loc_61E112: SubI4
+  loc_61E113: ILdI4 arg_C
+  loc_61E116: Ary1LdUI1
+  loc_61E118: FLdI2 var_8E
+  loc_61E11B: CI4UI1
+  loc_61E11C: FLdPr Me
+  loc_61E11F: MemLdRfVar from_stack_1.global_80
+  loc_61E122: Ary1StUI1
+  loc_61E124: FLdI2 var_8E
+  loc_61E127: LitI2_Byte 1
+  loc_61E129: AddI2
+  loc_61E12A: FStI2 var_8E
+  loc_61E12D: Branch loc_61E0DE
+  loc_61E130: LitStr vbNullString
+  loc_61E133: FStStrCopy var_8C
+  loc_61E136: LitI2_Byte 1
+  loc_61E138: FLdRfVar var_8E
+  loc_61E13B: LitI2 1000
+  loc_61E13E: ForI2 var_92
+  loc_61E144: ILdRf var_8C
+  loc_61E147: CVarStr var_124
+  loc_61E14A: LitI4 1
+  loc_61E14F: LitI4 1
+  loc_61E154: LitVarStr var_B4, "0"
+  loc_61E159: FStVarCopyObj var_C4
+  loc_61E15C: FLdRfVar var_C4
+  loc_61E15F: FLdI2 var_8E
+  loc_61E162: CI4UI1
+  loc_61E163: FLdPr Me
+  loc_61E166: MemLdRfVar from_stack_1.global_80
+  loc_61E169: Ary1LdRf
+  loc_61E16A: CVarRef
+  loc_61E16F: FLdRfVar var_D4
+  loc_61E172: ImpAdCallFPR4  = Format(, )
+  loc_61E177: FLdRfVar var_D4
+  loc_61E17A: LitVarStr var_F4, "A"
+  loc_61E17F: FStVarCopyObj var_104
+  loc_61E182: FLdRfVar var_104
+  loc_61E185: FLdI2 var_8E
+  loc_61E188: CI4UI1
+  loc_61E189: FLdPr Me
+  loc_61E18C: MemLdRfVar from_stack_1.global_80
+  loc_61E18F: Ary1LdUI1
+  loc_61E191: CI2UI1
+  loc_61E193: LitI2_Byte &HA
+  loc_61E195: GeI2
+  loc_61E196: CVarBoolI2 var_E4
+  loc_61E19A: FLdRfVar var_114
+  loc_61E19D: ImpAdCallFPR4  = IIf(, , )
+  loc_61E1A2: FLdRfVar var_114
+  loc_61E1A5: ConcatVar var_134
+  loc_61E1A9: CStrVarTmp
+  loc_61E1AA: FStStr var_8C
+  loc_61E1AD: FFreeVar var_C4 = "": var_E4 = "": var_104 = "": var_D4 = "": var_114 = ""
+  loc_61E1BC: FLdRfVar var_8E
+  loc_61E1BF: NextI2 var_92, loc_61E144
+  loc_61E1C4: FLdRfVar var_13A
+  loc_61E1C7: ILdRf var_8C
+  loc_61E1CA: FLdRfVar var_138
+  loc_61E1CD: ImpAdLdRf MemVar_74C760
+  loc_61E1D0: NewIfNullPr Formx
+  loc_61E1D3: from_stack_1v = Formx.global_4589716Get()
+  loc_61E1D8: FLdPr var_138
+  loc_61E1DB:  = Formx.DrawWidth
+  loc_61E1E0: FLdI2 var_13A
+  loc_61E1E3: NotI4
+  loc_61E1E4: FFree1Ad var_138
+  loc_61E1E7: BranchF loc_61E206
+  loc_61E1EA: FLdRfVar var_C4
+  loc_61E1ED: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_61E1F2: FLdRfVar var_C4
+  loc_61E1F5: CBoolVarNull
+  loc_61E1F7: FFree1Var var_C4 = ""
+  loc_61E1FA: BranchF loc_61E203
+  loc_61E1FD: ExitProcCbHresult
+  loc_61E203: Branch loc_61E1C4
+  loc_61E206: LitI2_Byte &HFF
+  loc_61E208: FStI2 var_86
+  loc_61E20B: ExitProcCbHresult
+End Function
+
+Private Function Proc_148_6_679730(arg_C) '679730
+  'Data Table: 4044A0
+  loc_679298: FLdRfVar var_88
+  loc_67929B: ILdRf arg_C
+  loc_67929E: Call Me.VTable_38()
+  loc_6792A3: FLdI2 var_88
+  loc_6792A6: NotI4
+  loc_6792A7: BranchF loc_6792B5
+  loc_6792AA: LitI2_Byte 0
+  loc_6792AC: FStI2 var_86
+  loc_6792AF: ExitProcCbHresult
+  loc_6792B5: ILdI2 arg_C
+  loc_6792B8: FStI2 var_8A
+  loc_6792BB: FLdI2 var_8A
+  loc_6792BE: LitI2_Byte &H24
+  loc_6792C0: EqI2
+  loc_6792C1: BranchT loc_679315
+  loc_6792C4: FLdI2 var_8A
+  loc_6792C7: LitI2_Byte &H26
+  loc_6792C9: EqI2
+  loc_6792CA: BranchT loc_679315
+  loc_6792CD: FLdI2 var_8A
+  loc_6792D0: LitI2_Byte &H27
+  loc_6792D2: EqI2
+  loc_6792D3: BranchT loc_679315
+  loc_6792D6: FLdI2 var_8A
+  loc_6792D9: LitI2_Byte &H28
+  loc_6792DB: EqI2
+  loc_6792DC: BranchT loc_679315
+  loc_6792DF: FLdI2 var_8A
+  loc_6792E2: LitI2_Byte &H2F
+  loc_6792E4: EqI2
+  loc_6792E5: BranchT loc_679315
+  loc_6792E8: FLdI2 var_8A
+  loc_6792EB: LitI2_Byte &H35
+  loc_6792ED: EqI2
+  loc_6792EE: BranchT loc_679315
+  loc_6792F1: FLdI2 var_8A
+  loc_6792F4: LitI2_Byte &H51
+  loc_6792F6: EqI2
+  loc_6792F7: BranchT loc_679315
+  loc_6792FA: FLdI2 var_8A
+  loc_6792FD: LitI2_Byte &H59
+  loc_6792FF: EqI2
+  loc_679300: BranchT loc_679315
+  loc_679303: FLdI2 var_8A
+  loc_679306: LitI2_Byte &H52
+  loc_679308: EqI2
+  loc_679309: BranchT loc_679315
+  loc_67930C: FLdI2 var_8A
+  loc_67930F: LitI2_Byte &H67
+  loc_679311: EqI2
+  loc_679312: BranchF loc_67933B
+  loc_679315: LitVarI2 var_AC, 1
+  loc_67931A: LitI4 4
+  loc_67931F: ImpAdLdI4 MemVar_74BEAC
+  loc_679322: ImpAdCallI2 Mid$(, , )
+  loc_679327: FStStrNoPop var_B0
+  loc_67932A: LitStr "1"
+  loc_67932D: EqStr
+  loc_67932F: FStI2 var_86
+  loc_679332: FFree1Str var_B0
+  loc_679335: FFree1Var var_AC = ""
+  loc_679338: Branch loc_6796EE
+  loc_67933B: FLdI2 var_8A
+  loc_67933E: LitI2_Byte &H57
+  loc_679340: EqI2
+  loc_679341: BranchT loc_679383
+  loc_679344: FLdI2 var_8A
+  loc_679347: LitI2_Byte &H58
+  loc_679349: EqI2
+  loc_67934A: BranchT loc_679383
+  loc_67934D: FLdI2 var_8A
+  loc_679350: LitI2_Byte &H5C
+  loc_679352: EqI2
+  loc_679353: BranchT loc_679383
+  loc_679356: FLdI2 var_8A
+  loc_679359: LitI2_Byte &H5D
+  loc_67935B: EqI2
+  loc_67935C: BranchT loc_679383
+  loc_67935F: FLdI2 var_8A
+  loc_679362: LitI2_Byte &H5E
+  loc_679364: EqI2
+  loc_679365: BranchT loc_679383
+  loc_679368: FLdI2 var_8A
+  loc_67936B: LitI2_Byte &H56
+  loc_67936D: EqI2
+  loc_67936E: BranchT loc_679383
+  loc_679371: FLdI2 var_8A
+  loc_679374: LitI2_Byte &H59
+  loc_679376: EqI2
+  loc_679377: BranchT loc_679383
+  loc_67937A: FLdI2 var_8A
+  loc_67937D: LitI2_Byte &H5B
+  loc_67937F: EqI2
+  loc_679380: BranchF loc_6793A9
+  loc_679383: LitVarI2 var_AC, 1
+  loc_679388: LitI4 &HC
+  loc_67938D: ImpAdLdI4 MemVar_74BEAC
+  loc_679390: ImpAdCallI2 Mid$(, , )
+  loc_679395: FStStrNoPop var_B0
+  loc_679398: LitStr "1"
+  loc_67939B: EqStr
+  loc_67939D: FStI2 var_86
+  loc_6793A0: FFree1Str var_B0
+  loc_6793A3: FFree1Var var_AC = ""
+  loc_6793A6: Branch loc_6796EE
+  loc_6793A9: FLdI2 var_8A
+  loc_6793AC: LitI2_Byte &H25
+  loc_6793AE: EqI2
+  loc_6793AF: BranchT loc_6793CD
+  loc_6793B2: FLdI2 var_8A
+  loc_6793B5: LitI2_Byte &H30
+  loc_6793B7: EqI2
+  loc_6793B8: BranchT loc_6793CD
+  loc_6793BB: FLdI2 var_8A
+  loc_6793BE: LitI2_Byte &H3C
+  loc_6793C0: EqI2
+  loc_6793C1: BranchT loc_6793CD
+  loc_6793C4: FLdI2 var_8A
+  loc_6793C7: LitI2_Byte &H4B
+  loc_6793C9: EqI2
+  loc_6793CA: BranchF loc_679416
+  loc_6793CD: LitVarI2 var_AC, 1
+  loc_6793D2: LitI4 4
+  loc_6793D7: ImpAdLdI4 MemVar_74BEAC
+  loc_6793DA: ImpAdCallI2 Mid$(, , )
+  loc_6793DF: FStStrNoPop var_B0
+  loc_6793E2: LitStr "1"
+  loc_6793E5: EqStr
+  loc_6793E7: LitVarI2 var_D0, 1
+  loc_6793EC: LitI4 &HC
+  loc_6793F1: ImpAdLdI4 MemVar_74BEAC
+  loc_6793F4: ImpAdCallI2 Mid$(, , )
+  loc_6793F9: FStStrNoPop var_D4
+  loc_6793FC: LitStr "1"
+  loc_6793FF: EqStr
+  loc_679401: OrI4
+  loc_679402: FStI2 var_86
+  loc_679405: FFreeStr var_B0 = ""
+  loc_67940C: FFreeVar var_AC = ""
+  loc_679413: Branch loc_6796EE
+  loc_679416: FLdI2 var_8A
+  loc_679419: LitI2_Byte &H32
+  loc_67941B: EqI2
+  loc_67941C: BranchT loc_679443
+  loc_67941F: FLdI2 var_8A
+  loc_679422: LitI2_Byte &H37
+  loc_679424: EqI2
+  loc_679425: BranchT loc_679443
+  loc_679428: FLdI2 var_8A
+  loc_67942B: LitI2_Byte &H38
+  loc_67942D: EqI2
+  loc_67942E: BranchT loc_679443
+  loc_679431: FLdI2 var_8A
+  loc_679434: LitI2_Byte &H3B
+  loc_679436: EqI2
+  loc_679437: BranchT loc_679443
+  loc_67943A: FLdI2 var_8A
+  loc_67943D: LitI2_Byte &H4C
+  loc_67943F: EqI2
+  loc_679440: BranchF loc_67944E
+  loc_679443: ImpAdCallI2 Proc_142_3_5D81F8()
+  loc_679448: FStI2 var_86
+  loc_67944B: Branch loc_6796EE
+  loc_67944E: FLdI2 var_8A
+  loc_679451: LitI2_Byte &H3D
+  loc_679453: EqI2
+  loc_679454: BranchT loc_67947B
+  loc_679457: FLdI2 var_8A
+  loc_67945A: LitI2_Byte &H3E
+  loc_67945C: EqI2
+  loc_67945D: BranchT loc_67947B
+  loc_679460: FLdI2 var_8A
+  loc_679463: LitI2_Byte &H44
+  loc_679465: EqI2
+  loc_679466: BranchT loc_67947B
+  loc_679469: FLdI2 var_8A
+  loc_67946C: LitI2_Byte &H45
+  loc_67946E: EqI2
+  loc_67946F: BranchT loc_67947B
+  loc_679472: FLdI2 var_8A
+  loc_679475: LitI2_Byte &H47
+  loc_679477: EqI2
+  loc_679478: BranchF loc_6794A1
+  loc_67947B: LitVarI2 var_AC, 1
+  loc_679480: LitI4 &HB
+  loc_679485: ImpAdLdI4 MemVar_74BEAC
+  loc_679488: ImpAdCallI2 Mid$(, , )
+  loc_67948D: FStStrNoPop var_B0
+  loc_679490: LitStr "1"
+  loc_679493: EqStr
+  loc_679495: FStI2 var_86
+  loc_679498: FFree1Str var_B0
+  loc_67949B: FFree1Var var_AC = ""
+  loc_67949E: Branch loc_6796EE
+  loc_6794A1: FLdI2 var_8A
+  loc_6794A4: LitI2_Byte &H11
+  loc_6794A6: EqI2
+  loc_6794A7: BranchT loc_6794D7
+  loc_6794AA: FLdI2 var_8A
+  loc_6794AD: LitI2_Byte &H12
+  loc_6794AF: EqI2
+  loc_6794B0: BranchT loc_6794D7
+  loc_6794B3: FLdI2 var_8A
+  loc_6794B6: LitI2_Byte &H13
+  loc_6794B8: EqI2
+  loc_6794B9: BranchT loc_6794D7
+  loc_6794BC: FLdI2 var_8A
+  loc_6794BF: LitI2_Byte &H16
+  loc_6794C1: EqI2
+  loc_6794C2: BranchT loc_6794D7
+  loc_6794C5: FLdI2 var_8A
+  loc_6794C8: LitI2_Byte &H17
+  loc_6794CA: EqI2
+  loc_6794CB: BranchT loc_6794D7
+  loc_6794CE: FLdI2 var_8A
+  loc_6794D1: LitI2_Byte &H48
+  loc_6794D3: EqI2
+  loc_6794D4: BranchF loc_6794FD
+  loc_6794D7: LitVarI2 var_AC, 1
+  loc_6794DC: LitI4 1
+  loc_6794E1: ImpAdLdI4 MemVar_74BEAC
+  loc_6794E4: ImpAdCallI2 Mid$(, , )
+  loc_6794E9: FStStrNoPop var_B0
+  loc_6794EC: LitStr "1"
+  loc_6794EF: EqStr
+  loc_6794F1: FStI2 var_86
+  loc_6794F4: FFree1Str var_B0
+  loc_6794F7: FFree1Var var_AC = ""
+  loc_6794FA: Branch loc_6796EE
+  loc_6794FD: FLdI2 var_8A
+  loc_679500: LitI2_Byte &H1F
+  loc_679502: EqI2
+  loc_679503: BranchF loc_679529
+  loc_679506: LitVarI2 var_AC, 1
+  loc_67950B: LitI4 &HC
+  loc_679510: ImpAdLdI4 MemVar_74BEAC
+  loc_679513: ImpAdCallI2 Mid$(, , )
+  loc_679518: FStStrNoPop var_B0
+  loc_67951B: CBoolStr
+  loc_67951D: FStI2 var_86
+  loc_679520: FFree1Str var_B0
+  loc_679523: FFree1Var var_AC = ""
+  loc_679526: Branch loc_6796EE
+  loc_679529: FLdI2 var_8A
+  loc_67952C: LitI2_Byte &H29
+  loc_67952E: EqI2
+  loc_67952F: BranchF loc_679558
+  loc_679532: LitVarI2 var_AC, 1
+  loc_679537: LitI4 2
+  loc_67953C: ImpAdLdI4 MemVar_74BEAC
+  loc_67953F: ImpAdCallI2 Mid$(, , )
+  loc_679544: FStStrNoPop var_B0
+  loc_679547: LitStr "1"
+  loc_67954A: EqStr
+  loc_67954C: FStI2 var_86
+  loc_67954F: FFree1Str var_B0
+  loc_679552: FFree1Var var_AC = ""
+  loc_679555: Branch loc_6796EE
+  loc_679558: FLdI2 var_8A
+  loc_67955B: LitI2_Byte &HC
+  loc_67955D: EqI2
+  loc_67955E: BranchF loc_679587
+  loc_679561: LitVarI2 var_AC, 1
+  loc_679566: LitI4 3
+  loc_67956B: ImpAdLdI4 MemVar_74BEAC
+  loc_67956E: ImpAdCallI2 Mid$(, , )
+  loc_679573: FStStrNoPop var_B0
+  loc_679576: LitStr "1"
+  loc_679579: EqStr
+  loc_67957B: FStI2 var_86
+  loc_67957E: FFree1Str var_B0
+  loc_679581: FFree1Var var_AC = ""
+  loc_679584: Branch loc_6796EE
+  loc_679587: FLdI2 var_8A
+  loc_67958A: LitI2_Byte &H4D
+  loc_67958C: EqI2
+  loc_67958D: BranchF loc_6795B1
+  loc_679590: FLdRfVar var_B0
+  loc_679593: ImpAdLdRf MemVar_74C760
+  loc_679596: NewIfNullPr Formx
+  loc_679599: from_stack_1v = Formx.sFlotasEXEGet()
+  loc_67959E: ILdRf var_B0
+  loc_6795A1: FnLenStr
+  loc_6795A2: LitI4 1
+  loc_6795A7: GtI4
+  loc_6795A8: FStI2 var_86
+  loc_6795AB: FFree1Str var_B0
+  loc_6795AE: Branch loc_6796EE
+  loc_6795B1: FLdI2 var_8A
+  loc_6795B4: LitI2_Byte &H4E
+  loc_6795B6: EqI2
+  loc_6795B7: BranchF loc_6795DB
+  loc_6795BA: FLdRfVar var_B0
+  loc_6795BD: ImpAdLdRf MemVar_74C760
+  loc_6795C0: NewIfNullPr Formx
+  loc_6795C3: from_stack_1v = Formx.sServiclubEXEGet()
+  loc_6795C8: ILdRf var_B0
+  loc_6795CB: FnLenStr
+  loc_6795CC: LitI4 1
+  loc_6795D1: GtI4
+  loc_6795D2: FStI2 var_86
+  loc_6795D5: FFree1Str var_B0
+  loc_6795D8: Branch loc_6796EE
+  loc_6795DB: FLdI2 var_8A
+  loc_6795DE: LitI2_Byte &H63
+  loc_6795E0: EqI2
+  loc_6795E1: BranchF loc_679605
+  loc_6795E4: FLdRfVar var_B0
+  loc_6795E7: ImpAdLdRf MemVar_74C760
+  loc_6795EA: NewIfNullPr Formx
+  loc_6795ED: from_stack_1v = Formx.sTarjetaContadoEXEGet()
+  loc_6795F2: ILdRf var_B0
+  loc_6795F5: FnLenStr
+  loc_6795F6: LitI4 1
+  loc_6795FB: GtI4
+  loc_6795FC: FStI2 var_86
+  loc_6795FF: FFree1Str var_B0
+  loc_679602: Branch loc_6796EE
+  loc_679605: FLdI2 var_8A
+  loc_679608: LitI2_Byte &H60
+  loc_67960A: EqI2
+  loc_67960B: BranchF loc_679647
+  loc_67960E: LitStr "CEM44.INI"
+  loc_679611: FStStrCopy var_D8
+  loc_679614: FLdRfVar var_D8
+  loc_679617: LitStr "TankProdColor"
+  loc_67961A: FStStrCopy var_D4
+  loc_67961D: FLdRfVar var_D4
+  loc_679620: LitStr "GENERAL"
+  loc_679623: FStStrCopy var_B0
+  loc_679626: FLdRfVar var_B0
+  loc_679629: ImpAdCallI2 Proc_87_14_5F88D8(, , )
+  loc_67962E: FStStrNoPop var_DC
+  loc_679631: LitStr "1"
+  loc_679634: EqStr
+  loc_679636: FStI2 var_86
+  loc_679639: FFreeStr var_B0 = "": var_D4 = "": var_D8 = ""
+  loc_679644: Branch loc_6796EE
+  loc_679647: FLdI2 var_8A
+  loc_67964A: LitI2_Byte &H6A
+  loc_67964C: EqI2
+  loc_67964D: BranchF loc_679669
+  loc_679650: ImpAdLdUI1
+  loc_679654: CI2UI1
+  loc_679656: LitI2_Byte 4
+  loc_679658: EqI2
+  loc_679659: ImpAdLdUI1
+  loc_67965D: CI2UI1
+  loc_67965F: LitI2_Byte 5
+  loc_679661: EqI2
+  loc_679662: OrI4
+  loc_679663: FStI2 var_86
+  loc_679666: Branch loc_6796EE
+  loc_679669: FLdI2 var_8A
+  loc_67966C: LitI2_Byte &H50
+  loc_67966E: EqI2
+  loc_67966F: BranchT loc_67967B
+  loc_679672: FLdI2 var_8A
+  loc_679675: LitI2_Byte &H66
+  loc_679677: EqI2
+  loc_679678: BranchF loc_679683
+  loc_67967B: LitI2_Byte 0
+  loc_67967D: FStI2 var_86
+  loc_679680: Branch loc_6796EE
+  loc_679683: FLdI2 var_8A
+  loc_679686: LitI2_Byte &H64
+  loc_679688: EqI2
+  loc_679689: BranchT loc_67969E
+  loc_67968C: FLdI2 var_8A
+  loc_67968F: LitI2_Byte &H65
+  loc_679691: EqI2
+  loc_679692: BranchT loc_67969E
+  loc_679695: FLdI2 var_8A
+  loc_679698: LitI2_Byte &H68
+  loc_67969A: EqI2
+  loc_67969B: BranchF loc_6796C4
+  loc_67969E: LitVarI2 var_AC, 1
+  loc_6796A3: LitI4 4
+  loc_6796A8: ImpAdLdI4 MemVar_74BEAC
+  loc_6796AB: ImpAdCallI2 Mid$(, , )
+  loc_6796B0: FStStrNoPop var_B0
+  loc_6796B3: LitStr "1"
+  loc_6796B6: EqStr
+  loc_6796B8: FStI2 var_86
+  loc_6796BB: FFree1Str var_B0
+  loc_6796BE: FFree1Var var_AC = ""
+  loc_6796C1: Branch loc_6796EE
+  loc_6796C4: FLdI2 var_8A
+  loc_6796C7: LitI2_Byte &H6B
+  loc_6796C9: EqI2
+  loc_6796CA: BranchF loc_6796E9
+  loc_6796CD: ImpAdLdUI1
+  loc_6796D1: CI2UI1
+  loc_6796D3: LitI2_Byte 1
+  loc_6796D5: EqI2
+  loc_6796D6: BranchF loc_6796E1
+  loc_6796D9: LitI2_Byte &HFF
+  loc_6796DB: FStI2 var_86
+  loc_6796DE: Branch loc_6796E6
+  loc_6796E1: LitI2_Byte 0
+  loc_6796E3: FStI2 var_86
+  loc_6796E6: Branch loc_6796EE
+  loc_6796E9: LitI2_Byte &HFF
+  loc_6796EB: FStI2 var_86
+  loc_6796EE: FLdRfVar var_88
+  loc_6796F1: ImpAdLdRf MemVar_74C6D8
+  loc_6796F4: NewIfNullPr CCEMLicence
+  loc_6796FC: FLdI2 var_88
+  loc_6796FF: FLdRfVar var_DE
+  loc_679702: ImpAdLdRf MemVar_74C6D8
+  loc_679705: NewIfNullPr CCEMLicence
+  loc_679708: Set from_stack_2 = CCEMLicence(from_stack_1)
+  loc_67970D: FLdI2 var_DE
+  loc_679710: AndI4
+  loc_679711: BranchF loc_679729
+  loc_679714: FLdI2 var_86
+  loc_679717: LitI2_Byte &HFF
+  loc_679719: EqI2
+  loc_67971A: BranchF loc_679729
+  loc_67971D: ILdI2 arg_C
+  loc_679720: CI4UI1
+  loc_679721: ImpAdLdRf MemVar_74C6C0
+  loc_679724: Ary1LdI2
+  loc_679725: NotI4
+  loc_679726: FStI2 var_86
+  loc_679729: ExitProcCbHresult
+End Function
+
+Private Function Proc_148_7_5D03E4(arg_C) '5D03E4
+  'Data Table: 4044A0
+  loc_5D03CC: LitI2_Byte 1
+  loc_5D03CE: ILdI2 arg_C
+  loc_5D03D1: LeI2
+  loc_5D03D2: ILdI2 arg_C
+  loc_5D03D5: LitI2 1000
+  loc_5D03D8: LeI2
+  loc_5D03D9: AndI4
+  loc_5D03DA: FStI2 var_86
+  loc_5D03DD: ExitProcCbHresult
+End Function
+
+Private Function Proc_148_8_5CA1FC() '5CA1FC
+  'Data Table: 4044A0
+  loc_5CA1F0: LitI2_Byte 0
+  loc_5CA1F2: FLdPr Me
+  loc_5CA1F5: MemStI2 global_52
+  loc_5CA1F8: ExitProcHresult
+End Function
