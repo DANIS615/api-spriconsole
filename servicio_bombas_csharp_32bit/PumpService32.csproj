@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- CRÍTICO: Forzar compilación para x86 (32 bits) -->
+    <PlatformTarget>x86</PlatformTarget>
+    <Platforms>x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <!--
+    NOTAS IMPORTANTES:
+
+    1. Este proyecto DEBE compilarse para x86 (32 bits)
+       No cambiar PlatformTarget a x64 o AnyCPU
+
+    2. Para compilar:
+       dotnet build -c Release /p:Platform=x86
+
+    3. Para ejecutar:
+       dotnet run --no-build -c Release
+
+    4. Verificar que es 32 bits:
+       En el código, Environment.Is64BitProcess debe ser false
+  -->
+
+</Project>
