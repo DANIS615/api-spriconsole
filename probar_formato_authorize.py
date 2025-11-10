@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Probar Diferentes Formatos del Comando 030 AUTHORIZE
 Prueba varias combinaciones para encontrar el formato correcto con manguera
@@ -7,6 +8,12 @@ Prueba varias combinaciones para encontrar el formato correcto con manguera
 import serial
 import time
 import sys
+import io
+
+# Fix Windows console encoding
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 class ProbadorAuthorize:
     """Prueba diferentes formatos de AUTHORIZE"""
@@ -54,8 +61,8 @@ class ProbadorAuthorize:
 
         if self.serial.in_waiting > 0:
             respuesta = self.serial.read(self.serial.in_waiting)
-            esperado = 0xFE - (2 * (pump_id - 1))
-            return len(respuesta) >= 1 and respuesta[0] == esperado
+            # Respuesta correcta confirmada: 0x00
+            return len(respuesta) >= 1 and respuesta[0] == 0x00
         return False
 
     def enviar_comando(self, pump_id, comando_str, descripcion=""):
@@ -109,7 +116,8 @@ class ProbadorAuthorize:
         print("  - 'COMPARANDO CALLING HOSE CON HOSE PRESETEADO'")
         print("\nEsto sugiere que el comando incluye especificacion de manguera")
 
-        input("\nPresiona ENTER para comenzar pruebas...")
+        print("\n[*] Comenzando pruebas automaticamente...")
+        time.sleep(2)
 
         # Formatos a probar
         formatos = [
@@ -165,7 +173,8 @@ class ProbadorAuthorize:
                     'longitud': len(respuesta)
                 })
 
-            input("\nPresiona ENTER para siguiente prueba...")
+            print("\n[*] Esperando 3 segundos antes de siguiente prueba...")
+            time.sleep(3)
 
         # Resumen
         print("\n\n" + "="*70)
