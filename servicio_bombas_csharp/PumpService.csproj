@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Paquetes NuGet -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      IMPORTANTE: Descomentar estas referencias cuando tengas las DLLs
+
+      Referencias a las DLLs de Smart Ship Factory
+      Ajusta las rutas según tu instalación
+    -->
+
+    <!--
+    <Reference Include="SSF.Gilbarco.D">
+      <HintPath>C:\Windows\CEM44\Smart Ship Factory\Spirit\bin\pumps\SSF.Gilbarco.D.dll</HintPath>
+    </Reference>
+
+    <Reference Include="SSF.Wayne.D">
+      <HintPath>C:\Windows\CEM44\Smart Ship Factory\Spirit\bin\pumps\SSF.Wayne.D.dll</HintPath>
+    </Reference>
+
+    <Reference Include="SSF.FC.Comm.GPBox.D">
+      <HintPath>C:\Windows\CEM44\Smart Ship Factory\Spirit\bin\communications\SSF.FC.Comm.GPBox.D.dll</HintPath>
+    </Reference>
+
+    <Reference Include="SSF.FC.Comm.Serial.D">
+      <HintPath>C:\Windows\CEM44\Smart Ship Factory\Spirit\bin\communications\SSF.FC.Comm.Serial.D.dll</HintPath>
+    </Reference>
+
+    <Reference Include="SSF.Tools.Library.D">
+      <HintPath>C:\Windows\CEM44\Smart Ship Factory\Spirit\lib\SSF.Tools.Library.D.dll</HintPath>
+    </Reference>
+
+    <Reference Include="SSF.Router.Message.D">
+      <HintPath>C:\Windows\CEM44\Smart Ship Factory\Spirit\lib\SSF.Router.Message.D.dll</HintPath>
+    </Reference>
+    -->
+  </ItemGroup>
+
+</Project>
