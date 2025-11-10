@@ -1,0 +1,345 @@
+{
+  "path": "/home/user/api-spriconsole/Smart Ship Factory/Spirit/lib/SSF.Router.Message.dll",
+  "exists": true,
+  "is_32bit": true,
+  "is_dll": true,
+  "exports": [
+    {
+      "name": "??0SSFRouterMessage@@QAE@ABV0@@Z",
+      "ordinal": 1,
+      "address": "0x10003b40"
+    },
+    {
+      "name": "??0SSFRouterMessage@@QAE@PAV0@@Z",
+      "ordinal": 2,
+      "address": "0x10004cf0"
+    },
+    {
+      "name": "??0SSFRouterMessage@@QAE@XZ",
+      "ordinal": 3,
+      "address": "0x10003870"
+    },
+    {
+      "name": "??1SSFRouterMessage@@UAE@XZ",
+      "ordinal": 4,
+      "address": "0x10003440"
+    },
+    {
+      "name": "??4SSFRouterMessage@@QAEAAV0@ABV0@@Z",
+      "ordinal": 5,
+      "address": "0x10003c70"
+    },
+    {
+      "name": "??_7SSFRouterMessage@@6B@",
+      "ordinal": 6,
+      "address": "0x1002a23c"
+    },
+    {
+      "name": "?addParameter@SSFRouterMessage@@QAEXPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "ordinal": 7,
+      "address": "0x10003d30"
+    },
+    {
+      "name": "?addParameter@SSFRouterMessage@@QAEXPBDD@Z",
+      "ordinal": 8,
+      "address": "0x100040a0"
+    },
+    {
+      "name": "?addParameter@SSFRouterMessage@@QAEXPBDH@Z",
+      "ordinal": 9,
+      "address": "0x10003fe0"
+    },
+    {
+      "name": "?addParameter@SSFRouterMessage@@QAEXPBDJ@Z",
+      "ordinal": 10,
+      "address": "0x10003f20"
+    },
+    {
+      "name": "?addParameter@SSFRouterMessage@@QAEXPBDN@Z",
+      "ordinal": 11,
+      "address": "0x10003e50"
+    },
+    {
+      "name": "?cleanParameters@SSFRouterMessage@@QAEXXZ",
+      "ordinal": 12,
+      "address": "0x100031c0"
+    },
+    {
+      "name": "?cloneRouterMsg@@YAPAVSSFRouterMessage@@PAV1@@Z",
+      "ordinal": 13,
+      "address": "0x10004dd0"
+    },
+    {
+      "name": "?copy@SSFRouterMessage@@QAEXPBV1@@Z",
+      "ordinal": 14,
+      "address": "0x10004bd0"
+    },
+    {
+      "name": "?copyParameters@SSFRouterMessage@@QAEXPBV1@@Z",
+      "ordinal": 15,
+      "address": "0x10004a70"
+    },
+    {
+      "name": "?createNewRouterMsg@@YAPAVSSFRouterMessage@@XZ",
+      "ordinal": 16,
+      "address": "0x100039d0"
+    },
+    {
+      "name": "?deleteRouterMsg@@YAXPAVSSFRouterMessage@@@Z",
+      "ordinal": 17,
+      "address": "0x10001090"
+    },
+    {
+      "name": "?deserialize@SSFRouterMessage@@QAE_NJPAD@Z",
+      "ordinal": 18,
+      "address": "0x10004160"
+    },
+    {
+      "name": "?getDestination@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+      "ordinal": 19,
+      "address": "0x10001070"
+    },
+    {
+      "name": "?getDevOrigin@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+      "ordinal": 20,
+      "address": "0x10001010"
+    },
+    {
+      "name": "?getEventType@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+      "ordinal": 21,
+      "address": "0x10001050"
+    },
+    {
+      "name": "?getMessageType@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+      "ordinal": 22,
+      "address": "0x10001040"
+    },
+    {
+      "name": "?getOrigin@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+      "ordinal": 23,
+      "address": "0x10001060"
+    },
+    {
+      "name": "?getParameterName@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+      "ordinal": 24,
+      "address": "0x100015f0"
+    },
+    {
+      "name": "?getParameterValue@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV23@@Z",
+      "ordinal": 25,
+      "address": "0x100020f0"
+    },
+    {
+      "name": "?getParameterValue@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z",
+      "ordinal": 26,
+      "address": "0x10001650"
+    },
+    {
+      "name": "?getParameterValue@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PBD@Z",
+      "ordinal": 27,
+      "address": "0x100023b0"
+    },
+    {
+      "name": "?getParametersQty@SSFRouterMessage@@QBEHXZ",
+      "ordinal": 28,
+      "address": "0x100011c0"
+    },
+    {
+      "name": "?getUserID@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+      "ordinal": 29,
+      "address": "0x10001080"
+    },
+    {
+      "name": "?serialize@SSFRouterMessage@@QAEJJPADD@Z",
+      "ordinal": 30,
+      "address": "0x10002480"
+    },
+    {
+      "name": "?setDestination@SSFRouterMessage@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "ordinal": 31,
+      "address": "0x10001fe0"
+    },
+    {
+      "name": "?setDestination@SSFRouterMessage@@QAEXPBD@Z",
+      "ordinal": 32,
+      "address": "0x10002020"
+    },
+    {
+      "name": "?setDevOrigin@SSFRouterMessage@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "ordinal": 33,
+      "address": "0x10002050"
+    },
+    {
+      "name": "?setDevOrigin@SSFRouterMessage@@QAEXPBD@Z",
+      "ordinal": 34,
+      "address": "0x10002090"
+    },
+    {
+      "name": "?setEventType@SSFRouterMessage@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "ordinal": 35,
+      "address": "0x10001f00"
+    },
+    {
+      "name": "?setEventType@SSFRouterMessage@@QAEXPBD@Z",
+      "ordinal": 36,
+      "address": "0x10001f40"
+    },
+    {
+      "name": "?setMessageType@SSFRouterMessage@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "ordinal": 37,
+      "address": "0x10001e90"
+    },
+    {
+      "name": "?setMessageType@SSFRouterMessage@@QAEXPBD@Z",
+      "ordinal": 38,
+      "address": "0x10001ed0"
+    },
+    {
+      "name": "?setOrigin@SSFRouterMessage@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+      "ordinal": 39,
+      "address": "0x10001f70"
+    },
+    {
+      "name": "?setOrigin@SSFRouterMessage@@QAEXPBD@Z",
+      "ordinal": 40,
+      "address": "0x10001fb0"
+    },
+    {
+      "name": "?setUserID@SSFRouterMessage@@QAEXPBD@Z",
+      "ordinal": 41,
+      "address": "0x100020c0"
+    }
+  ],
+  "imports": [
+    {
+      "dll": "SSF.Tools.Library.dll",
+      "functions": [
+        "?SSFCrypt@@YAXPADH0H@Z",
+        "?getGlobalLogger@@YAPAVSSFLogger@@XZ"
+      ]
+    },
+    {
+      "dll": "KERNEL32.dll",
+      "functions": [
+        "TlsSetValue",
+        "GetLastError",
+        "TlsGetValue",
+        "GetProcAddress",
+        "GetCurrentProcess",
+        "TlsFree",
+        "TlsAlloc",
+        "MultiByteToWideChar",
+        "WideCharToMultiByte",
+        "GetACP"
+      ]
+    },
+    {
+      "dll": "USER32.dll",
+      "functions": [
+        "DdePostAdvise",
+        "DdeConnect",
+        "DdeNameService",
+        "DdeCreateStringHandleA",
+        "DdeClientTransaction",
+        "DdeDisconnect",
+        "DdeInitializeA",
+        "DdeGetLastError",
+        "DdeCreateDataHandle",
+        "DdeGetData"
+      ]
+    },
+    {
+      "dll": "SHELL32.dll",
+      "functions": [
+        "SHGetPathFromIDListA",
+        "SHGetMalloc",
+        "SHGetSpecialFolderLocation"
+      ]
+    },
+    {
+      "dll": "ole32.dll",
+      "functions": [
+        "CoCreateInstance"
+      ]
+    }
+  ],
+  "strings": [
+    "Thread module initialization failed: can not store value in thread local storage",
+    "Thread module initialization failed: impossible to allocate index in thread local storage",
+    "unknown error %lx",
+    "Error: ",
+    "Fatal error: ",
+    " (error %ld: %s)",
+    "can't commit changes to file '%s'",
+    "Error saving user configuration data.",
+    "Unknown DDE error %08x",
+    "Once the application has returned from an XTYP_XACT_COMPLETE callback,",
+    "an internal error has occurred in the DDEML.",
+    "terminated before completing a transaction.",
+    "an application initialized as APPCLASS_MONITOR has",
+    "or an application initialized as APPCMD_CLIENTONLY has ",
+    "a DDEML function was called without first calling the DdeInitialize function,",
+    "no DDE error.",
+    "Failed to initialize DDE",
+    "Failed to disconnect from DDE server gracefully",
+    "Failed to create connection to server '%s' on topic '%s'",
+    "wxDDEConnection",
+    "wxConnectionBase",
+    "A security error of unknown cause has been detected which has",
+    "runtime error ",
+    "TLOSS error",
+    "SING error",
+    "DOMAIN error",
+    "Please contact the application's support team for more information.",
+    "- unable to initialize heap",
+    "- not enough space for lowio initialization",
+    "- not enough space for stdio initialization",
+    "- unexpected heap error",
+    "- unexpected multithread lock error",
+    "Runtime Error!",
+    "InitializeCriticalSectionAndSpinCount",
+    "InitializeCriticalSection",
+    "GetLastError",
+    "DdeUninitialize",
+    "DdeGetLastError",
+    "DdeInitializeA",
+    "DdeDisconnect",
+    "DdeConnect",
+    "GetCommandLineA",
+    "SetLastError",
+    "CompareStringA",
+    "CompareStringW",
+    "?deserialize@SSFRouterMessage@@QAE_NJPAD@Z",
+    "?serialize@SSFRouterMessage@@QAEJJPADD@Z",
+    ".?AVlogic_error@std@@",
+    ".?AVlength_error@std@@",
+    ".?AVwxConnectionBase@@",
+    ".?AVwxDDEConnection@@",
+    ".?AVwxDDEConnectionList@@",
+    ".?AVwxwxDDEConnectionListNode@@"
+  ],
+  "sections": [
+    {
+      "name": ".text",
+      "size": 167936,
+      "virtual_address": "0x1000"
+    },
+    {
+      "name": ".rdata",
+      "size": 40960,
+      "virtual_address": "0x2a000"
+    },
+    {
+      "name": ".data",
+      "size": 20480,
+      "virtual_address": "0x34000"
+    },
+    {
+      "name": ".reloc",
+      "size": 32768,
+      "virtual_address": "0x3d000"
+    }
+  ],
+  "timestamp": "2008-03-03T12:16:31",
+  "characteristics": []
+}
