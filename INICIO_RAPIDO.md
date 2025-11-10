@@ -1,20 +1,134 @@
 # 🚀 INICIO RÁPIDO - Usar DLLs de Smart Ship Factory
 
+## ⚠️ IMPORTANTE: Las DLLs son de 32 bits
+
+**CONFIRMADO**: Las DLLs de Smart Ship Factory son:
+- ✅ Nativas de 32 bits (C/C++)
+- ❌ NO son .NET
+- ❌ NO funcionan con Python 64-bit directamente
+
 ## ¿Qué Archivos Usar Según Tu Caso?
 
 ### 📊 Tabla de Decisión
 
 | Tu Situación | Archivo a Usar | Tiempo | Dificultad |
 |-------------|----------------|--------|------------|
-| Quiero **probar rápido** si puedo usar las DLLs | `probar_dll_dotnet.py` | 5 min | Fácil |
-| Las DLLs son **.NET** y quiero usarlas desde Python | `probar_dll_dotnet.py` + Ver OPCIÓN 1 en GUIA | 1 hora | Media |
-| Las DLLs son **nativas** (C/C++) | `usar_dll_ssf.py` + Ver OPCIÓN 2 en GUIA | 2 horas | Difícil |
-| Quiero **robustez** y desacoplamiento | `servicio_bombas_csharp/` + Ver OPCIÓN 3 | 1 día | Media |
+| Tengo Python **32-bit** instalado | `usar_dll_32bit.py` + Ver SOLUCION_DLL_32BITS.md | 1 hora | Media |
+| Mi Python es **64-bit** y quiero robustez | `servicio_bombas_csharp_32bit/` + Ver OPCIÓN B | 3 horas | Media |
 | Quiero **independencia total** del software viejo | `gilbarco_pump_controller.py` + Ver OPCIÓN 4 | 1 semana | Alta |
+| Solo quiero **entender** las DLLs | Ver SOLUCION_DLL_32BITS.md | 15 min | Fácil |
 
 ---
 
-## 🎯 OPCIÓN 1: Probar DLLs .NET (RECOMENDADO PARA EMPEZAR)
+## 🎯 OPCIÓN A: Python 32-bit + ctypes (MÁS DIRECTO)
+
+**Ventajas**: Acceso directo a las DLLs, no requiere servicios intermedios
+**Desventajas**: Limitado a 4GB de RAM, necesitas Python 32-bit
+
+### Paso 1: Verificar tu Python
+
+```bash
+# Ver si tu Python es 32 o 64 bits
+python -c "import struct; print('Python', struct.calcsize('P') * 8, 'bits')"
+```
+
+### Paso 2: Si es 64 bits, instalar Python 32-bit
+
+**Descargar**:
+- https://www.python.org/downloads/windows/
+- Buscar: `Windows installer (32-bit)`
+
+**Instalar**:
+- ✅ Marcar "Add Python to PATH"
+- 📝 Recordar ruta (ej: `C:\Python310-32\`)
+
+**Crear launcher**:
+```batch
+# Crear archivo python32.bat:
+@echo off
+"C:\Python310-32\python.exe" %*
+```
+
+### Paso 3: Ejecutar el script
+
+```bash
+# Con Python 32-bit:
+"C:\Python310-32\python.exe" usar_dll_32bit.py
+
+# O si creaste python32.bat:
+python32 usar_dll_32bit.py
+```
+
+Este script:
+- ✅ Verifica que estás usando Python 32-bit
+- ✅ Intenta cargar las DLLs
+- ✅ Busca funciones comunes
+- ✅ Te muestra cómo usarlas
+
+**Ver más**: SOLUCION_DLL_32BITS.md → OPCIÓN A
+
+---
+
+## 🎯 OPCIÓN B: Servicio C# 32-bit + REST API (RECOMENDADO)
+
+**Ventajas**: Tu app Python puede ser 64-bit, más robusto, escalable
+**Desventajas**: Requiere .NET y compilación
+
+### Arquitectura
+
+```
+Python 64-bit → HTTP → Servicio C# 32-bit → DLLs 32-bit → Dispensadores
+```
+
+### Paso 1: Instalar .NET SDK
+
+```bash
+# Descargar desde:
+https://dotnet.microsoft.com/download
+
+# O con winget:
+winget install Microsoft.DotNet.SDK.6
+```
+
+### Paso 2: Compilar para x86 (32 bits)
+
+```bash
+cd servicio_bombas_csharp_32bit
+
+# IMPORTANTE: Usar /p:Platform=x86
+dotnet build -c Release /p:Platform=x86
+```
+
+### Paso 3: Configurar funciones de DLL
+
+1. Usar `dumpbin /EXPORTS` para ver funciones
+2. Agregar `[DllImport]` en `PumpService32.cs`
+3. Descomentar código de uso
+
+### Paso 4: Ejecutar el servicio
+
+```bash
+dotnet run --no-build -c Release
+```
+
+Debería mostrar:
+```
+Proceso: 32 bits ✓
+Servidor iniciado en: http://localhost:5000
+```
+
+### Paso 5: Usar desde Python (64-bit)
+
+```bash
+# Tu Python puede ser 64-bit ahora
+python cliente_servicio_bombas.py
+```
+
+**Ver más**: servicio_bombas_csharp_32bit/README.md
+
+---
+
+## 🎯 OPCIÓN 1: Probar DLLs .NET (NO APLICABLE)
 
 **Ventajas**: Rápido, reutiliza código probado
 **Desventajas**: Dependes del software viejo
@@ -214,10 +328,11 @@ Ver documentación completa en: **PROTOCOLO_GILBARCO.md**
 
 | Documento | Descripción |
 |-----------|-------------|
-| **GUIA_CONSUMIR_DLLS.md** | Guía completa con todas las opciones y ejemplos |
+| **SOLUCION_DLL_32BITS.md** | ⭐ LEER PRIMERO: Solución específica para DLLs de 32 bits |
+| **servicio_bombas_csharp_32bit/README.md** | Servicio C# de 32 bits (RECOMENDADO) |
+| **GUIA_CONSUMIR_DLLS.md** | Guía general con todas las opciones |
 | **PROTOCOLO_GILBARCO.md** | Documentación del protocolo Two-Wire |
 | **DOCUMENTACION_GPBOX_SISTEMA.md** | Configuración del sistema CEM-44 |
-| **servicio_bombas_csharp/README.md** | Instrucciones del servicio C# |
 
 ---
 
@@ -266,7 +381,8 @@ dotnet --version
 ## 💡 RECOMENDACIÓN FINAL
 
 **Para Desarrollo Inmediato:**
-→ Usar **OPCIÓN 1** (pythonnet) o **OPCIÓN 3** (Servicio C#)
+→ Usar **OPCIÓN B** (Servicio C# 32-bit)
+→ O **OPCIÓN A** si tienes Python 32-bit
 
 **Para Producción a Largo Plazo:**
 → Migrar a **OPCIÓN 4** (Protocolo directo)
@@ -281,12 +397,28 @@ De esta forma:
 
 ## 📞 PRÓXIMOS PASOS
 
-1. **Leer** GUIA_CONSUMIR_DLLS.md completa
-2. **Ejecutar** probar_dll_dotnet.py
-3. **Decidir** qué opción usar según tu caso
+1. **Leer** SOLUCION_DLL_32BITS.md (15 minutos)
+2. **Decidir** entre OPCIÓN A (Python 32-bit) u OPCIÓN B (Servicio C# 32-bit)
+3. **Identificar** funciones de las DLLs con dumpbin o Dependency Walker
 4. **Implementar** siguiendo los ejemplos
 5. **Testear** en ambiente de desarrollo
 6. **Deployar** cuando esté estable
+
+### ⚡ Para Empezar AHORA
+
+**Quiero algo rápido:**
+```bash
+# 1. Instalar Python 32-bit
+# 2. Ejecutar:
+"C:\Python310-32\python.exe" usar_dll_32bit.py
+```
+
+**Quiero algo robusto:**
+```bash
+cd servicio_bombas_csharp_32bit
+dotnet build -c Release /p:Platform=x86
+dotnet run --no-build -c Release
+```
 
 ---
 

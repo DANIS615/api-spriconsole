@@ -1,0 +1,401 @@
+{
+  "dll_name": "SSF.FC.Comm.Serial.D.dll",
+  "exports": [
+    "ssfPIDestroyPlugInInstance",
+    "ssfPIGetPlugInConfigParam",
+    "ssfPIGetPlugInInstance",
+    "ssfPIInitialize",
+    "ssfPIShutdown"
+  ],
+  "imports": [],
+  "strings": [],
+  "method_patterns": {
+    "SSFSerialComm": [
+      "initialize",
+      "close",
+      "open",
+      "readBytes",
+      "clearCommDevice",
+      "reset",
+      "sendByte",
+      "sendMessage",
+      "checkCommParamByDeviceCTRL",
+      "setConfiguration",
+      "getConfigInfo",
+      "setGeneralParameters",
+      "checkForConfiguration",
+      "fillConfigurationValues",
+      "setPortConfig",
+      "checkPortErrors",
+      "ssfPIDestroyPlugInInstance",
+      "initialize",
+      "close",
+      "open",
+      "readBytes",
+      "clearCommDevice",
+      "reset",
+      "sendByte",
+      "sendMessage",
+      "checkCommParamByDeviceCTRL",
+      "setConfiguration",
+      "getConfigInfo",
+      "setGeneralParameters",
+      "checkForConfiguration",
+      "fillConfigurationValues",
+      "setPortConfig",
+      "checkPortErrors",
+      "ssfPIDestroyPlugInInstance"
+    ],
+    "out of memory in wxStringBase": [
+      "InitWith",
+      "append",
+      "insert",
+      "operator=(wxChar)",
+      "operator=(const wxChar *)"
+    ],
+    "index out of bounds in wxStringBase": [
+      "replace"
+    ],
+    "out of memory in wxString": [
+      "operator+",
+      "operator+",
+      "Mid",
+      "Right",
+      "Left"
+    ],
+    "invalid parameter in wxString": [
+      "StartsWith"
+    ],
+    "wxString": [
+      "Replace(): invalid parameter"
+    ],
+    "NULL pointer in wxString": [
+      "ToLong",
+      "ToULong",
+      "ToDouble"
+    ],
+    "bad index in wxArrayString": [
+      "Insert",
+      "Remove"
+    ],
+    "array size overflow in wxArrayString": [
+      "Insert"
+    ],
+    "removing too many elements in wxArrayString": [
+      "Remove"
+    ],
+    "removing inexistent element in wxArrayString": [
+      "Remove"
+    ],
+    "wxApp": [
+      "CreateTraits() failed?"
+    ],
+    "Invalid time in wxDateTime": [
+      "Set()",
+      "Set()"
+    ],
+    "Invalid date in wxDateTime": [
+      "Set()"
+    ],
+    "NULL format in wxDateTime": [
+      "Format"
+    ],
+    "logic error in wxDateTime": [
+      "Format"
+    ],
+    "NULL pointer in wxDateTime": [
+      "Parse",
+      "ParseFormat()",
+      "Parse",
+      "Parse",
+      "Parse"
+    ],
+    "bad month day in wxDateTime": [
+      "ParseFormat"
+    ],
+    "bad year day in wxDateTime": [
+      "ParseFormat"
+    ],
+    "inconsistsnet week day in wxDateTime": [
+      "ParseFormat()"
+    ],
+    "NULL format in wxTimeSpan": [
+      "Format"
+    ],
+    "bad index in wxDateTimeArray": [
+      "RemoveAt()"
+    ],
+    "m < wxDateTime": [
+      "Inv_Month",
+      "Inv_Month"
+    ],
+    "wd < wxDateTime": [
+      "Inv_WeekDay",
+      "Inv_WeekDay"
+    ],
+    "wxObject": [
+      "AllocExclusive() failed."
+    ],
+    "impossible return value in wxMutex": [
+      "Lock"
+    ],
+    "bad level %u in wxThread": [
+      "SetConcurrency()"
+    ],
+    "wxThread": [
+      "Wait(): can't wait for detached thread",
+      "IsMain()",
+      "IsMain()"
+    ],
+    "!wxThread": [
+      "IsMain()",
+      "IsMain()"
+    ],
+    "wxMutex": [
+      "Lock(): not initialized",
+      "TryLock(): not initialized",
+      "Unlock(): not initialized"
+    ],
+    "wxCondition": [
+      "Wait(): not initialized",
+      "Wait(): not initialized",
+      "Signal(): not initialized",
+      "Broadcast(): not initialized"
+    ],
+    "wxSemaphore": [
+      "Wait(): not initialized",
+      "TryWait(): not initialized",
+      "WaitTimeout(): not initialized",
+      "Post(): not initialized"
+    ],
+    "Please call wxApp": [
+      "ProcessPendingEvents() instead"
+    ],
+    "unexpected wxApp": [
+      "FilterEvent return value"
+    ],
+    "empty directory passed to wxFileName": [
+      "InsertDir()"
+    ],
+    "bad index in wxArrayOptions": [
+      "RemoveAt()"
+    ],
+    "bad index in wxArrayParams": [
+      "RemoveAt()"
+    ],
+    "NULL pointer in wxCmdLineOption": [
+      "Found",
+      "Found",
+      "Found"
+    ],
+    "wxConfig": [
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter",
+      "Read(): NULL parameter"
+    ],
+    "overflow in wxConfig": [
+      "DoReadInt"
+    ],
+    "bad bool value in wxConfig": [
+      "DoReadInt"
+    ],
+    "wxAppTraits": [
+      "CreateFontMapper() failed"
+    ],
+    "an absolute path should be given to wxFontMapper": [
+      "SetConfigPath()"
+    ],
+    "wxFontMapper": [
+      "GetEncoding(): invalid index"
+    ],
+    "logic error in wxList": [
+      "DoCopy"
+    ],
+    "invalid index in wxListBase": [
+      "Item"
+    ],
+    "bad index in wxArray": [
+      "Insert",
+      "RemoveAt",
+      "Insert",
+      "RemoveAt",
+      "Insert",
+      "RemoveAt",
+      "Insert",
+      "RemoveAt",
+      "Insert",
+      "RemoveAt",
+      "Insert",
+      "RemoveAt"
+    ],
+    "array size overflow in wxArray": [
+      "Insert",
+      "Insert",
+      "Insert",
+      "Insert",
+      "Insert",
+      "Insert"
+    ],
+    "removing too many elements in wxArray": [
+      "RemoveAt",
+      "RemoveAt",
+      "RemoveAt",
+      "RemoveAt",
+      "RemoveAt",
+      "RemoveAt"
+    ],
+    "removing inexistent item in wxArray": [
+      "Remove",
+      "Remove",
+      "Remove",
+      "Remove",
+      "Remove",
+      "Remove"
+    ],
+    "bad index in wxLanguageInfoArray": [
+      "RemoveAt()"
+    ],
+    "you can't call wxLocale": [
+      "Init more than once"
+    ],
+    "no locale to set in wxLocale": [
+      "Init()"
+    ],
+    "You must call wxEncodingConverter": [
+      "Init() before actually converting!",
+      "Init() before actually converting!",
+      "Init() before actually converting!",
+      "Init() before actually converting!",
+      "Init() before actually converting!"
+    ],
+    "bad wxFile": [
+      "Access mode parameter."
+    ],
+    "bad index in wxDynamicLibraryDetailsArray": [
+      "RemoveAt()"
+    ],
+    "must wxDir": [
+      "Open() first",
+      "Open() first"
+    ],
+    "bad pointer in wxDir": [
+      "GetNext()"
+    ],
+    "error in wxRegConfig": [
+      "SetPath"
+    ],
+    "wxRegConfig": [
+      "Read(): NULL param",
+      "Read(): NULL param"
+    ],
+    "removing inexisting element in wxArray": [
+      "Remove"
+    ],
+    "unexpected wxProcess": [
+      "Kill() return code"
+    ],
+    "invalid key in wxRegKey": [
+      "GetStdKeyName"
+    ],
+    "invalid key prefix in wxRegKey": [
+      "ExtractKeyName."
+    ],
+    "non root hkey passed to wxRegKey": [
+      "GetStdKeyFromHkey."
+    ],
+    "Type mismatch in wxRegKey": [
+      "QueryValue().",
+      "QueryValue()."
+    ],
+    "Buffer too small in wxDDEConnection": [
+      "Request"
+    ],
+    "bad buffer type in wxTextBuffer": [
+      "GetEOL."
+    ],
+    "unknown open mode in wxTextFile": [
+      "Open"
+    ],
+    "wxFFile": [
+      "Tell(): file is closed!",
+      "Length(): file is closed!"
+    ],
+    "SSFBaseConfigParam": [
+      "setGeneralParameters",
+      "fillConfigurationValues",
+      "fillSubDevicesConfigurationValues",
+      "setDefaultConfigValues"
+    ],
+    "SSFCommDevCtrlInterfase": [
+      "clearCommDevice",
+      "reset",
+      "sendMessage",
+      "sendByte",
+      "receiveMessage",
+      "isDataWaiting"
+    ],
+    "SSFBaseComm": [
+      "getConfigInfo",
+      "setGeneralParameters",
+      "checkForConfiguration",
+      "fillConfigurationValues",
+      "clearConfigurationValues",
+      "~SSFBaseComm",
+      "getCommDevCtrlInterfase",
+      "setConfiguration"
+    ],
+    "": [
+      ";m;"
+    ]
+  },
+  "class_patterns": [
+    "BaseComm",
+    "SetupComm",
+    "SerialComm"
+  ],
+  "api_calls": {
+    "Threading": [
+      "KERNEL32.dll::CreateMutexA",
+      "KERNEL32.dll::WaitForSingleObject",
+      "KERNEL32.dll::ReleaseMutex",
+      "KERNEL32.dll::Sleep",
+      "KERNEL32.dll::CreateThread",
+      "KERNEL32.dll::SleepEx",
+      "KERNEL32.dll::ExitThread"
+    ],
+    "Serial/COM": [
+      "KERNEL32.dll::CreateFileA",
+      "KERNEL32.dll::ReadFile",
+      "KERNEL32.dll::WriteFile",
+      "KERNEL32.dll::ClearCommError",
+      "KERNEL32.dll::SetCommTimeouts",
+      "KERNEL32.dll::SetCommState",
+      "KERNEL32.dll::GetCommState"
+    ],
+    "DDE": [
+      "USER32.dll::DdeClientTransaction",
+      "USER32.dll::DdeDisconnect",
+      "USER32.dll::DdeConnect",
+      "USER32.dll::DdeInitializeA"
+    ],
+    "Networking": [
+      "USER32.dll::DdeDisconnect"
+    ],
+    "Registry": [
+      "ADVAPI32.dll::RegSetValueExA",
+      "ADVAPI32.dll::RegQueryValueExA",
+      "ADVAPI32.dll::RegCloseKey",
+      "ADVAPI32.dll::RegOpenKeyExA"
+    ]
+  },
+  "disassembly_hints": []
+}

@@ -1,0 +1,1552 @@
+{
+  "path": "/home/user/api-spriconsole/Smart Ship Factory/Spirit/lib/SSF.Tools.Library.D.dll",
+  "exists": true,
+  "is_32bit": true,
+  "is_dll": true,
+  "exports": [
+    {
+      "name": "??0SSFBackFileDepure@@QAE@XZ",
+      "ordinal": 1,
+      "address": "0x100a95df"
+    },
+    {
+      "name": "??0SSFBackupFileInfo@@QAE@ABV0@@Z",
+      "ordinal": 2,
+      "address": "0x100a9625"
+    },
+    {
+      "name": "??0SSFBackupFileInfo@@QAE@XZ",
+      "ordinal": 3,
+      "address": "0x100a9d0a"
+    },
+    {
+      "name": "??0SSFBaseLogAppender@@QAE@ABV0@@Z",
+      "ordinal": 4,
+      "address": "0x100a7e7e"
+    },
+    {
+      "name": "??0SSFBaseLogAppender@@QAE@XZ",
+      "ordinal": 5,
+      "address": "0x100ab6c8"
+    },
+    {
+      "name": "??0SSFDb@@QAE@ABV0@@Z",
+      "ordinal": 6,
+      "address": "0x100a7262"
+    },
+    {
+      "name": "??0SSFDb@@QAE@XZ",
+      "ordinal": 7,
+      "address": "0x100abec0"
+    },
+    {
+      "name": "??0SSFDirInfo@@QAE@XZ",
+      "ordinal": 8,
+      "address": "0x100ac4c9"
+    },
+    {
+      "name": "??0SSFFileLogAppender@@QAE@XZ",
+      "ordinal": 9,
+      "address": "0x100ad5fe"
+    },
+    {
+      "name": "??0SSFFuncLogHeader@@QAE@ABV0@@Z",
+      "ordinal": 10,
+      "address": "0x100aa6f1"
+    },
+    {
+      "name": "??0SSFFuncLogHeader@@QAE@PBDPAVSSFLogger@@@Z",
+      "ordinal": 11,
+      "address": "0x100a739d"
+    },
+    {
+      "name": "??0SSFLogManager@@QAE@XZ",
+      "ordinal": 12,
+      "address": "0x100a89eb"
+    },
+    {
+      "name": "??0SSFLogger@@QAE@XZ",
+      "ordinal": 13,
+      "address": "0x100a8f95"
+    },
+    {
+      "name": "??0SSFLoggerWrapper@@QAE@ABV0@@Z",
+      "ordinal": 14,
+      "address": "0x100a9f35"
+    },
+    {
+      "name": "??0SSFLoggerWrapper@@QAE@XZ",
+      "ordinal": 15,
+      "address": "0x100a95b2"
+    },
+    {
+      "name": "??0SSFMutexLocker@@QAE@AAVwxMutex@@@Z",
+      "ordinal": 16,
+      "address": "0x100aa39a"
+    },
+    {
+      "name": "??0SSFMutexLocker@@QAE@ABV0@@Z",
+      "ordinal": 17,
+      "address": "0x100a7f41"
+    },
+    {
+      "name": "??0SSFRouterMsgReqCtrl@@QAE@XZ",
+      "ordinal": 18,
+      "address": "0x100acff5"
+    },
+    {
+      "name": "??0SSFTaskController@@QAE@PBD0@Z",
+      "ordinal": 19,
+      "address": "0x100a98f0"
+    },
+    {
+      "name": "??0SSFThreadedSystemCall@@QAE@ABV0@@Z",
+      "ordinal": 20,
+      "address": "0x100a8112"
+    },
+    {
+      "name": "??0SSFThreadedSystemCall@@QAE@XZ",
+      "ordinal": 21,
+      "address": "0x100ab16e"
+    },
+    {
+      "name": "??1SSFBackFileDepure@@UAE@XZ",
+      "ordinal": 22,
+      "address": "0x100ab655"
+    },
+    {
+      "name": "??1SSFBackupFileInfo@@QAE@XZ",
+      "ordinal": 23,
+      "address": "0x100a7857"
+    },
+    {
+      "name": "??1SSFBaseLogAppender@@UAE@XZ",
+      "ordinal": 24,
+      "address": "0x100a787a"
+    },
+    {
+      "name": "??1SSFDb@@UAE@XZ",
+      "ordinal": 25,
+      "address": "0x100a941d"
+    },
+    {
+      "name": "??1SSFDirInfo@@UAE@XZ",
+      "ordinal": 26,
+      "address": "0x100acbd1"
+    },
+    {
+      "name": "??1SSFFileLogAppender@@UAE@XZ",
+      "ordinal": 27,
+      "address": "0x100aca14"
+    },
+    {
+      "name": "??1SSFFuncLogHeader@@UAE@XZ",
+      "ordinal": 28,
+      "address": "0x100aa827"
+    },
+    {
+      "name": "??1SSFLogManager@@UAE@XZ",
+      "ordinal": 29,
+      "address": "0x100acffa"
+    },
+    {
+      "name": "??1SSFLogger@@UAE@XZ",
+      "ordinal": 30,
+      "address": "0x100a8a81"
+    },
+    {
+      "name": "??1SSFLoggerWrapper@@UAE@XZ",
+      "ordinal": 31,
+      "address": "0x100abb05"
+    },
+    {
+      "name": "??1SSFMutexLocker@@UAE@XZ",
+      "ordinal": 32,
+      "address": "0x100a84ff"
+    },
+    {
+      "name": "??1SSFRouterMsgReqCtrl@@UAE@XZ",
+      "ordinal": 33,
+      "address": "0x100ada6d"
+    },
+    {
+      "name": "??1SSFTaskController@@UAE@XZ",
+      "ordinal": 34,
+      "address": "0x100ad72a"
+    },
+    {
+      "name": "??1SSFThreadedSystemCall@@UAE@XZ",
+      "ordinal": 35,
+      "address": "0x100aa5fc"
+    },
+    {
+      "name": "??4SSFBackupFileInfo@@QAEAAV0@ABV0@@Z",
+      "ordinal": 36,
+      "address": "0x100ab5b0"
+    },
+    {
+      "name": "??4SSFBaseLogAppender@@QAEAAV0@ABV0@@Z",
+      "ordinal": 37,
+      "address": "0x100a981e"
+    },
+    {
+      "name": "??4SSFDb@@QAEAAV0@ABV0@@Z",
+      "ordinal": 38,
+      "address": "0x100ac479"
+    },
+    {
+      "name": "??4SSFFuncLogHeader@@QAEAAV0@ABV0@@Z",
+      "ordinal": 39,
+      "address": "0x100ac1ef"
+    },
+    {
+      "name": "??4SSFLoggerWrapper@@QAEAAV0@ABV0@@Z",
+      "ordinal": 40,
+      "address": "0x100a8d83"
+    },
+    {
+      "name": "??4SSFMutexLocker@@QAEAAV0@ABV0@@Z",
+      "ordinal": 41,
+      "address": "0x100a849b"
+    },
+    {
+      "name": "??4SSFThreadedSystemCall@@QAEAAV0@ABV0@@Z",
+      "ordinal": 42,
+      "address": "0x100a813a"
+    },
+    {
+      "name": "??MSSFBackupFileInfo@@QAE_NABV0@@Z",
+      "ordinal": 43,
+      "address": "0x100a8e00"
+    },
+    {
+      "name": "??_7SSFBackFileDepure@@6B0@@",
+      "ordinal": 44,
+      "address": "0x10203868"
+    },
+    {
+      "name": "??_7SSFBackFileDepure@@6BSSFThread@@@",
+      "ordinal": 45,
+      "address": "0x1020383c"
+    },
+    {
+      "name": "??_7SSFBaseLogAppender@@6B@",
+      "ordinal": 46,
+      "address": "0x102030c8"
+    },
+    {
+      "name": "??_7SSFDb@@6B0@@",
+      "ordinal": 47,
+      "address": "0x10204c60"
+    },
+    {
+      "name": "??_7SSFDb@@6BSSFLoggerWrapper@@@",
+      "ordinal": 48,
+      "address": "0x10204c48"
+    },
+    {
+      "name": "??_7SSFDirInfo@@6B@",
+      "ordinal": 49,
+      "address": "0x1020381c"
+    },
+    {
+      "name": "??_7SSFFileLogAppender@@6B@",
+      "ordinal": 50,
+      "address": "0x10203a44"
+    },
+    {
+      "name": "??_7SSFFuncLogHeader@@6B@",
+      "ordinal": 51,
+      "address": "0x10203190"
+    },
+    {
+      "name": "??_7SSFLogManager@@6B@",
+      "ordinal": 52,
+      "address": "0x102043bc"
+    },
+    {
+      "name": "??_7SSFLogger@@6B@",
+      "ordinal": 53,
+      "address": "0x10204064"
+    },
+    {
+      "name": "??_7SSFLoggerWrapper@@6B@",
+      "ordinal": 54,
+      "address": "0x10203194"
+    },
+    {
+      "name": "??_7SSFMutexLocker@@6B@",
+      "ordinal": 55,
+      "address": "0x1020318c"
+    },
+    {
+      "name": "??_7SSFRouterMsgReqCtrl@@6B@",
+      "ordinal": 56,
+      "address": "0x1020463c"
+    },
+    {
+      "name": "??_7SSFTaskController@@6B0@@",
+      "ordinal": 57,
+      "address": "0x102048f8"
+    },
+    {
+      "name": "??_7SSFTaskController@@6BSSFLogger@@@",
+      "ordinal": 58,
+      "address": "0x102048b0"
+    },
+    {
+      "name": "??_7SSFTaskController@@6BSSFThread@@@",
+      "ordinal": 59,
+      "address": "0x102048cc"
+    },
+    {
+      "name": "??_7SSFThreadedSystemCall@@6BSSFLoggerWrapper@@@",
+      "ordinal": 60,
+      "address": "0x102031ac"
+    },
+    {
+      "name": "??_7SSFThreadedSystemCall@@6BSSFThread@@@",
+      "ordinal": 61,
+      "address": "0x102031c4"
+    },
+    {
+      "name": "??_8SSFBackFileDepure@@7B@",
+      "ordinal": 62,
+      "address": "0x10203874"
+    },
+    {
+      "name": "??_8SSFDb@@7B@",
+      "ordinal": 63,
+      "address": "0x10204cd8"
+    },
+    {
+      "name": "??_8SSFDirInfo@@7B@",
+      "ordinal": 64,
+      "address": "0x10203830"
+    },
+    {
+      "name": "??_8SSFFileLogAppender@@7B@",
+      "ordinal": 65,
+      "address": "0x10203a54"
+    },
+    {
+      "name": "??_8SSFRouterMsgReqCtrl@@7B@",
+      "ordinal": 66,
+      "address": "0x10204654"
+    },
+    {
+      "name": "??_8SSFTaskController@@7B@",
+      "ordinal": 67,
+      "address": "0x10204904"
+    },
+    {
+      "name": "??_8SSFThreadedSystemCall@@7B@",
+      "ordinal": 68,
+      "address": "0x102031f0"
+    },
+    {
+      "name": "??_DSSFBackFileDepure@@QAEXXZ",
+      "ordinal": 69,
+      "address": "0x100a98dc"
+    },
+    {
+      "name": "??_DSSFDb@@QAEXXZ",
+      "ordinal": 70,
+      "address": "0x100a73f2"
+    },
+    {
+      "name": "??_DSSFDirInfo@@QAEXXZ",
+      "ordinal": 71,
+      "address": "0x100a86a8"
+    },
+    {
+      "name": "??_DSSFFileLogAppender@@QAEXXZ",
+      "ordinal": 72,
+      "address": "0x100ad6d5"
+    },
+    {
+      "name": "??_DSSFRouterMsgReqCtrl@@QAEXXZ",
+      "ordinal": 73,
+      "address": "0x100a8dce"
+    },
+    {
+      "name": "??_DSSFTaskController@@QAEXXZ",
+      "ordinal": 74,
+      "address": "0x100a80a4"
+    },
+    {
+      "name": "??_DSSFThreadedSystemCall@@QAEXXZ",
+      "ordinal": 75,
+      "address": "0x100ad662"
+    },
+    {
+      "name": "?Entry@SSFBackFileDepure@@UAEPAXXZ",
+      "ordinal": 76,
+      "address": "0x100ab79f"
+    },
+    {
+      "name": "?Entry@SSFTaskController@@UAEPAXXZ",
+      "ordinal": 77,
+      "address": "0x100aa4c1"
+    },
+    {
+      "name": "?Entry@SSFThreadedSystemCall@@UAEPAXXZ",
+      "ordinal": 78,
+      "address": "0x100abae2"
+    },
+    {
+      "name": "?GetLastErrorDesc@@YAPADPADJ@Z",
+      "ordinal": 79,
+      "address": "0x100a9e45"
+    },
+    {
+      "name": "?LOG_LEVEL_DEBUG@SSFLogger@@2DB",
+      "ordinal": 80,
+      "address": "0x10203f78"
+    },
+    {
+      "name": "?LOG_LEVEL_ERROR@SSFLogger@@2DB",
+      "ordinal": 81,
+      "address": "0x10203f76"
+    },
+    {
+      "name": "?LOG_LEVEL_FATAL_ERROR@SSFLogger@@2DB",
+      "ordinal": 82,
+      "address": "0x10203f75"
+    },
+    {
+      "name": "?LOG_LEVEL_FORCED@SSFLogger@@2DB",
+      "ordinal": 83,
+      "address": "0x10203f74"
+    },
+    {
+      "name": "?LOG_LEVEL_POINT@SSFLogger@@2DB",
+      "ordinal": 84,
+      "address": "0x10203f79"
+    },
+    {
+      "name": "?LOG_LEVEL_WARNING@SSFLogger@@2DB",
+      "ordinal": 85,
+      "address": "0x10203f77"
+    },
+    {
+      "name": "?OnDir@SSFDirInfo@@UAE?AW4wxDirTraverseResult@@ABVwxString@@@Z",
+      "ordinal": 86,
+      "address": "0x100abb00"
+    },
+    {
+      "name": "?OnExit@SSFBackFileDepure@@UAEXXZ",
+      "ordinal": 87,
+      "address": "0x100ab673"
+    },
+    {
+      "name": "?OnFile@SSFDirInfo@@UAE?AW4wxDirTraverseResult@@ABVwxString@@@Z",
+      "ordinal": 88,
+      "address": "0x100aa075"
+    },
+    {
+      "name": "?SSFCalcCRC16_A001@@YAGPBDJ@Z",
+      "ordinal": 89,
+      "address": "0x100a9fee"
+    },
+    {
+      "name": "?SSFCompressFile@@YAHPAD@Z",
+      "ordinal": 90,
+      "address": "0x100a75af"
+    },
+    {
+      "name": "?SSFCrypt@@YAXPADH0H@Z",
+      "ordinal": 91,
+      "address": "0x100aa5ed"
+    },
+    {
+      "name": "?SSFDoVerifyFile@@YAHPAD0PAUR_RSA_PUBLIC_KEY@@@Z",
+      "ordinal": 92,
+      "address": "0x100ad9d7"
+    },
+    {
+      "name": "?SSFTranslate@@YAPADPADI0@Z",
+      "ordinal": 93,
+      "address": "0x100a7ca3"
+    },
+    {
+      "name": "?SSFTranslateGetCurrentLanguage@@YAPADXZ",
+      "ordinal": 94,
+      "address": "0x100ab56a"
+    },
+    {
+      "name": "?SSFTranslateLoadLanguage@@YAXPAD0@Z",
+      "ordinal": 95,
+      "address": "0x100a768b"
+    },
+    {
+      "name": "?addAppender@SSFLogger@@QAE_NAAVSSFBaseLogAppender@@@Z",
+      "ordinal": 96,
+      "address": "0x100a93cd"
+    },
+    {
+      "name": "?addColumn@SSFDb@@MAEXPADHPAXH@Z",
+      "ordinal": 97,
+      "address": "0x100ac956"
+    },
+    {
+      "name": "?addColumn@SSFDb@@MAEXPADHPAXH_N@Z",
+      "ordinal": 98,
+      "address": "0x100a87cf"
+    },
+    {
+      "name": "?addGeneralLog@SSFLogManager@@QAE_NPAVSSFLogger@@@Z",
+      "ordinal": 99,
+      "address": "0x100a7adc"
+    },
+    {
+      "name": "?addIndexColumn@SSFDb@@MAEXPAD_N@Z",
+      "ordinal": 100,
+      "address": "0x100a8dab"
+    },
+    {
+      "name": "?atoflen@@YANPBDJ@Z",
+      "ordinal": 101,
+      "address": "0x100ac424"
+    },
+    {
+      "name": "?atollen@@YAJPBDJ@Z",
+      "ordinal": 102,
+      "address": "0x100ad7c5"
+    },
+    {
+      "name": "?backupLogFileName@SSFFileLogAppender@@IAE_NVwxString@@@Z",
+      "ordinal": 103,
+      "address": "0x100aba06"
+    },
+    {
+      "name": "?checkDepureByDate@SSFBackFileDepure@@IAE_NXZ",
+      "ordinal": 104,
+      "address": "0x100a7f69"
+    },
+    {
+      "name": "?checkDepureBySize@SSFBackFileDepure@@IAE_NAAVSSFDirInfo@@@Z",
+      "ordinal": 105,
+      "address": "0x100a9413"
+    },
+    {
+      "name": "?checkForCompress@SSFBackFileDepure@@IAE_NXZ",
+      "ordinal": 106,
+      "address": "0x100aae9e"
+    },
+    {
+      "name": "?clearObject@SSFRouterMsgReqCtrl@@QAEXXZ",
+      "ordinal": 107,
+      "address": "0x100ac6db"
+    },
+    {
+      "name": "?closeTable@SSFDb@@UAEXXZ",
+      "ordinal": 108,
+      "address": "0x100abd58"
+    },
+    {
+      "name": "?columnDefinition@SSFDb@@MAEXXZ",
+      "ordinal": 109,
+      "address": "0x100ac361"
+    },
+    {
+      "name": "?connectToDb@@YA_NPAPAVwxDbConnectInf@@PAPAVwxDb@@@Z",
+      "ordinal": 110,
+      "address": "0x100a855e"
+    },
+    {
+      "name": "?convertBCDToLong@@YAJPBDH@Z",
+      "ordinal": 111,
+      "address": "0x100abc36"
+    },
+    {
+      "name": "?convertBCDToULong@@YAKPBDH@Z",
+      "ordinal": 112,
+      "address": "0x100a837e"
+    },
+    {
+      "name": "?convertLongToBCD@@YAXJHPAD@Z",
+      "ordinal": 113,
+      "address": "0x100ada2c"
+    },
+    {
+      "name": "?createFullPath@@YA_NAAVwxFileName@@@Z",
+      "ordinal": 114,
+      "address": "0x100a8793"
+    },
+    {
+      "name": "?createIndex@SSFDb@@AAE_NH@Z",
+      "ordinal": 115,
+      "address": "0x100a8e0f"
+    },
+    {
+      "name": "?dbDelete@SSFDb@@UAE_NXZ",
+      "ordinal": 116,
+      "address": "0x100ab001"
+    },
+    {
+      "name": "?dbExecuteSQL@SSFDb@@UAE_NVwxString@@@Z",
+      "ordinal": 117,
+      "address": "0x100ac488"
+    },
+    {
+      "name": "?dbInsert@SSFDb@@UAE_NXZ",
+      "ordinal": 118,
+      "address": "0x100ab650"
+    },
+    {
+      "name": "?dbNext@SSFDb@@UAE_NXZ",
+      "ordinal": 119,
+      "address": "0x100ab94d"
+    },
+    {
+      "name": "?dbOrderBy@SSFDb@@UAEXPAD@Z",
+      "ordinal": 120,
+      "address": "0x100a786b"
+    },
+    {
+      "name": "?dbQuery@SSFDb@@UAEXXZ",
+      "ordinal": 121,
+      "address": "0x100ab10f"
+    },
+    {
+      "name": "?dbRead@SSFDb@@UAE_NAAVwxString@@@Z",
+      "ordinal": 122,
+      "address": "0x100a8cd4"
+    },
+    {
+      "name": "?dbRead@SSFDb@@UAE_NPAD@Z",
+      "ordinal": 123,
+      "address": "0x100a9cf1"
+    },
+    {
+      "name": "?dbUpdate@SSFDb@@UAE_NXZ",
+      "ordinal": 124,
+      "address": "0x100aa11f"
+    },
+    {
+      "name": "?dbWhere@SSFDb@@UAEXAAVwxString@@@Z",
+      "ordinal": 125,
+      "address": "0x100ab2ea"
+    },
+    {
+      "name": "?dbWhere@SSFDb@@UAEXPAD@Z",
+      "ordinal": 126,
+      "address": "0x100ad4dc"
+    },
+    {
+      "name": "?executeTimeoutAction@SSFTaskController@@MAEXXZ",
+      "ordinal": 127,
+      "address": "0x100abcd6"
+    },
+    {
+      "name": "?findColumnId@SSFDb@@QAEHPAD@Z",
+      "ordinal": 128,
+      "address": "0x100ac9d3"
+    },
+    {
+      "name": "?findLogInstance@SSFLogManager@@IAEPAUST_LOG_INSTANCE@@VwxString@@@Z",
+      "ordinal": 129,
+      "address": "0x100ac0e1"
+    },
+    {
+      "name": "?forceTimeout@SSFRouterMsgReqCtrl@@QAEXXZ",
+      "ordinal": 130,
+      "address": "0x100aa5b6"
+    },
+    {
+      "name": "?formatLogRecord@SSFLogger@@IAEXPBDDPADAAVwxString@@@Z",
+      "ordinal": 131,
+      "address": "0x100a9c51"
+    },
+    {
+      "name": "?getAppender@SSFLogger@@QAEPAVSSFBaseLogAppender@@VwxString@@@Z",
+      "ordinal": 132,
+      "address": "0x100abe2a"
+    },
+    {
+      "name": "?getBackupLogDirectory@SSFFileLogAppender@@QAEABVwxString@@XZ",
+      "ordinal": 133,
+      "address": "0x100a7672"
+    },
+    {
+      "name": "?getDB@SSFDb@@QAEPAVwxDb@@XZ",
+      "ordinal": 134,
+      "address": "0x100ad441"
+    },
+    {
+      "name": "?getErrorMsg@SSFMutexLocker@@QAEABVwxString@@XZ",
+      "ordinal": 135,
+      "address": "0x100ab5ec"
+    },
+    {
+      "name": "?getFileBackupName@SSFFileLogAppender@@IAEAAVwxString@@AAV2@@Z",
+      "ordinal": 136,
+      "address": "0x100a818a"
+    },
+    {
+      "name": "?getFileDateTime@SSFBackupFileInfo@@QAEABVwxDateTime@@XZ",
+      "ordinal": 137,
+      "address": "0x100ac244"
+    },
+    {
+      "name": "?getFileName@SSFBackupFileInfo@@QAEABVwxString@@XZ",
+      "ordinal": 138,
+      "address": "0x100a9391"
+    },
+    {
+      "name": "?getFileSize@SSFBackupFileInfo@@QAEJXZ",
+      "ordinal": 139,
+      "address": "0x100aa76e"
+    },
+    {
+      "name": "?getGlobalLogger@@YAPAVSSFLogger@@XZ",
+      "ordinal": 140,
+      "address": "0x100acd52"
+    },
+    {
+      "name": "?getLastMsgIdReq@SSFRouterMsgReqCtrl@@QBEABVwxString@@XZ",
+      "ordinal": 141,
+      "address": "0x100a9a30"
+    },
+    {
+      "name": "?getLogInstance@SSFLogManager@@QAEPAVSSFLogger@@ABVwxString@@@Z",
+      "ordinal": 142,
+      "address": "0x100a958f"
+    },
+    {
+      "name": "?getLogLevel@SSFLogger@@QAE?BDXZ",
+      "ordinal": 143,
+      "address": "0x100aad4f"
+    },
+    {
+      "name": "?getLoggerInstance@SSFLoggerWrapper@@UAEPAVSSFLogger@@XZ",
+      "ordinal": 144,
+      "address": "0x100ac343"
+    },
+    {
+      "name": "?getLoggerName@SSFLogger@@QAEABVwxString@@XZ",
+      "ordinal": 145,
+      "address": "0x100a821b"
+    },
+    {
+      "name": "?getMsgReqStatus@SSFRouterMsgReqCtrl@@QAEJXZ",
+      "ordinal": 146,
+      "address": "0x100a77a3"
+    },
+    {
+      "name": "?getMsgTimeoutCounter@SSFRouterMsgReqCtrl@@QAEJXZ",
+      "ordinal": 147,
+      "address": "0x100ac5dc"
+    },
+    {
+      "name": "?getName@SSFBaseLogAppender@@QAEABVwxString@@XZ",
+      "ordinal": 148,
+      "address": "0x100ad1b7"
+    },
+    {
+      "name": "?getNewLogInstance@SSFLogManager@@IAEPAVSSFLogger@@ABVwxString@@@Z",
+      "ordinal": 149,
+      "address": "0x100aa62e"
+    },
+    {
+      "name": "?getParentLogger@SSFLogger@@QAEPAV1@XZ",
+      "ordinal": 150,
+      "address": "0x100a8b17"
+    },
+    {
+      "name": "?getParentLoggerByName@SSFLogManager@@IAEPAVSSFLogger@@ABVwxString@@@Z",
+      "ordinal": 151,
+      "address": "0x100a9e63"
+    },
+    {
+      "name": "?getPrintedChar@SSFLogger@@MAEDD@Z",
+      "ordinal": 152,
+      "address": "0x100aa769"
+    },
+    {
+      "name": "?getSystemCallReturnCode@SSFThreadedSystemCall@@QAEHXZ",
+      "ordinal": 153,
+      "address": "0x100aab38"
+    },
+    {
+      "name": "?getTableName@SSFDb@@UAE?AVwxString@@XZ",
+      "ordinal": 154,
+      "address": "0x100a9288"
+    },
+    {
+      "name": "?getTableObject@SSFDb@@QAEPAVwxDbTable@@XZ",
+      "ordinal": 155,
+      "address": "0x100acec9"
+    },
+    {
+      "name": "?getTotalDirSize@SSFDirInfo@@QAEJXZ",
+      "ordinal": 156,
+      "address": "0x100abeed"
+    },
+    {
+      "name": "?getType@SSFBaseLogAppender@@QAEABVwxString@@XZ",
+      "ordinal": 157,
+      "address": "0x100ab353"
+    },
+    {
+      "name": "?ifOn@SSFBaseLogAppender@@QAE_NXZ",
+      "ordinal": 158,
+      "address": "0x100acdde"
+    },
+    {
+      "name": "?indexDefinition@SSFDb@@MAEXXZ",
+      "ordinal": 159,
+      "address": "0x100aab42"
+    },
+    {
+      "name": "?initDbObject@SSFDb@@UAE_NPAVwxDb@@@Z",
+      "ordinal": 160,
+      "address": "0x100ad7cf"
+    },
+    {
+      "name": "?initTable@SSFDb@@UAE_NPAVwxDb@@@Z",
+      "ordinal": 161,
+      "address": "0x100a98a0"
+    },
+    {
+      "name": "?initTable@SSFDb@@UAE_NPAVwxDb@@_N@Z",
+      "ordinal": 162,
+      "address": "0x100a9530"
+    },
+    {
+      "name": "?initial@SSFTaskController@@UAEXXZ",
+      "ordinal": 163,
+      "address": "0x100a7c8f"
+    },
+    {
+      "name": "?initializeLog@SSFLoggerWrapper@@UAE_NAAVwxString@@@Z",
+      "ordinal": 164,
+      "address": "0x100a7b5e"
+    },
+    {
+      "name": "?initializeLog@SSFLoggerWrapper@@UAE_NPAVSSFLogger@@@Z",
+      "ordinal": 165,
+      "address": "0x100a9e09"
+    },
+    {
+      "name": "?isColumnNull@SSFDb@@QAE_NPAD@Z",
+      "ordinal": 166,
+      "address": "0x100aa37c"
+    },
+    {
+      "name": "?lock@SSFMutexLocker@@QAEXXZ",
+      "ordinal": 167,
+      "address": "0x100a8ca2"
+    },
+    {
+      "name": "?logBuffer@SSFLogger@@UAEXPBDDPADK@Z",
+      "ordinal": 168,
+      "address": "0x100ac406"
+    },
+    {
+      "name": "?logInitialize@SSFBaseLogAppender@@UAE_NXZ",
+      "ordinal": 169,
+      "address": "0x100ab853"
+    },
+    {
+      "name": "?logInitialize@SSFFileLogAppender@@UAE_NXZ",
+      "ordinal": 170,
+      "address": "0x100a7b1d"
+    },
+    {
+      "name": "?m_mapLogLevelString@SSFLogger@@1V?$map@$$CBDV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$less@$$CBD@2@V?$allocator@U?$pair@$$CBDV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@2@@std@@A",
+      "ordinal": 171,
+      "address": "0x1024f068"
+    },
+    {
+      "name": "?m_pBackupFileDepure@SSFFileLogAppender@@1PAVSSFBackFileDepure@@A",
+      "ordinal": 172,
+      "address": "0x1024f060"
+    },
+    {
+      "name": "?onDepureFile@SSFBackFileDepure@@MAE_NABVwxString@@@Z",
+      "ordinal": 173,
+      "address": "0x100aa0fc"
+    },
+    {
+      "name": "?populateDefaultData@SSFDb@@MAEXXZ",
+      "ordinal": 174,
+      "address": "0x100ab1a5"
+    },
+    {
+      "name": "?processWriteLog@SSFLogger@@EAEXPBDDPAD@Z",
+      "ordinal": 175,
+      "address": "0x100aac00"
+    },
+    {
+      "name": "?removeAppender@SSFLogger@@QAE_NVwxString@@@Z",
+      "ordinal": 176,
+      "address": "0x100ab376"
+    },
+    {
+      "name": "?removeLogInstance@SSFLogManager@@QAE_NABVwxString@@@Z",
+      "ordinal": 177,
+      "address": "0x100a70d7"
+    },
+    {
+      "name": "?runDepureProcess@SSFBackFileDepure@@IAE_NXZ",
+      "ordinal": 178,
+      "address": "0x100acece"
+    },
+    {
+      "name": "?setAllFileTime@SSFBackFileDepure@@IAEXXZ",
+      "ordinal": 179,
+      "address": "0x100ab5ab"
+    },
+    {
+      "name": "?setBackupDirName@SSFBackFileDepure@@QAEXABVwxString@@@Z",
+      "ordinal": 180,
+      "address": "0x100a77fd"
+    },
+    {
+      "name": "?setBackupFileList@SSFDirInfo@@QAEXPAV?$list@VSSFBackupFileInfo@@V?$allocator@VSSFBackupFileInfo@@@std@@@std@@@Z",
+      "ordinal": 181,
+      "address": "0x100ad969"
+    },
+    {
+      "name": "?setBackupLogDirectory@SSFFileLogAppender@@QAEXAAVwxString@@@Z",
+      "ordinal": 182,
+      "address": "0x100aced3"
+    },
+    {
+      "name": "?setColumnToNull@SSFDb@@QAEXPAD@Z",
+      "ordinal": 183,
+      "address": "0x100a8d6f"
+    },
+    {
+      "name": "?setDB@SSFDb@@QAEXPAVwxDb@@@Z",
+      "ordinal": 184,
+      "address": "0x100a8491"
+    },
+    {
+      "name": "?setDayBackup@SSFFileLogAppender@@QAEX_N@Z",
+      "ordinal": 185,
+      "address": "0x100aab6a"
+    },
+    {
+      "name": "?setDefaultTaskTimeout@SSFTaskController@@QAEXJ@Z",
+      "ordinal": 186,
+      "address": "0x100ad07c"
+    },
+    {
+      "name": "?setDepurePeriodTime@SSFBackFileDepure@@QAEXJ@Z",
+      "ordinal": 187,
+      "address": "0x100a9918"
+    },
+    {
+      "name": "?setDestroyOnExit@SSFThreadedSystemCall@@QAEX_N@Z",
+      "ordinal": 188,
+      "address": "0x100a9d14"
+    },
+    {
+      "name": "?setDeviceLogName@SSFLogger@@QAEXAAVwxString@@@Z",
+      "ordinal": 189,
+      "address": "0x100aa390"
+    },
+    {
+      "name": "?setFileDateTime@SSFBackupFileInfo@@QAE_NABVwxDateTime@@@Z",
+      "ordinal": 190,
+      "address": "0x100aa10b"
+    },
+    {
+      "name": "?setFileName@SSFBackupFileInfo@@QAEXABVwxString@@@Z",
+      "ordinal": 191,
+      "address": "0x100ad4f5"
+    },
+    {
+      "name": "?setFileName@SSFFileLogAppender@@QAEXABVwxString@@@Z",
+      "ordinal": 192,
+      "address": "0x100a91b6"
+    },
+    {
+      "name": "?setFileSize@SSFBackupFileInfo@@QAEXJ@Z",
+      "ordinal": 193,
+      "address": "0x100a7f78"
+    },
+    {
+      "name": "?setFileTime@SSFBackFileDepure@@MAEXAAVSSFBackupFileInfo@@@Z",
+      "ordinal": 194,
+      "address": "0x100abb73"
+    },
+    {
+      "name": "?setForceCreate@SSFFileLogAppender@@QAEX_N@Z",
+      "ordinal": 195,
+      "address": "0x100ad360"
+    },
+    {
+      "name": "?setGlobalLogger@@YA_NPAVSSFLogger@@@Z",
+      "ordinal": 196,
+      "address": "0x100a9427"
+    },
+    {
+      "name": "?setIndexName@SSFDb@@MAEXPAD_N@Z",
+      "ordinal": 197,
+      "address": "0x100a8734"
+    },
+    {
+      "name": "?setLogDirectory@SSFFileLogAppender@@QAEXAAVwxString@@@Z",
+      "ordinal": 198,
+      "address": "0x100ad27f"
+    },
+    {
+      "name": "?setLogHeaderLine@SSFFileLogAppender@@QAEXVwxString@@@Z",
+      "ordinal": 199,
+      "address": "0x100a8eb4"
+    },
+    {
+      "name": "?setLogLevel@SSFLogger@@QAEXD@Z",
+      "ordinal": 200,
+      "address": "0x100ac9ba"
+    },
+    {
+      "name": "?setLogMngr@SSFLoggerWrapper@@UAE_NPAVSSFLogManager@@@Z",
+      "ordinal": 201,
+      "address": "0x100ad581"
+    },
+    {
+      "name": "?setLoggerName@SSFLogger@@QAEXAAVwxString@@@Z",
+      "ordinal": 202,
+      "address": "0x100abe0c"
+    },
+    {
+      "name": "?setMaxBackupLogSize@SSFFileLogAppender@@QAEXJ@Z",
+      "ordinal": 203,
+      "address": "0x100acb18"
+    },
+    {
+      "name": "?setMaxDays@SSFBackFileDepure@@QAEXJ@Z",
+      "ordinal": 204,
+      "address": "0x100aad54"
+    },
+    {
+      "name": "?setMaxDirSize@SSFBackFileDepure@@QAEXJ@Z",
+      "ordinal": 205,
+      "address": "0x100a9c8d"
+    },
+    {
+      "name": "?setMaxLogSize@SSFFileLogAppender@@QAEXJ@Z",
+      "ordinal": 206,
+      "address": "0x100a7a28"
+    },
+    {
+      "name": "?setMaxQueueSize@SSFTaskController@@QAEXJ@Z",
+      "ordinal": 207,
+      "address": "0x100ac686"
+    },
+    {
+      "name": "?setMsgAnswerReceived@SSFRouterMsgReqCtrl@@QAE_NPBD@Z",
+      "ordinal": 208,
+      "address": "0x100a8ced"
+    },
+    {
+      "name": "?setMsgReqTimeout@SSFRouterMsgReqCtrl@@QAEXJ@Z",
+      "ordinal": 209,
+      "address": "0x100abf92"
+    },
+    {
+      "name": "?setMsgRequested@SSFRouterMsgReqCtrl@@QAE_NPBD@Z",
+      "ordinal": 210,
+      "address": "0x100aacbe"
+    },
+    {
+      "name": "?setMutexToUse@SSFThreadedSystemCall@@QAEXPAVwxMutex@@@Z",
+      "ordinal": 211,
+      "address": "0x100a7fe6"
+    },
+    {
+      "name": "?setName@SSFBaseLogAppender@@QAEXAAVwxString@@@Z",
+      "ordinal": 212,
+      "address": "0x100ad0c2"
+    },
+    {
+      "name": "?setOff@SSFBaseLogAppender@@QAE_NXZ",
+      "ordinal": 213,
+      "address": "0x100ab1d7"
+    },
+    {
+      "name": "?setOn@SSFBaseLogAppender@@QAE_NXZ",
+      "ordinal": 214,
+      "address": "0x100ab38a"
+    },
+    {
+      "name": "?setParentLogger@SSFLogger@@QAEXPAV1@@Z",
+      "ordinal": 215,
+      "address": "0x100a9a3a"
+    },
+    {
+      "name": "?setRetrySeconds@SSFThreadedSystemCall@@QAEXJ@Z",
+      "ordinal": 216,
+      "address": "0x100ad5ea"
+    },
+    {
+      "name": "?setRunDepureProcess@SSFFileLogAppender@@QAEX_N@Z",
+      "ordinal": 217,
+      "address": "0x100ac442"
+    },
+    {
+      "name": "?setSystemCall@SSFThreadedSystemCall@@QAEXPAD@Z",
+      "ordinal": 218,
+      "address": "0x100abef2"
+    },
+    {
+      "name": "?setTableName@SSFDb@@UAEXAAVwxString@@@Z",
+      "ordinal": 219,
+      "address": "0x100ab05b"
+    },
+    {
+      "name": "?setTableName@SSFDb@@UAEXPAD@Z",
+      "ordinal": 220,
+      "address": "0x100ab236"
+    },
+    {
+      "name": "?setWorkingDirectory@@YA_NPBD@Z",
+      "ordinal": 221,
+      "address": "0x100a7e1a"
+    },
+    {
+      "name": "?taskCheckPoint@SSFTaskController@@QAE_NAAVwxString@@J_N@Z",
+      "ordinal": 222,
+      "address": "0x100a928d"
+    },
+    {
+      "name": "?toolsDBcheckThatAllColumnsExist@@YA_NPAVwxDbTable@@@Z",
+      "ordinal": 223,
+      "address": "0x100abd9e"
+    },
+    {
+      "name": "?unLock@SSFMutexLocker@@QAEXXZ",
+      "ordinal": 224,
+      "address": "0x100ab41b"
+    },
+    {
+      "name": "?waitForMutex@SSFMutexLocker@@QAE_NJ@Z",
+      "ordinal": 225,
+      "address": "0x100aafe3"
+    },
+    {
+      "name": "?write@SSFFileLogAppender@@UAE_NAAVwxString@@@Z",
+      "ordinal": 226,
+      "address": "0x100ad4af"
+    },
+    {
+      "name": "?write@SSFLogger@@IAEXAAVwxString@@@Z",
+      "ordinal": 227,
+      "address": "0x100a8bf8"
+    },
+    {
+      "name": "?writeLog@SSFLogger@@UAAXPBDD0ZZ",
+      "ordinal": 228,
+      "address": "0x100a8900"
+    },
+    {
+      "name": "?writeLog@SSFLogger@@UAEXPBDDPAD@Z",
+      "ordinal": 229,
+      "address": "0x100aa985"
+    }
+  ],
+  "imports": [
+    {
+      "dll": "KERNEL32.dll",
+      "functions": [
+        "CloseHandle",
+        "LocalFileTimeToFileTime",
+        "SystemTimeToFileTime",
+        "GetFileTime",
+        "FileTimeToSystemTime",
+        "FileTimeToLocalFileTime",
+        "GetLocaleInfoA",
+        "GetThreadLocale",
+        "FindNextFileA",
+        "GetFileAttributesA"
+      ]
+    },
+    {
+      "dll": "USER32.dll",
+      "functions": [
+        "DdeQueryStringA",
+        "MessageBoxA",
+        "LoadCursorA",
+        "SetCursor",
+        "DdeGetLastError",
+        "DdeFreeStringHandle",
+        "DdeCreateStringHandleA",
+        "DdeCreateDataHandle",
+        "DdePostAdvise",
+        "DdeGetData"
+      ]
+    },
+    {
+      "dll": "ADVAPI32.dll",
+      "functions": [
+        "RegEnumValueA",
+        "RegSetValueExA",
+        "RegQueryValueExA",
+        "RegDeleteValueA",
+        "RegDeleteKeyA",
+        "RegCloseKey",
+        "RegCreateKeyA",
+        "RegOpenKeyExA",
+        "RegQueryInfoKeyA",
+        "OpenProcessToken"
+      ]
+    },
+    {
+      "dll": "SHELL32.dll",
+      "functions": [
+        "SHGetMalloc",
+        "SHGetPathFromIDListA",
+        "SHGetSpecialFolderLocation"
+      ]
+    },
+    {
+      "dll": "ole32.dll",
+      "functions": [
+        "CoCreateInstance"
+      ]
+    },
+    {
+      "dll": "ODBC32.dll",
+      "functions": []
+    }
+  ],
+  "strings": [
+    "wxsErrorMsg",
+    "szErrorDesc",
+    "wxsError",
+    "completefile",
+    "volume",
+    "noErrors",
+    "ddeCommand",
+    "command",
+    "stringInitial",
+    "errorMsg",
+    "lTotalNumberOfClusters",
+    "bytesTotal",
+    "memStatus",
+    "lockInit",
+    "outConnectBufferLen",
+    "outConnectBuffer",
+    "rowStatus",
+    "Error adding %d columns to table %s",
+    "Error executing query [%s]",
+    "Error getting columns count from database",
+    "Error opening database ...",
+    "connectToDB",
+    "Error compressing file [%s]",
+    "Error reading backup directory files",
+    "Error opening backupdirectory",
+    "Error Creating directory [%s]",
+    "Error erasing file [%s]",
+    "SSFBackFileDepure::setFileTime - Error setting FileDateTime [%s][%s]",
+    "[SSFFFileLogAppender::write]-Error writing in log file [%s],",
+    "Error trying to write in file",
+    "[SSFFFileLogAppender::write]-Error opening log file [%s],",
+    "[SSFFFileLogAppender::write]-Timeout waiting for mutex. Error desc [%s]",
+    "The log file day changes on initialize",
+    "[SSFFFileLogAppender::logInitialize]-Error Creating directory [%s],",
+    "[SSFFFileLogAppender::logInitialize]-The backup directory is wrong [%s],",
+    "[SSFFFileLogAppender::logInitialize]-The Full file name is wrong [%s],",
+    "[SSFFFileLogAppender::logInitialize]-Log File has not name",
+    "[SSFFFileLogAppender::logInitialize]-Error initializing Appender for log file [%s],",
+    "[SSFFFileLogAppender::backupLogFileName]-Error moving log file [%s] to backup directory",
+    "[SSFFFileLogAppender::backupLogFileName]-Error waiting for mutex [%s],",
+    "Unknown error reported by mutex",
+    "Dead lock error on mutex",
+    "ERROR",
+    "FATAL_ERROR",
+    "[SSFLogger::addAppender]-[%s]-Error initializing log appender",
+    "[SSFLogger::addAppender]-[%s]-Error waiting for mutex[%s]",
+    "[SSFLogger::removeAppender]-[%s]-Timeout waiting for mutex. Error desc [%s]",
+    "[SSFLogger::writeLog]-[%s]-Timeout waiting for mutex. Error desc [%s]",
+    "[SSFLogger::writeLog]-[%s]-Called by [%s] - Timeout waiting for mutex. Error desc [%s]",
+    "[SSFLogger::write]-[%s]-Error writing to Appender[%s]",
+    "[SSFLoggerWrapper::initializeLog]- The Log Manager instance is not configured the log instance will not be created",
+    "[SSFLogger::getLogInstance]-Timeout waiting for mutex. Error desc [%s]",
+    "[SSFLogManager::removeLogInstace]-Timeout waiting for mutex. Error desc [%s]",
+    "Can't set a new msg request when the status is waiting - Msg to set [%s]",
+    "Can't set a msg answer when the status is not waiting - Msg to set [%s]",
+    "SSFRouterMsgReqCtrl::getMsgReqStatus",
+    "Error adding File Log Appender",
+    "Unable to get current Module File Name - Error Description [",
+    "Error instatiating File Log Appender",
+    "System Call [%s] done with error [%d]",
+    "[SSFThreadedSystemCall::Entry]-System Call [%s] done with error [%d]",
+    "Error opening table: ",
+    "Error checking columns: ",
+    "Error creating table: ",
+    "Error opening table [%s]",
+    "SSFDb::initTable",
+    "Datasource does not support DESCending index columns",
+    "Error [%ld] - %s ",
+    "ERROR: Not enough room to encrypt the content.",
+    "ERROR: Not enough room to decrypt the content.",
+    "ERROR: (ReadBlock) Cannot read file or file is too large.",
+    "ERROR: Cannot open a file with that name.  Try again.",
+    "ERROR: (ReadText) Cannot read file or file is too large.",
+    "Error en (*blockLen + 2) > maxBlockLen: blockLen [%ld] maxBlockLen [%ld]",
+    "Error en fgets",
+    "ERROR: Cannot write file.",
+    "ERROR: %s mientras %s",
+    "(Encrypted) signature has RFC 1113 encoding error",
+    "Encrypted key has RFC 1113 encoding error",
+    "(Encrypted) content has RFC 1113 encoding error",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\string.cpp",
+    "out of memory in wxStringBase::InitWith",
+    "!gs_compareFunction",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\appbase.cpp",
+    "2.6 (debug,ANSI,Visual C++,wx containers,compatible with 2.4)",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\file.cpp",
+    "can't commit changes to file '%s'",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\dircmn.cpp",
+    "unexpected OnOpenError() return value",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\filename.cpp",
+    "%s(%d): '%s' failed with error 0x%08lx (%s).",
+    "invalid directory component in wxFileName",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\datetime.cpp",
+    "logic error",
+    "unsupported calendar",
+    "country support not implemented",
+    "logic error in wxDateTime::Format",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\filefn.cpp",
+    "Can not start thread: error writing TLS.",
+    "GetProcessAffinityMask",
+    "SetProcessAffinityMask",
+    "this system has several CPUs but no SetProcessAffinityMask function?",
+    "pfnSetProcessAffinityMask",
+    "Thread module initialization failed: impossible to allocate index in thread local storage",
+    "Thread module initialization failed: can not store value in thread local storage",
+    "wxMutex::Lock(): not initialized",
+    "wxMutex::TryLock(): not initialized",
+    "wxMutex::Unlock(): not initialized",
+    "wxCondition::Wait(): not initialized",
+    "wxCondition::Signal(): not initialized",
+    "wxCondition::Broadcast(): not initialized",
+    "wxSemaphore::Wait(): not initialized",
+    "wxSemaphore::TryWait(): not initialized",
+    "wxSemaphore::WaitTimeout(): not initialized",
+    "wxSemaphore::Post(): not initialized",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\strconv.cpp",
+    "empty command in wxExecute",
+    "invalid WX_DDE command in wxExecute",
+    "Execution of command '%s' failed",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\tokenzr.cpp",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\object.cpp",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\textbuf.cpp",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\textfile.cpp",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\dynarray.cpp",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\event.cpp",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\cmdline.cpp",
+    "unknown command line entry type",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\config.cpp",
+    "GetComputerName",
+    "COMSPEC",
+    "\\COMMAND.COM",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\stdpbase.cpp",
+    "Fatal Error",
+    " (error %ld: %s)",
+    "Fatal error: ",
+    "Error: ",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\log.cpp",
+    "unknown error %lx",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\fmapbase.cpp",
+    "SymInitialize",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\list.cpp",
+    "logic error in wxList::DoCopy",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\intl.cpp",
+    "you can't call wxLocale::Init more than once",
+    "!m_initialized",
+    "no locale to set in wxLocale::Init()",
+    "Locale '%s' not supported by OS.",
+    "Portuguese",
+    "Portuguese (Brazilian)",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\utilscmn.cpp",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\dynlib.cpp",
+    "Module \"%s\" initialization failed",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\encconv.cpp",
+    "You must call wxEncodingConverter::Init() before actually converting!",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\hashmap.cpp",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\stream.cpp",
+    "huge file not supported",
+    "huge position not supported",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\process.cpp",
+    "wxDDEConnection",
+    "Failed to initialize DDE",
+    "Failed to create connection to server '%s' on topic '%s'",
+    "Failed to disconnect from DDE server gracefully",
+    "Buffer too small in wxDDEConnection::Request",
+    "DDE not initialized",
+    "no DDE error.",
+    "a DDEML function was called without first calling the DdeInitialize function,",
+    "an application initialized as APPCLASS_MONITOR has",
+    "or an application initialized as APPCMD_CLIENTONLY has ",
+    "terminated before completing a transaction.",
+    "an internal error has occurred in the DDEML.",
+    "Once the application has returned from an XTYP_XACT_COMPLETE callback,",
+    "Unknown DDE error %08x",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\hash.cpp",
+    "error in wxRegConfig::SetPath",
+    "Error reading config options.",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\fileconf.cpp",
+    "Error saving user configuration data.",
+    "RenameEntry(): paths are not supported",
+    "Function SymInitialize() not found.",
+    "Latest dbghelp.dll is available at http://www.microsoft.com/whdc/ddk/debugging/",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\txtstrm.cpp",
+    "Can't copy values of unsupported type %d.",
+    "Exporting registry key: file \"%s\" already exists and won't be overwritten.",
+    "Can't export value of unsupported type %d.",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\uri.cpp",
+    "wxConnectionBase",
+    "Copy constructor of wxConnectionBase not implemented",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\ipcbase.cpp",
+    "Context for crash report generation not available.",
+    "IN_PAGE_ERROR",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\init.cpp",
+    "Initialization failed in post init, aborting.",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\ffile.cpp",
+    "Read error on file '%s'",
+    "Write error on file '%s'",
+    "Seek error on file '%s' (large files not supported by stdio)",
+    "Seek error on file '%s'",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\db.cpp",
+    "A problem occurred while trying to get a connection to the data source",
+    "connectStr.Length() < sizeof(ConnectionStr)",
+    "Cached connections must not be manually deleted, use",
+    "wxDbFreeConnection() or wxDbCloseConnections().",
+    "inConnectStr.Length()",
+    "dbConnectInf",
+    "Native Error Code = %li",
+    "Error Message = %s",
+    "ODBC DEBUG MESSAGE from DispAllErrors()",
+    "SQL Data type %ld currently not supported by wxWidgets",
+    "Database connecting to: ",
+    "ODBC errors:",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\dbtable.cpp",
+    "Connecting user does not have sufficient privileges to access this table.",
+    "Error opening '%s/%s'.",
+    "Error opening '%s'.",
+    "Specified column index (%d) exceeds the maximum number of columns (%d) registered for this table definition.  Column definition not added.",
+    "\\SSF\\SSF.Dev\\Extern.Libraries\\MSW.wxWidgets-2.6.2\\src\\common\\variant.cpp",
+    "Unknown Runtime Check Error",
+    "A local variable was used before it was initialized",
+    "Error: memory allocation: bad memory block type.",
+    "Object dump complete.",
+    "#File Error#(%d) : ",
+    "Total allocations: %Id bytes.",
+    "initctyp.c",
+    "strerror.c",
+    "Error",
+    "_CrtDbgReport: String too long or IO Error",
+    "Local variable used before initialization",
+    "Domain error",
+    "Unknown error",
+    "Exec format error",
+    "Input/output error",
+    "No error",
+    "ioinit.c",
+    "runtime error ",
+    "TLOSS error",
+    "SING error",
+    "DOMAIN error",
+    "Please contact the application's support team for more information.",
+    "- unable to initialize heap",
+    "- not enough space for lowio initialization",
+    "- not enough space for stdio initialization",
+    "- unexpected heap error",
+    "- unexpected multithread lock error",
+    "Runtime Error!",
+    "A security error of unknown cause has been detected which has",
+    "inittime.c",
+    "initnum.c",
+    "initmon.c",
+    "portuguese-brazilian",
+    ".com",
+    "InitializeCriticalSectionAndSpinCount",
+    "inithelp.c",
+    "?GetLastErrorDesc@@YAPADPADJ@Z",
+    "?LOG_LEVEL_ERROR@SSFLogger@@2DB",
+    "?LOG_LEVEL_FATAL_ERROR@SSFLogger@@2DB",
+    "?SSFCompressFile@@YAHPAD@Z",
+    "?checkForCompress@SSFBackFileDepure@@IAE_NXZ",
+    "?columnDefinition@SSFDb@@MAEXXZ",
+    "?connectToDb@@YA_NPAPAVwxDbConnectInf@@PAPAVwxDb@@@Z",
+    "?getErrorMsg@SSFMutexLocker@@QAEABVwxString@@XZ",
+    "?getMsgReqStatus@SSFRouterMsgReqCtrl@@QAEJXZ",
+    "?getTotalDirSize@SSFDirInfo@@QAEJXZ",
+    "?indexDefinition@SSFDb@@MAEXXZ",
+    "?initDbObject@SSFDb@@UAE_NPAVwxDb@@@Z",
+    "?initTable@SSFDb@@UAE_NPAVwxDb@@@Z",
+    "?initTable@SSFDb@@UAE_NPAVwxDb@@_N@Z",
+    "?initial@SSFTaskController@@UAEXXZ",
+    "?initializeLog@SSFLoggerWrapper@@UAE_NAAVwxString@@@Z",
+    "?initializeLog@SSFLoggerWrapper@@UAE_NPAVSSFLogger@@@Z",
+    "?logInitialize@SSFBaseLogAppender@@UAE_NXZ",
+    "?logInitialize@SSFFileLogAppender@@UAE_NXZ",
+    ".?AVlogic_error@std@@",
+    ".?AVlength_error@std@@",
+    ".?AVwxDDEConnectionList@@",
+    ".?AVwxwxDDEConnectionListNode@@",
+    ".?AVwxConnectionBase@@",
+    ".?AVwxDDEConnection@@",
+    ".?AVruntime_error@std@@",
+    "unknown compression method",
+    "file error",
+    "stream error",
+    "data error",
+    "buffer error",
+    "incompatible version",
+    "GetLastError",
+    "InitializeCriticalSection",
+    "GetComputerNameA",
+    "GlobalMemoryStatus",
+    "DdeInitializeA",
+    "DdeUninitialize",
+    "DdeConnect",
+    "DdeDisconnect",
+    "DdeGetLastError",
+    "GetCommandLineA",
+    "SetLastError",
+    "CompareStringA",
+    "CompareStringW"
+  ],
+  "sections": [
+    {
+      "name": ".textbss",
+      "size": 0,
+      "virtual_address": "0x1000"
+    },
+    {
+      "name": ".text",
+      "size": 1425408,
+      "virtual_address": "0xa7000"
+    },
+    {
+      "name": ".rdata",
+      "size": 278528,
+      "virtual_address": "0x203000"
+    },
+    {
+      "name": ".data",
+      "size": 36864,
+      "virtual_address": "0x247000"
+    },
+    {
+      "name": ".idata",
+      "size": 8192,
+      "virtual_address": "0x257000"
+    },
+    {
+      "name": ".reloc",
+      "size": 65536,
+      "virtual_address": "0x259000"
+    }
+  ],
+  "timestamp": "2008-05-07T02:42:45",
+  "characteristics": []
+}
