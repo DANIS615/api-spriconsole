@@ -1,0 +1,572 @@
+========================================================================
+ANÁLISIS DE DLL: SSF.Gilbarco.D.dll
+========================================================================
+Fecha: Mon Nov 10 19:40:58 UTC 2025
+Ruta: Smart Ship Factory/Spirit/bin/pumps/SSF.Gilbarco.D.dll
+
+========================================================================
+HEADERS
+========================================================================
+
+Smart Ship Factory/Spirit/bin/pumps/SSF.Gilbarco.D.dll:     file format pei-i386
+
+Characteristics 0x210e
+	executable
+	line numbers stripped
+	symbols stripped
+	32 bit words
+	DLL
+
+Time/Date		Fri Jun  6 09:21:52 2008
+Magic			010b	(PE32)
+MajorLinkerVersion	7
+MinorLinkerVersion	10
+SizeOfCode		001c3000
+SizeOfInitializedData	0007e000
+SizeOfUninitializedData	00000000
+AddressOfEntryPoint	000d93a6
+BaseOfCode		00001000
+BaseOfData		00001000
+ImageBase		10000000
+SectionAlignment	00001000
+FileAlignment		00001000
+MajorOSystemVersion	4
+MinorOSystemVersion	0
+MajorImageVersion	0
+MinorImageVersion	0
+MajorSubsystemVersion	4
+MinorSubsystemVersion	0
+Win32Version		00000000
+SizeOfImage		00319000
+SizeOfHeaders		00001000
+CheckSum		00000000
+Subsystem		00000002	(Windows GUI)
+DllCharacteristics	00000000
+SizeOfStackReserve	00100000
+SizeOfStackCommit	00001000
+SizeOfHeapReserve	00100000
+SizeOfHeapCommit	00001000
+LoaderFlags		00000000
+NumberOfRvaAndSizes	00000010
+
+The Data Directory
+Entry 0 002efef0 000001fa Export Directory [.edata (or where ever we found it)]
+Entry 1 00300000 000000c8 Import Directory [parts of .idata]
+Entry 2 00000000 00000000 Resource Directory [.rsrc]
+Entry 3 00000000 00000000 Exception Directory [.pdata]
+Entry 4 00000000 00000000 Security Directory
+Entry 5 00303000 0001093c Base Relocation Directory [.reloc]
+Entry 6 0029b000 0000001c Debug Directory
+
+========================================================================
+FUNCIONES EXPORTADAS (LO MÁS IMPORTANTE)
+========================================================================
+The Export Tables (interpreted .rdata section contents)
+
+Export Flags 			0
+Time/Date stamp 		484901b0
+Major/Minor 			0/0
+Name 				002eff4a SSF.Gilbarco
+Ordinal Base 			1
+Number in:
+	Export Address Table 		00000005
+	[Name Pointer/Ordinal] Table	00000005
+Table Addresses
+	Export Address Table 		002eff18
+	Name Pointer Table 		002eff2c
+	Ordinal Table 			002eff40
+
+Export Address Table -- Ordinal Base 1
+	[   0] +base[   1] df97c Export RVA
+	[   1] +base[   2] dce75 Export RVA
+	[   2] +base[   3] de3f1 Export RVA
+	[   3] +base[   4] db6ec Export RVA
+	[   4] +base[   5] d9aef Export RVA
+
+[Ordinal/Name Pointer] Table
+	[   0] ssfPIDestroyPlugInInstance
+	[   1] ssfPIGetPlugInConfigParam
+	[   2] ssfPIGetPlugInInstance
+	[   3] ssfPIInitialize
+	[   4] ssfPIShutdown
+
+
+PE File Base Relocations (interpreted .reloc section contents)
+
+Virtual Address: 000e8000 Chunk size 16 (0x10) Number of fixups 4
+	reloc    0 offset  d4c [e8d4c] HIGHLOW
+	reloc    1 offset  fd6 [e8fd6] HIGHLOW
+	reloc    2 offset  fe2 [e8fe2] HIGHLOW
+	reloc    3 offset    0 [e8000] ABSOLUTE
+
+Virtual Address: 000e9000 Chunk size 184 (0xb8) Number of fixups 88
+	reloc    0 offset   cd [e90cd] HIGHLOW
+	reloc    1 offset  147 [e9147] HIGHLOW
+	reloc    2 offset  15e [e915e] HIGHLOW
+	reloc    3 offset  19b [e919b] HIGHLOW
+	reloc    4 offset  1a2 [e91a2] HIGHLOW
+	reloc    5 offset  1a8 [e91a8] HIGHLOW
+	reloc    6 offset  1b8 [e91b8] HIGHLOW
+	reloc    7 offset  1bd [e91bd] HIGHLOW
+	reloc    8 offset  202 [e9202] HIGHLOW
+	reloc    9 offset  228 [e9228] HIGHLOW
+	reloc   10 offset  234 [e9234] HIGHLOW
+	reloc   11 offset  2b6 [e92b6] HIGHLOW
+	reloc   12 offset  2e9 [e92e9] HIGHLOW
+	reloc   13 offset  301 [e9301] HIGHLOW
+	reloc   14 offset  327 [e9327] HIGHLOW
+	reloc   15 offset  338 [e9338] HIGHLOW
+	reloc   16 offset  38d [e938d] HIGHLOW
+	reloc   17 offset  3b6 [e93b6] HIGHLOW
+	reloc   18 offset  3e3 [e93e3] HIGHLOW
+	reloc   19 offset  40c [e940c] HIGHLOW
+	reloc   20 offset  439 [e9439] HIGHLOW
+	reloc   21 offset  462 [e9462] HIGHLOW
+	reloc   22 offset  48f [e948f] HIGHLOW
+	reloc   23 offset  4b8 [e94b8] HIGHLOW
+	reloc   24 offset  4e5 [e94e5] HIGHLOW
+	reloc   25 offset  50e [e950e] HIGHLOW
+	reloc   26 offset  53b [e953b] HIGHLOW
+	reloc   27 offset  56e [e956e] HIGHLOW
+	reloc   28 offset  59b [e959b] HIGHLOW
+	reloc   29 offset  60e [e960e] HIGHLOW
+	reloc   30 offset  61f [e961f] HIGHLOW
+	reloc   31 offset  67e [e967e] HIGHLOW
+	reloc   32 offset  68f [e968f] HIGHLOW
+	reloc   33 offset  6ee [e96ee] HIGHLOW
+	reloc   34 offset  6ff [e96ff] HIGHLOW
+	reloc   35 offset  759 [e9759] HIGHLOW
+	reloc   36 offset  788 [e9788] HIGHLOW
+	reloc   37 offset  794 [e9794] HIGHLOW
+	reloc   38 offset  984 [e9984] HIGHLOW
+	reloc   39 offset  9c4 [e99c4] HIGHLOW
+	reloc   40 offset  a66 [e9a66] HIGHLOW
+	reloc   41 offset  a98 [e9a98] HIGHLOW
+	reloc   42 offset  aa1 [e9aa1] HIGHLOW
+	reloc   43 offset  ab5 [e9ab5] HIGHLOW
+	reloc   44 offset  afa [e9afa] HIGHLOW
+	reloc   45 offset  b05 [e9b05] HIGHLOW
+	reloc   46 offset  b44 [e9b44] HIGHLOW
+	reloc   47 offset  b4a [e9b4a] HIGHLOW
+	reloc   48 offset  b54 [e9b54] HIGHLOW
+	reloc   49 offset  b59 [e9b59] HIGHLOW
+	reloc   50 offset  b9e [e9b9e] HIGHLOW
+	reloc   51 offset  bb2 [e9bb2] HIGHLOW
+	reloc   52 offset  bb7 [e9bb7] HIGHLOW
+	reloc   53 offset  bc8 [e9bc8] HIGHLOW
+	reloc   54 offset  be0 [e9be0] HIGHLOW
+	reloc   55 offset  bf7 [e9bf7] HIGHLOW
+	reloc   56 offset  c24 [e9c24] HIGHLOW
+	reloc   57 offset  c30 [e9c30] HIGHLOW
+	reloc   58 offset  c3c [e9c3c] HIGHLOW
+	reloc   59 offset  ce6 [e9ce6] HIGHLOW
+	reloc   60 offset  d44 [e9d44] HIGHLOW
+	reloc   61 offset  d60 [e9d60] HIGHLOW
+	reloc   62 offset  d8f [e9d8f] HIGHLOW
+	reloc   63 offset  da7 [e9da7] HIGHLOW
+	reloc   64 offset  dae [e9dae] HIGHLOW
+	reloc   65 offset  db4 [e9db4] HIGHLOW
+	reloc   66 offset  dd7 [e9dd7] HIGHLOW
+	reloc   67 offset  dde [e9dde] HIGHLOW
+	reloc   68 offset  de4 [e9de4] HIGHLOW
+	reloc   69 offset  e08 [e9e08] HIGHLOW
+	reloc   70 offset  e20 [e9e20] HIGHLOW
+	reloc   71 offset  e27 [e9e27] HIGHLOW
+	reloc   72 offset  e2d [e9e2d] HIGHLOW
+	reloc   73 offset  e3f [e9e3f] HIGHLOW
+	reloc   74 offset  e46 [e9e46] HIGHLOW
+	reloc   75 offset  e4c [e9e4c] HIGHLOW
+	reloc   76 offset  e5c [e9e5c] HIGHLOW
+	reloc   77 offset  ed0 [e9ed0] HIGHLOW
+	reloc   78 offset  ed7 [e9ed7] HIGHLOW
+	reloc   79 offset  edd [e9edd] HIGHLOW
+	reloc   80 offset  eed [e9eed] HIGHLOW
+	reloc   81 offset  f4c [e9f4c] HIGHLOW
+	reloc   82 offset  f75 [e9f75] HIGHLOW
+	reloc   83 offset  f97 [e9f97] HIGHLOW
+	reloc   84 offset  fc6 [e9fc6] HIGHLOW
+	reloc   85 offset  fde [e9fde] HIGHLOW
+	reloc   86 offset  fe5 [e9fe5] HIGHLOW
+	reloc   87 offset  feb [e9feb] HIGHLOW
+
+Virtual Address: 000ea000 Chunk size 196 (0xc4) Number of fixups 94
+	reloc    0 offset    e [ea00e] HIGHLOW
+	reloc    1 offset   15 [ea015] HIGHLOW
+	reloc    2 offset   1b [ea01b] HIGHLOW
+	reloc    3 offset   3f [ea03f] HIGHLOW
+	reloc    4 offset   55 [ea055] HIGHLOW
+	reloc    5 offset   75 [ea075] HIGHLOW
+	reloc    6 offset   8e [ea08e] HIGHLOW
+	reloc    7 offset   b7 [ea0b7] HIGHLOW
+	reloc    8 offset   d9 [ea0d9] HIGHLOW
+	reloc    9 offset   f1 [ea0f1] HIGHLOW
+	reloc   10 offset   f8 [ea0f8] HIGHLOW
+	reloc   11 offset   fe [ea0fe] HIGHLOW
+	reloc   12 offset  121 [ea121] HIGHLOW
+	reloc   13 offset  128 [ea128] HIGHLOW
+	reloc   14 offset  12e [ea12e] HIGHLOW
+	reloc   15 offset  152 [ea152] HIGHLOW
+	reloc   16 offset  168 [ea168] HIGHLOW
+	reloc   17 offset  181 [ea181] HIGHLOW
+	reloc   18 offset  199 [ea199] HIGHLOW
+	reloc   19 offset  1b2 [ea1b2] HIGHLOW
+	reloc   20 offset  1db [ea1db] HIGHLOW
+	reloc   21 offset  204 [ea204] HIGHLOW
+	reloc   22 offset  234 [ea234] HIGHLOW
+	reloc   23 offset  240 [ea240] HIGHLOW
+	reloc   24 offset  3b6 [ea3b6] HIGHLOW
+	reloc   25 offset  402 [ea402] HIGHLOW
+	reloc   26 offset  40b [ea40b] HIGHLOW
+	reloc   27 offset  41e [ea41e] HIGHLOW
+	reloc   28 offset  440 [ea440] HIGHLOW
+	reloc   29 offset  46e [ea46e] HIGHLOW
+	reloc   30 offset  474 [ea474] HIGHLOW
+	reloc   31 offset  4ad [ea4ad] HIGHLOW
+	reloc   32 offset  515 [ea515] HIGHLOW
+	reloc   33 offset  51a [ea51a] HIGHLOW
+	reloc   34 offset  552 [ea552] HIGHLOW
+	reloc   35 offset  569 [ea569] HIGHLOW
+	reloc   36 offset  59f [ea59f] HIGHLOW
+	reloc   37 offset  5a5 [ea5a5] HIGHLOW
+	reloc   38 offset  5de [ea5de] HIGHLOW
+	reloc   39 offset  5f5 [ea5f5] HIGHLOW
+	reloc   40 offset  633 [ea633] HIGHLOW
+	reloc   41 offset  660 [ea660] HIGHLOW
+	reloc   42 offset  68b [ea68b] HIGHLOW
+	reloc   43 offset  6a2 [ea6a2] HIGHLOW
+	reloc   44 offset  6d4 [ea6d4] HIGHLOW
+	reloc   45 offset  6e0 [ea6e0] HIGHLOW
+	reloc   46 offset  7d6 [ea7d6] HIGHLOW
+	reloc   47 offset  822 [ea822] HIGHLOW
+	reloc   48 offset  82b [ea82b] HIGHLOW
+	reloc   49 offset  86a [ea86a] HIGHLOW
+	reloc   50 offset  86f [ea86f] HIGHLOW
+	reloc   51 offset  8a5 [ea8a5] HIGHLOW
+	reloc   52 offset  8fc [ea8fc] HIGHLOW
+	reloc   53 offset  918 [ea918] HIGHLOW
+	reloc   54 offset  94a [ea94a] HIGHLOW
+	reloc   55 offset  986 [ea986] HIGHLOW
+	reloc   56 offset  98c [ea98c] HIGHLOW
+	reloc   57 offset  9d3 [ea9d3] HIGHLOW
+	reloc   58 offset  9d9 [ea9d9] HIGHLOW
+	reloc   59 offset  a20 [eaa20] HIGHLOW
+	reloc   60 offset  a26 [eaa26] HIGHLOW
+	reloc   61 offset  a6d [eaa6d] HIGHLOW
+	reloc   62 offset  a73 [eaa73] HIGHLOW
+	reloc   63 offset  aa9 [eaaa9] HIGHLOW
+	reloc   64 offset  ac0 [eaac0] HIGHLOW
+	reloc   65 offset  af0 [eaaf0] HIGHLOW
+	reloc   66 offset  afc [eaafc] HIGHLOW
+	reloc   67 offset  c1d [eac1d] HIGHLOW
+	reloc   68 offset  c26 [eac26] HIGHLOW
+	reloc   69 offset  c38 [eac38] HIGHLOW
+	reloc   70 offset  c49 [eac49] HIGHLOW
+
+========================================================================
+DEPENDENCIAS (IMPORTS)
+========================================================================
+	DLL Name: SSF.Tools.Library.D.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	301544	   31  ??1SSFMutexLocker@@UAE@XZ
+	301560	  134  ?getErrorMsg@SSFMutexLocker@@QAEABVwxString@@XZ
+	301592	  224  ?waitForMutex@SSFMutexLocker@@QAE_NJ@Z
+	3015bc	   15  ??0SSFMutexLocker@@QAE@AAVwxMutex@@@Z
+	300ee8	  139  ?getGlobalLogger@@YAPAVSSFLogger@@XZ
+	30161e	   39  ??4SSFLoggerWrapper@@QAEAAV0@ABV0@@Z
+	301646	  166  ?lock@SSFMutexLocker@@QAEXXZ
+	301666	   90  ?SSFCrypt@@YAXPADH0H@Z
+	3010e4	  164  ?initializeLog@SSFLoggerWrapper@@UAE_NPAVSSFLogger@@@Z
+	3010c6	   14  ??0SSFLoggerWrapper@@QAE@XZ
+	3010a8	   30  ??1SSFLoggerWrapper@@UAE@XZ
+	301070	  163  ?initializeLog@SSFLoggerWrapper@@UAE_NAAVwxString@@@Z
+	301034	  143  ?getLoggerInstance@SSFLoggerWrapper@@UAEPAVSSFLogger@@XZ
+	300ffa	  200  ?setLogMngr@SSFLoggerWrapper@@UAE_NPAVSSFLogManager@@@Z
+	300fd6	   84  ?LOG_LEVEL_WARNING@SSFLogger@@2DB
+	300fc0	  101  ?atollen@@YAJPBDJ@Z
+	300f9e	   79  ?LOG_LEVEL_DEBUG@SSFLogger@@2DB
+	300f6e	   10  ??0SSFFuncLogHeader@@QAE@PBDPAVSSFLogger@@@Z
+	300f4c	   80  ?LOG_LEVEL_ERROR@SSFLogger@@2DB
+	300f2e	   27  ??1SSFFuncLogHeader@@UAE@XZ
+	300f10	   92  ?SSFTranslate@@YAPADPADI0@Z
+	3015e4	  222  ?toolsDBcheckThatAllColumnsExist@@YA_NPAVwxDbTable@@@Z
+
+ 00300014	00300514 00000000 00000000 0030152a 00300c24
+
+	DLL Name: SSF.Router.Message.D.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	301136	   20  ?getEventType@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+	30119e	   22  ?getOrigin@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+	301204	    6  ?addParameter@SSFRouterMessage@@QAEXPBDABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	301270	   30  ?setDestination@SSFRouterMessage@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	3012dc	   35  ?setEventType@SSFRouterMessage@@QAEXPBD@Z
+	301308	   15  ?createNewRouterMsg@@YAPAVSSFRouterMessage@@XZ
+	30133a	   37  ?setMessageType@SSFRouterMessage@@QAEXPBD@Z
+	301368	   21  ?getMessageType@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+	3014fa	   16  ?deleteRouterMsg@@YAXPAVSSFRouterMessage@@@Z
+	3014cc	   27  ?getParametersQty@SSFRouterMessage@@QBEHXZ
+	3020c4	   29  ?serialize@SSFRouterMessage@@QAEJJPADD@Z
+	3020f0	   18  ?getDestination@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+	30215a	   33  ?setDevOrigin@SSFRouterMessage@@QAEXPBD@Z
+	302186	   17  ?deserialize@SSFRouterMessage@@QAE_NJPAD@Z
+	3021b4	   34  ?setEventType@SSFRouterMessage@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+	30221e	   31  ?setDestination@SSFRouterMessage@@QAEXPBD@Z
+	30224c	   39  ?setOrigin@SSFRouterMessage@@QAEXPBD@Z
+	30149e	   10  ?addParameter@SSFRouterMessage@@QAEXPBDN@Z
+	30142e	   26  ?getParameterValue@SSFRouterMessage@@QBEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PBD@Z
+	301400	    8  ?addParameter@SSFRouterMessage@@QAEXPBDH@Z
+	3013d2	    9  ?addParameter@SSFRouterMessage@@QAEXPBDJ@Z
+
+ 00300028	00300134 00000000 00000000 00301cf2 00300844
+
+	DLL Name: KERNEL32.dll
+	vma:  Hint/Ord Member-Name Bound-To
+	30232e	  696  RemoveDirectoryA
+	30231a	   69  CreateDirectoryA
+	30230c	  124  DeleteFileA
+	302300	  612  MoveFileA
+	3022f2	  176  ExitThread
+	3022e0	  319  GetDateFormatA
+	3022ce	  470  GetTimeFormatA
+	3022be	  534  HeapValidate
+	3022ae	  556  IsBadWritePtr
+	30229c	  264  GetCommandLineA
+	302282	  448  GetSystemTimeAsFileTime
+	302276	  714  RtlUnwind
+	30245a	  237  FreeEnvironmentStringsA
+	302474	  333  GetEnvironmentStrings
+	30248c	  238  FreeEnvironmentStringsW
+	3024a6	  335  GetEnvironmentStringsW
+	3024c0	  522  HeapDestroy
+	3024ce	  520  HeapCreate
+	3024dc	  886  VirtualFree
+	3024ea	  864  UnhandledExceptionFilter
+	302506	  528  HeapReAlloc
+	302514	  883  VirtualAlloc
+	302524	  570  LCMapStringA
+	301680	  115  DebugBreak
+	30168e	  641  OutputDebugStringA
+	3016a4	  364  GetLocaleInfoA
+	3016b6	  464  GetThreadLocale
+	3016c8	  619  MultiByteToWideChar
+	3016de	  903  WideCharToMultiByte
+	3016f4	  537  InitializeCriticalSection
+	301710	  122  DeleteCriticalSection
+	301728	  143  EnterCriticalSection
+	301740	  583  LeaveCriticalSection
+	301758	   90  CreateMutexA
+	301768	   46  CloseHandle
+	301776	  899  WaitForSingleObject
+	30178c	  694  ReleaseMutex
+	30179c	  101  CreateSemaphoreA
+	3017b0	  695  ReleaseSemaphore
+	3017c4	  855  TlsSetValue
+	3017d2	  542  InterlockedDecrement
+	3017ea	  822  SetThreadPriority
+	3017fe	  848  TerminateThread
+	301810	  839  Sleep
+	301818	  339  GetExitCodeThread
+	30182c	  546  InterlockedIncrement
+	301844	  841  SuspendThread
+	301854	  709  ResumeThread
+	301864	  361  GetLastError
+	301874	  854  TlsGetValue
+	301882	  318  GetCurrentThreadId
+	301898	  443  GetSystemInfo
+	3018a8	  408  GetProcAddress
+	3018ba	  409  GetProcessAffinityMask
+	3018d4	  314  GetCurrentProcess
+	3018e8	  584  LoadLibraryA
+	3018f8	  853  TlsFree
+	301902	  852  TlsAlloc
+	30190e	  457  GetTempFileNameA
+	301922	  459  GetTempPathA
+	301932	  429  GetShortPathNameA
+	301946	  197  FindClose
+	301952	  201  FindFirstFileA
+	301964	  786  SetFileTime
+	302342	  312  GetCurrentDirectoryA
+	301980	  592  LocalFileTimeToFileTime
+	30199a	  844  SystemTimeToFileTime
+	3019b2	  349  GetFileTime
+	3019c0	  188  FileTimeToSystemTime
+	3019d8	  187  FileTimeToLocalFileTime
+	3019f2	  433  GetStdHandle
+	301a02	  268  GetComputerNameA
+	301a16	  336  GetEnvironmentVariableA
+	301a30	  426  GetProfileStringA
+	301a44	  325  GetDiskFreeSpaceA
+	301a58	  375  GetModuleHandleA
+	301a6c	  774  SetEnvironmentVariableA
+	301a86	  338  GetExitCodeProcess
+	301a9c	  847  TerminateProcess
+	301ab0	  634  OpenProcess
+	301abe	  506  GlobalMemoryStatus
+	301ad4	  315  GetCurrentProcessId
+	301aea	  479  GetVersionExA
+	301afa	  252  GetCPInfo
+	301b06	  565  IsValidCodePage
+	301b18	  373  GetModuleFileNameA
+	301b2e	  594  LocalFree
+	301b3a	  234  FormatMessageA
+	301b4c	  317  GetCurrentThread
+	301b60	  667  RaiseException
+	301b72	  821  SetThreadLocale
+	301b84	  473  GetUserDefaultLCID
+	301b9a	  245  GetACP
+	301ba4	  239  FreeLibrary
+	301bb2	  342  GetFileAttributesA
+	301bc8	   61  CopyFileA
+	301bd4	  765  SetCurrentDirectoryA
+	301bec	  489  GetWindowsDirectoryA
+	301c04	  350  GetFileType
+	301c12	  211  FindNextFileA
+	301c22	  645  PeekNamedPipe
+	301c32	  681  ReadFile
+	301c3e	  803  SetNamedPipeHandleState
+	301c58	  916  WriteFile
+	301c64	  105  CreateThread
+	301c74	   96  CreateProcessA
+	301c86	  140  DuplicateHandle
+	302448	  431  GetStartupInfoA
+	301ca6	  175  ExitProcess
+	301cb4	  554  IsBadStringPtrA
+	301cc6	  553  IsBadReadPtr
+	301cd6	  178  ExpandEnvironmentStringsA
+	302534	  571  LCMapStringW
+	302544	  889  VirtualProtect
+	302556	  891  VirtualQuery
+	302566	  663  QueryPerformanceCounter
+	302580	  469  GetTickCount
+	302590	  434  GetStringTypeA
+	3025a2	  437  GetStringTypeW
+	3025b4	  567  IsValidLocale
+	3025c4	  165  EnumSystemLocalesA
+	3025da	  737  SetConsoleCtrlHandler
+	3025f2	  543  InterlockedExchange
+	302608	  771  SetEndOfFile
+	302618	  550  IsBadCodePtr
+	302628	  395  GetOEMCP
+	302634	   52  CompareStringA
+	302646	   53  CompareStringW
+	302658	  365  GetLocaleInfoW
+	30235a	  353  GetFullPathNameA
+	30236e	  331  GetDriveTypeA
+	30237e	  810  SetStdHandle
+	30238e	  229  FlushFileBuffers
+	3023a2	  782  SetFilePointer
+	3023b4	  183  FatalAppExitA
+	3023c4	  795  SetLastError
+	3023d4	  524  HeapFree
+	3023e0	  518  HeapAlloc
+	3023ec	  411  GetProcessHeap
+	3023fe	  472  GetTimeZoneInformation
+	302418	  827  SetUnhandledExceptionFilter
+	302436	  791  SetHandleCount
+	301972	   77  CreateFileA
+	301c98	   95  CreatePipe
+
+
+========================================================================
+STRINGS INTERESANTES
+========================================================================
+itHoseVector
+itHoseVector
+itHose
+volume
+volume
+volume
+volume
+volume
+errorMsg
+lTotalNumberOfClusters
+bytesTotal
+memStatus
+stringInitial
+command
+noErrors
+ddeCommand
+command
+noErrors
+command
+lockInit
+lockInit
+wxsPumpKey
+itHose
+itHoseVector
+oUncontrolledPumpSale
+oUncontrolledPumpSale
+itHose
+itHoseVector
+itHoseVector
+itHoseVector
+wxsErrorEvtMsg
+strHosesList
+strGradesList
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+strHosesList
+strGradesList
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+strHose
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+wxsErrorMsg
+itHoses
+itHose
+wxsErrorMsg
+itHoses
+itHoseLevel
+dPriceAux
+oPumpSale
+itPrice
+strErrorMsg
+dtLastCommunication
+wxsErrorMsg
+error
+outConnectBufferLen
+outConnectBuffer
+outConnectBufferLen
+outConnectBuffer
+rowStatus
+pCommDevCtrlIntf
+SSF_FC_PUMP_GILBARCO_LANGUAGE
+Send the unlock security feature to the Gilbarco keypad for programming
+REQ_PUMP_GILB_SEC_ENABLE_PROGRAM_ID_
+GPBox
+Serial
+Error instantiating Configuration Information ...
+SSFPumpGilbarco::getConfigInfo
+Maximun error quantity querying Real Time Money information
+max_rtm_error_counter
+Pump Communication Baudrate
+Communication Baudrate
+pump_baud_rate
+combo
+Quantity of money digits configured in the money pump display
+Error setting general parameters on BasePump
+SSFPumpGilbarco::setGeneralParameters
+Invalid Pump Real ID [%02ld]
+Error checking base pump configuration ...
+SSFPumpGilbarco::checkForConfiguration
+SSFPumpGilbarco::clearConfigurationValues
+Returning error due read a unknown status value [0x%02X]
+Pump status first reported BUSY status
+I will force FUELLING state due time to support starting state has expired
+Programming enabled in the requested pump
+The stop command was sent successfully ...
+Error enabling pump programming (Stop)
+Error sending stop due the pump is in authorize state
+I will send a stop command to pump due the pump answer with an authorize state ...
+Error enabling pump programming (Authorization)
+
