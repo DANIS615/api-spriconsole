@@ -1,0 +1,133 @@
+Public IDynamicDll As New Class
+
+
+Private Function Proc_93_0_5C9A7C(arg_C) '5C9A7C
+  'Data Table: 405DF8
+  loc_5C9A70: ILdI4 arg_C
+  loc_5C9A73: FLdPr Me
+  loc_5C9A76: MemStAd
+  loc_5C9A7A: ExitProcHresult
+End Function
+
+Private Function Proc_93_1_5D4490() '5D4490
+  'Data Table: 405DF8
+  loc_5D4474: ZeroRetVal
+  loc_5D4476: FLdPr Me
+  loc_5D4479: MemLdPr global_52
+  loc_5D447C: LateMemLdVar
+  loc_5D4481: CStrVarTmp
+  loc_5D4482: FStStr var_88
+  loc_5D4485: FFree1Var var_98 = ""
+  loc_5D4488: ExitProcCbHresult
+End Function
+
+Private Function Proc_93_2_5D38D0() '5D38D0
+  'Data Table: 405DF8
+  loc_5D38B4: FLdPr Me
+  loc_5D38B7: MemLdPr global_52
+  loc_5D38BA: LateMemLdVar
+  loc_5D38BF: CBoolVar
+  loc_5D38C1: FStI2 var_86
+  loc_5D38C4: FFree1Var var_98 = ""
+  loc_5D38C7: ExitProcCbHresult
+End Function
+
+Private Function Proc_93_3_5D3970() '5D3970
+  'Data Table: 405DF8
+  loc_5D3954: FLdPr Me
+  loc_5D3957: MemLdPr global_52
+  loc_5D395A: LateMemLdVar
+  loc_5D395F: CBoolVar
+  loc_5D3961: FStI2 var_86
+  loc_5D3964: FFree1Var var_98 = ""
+  loc_5D3967: ExitProcCbHresult
+End Function
+
+Private Function Proc_93_4_5D4ACC() '5D4ACC
+  'Data Table: 405DF8
+  loc_5D4AB0: ZeroRetVal
+  loc_5D4AB2: FLdPr Me
+  loc_5D4AB5: MemLdPr global_52
+  loc_5D4AB8: LateMemLdVar
+  loc_5D4ABD: CStrVarTmp
+  loc_5D4ABE: FStStr var_88
+  loc_5D4AC1: FFree1Var var_98 = ""
+  loc_5D4AC4: ExitProcCbHresult
+End Function
+
+Private Function Proc_93_5_5D4A78() '5D4A78
+  'Data Table: 405DF8
+  loc_5D4A5C: ZeroRetVal
+  loc_5D4A5E: FLdPr Me
+  loc_5D4A61: MemLdPr global_52
+  loc_5D4A64: LateMemLdVar
+  loc_5D4A69: CStrVarTmp
+  loc_5D4A6A: FStStr var_88
+  loc_5D4A6D: FFree1Var var_98 = ""
+  loc_5D4A70: ExitProcCbHresult
+End Function
+
+Private Function Proc_93_6_5D15F0(arg_C, arg_10) '5D15F0
+  'Data Table: 405DF8
+  loc_5D15D4: ILdRf arg_C
+  loc_5D15D7: CDargRef
+  loc_5D15DB: ILdRf arg_10
+  loc_5D15DE: CDargRef
+  loc_5D15E2: FLdPr Me
+  loc_5D15E5: MemLdPr global_52
+  loc_5D15E8: LateMemCall
+  loc_5D15EE: ExitProcHresult
+End Function
+
+Private Function Proc_93_7_5D4A24() '5D4A24
+  'Data Table: 405DF8
+  loc_5D4A08: ZeroRetVal
+  loc_5D4A0A: FLdPr Me
+  loc_5D4A0D: MemLdPr global_52
+  loc_5D4A10: LateMemLdVar
+  loc_5D4A15: CStrVarTmp
+  loc_5D4A16: FStStr var_88
+  loc_5D4A19: FFree1Var var_98 = ""
+  loc_5D4A1C: ExitProcCbHresult
+End Function
+
+Private Function Proc_93_8_5CF2C8(arg_C) '5CF2C8
+  'Data Table: 405DF8
+  loc_5CF2B4: ILdRf arg_C
+  loc_5CF2B7: CDargRef
+  loc_5CF2BB: FLdPr Me
+  loc_5CF2BE: MemLdPr global_52
+  loc_5CF2C1: LateMemCall
+  loc_5CF2C7: ExitProcHresult
+End Function
+
+Private Function Proc_93_9_5C8900() '5C8900
+  'Data Table: 405DF8
+  loc_5C88FC: ExitProcHresult
+End Function
+
+Private Function Proc_93_10_5C84F0() '5C84F0
+  'Data Table: 405DF8
+  loc_5C84EC: ExitProcHresult
+End Function
+
+Private Function Proc_93_11_5C8384() '5C8384
+  'Data Table: 405DF8
+  loc_5C8380: ExitProcHresult
+End Function
+
+Private Function Proc_93_12_5C83B8() '5C83B8
+  'Data Table: 405DF8
+  loc_5C83B4: ExitProcHresult
+End Function
+
+Private Function Proc_93_13_5C8968() '5C8968
+  'Data Table: 405DF8
+  loc_5C8964: ExitProcHresult
+End Function
+
+Private Function Proc_93_14_5C9E74() '5C9E74
+  'Data Table: 405DF8
+  loc_5C9E6C: ZeroRetVal
+  loc_5C9E6E: ExitProcCbHresult
+End Function

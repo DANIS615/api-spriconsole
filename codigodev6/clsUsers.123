@@ -1,0 +1,299 @@
+
+Private Function Proc_96_0_5D996C(arg_C, arg_10) '5D996C
+  'Data Table: 4040B0
+  loc_5D9934: FLdRfVar var_86
+  loc_5D9937: ILdRf arg_C
+  loc_5D993A: Call Me.VTable_38()
+  loc_5D993F: FLdI2 var_86
+  loc_5D9942: NotI4
+  loc_5D9943: BranchF loc_5D9947
+  loc_5D9946: ExitProcHresult
+  loc_5D9947: FLdPr Me
+  loc_5D994A: MemLdI2 global_52
+  loc_5D994D: ILdI2 arg_C
+  loc_5D9950: LtI2
+  loc_5D9951: BranchF loc_5D995D
+  loc_5D9954: ILdI2 arg_C
+  loc_5D9957: FLdPr Me
+  loc_5D995A: MemStI2 global_52
+  loc_5D995D: ILdI4 arg_10
+  loc_5D9960: ILdI2 arg_C
+  loc_5D9963: CI4UI1
+  loc_5D9964: FLdPr Me
+  loc_5D9967: MemLdRfVar from_stack_1.global_56
+  loc_5D996A: Ary1StStrCopy
+  loc_5D996B: ExitProcHresult
+End Function
+
+Private Function Proc_96_1_5D9898(arg_C) '5D9898
+  'Data Table: 4040B0
+  loc_5D9864: ZeroRetVal
+  loc_5D9866: FLdRfVar var_8A
+  loc_5D9869: ILdRf arg_C
+  loc_5D986C: Call Me.VTable_38()
+  loc_5D9871: FLdI2 var_8A
+  loc_5D9874: NotI4
+  loc_5D9875: BranchF loc_5D9884
+  loc_5D9878: LitStr vbNullString
+  loc_5D987B: FStStrCopy var_88
+  loc_5D987E: ExitProcCbHresult
+  loc_5D9884: ILdI2 arg_C
+  loc_5D9887: CI4UI1
+  loc_5D9888: FLdPr Me
+  loc_5D988B: MemLdRfVar from_stack_1.global_56
+  loc_5D988E: Ary1LdI4
+  loc_5D988F: FStStrCopy var_88
+  loc_5D9892: ExitProcCbHresult
+End Function
+
+Private Function Proc_96_2_5DB798(arg_C) '5DB798
+  'Data Table: 4040B0
+  loc_5DB754: LitI2_Byte 1
+  loc_5DB756: FStI2 var_86
+  loc_5DB759: LitI2_Byte 1
+  loc_5DB75B: FLdRfVar var_88
+  loc_5DB75E: FLdPr Me
+  loc_5DB761: MemLdI2 global_52
+  loc_5DB764: ForI2 var_8C
+  loc_5DB76A: FLdI2 var_88
+  loc_5DB76D: CI4UI1
+  loc_5DB76E: FLdPr Me
+  loc_5DB771: MemLdRfVar from_stack_1.global_56
+  loc_5DB774: Ary1LdI4
+  loc_5DB775: ILdI4 arg_C
+  loc_5DB778: EqStr
+  loc_5DB77A: BranchF loc_5DB789
+  loc_5DB77D: FLdI2 var_88
+  loc_5DB780: FStI2 var_86
+  loc_5DB783: ExitProcCbHresult
+  loc_5DB789: FLdRfVar var_88
+  loc_5DB78C: NextI2 var_8C, loc_5DB76A
+  loc_5DB791: ExitProcCbHresult
+End Function
+
+Private Function Proc_96_3_5DC29C(arg_C, arg_10) '5DC29C
+  'Data Table: 4040B0
+  loc_5DC254: FLdRfVar var_86
+  loc_5DC257: ILdRf arg_C
+  loc_5DC25A: Call Me.VTable_38()
+  loc_5DC25F: FLdI2 var_86
+  loc_5DC262: NotI4
+  loc_5DC263: BranchF loc_5DC267
+  loc_5DC266: ExitProcHresult
+  loc_5DC267: ILdI4 arg_10
+  loc_5DC26A: LitStr vbNullString
+  loc_5DC26D: EqStr
+  loc_5DC26F: BranchF loc_5DC283
+  loc_5DC272: LitStr "Password"
+  loc_5DC275: ILdI2 arg_C
+  loc_5DC278: CI4UI1
+  loc_5DC279: FLdPr Me
+  loc_5DC27C: MemLdRfVar from_stack_1.global_80
+  loc_5DC27F: Ary1StStrCopy
+  loc_5DC280: Branch loc_5DC291
+  loc_5DC283: ILdI4 arg_10
+  loc_5DC286: ILdI2 arg_C
+  loc_5DC289: CI4UI1
+  loc_5DC28A: FLdPr Me
+  loc_5DC28D: MemLdRfVar from_stack_1.global_80
+  loc_5DC290: Ary1StStrCopy
+  loc_5DC291: FLdRfVar var_86
+  loc_5DC294: Call Me.VTable_40()
+  loc_5DC299: ExitProcHresult
+End Function
+
+Private Function Proc_96_4_5D9A38(arg_C) '5D9A38
+  'Data Table: 4040B0
+  loc_5D9A04: ZeroRetVal
+  loc_5D9A06: FLdRfVar var_8A
+  loc_5D9A09: ILdRf arg_C
+  loc_5D9A0C: Call Me.VTable_38()
+  loc_5D9A11: FLdI2 var_8A
+  loc_5D9A14: NotI4
+  loc_5D9A15: BranchF loc_5D9A24
+  loc_5D9A18: LitStr vbNullString
+  loc_5D9A1B: FStStrCopy var_88
+  loc_5D9A1E: ExitProcCbHresult
+  loc_5D9A24: ILdI2 arg_C
+  loc_5D9A27: CI4UI1
+  loc_5D9A28: FLdPr Me
+  loc_5D9A2B: MemLdRfVar from_stack_1.global_80
+  loc_5D9A2E: Ary1LdI4
+  loc_5D9A2F: FStStrCopy var_88
+  loc_5D9A32: ExitProcCbHresult
+End Function
+
+Private Function Proc_96_5_5CD3B4() '5CD3B4
+  'Data Table: 4040B0
+  loc_5CD3A4: FLdPr Me
+  loc_5CD3A7: MemLdI2 global_52
+  loc_5CD3AA: FStI2 var_86
+  loc_5CD3AD: ExitProcCbHresult
+End Function
+
+Private Function Proc_96_6_60E34C() '60E34C
+  'Data Table: 4040B0
+  loc_60E254: FLdRfVar var_96
+  loc_60E257: FLdRfVar var_8C
+  loc_60E25A: FLdRfVar var_94
+  loc_60E25D: ImpAdLdRf MemVar_74C760
+  loc_60E260: NewIfNullPr Formx
+  loc_60E263: from_stack_1v = Formx.global_4589716Get()
+  loc_60E268: FLdPr var_94
+  loc_60E26B: Formx.DrawWidth = from_stack_1
+  loc_60E270: FLdI2 var_96
+  loc_60E273: NotI4
+  loc_60E274: FFree1Ad var_94
+  loc_60E277: BranchF loc_60E29B
+  loc_60E27A: FLdRfVar var_A8
+  loc_60E27D: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_60E282: FLdRfVar var_A8
+  loc_60E285: CBoolVarNull
+  loc_60E287: FFree1Var var_A8 = ""
+  loc_60E28A: BranchF loc_60E298
+  loc_60E28D: LitI2_Byte 0
+  loc_60E28F: FStI2 var_86
+  loc_60E292: ExitProcCbHresult
+  loc_60E298: Branch loc_60E254
+  loc_60E29B: ILdRf var_8C
+  loc_60E29E: CVarStr var_D8
+  loc_60E2A1: HardType
+  loc_60E2A2: LitVarStr var_B8, "0"
+  loc_60E2A7: LitI4 &HCC
+  loc_60E2AC: FLdRfVar var_A8
+  loc_60E2AF: ImpAdCallFPR4  = Space()
+  loc_60E2B4: FLdRfVar var_A8
+  loc_60E2B7: ConcatVar var_C8
+  loc_60E2BB: EqVarBool
+  loc_60E2BD: FFreeVar var_A8 = ""
+  loc_60E2C4: BranchF loc_60E2ED
+  loc_60E2C7: LitVarStr var_B8, " "
+  loc_60E2CC: FStVarCopyObj var_A8
+  loc_60E2CF: FLdRfVar var_A8
+  loc_60E2D2: LitI4 &H64
+  loc_60E2D7: FLdRfVar var_C8
+  loc_60E2DA: ImpAdCallFPR4  = String(, )
+  loc_60E2DF: FLdRfVar var_C8
+  loc_60E2E2: CStrVarTmp
+  loc_60E2E3: FStStr var_8C
+  loc_60E2E6: FFreeVar var_A8 = ""
+  loc_60E2ED: LitI2_Byte 1
+  loc_60E2EF: FStI2 var_90
+  loc_60E2F2: LitI2_Byte 1
+  loc_60E2F4: FLdRfVar var_8E
+  loc_60E2F7: LitI2_Byte &HA
+  loc_60E2F9: ForI2 var_EC
+  loc_60E2FF: LitVarI2 var_A8, 10
+  loc_60E304: FLdI2 var_90
+  loc_60E307: CI4UI1
+  loc_60E308: FLdRfVar var_8C
+  loc_60E30B: CVarRef
+  loc_60E310: FLdRfVar var_C8
+  loc_60E313: ImpAdCallFPR4  = Mid(, , )
+  loc_60E318: FLdRfVar var_C8
+  loc_60E31B: CStrVarTmp
+  loc_60E31C: FStStrNoPop var_F0
+  loc_60E31F: FLdI2 var_8E
+  loc_60E322: CI4UI1
+  loc_60E323: FLdPr Me
+  loc_60E326: MemLdRfVar from_stack_1.global_80
+  loc_60E329: Ary1StStrCopy
+  loc_60E32A: FFree1Str var_F0
+  loc_60E32D: FFreeVar var_A8 = ""
+  loc_60E334: FLdI2 var_90
+  loc_60E337: LitI2_Byte &HA
+  loc_60E339: AddI2
+  loc_60E33A: FStI2 var_90
+  loc_60E33D: FLdRfVar var_8E
+  loc_60E340: NextI2 var_EC, loc_60E2FF
+  loc_60E345: ExitProcCbHresult
+End Function
+
+Private Function Proc_96_7_5CF8A4(arg_C) '5CF8A4
+  'Data Table: 4040B0
+  loc_5CF88C: LitI2_Byte 1
+  loc_5CF88E: ILdI2 arg_C
+  loc_5CF891: LeI2
+  loc_5CF892: ILdI2 arg_C
+  loc_5CF895: LitI2_Byte &HB
+  loc_5CF897: LeI2
+  loc_5CF898: AndI4
+  loc_5CF899: FStI2 var_86
+  loc_5CF89C: ExitProcCbHresult
+End Function
+
+Private Function Proc_96_8_5CA490() '5CA490
+  'Data Table: 4040B0
+  loc_5CA484: LitI2_Byte 0
+  loc_5CA486: FLdPr Me
+  loc_5CA489: MemStI2 global_52
+  loc_5CA48C: ExitProcHresult
+End Function
+
+Private Function Proc_96_9_607814() '607814
+  'Data Table: 4040B0
+  loc_607734: LitI2_Byte 0
+  loc_607736: FStI2 var_86
+  loc_607739: LitI2_Byte 1
+  loc_60773B: FLdRfVar var_88
+  loc_60773E: LitI2_Byte &HA
+  loc_607740: ForI2 var_90
+  loc_607746: ILdRf var_8C
+  loc_607749: CVarStr var_E0
+  loc_60774C: LitI4 1
+  loc_607751: LitI4 1
+  loc_607756: LitVarStr var_B0, "@@@@@@@@@@"
+  loc_60775B: FStVarCopyObj var_C0
+  loc_60775E: FLdRfVar var_C0
+  loc_607761: FLdI2 var_88
+  loc_607764: CI4UI1
+  loc_607765: FLdPr Me
+  loc_607768: MemLdRfVar from_stack_1.global_80
+  loc_60776B: Ary1LdRf
+  loc_60776C: CVarRef
+  loc_607771: FLdRfVar var_D0
+  loc_607774: ImpAdCallFPR4  = Format(, )
+  loc_607779: FLdRfVar var_D0
+  loc_60777C: ConcatVar var_F0
+  loc_607780: CStrVarTmp
+  loc_607781: FStStr var_8C
+  loc_607784: FFreeVar var_C0 = "": var_D0 = ""
+  loc_60778D: FLdRfVar var_88
+  loc_607790: NextI2 var_90, loc_607746
+  loc_607795: ILdRf var_8C
+  loc_607798: CVarStr var_B0
+  loc_60779B: LitVarStr var_A0, " "
+  loc_6077A0: FStVarCopyObj var_C0
+  loc_6077A3: FLdRfVar var_C0
+  loc_6077A6: LitI4 &H64
+  loc_6077AB: FLdRfVar var_D0
+  loc_6077AE: ImpAdCallFPR4  = String(, )
+  loc_6077B3: FLdRfVar var_D0
+  loc_6077B6: ConcatVar var_F0
+  loc_6077BA: CStrVarTmp
+  loc_6077BB: FStStr var_8C
+  loc_6077BE: FFreeVar var_C0 = "": var_D0 = ""
+  loc_6077C7: FLdRfVar var_F6
+  loc_6077CA: ILdRf var_8C
+  loc_6077CD: FLdRfVar var_F4
+  loc_6077D0: ImpAdLdRf MemVar_74C760
+  loc_6077D3: NewIfNullPr Formx
+  loc_6077D6: from_stack_1v = Formx.global_4589716Get()
+  loc_6077DB: FLdPr var_F4
+  loc_6077DE:  = Formx.FillStyle
+  loc_6077E3: FLdI2 var_F6
+  loc_6077E6: NotI4
+  loc_6077E7: FFree1Ad var_F4
+  loc_6077EA: BranchF loc_607809
+  loc_6077ED: FLdRfVar var_C0
+  loc_6077F0: ImpAdCallFPR4  = Proc_6_0_5DBEC8()
+  loc_6077F5: FLdRfVar var_C0
+  loc_6077F8: CBoolVarNull
+  loc_6077FA: FFree1Var var_C0 = ""
+  loc_6077FD: BranchF loc_607806
+  loc_607800: ExitProcCbHresult
+  loc_607806: Branch loc_6077C7
+  loc_607809: LitI2_Byte &HFF
+  loc_60780B: FStI2 var_86
+  loc_60780E: ExitProcCbHresult
+End Function

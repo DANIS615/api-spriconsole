@@ -1,0 +1,51 @@
+
+Private Function Proc_140_0_5CC574() '5CC574
+  'Data Table: 402EF4
+  loc_5CC564: FLdPr Me
+  loc_5CC567: MemLdI2 global_52
+  loc_5CC56A: FStI2 var_86
+  loc_5CC56D: ExitProcCbHresult
+End Function
+
+Private Function Proc_140_1_5CA760(arg_C) '5CA760
+  'Data Table: 402EF4
+  loc_5CA754: ILdI2 arg_C
+  loc_5CA757: FLdPr Me
+  loc_5CA75A: MemStI2 global_52
+  loc_5CA75D: ExitProcHresult
+End Function
+
+Private Function Proc_140_2_5D3380(arg_C) '5D3380
+  'Data Table: 402EF4
+  loc_5D3364: ZeroRetValVar
+  loc_5D3366: ILdI2 arg_C
+  loc_5D3369: CI4UI1
+  loc_5D336A: FLdPr Me
+  loc_5D336D: MemLdRfVar from_stack_1.global_56
+  loc_5D3370: Ary1LdUI1
+  loc_5D3372: CVarUI1
+  loc_5D3376: FStVar var_94
+  loc_5D337A: ExitProcCbHresult
+End Function
+
+Private Function Proc_140_3_5CF85C(arg_C) '5CF85C
+  'Data Table: 402EF4
+  loc_5CF848: ILdI2 arg_C
+  loc_5CF84B: CI4UI1
+  loc_5CF84C: FLdPr Me
+  loc_5CF84F: MemLdRfVar from_stack_1.global_80
+  loc_5CF852: Ary1LdCy
+  loc_5CF853: FStR8 var_8C
+  loc_5CF856: ExitProcCbHresult
+End Function
+
+Private Function Proc_140_4_5CE134(arg_C, arg_10) '5CE134
+  'Data Table: 402EF4
+  loc_5CE124: ILdR8 arg_10
+  loc_5CE127: ILdI2 arg_C
+  loc_5CE12A: CI4UI1
+  loc_5CE12B: FLdPr Me
+  loc_5CE12E: MemLdRfVar from_stack_1.global_80
+  loc_5CE131: Ary1StCy
+  loc_5CE132: ExitProcHresult
+End Function

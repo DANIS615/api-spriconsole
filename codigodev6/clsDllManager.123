@@ -1,0 +1,1257 @@
+Public oDll As New Class
+Public collDll As New UnkObject
+Public collSinks As New UnkObject
+
+
+Public Function oDllGet() '4062B4
+  oDllGet = oDll
+End Function
+
+Public Sub oDllPut(Value) '4062C3
+  oDll = Value
+End Sub
+
+Public Sub oDllSet(Value) '4062D2
+  oDll = Value
+End Sub
+
+Public Function collDllGet() '4062E1
+  collDllGet = collDll
+End Function
+
+Public Sub collDllPut(Value) '4062F0
+  collDll = Value
+End Sub
+
+Public Sub collDllSet(Value) '4062FF
+  collDll = Value
+End Sub
+
+Public Function collSinksGet() '40630E
+  collSinksGet = collSinks
+End Function
+
+Public Sub collSinksPut(Value) '40631D
+  collSinks = Value
+End Sub
+
+Public Sub collSinksSet(Value) '40632C
+  collSinks = Value
+End Sub
+
+Private Function Proc_138_9_5FED84() '5FED84
+  'Data Table: 406138
+  loc_5FECC8: FLdRfVar var_8C
+  loc_5FECCB: FLdRfVar var_88
+  loc_5FECCE: ImpAdLdRf MemVar_7520D4
+  loc_5FECD1: NewIfNullPr Global
+  loc_5FECD4:  = Global.App
+  loc_5FECD9: FLdPr var_88
+  loc_5FECDC:  = App.Path
+  loc_5FECE1: FLdRfVar var_96
+  loc_5FECE4: LitStr "dll"
+  loc_5FECE7: FStStrCopy var_94
+  loc_5FECEA: FLdRfVar var_94
+  loc_5FECED: ILdRf var_8C
+  loc_5FECF0: LitStr "\modules"
+  loc_5FECF3: ConcatStr
+  loc_5FECF4: PopTmpLdAdStr
+  loc_5FECF8: Call Me.VTable_44()
+  loc_5FECFD: FLdI2 var_96
+  loc_5FED00: FFreeStr var_8C = "": var_90 = ""
+  loc_5FED09: FFree1Ad var_88
+  loc_5FED0C: BranchF loc_5FED82
+  loc_5FED0F: FLdRfVar var_96
+  loc_5FED12: Call Me.VTable_48()
+  loc_5FED17: FLdI2 var_96
+  loc_5FED1A: NotI4
+  loc_5FED1B: BranchF loc_5FED7D
+  loc_5FED1E: Call Me.VTable_68()
+  loc_5FED23: FLdRfVar var_8C
+  loc_5FED26: FLdRfVar var_88
+  loc_5FED29: ImpAdLdRf MemVar_7520D4
+  loc_5FED2C: NewIfNullPr Global
+  loc_5FED2F:  = Global.App
+  loc_5FED34: FLdPr var_88
+  loc_5FED37:  = App.Path
+  loc_5FED3C: LitVar_Missing var_108
+  loc_5FED3F: LitVar_Missing var_E8
+  loc_5FED42: LitVarStr var_B8, "CEM44"
+  loc_5FED47: FStVarCopyObj var_C8
+  loc_5FED4A: FLdRfVar var_C8
+  loc_5FED4D: LitI4 &H40
+  loc_5FED52: LitStr "No se pueden cargar las librerias del directorio "
+  loc_5FED55: ILdRf var_8C
+  loc_5FED58: ConcatStr
+  loc_5FED59: FStStrNoPop var_90
+  loc_5FED5C: LitStr "\modules\"
+  loc_5FED5F: ConcatStr
+  loc_5FED60: CVarStr var_A8
+  loc_5FED63: ImpAdCallFPR4 MsgBox(, , , , )
+  loc_5FED68: FFreeStr var_8C = ""
+  loc_5FED6F: FFree1Ad var_88
+  loc_5FED72: FFreeVar var_A8 = "": var_C8 = "": var_E8 = ""
+  loc_5FED7D: Call Me.VTable_60()
+  loc_5FED82: ExitProcHresult
+End Function
+
+Private Function Proc_138_10_5E8670(arg_C, arg_10) '5E8670
+  'Data Table: 406138
+  loc_5E85F8: OnErrorGoto loc_5E8664
+  loc_5E85FB: LitI2_Byte 0
+  loc_5E85FD: FStI2 var_8E
+  loc_5E8600: LitI4 &H20
+  loc_5E8605: ILdI4 arg_C
+  loc_5E8608: LitStr "\*."
+  loc_5E860B: ConcatStr
+  loc_5E860C: FStStrNoPop var_94
+  loc_5E860F: ILdI4 arg_10
+  loc_5E8612: ConcatStr
+  loc_5E8613: CVarStr var_A4
+  loc_5E8616: ImpAdCallI2 push Dir(, )
+  loc_5E861B: FStStr var_8C
+  loc_5E861E: FFree1Str var_94
+  loc_5E8621: FFree1Var var_A4 = ""
+  loc_5E8624: ILdRf var_8C
+  loc_5E8627: LitStr vbNullString
+  loc_5E862A: NeStr
+  loc_5E862C: BranchF loc_5E8659
+  loc_5E862F: ILdRf var_8C
+  loc_5E8632: FLdI2 var_8E
+  loc_5E8635: CI4UI1
+  loc_5E8636: ImpAdLdRf MemVar_74CB00
+  loc_5E8639: Ary1StStrCopy
+  loc_5E863A: FLdI2 var_8E
+  loc_5E863D: LitI2_Byte 1
+  loc_5E863F: AddI2
+  loc_5E8640: FStI2 var_8E
+  loc_5E8643: LitI4 0
+  loc_5E8648: LitVar_Missing var_A4
+  loc_5E864B: ImpAdCallI2 push Dir(, )
+  loc_5E8650: FStStr var_8C
+  loc_5E8653: FFree1Var var_A4 = ""
+  loc_5E8656: Branch loc_5E8624
+  loc_5E8659: LitI2_Byte &HFF
+  loc_5E865B: FStI2 var_86
+  loc_5E865E: ExitProcCbHresult
+  loc_5E8664: LitI2_Byte 0
+  loc_5E8666: FStI2 var_86
+  loc_5E8669: ExitProcCbHresult
+End Function
+
+Private Function Proc_138_11_631E0C() '631E0C
+  'Data Table: 406138
+  loc_631C48: OnErrorGoto loc_631E00
+  loc_631C4B: New Collection
+  loc_631C4F: FStAdFuncNoPop
+  loc_631C52: FLdPr Me
+  loc_631C55: MemStAd
+  loc_631C59: FFree1Ad var_94
+  loc_631C5C: FLdI2 var_88
+  loc_631C5F: CI4UI1
+  loc_631C60: ImpAdLdRf MemVar_74CB00
+  loc_631C63: Ary1LdI4
+  loc_631C64: LitStr vbNullString
+  loc_631C67: EqStr
+  loc_631C69: NotI4
+  loc_631C6A: BranchF loc_631DF5
+  loc_631C6D: FLdRfVar var_96
+  loc_631C70: ImpAdLdRf MemVar_74C760
+  loc_631C73: NewIfNullPr Formx
+  loc_631C76: VCallAd Control_ID_mnuGenericConfig
+  loc_631C79: FStAdFunc var_94
+  loc_631C7C: FLdPr var_94
+  loc_631C7F: Call 0.Method_Proc_138_11_631E0CC ()
+  loc_631C84: FLdI2 var_96
+  loc_631C87: FStI2 var_8A
+  loc_631C8A: FFree1Ad var_94
+  loc_631C8D: FLdRfVar var_9C
+  loc_631C90: FLdRfVar var_94
+  loc_631C93: ImpAdLdRf MemVar_7520D4
+  loc_631C96: NewIfNullPr Global
+  loc_631C99:  = Global.App
+  loc_631C9E: FLdPr var_94
+  loc_631CA1:  = App.Path
+  loc_631CA6: LitI4 0
+  loc_631CAB: LitStr "regsvr32.exe /s "
+  loc_631CAE: ILdRf var_9C
+  loc_631CB1: ConcatStr
+  loc_631CB2: FStStrNoPop var_A0
+  loc_631CB5: LitStr "\modules\"
+  loc_631CB8: ConcatStr
+  loc_631CB9: FStStrNoPop var_A4
+  loc_631CBC: FLdI2 var_88
+  loc_631CBF: CI4UI1
+  loc_631CC0: ImpAdLdRf MemVar_74CB00
+  loc_631CC3: Ary1LdI4
+  loc_631CC4: ConcatStr
+  loc_631CC5: CVarStr var_B4
+  loc_631CC8: ImpAdCallFPR4 push Shell(, )
+  loc_631CCD: FStFPR8 var_BC
+  loc_631CD0: FFreeStr var_9C = "": var_A0 = ""
+  loc_631CD9: FFree1Ad var_94
+  loc_631CDC: FFree1Var var_B4 = ""
+  loc_631CDF: FLdI2 var_88
+  loc_631CE2: CI4UI1
+  loc_631CE3: ImpAdLdRf MemVar_74CB00
+  loc_631CE6: Ary1LdI4
+  loc_631CE7: FnLenStr
+  loc_631CE8: LitI4 3
+  loc_631CED: SubI4
+  loc_631CEE: CVarI4
+  loc_631CF2: LitI4 1
+  loc_631CF7: FLdI2 var_88
+  loc_631CFA: CI4UI1
+  loc_631CFB: ImpAdLdRf MemVar_74CB00
+  loc_631CFE: Ary1LdRf
+  loc_631CFF: CVarRef
+  loc_631D04: FLdRfVar var_EC
+  loc_631D07: ImpAdCallFPR4  = Mid(, , )
+  loc_631D0C: FLdRfVar var_EC
+  loc_631D0F: LitVarStr var_FC, "clsMain"
+  loc_631D14: ConcatVar var_10C
+  loc_631D18: CStrVarVal var_9C
+  loc_631D1C: FLdRfVar var_11C
+  loc_631D1F: ImpAdCallFPR4  = CreateObject(, )
+  loc_631D24: FLdRfVar var_11C
+  loc_631D27: CAdVar
+  loc_631D29: FStAd var_90 
+  loc_631D2D: FFree1Str var_9C
+  loc_631D30: FFreeVar var_B4 = "": var_EC = "": var_10C = ""
+  loc_631D3B: LitVar_Missing var_EC
+  loc_631D3E: LitVar_Missing var_B4
+  loc_631D41: FLdI2 var_88
+  loc_631D44: CI4UI1
+  loc_631D45: ImpAdLdRf MemVar_74CB00
+  loc_631D48: Ary1LdRf
+  loc_631D49: CVarRef
+  loc_631D4E: FLdRfVar var_90
+  loc_631D51: CVarRef
+  loc_631D56: FLdPr Me
+  loc_631D59: MemLdPr collDll
+  loc_631D5C: Me.Add from_stack_1, from_stack_2, from_stack_3, from_stack_4
+  loc_631D61: FFreeVar var_B4 = ""
+  loc_631D68: FLdRfVar var_B4
+  loc_631D6B: FLdI2 var_88
+  loc_631D6E: CI4UI1
+  loc_631D6F: ImpAdLdRf MemVar_74CB00
+  loc_631D72: Ary1LdRf
+  loc_631D73: CVarRef
+  loc_631D78: FLdPr Me
+  loc_631D7B: MemLdPr collDll
+  loc_631D7E: from_stack_2 = Me.Item(from_stack_1)
+  loc_631D83: FLdRfVar var_96
+  loc_631D86: FLdI2 var_88
+  loc_631D89: CI4UI1
+  loc_631D8A: ImpAdLdRf MemVar_74CB00
+  loc_631D8D: Ary1LdRf
+  loc_631D8E: FLdRfVar var_B4
+  loc_631D91: CAdVar
+  loc_631D93: FStAd var_94 
+  loc_631D97: FLdRfVar var_94
+  loc_631D9A: Call Me.VTable_4C()
+  loc_631D9F: FFree1Ad var_94
+  loc_631DA2: FFree1Var var_B4 = ""
+  loc_631DA5: ImpAdLdI4 MemVar_74D83C
+  loc_631DA8: FStAd var_94 
+  loc_631DAC: FLdRfVar var_94
+  loc_631DAF: CDargRef
+  loc_631DB3: FLdRfVar var_B4
+  loc_631DB6: FLdI2 var_88
+  loc_631DB9: CI4UI1
+  loc_631DBA: ImpAdLdRf MemVar_74CB00
+  loc_631DBD: Ary1LdRf
+  loc_631DBE: CVarRef
+  loc_631DC3: FLdPr Me
+  loc_631DC6: MemLdPr collDll
+  loc_631DC9: from_stack_2 = Me.Item(from_stack_1)
+  loc_631DCE: FLdRfVar var_B4
+  loc_631DD1: LdPrVar
+  loc_631DD3: LateMemCall
+  loc_631DD9: ILdRf var_94
+  loc_631DDC: CastAd
+  loc_631DDF: ImpAdStAdFunc MemVar_74D83C
+  loc_631DE3: FFree1Ad var_94
+  loc_631DE6: FFree1Var var_B4 = ""
+  loc_631DE9: FLdI2 var_88
+  loc_631DEC: LitI2_Byte 1
+  loc_631DEE: AddI2
+  loc_631DEF: FStI2 var_88
+  loc_631DF2: Branch loc_631C5C
+  loc_631DF5: LitI2_Byte &HFF
+  loc_631DF7: FStI2 var_86
+  loc_631DFA: ExitProcCbHresult
+  loc_631E00: LitI2_Byte 0
+  loc_631E02: FStI2 var_86
+  loc_631E05: ExitProcCbHresult
+End Function
+
+Private Function Proc_138_12_6ADD48(arg_C, arg_10) '6ADD48
+  'Data Table: 406138
+  loc_6AD778: ILdPr
+  loc_6AD77B: LateMemLdVar
+  loc_6AD780: FStVar var_A8
+  loc_6AD784: FLdRfVar var_A8
+  loc_6AD787: LitVarStr var_B8, "Cierre"
+  loc_6AD78C: HardType
+  loc_6AD78D: EqVarBool
+  loc_6AD78F: BranchF loc_6AD856
+  loc_6AD792: ImpAdLdRf MemVar_74C760
+  loc_6AD795: NewIfNullPr Formx
+  loc_6AD798: VCallAd Control_ID_mnugenericCierre
+  loc_6AD79B: FStAdFunc var_104
+  loc_6AD79E: ImpAdLdRf MemVar_74C760
+  loc_6AD7A1: NewIfNullPr Formx
+  loc_6AD7A4: VCallAd Control_ID_mnugenericCierre0
+  loc_6AD7A7: FStAdFunc var_108
+  loc_6AD7AA: ImpAdLdRf MemVar_74C760
+  loc_6AD7AD: NewIfNullPr Formx
+  loc_6AD7B0: VCallAd Control_ID_mnugenericCierre1
+  loc_6AD7B3: FStAdFunc var_10C
+  loc_6AD7B6: ImpAdLdRf MemVar_74C760
+  loc_6AD7B9: NewIfNullPr Formx
+  loc_6AD7BC: VCallAd Control_ID_mnugenericCierre2
+  loc_6AD7BF: FStAdFunc var_110
+  loc_6AD7C2: ImpAdLdRf MemVar_74C760
+  loc_6AD7C5: NewIfNullPr Formx
+  loc_6AD7C8: VCallAd Control_ID_mnugenericSubCierre0
+  loc_6AD7CB: FStAdFunc var_114
+  loc_6AD7CE: ImpAdLdRf MemVar_74C760
+  loc_6AD7D1: NewIfNullPr Formx
+  loc_6AD7D4: VCallAd Control_ID_mnugenericSubCierre1
+  loc_6AD7D7: FStAdFunc var_118
+  loc_6AD7DA: ImpAdLdRf MemVar_74C760
+  loc_6AD7DD: NewIfNullPr Formx
+  loc_6AD7E0: VCallAd Control_ID_mnugenericSubCierre2
+  loc_6AD7E3: FStAdFunc var_100
+  loc_6AD7E6: FLdRfVar var_100
+  loc_6AD7E9: FLdZeroAd var_118
+  loc_6AD7EC: FStAdFunc var_FC
+  loc_6AD7EF: FLdRfVar var_FC
+  loc_6AD7F2: FLdZeroAd var_114
+  loc_6AD7F5: FStAdFunc var_F8
+  loc_6AD7F8: FLdRfVar var_F8
+  loc_6AD7FB: FLdZeroAd var_110
+  loc_6AD7FE: FStAdFunc var_F4
+  loc_6AD801: FLdRfVar var_F4
+  loc_6AD804: FLdZeroAd var_10C
+  loc_6AD807: FStAdFunc var_F0
+  loc_6AD80A: FLdRfVar var_F0
+  loc_6AD80D: FLdZeroAd var_108
+  loc_6AD810: FStAdFunc var_EC
+  loc_6AD813: FLdRfVar var_EC
+  loc_6AD816: FLdZeroAd var_104
+  loc_6AD819: FStAdFunc var_E8
+  loc_6AD81C: FLdRfVar var_E8
+  loc_6AD81F: ImpAdLdPr unk_40615A
+  loc_6AD822: MemLdRfVar from_stack_1.global_0
+  loc_6AD825: AryDescTemp -224
+  loc_6AD828: PopTmpLdAdStr var_E4
+  loc_6AD82B: ILdRf arg_10
+  loc_6AD82E: ILdRf arg_C
+  loc_6AD831: Call Me.VTable_54()
+  loc_6AD836: FFreeAd var_E8 = "": var_EC = "": var_F0 = "": var_F4 = "": var_F8 = "": var_FC = "": var_100 = "": var_104 = "": var_108 = "": var_10C = "": var_110 = "": var_114 = ""
+  loc_6AD853: Branch loc_6ADD3F
+  loc_6AD856: FLdRfVar var_A8
+  loc_6AD859: LitVarStr var_B8, "Reportes"
+  loc_6AD85E: HardType
+  loc_6AD85F: EqVarBool
+  loc_6AD861: BranchF loc_6AD928
+  loc_6AD864: ImpAdLdRf MemVar_74C760
+  loc_6AD867: NewIfNullPr Formx
+  loc_6AD86A: VCallAd Control_ID_mnugenericReportes
+  loc_6AD86D: FStAdFunc var_104
+  loc_6AD870: ImpAdLdRf MemVar_74C760
+  loc_6AD873: NewIfNullPr Formx
+  loc_6AD876: VCallAd Control_ID_mnugenericReportes0
+  loc_6AD879: FStAdFunc var_108
+  loc_6AD87C: ImpAdLdRf MemVar_74C760
+  loc_6AD87F: NewIfNullPr Formx
+  loc_6AD882: VCallAd Control_ID_mnugenericReportes1
+  loc_6AD885: FStAdFunc var_10C
+  loc_6AD888: ImpAdLdRf MemVar_74C760
+  loc_6AD88B: NewIfNullPr Formx
+  loc_6AD88E: VCallAd Control_ID_mnugenericReportes2
+  loc_6AD891: FStAdFunc var_110
+  loc_6AD894: ImpAdLdRf MemVar_74C760
+  loc_6AD897: NewIfNullPr Formx
+  loc_6AD89A: VCallAd Control_ID_mnugenericSubReportes0
+  loc_6AD89D: FStAdFunc var_114
+  loc_6AD8A0: ImpAdLdRf MemVar_74C760
+  loc_6AD8A3: NewIfNullPr Formx
+  loc_6AD8A6: VCallAd Control_ID_mnugenericSubReportes1
+  loc_6AD8A9: FStAdFunc var_118
+  loc_6AD8AC: ImpAdLdRf MemVar_74C760
+  loc_6AD8AF: NewIfNullPr Formx
+  loc_6AD8B2: VCallAd Control_ID_mnugenericSubReportes2
+  loc_6AD8B5: FStAdFunc var_100
+  loc_6AD8B8: FLdRfVar var_100
+  loc_6AD8BB: FLdZeroAd var_118
+  loc_6AD8BE: FStAdFunc var_FC
+  loc_6AD8C1: FLdRfVar var_FC
+  loc_6AD8C4: FLdZeroAd var_114
+  loc_6AD8C7: FStAdFunc var_F8
+  loc_6AD8CA: FLdRfVar var_F8
+  loc_6AD8CD: FLdZeroAd var_110
+  loc_6AD8D0: FStAdFunc var_F4
+  loc_6AD8D3: FLdRfVar var_F4
+  loc_6AD8D6: FLdZeroAd var_10C
+  loc_6AD8D9: FStAdFunc var_F0
+  loc_6AD8DC: FLdRfVar var_F0
+  loc_6AD8DF: FLdZeroAd var_108
+  loc_6AD8E2: FStAdFunc var_EC
+  loc_6AD8E5: FLdRfVar var_EC
+  loc_6AD8E8: FLdZeroAd var_104
+  loc_6AD8EB: FStAdFunc var_E8
+  loc_6AD8EE: FLdRfVar var_E8
+  loc_6AD8F1: ImpAdLdPr unk_40615A
+  loc_6AD8F4: MemLdRfVar from_stack_1.global_480
+  loc_6AD8F7: AryDescTemp -320
+  loc_6AD8FA: PopTmpLdAdStr var_E4
+  loc_6AD8FD: ILdRf arg_10
+  loc_6AD900: ILdRf arg_C
+  loc_6AD903: Call Me.VTable_54()
+  loc_6AD908: FFreeAd var_E8 = "": var_EC = "": var_F0 = "": var_F4 = "": var_F8 = "": var_FC = "": var_100 = "": var_104 = "": var_108 = "": var_10C = "": var_110 = "": var_114 = ""
+  loc_6AD925: Branch loc_6ADD3F
+  loc_6AD928: FLdRfVar var_A8
+  loc_6AD92B: LitVarStr var_B8, "Tarjetas"
+  loc_6AD930: HardType
+  loc_6AD931: EqVarBool
+  loc_6AD933: BranchF loc_6AD9FA
+  loc_6AD936: ImpAdLdRf MemVar_74C760
+  loc_6AD939: NewIfNullPr Formx
+  loc_6AD93C: VCallAd Control_ID_mnugenericTarjetas
+  loc_6AD93F: FStAdFunc var_104
+  loc_6AD942: ImpAdLdRf MemVar_74C760
+  loc_6AD945: NewIfNullPr Formx
+  loc_6AD948: VCallAd Control_ID_mnugenericTarjetas0
+  loc_6AD94B: FStAdFunc var_108
+  loc_6AD94E: ImpAdLdRf MemVar_74C760
+  loc_6AD951: NewIfNullPr Formx
+  loc_6AD954: VCallAd Control_ID_mnugenericTarjetas1
+  loc_6AD957: FStAdFunc var_10C
+  loc_6AD95A: ImpAdLdRf MemVar_74C760
+  loc_6AD95D: NewIfNullPr Formx
+  loc_6AD960: VCallAd Control_ID_mnugenericTarjetas2
+  loc_6AD963: FStAdFunc var_110
+  loc_6AD966: ImpAdLdRf MemVar_74C760
+  loc_6AD969: NewIfNullPr Formx
+  loc_6AD96C: VCallAd Control_ID_mnugenericSubTarjetas0
+  loc_6AD96F: FStAdFunc var_114
+  loc_6AD972: ImpAdLdRf MemVar_74C760
+  loc_6AD975: NewIfNullPr Formx
+  loc_6AD978: VCallAd Control_ID_mnugenericSubTarjetas1
+  loc_6AD97B: FStAdFunc var_118
+  loc_6AD97E: ImpAdLdRf MemVar_74C760
+  loc_6AD981: NewIfNullPr Formx
+  loc_6AD984: VCallAd Control_ID_mnugenericSubTarjetas2
+  loc_6AD987: FStAdFunc var_100
+  loc_6AD98A: FLdRfVar var_100
+  loc_6AD98D: FLdZeroAd var_118
+  loc_6AD990: FStAdFunc var_FC
+  loc_6AD993: FLdRfVar var_FC
+  loc_6AD996: FLdZeroAd var_114
+  loc_6AD999: FStAdFunc var_F8
+  loc_6AD99C: FLdRfVar var_F8
+  loc_6AD99F: FLdZeroAd var_110
+  loc_6AD9A2: FStAdFunc var_F4
+  loc_6AD9A5: FLdRfVar var_F4
+  loc_6AD9A8: FLdZeroAd var_10C
+  loc_6AD9AB: FStAdFunc var_F0
+  loc_6AD9AE: FLdRfVar var_F0
+  loc_6AD9B1: FLdZeroAd var_108
+  loc_6AD9B4: FStAdFunc var_EC
+  loc_6AD9B7: FLdRfVar var_EC
+  loc_6AD9BA: FLdZeroAd var_104
+  loc_6AD9BD: FStAdFunc var_E8
+  loc_6AD9C0: FLdRfVar var_E8
+  loc_6AD9C3: ImpAdLdPr unk_40615A
+  loc_6AD9C6: MemLdRfVar from_stack_1.global_960
+  loc_6AD9C9: AryDescTemp -360
+  loc_6AD9CC: PopTmpLdAdStr var_E4
+  loc_6AD9CF: ILdRf arg_10
+  loc_6AD9D2: ILdRf arg_C
+  loc_6AD9D5: Call Me.VTable_54()
+  loc_6AD9DA: FFreeAd var_E8 = "": var_EC = "": var_F0 = "": var_F4 = "": var_F8 = "": var_FC = "": var_100 = "": var_104 = "": var_108 = "": var_10C = "": var_110 = "": var_114 = ""
+  loc_6AD9F7: Branch loc_6ADD3F
+  loc_6AD9FA: FLdRfVar var_A8
+  loc_6AD9FD: LitVarStr var_B8, "Gestion"
+  loc_6ADA02: HardType
+  loc_6ADA03: EqVarBool
+  loc_6ADA05: BranchF loc_6ADACC
+  loc_6ADA08: ImpAdLdRf MemVar_74C760
+  loc_6ADA0B: NewIfNullPr Formx
+  loc_6ADA0E: VCallAd Control_ID_mnugenericGestion
+  loc_6ADA11: FStAdFunc var_104
+  loc_6ADA14: ImpAdLdRf MemVar_74C760
+  loc_6ADA17: NewIfNullPr Formx
+  loc_6ADA1A: VCallAd Control_ID_mnugenericGestion0
+  loc_6ADA1D: FStAdFunc var_108
+  loc_6ADA20: ImpAdLdRf MemVar_74C760
+  loc_6ADA23: NewIfNullPr Formx
+  loc_6ADA26: VCallAd Control_ID_mnugenericGestion1
+  loc_6ADA29: FStAdFunc var_10C
+  loc_6ADA2C: ImpAdLdRf MemVar_74C760
+  loc_6ADA2F: NewIfNullPr Formx
+  loc_6ADA32: VCallAd Control_ID_mnugenericGestion2
+  loc_6ADA35: FStAdFunc var_110
+  loc_6ADA38: ImpAdLdRf MemVar_74C760
+  loc_6ADA3B: NewIfNullPr Formx
+  loc_6ADA3E: VCallAd Control_ID_mnugenericSubGestion0
+  loc_6ADA41: FStAdFunc var_114
+  loc_6ADA44: ImpAdLdRf MemVar_74C760
+  loc_6ADA47: NewIfNullPr Formx
+  loc_6ADA4A: VCallAd Control_ID_mnugenericSubGestion1
+  loc_6ADA4D: FStAdFunc var_118
+  loc_6ADA50: ImpAdLdRf MemVar_74C760
+  loc_6ADA53: NewIfNullPr Formx
+  loc_6ADA56: VCallAd Control_ID_mnugenericSubGestion2
+  loc_6ADA59: FStAdFunc var_100
+  loc_6ADA5C: FLdRfVar var_100
+  loc_6ADA5F: FLdZeroAd var_118
+  loc_6ADA62: FStAdFunc var_FC
+  loc_6ADA65: FLdRfVar var_FC
+  loc_6ADA68: FLdZeroAd var_114
+  loc_6ADA6B: FStAdFunc var_F8
+  loc_6ADA6E: FLdRfVar var_F8
+  loc_6ADA71: FLdZeroAd var_110
+  loc_6ADA74: FStAdFunc var_F4
+  loc_6ADA77: FLdRfVar var_F4
+  loc_6ADA7A: FLdZeroAd var_10C
+  loc_6ADA7D: FStAdFunc var_F0
+  loc_6ADA80: FLdRfVar var_F0
+  loc_6ADA83: FLdZeroAd var_108
+  loc_6ADA86: FStAdFunc var_EC
+  loc_6ADA89: FLdRfVar var_EC
+  loc_6ADA8C: FLdZeroAd var_104
+  loc_6ADA8F: FStAdFunc var_E8
+  loc_6ADA92: FLdRfVar var_E8
+  loc_6ADA95: ImpAdLdPr unk_40615A
+  loc_6ADA98: MemLdRfVar from_stack_1.global_1440
+  loc_6ADA9B: AryDescTemp -400
+  loc_6ADA9E: PopTmpLdAdStr var_E4
+  loc_6ADAA1: ILdRf arg_10
+  loc_6ADAA4: ILdRf arg_C
+  loc_6ADAA7: Call Me.VTable_54()
+  loc_6ADAAC: FFreeAd var_E8 = "": var_EC = "": var_F0 = "": var_F4 = "": var_F8 = "": var_FC = "": var_100 = "": var_104 = "": var_108 = "": var_10C = "": var_110 = "": var_114 = ""
+  loc_6ADAC9: Branch loc_6ADD3F
+  loc_6ADACC: FLdRfVar var_A8
+  loc_6ADACF: LitVarStr var_B8, "Precio"
+  loc_6ADAD4: HardType
+  loc_6ADAD5: EqVarBool
+  loc_6ADAD7: BranchF loc_6ADB9E
+  loc_6ADADA: ImpAdLdRf MemVar_74C760
+  loc_6ADADD: NewIfNullPr Formx
+  loc_6ADAE0: VCallAd Control_ID_mnugenericPrecios
+  loc_6ADAE3: FStAdFunc var_104
+  loc_6ADAE6: ImpAdLdRf MemVar_74C760
+  loc_6ADAE9: NewIfNullPr Formx
+  loc_6ADAEC: VCallAd Control_ID_mnugenericPrecios0
+  loc_6ADAEF: FStAdFunc var_108
+  loc_6ADAF2: ImpAdLdRf MemVar_74C760
+  loc_6ADAF5: NewIfNullPr Formx
+  loc_6ADAF8: VCallAd Control_ID_mnugenericPrecios1
+  loc_6ADAFB: FStAdFunc var_10C
+  loc_6ADAFE: ImpAdLdRf MemVar_74C760
+  loc_6ADB01: NewIfNullPr Formx
+  loc_6ADB04: VCallAd Control_ID_mnugenericPrecios2
+  loc_6ADB07: FStAdFunc var_110
+  loc_6ADB0A: ImpAdLdRf MemVar_74C760
+  loc_6ADB0D: NewIfNullPr Formx
+  loc_6ADB10: VCallAd Control_ID_mnugenericSubPrecios0
+  loc_6ADB13: FStAdFunc var_114
+  loc_6ADB16: ImpAdLdRf MemVar_74C760
+  loc_6ADB19: NewIfNullPr Formx
+  loc_6ADB1C: VCallAd Control_ID_mnugenericSubPrecios1
+  loc_6ADB1F: FStAdFunc var_118
+  loc_6ADB22: ImpAdLdRf MemVar_74C760
+  loc_6ADB25: NewIfNullPr Formx
+  loc_6ADB28: VCallAd Control_ID_mnugenericSubPrecios2
+  loc_6ADB2B: FStAdFunc var_100
+  loc_6ADB2E: FLdRfVar var_100
+  loc_6ADB31: FLdZeroAd var_118
+  loc_6ADB34: FStAdFunc var_FC
+  loc_6ADB37: FLdRfVar var_FC
+  loc_6ADB3A: FLdZeroAd var_114
+  loc_6ADB3D: FStAdFunc var_F8
+  loc_6ADB40: FLdRfVar var_F8
+  loc_6ADB43: FLdZeroAd var_110
+  loc_6ADB46: FStAdFunc var_F4
+  loc_6ADB49: FLdRfVar var_F4
+  loc_6ADB4C: FLdZeroAd var_10C
+  loc_6ADB4F: FStAdFunc var_F0
+  loc_6ADB52: FLdRfVar var_F0
+  loc_6ADB55: FLdZeroAd var_108
+  loc_6ADB58: FStAdFunc var_EC
+  loc_6ADB5B: FLdRfVar var_EC
+  loc_6ADB5E: FLdZeroAd var_104
+  loc_6ADB61: FStAdFunc var_E8
+  loc_6ADB64: FLdRfVar var_E8
+  loc_6ADB67: ImpAdLdPr unk_40615A
+  loc_6ADB6A: MemLdRfVar from_stack_1.global_1920
+  loc_6ADB6D: AryDescTemp -440
+  loc_6ADB70: PopTmpLdAdStr var_E4
+  loc_6ADB73: ILdRf arg_10
+  loc_6ADB76: ILdRf arg_C
+  loc_6ADB79: Call Me.VTable_54()
+  loc_6ADB7E: FFreeAd var_E8 = "": var_EC = "": var_F0 = "": var_F4 = "": var_F8 = "": var_FC = "": var_100 = "": var_104 = "": var_108 = "": var_10C = "": var_110 = "": var_114 = ""
+  loc_6ADB9B: Branch loc_6ADD3F
+  loc_6ADB9E: FLdRfVar var_A8
+  loc_6ADBA1: LitVarStr var_B8, "Configuracion"
+  loc_6ADBA6: HardType
+  loc_6ADBA7: EqVarBool
+  loc_6ADBA9: BranchF loc_6ADC70
+  loc_6ADBAC: ImpAdLdRf MemVar_74C760
+  loc_6ADBAF: NewIfNullPr Formx
+  loc_6ADBB2: VCallAd Control_ID_mnugenericConfiguracion
+  loc_6ADBB5: FStAdFunc var_104
+  loc_6ADBB8: ImpAdLdRf MemVar_74C760
+  loc_6ADBBB: NewIfNullPr Formx
+  loc_6ADBBE: VCallAd Control_ID_mnugenericConfiguracion0
+  loc_6ADBC1: FStAdFunc var_108
+  loc_6ADBC4: ImpAdLdRf MemVar_74C760
+  loc_6ADBC7: NewIfNullPr Formx
+  loc_6ADBCA: VCallAd Control_ID_mnugenericConfiguracion1
+  loc_6ADBCD: FStAdFunc var_10C
+  loc_6ADBD0: ImpAdLdRf MemVar_74C760
+  loc_6ADBD3: NewIfNullPr Formx
+  loc_6ADBD6: VCallAd Control_ID_mnugenericConfiguracion2
+  loc_6ADBD9: FStAdFunc var_110
+  loc_6ADBDC: ImpAdLdRf MemVar_74C760
+  loc_6ADBDF: NewIfNullPr Formx
+  loc_6ADBE2: VCallAd Control_ID_mnugenericSubConfiguracion0
+  loc_6ADBE5: FStAdFunc var_114
+  loc_6ADBE8: ImpAdLdRf MemVar_74C760
+  loc_6ADBEB: NewIfNullPr Formx
+  loc_6ADBEE: VCallAd Control_ID_mnugenericSubConfiguracion1
+  loc_6ADBF1: FStAdFunc var_118
+  loc_6ADBF4: ImpAdLdRf MemVar_74C760
+  loc_6ADBF7: NewIfNullPr Formx
+  loc_6ADBFA: VCallAd Control_ID_mnugenericSubConfiguracion2
+  loc_6ADBFD: FStAdFunc var_100
+  loc_6ADC00: FLdRfVar var_100
+  loc_6ADC03: FLdZeroAd var_118
+  loc_6ADC06: FStAdFunc var_FC
+  loc_6ADC09: FLdRfVar var_FC
+  loc_6ADC0C: FLdZeroAd var_114
+  loc_6ADC0F: FStAdFunc var_F8
+  loc_6ADC12: FLdRfVar var_F8
+  loc_6ADC15: FLdZeroAd var_110
+  loc_6ADC18: FStAdFunc var_F4
+  loc_6ADC1B: FLdRfVar var_F4
+  loc_6ADC1E: FLdZeroAd var_10C
+  loc_6ADC21: FStAdFunc var_F0
+  loc_6ADC24: FLdRfVar var_F0
+  loc_6ADC27: FLdZeroAd var_108
+  loc_6ADC2A: FStAdFunc var_EC
+  loc_6ADC2D: FLdRfVar var_EC
+  loc_6ADC30: FLdZeroAd var_104
+  loc_6ADC33: FStAdFunc var_E8
+  loc_6ADC36: FLdRfVar var_E8
+  loc_6ADC39: ImpAdLdPr unk_40615A
+  loc_6ADC3C: MemLdRfVar from_stack_1.global_2400
+  loc_6ADC3F: AryDescTemp -480
+  loc_6ADC42: PopTmpLdAdStr var_E4
+  loc_6ADC45: ILdRf arg_10
+  loc_6ADC48: ILdRf arg_C
+  loc_6ADC4B: Call Me.VTable_54()
+  loc_6ADC50: FFreeAd var_E8 = "": var_EC = "": var_F0 = "": var_F4 = "": var_F8 = "": var_FC = "": var_100 = "": var_104 = "": var_108 = "": var_10C = "": var_110 = "": var_114 = ""
+  loc_6ADC6D: Branch loc_6ADD3F
+  loc_6ADC70: FLdRfVar var_A8
+  loc_6ADC73: LitVarStr var_B8, "OperMan"
+  loc_6ADC78: HardType
+  loc_6ADC79: EqVarBool
+  loc_6ADC7B: BranchF loc_6ADD3F
+  loc_6ADC7E: ImpAdLdRf MemVar_74C760
+  loc_6ADC81: NewIfNullPr Formx
+  loc_6ADC84: VCallAd Control_ID_mnugenericOperMan
+  loc_6ADC87: FStAdFunc var_104
+  loc_6ADC8A: ImpAdLdRf MemVar_74C760
+  loc_6ADC8D: NewIfNullPr Formx
+  loc_6ADC90: VCallAd Control_ID_mnugenericOperMan0
+  loc_6ADC93: FStAdFunc var_108
+  loc_6ADC96: ImpAdLdRf MemVar_74C760
+  loc_6ADC99: NewIfNullPr Formx
+  loc_6ADC9C: VCallAd Control_ID_mnugenericOperMan1
+  loc_6ADC9F: FStAdFunc var_10C
+  loc_6ADCA2: ImpAdLdRf MemVar_74C760
+  loc_6ADCA5: NewIfNullPr Formx
+  loc_6ADCA8: VCallAd Control_ID_mnugenericOperMan2
+  loc_6ADCAB: FStAdFunc var_110
+  loc_6ADCAE: ImpAdLdRf MemVar_74C760
+  loc_6ADCB1: NewIfNullPr Formx
+  loc_6ADCB4: VCallAd Control_ID_mnugenericSubOperMan0
+  loc_6ADCB7: FStAdFunc var_114
+  loc_6ADCBA: ImpAdLdRf MemVar_74C760
+  loc_6ADCBD: NewIfNullPr Formx
+  loc_6ADCC0: VCallAd Control_ID_mnugenericSubOperMan1
+  loc_6ADCC3: FStAdFunc var_118
+  loc_6ADCC6: ImpAdLdRf MemVar_74C760
+  loc_6ADCC9: NewIfNullPr Formx
+  loc_6ADCCC: VCallAd Control_ID_mnugenericSubOperMan2
+  loc_6ADCCF: FStAdFunc var_100
+  loc_6ADCD2: FLdRfVar var_100
+  loc_6ADCD5: FLdZeroAd var_118
+  loc_6ADCD8: FStAdFunc var_FC
+  loc_6ADCDB: FLdRfVar var_FC
+  loc_6ADCDE: FLdZeroAd var_114
+  loc_6ADCE1: FStAdFunc var_F8
+  loc_6ADCE4: FLdRfVar var_F8
+  loc_6ADCE7: FLdZeroAd var_110
+  loc_6ADCEA: FStAdFunc var_F4
+  loc_6ADCED: FLdRfVar var_F4
+  loc_6ADCF0: FLdZeroAd var_10C
+  loc_6ADCF3: FStAdFunc var_F0
+  loc_6ADCF6: FLdRfVar var_F0
+  loc_6ADCF9: FLdZeroAd var_108
+  loc_6ADCFC: FStAdFunc var_EC
+  loc_6ADCFF: FLdRfVar var_EC
+  loc_6ADD02: FLdZeroAd var_104
+  loc_6ADD05: FStAdFunc var_E8
+  loc_6ADD08: FLdRfVar var_E8
+  loc_6ADD0B: ImpAdLdPr unk_40615A
+  loc_6ADD0E: MemLdRfVar from_stack_1.global_2880
+  loc_6ADD11: AryDescTemp -520
+  loc_6ADD14: PopTmpLdAdStr var_E4
+  loc_6ADD17: ILdRf arg_10
+  loc_6ADD1A: ILdRf arg_C
+  loc_6ADD1D: Call Me.VTable_54()
+  loc_6ADD22: FFreeAd var_E8 = "": var_EC = "": var_F0 = "": var_F4 = "": var_F8 = "": var_FC = "": var_100 = "": var_104 = "": var_108 = "": var_10C = "": var_110 = "": var_114 = ""
+  loc_6ADD3F: ExitProcCbHresult
+End Function
+
+Private Function Proc_138_13_63EB28(arg_C, arg_10) '63EB28
+  'Data Table: 406138
+  loc_63E92C: ILdPr
+  loc_63E92F: LateMemLdVar
+  loc_63E934: CBoolVarNull
+  loc_63E936: FFree1Var var_9C = ""
+  loc_63E939: BranchF loc_63EA74
+  loc_63E93C: FLdRfVar var_A2
+  loc_63E93F: ImpAdLdRf MemVar_74C760
+  loc_63E942: NewIfNullPr Formx
+  loc_63E945: VCallAd Control_ID_mnugenericCierre0
+  loc_63E948: FStAdFunc var_A0
+  loc_63E94B: FLdPr var_A0
+  loc_63E94E:  = Formx.Menu.Visible
+  loc_63E953: FLdI2 var_A2
+  loc_63E956: NotI4
+  loc_63E957: FFree1Ad var_A0
+  loc_63E95A: BranchF loc_63E9A4
+  loc_63E95D: ImpAdLdRf MemVar_74C760
+  loc_63E960: NewIfNullPr Formx
+  loc_63E963: VCallAd Control_ID_mnugenericCierre0
+  loc_63E966: FStAdFunc var_8C
+  loc_63E969: ImpAdLdRf MemVar_74C760
+  loc_63E96C: NewIfNullPr Formx
+  loc_63E96F: VCallAd Control_ID_mnugenericSubCierre0
+  loc_63E972: FStAdFunc var_D4
+  loc_63E975: LitI2_Byte 1
+  loc_63E977: PopTmpLdAd2 var_A2
+  loc_63E97A: ImpAdLdPr unk_40615A
+  loc_63E97D: MemLdRfVar from_stack_1.global_0
+  loc_63E980: AryDescTemp -204
+  loc_63E983: PopTmpLdAdStr var_D0
+  loc_63E986: ILdRf arg_10
+  loc_63E989: ILdRf arg_C
+  loc_63E98C: FLdZeroAd var_D4
+  loc_63E98F: FStAdFunc var_A0
+  loc_63E992: FLdRfVar var_A0
+  loc_63E995: Call Me.VTable_58()
+  loc_63E99A: FFreeAd var_A0 = ""
+  loc_63E9A1: Branch loc_63EA71
+  loc_63E9A4: FLdRfVar var_A2
+  loc_63E9A7: ImpAdLdRf MemVar_74C760
+  loc_63E9AA: NewIfNullPr Formx
+  loc_63E9AD: VCallAd Control_ID_mnugenericCierre1
+  loc_63E9B0: FStAdFunc var_A0
+  loc_63E9B3: FLdPr var_A0
+  loc_63E9B6:  = Formx.Menu.Visible
+  loc_63E9BB: FLdI2 var_A2
+  loc_63E9BE: NotI4
+  loc_63E9BF: FFree1Ad var_A0
+  loc_63E9C2: BranchF loc_63EA0C
+  loc_63E9C5: ImpAdLdRf MemVar_74C760
+  loc_63E9C8: NewIfNullPr Formx
+  loc_63E9CB: VCallAd Control_ID_mnugenericCierre1
+  loc_63E9CE: FStAdFunc var_8C
+  loc_63E9D1: ImpAdLdRf MemVar_74C760
+  loc_63E9D4: NewIfNullPr Formx
+  loc_63E9D7: VCallAd Control_ID_mnugenericSubCierre1
+  loc_63E9DA: FStAdFunc var_D4
+  loc_63E9DD: LitI2_Byte 2
+  loc_63E9DF: PopTmpLdAd2 var_A2
+  loc_63E9E2: ImpAdLdPr unk_40615A
+  loc_63E9E5: MemLdRfVar from_stack_1.global_0
+  loc_63E9E8: AryDescTemp -204
+  loc_63E9EB: PopTmpLdAdStr var_D0
+  loc_63E9EE: ILdRf arg_10
+  loc_63E9F1: ILdRf arg_C
+  loc_63E9F4: FLdZeroAd var_D4
+  loc_63E9F7: FStAdFunc var_A0
+  loc_63E9FA: FLdRfVar var_A0
+  loc_63E9FD: Call Me.VTable_58()
+  loc_63EA02: FFreeAd var_A0 = ""
+  loc_63EA09: Branch loc_63EA71
+  loc_63EA0C: FLdRfVar var_A2
+  loc_63EA0F: ImpAdLdRf MemVar_74C760
+  loc_63EA12: NewIfNullPr Formx
+  loc_63EA15: VCallAd Control_ID_mnugenericCierre2
+  loc_63EA18: FStAdFunc var_A0
+  loc_63EA1B: FLdPr var_A0
+  loc_63EA1E:  = Formx.Menu.Visible
+  loc_63EA23: FLdI2 var_A2
+  loc_63EA26: NotI4
+  loc_63EA27: FFree1Ad var_A0
+  loc_63EA2A: BranchF loc_63EA71
+  loc_63EA2D: ImpAdLdRf MemVar_74C760
+  loc_63EA30: NewIfNullPr Formx
+  loc_63EA33: VCallAd Control_ID_mnugenericCierre2
+  loc_63EA36: FStAdFunc var_8C
+  loc_63EA39: ImpAdLdRf MemVar_74C760
+  loc_63EA3C: NewIfNullPr Formx
+  loc_63EA3F: VCallAd Control_ID_mnugenericSubCierre0
+  loc_63EA42: FStAdFunc var_D4
+  loc_63EA45: LitI2_Byte 3
+  loc_63EA47: PopTmpLdAd2 var_A2
+  loc_63EA4A: ImpAdLdPr unk_40615A
+  loc_63EA4D: MemLdRfVar from_stack_1.global_0
+  loc_63EA50: AryDescTemp -204
+  loc_63EA53: PopTmpLdAdStr var_D0
+  loc_63EA56: ILdRf arg_10
+  loc_63EA59: ILdRf arg_C
+  loc_63EA5C: FLdZeroAd var_D4
+  loc_63EA5F: FStAdFunc var_A0
+  loc_63EA62: FLdRfVar var_A0
+  loc_63EA65: Call Me.VTable_58()
+  loc_63EA6A: FFreeAd var_A0 = ""
+  loc_63EA71: Branch loc_63EB00
+  loc_63EA74: FLdRfVar var_D8
+  loc_63EA77: FLdRfVar var_A2
+  loc_63EA7A: ImpAdLdRf MemVar_74C760
+  loc_63EA7D: NewIfNullPr Formx
+  loc_63EA80: VCallAd Control_ID_mnugenericCierre
+  loc_63EA83: FStAdFunc var_A0
+  loc_63EA86: FLdPr var_A0
+  loc_63EA89: Call 0.Method_Proc_138_13_63EB28C ()
+  loc_63EA8E: FLdI2 var_A2
+  loc_63EA91: ImpAdLdRf MemVar_74C760
+  loc_63EA94: NewIfNullPr Formx
+  loc_63EA97: VCallAd Control_ID_mnugenericCierre
+  loc_63EA9A: FStAdFunc var_D4
+  loc_63EA9D: FLdPr var_D4
+  loc_63EAA0: Set from_stack_2 = Formx(from_stack_1)
+  loc_63EAA5: FLdZeroAd var_D8
+  loc_63EAA8: FStAdFuncNoPop
+  loc_63EAAB: ImpAdLdRf MemVar_7520D4
+  loc_63EAAE: NewIfNullPr Global
+  loc_63EAB1: Global.Load from_stack_1
+  loc_63EAB6: FFreeAd var_A0 = "": var_D4 = ""
+  loc_63EABF: FLdRfVar var_D8
+  loc_63EAC2: FLdRfVar var_A2
+  loc_63EAC5: ImpAdLdRf MemVar_74C760
+  loc_63EAC8: NewIfNullPr Formx
+  loc_63EACB: VCallAd Control_ID_mnugenericCierre
+  loc_63EACE: FStAdFunc var_A0
+  loc_63EAD1: FLdPr var_A0
+  loc_63EAD4: Call 0.Method_Proc_138_13_63EB28C ()
+  loc_63EAD9: FLdI2 var_A2
+  loc_63EADC: LitI2_Byte 1
+  loc_63EADE: SubI2
+  loc_63EADF: ImpAdLdRf MemVar_74C760
+  loc_63EAE2: NewIfNullPr Formx
+  loc_63EAE5: VCallAd Control_ID_mnugenericCierre
+  loc_63EAE8: FStAdFunc var_D4
+  loc_63EAEB: FLdPr var_D4
+  loc_63EAEE: Set from_stack_2 = Formx(from_stack_1)
+  loc_63EAF3: FLdZeroAd var_D8
+  loc_63EAF6: FStAdFunc var_8C
+  loc_63EAF9: FFreeAd var_A0 = ""
+  loc_63EB00: LitI2_Byte &HFF
+  loc_63EB02: FLdPr var_8C
+  loc_63EB05: Me.Visible = from_stack_1b
+  loc_63EB0A: ILdPr
+  loc_63EB0D: LateMemLdVar
+  loc_63EB12: CStrVarVal var_E0
+  loc_63EB16: FLdPr var_8C
+  loc_63EB19: Me.Caption = from_stack_1
+  loc_63EB1E: FFree1Str var_E0
+  loc_63EB21: FFree1Var var_9C = ""
+  loc_63EB24: ExitProcHresult
+  loc_63EB25: ThisVCallAd
+End Function
+
+Private Function Proc_138_14_620138(arg_C, arg_10, arg_14) '620138
+  'Data Table: 406138
+  loc_61FFF0: ILdPr
+  loc_61FFF3: LateMemLdVar
+  loc_61FFF8: CBoolVarNull
+  loc_61FFFA: FFree1Var var_9C = ""
+  loc_61FFFD: BranchF loc_6200A2
+  loc_620000: ILdPr
+  loc_620003: LateMemLdVar
+  loc_620008: NotVar var_AC
+  loc_62000C: CBoolVarNull
+  loc_62000E: FFree1Var var_9C = ""
+  loc_620011: BranchF loc_620036
+  loc_620014: ILdI4 arg_1C
+  loc_620017: CastAd
+  loc_62001A: FStAdFunc var_8C
+  loc_62001D: LitI2_Byte 1
+  loc_62001F: PopTmpLdAd2 var_AE
+  loc_620022: ILdRf arg_14
+  loc_620025: ILdRf arg_10
+  loc_620028: ILdRf arg_C
+  loc_62002B: ILdRf arg_28
+  loc_62002E: Call Me.VTable_58()
+  loc_620033: Branch loc_62009F
+  loc_620036: ILdPr
+  loc_620039: LateMemLdVar
+  loc_62003E: NotVar var_AC
+  loc_620042: CBoolVarNull
+  loc_620044: FFree1Var var_9C = ""
+  loc_620047: BranchF loc_62006C
+  loc_62004A: ILdI4 arg_20
+  loc_62004D: CastAd
+  loc_620050: FStAdFunc var_8C
+  loc_620053: LitI2_Byte 2
+  loc_620055: PopTmpLdAd2 var_AE
+  loc_620058: ILdRf arg_14
+  loc_62005B: ILdRf arg_10
+  loc_62005E: ILdRf arg_C
+  loc_620061: ILdRf arg_2C
+  loc_620064: Call Me.VTable_58()
+  loc_620069: Branch loc_62009F
+  loc_62006C: ILdPr
+  loc_62006F: LateMemLdVar
+  loc_620074: NotVar var_AC
+  loc_620078: CBoolVarNull
+  loc_62007A: FFree1Var var_9C = ""
+  loc_62007D: BranchF loc_62009F
+  loc_620080: ILdI4 arg_24
+  loc_620083: CastAd
+  loc_620086: FStAdFunc var_8C
+  loc_620089: LitI2_Byte 3
+  loc_62008B: PopTmpLdAd2 var_AE
+  loc_62008E: ILdRf arg_14
+  loc_620091: ILdRf arg_10
+  loc_620094: ILdRf arg_C
+  loc_620097: ILdRf arg_30
+  loc_62009A: Call Me.VTable_58()
+  loc_62009F: Branch loc_62010B
+  loc_6200A2: ILdPr
+  loc_6200A5: LateMemLdVar
+  loc_6200AA: PopAdLdVar
+  loc_6200AB: ILdPr
+  loc_6200AE: LateIdCallLdVar
+  loc_6200B8: CAdVar
+  loc_6200BA: FStAdNoPop
+  loc_6200BE: ImpAdLdRf MemVar_7520D4
+  loc_6200C1: NewIfNullPr Global
+  loc_6200C4: Global.Load from_stack_1
+  loc_6200C9: FFree1Ad var_B4
+  loc_6200CC: FFreeVar var_9C = ""
+  loc_6200D3: ILdPr
+  loc_6200D6: LateMemLdVar
+  loc_6200DB: LitVarI2 var_C4, 1
+  loc_6200E0: SubVar var_AC
+  loc_6200E4: PopAdLdVar
+  loc_6200E5: ILdPr
+  loc_6200E8: LateIdCallLdVar
+  loc_6200F2: CastAdVar Me
+  loc_6200F6: FStAdFunc var_8C
+  loc_6200F9: FFreeVar var_9C = ""
+  loc_620100: ILdI4 arg_10
+  loc_620103: FLdPr var_8C
+  loc_620106: Me.Menu.Tag = from_stack_1
+  loc_62010B: ILdRf arg_C
+  loc_62010E: Call Me.VTable_64()
+  loc_620113: LitI2_Byte &HFF
+  loc_620115: FLdPr var_8C
+  loc_620118: Me.Visible = from_stack_1b
+  loc_62011D: ILdPr
+  loc_620120: LateMemLdVar
+  loc_620125: CStrVarVal var_D8
+  loc_620129: FLdPr var_8C
+  loc_62012C: Me.Caption = from_stack_1
+  loc_620131: FFree1Str var_D8
+  loc_620134: FFree1Var var_9C = ""
+  loc_620137: ExitProcHresult
+End Function
+
+Private Function Proc_138_15_61DD80(arg_14, arg_18, arg_1C) '61DD80
+  'Data Table: 406138
+  loc_61DC3C: ILdPr
+  loc_61DC3F: LateMemLdVar
+  loc_61DC44: PopAd
+  loc_61DC46: LitI4 -1
+  loc_61DC4B: LitStr "|"
+  loc_61DC4E: FLdRfVar var_A8
+  loc_61DC51: CStrVarTmp
+  loc_61DC52: PopTmpLdAdStr
+  loc_61DC56: FLdRfVar var_BC
+  loc_61DC59: ImpAdCallFPR4  = Proc_158_15_6247B0(, , )
+  loc_61DC5E: FLdRfVar var_BC
+  loc_61DC61: FStVar var_98
+  loc_61DC65: FFree1Str var_AC
+  loc_61DC68: FFree1Var var_A8 = ""
+  loc_61DC6B: LitI2_Byte 0
+  loc_61DC6D: FLdRfVar var_86
+  loc_61DC70: FLdRfVar var_98
+  loc_61DC73: CRefVarAry
+  loc_61DC75: PopAdLd4
+  loc_61DC76: LitI2_Byte 1
+  loc_61DC78: FnUBound
+  loc_61DC7A: CI2I4
+  loc_61DC7B: ForI2 var_C0
+  loc_61DC81: ILdPr
+  loc_61DC84: LateMemLdVar
+  loc_61DC89: CI2Var
+  loc_61DC8A: FStI2 var_88
+  loc_61DC8D: FFree1Var var_A8 = ""
+  loc_61DC90: FLdRfVar var_88
+  loc_61DC93: CDargRef
+  loc_61DC97: ILdPr
+  loc_61DC9A: LateIdCallLdVar
+  loc_61DCA4: CAdVar
+  loc_61DCA6: FStAdNoPop
+  loc_61DCAA: ImpAdLdRf MemVar_7520D4
+  loc_61DCAD: NewIfNullPr Global
+  loc_61DCB0: Global.Load from_stack_1
+  loc_61DCB5: FFree1Ad var_D4
+  loc_61DCB8: FFree1Var var_A8 = ""
+  loc_61DCBB: FLdRfVar var_88
+  loc_61DCBE: CDargRef
+  loc_61DCC2: ILdPr
+  loc_61DCC5: LateIdCallLdVar
+  loc_61DCCF: PopAd
+  loc_61DCD1: FLdRfVar var_86
+  loc_61DCD4: CDargRef
+  loc_61DCD8: FLdRfVar var_98
+  loc_61DCDB: VarIndexLdVar
+  loc_61DCE1: FnCStrVar
+  loc_61DCE3: PopTmpLdAdStr
+  loc_61DCE7: ILdRf arg_14
+  loc_61DCEA: FLdRfVar var_BC
+  loc_61DCED: CAdVar
+  loc_61DCEF: FStAd var_D4 
+  loc_61DCF3: FLdRfVar var_D4
+  loc_61DCF6: Call Me.VTable_5C()
+  loc_61DCFB: FFree1Str var_AC
+  loc_61DCFE: FFree1Ad var_D4
+  loc_61DD01: FFreeVar var_A8 = ""
+  loc_61DD08: ILdI4 arg_14
+  loc_61DD0B: ILdI2 arg_1C
+  loc_61DD0E: CI4UI1
+  loc_61DD0F: FLdI2 var_88
+  loc_61DD12: CI4UI1
+  loc_61DD13: LitI4 0
+  loc_61DD18: ILdI4 arg_18
+  loc_61DD1B: AryLdPr
+  loc_61DD1E: MemStStrCopy
+  loc_61DD22: FLdRfVar var_86
+  loc_61DD25: CDargRef
+  loc_61DD29: FLdRfVar var_98
+  loc_61DD2C: VarIndexLdVar
+  loc_61DD32: CStrVarTmp
+  loc_61DD33: FStStrNoPop var_AC
+  loc_61DD36: ILdI2 arg_1C
+  loc_61DD39: CI4UI1
+  loc_61DD3A: FLdI2 var_88
+  loc_61DD3D: CI4UI1
+  loc_61DD3E: LitI4 1
+  loc_61DD43: ILdI4 arg_18
+  loc_61DD46: AryLdPr
+  loc_61DD49: MemStStrCopy
+  loc_61DD4D: FFree1Str var_AC
+  loc_61DD50: FFree1Var var_A8 = ""
+  loc_61DD53: FLdRfVar var_86
+  loc_61DD56: NextI2 var_C0, loc_61DC81
+  loc_61DD5B: LitVar_FALSE
+  loc_61DD5F: PopAdLdVar
+  loc_61DD60: LitVarI2 var_D0, 0
+  loc_61DD65: PopAdLdVar
+  loc_61DD66: ILdPr
+  loc_61DD69: LateIdCallLdVar
+  loc_61DD73: LdPrVar
+  loc_61DD75: LateMemSt
+  loc_61DD79: FFree1Var var_BC = ""
+  loc_61DD7C: ExitProcHresult
+  loc_61DD7D: FStStrCopy arg_15
+End Function
+
+Private Function Proc_138_16_5D571C(arg_10, arg_14) '5D571C
+  'Data Table: 406138
+  loc_5D56F4: ILdI4 arg_14
+  loc_5D56F7: CVarStr var_94
+  loc_5D56FA: PopAdLdVar
+  loc_5D56FB: ILdPr
+  loc_5D56FE: LateMemSt
+  loc_5D5702: LitVar_TRUE var_94
+  loc_5D5705: PopAdLdVar
+  loc_5D5706: ILdPr
+  loc_5D5709: LateMemSt
+  loc_5D570D: ILdI4 arg_10
+  loc_5D5710: CVarStr var_94
+  loc_5D5713: PopAdLdVar
+  loc_5D5714: ILdPr
+  loc_5D5717: LateMemSt
+  loc_5D571B: ExitProcHresult
+End Function
+
+Private Function Proc_138_17_60E848() '60E848
+  'Data Table: 406138
+  loc_60E758: New Collection
+  loc_60E75C: FStAdFuncNoPop
+  loc_60E75F: FLdPr Me
+  loc_60E762: MemStAd
+  loc_60E766: FFree1Ad var_90
+  loc_60E76B: FLdI2 var_8A
+  loc_60E76E: CI4UI1
+  loc_60E76F: ImpAdLdRf MemVar_74CB00
+  loc_60E772: Ary1LdI4
+  loc_60E773: LitStr vbNullString
+  loc_60E776: EqStr
+  loc_60E778: NotI4
+  loc_60E779: BranchF loc_60E842
+  loc_60E77E: OnErrorGoto loc_60E811
+  loc_60E783: FLdI2 var_8A
+  loc_60E786: CI4UI1
+  loc_60E787: ImpAdLdRf MemVar_74CB00
+  loc_60E78A: Ary1LdI4
+  loc_60E78B: FnLenStr
+  loc_60E78C: LitI4 3
+  loc_60E791: SubI4
+  loc_60E792: CVarI4
+  loc_60E796: LitI4 1
+  loc_60E79B: FLdI2 var_8A
+  loc_60E79E: CI4UI1
+  loc_60E79F: ImpAdLdRf MemVar_74CB00
+  loc_60E7A2: Ary1LdRf
+  loc_60E7A3: CVarRef
+  loc_60E7A8: FLdRfVar var_D0
+  loc_60E7AB: ImpAdCallFPR4  = Mid(, , )
+  loc_60E7B0: FLdRfVar var_D0
+  loc_60E7B3: LitVarStr var_E0, "clsSinkEvents"
+  loc_60E7B8: ConcatVar var_F0
+  loc_60E7BC: CStrVarVal var_F4
+  loc_60E7C0: FLdRfVar var_104
+  loc_60E7C3: ImpAdCallFPR4  = CreateObject(, )
+  loc_60E7C8: FLdRfVar var_104
+  loc_60E7CB: CAdVar
+  loc_60E7CD: FStAd var_88 
+  loc_60E7D1: FFree1Str var_F4
+  loc_60E7D4: FFreeVar var_C0 = "": var_D0 = "": var_F0 = ""
+  loc_60E7E1: LitVar_Missing var_F0
+  loc_60E7E4: LitVar_Missing var_D0
+  loc_60E7E7: LitVar_Missing var_C0
+  loc_60E7EA: FLdRfVar var_88
+  loc_60E7ED: CVarRef
+  loc_60E7F2: FLdPr Me
+  loc_60E7F5: MemLdPr collSinks
+  loc_60E7F8: Collection.Add from_stack_1, from_stack_2, from_stack_3, from_stack_4
+  loc_60E7FD: FFreeVar var_C0 = "": var_D0 = ""
+  loc_60E808: FLdI2 var_8A
+  loc_60E80B: LitI2_Byte 1
+  loc_60E80D: AddI2
+  loc_60E80E: FStI2 var_8A
+  loc_60E813: FLdRfVar var_118
+  loc_60E816: ImpAdCallI2 Err 'rtcErrObj
+  loc_60E81B: FStAdFunc var_90
+  loc_60E81E: FLdPr var_90
+  loc_60E821:  = Err.Number
+  loc_60E826: ILdRf var_118
+  loc_60E829: LitI4 0
+  loc_60E82E: NeI4
+  loc_60E82F: FFree1Ad var_90
+  loc_60E832: BranchF loc_60E83B
+  loc_60E837: Resume
+  loc_60E83F: Branch loc_60E769
+  loc_60E844: ExitProcHresult
+End Function
+
+Private Function Proc_138_18_5FD17C() '5FD17C
+  'Data Table: 406138
+  loc_5FD0BC: ILdPr
+  loc_5FD0BF: LateMemLdVar
+  loc_5FD0C4: PopAd
+  loc_5FD0C6: LitI4 -1
+  loc_5FD0CB: LitStr "|"
+  loc_5FD0CE: FLdRfVar var_A8
+  loc_5FD0D1: CStrVarTmp
+  loc_5FD0D2: PopTmpLdAdStr
+  loc_5FD0D6: FLdRfVar var_BC
+  loc_5FD0D9: ImpAdCallFPR4  = Proc_158_15_6247B0(, , )
+  loc_5FD0DE: FLdRfVar var_BC
+  loc_5FD0E1: FStVar var_98
+  loc_5FD0E5: FFree1Str var_AC
+  loc_5FD0E8: FFree1Var var_A8 = ""
+  loc_5FD0EB: FLdRfVar var_98
+  loc_5FD0EE: CRefVarAry
+  loc_5FD0F0: PopAdLd4
+  loc_5FD0F1: LitI2_Byte 1
+  loc_5FD0F3: FnUBound
+  loc_5FD0F5: LitI4 -1
+  loc_5FD0FA: EqI4
+  loc_5FD0FB: BranchF loc_5FD0FF
+  loc_5FD0FE: ExitProcHresult
+  loc_5FD0FF: LitI2_Byte 0
+  loc_5FD101: FLdRfVar var_86
+  loc_5FD104: FLdRfVar var_98
+  loc_5FD107: CRefVarAry
+  loc_5FD109: PopAdLd4
+  loc_5FD10A: LitI2_Byte 1
+  loc_5FD10C: FnUBound
+  loc_5FD10E: LitI4 1
+  loc_5FD113: SubI4
+  loc_5FD114: CI2I4
+  loc_5FD115: LitI2_Byte 2
+  loc_5FD117: ForStepI2 var_C0
+  loc_5FD11D: FLdRfVar var_86
+  loc_5FD120: CDargRef
+  loc_5FD124: FLdRfVar var_98
+  loc_5FD127: VarIndexLdVar
+  loc_5FD12D: CStrVarVal var_AC
+  loc_5FD131: ImpAdCallFPR4 push Val()
+  loc_5FD136: FStFPR8 var_100
+  loc_5FD139: FLdI2 var_86
+  loc_5FD13C: LitI2_Byte 1
+  loc_5FD13E: AddI2
+  loc_5FD13F: CVarI2 var_D0
+  loc_5FD142: PopAdLdVar
+  loc_5FD143: FLdRfVar var_98
+  loc_5FD146: VarIndexLdVar
+  loc_5FD14C: CStrVarTmp
+  loc_5FD14D: PopTmpLdAdStr
+  loc_5FD151: FLdFPR8 var_100
+  loc_5FD154: CI2R8
+  loc_5FD155: PopTmpLdAd2 var_E2
+  loc_5FD158: ImpAdLdRf MemVar_74A21C
+  loc_5FD15B: NewIfNullPr clsSecurity
+  loc_5FD15E: from_stack_3 = PropBag.ReadProperty(from_stack_1, from_stack_2)
+  loc_5FD163: FFreeStr var_AC = ""
+  loc_5FD16A: FFreeVar var_A8 = ""
+  loc_5FD171: FLdRfVar var_86
+  loc_5FD174: NextStepI2 var_C0, loc_5FD11D
+  loc_5FD179: ExitProcHresult
+  loc_5FD17A: LitStr "StrFormMemory_905A4D"
+End Function
+
+Private Function Proc_138_19_5D5774() '5D5774
+  'Data Table: 406138
+  loc_5D574C: LitI2_Byte 0
+  loc_5D574E: FLdRfVar var_86
+  loc_5D5751: ImpAdLdRf MemVar_74CB00
+  loc_5D5754: LitI2_Byte 1
+  loc_5D5756: FnUBound
+  loc_5D5758: CI2I4
+  loc_5D5759: ForI2 var_8A
+  loc_5D575F: LitStr vbNullString
+  loc_5D5762: FLdI2 var_86
+  loc_5D5765: CI4UI1
+  loc_5D5766: ImpAdLdRf MemVar_74CB00
+  loc_5D5769: Ary1StStrCopy
+  loc_5D576A: FLdRfVar var_86
+  loc_5D576D: NextI2 var_8A, loc_5D575F
+  loc_5D5772: ExitProcHresult
+End Function

@@ -1,0 +1,235 @@
+
+Private Function Proc_90_0_5F90D8(arg_C, arg_10, arg_14, arg_18) '5F90D8
+  'Data Table: 403968
+  loc_5F9010: ZeroRetValVar
+  loc_5F9012: FLdPr Me
+  loc_5F9015: MemLdI2 global_56
+  loc_5F9018: LitI2_Byte 0
+  loc_5F901A: EqI2
+  loc_5F901B: BranchF loc_5F903B
+  loc_5F901E: LitI4 0
+  loc_5F9023: LitI4 1
+  loc_5F9028: FLdPr Me
+  loc_5F902B: MemLdRfVar from_stack_1.global_52
+  loc_5F902E: Redim
+  loc_5F9038: Branch loc_5F9060
+  loc_5F903B: LitI4 0
+  loc_5F9040: FLdPr Me
+  loc_5F9043: MemLdStr global_52
+  loc_5F9046: LitI2_Byte 1
+  loc_5F9048: FnUBound
+  loc_5F904A: LitI4 1
+  loc_5F904F: AddI4
+  loc_5F9050: FLdPr Me
+  loc_5F9053: MemLdRfVar from_stack_1.global_52
+  loc_5F9056: RedimPreserve
+  loc_5F9060: FLdPr Me
+  loc_5F9063: MemLdStr global_52
+  loc_5F9066: LitI2_Byte 1
+  loc_5F9068: FnUBound
+  loc_5F906A: CI2I4
+  loc_5F906B: FLdPr Me
+  loc_5F906E: MemStI2 global_56
+  loc_5F9071: FLdI2 arg_C
+  loc_5F9074: FLdPr Me
+  loc_5F9077: MemLdI2 global_56
+  loc_5F907A: LitI2_Byte 1
+  loc_5F907C: SubI2
+  loc_5F907D: CI4UI1
+  loc_5F907E: FLdPr Me
+  loc_5F9081: MemLdStr global_52
+  loc_5F9084: Ary1LdPr
+  loc_5F9085: MemStI2 global_0
+  loc_5F9088: ILdI4 arg_10
+  loc_5F908B: FLdPr Me
+  loc_5F908E: MemLdI2 global_56
+  loc_5F9091: LitI2_Byte 1
+  loc_5F9093: SubI2
+  loc_5F9094: CI4UI1
+  loc_5F9095: FLdPr Me
+  loc_5F9098: MemLdStr global_52
+  loc_5F909B: Ary1LdPr
+  loc_5F909C: MemStStrCopy
+  loc_5F90A0: ILdI4 arg_14
+  loc_5F90A3: FLdPr Me
+  loc_5F90A6: MemLdI2 global_56
+  loc_5F90A9: LitI2_Byte 1
+  loc_5F90AB: SubI2
+  loc_5F90AC: CI4UI1
+  loc_5F90AD: FLdPr Me
+  loc_5F90B0: MemLdStr global_52
+  loc_5F90B3: Ary1LdPr
+  loc_5F90B4: MemStStrCopy
+  loc_5F90B8: ILdI4 arg_18
+  loc_5F90BB: FLdPr Me
+  loc_5F90BE: MemLdI2 global_56
+  loc_5F90C1: LitI2_Byte 1
+  loc_5F90C3: SubI2
+  loc_5F90C4: CI4UI1
+  loc_5F90C5: FLdPr Me
+  loc_5F90C8: MemLdStr global_52
+  loc_5F90CB: Ary1LdPr
+  loc_5F90CC: MemLdRfVar from_stack_1.global_12
+  loc_5F90CF: StFixedStr
+  loc_5F90D2: ExitProcCbHresult
+End Function
+
+Private Function Proc_90_1_5CC334() '5CC334
+  'Data Table: 403968
+  loc_5CC324: FLdPr Me
+  loc_5CC327: MemLdI2 global_56
+  loc_5CC32A: FStI2 var_86
+  loc_5CC32D: ExitProcCbHresult
+End Function
+
+Private Function Proc_90_2_5D48DC() '5D48DC
+  'Data Table: 403968
+  loc_5D48B8: LitI2_Byte 0
+  loc_5D48BA: FStI2 var_88
+  loc_5D48BD: FLdPr Me
+  loc_5D48C0: MemLdI2 global_56
+  loc_5D48C3: LitI2_Byte 0
+  loc_5D48C5: EqI2
+  loc_5D48C6: BranchF loc_5D48CE
+  loc_5D48C9: LitI2_Byte &HFF
+  loc_5D48CB: FStI2 var_88
+  loc_5D48CE: FLdI2 var_88
+  loc_5D48D1: FStI2 var_86
+  loc_5D48D4: ExitProcCbHresult
+  loc_5D48DA: FFree1Ad var_FEA
+End Function
+
+Private Function Proc_90_3_5D6754(arg_C) '5D6754
+  'Data Table: 403968
+  loc_5D6728: FLdPr Me
+  loc_5D672B: MemLdI2 global_56
+  loc_5D672E: LitI2_Byte 0
+  loc_5D6730: GtI2
+  loc_5D6731: BranchF loc_5D6748
+  loc_5D6734: FLdI2 arg_C
+  loc_5D6737: CI4UI1
+  loc_5D6738: FLdPr Me
+  loc_5D673B: MemLdStr global_52
+  loc_5D673E: Ary1LdPr
+  loc_5D673F: MemLdI2 global_0
+  loc_5D6742: FStI2 var_86
+  loc_5D6745: Branch loc_5D674D
+  loc_5D6748: LitI2_Byte &HFF
+  loc_5D674A: FStI2 var_86
+  loc_5D674D: ExitProcCbHresult
+End Function
+
+Private Function Proc_90_4_5D7BBC(arg_C) '5D7BBC
+  'Data Table: 403968
+  loc_5D7B8C: ZeroRetVal
+  loc_5D7B8E: FLdPr Me
+  loc_5D7B91: MemLdI2 global_56
+  loc_5D7B94: LitI2_Byte 0
+  loc_5D7B96: GtI2
+  loc_5D7B97: BranchF loc_5D7BAE
+  loc_5D7B9A: FLdI2 arg_C
+  loc_5D7B9D: CI4UI1
+  loc_5D7B9E: FLdPr Me
+  loc_5D7BA1: MemLdStr global_52
+  loc_5D7BA4: Ary1LdPr
+  loc_5D7BA5: MemLdStr global_4
+  loc_5D7BA8: FStStrCopy var_88
+  loc_5D7BAB: Branch loc_5D7BB4
+  loc_5D7BAE: LitStr vbNullString
+  loc_5D7BB1: FStStrCopy var_88
+  loc_5D7BB4: ExitProcCbHresult
+End Function
+
+Private Function Proc_90_5_5D79C8(arg_C) '5D79C8
+  'Data Table: 403968
+  loc_5D7998: ZeroRetVal
+  loc_5D799A: FLdPr Me
+  loc_5D799D: MemLdI2 global_56
+  loc_5D79A0: LitI2_Byte 0
+  loc_5D79A2: GtI2
+  loc_5D79A3: BranchF loc_5D79BA
+  loc_5D79A6: FLdI2 arg_C
+  loc_5D79A9: CI4UI1
+  loc_5D79AA: FLdPr Me
+  loc_5D79AD: MemLdStr global_52
+  loc_5D79B0: Ary1LdPr
+  loc_5D79B1: MemLdStr global_8
+  loc_5D79B4: FStStrCopy var_88
+  loc_5D79B7: Branch loc_5D79C0
+  loc_5D79BA: LitStr vbNullString
+  loc_5D79BD: FStStrCopy var_88
+  loc_5D79C0: ExitProcCbHresult
+End Function
+
+Private Function Proc_90_6_5DB720(arg_C) '5DB720
+  'Data Table: 403968
+  loc_5DB6E0: ZeroRetVal
+  loc_5DB6E2: FLdPr Me
+  loc_5DB6E5: MemLdI2 global_56
+  loc_5DB6E8: LitI2_Byte 0
+  loc_5DB6EA: GtI2
+  loc_5DB6EB: BranchF loc_5DB711
+  loc_5DB6EE: FLdI2 arg_C
+  loc_5DB6F1: CI4UI1
+  loc_5DB6F2: FLdPr Me
+  loc_5DB6F5: MemLdStr global_52
+  loc_5DB6F8: Ary1LdPr
+  loc_5DB6F9: MemLdStr global_4
+  loc_5DB6FC: FLdI2 arg_C
+  loc_5DB6FF: CI4UI1
+  loc_5DB700: FLdPr Me
+  loc_5DB703: MemLdStr global_52
+  loc_5DB706: Ary1LdPr
+  loc_5DB707: MemLdStr global_8
+  loc_5DB70A: ConcatStr
+  loc_5DB70B: FStStr var_88
+  loc_5DB70E: Branch loc_5DB717
+  loc_5DB711: LitStr vbNullString
+  loc_5DB714: FStStrCopy var_88
+  loc_5DB717: ExitProcCbHresult
+  loc_5DB71D: MemLdRfVar from_stack_1.global_0
+End Function
+
+Private Function Proc_90_7_5D9488(arg_C) '5D9488
+  'Data Table: 403968
+  loc_5D9454: ZeroRetVal
+  loc_5D9456: FLdPr Me
+  loc_5D9459: MemLdI2 global_56
+  loc_5D945C: LitI2_Byte 0
+  loc_5D945E: GtI2
+  loc_5D945F: BranchF loc_5D9479
+  loc_5D9462: FLdI2 arg_C
+  loc_5D9465: CI4UI1
+  loc_5D9466: FLdPr Me
+  loc_5D9469: MemLdStr global_52
+  loc_5D946C: Ary1LdPr
+  loc_5D946D: MemLdRfVar from_stack_1.global_12
+  loc_5D9470: LdFixedStr
+  loc_5D9473: FStStr var_88
+  loc_5D9476: Branch loc_5D947F
+  loc_5D9479: LitStr vbNullString
+  loc_5D947C: FStStrCopy var_88
+  loc_5D947F: ExitProcCbHresult
+End Function
+
+Private Function Proc_90_8_5CF6C4() '5CF6C4
+  'Data Table: 403968
+  loc_5CF6B0: LitI2_Byte 0
+  loc_5CF6B2: FLdPr Me
+  loc_5CF6B5: MemStI2 global_56
+  loc_5CF6B8: FLdPr Me
+  loc_5CF6BB: MemLdRfVar from_stack_1.global_52
+  loc_5CF6BE: EraseDestruct
+  loc_5CF6C2: ExitProcHresult
+End Function
+
+Private Function Proc_90_9_5CF680() '5CF680
+  'Data Table: 403968
+  loc_5CF66C: LitI2_Byte 0
+  loc_5CF66E: FLdPr Me
+  loc_5CF671: MemStI2 global_56
+  loc_5CF674: FLdPr Me
+  loc_5CF677: MemLdRfVar from_stack_1.global_52
+  loc_5CF67A: EraseDestruct
+  loc_5CF67E: ExitProcHresult
+End Function

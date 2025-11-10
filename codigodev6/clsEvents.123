@@ -1,0 +1,134 @@
+
+Private Function Proc_171_0_5CA238(arg_C) '5CA238
+  'Data Table: 402B40
+  loc_5CA22C: ILdI4 arg_C
+  loc_5CA22F: FLdPr Me
+  loc_5CA232: MemStAd
+  loc_5CA236: ExitProcHresult
+End Function
+
+Private Function Proc_171_1_61B7C4(arg_C, arg_10) '61B7C4
+  'Data Table: 402B40
+  loc_61B68C: ILdRf arg_C
+  loc_61B68F: FStStrCopy var_8C
+  loc_61B692: FLdRfVar var_9C
+  loc_61B695: ILdRf var_8C
+  loc_61B698: Call Me.VTable_24()
+  loc_61B69D: FLdRfVar var_9C
+  loc_61B6A0: NotVar var_AC
+  loc_61B6A4: CBoolVarNull
+  loc_61B6A6: FFree1Var var_9C = ""
+  loc_61B6A9: BranchF loc_61B6B7
+  loc_61B6AC: LitI2_Byte 0
+  loc_61B6AE: FStI2 var_86
+  loc_61B6B1: ExitProcCbHresult
+  loc_61B6B7: ILdRf var_8C
+  loc_61B6BA: FStStrCopy var_B0
+  loc_61B6BD: ILdRf var_B0
+  loc_61B6C0: LitStr "ClickButton"
+  loc_61B6C3: EqStr
+  loc_61B6C5: BranchF loc_61B6E5
+  loc_61B6C8: ILdRfDarg arg_10
+  loc_61B6CE: CStrVar
+  loc_61B6D0: CVarStr var_9C
+  loc_61B6D3: PopAdLdVar
+  loc_61B6D4: FLdPr Me
+  loc_61B6D7: RaiseEvent
+  loc_61B6DF: FFree1Var var_9C = ""
+  loc_61B6E2: Branch loc_61B7B8
+  loc_61B6E5: ILdRf var_B0
+  loc_61B6E8: LitStr "ClickButtonAnteriores"
+  loc_61B6EB: EqStr
+  loc_61B6ED: BranchF loc_61B709
+  loc_61B6F0: ILdRfDarg arg_10
+  loc_61B6F6: CI2Var
+  loc_61B6F7: CVarI2 var_D0
+  loc_61B6FA: PopAdLdVar
+  loc_61B6FB: FLdPr Me
+  loc_61B6FE: RaiseEvent
+  loc_61B706: Branch loc_61B7B8
+  loc_61B709: ILdRf var_B0
+  loc_61B70C: LitStr "ClickButtonEnCurso"
+  loc_61B70F: EqStr
+  loc_61B711: BranchF loc_61B72D
+  loc_61B714: ILdRfDarg arg_10
+  loc_61B71A: CI2Var
+  loc_61B71B: CVarI2 var_D0
+  loc_61B71E: PopAdLdVar
+  loc_61B71F: FLdPr Me
+  loc_61B722: RaiseEvent
+  loc_61B72A: Branch loc_61B7B8
+  loc_61B72D: ILdRf var_B0
+  loc_61B730: LitStr "FormLoad"
+  loc_61B733: EqStr
+  loc_61B735: BranchF loc_61B751
+  loc_61B738: ILdRfDarg arg_10
+  loc_61B73E: CI2Var
+  loc_61B73F: CVarI2 var_D0
+  loc_61B742: PopAdLdVar
+  loc_61B743: FLdPr Me
+  loc_61B746: RaiseEvent
+  loc_61B74E: Branch loc_61B7B8
+  loc_61B751: ILdRf var_B0
+  loc_61B754: LitStr "FormLoadDom"
+  loc_61B757: EqStr
+  loc_61B759: BranchF loc_61B771
+  loc_61B75C: ILdRf arg_10
+  loc_61B75F: CDargRef
+  loc_61B763: FLdPr Me
+  loc_61B766: RaiseEvent
+  loc_61B76E: Branch loc_61B7B8
+  loc_61B771: ILdRf var_B0
+  loc_61B774: LitStr "Activate"
+  loc_61B777: EqStr
+  loc_61B779: BranchF loc_61B795
+  loc_61B77C: ILdRfDarg arg_10
+  loc_61B782: CI2Var
+  loc_61B783: CVarI2 var_D0
+  loc_61B786: PopAdLdVar
+  loc_61B787: FLdPr Me
+  loc_61B78A: RaiseEvent
+  loc_61B792: Branch loc_61B7B8
+  loc_61B795: ILdRf var_B0
+  loc_61B798: LitStr "KeyFirstMedition"
+  loc_61B79B: EqStr
+  loc_61B79D: BranchF loc_61B7B8
+  loc_61B7A0: ILdRfDarg arg_10
+  loc_61B7A6: CI4Var
+  loc_61B7A8: CVarI4
+  loc_61B7AC: PopAdLdVar
+  loc_61B7AD: FLdPr Me
+  loc_61B7B0: RaiseEvent
+  loc_61B7B8: LitI2_Byte &HFF
+  loc_61B7BA: FStI2 var_86
+  loc_61B7BD: ExitProcCbHresult
+End Function
+
+Private Function Proc_171_2_5E7020(arg_C) '5E7020
+  'Data Table: 402B40
+  loc_5E6FBC: ILdRf arg_C
+  loc_5E6FBF: FStStrCopy var_98
+  loc_5E6FC2: ZeroRetValVar
+  loc_5E6FC4: FLdRfVar var_A0
+  loc_5E6FC7: FLdPr Me
+  loc_5E6FCA: MemLdPr global_60
+  loc_5E6FD2: FLdZeroAd var_A0
+  loc_5E6FD5: FStAdFuncNoPop
+  loc_5E6FD8: FLdRfVar var_9C
+  loc_5E6FDB: ForEachCollAd var_A8
+  loc_5E6FE1: FLdRfVar var_98
+  loc_5E6FE4: CDargRef
+  loc_5E6FE8: FLdPr var_9C
+  loc_5E6FEB: LateMemCallLdVar var_C8, .hookedEvent
+  loc_5E6FF3: CBoolVarNull
+  loc_5E6FF5: FFree1Var var_C8 = ""
+  loc_5E6FF8: BranchF loc_5E7008
+  loc_5E6FFB: LitVar_TRUE var_B8
+  loc_5E6FFE: FStVar var_94
+  loc_5E7002: ExitProcCbHresult
+  loc_5E7008: FLdRfVar var_9C
+  loc_5E700B: NextEachCollAd var_A8
+  loc_5E7011: LitVar_FALSE
+  loc_5E7015: FStVar var_94
+  loc_5E7019: ExitProcCbHresult
+End Function

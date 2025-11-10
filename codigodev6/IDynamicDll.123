@@ -1,0 +1,60 @@
+
+Private Function Proc_139_0_5C8794() '5C8794
+  'Data Table: 403B28
+  loc_5C8790: ExitProcHresult
+End Function
+
+Private Function Proc_139_1_5C9AB4() '5C9AB4
+  'Data Table: 403B28
+  loc_5C9AAC: ZeroRetVal
+  loc_5C9AAE: ExitProcCbHresult
+End Function
+
+Private Function Proc_139_2_5C8898() '5C8898
+  'Data Table: 403B28
+  loc_5C8894: ExitProcHresult
+End Function
+
+Private Function Proc_139_3_5CA108() '5CA108
+  'Data Table: 403B28
+  loc_5CA100: ZeroRetVal
+  loc_5CA102: ExitProcCbHresult
+End Function
+
+Private Function Proc_139_4_5CA450() '5CA450
+  'Data Table: 403B28
+  loc_5CA448: ZeroRetVal
+  loc_5CA44A: ExitProcCbHresult
+End Function
+
+Private Function Proc_139_5_5C9618() '5C9618
+  'Data Table: 403B28
+  loc_5C9610: ExitProcCbHresult
+End Function
+
+Private Function Proc_139_6_5CA324() '5CA324
+  'Data Table: 403B28
+  loc_5CA31C: ZeroRetVal
+  loc_5CA31E: ExitProcCbHresult
+End Function
+
+Private Function Proc_139_7_5C9C1C() '5C9C1C
+  'Data Table: 403B28
+  loc_5C9C14: ZeroRetVal
+  loc_5C9C16: ExitProcCbHresult
+End Function
+
+Private Function Proc_139_8_5C8760() '5C8760
+  'Data Table: 403B28
+  loc_5C875C: ExitProcHresult
+End Function
+
+Private Function Proc_139_9_5C872C() '5C872C
+  'Data Table: 403B28
+  loc_5C8728: ExitProcHresult
+End Function
+
+Private Function Proc_139_10_5C86F8() '5C86F8
+  'Data Table: 403B28
+  loc_5C86F4: ExitProcHresult
+End Function

@@ -1,0 +1,113 @@
+
+Private Function Proc_136_0_5E70D8(arg_C, arg_10) '5E70D8
+  'Data Table: 4035F0
+  loc_5E706C: LitI2_Byte &HFF
+  loc_5E706E: FStI2 var_86
+  loc_5E7071: FLdRfVar var_8E
+  loc_5E7074: ILdRf arg_10
+  loc_5E7077: ILdRf arg_C
+  loc_5E707A: FLdRfVar var_8C
+  loc_5E707D: ImpAdLdRf MemVar_74C760
+  loc_5E7080: NewIfNullPr Formx
+  loc_5E7083: from_stack_1v = Formx.global_4589716Get()
+  loc_5E7088: FLdPr var_8C
+  loc_5E708B: Call 0.Method_arg_37C ()
+  loc_5E7090: FLdI2 var_8E
+  loc_5E7093: NotI4
+  loc_5E7094: FFree1Ad var_8C
+  loc_5E7097: BranchF loc_5E70D0
+  loc_5E709A: LitVar_Missing var_110
+  loc_5E709D: LitVar_Missing var_F0
+  loc_5E70A0: LitVarStr var_C0, "Aviso"
+  loc_5E70A5: FStVarCopyObj var_D0
+  loc_5E70A8: FLdRfVar var_D0
+  loc_5E70AB: LitI4 &H40
+  loc_5E70B0: LitVarStr var_A0, "Se produjo un error al intentar obtener datos del mensaje solicitado"
+  loc_5E70B5: FStVarCopyObj var_B0
+  loc_5E70B8: FLdRfVar var_B0
+  loc_5E70BB: ImpAdCallFPR4 MsgBox(, , , , )
+  loc_5E70C0: FFreeVar var_B0 = "": var_D0 = "": var_F0 = ""
+  loc_5E70CB: LitI2_Byte 0
+  loc_5E70CD: FStI2 var_86
+  loc_5E70D0: ExitProcCbHresult
+End Function
+
+Private Function Proc_136_1_5DCBA8(arg_C, arg_10, arg_14) '5DCBA8
+  'Data Table: 4035F0
+  loc_5DCB64: ILdRf arg_C
+  loc_5DCB67: CDargRef
+  loc_5DCB6B: ILdRf arg_14
+  loc_5DCB6E: CDargRef
+  loc_5DCB72: FLdRfVar var_A8
+  loc_5DCB75: ILdRf arg_10
+  loc_5DCB78: CVarRef
+  loc_5DCB7D: FLdRfVar var_88
+  loc_5DCB80: ImpAdLdPr unk_4035F8
+  loc_5DCB83: MemLdPr global_0
+  loc_5DCB86:  = Forms
+  loc_5DCB8B: FLdPr var_88
+  loc_5DCB8E: from_stack_2 = Me.Item(from_stack_1)
+  loc_5DCB93: FLdRfVar var_A8
+  loc_5DCB96: LdPrVar
+  loc_5DCB98: LateMemCall
+  loc_5DCB9E: FFree1Ad var_88
+  loc_5DCBA1: FFree1Var var_A8 = ""
+  loc_5DCBA4: ExitProcHresult
+End Function
+
+Private Function Proc_136_2_5D3564(arg_C) '5D3564
+  'Data Table: 4035F0
+  loc_5D3544: ILdRf arg_C
+  loc_5D3547: ImpAdCallI2 Proc_94_7_603DD0()
+  loc_5D354C: BranchF loc_5D3557
+  loc_5D354F: LitI2_Byte &HFF
+  loc_5D3551: FStI2 var_86
+  loc_5D3554: Branch loc_5D355C
+  loc_5D3557: LitI2_Byte 0
+  loc_5D3559: FStI2 var_86
+  loc_5D355C: ExitProcCbHresult
+End Function
+
+Private Function Proc_136_3_5D0818() '5D0818
+  'Data Table: 4035F0
+  loc_5D0804: ZeroRetVal
+  loc_5D0806: ImpAdLdRf MemVar_74A220
+  loc_5D0809: NewIfNullAd
+  loc_5D080C: FStAd var_88 
+  loc_5D0810: ExitProcCbHresult
+End Function
+
+Private Function Proc_136_4_5C99C4() '5C99C4
+  'Data Table: 4035F0
+  loc_5C99BC: ZeroRetVal
+  loc_5C99BE: ExitProcCbHresult
+End Function
+
+Private Function Proc_136_5_5D96F0() '5D96F0
+  'Data Table: 4035F0
+  loc_5D96C4: ZeroRetVal
+  loc_5D96C6: FLdRfVar var_90
+  loc_5D96C9: FLdRfVar var_8C
+  loc_5D96CC: ImpAdLdRf MemVar_7520D4
+  loc_5D96CF: NewIfNullPr Global
+  loc_5D96D2:  = Global.App
+  loc_5D96D7: FLdPr var_8C
+  loc_5D96DA:  = App.Path
+  loc_5D96DF: FLdZeroAd var_90
+  loc_5D96E2: FStStr var_88
+  loc_5D96E5: FFree1Ad var_8C
+  loc_5D96E8: ExitProcCbHresult
+End Function
+
+Private Function Proc_136_6_5D6CAC(arg_C) '5D6CAC
+  'Data Table: 4035F0
+  loc_5D6C8C: ZeroRetValVar
+  loc_5D6C8E: FLdRfVar var_9E
+  loc_5D6C91: FLdRfVar var_9C
+  loc_5D6C94: FLdRfVar var_98
+  loc_5D6C97: NewIfNullPr FORECOURT
+  loc_5D6C9A:  = FORECOURT.Picture
+  loc_5D6C9F: ILdRf var_9C
+  loc_5D6CA2: IStStrCopy arg_C
+  loc_5D6CA6: ExitProcCbHresult
+End Function

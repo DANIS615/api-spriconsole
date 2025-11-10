@@ -1,0 +1,500 @@
+
+Private Function Proc_141_0_64F528(arg_C) '64F528
+  'Data Table: 404FEC
+  loc_64F2B0: ILdRf arg_C
+  loc_64F2B3: FStAd var_88 
+  loc_64F2B7: FLdRfVar var_94
+  loc_64F2BA: FLdPr var_88
+  loc_64F2BD: Call 0.Method_arg_5C ()
+  loc_64F2C2: FLdRfVar var_F8
+  loc_64F2C5: FLdPr var_88
+  loc_64F2C8: Call 0.Method_arg_5C ()
+  loc_64F2CD: FLdRfVar var_16C
+  loc_64F2D0: FLdPr var_88
+  loc_64F2D3: Call 0.Method_arg_5C ()
+  loc_64F2D8: LitVarI2 var_C4, 2
+  loc_64F2DD: LitI4 7
+  loc_64F2E2: FLdZeroAd var_94
+  loc_64F2E5: CVarStr var_A4
+  loc_64F2E8: FLdRfVar var_D4
+  loc_64F2EB: ImpAdCallFPR4  = Mid(, , )
+  loc_64F2F0: FLdRfVar var_D4
+  loc_64F2F3: LitVarStr var_E4, "/"
+  loc_64F2F8: ConcatVar var_F4
+  loc_64F2FC: LitVarI2 var_128, 2
+  loc_64F301: LitI4 5
+  loc_64F306: FLdZeroAd var_F8
+  loc_64F309: CVarStr var_108
+  loc_64F30C: FLdRfVar var_138
+  loc_64F30F: ImpAdCallFPR4  = Mid(, , )
+  loc_64F314: FLdRfVar var_138
+  loc_64F317: ConcatVar var_148
+  loc_64F31B: LitVarStr var_158, "/"
+  loc_64F320: ConcatVar var_168
+  loc_64F324: LitVarI2 var_19C, 4
+  loc_64F329: LitI4 1
+  loc_64F32E: FLdZeroAd var_16C
+  loc_64F331: CVarStr var_17C
+  loc_64F334: FLdRfVar var_1AC
+  loc_64F337: ImpAdCallFPR4  = Mid(, , )
+  loc_64F33C: FLdRfVar var_1AC
+  loc_64F33F: ConcatVar var_1BC
+  loc_64F343: CStrVarTmp
+  loc_64F344: FStStrNoPop var_1C0
+  loc_64F347: FLdPr Me
+  loc_64F34A: MemStStrCopy
+  loc_64F34E: FFree1Str var_1C0
+  loc_64F351: FFreeVar var_A4 = "": var_C4 = "": var_D4 = "": var_108 = "": var_128 = "": var_F4 = "": var_138 = "": var_148 = "": var_17C = "": var_19C = "": var_168 = "": var_1AC = ""
+  loc_64F36E: FLdRfVar var_94
+  loc_64F371: FLdPr var_88
+  loc_64F374: Call 0.Method_arg_5C ()
+  loc_64F379: FLdRfVar var_F8
+  loc_64F37C: FLdPr var_88
+  loc_64F37F: Call 0.Method_arg_5C ()
+  loc_64F384: LitVarI2 var_C4, 2
+  loc_64F389: LitI4 9
+  loc_64F38E: FLdZeroAd var_94
+  loc_64F391: CVarStr var_A4
+  loc_64F394: FLdRfVar var_D4
+  loc_64F397: ImpAdCallFPR4  = Mid(, , )
+  loc_64F39C: FLdRfVar var_D4
+  loc_64F39F: LitVarStr var_E4, ":"
+  loc_64F3A4: ConcatVar var_F4
+  loc_64F3A8: LitVarI2 var_128, 2
+  loc_64F3AD: LitI4 &HB
+  loc_64F3B2: FLdZeroAd var_F8
+  loc_64F3B5: CVarStr var_108
+  loc_64F3B8: FLdRfVar var_138
+  loc_64F3BB: ImpAdCallFPR4  = Mid(, , )
+  loc_64F3C0: FLdRfVar var_138
+  loc_64F3C3: ConcatVar var_148
+  loc_64F3C7: CStrVarTmp
+  loc_64F3C8: FStStrNoPop var_16C
+  loc_64F3CB: FLdPr Me
+  loc_64F3CE: MemStStrCopy
+  loc_64F3D2: FFree1Str var_16C
+  loc_64F3D5: FFreeVar var_A4 = "": var_C4 = "": var_D4 = "": var_108 = "": var_128 = "": var_F4 = "": var_138 = ""
+  loc_64F3E8: FLdRfVar var_1C2
+  loc_64F3EB: Call Me.VTable_2C()
+  loc_64F3F0: FLdI2 var_1C2
+  loc_64F3F3: FLdRfVar var_94
+  loc_64F3F6: FLdPr var_88
+  loc_64F3F9: Me = from_stack_1
+  loc_64F3FE: ILdRf var_94
+  loc_64F401: ImpAdCallI2 Proc_98_0_5D7360()
+  loc_64F406: NotI4
+  loc_64F407: OrI4
+  loc_64F408: FFree1Str var_94
+  loc_64F40B: BranchF loc_64F40F
+  loc_64F40E: ExitProcHresult
+  loc_64F40F: New Me
+  loc_64F413: FStAdFuncNoPop
+  loc_64F416: FLdPr Me
+  loc_64F419: Set from_stack_2 = Me(from_stack_1)
+  loc_64F41E: FFree1Ad var_1C8
+  loc_64F421: ILdRf var_88
+  loc_64F424: FLdPr Me
+  loc_64F427: MemStAd
+  loc_64F42B: LitI2_Byte &HFF
+  loc_64F42D: PopTmpLdAd2 var_1C2
+  loc_64F430: FLdRfVar var_1C8
+  loc_64F433: FLdPr Me
+  loc_64F43B: FLdPr var_1C8
+  loc_64F43E: frmGenericMsg.GridVisible = from_stack_1v
+  loc_64F443: FFree1Ad var_1C8
+  loc_64F446: LitI2_Byte 0
+  loc_64F448: PopTmpLdAd2 var_1C2
+  loc_64F44B: FLdRfVar var_1C8
+  loc_64F44E: FLdPr Me
+  loc_64F456: FLdPr var_1C8
+  loc_64F459: frmGenericMsg.Button1Visible = from_stack_1v
+  loc_64F45E: FFree1Ad var_1C8
+  loc_64F461: LitI2_Byte &HFF
+  loc_64F463: PopTmpLdAd2 var_1C2
+  loc_64F466: FLdRfVar var_1C8
+  loc_64F469: FLdPr Me
+  loc_64F471: FLdPr var_1C8
+  loc_64F474: frmGenericMsg.Button2 = from_stack_1v
+  loc_64F479: FFree1Ad var_1C8
+  loc_64F47C: LitStr "&Aceptar"
+  loc_64F47F: FStStrCopy var_94
+  loc_64F482: FLdRfVar var_94
+  loc_64F485: FLdRfVar var_1C8
+  loc_64F488: FLdPr Me
+  loc_64F490: FLdPr var_1C8
+  loc_64F493: frmGenericMsg.Button2Text = from_stack_1v
+  loc_64F498: FFree1Str var_94
+  loc_64F49B: FFree1Ad var_1C8
+  loc_64F49E: LitStr "Aviso de cambio de precios"
+  loc_64F4A1: FStStrCopy var_94
+  loc_64F4A4: FLdRfVar var_94
+  loc_64F4A7: FLdRfVar var_1C8
+  loc_64F4AA: FLdPr Me
+  loc_64F4B2: FLdPr var_1C8
+  loc_64F4B5: frmGenericMsg.MsgTitle = from_stack_1v
+  loc_64F4BA: FFree1Str var_94
+  loc_64F4BD: FFree1Ad var_1C8
+  loc_64F4C0: LitI2_Byte &HFF
+  loc_64F4C2: PopTmpLdAd2 var_1C2
+  loc_64F4C5: FLdRfVar var_1C8
+  loc_64F4C8: FLdPr Me
+  loc_64F4D0: FLdPr var_1C8
+  loc_64F4D3: frmGenericMsg.TimerEnable = from_stack_1v
+  loc_64F4D8: FFree1Ad var_1C8
+  loc_64F4DB: LitI2 1000
+  loc_64F4DE: PopTmpLdAd2 var_1C2
+  loc_64F4E1: FLdRfVar var_1C8
+  loc_64F4E4: FLdPr Me
+  loc_64F4EC: FLdPr var_1C8
+  loc_64F4EF: frmGenericMsg.TimerInterval = from_stack_1v
+  loc_64F4F4: FFree1Ad var_1C8
+  loc_64F4F7: Call Me.VTable_28()
+  loc_64F4FC: Call Me.VTable_24()
+  loc_64F501: LitVar_Missing var_E4
+  loc_64F504: PopAdLdVar
+  loc_64F505: LitVarI4
+  loc_64F50D: PopAdLdVar
+  loc_64F50E: FLdRfVar var_1C8
+  loc_64F511: FLdPr Me
+  loc_64F519: FLdPr var_1C8
+  loc_64F51C: Me.Show from_stack_1, from_stack_2
+  loc_64F521: FFree1Ad var_1C8
+  loc_64F524: ExitProcHresult
+End Function
+
+Private Function Proc_141_1_62FB6C() '62FB6C
+  'Data Table: 404FEC
+  loc_62F9AC: LitVarI4
+  loc_62F9B4: PopAdLdVar
+  loc_62F9B5: FLdRfVar var_88
+  loc_62F9B8: FLdPr Me
+  loc_62F9C0: FLdPr var_88
+  loc_62F9C3: VCallAd Control_ID_
+  loc_62F9C6: FStAdFunc var_9C
+  loc_62F9C9: FLdPr var_9C
+  loc_62F9CC: LateIdSt
+  loc_62F9D1: FFreeAd var_88 = ""
+  loc_62F9D8: LitVarI4
+  loc_62F9E0: PopAdLdVar
+  loc_62F9E1: FLdRfVar var_88
+  loc_62F9E4: FLdPr Me
+  loc_62F9EC: FLdPr var_88
+  loc_62F9EF: VCallAd Control_ID_
+  loc_62F9F2: FStAdFunc var_9C
+  loc_62F9F5: FLdPr var_9C
+  loc_62F9F8: LateIdSt
+  loc_62F9FD: FFreeAd var_88 = ""
+  loc_62FA04: LitVarI4
+  loc_62FA0C: PopAdLdVar
+  loc_62FA0D: FLdRfVar var_88
+  loc_62FA10: FLdPr Me
+  loc_62FA18: FLdPr var_88
+  loc_62FA1B: VCallAd Control_ID_
+  loc_62FA1E: FStAdFunc var_9C
+  loc_62FA21: FLdPr var_9C
+  loc_62FA24: LateIdSt
+  loc_62FA29: FFreeAd var_88 = ""
+  loc_62FA30: LitVarI4
+  loc_62FA38: PopAdLdVar
+  loc_62FA39: LitVar_TRUE var_AC
+  loc_62FA3C: PopAdLdVar
+  loc_62FA3D: FLdRfVar var_88
+  loc_62FA40: FLdPr Me
+  loc_62FA48: FLdPr var_88
+  loc_62FA4B: VCallAd Control_ID_
+  loc_62FA4E: FStAdFunc var_9C
+  loc_62FA51: FLdPr var_9C
+  loc_62FA54: LateIdCallSt
+  loc_62FA5C: FFreeAd var_88 = ""
+  loc_62FA63: LitVarI4
+  loc_62FA6B: PopAdLdVar
+  loc_62FA6C: LitVar_FALSE
+  loc_62FA70: PopAdLdVar
+  loc_62FA71: FLdRfVar var_88
+  loc_62FA74: FLdPr Me
+  loc_62FA7C: FLdPr var_88
+  loc_62FA7F: VCallAd Control_ID_
+  loc_62FA82: FStAdFunc var_9C
+  loc_62FA85: FLdPr var_9C
+  loc_62FA88: LateIdCallSt
+  loc_62FA90: FFreeAd var_88 = ""
+  loc_62FA97: LitVarI4
+  loc_62FA9F: PopAdLdVar
+  loc_62FAA0: LitVar_FALSE
+  loc_62FAA4: PopAdLdVar
+  loc_62FAA5: FLdRfVar var_88
+  loc_62FAA8: FLdPr Me
+  loc_62FAB0: FLdPr var_88
+  loc_62FAB3: VCallAd Control_ID_
+  loc_62FAB6: FStAdFunc var_9C
+  loc_62FAB9: FLdPr var_9C
+  loc_62FABC: LateIdCallSt
+  loc_62FAC4: FFreeAd var_88 = ""
+  loc_62FACB: LitVarI4
+  loc_62FAD3: PopAdLdVar
+  loc_62FAD4: LitVar_FALSE
+  loc_62FAD8: PopAdLdVar
+  loc_62FAD9: FLdRfVar var_88
+  loc_62FADC: FLdPr Me
+  loc_62FAE4: FLdPr var_88
+  loc_62FAE7: VCallAd Control_ID_
+  loc_62FAEA: FStAdFunc var_9C
+  loc_62FAED: FLdPr var_9C
+  loc_62FAF0: LateIdCallSt
+  loc_62FAF8: FFreeAd var_88 = ""
+  loc_62FAFF: LitVarStr var_98, "Arial"
+  loc_62FB04: PopAdLdVar
+  loc_62FB05: FLdRfVar var_88
+  loc_62FB08: FLdPr Me
+  loc_62FB10: FLdPr var_88
+  loc_62FB13: VCallAd Control_ID_
+  loc_62FB16: FStAdFunc var_9C
+  loc_62FB19: FLdPr var_9C
+  loc_62FB1C: LateIdLdVar var_BC DispID_-512 -1
+  loc_62FB23: CastAdVar Me
+  loc_62FB27: FStAdFunc var_C0
+  loc_62FB2A: FLdPr var_C0
+  loc_62FB2D: LateIdSt
+  loc_62FB32: FFreeAd var_88 = "": var_9C = ""
+  loc_62FB3B: FFree1Var var_BC = ""
+  loc_62FB3E: LitI2_Byte &HB
+  loc_62FB40: CR8I2
+  loc_62FB41: CVarR4
+  loc_62FB45: PopAdLdVar
+  loc_62FB46: FLdRfVar var_88
+  loc_62FB49: FLdPr Me
+  loc_62FB51: FLdPr var_88
+  loc_62FB54: VCallAd Control_ID_
+  loc_62FB57: FStAdFunc var_9C
+  loc_62FB5A: FLdPr var_9C
+  loc_62FB5D: LateIdSt
+  loc_62FB62: FFreeAd var_88 = ""
+  loc_62FB69: ExitProcHresult
+End Function
+
+Private Function Proc_141_2_634464() '634464
+  'Data Table: 404FEC
+  loc_6342A0: FLdRfVar var_90
+  loc_6342A3: FLdPr Me
+  loc_6342AB: FLdPr var_90
+  loc_6342AE: VCallAd Control_ID_
+  loc_6342B1: FStAdFunc var_94
+  loc_6342B4: FLdPr var_94
+  loc_6342B7: LateIdCall
+  loc_6342BF: FFreeAd var_90 = ""
+  loc_6342C6: Call Me.VTable_20()
+  loc_6342CB: LitVarStr var_A4, "<FECHA Y HORA     |<PRODUCTO                   |<NIVEL    |<PPU         "
+  loc_6342D0: PopAdLdVar
+  loc_6342D1: FLdRfVar var_90
+  loc_6342D4: FLdPr Me
+  loc_6342DC: FLdPr var_90
+  loc_6342DF: VCallAd Control_ID_
+  loc_6342E2: FStAdFunc var_94
+  loc_6342E5: FLdPr var_94
+  loc_6342E8: LateIdSt
+  loc_6342ED: FFreeAd var_90 = ""
+  loc_6342F4: LitI2_Byte 1
+  loc_6342F6: FLdRfVar var_8C
+  loc_6342F9: LitI2_Byte 5
+  loc_6342FB: ForI2 var_A8
+  loc_634301: LitI2_Byte 1
+  loc_634303: FLdRfVar var_8A
+  loc_634306: FLdRfVar var_AA
+  loc_634309: ImpAdLdRf MemVar_74A220
+  loc_63430C: NewIfNullPr clsProducts
+  loc_63430F: PropBag.WriteProperty(from_stack_1, from_stack_2, from_stack_3)
+  loc_634314: FLdI2 var_AA
+  loc_634317: ForI2 var_AE
+  loc_63431D: FLdRfVar var_B8
+  loc_634320: FLdI2 var_8A
+  loc_634323: FLdI2 var_8C
+  loc_634326: FLdPr Me
+  loc_634329: MemLdPr global_60
+  loc_634331: FLdFPR8 var_B8
+  loc_634334: LitI2_Byte 0
+  loc_634336: CR8I2
+  loc_634337: EqR4
+  loc_634338: BranchF loc_63433E
+  loc_63433B: Branch loc_634458
+  loc_63433E: FLdPr Me
+  loc_634341: MemLdStr global_52
+  loc_634344: LitStr " "
+  loc_634347: ConcatStr
+  loc_634348: FStStrNoPop var_BC
+  loc_63434B: FLdPr Me
+  loc_63434E: MemLdStr global_56
+  loc_634351: ConcatStr
+  loc_634352: CVarStr var_DC
+  loc_634355: LitI4 9
+  loc_63435A: FLdRfVar var_CC
+  loc_63435D: ImpAdCallFPR4  = Chr()
+  loc_634362: FLdRfVar var_CC
+  loc_634365: ConcatVar var_EC
+  loc_634369: FLdRfVar var_F0
+  loc_63436C: FLdI2 var_8A
+  loc_63436F: ImpAdLdRf MemVar_74A220
+  loc_634372: NewIfNullPr clsProducts
+  loc_63437A: FLdZeroAd var_F0
+  loc_63437D: CVarStr var_100
+  loc_634380: ConcatVar var_110
+  loc_634384: LitI4 9
+  loc_634389: FLdRfVar var_120
+  loc_63438C: ImpAdCallFPR4  = Chr()
+  loc_634391: FLdRfVar var_120
+  loc_634394: ConcatVar var_130
+  loc_634398: FLdI2 var_8C
+  loc_63439B: CVarI2 var_A4
+  loc_63439E: ConcatVar var_140
+  loc_6343A2: LitI4 9
+  loc_6343A7: FLdRfVar var_150
+  loc_6343AA: ImpAdCallFPR4  = Chr()
+  loc_6343AF: FLdRfVar var_150
+  loc_6343B2: ConcatVar var_160
+  loc_6343B6: CStrVarTmp
+  loc_6343B7: FStStr var_88
+  loc_6343BA: FFree1Str var_BC
+  loc_6343BD: FFreeVar var_DC = "": var_CC = "": var_EC = "": var_100 = "": var_110 = "": var_120 = "": var_130 = "": var_140 = "": var_150 = ""
+  loc_6343D4: FLdRfVar var_B8
+  loc_6343D7: FLdI2 var_8A
+  loc_6343DA: FLdI2 var_8C
+  loc_6343DD: FLdPr Me
+  loc_6343E0: MemLdPr global_60
+  loc_6343E8: ILdRf var_88
+  loc_6343EB: CVarStr var_180
+  loc_6343EE: LitI4 1
+  loc_6343F3: LitI4 1
+  loc_6343F8: ImpAdLdRf MemVar_74C350
+  loc_6343FB: CVarRef
+  loc_634400: FLdFPR8 var_B8
+  loc_634403: CCyR4
+  loc_634404: CVarCy var_CC
+  loc_634407: FLdRfVar var_DC
+  loc_63440A: ImpAdCallFPR4  = Format(, )
+  loc_63440F: FLdRfVar var_DC
+  loc_634412: ConcatVar var_EC
+  loc_634416: CStrVarTmp
+  loc_634417: FStStr var_88
+  loc_63441A: FFreeVar var_CC = "": var_DC = ""
+  loc_634423: FLdRfVar var_88
+  loc_634426: CDargRef
+  loc_63442A: FLdRfVar var_90
+  loc_63442D: FLdPr Me
+  loc_634435: FLdPr var_90
+  loc_634438: VCallAd Control_ID_
+  loc_63443B: FStAdFunc var_94
+  loc_63443E: FLdPr var_94
+  loc_634441: LateIdCall
+  loc_634449: FFreeAd var_90 = ""
+  loc_634450: FLdRfVar var_8A
+  loc_634453: NextI2 var_AE, loc_63431D
+  loc_634458: FLdRfVar var_8C
+  loc_63445B: NextI2 var_A8, loc_634301
+  loc_634460: ExitProcHresult
+  loc_634461: ILdR8 arg_1F
+End Function
+
+Private Function Proc_141_3_5EF990() '5EF990
+  'Data Table: 404FEC
+  loc_5EF900: FLdRfVar var_86
+  loc_5EF903: Call Me.VTable_2C()
+  loc_5EF908: FLdI2 var_86
+  loc_5EF90B: BranchF loc_5EF94F
+  loc_5EF90E: LitStr "Se realizó un cambio de precios a la hora "
+  loc_5EF911: FLdPr Me
+  loc_5EF914: MemLdStr global_56
+  loc_5EF917: ConcatStr
+  loc_5EF918: FStStrNoPop var_8C
+  loc_5EF91B: LitStr " del día "
+  loc_5EF91E: ConcatStr
+  loc_5EF91F: FStStrNoPop var_90
+  loc_5EF922: FLdPr Me
+  loc_5EF925: MemLdStr global_52
+  loc_5EF928: ConcatStr
+  loc_5EF929: PopTmpLdAdStr
+  loc_5EF92D: FLdRfVar var_94
+  loc_5EF930: FLdPr Me
+  loc_5EF938: FLdPr var_94
+  loc_5EF93B: frmGenericMsg.Msg = from_stack_1v
+  loc_5EF940: FFreeStr var_8C = "": var_90 = ""
+  loc_5EF949: FFree1Ad var_94
+  loc_5EF94C: Branch loc_5EF98D
+  loc_5EF94F: LitStr "Se programó un cambio de precios a la hora "
+  loc_5EF952: FLdPr Me
+  loc_5EF955: MemLdStr global_56
+  loc_5EF958: ConcatStr
+  loc_5EF959: FStStrNoPop var_8C
+  loc_5EF95C: LitStr " del día "
+  loc_5EF95F: ConcatStr
+  loc_5EF960: FStStrNoPop var_90
+  loc_5EF963: FLdPr Me
+  loc_5EF966: MemLdStr global_52
+  loc_5EF969: ConcatStr
+  loc_5EF96A: PopTmpLdAdStr
+  loc_5EF96E: FLdRfVar var_94
+  loc_5EF971: FLdPr Me
+  loc_5EF979: FLdPr var_94
+  loc_5EF97C: frmGenericMsg.Msg = from_stack_1v
+  loc_5EF981: FFreeStr var_8C = "": var_90 = ""
+  loc_5EF98A: FFree1Ad var_94
+  loc_5EF98D: ExitProcHresult
+  loc_5EF98E: FLdPrThis
+End Function
+
+Private Function Proc_141_4_5E27B0() '5E27B0
+  'Data Table: 404FEC
+  loc_5E275C: FLdPr Me
+  loc_5E275F: MemLdStr global_52
+  loc_5E2762: LitStr " "
+  loc_5E2765: ConcatStr
+  loc_5E2766: FStStrNoPop var_94
+  loc_5E2769: FLdPr Me
+  loc_5E276C: MemLdStr global_56
+  loc_5E276F: ConcatStr
+  loc_5E2770: FStStrNoPop var_98
+  loc_5E2773: CDateStr
+  loc_5E2775: FStFPR8 var_90
+  loc_5E2778: FFreeStr var_94 = ""
+  loc_5E277F: FLdFPR8 var_90
+  loc_5E2782: CVarDate var_B8
+  loc_5E2786: HardType
+  loc_5E2787: FLdRfVar var_A8
+  loc_5E278A: ImpAdCallFPR4  = Now
+  loc_5E278F: FLdRfVar var_A8
+  loc_5E2792: LtVarBool
+  loc_5E2794: FFree1Var var_A8 = ""
+  loc_5E2797: BranchF loc_5E27A2
+  loc_5E279A: LitI2_Byte &HFF
+  loc_5E279C: FStI2 var_86
+  loc_5E279F: Branch loc_5E27A7
+  loc_5E27A2: LitI2_Byte 0
+  loc_5E27A4: FStI2 var_86
+  loc_5E27A7: ExitProcCbHresult
+End Function
+
+Private Function Proc_141_5_5D0F64() '5D0F64
+  'Data Table: 404FEC
+  loc_5D0F4C: FLdRfVar var_88
+  loc_5D0F4F: FLdPr Me
+  loc_5D0F57: FLdPr var_88
+  loc_5D0F5A: Call frmGenericMsg.frmUnload()
+  loc_5D0F5F: FFree1Ad var_88
+  loc_5D0F62: ExitProcHresult
+End Function
+
+Private Function Proc_141_6_5C95A8() '5C95A8
+  'Data Table: 404FEC
+  loc_5C95A0: Call Me.VTable_28()
+  loc_5C95A5: ExitProcHresult
+End Function
+
+Public Function global_4214644Get() '405134
+  global_4214644Get = global_4214644
+End Function
+
+Public Sub global_4214644Put(Value) '40514E
+  global_4214644 = Value
+End Sub
+
+Public Sub global_4214644Set(Value) '405168
+  global_4214644 = Value
+End Sub
