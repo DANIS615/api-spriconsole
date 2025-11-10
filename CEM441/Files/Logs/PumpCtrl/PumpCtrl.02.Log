@@ -1,0 +1,940 @@
+----------------------------------------------
+              PUMPCTRL LOG FILE               
+PUMPCTRL INFO: DATE RELEASE Sep 23 2010 09:53:26
+----------------------------------------------
+06/11/2025 19:21:21.195 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 19:21:21.205 - Initialize_DLL                                     - Preset x Producto habilitado[02]: 1
+06/11/2025 19:21:21.206 - Initialize_DLL                                     - Preset x Monto habilitado[02]: 1
+06/11/2025 19:21:21.206 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:21:21.371 - Convert_Estado                                     -  
+06/11/2025 19:21:21.371 - Convert_Estado                                     - estado: 60    xpumps_status: 00    pumps.status: 00    new_status: 60
+06/11/2025 19:21:24.252 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:21:24.513 - Processing_Commands                                - Tipo Cabezal: 3
+06/11/2025 19:21:24.523 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 03
+06/11/2025 19:21:24.856 - Processing_Commands                                - Tipo Cabezal: 3
+06/11/2025 19:21:25.151 - Processing_Commands                                - HOSE LOGICO INFORMADO [02]
+06/11/2025 19:21:25.151 - Processing_Commands                                - Hose: 2      Sale:   000000 $       000.000 L    PPU1: 2916 $
+06/11/2025 19:21:25.865 - Processing_Commands                                - Hose: 0    Totals: 00000000 $    000000.00  L    PPU1: 0100 $  PPU2: 0100 $
+06/11/2025 19:27:26.306 - Initialize_DLL                                     - IMPLEMENTING ADVANCED POLLING POLICY
+06/11/2025 19:27:26.313 - Initialize_DLL                                     - Update PUMPCTRL Data 
+06/11/2025 19:27:26.325 - Initialize_DLL                                     - Preset x Producto habilitado[02]: 1
+06/11/2025 19:27:26.326 - Initialize_DLL                                     - Preset x Monto habilitado[02]: 1
+06/11/2025 19:27:26.328 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:27:26.415 - Initialize_DLL                                     - Update PUMPCTRL Data 
+06/11/2025 19:27:26.430 - Initialize_DLL                                     - Preset x Producto habilitado[02]: 1
+06/11/2025 19:27:26.431 - Initialize_DLL                                     - Preset x Monto habilitado[02]: 1
+06/11/2025 19:27:26.431 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:27:27.833 - Convert_Estado                                     -  
+06/11/2025 19:27:27.833 - Convert_Estado                                     - estado: 60    xpumps_status: 00    pumps.status: 00    new_status: 60
+06/11/2025 19:27:30.339 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:27:30.601 - Processing_Commands                                - Tipo Cabezal: 3
+06/11/2025 19:27:30.896 - Processing_Commands                                - HOSE LOGICO INFORMADO [02]
+06/11/2025 19:27:30.897 - Processing_Commands                                - Hose: 2      Sale:   000000 $       000.000 L    PPU1: 2916 $
+06/11/2025 19:27:31.511 - Processing_Commands                                - Hose: 0    Totals: 00000000 $    000000.00  L    PPU1: 0100 $  PPU2: 0100 $
+06/11/2025 19:27:31.513 - Processing_Commands                                - Hose: 1    Totals: 00000000 $    000000.00  L    PPU1: 2725 $  PPU2: 2725 $
+06/11/2025 19:27:31.515 - Processing_Commands                                - Hose: 2    Totals: 00004794 $    000002.16  L    PPU1: 2421 $  PPU2: 2421 $
+06/11/2025 19:27:31.690 - Processing_Commands                                -  
+06/11/2025 19:27:31.690 - Processing_Commands                                - Sending PPU Command: 0100 $    to Hose: 0
+06/11/2025 19:27:32.269 - Processing_Commands                                -  
+06/11/2025 19:27:32.269 - Processing_Commands                                - Sending PPU Command: 0100 $    to Hose: 1
+06/11/2025 19:27:32.849 - Processing_Commands                                -  
+06/11/2025 19:27:32.849 - Processing_Commands                                - Sending PPU Command: 0100 $    to Hose: 2
+06/11/2025 19:27:34.030 - Processing_Commands                                - Hose: 0    Totals: 00000000 $    000000.00  L    PPU1: 0100 $  PPU2: 0100 $
+06/11/2025 19:27:34.030 - Processing_Commands                                - Hose: 1    Totals: 00000000 $    000000.00  L    PPU1: 0100 $  PPU2: 0100 $
+06/11/2025 19:27:34.031 - Processing_Commands                                - Hose: 2    Totals: 00004794 $    000002.16  L    PPU1: 0100 $  PPU2: 0100 $
+06/11/2025 19:27:43.555 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:27:43.837 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:27:44.968 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:27:45.532 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:27:48.385 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:27:48.674 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:27:55.307 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:02.800 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:12.676 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:14.248 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:16.698 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:16.817 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:17.712 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:18.493 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:18.774 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:19.896 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:20.463 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:21.589 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:21.867 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:22.153 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:23.001 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:23.845 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:24.969 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:25.553 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:26.700 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:27.265 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:27.832 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:29.252 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:29.530 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:29.813 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:30.381 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:30.660 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:30.939 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:28:53.096 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:29:09.239 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:29:13.292 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:29:27.695 - Rx_Estado                                          - min_rx_shot_next: 040    max_rx_shot_next: 062    rx_shot_next: 048
+06/11/2025 19:29:33.241 - Convert_Estado                                     - estado: B0    xpumps_status: 60    pumps.status: 60    new_status: B0
+06/11/2025 19:29:34.913 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:34.913 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:35.235 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:35.317 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:36.508 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:36.592 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:37.571 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:37.655 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:40.133 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:40.217 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:41.195 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:41.280 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:41.931 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:41.931 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:42.250 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:42.335 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:42.989 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:42.990 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:43.313 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:43.398 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:44.993 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:45.077 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:46.228 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:46.314 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:47.231 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:47.314 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:48.162 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:48.247 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:48.591 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: B0
+06/11/2025 19:29:48.870 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: B0
+06/11/2025 19:29:50.090 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:50.092 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:50.310 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:50.310 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:50.528 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:50.528 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:50.613 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:51.762 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:51.762 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:51.978 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:51.978 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:52.301 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:52.385 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:53.120 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:53.120 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:53.338 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:53.338 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:53.658 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:53.740 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:54.895 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:54.979 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:56.119 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:56.204 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:57.162 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:57.163 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:57.483 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:57.568 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:58.328 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:29:58.410 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:29:59.561 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:59.561 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:29:59.778 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:29:59.778 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:00.099 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:00.183 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:01.218 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:01.218 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:01.434 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:01.434 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:01.653 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:01.653 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:01.736 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:02.712 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:02.796 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:03.760 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:03.760 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:04.082 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:04.167 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:04.227 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: B0
+06/11/2025 19:30:04.992 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:05.078 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:05.997 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:06.081 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:07.059 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:07.143 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:07.993 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:08.076 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:08.409 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:08.494 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:08.921 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:09.005 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:09.500 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:09.585 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:09.644 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 0    Error: 01    Pump Status: B0
+06/11/2025 19:30:09.644 - OutReset                                           - Reseting slot control information
+06/11/2025 19:30:09.912 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:09.912 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:10.232 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:10.316 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:10.811 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:10.895 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:11.323 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:11.407 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:11.799 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:11.800 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:12.015 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:12.016 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:12.233 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:12.233 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:12.317 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:12.542 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:12.543 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:12.760 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:12.761 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:13.082 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:13.166 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:13.391 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:13.391 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:13.713 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:13.796 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:14.224 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:14.309 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:14.632 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:14.633 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:14.953 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:15.037 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:15.952 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:15.952 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:16.170 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:16.171 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:16.491 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:16.576 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:16.802 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:16.802 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:17.018 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:17.018 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:17.233 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:17.233 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:17.316 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:17.643 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:17.643 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:17.860 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:17.860 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:18.077 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:18.077 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:18.162 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:18.390 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:18.391 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:18.712 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:18.797 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:19.187 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:19.188 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:19.408 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:19.408 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:19.624 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:19.624 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:19.710 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:20.037 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:20.037 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:20.254 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:20.254 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:20.469 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:20.469 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:20.553 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:21.044 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:21.127 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:21.186 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 0    Error: 01    Pump Status: B0
+06/11/2025 19:30:21.187 - OutReset                                           - Reseting slot control information
+06/11/2025 19:30:21.558 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:21.641 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:21.866 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:21.866 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:22.084 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:22.084 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:22.403 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:22.487 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:22.877 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:22.877 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:23.196 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:23.279 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:23.505 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:23.505 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:23.828 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:23.912 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:24.244 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:24.327 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:24.757 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:24.843 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:25.233 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:25.233 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:25.449 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:25.449 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:25.668 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:25.668 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:25.753 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:25.980 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:25.981 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:26.200 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:26.200 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:26.520 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:26.603 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:26.831 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:26.832 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:27.153 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:27.239 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:27.564 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:27.564 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:27.781 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:27.781 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:28.103 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:28.188 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:28.618 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:28.702 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:29.091 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:29.175 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:29.507 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:29.591 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:29.818 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:29.818 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:30.138 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:30.224 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:30.451 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:30.451 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:30.667 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:30.667 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:30.883 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:30.883 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:30.967 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:31.398 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:31.482 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:31.976 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:32.060 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:32.344 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:32.344 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:32.664 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:32.749 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:33.176 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:33.260 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:33.653 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:33.653 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:33.870 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:33.871 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:34.088 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:34.088 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:34.171 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:34.458 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:34.458 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:34.673 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:34.673 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:34.888 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:30:34.889 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:30:34.973 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:35.304 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:35.387 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:35.446 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 0    Error: 01    Pump Status: B0
+06/11/2025 19:30:35.472 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:30:35.817 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:30:35.900 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:30:36.408 - Convert_Estado                                     -  
+06/11/2025 19:30:36.408 - Convert_Estado                                     - estado: 60    xpumps_status: B0    pumps.status: 00    new_status: 60
+06/11/2025 19:30:36.524 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:37.652 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:38.773 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:39.054 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:40.197 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:41.354 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:41.638 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:41.818 - Initialize_DLL                                     - Update PUMPCTRL Data 
+06/11/2025 19:30:41.829 - Initialize_DLL                                     - Preset x Producto habilitado[02]: 1
+06/11/2025 19:30:41.830 - Initialize_DLL                                     - Preset x Monto habilitado[02]: 1
+06/11/2025 19:30:41.830 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:30:42.000 - Convert_Estado                                     -  
+06/11/2025 19:30:42.001 - Convert_Estado                                     - estado: 60    xpumps_status: 00    pumps.status: 00    new_status: 60
+06/11/2025 19:30:44.125 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:48.828 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:49.147 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:49.461 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:50.092 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:51.353 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:52.805 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:53.090 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:53.378 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:53.664 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:30:53.664 - OutReset                                           - Reseting slot control information
+06/11/2025 19:30:57.095 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:31:06.078 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:31:06.181 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:31:06.182 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:31:06.183 - Processing_Commands                                - Se modifica Interbyte delay en : [68]
+06/11/2025 19:31:06.184 - Processing_Commands                                - Se modifica Reception Timeout delay en : [450]
+06/11/2025 19:31:06.186 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:31:06.299 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 15 byte/s
+06/11/2025 19:31:06.796 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [11]
+06/11/2025 19:31:06.881 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:31:07.903 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:31:07.951 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:31:08.035 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:31:14.593 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:31:38.078 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:31:38.708 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:31:38.708 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:31:38.709 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:31:38.820 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 15 byte/s
+06/11/2025 19:31:39.322 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [11]
+06/11/2025 19:31:39.406 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:31:40.017 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE LRC EN OFFSET [93]
+06/11/2025 19:31:40.017 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [93]
+06/11/2025 19:31:40.419 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:31:40.619 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER TOTALIZADORES - ERROR DE LRC EN OFFSET [93]
+06/11/2025 19:31:40.619 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER TOTALIZADORES - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [93]
+06/11/2025 19:31:41.221 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER TOTALIZADORES - ERROR DE LRC EN OFFSET [93]
+06/11/2025 19:31:41.221 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER TOTALIZADORES - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [93]
+06/11/2025 19:31:41.304 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:31:41.363 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:32:11.425 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:32:11.439 - Data_State_G                                       - INTENTO 1 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:32:12.045 - Data_State_G                                       - INTENTO 2 - AL CONSULTAR EL ESTADO LUEGO DE TIMEOUT DE DATA NEXT, EL SURTIDOR REPORTO ESTADO [0x80]
+06/11/2025 19:32:12.060 - Data_State_G                                       - INTENTO 3 OK - ENTRO EN DATA NEXT MODE
+06/11/2025 19:32:12.428 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:32:12.677 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:32:12.677 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:32:12.678 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:32:12.790 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 15 byte/s
+06/11/2025 19:32:13.292 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [11]
+06/11/2025 19:32:13.375 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:32:14.390 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:32:14.443 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:32:14.526 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:32:16.592 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:32:34.569 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:32:43.448 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:32:44.467 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:32:45.132 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:32:45.132 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:32:45.133 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:32:45.256 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 15 byte/s
+06/11/2025 19:32:45.927 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [37]
+06/11/2025 19:32:46.011 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:32:46.622 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE LRC EN OFFSET [93]
+06/11/2025 19:32:46.622 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [93]
+06/11/2025 19:32:47.024 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:32:47.681 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:32:47.766 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:33:21.771 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 19:33:21.785 - Initialize_DLL                                     - Preset x Producto habilitado[02]: 1
+06/11/2025 19:33:21.785 - Initialize_DLL                                     - Preset x Monto habilitado[02]: 1
+06/11/2025 19:33:21.786 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:33:21.982 - Convert_Estado                                     -  
+06/11/2025 19:33:21.982 - Convert_Estado                                     - estado: 60    xpumps_status: 00    pumps.status: 00    new_status: 60
+06/11/2025 19:33:25.970 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:33:25.984 - Data_State_G                                       - INTENTO 1 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:33:26.240 - Data_State_G                                       - INTENTO 2 - AL CONSULTAR EL ESTADO LUEGO DE TIMEOUT DE DATA NEXT, EL SURTIDOR REPORTO ESTADO [0x80]
+06/11/2025 19:33:26.255 - Data_State_G                                       - INTENTO 3 OK - ENTRO EN DATA NEXT MODE
+06/11/2025 19:33:26.341 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:33:26.341 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:33:26.341 - Processing_Commands                                - Se modifica Interbyte delay en : [68]
+06/11/2025 19:33:26.341 - Processing_Commands                                - Se modifica Reception Timeout delay en : [450]
+06/11/2025 19:33:26.342 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:33:26.457 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 15 byte/s
+06/11/2025 19:33:26.955 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [11]
+06/11/2025 19:33:27.039 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:33:28.058 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:33:28.106 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:33:28.189 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:33:30.409 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:32.959 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:33.276 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:33.913 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:34.482 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:35.331 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:36.178 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:36.743 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:37.586 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:38.153 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:38.438 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:38.718 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:38.999 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:38.999 - OutReset                                           - Reseting slot control information
+06/11/2025 19:33:39.878 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:40.158 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:41.000 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:43.250 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:44.669 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:44.950 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:45.229 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:46.084 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:46.365 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:46.930 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:48.051 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:49.177 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:50.308 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:51.997 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:54.520 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:54.800 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:57.502 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:33:58.012 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:33:58.026 - Data_State_G                                       - INTENTO 1 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:33:58.633 - Data_State_G                                       - INTENTO 2 - AL CONSULTAR EL ESTADO LUEGO DE TIMEOUT DE DATA NEXT, EL SURTIDOR REPORTO ESTADO [0x00]
+06/11/2025 19:33:58.648 - Data_State_G                                       - INTENTO 3 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:33:58.716 - Data_State_G                                       - TIMEOUT
+06/11/2025 19:33:59.182 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [0]
+06/11/2025 19:33:59.265 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:33:59.275 - Processing_Commands                                - ACTUAL PUMP STATE [0x00] CAN'T SUPPORT TOTALIZER REPORT COMMAND
+06/11/2025 19:33:59.834 - Convert_Estado                                     -  
+06/11/2025 19:33:59.834 - Convert_Estado                                     - estado: 60    xpumps_status: 60    pumps.status: 00    new_status: 60
+06/11/2025 19:34:00.804 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:01.084 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:01.362 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:02.483 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:03.043 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:05.039 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:07.270 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:09.213 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:10.326 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:10.879 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:11.155 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:11.727 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:14.261 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:14.541 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:15.103 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:17.079 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:17.358 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:17.973 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:19.379 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:19.664 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:20.499 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:21.915 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:23.884 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:24.719 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:25.279 - GILB_ProcessPumpStatus                             -  ************** BYTE DE ESTADO [0x00] ERROR ******************
+06/11/2025 19:34:25.279 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 00    Pump Status: 60
+06/11/2025 19:34:25.560 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:34:29.727 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:34:29.741 - Data_State_G                                       - INTENTO 1 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:34:30.347 - Data_State_G                                       - INTENTO 2 - AL CONSULTAR EL ESTADO LUEGO DE TIMEOUT DE DATA NEXT, EL SURTIDOR REPORTO ESTADO [0x00]
+06/11/2025 19:34:30.361 - Data_State_G                                       - INTENTO 3 OK - ENTRO EN DATA NEXT MODE
+06/11/2025 19:34:30.737 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:34:31.007 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:34:31.007 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:34:31.009 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:34:31.141 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 18 byte/s
+06/11/2025 19:34:31.357 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:34:31.357 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:34:31.576 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:34:31.576 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:34:31.792 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:34:31.792 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:34:31.875 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:34:32.487 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE LRC EN OFFSET [93]
+06/11/2025 19:34:32.487 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [93]
+06/11/2025 19:34:32.892 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:34:33.089 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER TOTALIZADORES - ERROR DE LRC EN OFFSET [93]
+06/11/2025 19:34:33.089 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER TOTALIZADORES - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [93]
+06/11/2025 19:34:33.896 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:34:34.143 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:34:34.227 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:34:36.316 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:04.434 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:35:05.064 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:35:05.064 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:35:05.065 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:35:05.179 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 15 byte/s
+06/11/2025 19:35:05.681 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [11]
+06/11/2025 19:35:05.764 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:35:06.376 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE LRC EN OFFSET [93]
+06/11/2025 19:35:06.376 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [93]
+06/11/2025 19:35:06.781 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:35:07.433 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:35:07.518 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:35:18.173 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:32.186 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:35.037 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:37.763 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:35:37.779 - Data_State_G                                       - INTENTO 1 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:35:38.384 - Data_State_G                                       - INTENTO 2 - AL CONSULTAR EL ESTADO LUEGO DE TIMEOUT DE DATA NEXT, EL SURTIDOR REPORTO ESTADO [0x00]
+06/11/2025 19:35:38.400 - Data_State_G                                       - INTENTO 3 OK - ENTRO EN DATA NEXT MODE
+06/11/2025 19:35:38.775 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:35:39.017 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:35:39.017 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:35:39.018 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:35:39.134 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 15 byte/s
+06/11/2025 19:35:39.629 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [11]
+06/11/2025 19:35:39.715 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:35:40.326 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE LRC EN OFFSET [93]
+06/11/2025 19:35:40.326 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [93]
+06/11/2025 19:35:40.734 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:35:41.384 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:35:41.467 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:35:48.543 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:48.764 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:49.429 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:49.544 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:50.427 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:54.498 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:55.341 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:58.198 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:59.320 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:35:59.880 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:02.126 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:02.684 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:03.528 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:04.085 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:04.657 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:06.614 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:06.898 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:07.177 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:07.734 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:11.056 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:36:11.718 - Processing_Commands                                - TIMEOUT REQUESTING FIRMWARE VERSION
+06/11/2025 19:36:11.718 - Processing_Commands                                - SETEANDO LA COMUNICACION DEL SURTIDOR EN MODO LENTO
+06/11/2025 19:36:11.719 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 07 byte/s
+06/11/2025 19:36:11.851 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 18 byte/s
+06/11/2025 19:36:12.069 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:36:12.069 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:36:12.285 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:36:12.285 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:36:12.502 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:36:12.502 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:36:12.586 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:36:13.603 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:36:13.652 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:36:13.735 - Processing_Commands                                - Error Reading Totals Report    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:36:14.074 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:14.637 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:15.748 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:16.310 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:16.866 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:17.159 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:18.553 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:19.945 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:21.618 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:22.474 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:27.126 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:27.437 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:28.497 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:29.285 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:36:33.503 - Rx_Estado                                          - min_rx_shot_next: 040    max_rx_shot_next: 096    rx_shot_next: 047
+06/11/2025 19:36:34.685 - Receive_Status                                     - EL SURTIDOR NO RESPONDIO AL COMANDO ENVIADO
+06/11/2025 19:36:34.685 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 60
+06/11/2025 19:36:35.872 - Receive_Status                                     - EL SURTIDOR NO RESPONDIO AL COMANDO ENVIADO
+06/11/2025 19:36:35.872 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 60
+06/11/2025 19:36:37.087 - Receive_Status                                     - EL SURTIDOR NO RESPONDIO AL COMANDO ENVIADO
+06/11/2025 19:36:37.087 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 60
+06/11/2025 19:36:38.300 - Receive_Status                                     - EL SURTIDOR NO RESPONDIO AL COMANDO ENVIADO
+06/11/2025 19:36:38.300 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 60
+06/11/2025 19:36:38.301 - OutReset                                           - Reseting slot control information
+06/11/2025 19:36:39.549 - Receive_Status                                     - EL SURTIDOR NO RESPONDIO AL COMANDO ENVIADO
+06/11/2025 19:36:39.549 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 60
+06/11/2025 19:36:39.550 - OutReset                                           - Reseting slot control information
+06/11/2025 19:36:40.252 - Receive_Status                                     - EL SURTIDOR NO RESPONDIO AL COMANDO ENVIADO
+06/11/2025 19:36:40.253 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 60
+06/11/2025 19:36:40.284 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:37:38.399 - Clear_UART_Rx (Tx_Cmd_G)                           - Cleaning RX Buffer: 03 byte/s
+06/11/2025 19:37:40.091 - Convert_Estado                                     -  
+06/11/2025 19:37:40.091 - Convert_Estado                                     - estado: 60    xpumps_status: 60    pumps.status: 00    new_status: 60
+06/11/2025 19:37:40.102 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:37:40.156 - Data_State_G                                       - INTENTO 1 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:37:40.761 - Data_State_G                                       - INTENTO 2 - AL CONSULTAR EL ESTADO LUEGO DE TIMEOUT DE DATA NEXT, EL SURTIDOR REPORTO ESTADO [0x00]
+06/11/2025 19:37:40.778 - Data_State_G                                       - INTENTO 3 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:37:40.848 - Data_State_G                                       - TIMEOUT
+06/11/2025 19:37:41.314 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [0]
+06/11/2025 19:37:41.398 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:37:41.409 - Processing_Commands                                - ACTUAL PUMP STATE [0x00] CAN'T SUPPORT TOTALIZER REPORT COMMAND
+06/11/2025 19:37:45.453 - Convert_Estado                                     -  
+06/11/2025 19:37:45.453 - Convert_Estado                                     - estado: 60    xpumps_status: 60    pumps.status: 00    new_status: 60
+06/11/2025 19:37:47.269 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:47.554 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:48.118 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:48.679 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:49.238 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:49.798 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:50.355 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:50.913 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:51.481 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:52.889 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:53.448 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:53.725 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:55.120 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:57.079 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:57.642 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:57.920 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:58.198 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:58.757 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:59.049 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:59.329 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:59.608 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:37:59.609 - OutReset                                           - Reseting slot control information
+06/11/2025 19:38:01.064 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:02.765 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:03.601 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:04.158 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:04.713 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:05.548 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:05.825 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:06.385 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:07.456 - Rx_Estado                                          - min_rx_shot_next: 040    max_rx_shot_next: 125    rx_shot_next: 047
+06/11/2025 19:38:08.639 - Receive_Status                                     - EL SURTIDOR NO RESPONDIO AL COMANDO ENVIADO
+06/11/2025 19:38:08.640 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 60
+06/11/2025 19:38:09.827 - Receive_Status                                     - EL SURTIDOR NO RESPONDIO AL COMANDO ENVIADO
+06/11/2025 19:38:09.828 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 60
+06/11/2025 19:38:10.385 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:10.957 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:11.130 - Processing_Commands                                - Sending FIRMWARE Command    Pump Status: 60    Tipo Cabezal: 00
+06/11/2025 19:38:11.147 - Data_State_G                                       - INTENTO 1 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:38:11.751 - Data_State_G                                       - INTENTO 2 - AL CONSULTAR EL ESTADO LUEGO DE TIMEOUT DE DATA NEXT, EL SURTIDOR REPORTO ESTADO [0x80]
+06/11/2025 19:38:11.766 - Data_State_G                                       - INTENTO 3 - AL ENVIAR DATA NEXT, EL SURTIDOR DEBERIA HABER RESPONDIDO 0xDx PERO RESPONDIO [0x50]
+06/11/2025 19:38:11.835 - Data_State_G                                       - TIMEOUT
+06/11/2025 19:38:12.302 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [0]
+06/11/2025 19:38:12.387 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:12.399 - Processing_Commands                                - ACTUAL PUMP STATE [0x00] CAN'T SUPPORT TOTALIZER REPORT COMMAND
+06/11/2025 19:38:12.514 - Convert_Estado                                     -  
+06/11/2025 19:38:12.514 - Convert_Estado                                     - estado: 60    xpumps_status: 60    pumps.status: 00    new_status: 60
+06/11/2025 19:38:14.482 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:14.761 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:15.039 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:19.579 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:20.972 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:22.919 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:23.476 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:25.145 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:26.537 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:27.093 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:27.371 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:29.619 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:30.176 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:30.453 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:30.732 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:31.572 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:31.852 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:32.973 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:34.097 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:34.657 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: 60
+06/11/2025 19:38:34.950 - Convert_Estado                                     - estado: B0    xpumps_status: 60    pumps.status: 60    new_status: B0
+06/11/2025 19:38:34.961 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:35.219 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:35.219 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:35.888 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:35.973 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:35.979 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:38:36.145 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:36.826 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:36.909 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:36.920 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:37.602 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:37.686 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:37.753 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:38.435 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:38.518 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:38.529 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:39.208 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:39.291 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:39.361 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:39.617 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:39.617 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:40.286 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:40.371 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:40.375 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:38:40.383 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:40.609 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:40.609 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:41.280 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:41.365 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:41.541 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:41.768 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:41.768 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:41.986 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:41.987 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:42.205 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:42.205 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:42.288 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:42.299 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:42.527 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:42.527 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:43.198 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:43.282 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:43.351 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:43.579 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:43.579 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:43.799 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:43.799 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:44.371 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:38:44.469 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:44.554 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:44.622 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:44.879 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:44.880 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:45.550 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:45.636 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:45.639 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:38:45.646 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:46.328 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:46.413 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:46.587 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:47.267 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:47.353 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:47.363 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:47.590 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:47.590 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:48.263 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:48.348 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:52.167 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:52.393 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:52.393 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:53.065 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:53.151 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:53.209 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 0    Error: 01    Pump Status: B0
+06/11/2025 19:38:53.232 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:53.473 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:53.473 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:54.144 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:54.227 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:54.400 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:55.142 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:55.227 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:55.311 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:56.022 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:56.105 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:56.279 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:56.505 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:56.506 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:56.722 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:56.723 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:56.942 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:56.942 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:57.027 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:57.095 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:57.323 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:57.323 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:38:57.994 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:58.076 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:58.144 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:58.856 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:38:58.939 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:38:59.115 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:38:59.344 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:38:59.344 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:00.018 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:00.104 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:00.115 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:00.795 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:00.879 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:00.945 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:01.640 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:01.723 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:01.782 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 0    Error: 01    Pump Status: B0
+06/11/2025 19:39:01.792 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:02.048 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:02.048 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:02.720 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:02.804 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:02.811 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:39:02.977 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:03.203 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:03.204 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:03.875 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:03.959 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:04.031 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:04.713 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:04.797 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:04.808 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:05.488 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:05.574 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:05.585 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:06.270 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:06.355 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:06.365 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:06.597 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:06.598 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:07.270 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:07.355 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:07.424 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:08.135 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:08.219 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:08.392 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:08.622 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:08.622 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:08.840 - Rx_Sale_Total_G                                    - INTENTO 2 - LECTURA DE ULTIMA VENTA REALIZADA OK
+06/11/2025 19:39:08.840 - Processing_Commands                                - HOSE LOGICO INFORMADO [02]
+06/11/2025 19:39:08.840 - Processing_Commands                                - Hose: 2      Sale:   000000 $       000.000 L    PPU1: 2916 $
+06/11/2025 19:39:09.860 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:39:09.908 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:39:09.991 - Processing_Commands                                - Error Reading Totals Report    Pump Status: B0    Tipo Cabezal: 00
+06/11/2025 19:39:10.002 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:10.229 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:10.229 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:10.447 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:10.447 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:11.024 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:39:11.117 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:11.202 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:11.213 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:11.494 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:11.494 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:11.710 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:11.711 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:11.930 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:11.930 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:12.012 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:12.023 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:12.251 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:12.251 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:12.922 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:13.005 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:13.078 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:13.922 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:14.008 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:14.075 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:14.754 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:14.838 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:14.861 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:15.547 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:15.629 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:15.640 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:16.319 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:16.403 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:16.479 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:16.729 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:16.729 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:16.945 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:16.945 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:17.162 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:17.162 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:17.245 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:17.417 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:18.102 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:18.185 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:18.196 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:18.422 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:18.423 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:18.641 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:18.641 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:19.218 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:39:19.310 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:19.393 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:19.405 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:19.687 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:19.688 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:19.904 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:19.904 - Rx_Sale_Total_G                                    - INTENTO 2 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:20.121 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:20.122 - Rx_Sale_Total_G                                    - INTENTO 3 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:20.206 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:20.217 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:20.899 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:20.982 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:20.994 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:21.219 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE LRC EN OFFSET [32]
+06/11/2025 19:39:21.219 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE FRAMING-PARITY-OVERRUN EN OFFSET [32]
+06/11/2025 19:39:21.435 - Rx_Sale_Total_G                                    - INTENTO 2 - LECTURA DE ULTIMA VENTA REALIZADA OK
+06/11/2025 19:39:21.435 - Processing_Commands                                - HOSE LOGICO INFORMADO [02]
+06/11/2025 19:39:21.435 - Processing_Commands                                - Hose: 2      Sale:   000000 $       000.000 L    PPU1: 2916 $
+06/11/2025 19:39:22.456 - Check_ActivityFlag                                 - Estuve esperando [1000] y dll_request no me dio acceso para la funcion - newflag [0x00]
+06/11/2025 19:39:22.502 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER TOTALIZADORES - ERROR DE TIMEOUT OFFSET [94]
+06/11/2025 19:39:22.585 - Processing_Commands                                - Error Reading Totals Report    Pump Status: B0    Tipo Cabezal: 00
+06/11/2025 19:39:26.508 - Processing_Commands                                - Sending Firmware Version Command, but the pump is not ready
+06/11/2025 19:39:27.192 - Rx_Sale_Total_G                                    - INTENTO 1 - AL LEER ULTIMA VENTA - ERROR DE TIMEOUT OFFSET [33]
+06/11/2025 19:39:27.274 - Processing_Commands                                - Error Reading Sale Report - Hose: 0
+06/11/2025 19:39:37.549 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 

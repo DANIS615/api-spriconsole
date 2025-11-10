@@ -1,0 +1,13 @@
+[Debitos]
+;formato = 00:00:00 
+Hora = 10:00:00 
+durante = 04:00:00
+
+[CLP]
+;formato = 00:00:00 
+Hora = 10:05:00
+durante = 04:00:00
+
+[Totalizadores]
+Dia=01
+Hora=10:10:00

@@ -1,0 +1,72 @@
+----------------------------------------------
+              PUMPCTRL LOG FILE               
+PUMPCTRL INFO: DATE RELEASE Sep 23 2010 09:53:26
+----------------------------------------------
+06/11/2025 19:21:21.197 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 19:21:21.211 - Initialize_DLL                                     - Preset x Producto habilitado[06]: 1
+06/11/2025 19:21:21.211 - Initialize_DLL                                     - Preset x Monto habilitado[06]: 1
+06/11/2025 19:21:21.212 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:21:21.217 - MGPInitialize                                      - Se va a controlar el dirty buffer porque el surtidor [1] no es MicroControlado
+06/11/2025 19:21:21.218 - OutReset                                           - Reseting slot control information
+06/11/2025 19:21:22.022 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:21:23.061 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:21:26.881 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:21:28.110 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:21:28.110 - OutReset                                           - Reseting slot control information
+06/11/2025 19:21:29.626 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:21:29.626 - OutReset                                           - Reseting slot control information
+06/11/2025 19:21:30.947 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:21:30.978 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:27:26.314 - Initialize_DLL                                     - Update PUMPCTRL Data 
+06/11/2025 19:27:26.335 - Initialize_DLL                                     - Preset x Producto habilitado[06]: 1
+06/11/2025 19:27:26.336 - Initialize_DLL                                     - Preset x Monto habilitado[06]: 1
+06/11/2025 19:27:26.336 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:27:26.344 - MGPInitialize                                      - Se va a controlar el dirty buffer porque el surtidor [1] no es MicroControlado
+06/11/2025 19:27:26.344 - OutReset                                           - Reseting slot control information
+06/11/2025 19:27:26.406 - Initialize_DLL                                     - IMPLEMENTING ADVANCED POLLING POLICY
+06/11/2025 19:27:26.416 - Initialize_DLL                                     - Update PUMPCTRL Data 
+06/11/2025 19:27:26.437 - Initialize_DLL                                     - Preset x Producto habilitado[06]: 1
+06/11/2025 19:27:26.438 - Initialize_DLL                                     - Preset x Monto habilitado[06]: 1
+06/11/2025 19:27:26.439 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:27:26.449 - MGPInitialize                                      - Se va a controlar el dirty buffer porque el surtidor [1] no es MicroControlado
+06/11/2025 19:27:26.450 - OutReset                                           - Reseting slot control information
+06/11/2025 19:27:34.364 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:27:35.134 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:27:36.270 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:27:37.494 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:27:37.494 - OutReset                                           - Reseting slot control information
+06/11/2025 19:27:38.756 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:27:38.756 - OutReset                                           - Reseting slot control information
+06/11/2025 19:27:40.012 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:27:40.041 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:30:41.819 - Initialize_DLL                                     - Update PUMPCTRL Data 
+06/11/2025 19:30:41.837 - Initialize_DLL                                     - Preset x Producto habilitado[06]: 1
+06/11/2025 19:30:41.837 - Initialize_DLL                                     - Preset x Monto habilitado[06]: 1
+06/11/2025 19:30:41.838 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:30:41.846 - MGPInitialize                                      - Se va a controlar el dirty buffer porque el surtidor [1] no es MicroControlado
+06/11/2025 19:30:41.847 - OutReset                                           - Reseting slot control information
+06/11/2025 19:30:42.653 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:30:43.432 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:30:44.571 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:30:48.995 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:30:48.995 - OutReset                                           - Reseting slot control information
+06/11/2025 19:30:50.259 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:30:50.260 - OutReset                                           - Reseting slot control information
+06/11/2025 19:30:51.515 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:30:51.548 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:33:21.775 - Initialize_DLL                                     - Start PUMPCTRL Activity 
+06/11/2025 19:33:21.789 - Initialize_DLL                                     - Preset x Producto habilitado[06]: 1
+06/11/2025 19:33:21.790 - Initialize_DLL                                     - Preset x Monto habilitado[06]: 1
+06/11/2025 19:33:21.790 - Initialize_DLL                                     - RECEPTION TIMEOUT = [100] - SHOT NEXT = [50] - INTERBYTE [0]
+06/11/2025 19:33:21.796 - MGPInitialize                                      - Se va a controlar el dirty buffer porque el surtidor [1] no es MicroControlado
+06/11/2025 19:33:21.796 - OutReset                                           - Reseting slot control information
+06/11/2025 19:33:22.632 - Pump_Offline                                       - Pump Error Counter: 5    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:33:28.518 - Pump_Offline                                       - Pump Error Counter: 4    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:33:29.656 - Pump_Offline                                       - Pump Error Counter: 3    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:33:30.887 - Pump_Offline                                       - Pump Error Counter: 2    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:33:30.887 - OutReset                                           - Reseting slot control information
+06/11/2025 19:33:32.182 - Pump_Offline                                       - Pump Error Counter: 1    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:33:32.182 - OutReset                                           - Reseting slot control information
+06/11/2025 19:33:33.439 - Pump_Offline                                       - Pump Error Counter: 0    Timeout: 1    Error: 00    Pump Status: 00
+06/11/2025 19:33:33.471 - Pump_Offline                                       - Set Pump values to OFFLINE
+06/11/2025 19:39:37.550 - Terminar_DLL                                       - PumpCtrl DLL_PROCESS_DETACH 
