@@ -1,2 +1,13 @@
 ﻿# Ignorar artefactos de compilaciÃ³n y carpetas locales
 *.pyc
+
+# Directorios generados
+dll_wrappers/cpp/ssf_wrapper.obj
+dll_wrappers/cpp/ssf_wrapper.exe
+servicio_bombas_csharp/bin/
+servicio_bombas_csharp/obj/
+servicio_bombas_csharp_32bit/bin/
+servicio_bombas_csharp_32bit/obj/
+
+# Evitar agregar copias del sistema operativo
+SysWOW64/
